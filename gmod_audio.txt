@@ -1,0 +1,141 @@
+U abort@@GLIBC_2.0
+U BASS_Apply3D
+U BASS_ChannelBytes2Seconds
+U BASS_ChannelFlags
+U BASS_ChannelGet3DAttributes
+U BASS_ChannelGet3DPosition
+U BASS_ChannelGetAttribute
+U BASS_ChannelGetData
+U BASS_ChannelGetInfo
+U BASS_ChannelGetLength
+U BASS_ChannelGetLevel
+U BASS_ChannelGetPosition
+U BASS_ChannelIsActive
+U BASS_ChannelPause
+U BASS_ChannelPlay
+U BASS_ChannelSeconds2Bytes
+U BASS_ChannelSet3DAttributes
+U BASS_ChannelSet3DPosition
+U BASS_ChannelSetAttribute
+U BASS_ChannelSetPosition
+U BASS_ChannelStop
+U BASS_ErrorGetCode
+U BASS_Free
+U BASS_Init
+U BASS_MusicFree
+U BASS_MusicLoad
+U BASS_PluginFree
+U BASS_Set3DFactors
+U BASS_Set3DPosition
+U BASS_SetConfig
+U BASS_Start
+U BASS_Stop
+U BASS_StreamCreateFileUser
+U BASS_StreamCreateURL
+U BASS_StreamFree
+U BASS_StreamGetFilePosition
+U BASS_Update
+B __bss_start
+U chdir@@GLIBC_2.0
+T CreateInterface
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
+B cvar
+U __cxa_allocate_exception@@CXXABI_1.3
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_end_catch@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_free_exception@@CXXABI_1.3
+U __cxa_pure_virtual@@CXXABI_1.3
+U __cxa_throw@@CXXABI_1.3
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+D _edata
+B _end
+U Error
+T _fini
+U free@@GLIBC_2.0
+U getcwd@@GLIBC_2.0
+w __gmon_start__
+U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T _init
+U iswspace@@GLIBC_2.0
+w _Jv_RegisterClasses
+U malloc@@GLIBC_2.0
+U mbstowcs@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U Msg
+U Plat_IsInDebugSession
+U Plat_localtime
+U __pow_finite@@GLIBC_2.15
+U printf@@GLIBC_2.0
+w pthread_cancel
+w __pthread_key_create
+w pthread_mutex_lock@@GLIBC_2.0
+w pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once
+U rand@@GLIBC_2.0
+U realloc@@GLIBC_2.0
+B seeder
+U srand@@GLIBC_2.0
+U __stack_chk_fail@@GLIBC_2.4
+U strcasecmp@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strftime@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncasecmp@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U time@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+U vsnprintf@@GLIBC_2.0
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+T globber(char const*, char const*)
+U operator delete[](void*)@@GLIBCXX_3.4
+U operator delete(void*)@@GLIBCXX_3.4
+T Bootil::Math::Random::Int(int, int)
+T Bootil::Math::Random::Bool()
+T Bootil::Math::Random::Seed(unsigned int)
+T Bootil::String::Random(int, bool, bool, bool, bool)
+U operator new[](unsigned int)@@GLIBCXX_3.4
+U std::string::find(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::rfind(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::_M_leak_hard()@@GLIBCXX_3.4
+U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::_Rep::_M_dispose(std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
+U std::string::swap(std::string&)@@GLIBCXX_3.4
+U std::string::assign(std::string const&)@@GLIBCXX_3.4
+U std::string::reserve(unsigned int)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@@GLIBCXX_3.4
+U std::ios_base::Init::Init()@@GLIBCXX_3.4
+U std::ios_base::Init::~Init()@@GLIBCXX_3.4
+U operator new(unsigned int)@@GLIBCXX_3.4
+U typeinfo for int@@CXXABI_1.3
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3

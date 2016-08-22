@@ -1,0 +1,1670 @@
+U abort@@GLIBC_2.0
+U access@@GLIBC_2.0
+T adler32
+T adler32_combine
+T adler32_combine64
+T bio_create
+T bio_destroy
+T bio_flush
+T bio_inalign
+T bio_init_dec
+T bio_init_enc
+T bio_numbytes
+T bio_read
+T bio_write
+B __bss_start
+U calloc@@GLIBC_2.0
+U chdir@@GLIBC_2.0
+T check_EPHuse
+U chmod@@GLIBC_2.0
+U chown@@GLIBC_2.1
+T cio_bytein
+T cio_byteout
+T cio_getbp
+T cio_numbytesleft
+T cio_read
+T cio_seek
+T cio_skip
+T cio_tell
+T cio_write
+T ClampConvertRGBFTo24
+U closedir@@GLIBC_2.0
+U close@@GLIBC_2.0
+T compress
+T compress2
+T compressBound
+B convertByteToComplex
+B convertByteToDouble
+B convertByteToFloat
+B convertByteToLong
+B convertByteToShort
+B convertByteToULong
+B convertByteToUShort
+B convertDoubleToByte
+B convertDoubleToComplex
+B convertFloatToByte
+B convertFloatToComplex
+B convertFloatToDouble
+T ConvertInPlaceRGBFToYxy
+T ConvertInPlaceYxyToRGBF
+B convertLongToByte
+B convertLongToComplex
+B convertLongToDouble
+B convertLongToFloat
+T ConvertRGBFToY
+B convertShortToByte
+B convertShortToComplex
+B convertShortToDouble
+B convertShortToFloat
+B convertULongToByte
+B convertULongToComplex
+B convertULongToDouble
+B convertULongToFloat
+B convertUShortToByte
+B convertUShortToComplex
+B convertUShortToDouble
+B convertUShortToFloat
+T crc32
+T crc32_combine
+T crc32_combine64
+T CreateInterface
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
+B cvar
+U __cxa_allocate_exception@@CXXABI_1.3
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_end_catch@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_abort@@CXXABI_1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+U __cxa_pure_virtual@@CXXABI_1.3
+U __cxa_rethrow@@CXXABI_1.3
+U __cxa_throw@@CXXABI_1.3
+T deflate
+T deflateBound
+T deflateCopy
+R deflate_copyright
+T deflateEnd
+T deflateInit_
+T deflateInit2_
+T deflateParams
+T deflatePending
+T deflatePrime
+T deflateReset
+T deflateResetKeep
+T deflateSetDictionary
+T deflateSetHeader
+T deflateTune
+U DevMsg
+U dirname@@GLIBC_2.0
+U div@@GLIBC_2.0
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+T dwt_calc_explicit_stepsizes
+T dwt_decode
+T dwt_decode_real
+T dwt_encode
+T dwt_encode_real
+T dwt_getgain
+T dwt_getgain_real
+T dwt_getnorm
+T dwt_getnorm_real
+D _edata
+B _end
+U __errno_location@@GLIBC_2.0
+U Error
+U execvp@@GLIBC_2.0
+U exit@@GLIBC_2.0
+U fclose@@GLIBC_2.1
+U fflush@@GLIBC_2.0
+T _fini
+U fopen64@@GLIBC_2.1
+U fopen@@GLIBC_2.1
+U fork@@GLIBC_2.0
+U __fprintf_chk@@GLIBC_2.3.4
+U fprintf@@GLIBC_2.0
+U fputc@@GLIBC_2.0
+U fread@@GLIBC_2.0
+U free@@GLIBC_2.0
+T FreeImage_AcquireMemory
+T FreeImage_AdjustBrightness
+T FreeImage_AdjustColors
+T FreeImage_AdjustContrast
+T FreeImage_AdjustCurve
+T FreeImage_AdjustGamma
+T FreeImage_Allocate
+T FreeImage_AllocateHeader
+T FreeImage_AllocateHeaderT
+T FreeImage_AllocateT
+T FreeImage_ApplyColorMapping
+T FreeImage_ApplyPaletteIndexMapping
+T FreeImage_Clone
+T FreeImage_CloneMetadata
+T FreeImage_CloneTag
+T FreeImage_Close
+T FreeImage_CloseMemory
+T FreeImage_ColorQuantize
+T FreeImage_ColorQuantizeEx
+T FreeImage_ConvertFromRawBits
+T FreeImage_ConvertLine16_555_To16_565
+T FreeImage_ConvertLine16_565_To16_555
+T FreeImage_ConvertLine16To24_555
+T FreeImage_ConvertLine16To24_565
+T FreeImage_ConvertLine16To32_555
+T FreeImage_ConvertLine16To32_565
+T FreeImage_ConvertLine16To4_555
+T FreeImage_ConvertLine16To4_565
+T FreeImage_ConvertLine16To8_555
+T FreeImage_ConvertLine16To8_565
+T FreeImage_ConvertLine1To16_555
+T FreeImage_ConvertLine1To16_565
+T FreeImage_ConvertLine1To24
+T FreeImage_ConvertLine1To32
+T FreeImage_ConvertLine1To4
+T FreeImage_ConvertLine1To8
+T FreeImage_ConvertLine24To16_555
+T FreeImage_ConvertLine24To16_565
+T FreeImage_ConvertLine24To32
+T FreeImage_ConvertLine24To4
+T FreeImage_ConvertLine24To8
+T FreeImage_ConvertLine32To16_555
+T FreeImage_ConvertLine32To16_565
+T FreeImage_ConvertLine32To24
+T FreeImage_ConvertLine32To4
+T FreeImage_ConvertLine32To8
+T FreeImage_ConvertLine4To16_555
+T FreeImage_ConvertLine4To16_565
+T FreeImage_ConvertLine4To24
+T FreeImage_ConvertLine4To32
+T FreeImage_ConvertLine4To8
+T FreeImage_ConvertLine8To16_555
+T FreeImage_ConvertLine8To16_565
+T FreeImage_ConvertLine8To24
+T FreeImage_ConvertLine8To32
+T FreeImage_ConvertLine8To4
+T FreeImage_ConvertTo16Bits555
+T FreeImage_ConvertTo16Bits565
+T FreeImage_ConvertTo24Bits
+T FreeImage_ConvertTo32Bits
+T FreeImage_ConvertTo4Bits
+T FreeImage_ConvertTo8Bits
+T FreeImage_ConvertToFloat
+T FreeImage_ConvertToGreyscale
+T FreeImage_ConvertToRawBits
+T FreeImage_ConvertToRGB16
+T FreeImage_ConvertToRGBF
+T FreeImage_ConvertToStandardType
+T FreeImage_ConvertToType
+T FreeImage_ConvertToUINT16
+T FreeImage_Copy
+T FreeImage_CreateICCProfile
+T FreeImage_CreateTag
+T FreeImage_DeInitialise
+T FreeImage_DeleteTag
+T FreeImage_DestroyICCProfile
+T FreeImage_FIFSupportsExportBPP
+T FreeImage_FIFSupportsExportType
+T FreeImage_FIFSupportsICCProfiles
+T FreeImage_FIFSupportsNoPixels
+T FreeImage_FIFSupportsReading
+T FreeImage_FIFSupportsWriting
+T FreeImage_FindCloseMetadata
+T FreeImage_FindFirstMetadata
+T FreeImage_FindNextMetadata
+T FreeImage_FlipHorizontal
+T FreeImage_FlipVertical
+T FreeImage_GetAdjustColorsLookupTable
+T FreeImage_GetBackgroundColor
+T FreeImage_GetBits
+T FreeImage_GetBlueMask
+T FreeImage_GetBPP
+T FreeImage_GetChannel
+T FreeImage_GetColorsUsed
+T FreeImage_GetColorType
+T FreeImage_GetComplexChannel
+T FreeImage_GetCopyrightMessage
+T FreeImage_GetDIBSize
+T FreeImage_GetDotsPerMeterX
+T FreeImage_GetDotsPerMeterY
+T FreeImage_GetFIFCount
+T FreeImage_GetFIFDescription
+T FreeImage_GetFIFExtensionList
+T FreeImage_GetFIFFromFilename
+T FreeImage_GetFIFFromFilenameU
+T FreeImage_GetFIFFromFormat
+T FreeImage_GetFIFFromMime
+T FreeImage_GetFIFMimeType
+T FreeImage_GetFIFRegExpr
+T FreeImage_GetFileType
+T FreeImage_GetFileTypeFromHandle
+T FreeImage_GetFileTypeFromMemory
+T FreeImage_GetFileTypeU
+T FreeImage_GetFormatFromFIF
+T FreeImage_GetGreenMask
+T FreeImage_GetHeight
+T FreeImage_GetHistogram
+T FreeImage_GetICCProfile
+T FreeImage_GetImageType
+T FreeImage_GetInfo
+T FreeImage_GetInfoHeader
+T FreeImage_GetLine
+T FreeImage_GetMetadata
+T FreeImage_GetMetadataCount
+T FreeImage_GetPalette
+T FreeImage_GetPitch
+T FreeImage_GetPixelColor
+T FreeImage_GetPixelIndex
+T FreeImage_GetPluginList
+T FreeImage_GetRedMask
+T FreeImage_GetScanLine
+T FreeImage_GetTagCount
+T FreeImage_GetTagDescription
+T FreeImage_GetTagID
+T FreeImage_GetTagKey
+T FreeImage_GetTagLength
+T FreeImage_GetTagType
+T FreeImage_GetTagValue
+T FreeImage_GetThumbnail
+T FreeImage_GetTransparencyCount
+T FreeImage_GetTransparencyTable
+T FreeImage_GetTransparentIndex
+T FreeImage_GetVersion
+T FreeImage_GetWidth
+T FreeImage_HasBackgroundColor
+T FreeImage_HasPixels
+T FreeImage_Initialise
+T FreeImage_Invert
+T FreeImage_IsLittleEndian
+T FreeImage_IsPluginEnabled
+T FreeImage_IsTransparent
+T FreeImage_Load
+T FreeImage_LoadFromHandle
+T FreeImage_LoadFromMemory
+T FreeImage_LoadU
+T FreeImage_LookupSVGColor
+T FreeImage_LookupX11Color
+T FreeImage_MakeThumbnail
+T FreeImage_MultigridPoissonSolver
+T FreeImage_Open
+T FreeImage_OpenMemory
+T FreeImage_OutputMessageProc
+T FreeImage_Paste
+T FreeImage_ReadMemory
+T FreeImage_RegisterLocalPlugin
+T FreeImage_Rescale
+T FreeImage_Rotate
+T FreeImage_Save
+T FreeImage_SaveToHandle
+T FreeImage_SaveToMemory
+T FreeImage_SaveU
+T FreeImage_SeekMemory
+T FreeImage_SetBackgroundColor
+T FreeImage_SetChannel
+T FreeImage_SetComplexChannel
+T FreeImage_SetDotsPerMeterX
+T FreeImage_SetDotsPerMeterY
+T FreeImage_SetMetadata
+T FreeImage_SetOutputMessage
+T FreeImage_SetOutputMessageStdCall
+T FreeImage_SetPixelColor
+T FreeImage_SetPixelIndex
+T FreeImage_SetPluginEnabled
+T FreeImage_SetTagCount
+T FreeImage_SetTagDescription
+T FreeImage_SetTagID
+T FreeImage_SetTagKey
+T FreeImage_SetTagLength
+T FreeImage_SetTagType
+T FreeImage_SetTagValue
+T FreeImage_SetThumbnail
+T FreeImage_SetTransparencyTable
+T FreeImage_SetTransparent
+T FreeImage_SetTransparentIndex
+T FreeImage_SwapColors
+T FreeImage_SwapPaletteIndices
+T FreeImage_TellMemory
+T FreeImage_TmoDrago03
+T FreeImage_TmoFattal02
+T FreeImage_TmoReinhard05
+T FreeImage_TmoReinhard05Ex
+T FreeImage_ToneMapping
+T FreeImage_Unload
+T FreeImage_Validate
+T FreeImage_WriteMemory
+T FreeImage_ZLibCompress
+T FreeImage_ZLibCRC32
+T FreeImage_ZLibGUnzip
+T FreeImage_ZLibGZip
+T FreeImage_ZLibUncompress
+U freopen@@GLIBC_2.0
+U frexp@@GLIBC_2.0
+U fseek@@GLIBC_2.0
+U ftell@@GLIBC_2.0
+U fwrite@@GLIBC_2.0
+T get_crc_table
+U getcwd@@GLIBC_2.0
+U getenv@@GLIBC_2.0
+U geteuid@@GLIBC_2.0
+T get_num_max_tile_parts
+U getpwuid@@GLIBC_2.0
+U getrusage@@GLIBC_2.0
+U gettimeofday@@GLIBC_2.0
+w __gmon_start__
+U gmtime@@GLIBC_2.0
+U __gxx_personality_v0@@CXXABI_1.3
+T gzbuffer
+T gzclearerr
+T gzclose_w
+T gzdopen
+T gzeof
+T gzerror
+T gzflags
+T gzflush
+T gzoffset
+T gzoffset64
+T gzopen
+T gzopen64
+T gzprintf
+T gzputc
+T gzputs
+T gzrewind
+T gzseek
+T gzseek64
+T gzsetparams
+T gztell
+T gztell64
+T gzwrite
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T inflate
+T inflateCopy
+R inflate_copyright
+T inflateEnd
+T inflateGetHeader
+T inflateInit_
+T inflateInit2_
+T inflateMark
+T inflatePrime
+T inflateReset
+T inflateReset2
+T inflateResetKeep
+T inflateSetDictionary
+T inflateSync
+T inflateSyncPoint
+T inflateUndermine
+T _init
+U _IO_getc@@GLIBC_2.0
+U __isoc99_sscanf@@GLIBC_2.7
+U isspace@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+T j2k_calculate_tp
+T j2k_convert_progression_order
+T j2k_create_compress
+T j2k_create_decompress
+D j2k_dec_mstab
+T j2k_decode
+T j2k_decode_jpt_stream
+T j2k_destroy_compress
+T j2k_destroy_decompress
+T j2k_encode
+D j2k_prog_order_list
+T j2k_setup_decoder
+T j2k_setup_encoder
+T jcopy_block_row
+T jcopy_sample_rows
+T jdiv_round_up
+T jinit_1pass_quantizer
+T jinit_2pass_quantizer
+T jinit_arith_decoder
+T jinit_arith_encoder
+T jinit_c_coef_controller
+T jinit_c_main_controller
+T jinit_c_master_control
+T jinit_color_converter
+T jinit_color_deconverter
+T jinit_compress_master
+T jinit_c_prep_controller
+T jinit_d_coef_controller
+T jinit_d_main_controller
+T jinit_downsampler
+T jinit_d_post_controller
+T jinit_forward_dct
+T jinit_huff_decoder
+T jinit_huff_encoder
+T jinit_input_controller
+T jinit_inverse_dct
+T jinit_marker_reader
+T jinit_marker_writer
+T jinit_master_decompress
+T jinit_memory_mgr
+T jinit_merged_upsampler
+T jinit_upsampler
+T jp2_create_compress
+T jp2_create_decompress
+T jp2_destroy_compress
+T jp2_destroy_decompress
+T jp2_read_jp2h
+T jp2_setup_decoder
+T jp2_setup_encoder
+T jp2_write_jp2h
+T jpeg_abort
+T jpeg_abort_compress
+T jpeg_abort_decompress
+T jpeg_add_quant_table
+T jpeg_alloc_huff_table
+T jpeg_alloc_quant_table
+R jpeg_aritab
+T jpeg_calc_jpeg_dimensions
+T jpeg_calc_output_dimensions
+T jpeg_consume_input
+T jpeg_core_output_dimensions
+T jpeg_CreateCompress
+T jpeg_CreateDecompress
+T jpeg_default_colorspace
+T jpeg_default_qtables
+T jpeg_destroy
+T jpeg_destroy_compress
+T jpeg_destroy_decompress
+T jpeg_fdct_10x10
+T jpeg_fdct_10x5
+T jpeg_fdct_11x11
+T jpeg_fdct_12x12
+T jpeg_fdct_12x6
+T jpeg_fdct_13x13
+T jpeg_fdct_14x14
+T jpeg_fdct_14x7
+T jpeg_fdct_15x15
+T jpeg_fdct_16x16
+T jpeg_fdct_16x8
+T jpeg_fdct_1x1
+T jpeg_fdct_1x2
+T jpeg_fdct_2x1
+T jpeg_fdct_2x2
+T jpeg_fdct_2x4
+T jpeg_fdct_3x3
+T jpeg_fdct_3x6
+T jpeg_fdct_4x2
+T jpeg_fdct_4x4
+T jpeg_fdct_4x8
+T jpeg_fdct_5x10
+T jpeg_fdct_5x5
+T jpeg_fdct_6x12
+T jpeg_fdct_6x3
+T jpeg_fdct_6x6
+T jpeg_fdct_7x14
+T jpeg_fdct_7x7
+T jpeg_fdct_8x16
+T jpeg_fdct_8x4
+T jpeg_fdct_9x9
+T jpeg_fdct_float
+T jpeg_fdct_ifast
+T jpeg_fdct_islow
+T jpeg_finish_compress
+T jpeg_finish_decompress
+T jpeg_finish_output
+T jpeg_free_large
+T jpeg_free_small
+T jpeg_get_large
+T jpeg_get_small
+T jpeg_has_multiple_scans
+T jpeg_idct_10x10
+T jpeg_idct_10x5
+T jpeg_idct_11x11
+T jpeg_idct_12x12
+T jpeg_idct_12x6
+T jpeg_idct_13x13
+T jpeg_idct_14x14
+T jpeg_idct_14x7
+T jpeg_idct_15x15
+T jpeg_idct_16x16
+T jpeg_idct_16x8
+T jpeg_idct_1x1
+T jpeg_idct_1x2
+T jpeg_idct_2x1
+T jpeg_idct_2x2
+T jpeg_idct_2x4
+T jpeg_idct_3x3
+T jpeg_idct_3x6
+T jpeg_idct_4x2
+T jpeg_idct_4x4
+T jpeg_idct_4x8
+T jpeg_idct_5x10
+T jpeg_idct_5x5
+T jpeg_idct_6x12
+T jpeg_idct_6x3
+T jpeg_idct_6x6
+T jpeg_idct_7x14
+T jpeg_idct_7x7
+T jpeg_idct_8x16
+T jpeg_idct_8x4
+T jpeg_idct_9x9
+T jpeg_idct_float
+T jpeg_idct_ifast
+T jpeg_idct_islow
+T jpeg_input_complete
+T jpeg_mem_available
+T jpeg_mem_init
+T jpeg_mem_term
+R jpeg_natural_order
+R jpeg_natural_order2
+R jpeg_natural_order3
+R jpeg_natural_order4
+R jpeg_natural_order5
+R jpeg_natural_order6
+R jpeg_natural_order7
+T jpeg_new_colormap
+T jpeg_open_backing_store
+T jpeg_quality_scaling
+T jpeg_read_exif_profile
+T jpeg_read_header
+T jpeg_read_raw_data
+T jpeg_read_scanlines
+T jpeg_resync_to_restart
+T jpeg_save_markers
+T jpeg_set_colorspace
+T jpeg_set_defaults
+T jpeg_set_linear_quality
+T jpeg_set_marker_processor
+T jpeg_set_quality
+T jpeg_simple_progression
+T jpeg_start_compress
+T jpeg_start_decompress
+T jpeg_start_output
+T jpeg_std_error
+R jpeg_std_message_table
+T jpeg_suppress_tables
+T jpeg_write_marker
+T jpeg_write_m_byte
+T jpeg_write_m_header
+T jpeg_write_raw_data
+T jpeg_write_scanlines
+T jpeg_write_tables
+T jpt_init_msg_header
+T jpt_read_msg_header
+T jpt_read_VBAS_info
+T jpt_reinit_msg_header
+T jround_up
+w _Jv_RegisterClasses
+U KeyValuesSystem
+U lchown@@GLIBC_2.0
+U link@@GLIBC_2.0
+U localtime@@GLIBC_2.0
+U __longjmp_chk@@GLIBC_2.11
+U lseek@@GLIBC_2.0
+T LuminanceFromY
+T LuminanceFromYxy
+U __lxstat64@@GLIBC_2.2
+U __lxstat@@GLIBC_2.0
+U malloc@@GLIBC_2.0
+U mbstowcs@@GLIBC_2.0
+T mct_decode
+T mct_decode_real
+T mct_encode
+T mct_encode_real
+T mct_getnorm
+T mct_getnorm_real
+U memalign@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
+U __memcpy_chk@@GLIBC_2.3.4
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U __memset_chk@@GLIBC_2.3.4
+U memset@@GLIBC_2.0
+U mkdir@@GLIBC_2.0
+U mkfifo@@GLIBC_2.0
+U modf@@GLIBC_2.0
+U mount@@GLIBC_2.0
+T mqc_bypass_enc
+T mqc_bypass_flush_enc
+T mqc_bypass_init_enc
+T mqc_create
+T mqc_decode
+T mqc_destroy
+T mqc_encode
+T mqc_erterm_enc
+T mqc_flush
+T mqc_init_dec
+T mqc_init_enc
+T mqc_numbytes
+T mqc_reset_enc
+T mqc_resetstates
+T mqc_restart_enc
+T mqc_restart_init_enc
+T mqc_segmark_enc
+T mqc_setstate
+U Msg
+T NormalizeY
+U open64@@GLIBC_2.2
+U opendir@@GLIBC_2.0
+U open@@GLIBC_2.0
+T opj_cio_close
+T opj_cio_open
+T opj_clock
+T opj_create_compress
+T opj_create_decompress
+T opj_decode
+T opj_decode_with_info
+T opj_destroy_compress
+T opj_destroy_cstr_info
+T opj_destroy_decompress
+T opj_encode
+T opj_encode_with_info
+T opj_event_msg
+T opj_image_create
+T opj_image_create0
+T opj_image_destroy
+T opj_jp2_decode
+T opj_jp2_encode
+T opj_set_default_decoder_parameters
+T opj_set_default_encoder_parameters
+T opj_set_event_mgr
+T opj_setup_decoder
+T opj_setup_encoder
+T opj_version
+T pi_create_decode
+T pi_create_encode
+T pi_destroy
+T pi_initialise_encode
+T pi_next
+U Plat_IsInDebugSession
+U Plat_localtime
+T png_64bit_product
+T png_access_version_number
+T png_ascii_from_fixed
+T png_ascii_from_fp
+T png_benign_error
+T png_build_gamma_table
+T png_build_grayscale_palette
+T png_calculate_crc
+T png_calloc
+T png_check_cHRM_fixed
+T png_check_chunk_name
+T png_check_fp_number
+T png_check_fp_string
+T png_check_IHDR
+T png_check_keyword
+T png_chunk_benign_error
+T png_chunk_error
+T png_chunk_unknown_handling
+T png_chunk_warning
+T png_combine_row
+T png_convert_from_struct_tm
+T png_convert_from_time_t
+T png_convert_to_rfc1123
+T png_crc_error
+T png_crc_finish
+T png_crc_read
+T png_create_info_struct
+T png_create_read_struct
+T png_create_read_struct_2
+T png_create_struct
+T png_create_struct_2
+T png_create_write_struct
+T png_create_write_struct_2
+T png_data_freer
+T png_decompress_chunk
+T png_default_flush
+T png_default_read_data
+T png_default_write_data
+T png_destroy_gamma_table
+T png_destroy_info_struct
+T png_destroy_read_struct
+T png_destroy_struct
+T png_destroy_struct_2
+T png_destroy_write_struct
+T png_do_bgr
+T png_do_chop
+T png_do_compose
+T png_do_encode_alpha
+T png_do_expand
+T png_do_expand_16
+T png_do_expand_palette
+T png_do_gamma
+T png_do_gray_to_rgb
+T png_do_invert
+T png_do_pack
+T png_do_packswap
+T png_do_quantize
+T png_do_read_filler
+T png_do_read_interlace
+T png_do_read_intrapixel
+T png_do_read_invert_alpha
+T png_do_read_swap_alpha
+T png_do_read_transformations
+T png_do_rgb_to_gray
+T png_do_scale_16_to_8
+T png_do_shift
+T png_do_strip_channel
+T png_do_swap
+T png_do_unpack
+T png_do_unshift
+T png_do_write_interlace
+T png_do_write_intrapixel
+T png_do_write_invert_alpha
+T png_do_write_swap_alpha
+T png_do_write_transformations
+T png_error
+T png_fixed
+T png_fixed_error
+T png_flush
+T png_format_number
+T png_formatted_warning
+T png_free
+T png_free_data
+T png_free_default
+T png_gamma_16bit_correct
+T png_gamma_8bit_correct
+T png_gamma_correct
+T png_gamma_significant
+T png_get_bit_depth
+T png_get_bKGD
+T png_get_channels
+T png_get_cHRM
+T png_get_cHRM_fixed
+T png_get_cHRM_XYZ
+T png_get_cHRM_XYZ_fixed
+T png_get_chunk_cache_max
+T png_get_chunk_malloc_max
+T png_get_color_type
+T png_get_compression_buffer_size
+T png_get_compression_type
+T png_get_copyright
+T png_get_current_pass_number
+T png_get_current_row_number
+T png_get_error_ptr
+T png_get_filter_type
+T png_get_gAMA
+T png_get_gAMA_fixed
+T png_get_header_ver
+T png_get_header_version
+T png_get_hIST
+T png_get_iCCP
+T png_get_IHDR
+T png_get_image_height
+T png_get_image_width
+T png_get_int_32
+T png_get_interlace_type
+T png_get_io_chunk_name
+T png_get_io_chunk_type
+T png_get_io_ptr
+T png_get_io_state
+T png_get_libpng_ver
+T png_get_mem_ptr
+T png_get_oFFs
+T png_get_pCAL
+T png_get_pHYs
+T png_get_pHYs_dpi
+T png_get_pixel_aspect_ratio
+T png_get_pixel_aspect_ratio_fixed
+T png_get_pixels_per_inch
+T png_get_pixels_per_meter
+T png_get_PLTE
+T png_get_rgb_to_gray_status
+T png_get_rowbytes
+T png_get_rows
+T png_get_sBIT
+T png_get_sCAL
+T png_get_sCAL_fixed
+T png_get_sCAL_s
+T png_get_signature
+T png_get_sPLT
+T png_get_sRGB
+T png_get_text
+T png_get_tIME
+T png_get_tRNS
+T png_get_uint_16
+T png_get_uint_31
+T png_get_uint_32
+T png_get_unknown_chunks
+T png_get_user_chunk_ptr
+T png_get_user_height_max
+T png_get_user_transform_ptr
+T png_get_user_width_max
+T png_get_valid
+T png_get_x_offset_inches
+T png_get_x_offset_inches_fixed
+T png_get_x_offset_microns
+T png_get_x_offset_pixels
+T png_get_x_pixels_per_inch
+T png_get_x_pixels_per_meter
+T png_get_y_offset_inches
+T png_get_y_offset_inches_fixed
+T png_get_y_offset_microns
+T png_get_y_offset_pixels
+T png_get_y_pixels_per_inch
+T png_get_y_pixels_per_meter
+T png_handle_as_unknown
+T png_handle_bKGD
+T png_handle_cHRM
+T png_handle_gAMA
+T png_handle_hIST
+T png_handle_iCCP
+T png_handle_IEND
+T png_handle_IHDR
+T png_handle_iTXt
+T png_handle_oFFs
+T png_handle_pCAL
+T png_handle_pHYs
+T png_handle_PLTE
+T png_handle_sBIT
+T png_handle_sCAL
+T png_handle_sPLT
+T png_handle_sRGB
+T png_handle_tEXt
+T png_handle_tIME
+T png_handle_tRNS
+T png_handle_unknown
+T png_handle_zTXt
+T png_info_destroy
+T png_info_init_3
+T png_init_io
+T png_init_read_transformations
+T png_longjmp
+T png_malloc
+T png_malloc_default
+T png_malloc_warn
+T png_muldiv
+T png_muldiv_warn
+T png_permit_mng_features
+T png_read_chunk_header
+T png_read_data
+T png_read_destroy
+T png_read_end
+T png_read_filter_row
+T png_read_finish_row
+T png_read_image
+T png_read_info
+T png_read_png
+T png_read_row
+T png_read_rows
+T png_read_sig
+T png_read_start_row
+T png_read_transform_info
+T png_read_update_info
+T png_reciprocal
+T png_reciprocal2
+T png_reset_crc
+T png_reset_zstream
+T png_safecat
+T png_save_int_32
+T png_save_uint_16
+T png_save_uint_32
+T png_set_add_alpha
+T png_set_alpha_mode
+T png_set_alpha_mode_fixed
+T png_set_background
+T png_set_background_fixed
+T png_set_benign_errors
+T png_set_bgr
+T png_set_bKGD
+T png_set_cHRM
+T png_set_cHRM_fixed
+T png_set_cHRM_XYZ
+T png_set_cHRM_XYZ_fixed
+T png_set_chunk_cache_max
+T png_set_chunk_malloc_max
+T png_set_compression_buffer_size
+T png_set_compression_level
+T png_set_compression_mem_level
+T png_set_compression_method
+T png_set_compression_strategy
+T png_set_compression_window_bits
+T png_set_crc_action
+T png_set_error_fn
+T png_set_expand
+T png_set_expand_16
+T png_set_expand_gray_1_2_4_to_8
+T png_set_filler
+T png_set_filter
+T png_set_filter_heuristics
+T png_set_filter_heuristics_fixed
+T png_set_flush
+T png_set_gAMA
+T png_set_gAMA_fixed
+T png_set_gamma
+T png_set_gamma_fixed
+T png_set_gray_to_rgb
+T png_set_hIST
+T png_set_iCCP
+T png_set_IHDR
+T png_set_interlace_handling
+T png_set_invalid
+T png_set_invert_alpha
+T png_set_invert_mono
+T png_set_keep_unknown_chunks
+T png_set_longjmp_fn
+T png_set_mem_fn
+T png_set_oFFs
+T png_set_packing
+T png_set_packswap
+T png_set_palette_to_rgb
+T png_set_pCAL
+T png_set_pHYs
+T png_set_PLTE
+T png_set_quantize
+T png_set_read_fn
+T png_set_read_status_fn
+T png_set_read_user_chunk_fn
+T png_set_read_user_transform_fn
+T png_set_rgb_to_gray
+T png_set_rgb_to_gray_fixed
+T png_set_rows
+T png_set_sBIT
+T png_set_sCAL
+T png_set_scale_16
+T png_set_sCAL_fixed
+T png_set_sCAL_s
+T png_set_shift
+T png_set_sig_bytes
+T png_set_sPLT
+T png_set_sRGB
+T png_set_sRGB_gAMA_and_cHRM
+T png_set_strip_16
+T png_set_strip_alpha
+T png_set_swap
+T png_set_swap_alpha
+T png_set_text
+T png_set_text_2
+T png_set_text_compression_level
+T png_set_text_compression_mem_level
+T png_set_text_compression_method
+T png_set_text_compression_strategy
+T png_set_text_compression_window_bits
+T png_set_tIME
+T png_set_tRNS
+T png_set_tRNS_to_alpha
+T png_set_unknown_chunk_location
+T png_set_unknown_chunks
+T png_set_user_limits
+T png_set_user_transform_info
+T png_set_write_fn
+T png_set_write_status_fn
+T png_set_write_user_transform_fn
+T png_sig_cmp
+T png_start_read_image
+T png_user_version_check
+T png_warning
+T png_warning_parameter
+T png_warning_parameter_signed
+T png_warning_parameter_unsigned
+T png_write_bKGD
+T png_write_cHRM_fixed
+T png_write_chunk
+T png_write_chunk_data
+T png_write_chunk_end
+T png_write_chunk_start
+T png_write_data
+T png_write_destroy
+T png_write_end
+T png_write_find_filter
+T png_write_finish_row
+T png_write_flush
+T png_write_gAMA_fixed
+T png_write_hIST
+T png_write_iCCP
+T png_write_IDAT
+T png_write_IEND
+T png_write_IHDR
+T png_write_image
+T png_write_info
+T png_write_info_before_PLTE
+T png_write_iTXt
+T png_write_oFFs
+T png_write_pCAL
+T png_write_pHYs
+T png_write_PLTE
+T png_write_png
+T png_write_row
+T png_write_rows
+T png_write_sBIT
+T png_write_sCAL_s
+T png_write_sig
+T png_write_sPLT
+T png_write_sRGB
+T png_write_start_row
+T png_write_tEXt
+T png_write_tIME
+T png_write_tRNS
+T png_write_zTXt
+T png_xy_from_XYZ
+T png_XYZ_from_xy
+T png_XYZ_from_xy_checked
+T png_zalloc
+T png_zfree
+U __powf_finite@@GLIBC_2.15
+U __pow_finite@@GLIBC_2.15
+U __printf_chk@@GLIBC_2.3.4
+U printf@@GLIBC_2.0
+U __progname_full@@GLIBC_2.0
+U __progname@@GLIBC_2.0
+U program_invocation_name@@GLIBC_2.0
+U program_invocation_short_name@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
+w pthread_mutex_lock@@GLIBC_2.0
+w pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U putchar@@GLIBC_2.0
+U puts@@GLIBC_2.0
+U qsort@@GLIBC_2.0
+U rand@@GLIBC_2.0
+T raw_create
+T raw_decode
+T raw_destroy
+T raw_init_dec
+T raw_numbytes
+U readdir@@GLIBC_2.0
+T read_iptc_profile
+U realloc@@GLIBC_2.0
+U realpath@@GLIBC_2.3
+U rename@@GLIBC_2.0
+U rmdir@@GLIBC_2.0
+U scandir@@GLIBC_2.0
+B seeder
+U select@@GLIBC_2.0
+U _setjmp@@GLIBC_2.0
+U __sprintf_chk@@GLIBC_2.3.4
+U srand@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
+D s_search_list
+U __stack_chk_fail@@GLIBC_2.4
+U stderr@@GLIBC_2.0
+U stdin@@GLIBC_2.0
+U strcasecmp@@GLIBC_2.0
+U strcasestr@@GLIBC_2.1
+U __strcat_chk@@GLIBC_2.3.4
+U strcat@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U __strcpy_chk@@GLIBC_2.3.4
+U strcpy@@GLIBC_2.0
+U strdup@@GLIBC_2.0
+U strerror@@GLIBC_2.0
+U strftime@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncasecmp@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strpbrk@@GLIBC_2.0
+U strrchr@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtok@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+U swprintf@@GLIBC_2.2
+U symlink@@GLIBC_2.0
+T t1_create
+T t1_decode_cblks
+T t1_destroy
+T t1_encode_cblks
+T t2_create
+T t2_decode_packets
+T t2_destroy
+T t2_encode_packets
+T tcd_create
+T tcd_decode_tile
+T tcd_destroy
+T tcd_dump
+T tcd_encode_tile
+T tcd_free_decode
+T tcd_free_decode_tile
+T tcd_free_encode
+T tcd_init_encode
+T tcd_makelayer
+T tcd_makelayer_fixed
+T tcd_malloc_decode
+T tcd_malloc_decode_tile
+T tcd_malloc_encode
+T tcd_rateallocate
+T tcd_rateallocate_fixed
+T tgt_create
+T tgt_decode
+T tgt_destroy
+T tgt_encode
+T tgt_reset
+T tgt_setvalue
+U ThreadGetCurrentId
+U ThreadInterlockedAssignIf
+U ThreadInterlockedExchange
+U time@@GLIBC_2.0
+U tmpnam@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+T uncompress
+U unlink@@GLIBC_2.0
+U usleep@@GLIBC_2.0
+U utime@@GLIBC_2.0
+U utimes@@GLIBC_2.0
+U __vsnprintf_chk@@GLIBC_2.3.4
+U vsnprintf@@GLIBC_2.0
+U __vsprintf_chk@@GLIBC_2.3.4
+U __vswprintf_chk@@GLIBC_2.4
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstol@@GLIBC_2.0
+U wcstoll@@GLIBC_2.1
+U wcstombs@@GLIBC_2.0
+T write_cidx
+T write_cptr
+U write@@GLIBC_2.0
+T write_iptc_profile
+T write_mainmhix
+T write_manf
+T write_phix
+T write_phixfaix
+T write_ppix
+T write_ppixfaix
+T write_thix
+T write_tilemhix
+T write_tpix
+T write_tpixfaix
+U __xmknod@@GLIBC_2.0
+U __xpg_basename@@GLIBC_2.0
+U __xstat64@@GLIBC_2.2
+U __xstat@@GLIBC_2.0
+T md5_finish(md5_context*, unsigned char*)
+T md5_starts(md5_context*)
+T md5_update(md5_context*, unsigned char*, int)
+T _WriteProc(void*, unsigned int, unsigned int, void*)
+T crc32_start(unsigned long)
+T Description()
+T SetMemoryIO(FreeImageIO*)
+T mng_WriteJNG(int, FreeImageIO*, FIBITMAP*, void*, int)
+T SetDefaultIO(FreeImageIO*)
+T SwapRedBlue32(FIBITMAP*)
+W void VerticalSkewT<float>(FIBITMAP*, FIBITMAP*, int, int, double, void const*)
+W void VerticalSkewT<unsigned char>(FIBITMAP*, FIBITMAP*, int, int, double, void const*)
+W void VerticalSkewT<unsigned short>(FIBITMAP*, FIBITMAP*, int, int, double, void const*)
+W void DecodeDXTBlock<DXT_BLOCKDECODER_1>(unsigned char*, unsigned char const*, long, int, int)
+W void DecodeDXTBlock<DXT_BLOCKDECODER_3>(unsigned char*, unsigned char const*, long, int, int)
+W void DecodeDXTBlock<DXT_BLOCKDECODER_5>(unsigned char*, unsigned char const*, long, int, int)
+T mng_ReadChunks(int, FreeImageIO*, void*, long, int)
+T ConvertLABtoRGB(FIBITMAP*)
+W void HorizontalSkewT<float>(FIBITMAP*, FIBITMAP*, int, int, double, void const*)
+W void HorizontalSkewT<unsigned char>(FIBITMAP*, FIBITMAP*, int, int, double, void const*)
+W void HorizontalSkewT<unsigned short>(FIBITMAP*, FIBITMAP*, int, int, double, void const*)
+T _MemoryReadProc(void*, unsigned int, unsigned int, void*)
+T _MemorySeekProc(void*, long, int)
+T _MemoryTellProc(void*)
+T _MemoryWriteProc(void*, unsigned int, unsigned int, void*)
+T ConvertCMYKtoRGBA(FIBITMAP*)
+T FreeImage_stricmp(char const*, char const*)
+T FIBITMAPToJ2KImage(int, FIBITMAP*, opj_cparameters const*)
+T J2KImageToFIBITMAP(int, opj_image const*)
+T jpeg_freeimage_dst(jpeg_compress_struct*, void*, FreeImageIO*)
+T jpeg_freeimage_src(jpeg_decompress_struct*, void*, FreeImageIO*)
+T RemoveAlphaChannel(FIBITMAP*)
+T FreeImage_Aligned_Free(void*)
+T FreeImage_TagDataWidth(FREE_IMAGE_MDTYPE)
+T FreeImage_Aligned_Malloc(unsigned int, unsigned int)
+W i2a(unsigned int, char*, unsigned int)
+T md5(unsigned char*, int, unsigned char*)
+T Load(FreeImageIO*, void*, int, int, void*)
+T crc32(void const*, int, unsigned long, unsigned long*)
+U DevMsg(char const*, ...)
+T Format()
+T md5_32(void const*, int, unsigned int, void*)
+T globber(char const*, char const*)
+T InitBMP(Plugin*, int)
+T InitCUT(Plugin*, int)
+T InitDDS(Plugin*, int)
+T InitGIF(Plugin*, int)
+T InitHDR(Plugin*, int)
+T InitICO(Plugin*, int)
+T InitIFF(Plugin*, int)
+T InitJ2K(Plugin*, int)
+T InitJNG(Plugin*, int)
+T InitJP2(Plugin*, int)
+T InitMNG(Plugin*, int)
+T InitPCD(Plugin*, int)
+T InitPCX(Plugin*, int)
+T InitPFM(Plugin*, int)
+T InitPNG(Plugin*, int)
+T InitPNM(Plugin*, int)
+T InitPSD(Plugin*, int)
+T InitRAS(Plugin*, int)
+T InitSGI(Plugin*, int)
+T InitXBM(Plugin*, int)
+T InitXPM(Plugin*, int)
+T md5hash(void const*, int, unsigned int)
+T RegExpr()
+T wildcmp(char const*, char const*)
+T InitJPEG(Plugin*, int)
+T InitPICT(Plugin*, int)
+T InitWBMP(Plugin*, int)
+T crc32_add(unsigned long&, void const*, int)
+T crc32_end(unsigned long&)
+T Extension()
+T InitKOALA(Plugin*, int)
+T InitTARGA(Plugin*, int)
+T _ReadProc(void*, unsigned int, unsigned int, void*)
+T _SeekProc(void*, long, int)
+T _TellProc(void*)
+U operator delete[](void*)@@GLIBCXX_3.4
+U operator delete(void*)@@GLIBCXX_3.4
+R z_errmsg
+T zError
+T zlibCompileFlags
+T zlibVersion
+W CBoxFilter::Filter(double)
+W CBoxFilter::~CBoxFilter()
+W CBoxFilter::~CBoxFilter()
+W CBoxFilter::~CBoxFilter()
+T PluginList::FindNodeFromFIF(int)
+T PluginList::FindNodeFromMime(char const*)
+T PluginList::FindNodeFromFormat(char const*)
+T PluginList::AddNode(void (*)(Plugin*, int), void*, char const*, char const*, char const*, char const*)
+T PluginList::PluginList()
+T PluginList::PluginList()
+T PluginList::~PluginList()
+T PluginList::~PluginList()
+T NNQuantizer::alterneigh(int, int, int, int, int)
+T NNQuantizer::altersingle(int, int, int, int, int)
+T NNQuantizer::learn(int)
+T NNQuantizer::contest(int, int, int)
+T NNQuantizer::initnet()
+T NNQuantizer::inxbuild()
+T NNQuantizer::Quantize(FIBITMAP*, int, tagRGBQUAD*, int)
+T NNQuantizer::getSample(long, int*, int*, int*)
+T NNQuantizer::inxsearch(int, int, int)
+T NNQuantizer::unbiasnet()
+T NNQuantizer::NNQuantizer(int)
+T NNQuantizer::NNQuantizer(int)
+T NNQuantizer::~NNQuantizer()
+T NNQuantizer::~NNQuantizer()
+T StringTable::Decompress(unsigned char*, int*)
+T StringTable::Initialize(int)
+T StringTable::CompressEnd(unsigned char*)
+T StringTable::CompressStart(int, int)
+T StringTable::FillInputBuffer(int)
+T StringTable::ClearCompressorTable()
+T StringTable::ClearDecompressorTable()
+T StringTable::Done()
+T StringTable::Compress(unsigned char*, int*)
+T StringTable::StringTable()
+T StringTable::StringTable()
+T StringTable::~StringTable()
+T StringTable::~StringTable()
+T WuQuantizer::Cut(WuQuantizer::tagBox*, WuQuantizer::tagBox*)
+T WuQuantizer::M3D(int*, int*, int*, int*, float*)
+T WuQuantizer::Top(WuQuantizer::tagBox*, unsigned char, int, int*)
+T WuQuantizer::Var(WuQuantizer::tagBox*)
+T WuQuantizer::Vol(WuQuantizer::tagBox*, int*)
+T WuQuantizer::Mark(WuQuantizer::tagBox*, int, unsigned char*)
+T WuQuantizer::Bottom(WuQuantizer::tagBox*, unsigned char, int*)
+T WuQuantizer::Hist3D(int*, int*, int*, int*, float*, int, tagRGBQUAD*)
+T WuQuantizer::Maximize(WuQuantizer::tagBox*, unsigned char, int, int, int*, int, int, int, int)
+T WuQuantizer::Quantize(int, int, tagRGBQUAD*)
+T WuQuantizer::WuQuantizer(FIBITMAP*)
+T WuQuantizer::WuQuantizer(FIBITMAP*)
+T WuQuantizer::~WuQuantizer()
+T WuQuantizer::~WuQuantizer()
+W CONVERT_TYPE<double, float>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<double, unsigned char>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<double, int>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<double, unsigned int>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<double, short>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<double, unsigned short>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<float, int>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<float, unsigned int>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<float, short>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<int, unsigned char>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<unsigned int, unsigned char>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+W CONVERT_TYPE<short, unsigned char>::convert(FIBITMAP*, FREE_IMAGE_TYPE)
+T psdThumbnail::Read(FreeImageIO*, void*, int, bool)
+T psdThumbnail::psdThumbnail()
+T psdThumbnail::psdThumbnail()
+T psdThumbnail::~psdThumbnail()
+T psdThumbnail::~psdThumbnail()
+T CResizeEngine::verticalFilter(FIBITMAP*, unsigned int, unsigned int, FIBITMAP*, unsigned int, unsigned int)
+T CResizeEngine::horizontalFilter(FIBITMAP*, unsigned int, unsigned int, FIBITMAP*, unsigned int, unsigned int)
+T CResizeEngine::scale(FIBITMAP*, unsigned int, unsigned int)
+W CResizeEngine::~CResizeEngine()
+W CResizeEngine::~CResizeEngine()
+W CResizeEngine::~CResizeEngine()
+T CWeightsTable::CWeightsTable(CGenericFilter*, unsigned int, unsigned int)
+T CWeightsTable::CWeightsTable(CGenericFilter*, unsigned int, unsigned int)
+T CWeightsTable::~CWeightsTable()
+T CWeightsTable::~CWeightsTable()
+T psdHeaderInfo::Read(FreeImageIO*, void*)
+T psdHeaderInfo::psdHeaderInfo()
+T psdHeaderInfo::psdHeaderInfo()
+T psdHeaderInfo::~psdHeaderInfo()
+T psdHeaderInfo::~psdHeaderInfo()
+T psdICCProfile::Read(FreeImageIO*, void*, int)
+T psdICCProfile::clear()
+T psdICCProfile::psdICCProfile()
+T psdICCProfile::psdICCProfile()
+T psdICCProfile::~psdICCProfile()
+T psdICCProfile::~psdICCProfile()
+W CBicubicFilter::Filter(double)
+W CBicubicFilter::~CBicubicFilter()
+W CBicubicFilter::~CBicubicFilter()
+W CBicubicFilter::~CBicubicFilter()
+W CBSplineFilter::Filter(double)
+W CBSplineFilter::~CBSplineFilter()
+W CBSplineFilter::~CBSplineFilter()
+W CBSplineFilter::~CBSplineFilter()
+W CGenericFilter::~CGenericFilter()
+W CGenericFilter::~CGenericFilter()
+W CGenericFilter::~CGenericFilter()
+T psdDisplayInfo::Read(FreeImageIO*, void*)
+T psdDisplayInfo::psdDisplayInfo()
+T psdDisplayInfo::psdDisplayInfo()
+T psdDisplayInfo::~psdDisplayInfo()
+T psdDisplayInfo::~psdDisplayInfo()
+T TargaThumbnail::toFIBITMAP()
+W CBilinearFilter::Filter(double)
+W CBilinearFilter::~CBilinearFilter()
+W CBilinearFilter::~CBilinearFilter()
+W CBilinearFilter::~CBilinearFilter()
+W CLanczos3Filter::Filter(double)
+W CLanczos3Filter::~CLanczos3Filter()
+W CLanczos3Filter::~CLanczos3Filter()
+W CLanczos3Filter::~CLanczos3Filter()
+W CONVERT_TO_BYTE<double>::convert(FIBITMAP*, int)
+W CONVERT_TO_BYTE<float>::convert(FIBITMAP*, int)
+W CONVERT_TO_BYTE<int>::convert(FIBITMAP*, int)
+W CONVERT_TO_BYTE<unsigned int>::convert(FIBITMAP*, int)
+W CONVERT_TO_BYTE<short>::convert(FIBITMAP*, int)
+W CONVERT_TO_BYTE<unsigned short>::convert(FIBITMAP*, int)
+T psdImageResource::Reset()
+T psdImageResource::psdImageResource()
+T psdImageResource::psdImageResource()
+T psdImageResource::~psdImageResource()
+T psdImageResource::~psdImageResource()
+W CCatmullRomFilter::Filter(double)
+W CCatmullRomFilter::~CCatmullRomFilter()
+W CCatmullRomFilter::~CCatmullRomFilter()
+W CCatmullRomFilter::~CCatmullRomFilter()
+T psdColourModeData::FillPalette(FIBITMAP*)
+T psdColourModeData::Read(FreeImageIO*, void*)
+T psdColourModeData::psdColourModeData()
+T psdColourModeData::psdColourModeData()
+T psdColourModeData::~psdColourModeData()
+T psdColourModeData::~psdColourModeData()
+T psdResolutionInfo::GetResolutionInfo(unsigned int&, unsigned int&)
+T psdResolutionInfo::Read(FreeImageIO*, void*)
+T psdResolutionInfo::psdResolutionInfo()
+T psdResolutionInfo::psdResolutionInfo()
+T psdResolutionInfo::~psdResolutionInfo()
+T psdResolutionInfo::~psdResolutionInfo()
+W CONVERT_TO_COMPLEX<double>::convert(FIBITMAP*)
+W CONVERT_TO_COMPLEX<float>::convert(FIBITMAP*)
+W CONVERT_TO_COMPLEX<unsigned char>::convert(FIBITMAP*)
+W CONVERT_TO_COMPLEX<int>::convert(FIBITMAP*)
+W CONVERT_TO_COMPLEX<unsigned int>::convert(FIBITMAP*)
+W CONVERT_TO_COMPLEX<short>::convert(FIBITMAP*)
+W CONVERT_TO_COMPLEX<unsigned short>::convert(FIBITMAP*)
+T psdResolutionInfo_v2::Read(FreeImageIO*, void*)
+T psdResolutionInfo_v2::psdResolutionInfo_v2()
+T psdResolutionInfo_v2::psdResolutionInfo_v2()
+T psdResolutionInfo_v2::~psdResolutionInfo_v2()
+T psdResolutionInfo_v2::~psdResolutionInfo_v2()
+T Bootil::AutoBuffer::EnsureCapacity(unsigned int)
+T Bootil::AutoBuffer::Clear()
+T Bootil::AutoBuffer::AutoBuffer(int)
+T Bootil::AutoBuffer::AutoBuffer(int)
+T Bootil::AutoBuffer::~AutoBuffer()
+T Bootil::AutoBuffer::~AutoBuffer()
+T Bootil::AutoBuffer::~AutoBuffer()
+T Bootil::IsShuttingDown()
+T Bootil::File::GetTempDir()
+T Bootil::File::GetTempFilename()
+T Bootil::Math::Random::Int(int, int)
+T Bootil::Math::Random::Bool()
+T Bootil::Math::Random::Seed(unsigned int)
+T Bootil::Debug::PopupMessage(char const*, ...)
+T Bootil::Debug::SuppressPopups(bool)
+T Bootil::Debug::Crash::SetupCallback()
+T Bootil::Debug::Crash::SetMinidumpFunction(void (*)(unsigned int, void*))
+T Bootil::Debug::Crash::FunctionCalledOnCrash(unsigned int, void*)
+T Bootil::Debug::Crash::DoCrash()
+T Bootil::Debug::Internal::DoAssert(char const*, unsigned int, char const*, char const*, char const*, ...)
+T Bootil::Debug::IListener::Add(Bootil::Debug::IListener*)
+T Bootil::Debug::IListener::Remove(Bootil::Debug::IListener*)
+T Bootil::Debug::LastError()
+T Bootil::Debug::Listeners()
+T Bootil::Buffer::GetCurrent()
+T Bootil::Buffer::ReadString()
+T Bootil::Buffer::SetWritten(unsigned int)
+T Bootil::Buffer::WriteBuffer(Bootil::Buffer const&)
+T Bootil::Buffer::EnsureCapacity(unsigned int)
+T Bootil::Buffer::SetExternalBuffer(void*, int)
+T Bootil::Buffer::Read(void*, int)
+T Bootil::Buffer::Clear()
+T Bootil::Buffer::Write(void const*, unsigned int)
+T Bootil::Buffer::SetPos(unsigned int)
+T Bootil::Buffer::MoveMem(unsigned int, unsigned int, unsigned int)
+T Bootil::Buffer::TrimLeft(unsigned int)
+T Bootil::Buffer::Buffer(void*, int)
+T Bootil::Buffer::Buffer()
+T Bootil::Buffer::Buffer(void*, int)
+T Bootil::Buffer::Buffer()
+T Bootil::Buffer::~Buffer()
+T Bootil::Buffer::~Buffer()
+T Bootil::Buffer::~Buffer()
+T Bootil::Hasher::MD5::Easy(void const*, unsigned int)
+T Bootil::Hasher::CRC32::Add(unsigned long&, void const*, unsigned int)
+T Bootil::Hasher::CRC32::End(unsigned long&)
+T Bootil::Hasher::CRC32::Easy(void const*, unsigned int, unsigned long)
+T Bootil::Hasher::CRC32::Start(unsigned long)
+T Bootil::Output::Msg(char const*, ...)
+T Bootil::Output::Error(char const*, ...)
+T Bootil::Output::Warning(char const*, ...)
+T Bootil::String::Format::NiceDouble(double)
+T Bootil::String::Format::BinaryToHex(void const*, unsigned int)
+T Bootil::String::Format::MemoryPerSecond(int)
+T Bootil::String::Format::CommaSeperatedInt(int)
+T Bootil::String::Format::Int(int)
+T Bootil::String::Format::Print(char const*, ...)
+T Bootil::String::Format::Print(wchar_t const*, ...)
+T Bootil::String::Format::YesNo(bool)
+T Bootil::String::Format::Memory(int)
+T Bootil::String::Format::UInt64(unsigned long long)
+T Bootil::String::Format::VarArgs(char const*, char*)
+T Bootil::String::Format::VarArgs(wchar_t const*, char*)
+T Bootil::String::Format::NiceFloat(float)
+T Bootil::String::Random(int, bool, bool, bool, bool)
+T Bootil::Console::BGColorPop()
+T Bootil::Console::FGColorPop()
+T Bootil::Console::WaitForKey()
+T Bootil::Console::BGColorPush(Bootil::Console::ConsoleColor)
+T Bootil::Console::FGColorPush(Bootil::Console::ConsoleColor)
+T Bootil::Console::UpdateColor()
+T Bootil::Console::PosPushRelative(int, int)
+T Bootil::Console::SetCursorVisible(bool)
+T Bootil::Console::Cls()
+T Bootil::Console::Msg(Bootil::Console::ConsoleColor, Bootil::Console::ConsoleColor, char const*, ...)
+B Bootil::Console::Input::m_CaretPos
+T Bootil::Console::Input::PostOutput()
+T Bootil::Console::Input::OnBackspace()
+T Bootil::Console::Input::GetLineInProgress()
+T Bootil::Console::Input::Plat_GetConsoleCharNonBlocking()
+T Bootil::Console::Input::Cycle()
+T Bootil::Console::Input::Flush()
+T Bootil::Console::Input::OnLeft()
+T Bootil::Console::Input::GetLine()
+B Bootil::Console::Input::m_Lines
+T Bootil::Console::Input::OnRight()
+T Bootil::Console::Input::DrawLine()
+T Bootil::Console::Input::OnReturn()
+T Bootil::Console::Input::ClearLine()
+B Bootil::Console::Input::m_strLine
+T Bootil::Console::Input::PreOutput()
+T Bootil::Console::PosPop()
+T Bootil::Console::PosPush(int, int)
+T Bootil::Startup()
+T Bootil::Platform::CurrentDir()
+T Bootil::Platform::GetKeyChar()
+T Bootil::Platform::ProgramName()
+T Bootil::Platform::Architecture()
+T Bootil::Platform::DesktopWidth()
+T Bootil::Platform::IsKeyPressed()
+T Bootil::Platform::LibraryClose(void*)
+T Bootil::Platform::PlatformName()
+T Bootil::Platform::TemporaryDir()
+T Bootil::Platform::DesktopHeight()
+T Bootil::Platform::ProgramFolder()
+T Bootil::Platform::CurrentUserName()
+T Bootil::Platform::FullProgramName()
+T Bootil::Platform::GetMilliseconds()
+T Bootil::Platform::FormatSystemError(unsigned long)
+T Bootil::Platform::PlatformNameShort()
+T Bootil::Platform::TemporaryFilename()
+T Bootil::Platform::Sleep(unsigned int)
+T Bootil::Platform::LastError()
+T Bootil::Shutdown()
+T TagLib::getTagInfo(TagLib::MDMODEL, unsigned short)
+T TagLib::getTagFieldName(TagLib::MDMODEL, unsigned short, char*)
+T TagLib::addMetadataModel(TagLib::MDMODEL, tagTagInfo*)
+T TagLib::getFreeImageModel(TagLib::MDMODEL)
+T TagLib::getTagDescription(TagLib::MDMODEL, unsigned short)
+T TagLib::getTagID(TagLib::MDMODEL, char const*)
+T TagLib::instance()
+T TagLib::TagLib()
+T TagLib::TagLib()
+T TagLib::~TagLib()
+T TagLib::~TagLib()
+T psdParser::ReadImageData(FreeImageIO*, void*)
+T psdParser::ReadImageResources(FreeImageIO*, void*, int)
+T psdParser::ReadLayerAndMaskInfoSection(FreeImageIO*, void*)
+T psdParser::Load(FreeImageIO*, void*, int, int)
+T psdParser::psdParser()
+T psdParser::psdParser()
+T psdParser::~psdParser()
+T psdParser::~psdParser()
+U operator new[](unsigned int)@@GLIBCXX_3.4
+U operator new[](unsigned int, std::nothrow_t const&)@@GLIBCXX_3.4
+T PluginList::Size() const
+T PluginList::IsEmpty() const
+T Bootil::Buffer::GetWritten() const
+T Bootil::Buffer::GetPos() const
+T Bootil::Buffer::GetBase(unsigned int) const
+T Bootil::Buffer::GetSize() const
+U std::string::find_last_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::find_first_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::find(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::rfind(char, unsigned int) const@@GLIBCXX_3.4
+U std::string::rfind(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::compare(char const*) const@@GLIBCXX_3.4
+U std::string::compare(std::string const&) const@@GLIBCXX_3.4
+U std::__basic_file<char>::is_open() const@@GLIBCXX_3.4
+U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::basic_string(wchar_t const*, std::allocator<wchar_t> const&)@@GLIBCXX_3.4
+U std::istream::read(char*, int)@@GLIBCXX_3.4
+U std::istream::seekg(long long, std::_Ios_Seekdir)@@GLIBCXX_3.4
+U std::istream::tellg()@@GLIBCXX_3.4
+U std::ostream::write(char const*, int)@@GLIBCXX_3.4
+U std::ostream::operator<<(std::basic_streambuf<char, std::char_traits<char> >*)@@GLIBCXX_3.4
+U std::string::_M_leak_hard()@@GLIBCXX_3.4
+U std::string::_M_replace_aux(unsigned int, unsigned int, unsigned int, char)@@GLIBCXX_3.4
+U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::_Rep::_M_dispose(std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
+U std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::swap(std::string&)@@GLIBCXX_3.4
+U std::string::append(unsigned int, char)@@GLIBCXX_3.4
+U std::string::append(char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::append(std::string const&)@@GLIBCXX_3.4
+U std::string::assign(char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::assign(std::string const&)@@GLIBCXX_3.4
+U std::string::insert(unsigned int, char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::resize(unsigned int, char)@@GLIBCXX_3.4
+U std::string::replace(unsigned int, unsigned int, char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::reserve(unsigned int)@@GLIBCXX_3.4
+U std::string::_M_mutate(unsigned int, unsigned int, unsigned int)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@@GLIBCXX_3.4
+U std::__basic_file<char>::~__basic_file()@@GLIBCXX_3.4
+U std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)@@GLIBCXX_3.4
+U std::basic_filebuf<char, std::char_traits<char> >::close()@@GLIBCXX_3.4
+U std::basic_filebuf<char, std::char_traits<char> >::basic_filebuf()@@GLIBCXX_3.4
+U std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf()@@GLIBCXX_3.4
+U std::basic_ifstream<char, std::char_traits<char> >::~basic_ifstream()@@GLIBCXX_3.4
+U std::basic_ofstream<char, std::char_traits<char> >::~basic_ofstream()@@GLIBCXX_3.4
+U std::locale::~locale()@@GLIBCXX_3.4
+U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
+U std::ios_base::Init::Init()@@GLIBCXX_3.4
+U std::ios_base::Init::~Init()@@GLIBCXX_3.4
+U std::ios_base::ios_base()@@GLIBCXX_3.4
+U std::ios_base::~ios_base()@@GLIBCXX_3.4
+U std::bad_alloc::~bad_alloc()@@GLIBCXX_3.4
+U std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)@@GLIBCXX_3.4
+U std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)@@GLIBCXX_3.4
+U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+U operator new(unsigned int)@@GLIBCXX_3.4
+U operator new(unsigned int, std::nothrow_t const&)@@GLIBCXX_3.4
+U std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)@@GLIBCXX_3.4.9
+U std::__throw_bad_alloc()@@GLIBCXX_3.4
+U std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
+U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::_Rb_tree_increment(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
+U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::__throw_out_of_range(char const*)@@GLIBCXX_3.4
+U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+U std::cout@@GLIBCXX_3.4
+U std::nothrow@@GLIBCXX_3.4
+U std::terminate()@@GLIBCXX_3.4
+V typeinfo for CBoxFilter
+V typeinfo for CResizeEngine
+V typeinfo for CBicubicFilter
+V typeinfo for CBSplineFilter
+V typeinfo for CGenericFilter
+V typeinfo for CBilinearFilter
+V typeinfo for CLanczos3Filter
+V typeinfo for CCatmullRomFilter
+U typeinfo for int@@CXXABI_1.3
+V typeinfo for Bootil::AutoBuffer
+V typeinfo for Bootil::Buffer
+U typeinfo for char*@@CXXABI_1.3
+U typeinfo for char const*@@CXXABI_1.3
+U typeinfo for std::bad_alloc@@GLIBCXX_3.4
+U typeinfo for std::exception@@GLIBCXX_3.4
+V typeinfo name for CBoxFilter
+V typeinfo name for CResizeEngine
+V typeinfo name for CBicubicFilter
+V typeinfo name for CBSplineFilter
+V typeinfo name for CGenericFilter
+V typeinfo name for CBilinearFilter
+V typeinfo name for CLanczos3Filter
+V typeinfo name for CCatmullRomFilter
+V typeinfo name for Bootil::AutoBuffer
+V typeinfo name for Bootil::Buffer
+U VTT for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
+U VTT for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
+V vtable for CBoxFilter
+V vtable for CResizeEngine
+V vtable for CBicubicFilter
+V vtable for CBSplineFilter
+V vtable for CGenericFilter
+V vtable for CBilinearFilter
+V vtable for CLanczos3Filter
+V vtable for CCatmullRomFilter
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+V vtable for Bootil::AutoBuffer
+V vtable for Bootil::Buffer
+U vtable for std::basic_filebuf<char, std::char_traits<char> >@@GLIBCXX_3.4
+U vtable for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
+U vtable for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
+U vtable for std::basic_streambuf<char, std::char_traits<char> >@@GLIBCXX_3.4
+U vtable for std::bad_alloc@@GLIBCXX_3.4
+U vtable for std::basic_ios<char, std::char_traits<char> >@@GLIBCXX_3.4

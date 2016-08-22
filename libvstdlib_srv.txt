@@ -1,0 +1,1257 @@
+U abort@@GLIBC_2.0
+U access@@GLIBC_2.0
+t add_fdes
+d adds.9477
+t base_from_cb_data
+t base_from_object
+B __bss_start
+U chdir@@GLIBC_2.0
+U chmod@@GLIBC_2.0
+U chown@@GLIBC_2.1
+t classify_object_over_fdes
+U closedir@@GLIBC_2.0
+U CommandLine_Tier0
+b completed.7134
+T Coroutine_Cancel
+T Coroutine_Continue
+T Coroutine_Create
+T Coroutine_DebugAssert
+T Coroutine_DebugBreak
+T Coroutine_GetCurrentlyActive
+T Coroutine_GetStackDepth
+T Coroutine_IsActive
+T Coroutine_ReleaseThreadMemory
+T Coroutine_Test
+T Coroutine_ValidateGlobals
+T Coroutine_YieldToMain
+T CreateInterface
+T CreateThreadPool
+d __CTOR_END__
+d __CTOR_LIST__
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
+B cvar
+U __cxa_atexit@@GLIBC_2.1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_abort@@CXXABI_1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+U __cxa_pure_virtual@@CXXABI_1.3
+t __deregister_frame
+t __deregister_frame_info
+t __deregister_frame_info_bases
+T DestroyThreadPool
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+t __do_global_ctors_aux
+t __do_global_dtors_aux
+d __dso_handle
+d __DTOR_END__
+b dtor_idx.7136
+d __DTOR_LIST__
+b dwarf_reg_size_table
+d _DYNAMIC
+U __dynamic_cast@@CXXABI_1.3
+D _edata
+B _end
+U __errno_location@@GLIBC_2.0
+U Error
+t execute_cfa_program
+t execute_stack_op
+U fclose@@GLIBC_2.1
+t fde_mixed_encoding_compare
+t fde_single_encoding_compare
+t fde_unencoded_compare
+U fgets@@GLIBC_2.0
+T _fini
+U fopen64@@GLIBC_2.1
+U fopen@@GLIBC_2.1
+U fprintf@@GLIBC_2.0
+t frame_downheap
+t frame_dummy
+r __FRAME_END__
+b frame_hdr_cache
+b frame_hdr_cache_head
+t frame_heapsort
+t __frame_state_for
+U fread@@GLIBC_2.0
+U free@@GLIBC_2.0
+U freopen@@GLIBC_2.0
+U g_ClockSpeedMillisecondsMultiplier
+t get_cie_encoding
+U GetCPUInformation
+U getcwd@@GLIBC_2.0
+U getenv@@GLIBC_2.0
+T GetNameFromOSType
+T GetOSDetailString
+T GetOSType
+T GetPlatformName
+t global constructors keyed to CreateThreadPool
+t global constructors keyed to cvar
+t global constructors keyed to g_ThreadLocalCoroutineMgr
+t global constructors keyed to g_VCoverage
+t global constructors keyed to InstallUniformRandomStream
+t global constructors keyed to KeyValuesSystem
+t global constructors keyed to s_StringCharConversion
+t global constructors keyed to _V_memset(char const*, int, void*, int, int)
+t global constructors keyed to CUtlString::AllocMemory(unsigned int)
+t global constructors keyed to CMemoryStack::CMemoryStack()
+t global constructors keyed to ConCommandBase::s_pConCommandBases
+t global constructors keyed to CUtlMemoryPool::g_ReportFunc
+t global constructors keyed to CCvar::CCVarIteratorInternal::SetFirst()
+d _GLOBAL_OFFSET_TABLE_
+w __gmon_start__
+b g_pCVar
+b g_pProcessUtils
+D g_pThreadPool
+b g_pUtlSortVectorQSortContext
+b g_ThreadLocalCoroutineMgr
+b g_ThreadMutexCoroutineMgr
+b g_ThreadPool
+B g_VCoverage
+b g_VecPCoroutineMgr
+U g_VProfCurrentProfile
+U __gxx_personality_v0@@CXXABI_1.3
+t __i686.get_pc_thunk.bx
+t __i686.get_pc_thunk.cx
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T _init
+t init_dwarf_reg_size_table
+T InstallUniformRandomStream
+U Is64BitOS
+U isspace@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+d __JCR_END__
+d __JCR_LIST__
+w _Jv_RegisterClasses
+T KeyValuesSystem
+U lchown@@GLIBC_2.0
+t linear_search_fdes
+U link@@GLIBC_2.0
+U __log_finite@@GLIBC_2.15
+U longjmp@@GLIBC_2.0
+t lstat
+t __lstat
+U __lxstat64@@GLIBC_2.2
+U __lxstat@@GLIBC_2.0
+U malloc@@GLIBC_2.0
+b marker.8860
+U mbstowcs@@GLIBC_2.0
+U memalign@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U mkdir@@GLIBC_2.0
+U mkfifo@@GLIBC_2.0
+t mknod
+t __mknod
+U mount@@GLIBC_2.0
+U Msg
+b object_mutex
+b once_regsizes.9698
+U open64@@GLIBC_2.2
+U opendir@@GLIBC_2.0
+U open@@GLIBC_2.0
+T OSTypesAreCompatible
+U pclose@@GLIBC_2.1
+U Plat_IsInDebugSession
+U Plat_localtime
+U popen@@GLIBC_2.1
+U __powf_finite@@GLIBC_2.15
+U __pow_finite@@GLIBC_2.15
+U printf@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+U pthread_mutexattr_init@@GLIBC_2.0
+U pthread_mutexattr_settype@@GLIBC_2.1
+U pthread_mutex_destroy@@GLIBC_2.0
+U pthread_mutex_init@@GLIBC_2.0
+U pthread_mutex_lock@@GLIBC_2.0
+U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+t qsort_s
+U raise@@GLIBC_2.0
+U rand@@GLIBC_2.0
+T RandomFloat
+T RandomFloatExp
+T RandomGaussianFloat
+T RandomInt
+T RandomSeed
+U readdir@@GLIBC_2.0
+t read_encoded_value_with_base
+t read_sleb128
+U realloc@@GLIBC_2.0
+U realpath@@GLIBC_2.3
+t __register_frame
+t __register_frame_info
+t __register_frame_info_bases
+t __register_frame_info_table
+t __register_frame_info_table_bases
+t __register_frame_table
+U rename@@GLIBC_2.0
+U rmdir@@GLIBC_2.0
+T RunThreadPoolTests
+U RunTSListTests
+U RunTSQueueTests
+U scandir@@GLIBC_2.0
+t search_object
+b seen_objects
+t set_fast_math
+U _setjmp@@GLIBC_2.0
+t size_of_encoded_value
+b s_NoEscConversion
+U snprintf@@GLIBC_2.0
+b s_StringCharConversion
+U __stack_chk_fail@@GLIBC_2.4
+t stat
+t __stat
+U stderr@@GLIBC_2.0
+U strcasecmp@@GLIBC_2.0
+U strcasestr@@GLIBC_2.1
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strdup@@GLIBC_2.0
+U strftime@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncasecmp@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strpbrk@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+b subs.9478
+U symlink@@GLIBC_2.0
+t __tcf_0
+U ThreadGetCurrentId
+U ThreadGetPriority
+U ThreadInMainThread
+U ThreadInterlockedAssignIf
+U ThreadInterlockedAssignIf64
+U ThreadInterlockedCompareExchangePointer
+U ThreadInterlockedDecrement
+U ThreadInterlockedExchange
+U ThreadInterlockedExchangeAdd
+U ThreadInterlockedIncrement
+U ThreadSetAffinity
+U ThreadSleep
+U time@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+t __udivdi3
+U unlink@@GLIBC_2.0
+b unseen_objects
+t _Unwind_Backtrace
+t _Unwind_DebugHook
+t _Unwind_DeleteException
+t _Unwind_FindEnclosingFunction
+t _Unwind_Find_FDE
+t _Unwind_ForcedUnwind
+t _Unwind_ForcedUnwind_Phase2
+t _Unwind_GetCFA
+t _Unwind_GetDataRelBase
+t _Unwind_GetGR
+t _Unwind_GetIP
+t _Unwind_GetIPInfo
+t _Unwind_GetLanguageSpecificData
+t _Unwind_GetRegionStart
+t _Unwind_GetTextRelBase
+t _Unwind_IteratePhdrCallback
+t _Unwind_RaiseException
+t _Unwind_RaiseException_Phase2
+t _Unwind_Resume
+t _Unwind_Resume_or_Rethrow
+t _Unwind_SetGR
+t _Unwind_SetIP
+t _Unwind_SetSpColumn
+U utime@@GLIBC_2.0
+U utimes@@GLIBC_2.0
+t uw_frame_state_for
+t uw_init_context_1
+t uw_install_context_1
+t uw_update_context
+t uw_update_context_1
+U vsnprintf@@GLIBC_2.0
+T VStdLib_GetICVarFactory
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+t __wrap_access
+t __wrap_chmod
+t __wrap_chown
+t __wrap_creat
+t __wrap_fopen
+t __wrap_fopen64
+t __wrap_freopen
+t __wrap_lchown
+t __wrap_link
+t __wrap_lstat
+t __wrap___lxstat
+t __wrap___lxstat64
+t __wrap_mkdir
+t __wrap_mkfifo
+t __wrap_mknod
+t __wrap_mount
+t __wrap_open
+t __wrap_open64
+t __wrap_opendir
+t __wrap_realpath
+t __wrap_rename
+t __wrap_rmdir
+t __wrap_scandir
+t __wrap_stat
+t __wrap_symlink
+t __wrap_unlink
+t __wrap_utime
+t __wrap_utimes
+t __wrap___xstat
+t __wrap___xstat64
+t __x86.get_pc_thunk.bx
+U __xmknod@@GLIBC_2.0
+U __xstat64@@GLIBC_2.2
+U __xstat@@GLIBC_2.0
+t HashString(char const*)
+t V_FileBase(char const*, char*, int)
+t _V_memmove(char const*, int, void*, void const*, int)
+t V_snprintf(char*, int, char const*, ...)
+t V_strlower(char*)
+t V_strnicmp(char const*, char const*, int)
+t V_strnistr(char const*, char const*, int)
+t _V_strrchr(char const*, int, char const*, char)
+t V_StrRight(char const*, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtowcs(char const*, int, wchar_t*, int)
+t V_wcstostr(wchar_t const*, int, char*, int)
+t AllocString(char const*, int)
+U ConColorMsg(Color const&, char const*, ...)
+t MurmurHash2(void const*, int, unsigned int)
+t Q_URLDecode(char*, int, char const*, int)
+t Q_URLEncode(char*, int, char const*, int)
+t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_vsnprintf(char*, int, char const*, char*)
+t _V_wcslower(char const*, int, wchar_t*)
+t MurmurHash64(void const*, int, unsigned int)
+t V_FixSlashes(char*, char)
+t V_pretifymem(float, int, bool)
+t V_pretifynum(long long)
+t V_vsnwprintf(wchar_t*, int, wchar_t const*, char*)
+t GCoroutineMgr()
+t iHexCharToInt(char)
+t PATHSEPARATOR(char)
+t Q_UTF16ToUTF8(unsigned short const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF8(wchar_t const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF16(char const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF32(char const*, wchar_t*, int, EStringConvertErrorPolicy)
+t V_AppendSlash(char*, int)
+t V_binarytohex(unsigned char const*, int, char*, int)
+t V_GetFileName(char const*)
+t V_hextobinary(char const*, int, unsigned char*, int)
+t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t _V_UCS2ToUTF8(unsigned short const*, char*, int)
+t _V_UTF8ToUCS2(char const*, int, unsigned short*, int)
+t cIntToHexDigit(int)
+t Q_IsMeanSpaceW(wchar_t)
+t Q_URLDecodeRaw(char*, int, char const*, int)
+t Q_URLEncodeRaw(char*, int, char const*, int)
+t Q_UTF16ToUTF32(unsigned short const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF16(wchar_t const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Sys_GetFactory(CSysModule*)
+t Sys_GetFactory(char const*)
+t Sys_LoadModule(char const*, Sys_Flags)
+t V_SetExtension(char*, char const*, int)
+t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t V_StripLastDir(char*, int)
+t V_vsnprintfRet(char*, int, char const*, char*, bool*)
+t ConVar_Register(int, IConCommandBaseAccessor*)
+t CoroutineTestL1(void*)
+t CoroutineTestL2(void*)
+t GetModuleHandle(char const*)
+t Q_UChar32ToUTF8(wchar_t, char*)
+t Q_UnicodeLength(char const*)
+t Q_UnicodeLength(unsigned short const*)
+t Q_UnicodeLength(wchar_t const*)
+t Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
+t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
+t Sys_LoadLibrary(char const*, Sys_Flags)
+t V_FixupPathName(char*, unsigned int, char const*)
+t V_StripFilename(char*)
+t Coroutine_Finish()
+t Coroutine_Launch(CCoroutine&)
+t Q_IsValidUChar32(wchar_t)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UnicodeAdvance(char*, int)
+t Q_UnicodeAdvance(unsigned short*, int)
+t Q_UnicodeAdvance(wchar_t*, int)
+t Q_UTF16ToUChar32(unsigned short const*, wchar_t&, bool&)
+t Sys_UnloadModule(CSysModule*)
+t V_IsAbsolutePath(char const*)
+t V_StripExtension(char const*, char*, int)
+t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
+t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
+t CharacterSetBuild(characterset_t*, char const*)
+t ConVar_PrintFlags(ConCommandBase const*)
+t ConVar_Unregister()
+t CoroutineTestFunc(void*)
+t Q_UnicodeValidate(char const*)
+t Q_UnicodeValidate(unsigned short const*)
+t Q_UnicodeValidate(wchar_t const*)
+t StringAfterPrefix(char const*, char const*)
+t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
+t V_ComposeFileName(char const*, char const*, char*, int)
+t V_ExtractFilePath(char const*, char*, int)
+t HashStringCaseless(char const*)
+t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF32(char const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t Sys_GetFactoryThis()
+t V_DefaultExtension(char*, char const*, int)
+t V_FixDoubleSlashes(char*)
+t V_GetFileExtension(char const*)
+t V_MakeAbsolutePath(char*, int, char const*, char const*)
+t V_MakeRelativePath(char const*, char const*, char*, int)
+t V_RemoveDotSlashes(char*, char, bool)
+t Q_UChar32ToUTF16Len(wchar_t)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t MurmurHash2LowerCase(char const*, unsigned int)
+t V_StripTrailingSlash(char*)
+t ConnectTier1Libraries(void* (**)(char const*, int*), int)
+t DefaultCompletionFunc(char const*, char (*) [128])
+t Sys_IsDebuggerPresent()
+t V_GetCurrentDirectory(char*, int)
+t V_SetCurrentDirectory(char const*)
+t V_UnqualifiedFileName(char const*)
+t BGetLocalFormattedDate(long, char*, int)
+t BGetLocalFormattedTime(long, char*, int)
+t GetNoEscCharConversion()
+t V_ExtractFileExtension(char const*, char*, int)
+t V_normalizeFloatString(char*)
+t ConVar_PrintDescription(ConCommandBase const*)
+t CreateInterfaceInternal(char const*, int*)
+t DisconnectTier1Libraries()
+t GetCStringCharConversion()
+t Q_RemoveAllEvilCharacters(char*)
+t Internal_Coroutine_Continue(int, char const*, char const*)
+t Sys_RunningWithDebugModules()
+t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
+t GetOSTypeFromString_Deprecated(char const*)
+t HashStringCaselessConventional(char const*)
+t StringAfterPrefixCaseSensitive(char const*, char const*)
+t V_AddBackSlashesToSpecialChars(char const*)
+t Q_StripPrecedingAndTrailingWhitespace(char*)
+t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
+t Hash4(void const*)
+t Hash8(void const*)
+U ConMsg(char const*, ...)
+U DevMsg(char const*, ...)
+t Hash12(void const*)
+t Hash16(void const*)
+t V_atof(char const*)
+t V_atoi(char const*)
+t HashInt(int)
+t V_atoi64(char const*)
+t V_nibble(char)
+t V_strupr(char*)
+t HashBlock(void const*, unsigned int)
+t pathmatch(char const*, char**, bool, char*, unsigned int)
+t V_atoui64(char const*)
+t _V_memcmp(char const*, int, void const*, void const*, int)
+t _V_memcpy(char const*, int, void*, void const*, int)
+t _V_memset(char const*, int, void*, int, int)
+t V_qsort_s(void*, unsigned int, unsigned int, int (*)(void*, void const*, void const*), void*)
+t _V_strcmp(char const*, int, char const*, char const*)
+t _V_strcpy(char const*, int, char*, char const*)
+t V_stricmp(char const*, char const*)
+t V_stristr(char*, char const*)
+t V_stristr(char const*, char const*)
+t V_StrLeft(char const*, int, char*, int)
+t _V_strlen(char const*, int, char const*)
+t V_strncat(char*, char const*, unsigned int, int)
+t V_strnchr(char const*, char, int)
+t V_strncmp(char const*, char const*, int)
+t V_strncpy(char*, char const*, int)
+t V_strnlwr(char*, unsigned int)
+t _V_strstr(char const*, int, char const*, char const*)
+t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
+t _V_wcslen(char const*, int, wchar_t const*)
+t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
+t V_wcsncpy(wchar_t*, wchar_t const*, int)
+t _V_wcsupr(char const*, int, wchar_t*)
+U operator delete[](void*)@@GLIBCXX_3.4
+U operator delete(void*)@@GLIBCXX_3.4
+b guard variable for AllocTempVector()::s_nIndex
+b guard variable for AllocTempVector()::s_vecTemp
+b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
+b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
+b guard variable for CUtlString::GetEmptyString()::s_emptyString
+b guard variable for CThreadPool::GetDummyJob()::dummyJob
+b guard variable for ThreadPoolTest::TestForcedExecute()::jobs
+b guard variable for CCvar::FindVar(char const*)::_counter
+b guard variable for CUtlRBTree<CVCoverage::Location_t, unsigned short, CVCoverage::CLocationLess, CUtlMemory<UtlRBTreeNode_t<CVCoverage::Location_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+b guard variable for CUtlRBTree<CKeyValuesSystem::MemoryLeakTracker_t, int, bool (*)(CKeyValuesSystem::MemoryLeakTracker_t const&, CKeyValuesSystem::MemoryLeakTracker_t const&), CUtlMemory<UtlRBTreeNode_t<CKeyValuesSystem::MemoryLeakTracker_t, int>, int> >::Links(int) const::s_Sentinel
+b guard variable for CCvar::FindVar(char const*) const::_counter
+b s_BreakSet
+t FastToLower(char)
+b s_bShowDiag
+b s_nCVarFlag
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b s_bConnected
+b s_pCVarQuery
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b s_bRegistered
+b s_EmptyConVar
+d s_BackSlashMap
+r g_nRandomValues
+b s_UniformStream
+r k_rgOSTypeToName
+b s_bBuiltBreakSet
+b s_GaussianStream
+d s_nDLLIdentifier
+d s_pUniformStream
+b g_KeyValuesSystem
+b s_DefaultAccessor
+b s_DefaultCvarQuery
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+b __g_CreateCCvarICvar_reg
+t __CreateCCvarICvar_interface()
+d s_pConversionArrays_NoEscConversion
+d s_pConversionArrays_StringCharConversion
+b s_Cvar
+t Descend(char*, unsigned int, bool, unsigned int)
+t CJobThread::Run()
+t CJobThread::~CJobThread()
+t CJobThread::~CJobThread()
+t ConCommand::CanAutoComplete()
+t ConCommand::AutoCompleteSuggest(char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&)
+t ConCommand::Dispatch(CCommand const&)
+t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
+t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
+t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::~ConCommand()
+t ConCommand::~ConCommand()
+t ConCommand::~ConCommand()
+t CUtlBuffer::ParseToken(characterset_t*, char*, int, bool)
+t CUtlBuffer::ParseToken(char const*, char const*, char*, int)
+t CUtlBuffer::ConvertCRLF(CUtlBuffer&)
+t CUtlBuffer::GetOverflow(int)
+t CUtlBuffer::IsBigEndian()
+t CUtlBuffer::PutOverflow(int)
+t CUtlBuffer::AssumeMemory(void*, int, int, int)
+t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::SetBigEndian(bool)
+t CUtlBuffer::EatCPPComment()
+t CUtlBuffer::EatWhiteSpace()
+t CUtlBuffer::OnGetOverflow(int)
+t CUtlBuffer::OnPutOverflow(int)
+t CUtlBuffer::SetBufferType(bool, bool)
+t CUtlBuffer::EnsureCapacity(int)
+t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekWhiteSpace(int)
+t CUtlBuffer::PeekStringMatch(int, char const*, int)
+t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
+t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
+t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
+t CUtlBuffer::GetStringInternal(char*, unsigned int)
+t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
+t CUtlBuffer::AddNullTermination()
+t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
+t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
+t CUtlBuffer::ActivateByteSwapping(bool)
+t CUtlBuffer::CheckArbitraryPeekGet(int, int&)
+t CUtlBuffer::GetDelimitedCharInternal(CUtlCharConversion*)
+t CUtlBuffer::PeekDelimitedStringLength(CUtlCharConversion*, bool)
+t CUtlBuffer::Get(void*, int)
+t CUtlBuffer::Put(void const*, int)
+t CUtlBuffer::Swap(CUtlMemory<unsigned char, int>&)
+t CUtlBuffer::Swap(CUtlBuffer&)
+t CUtlBuffer::Scanf(char const*, ...)
+t CUtlBuffer::Printf(char const*, ...)
+t CUtlBuffer::GetChar()
+t CUtlBuffer::GetLine(char*, int)
+t CUtlBuffer::GetUpTo(void*, int)
+t CUtlBuffer::PeekGet(int, int)
+t CUtlBuffer::SeekGet(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::SeekPut(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::VaScanf(char const*, char*)
+t CUtlBuffer::CheckGet(int)
+t CUtlBuffer::CheckPut(int)
+t CUtlBuffer::GetToken(char const*)
+t CUtlBuffer::VaPrintf(char const*, char*)
+t CUtlBuffer::PutString(char const*)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int)
+t CUtlMemory<unsigned char, int>::Init(int, int)
+t CUtlMemory<unsigned char, int>::Purge()
+t CUtlRBTree<CKeyValuesSystem::MemoryLeakTracker_t, int, bool (*)(CKeyValuesSystem::MemoryLeakTracker_t const&, CKeyValuesSystem::MemoryLeakTracker_t const&), CUtlMemory<UtlRBTreeNode_t<CKeyValuesSystem::MemoryLeakTracker_t, int>, int> >::~CUtlRBTree()
+t CUtlString::FixSlashes(char)
+t CUtlString::AllocMemory(unsigned int)
+t CUtlString::GetForModify()
+t CUtlString::GetEmptyString()
+t CUtlString::StripTrailingSlash()
+t CUtlString::Set(char const*)
+t CUtlString::Trim(char)
+t CUtlString::Trim(char const*)
+t CUtlString::Clear()
+t CUtlString::Purge()
+t CUtlString::Append(char const*)
+t CUtlString::Append(char const*, int)
+t CUtlString::Format(char const*, ...)
+t CUtlString::FormatV(char const*, char*)
+t CUtlString::ToLower()
+t CUtlString::ToUpper()
+t CUtlString::PathJoin(char const*, char const*)
+t CUtlString::TrimLeft(char)
+t CUtlString::TrimLeft(char const*)
+t CUtlString::SetDirect(char const*, int)
+t CUtlString::SetLength(int)
+t CUtlString::TrimRight(char)
+t CUtlString::TrimRight(char const*)
+t CUtlString::operator=(char const*)
+t CUtlString::operator=(CUtlString const&)
+t CUtlString::~CUtlString()
+t CUtlString::operator+=(char)
+t CUtlString::operator+=(double)
+t CUtlString::operator+=(int)
+t CUtlString::operator+=(char const*)
+t CUtlString::operator+=(CUtlString const&)
+t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
+t CUtlVector<int, CUtlMemory<int, int> >::InsertBefore(int, int const&)
+t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
+t CUtlVector<CKeyValuesSystem::hash_item_t, CUtlMemory<CKeyValuesSystem::hash_item_t, int> >::~CUtlVector()
+t CUtlVector<CCvar::QueuedConVarSet_t, CUtlMemory<CCvar::QueuedConVarSet_t, int> >::InsertBefore(int)
+t CUtlVector<CCvar::QueuedConVarSet_t, CUtlMemory<CCvar::QueuedConVarSet_t, int> >::~CUtlVector()
+t CUtlVector<CJobThread*, CUtlMemory<CJobThread*, int> >::InsertBefore(int)
+t CUtlVector<CJobThread*, CUtlMemory<CJobThread*, int> >::~CUtlVector()
+t CUtlVector<CVProfNode*, CUtlMemory<CVProfNode*, int> >::InsertBefore(int, CVProfNode* const&)
+t CUtlVector<CThreadEvent*, CUtlMemory<CThreadEvent*, int> >::InsertBefore(int)
+t CUtlVector<CThreadEvent*, CUtlMemory<CThreadEvent*, int> >::~CUtlVector()
+t CUtlVector<CCoroutineMgr*, CUtlMemory<CCoroutineMgr*, int> >::InsertBefore(int, CCoroutineMgr* const&)
+t CUtlVector<CCoroutineMgr*, CUtlMemory<CCoroutineMgr*, int> >::~CUtlVector()
+t CUtlVector<IConsoleDisplayFunc*, CUtlMemory<IConsoleDisplayFunc*, int> >::InsertBefore(int, IConsoleDisplayFunc* const&)
+t CUtlVector<IConsoleDisplayFunc*, CUtlMemory<IConsoleDisplayFunc*, int> >::~CUtlVector()
+t CUtlVector<CJob*, CUtlMemory<CJob*, int> >::InsertBefore(int, CJob* const&)
+t CUtlVector<CJob*, CUtlMemory<CJob*, int> >::EnsureCapacity(int)
+t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
+t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::InsertBefore(int, void (* const&)(IConVar*, char const*, float))
+t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::~CUtlVector()
+t CVCoverage::~CVCoverage()
+U CVProfNode::EnterScope()
+U CVProfNode::GetSubNode(char const*, int, char const*, int)
+U CVProfNode::ExitScope()
+t CFunctorJob::Describe()
+t CFunctorJob::DoExecute()
+t CFunctorJob::~CFunctorJob()
+t CFunctorJob::~CFunctorJob()
+t CThreadPool::Distribute(bool, int*)
+t CThreadPool::NumThreads()
+t CThreadPool::GetDummyJob()
+t CThreadPool::GetJobCount()
+t CThreadPool::WaitForIdle(bool)
+t CThreadPool::ChangePriority(CJob*, JobPriority_t)
+t CThreadPool::NumIdleThreads()
+t CThreadPool::ResumeExecution()
+t CThreadPool::InsertJobInQueue(CJob*)
+t CThreadPool::SuspendExecution()
+t CThreadPool::ExecuteToPriority(JobPriority_t, bool (*)(CJob*))
+t CThreadPool::AddFunctorInternal(CFunctor*, CJob**, char const*, unsigned int)
+t CThreadPool::ExecuteHighPriorityFunctor(CFunctor*)
+t CThreadPool::Stop(int)
+t CThreadPool::Start(ThreadPoolStartParams_t const&)
+t CThreadPool::Start(ThreadPoolStartParams_t const&, char const*)
+t CThreadPool::Yield(unsigned int)
+t CThreadPool::AddJob(CJob*)
+t CThreadPool::AbortAll()
+t CThreadPool::Reserved1()
+t CThreadPool::YieldWait(CThreadEvent**, int, bool, unsigned int)
+t CThreadPool::YieldWait(CJob**, int, bool, unsigned int)
+t CThreadPool::CThreadPool()
+t CThreadPool::CThreadPool()
+t CThreadPool::~CThreadPool()
+t CThreadPool::~CThreadPool()
+t CThreadPool::~CThreadPool()
+t CTSListBase::~CTSListBase()
+t CVProfScope::~CVProfScope()
+t IThreadPool::AddFunctor(CFunctor*, CJob**, char const*, unsigned int)
+t IThreadPool::~IThreadPool()
+t IThreadPool::~IThreadPool()
+t CEmptyConVar::SetValue(float)
+t CEmptyConVar::SetValue(int)
+t CEmptyConVar::SetValue(char const*)
+t CEmptyConVar::~CEmptyConVar()
+t CEmptyConVar::~CEmptyConVar()
+t CMemoryStack::PrintContents()
+t CMemoryStack::FreeToAllocPoint(unsigned int, bool)
+t CMemoryStack::Init(unsigned int, unsigned int, unsigned int, unsigned int)
+t CMemoryStack::Term()
+t CMemoryStack::Access(void**, unsigned int*)
+t CMemoryStack::FreeAll(bool)
+t CMemoryStack::GetSize()
+t CMemoryStack::CommitTo(unsigned char*)
+t CMemoryStack::CMemoryStack()
+t CMemoryStack::CMemoryStack()
+t CMemoryStack::~CMemoryStack()
+t CMemoryStack::~CMemoryStack()
+t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::AddRef()
+t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::Release()
+t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t CRefCounted1<IThreadPool, CRefCountServiceBase<true, CRefMT> >::AddRef()
+t CRefCounted1<IThreadPool, CRefCountServiceBase<true, CRefMT> >::Release()
+t CRefCounted1<IThreadPool, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t CRefCounted1<IThreadPool, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+U CThreadEvent::Set()
+U CThreadEvent::Wait(unsigned int)
+U CThreadEvent::Check()
+U CThreadEvent::Reset()
+U CThreadEvent::CThreadEvent(bool)
+U CThreadEvent::CThreadEvent(bool)
+t CThreadEvent::~CThreadEvent()
+U CThreadMutex::TryLock()
+t CThreadMutex::~CThreadMutex()
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+b InterfaceReg::s_pInterfaceRegs
+t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t CVProfCounter::~CVProfCounter()
+U CWorkerThread::CallWorker(unsigned int, unsigned int, bool, CFunctor*)
+U CWorkerThread::WaitForReply(unsigned int)
+U CWorkerThread::GetCallHandle()
+U CWorkerThread::Reply(unsigned int)
+U CWorkerThread::PeekCall(unsigned int*, CFunctor**)
+U CWorkerThread::CWorkerThread()
+t CWorkerThread::~CWorkerThread()
+t CWorkerThread::~CWorkerThread()
+t CWorkerThread::~CWorkerThread()
+t CBaseAppSystem<ICvarQuery>::Disconnect()
+t CBaseAppSystem<ICvarQuery>::QueryInterface(char const*)
+t CBaseAppSystem<ICvarQuery>::Init()
+t CBaseAppSystem<ICvarQuery>::Connect(void* (*)(char const*, int*))
+t CBaseAppSystem<ICvarQuery>::Shutdown()
+t ConCommandBase::CopyString(char const*)
+t ConCommandBase::CreateBase(char const*, char const*, int)
+b ConCommandBase::s_pAccessor
+b ConCommandBase::s_pConCommandBases
+t ConCommandBase::Init()
+t ConCommandBase::GetNext()
+t ConCommandBase::AddFlags(int)
+t ConCommandBase::Shutdown()
+t ConCommandBase::ConCommandBase(char const*, char const*, int)
+t ConCommandBase::ConCommandBase()
+t ConCommandBase::ConCommandBase(char const*, char const*, int)
+t ConCommandBase::ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t CUtlLinkedList<CCoroutine, int, false, int, CUtlMemory<UtlLinkedListElem_t<CCoroutine, int>, int> >::AllocInternal(bool)
+t CUtlLinkedList<CCoroutine, int, false, int, CUtlMemory<UtlLinkedListElem_t<CCoroutine, int>, int> >::Unlink(int)
+t CUtlLinkedList<CCoroutine, int, false, int, CUtlMemory<UtlLinkedListElem_t<CCoroutine, int>, int> >::~CUtlLinkedList()
+t CUtlMemoryPool::AddNewBlob()
+t CUtlMemoryPool::ReportLeaks()
+b CUtlMemoryPool::g_ReportFunc
+t CUtlMemoryPool::SetErrorReportFunc(void (*)(char const*, ...))
+t CUtlMemoryPool::Free(void*)
+t CUtlMemoryPool::Init()
+t CUtlMemoryPool::Alloc(unsigned int)
+t CUtlMemoryPool::Alloc()
+t CUtlMemoryPool::Clear()
+t CUtlMemoryPool::AllocZero(unsigned int)
+t CUtlMemoryPool::AllocZero()
+t CUtlMemoryPool::CUtlMemoryPool(int, int, int, char const*, int)
+t CUtlMemoryPool::CUtlMemoryPool(int, int, int, char const*, int)
+t CUtlMemoryPool::~CUtlMemoryPool()
+t CUtlMemoryPool::~CUtlMemoryPool()
+b ThreadPoolTest::g_bOutputError
+t ThreadPoolTest::CExecuteTestJob::DoExecute()
+t ThreadPoolTest::CExecuteTestJob::~CExecuteTestJob()
+t ThreadPoolTest::CExecuteTestJob::~CExecuteTestJob()
+b ThreadPoolTest::g_nTotalAtFinish
+b ThreadPoolTest::g_ReadyToExecute
+b ThreadPoolTest::g_pTestThreadPool
+t ThreadPoolTest::TestForcedExecute()
+b ThreadPoolTest::g_nTotalToComplete
+t ThreadPoolTest::CExecuteTestExecuteJob::DoExecute()
+t ThreadPoolTest::CExecuteTestExecuteJob::~CExecuteTestExecuteJob()
+t ThreadPoolTest::CExecuteTestExecuteJob::~CExecuteTestExecuteJob()
+t ThreadPoolTest::Test(bool, bool, bool, bool)
+b ThreadPoolTest::g_done
+b ThreadPoolTest::g_iSleep
+b ThreadPoolTest::g_nReady
+b ThreadPoolTest::CCountJob::m_nCount
+t ThreadPoolTest::CCountJob::DoExecute()
+t ThreadPoolTest::CCountJob::~CCountJob()
+t ThreadPoolTest::CCountJob::~CCountJob()
+t CThreadLocalPtr<CCoroutineMgr>::~CThreadLocalPtr()
+t CDefaultAccessor::RegisterConCommandBase(ConCommandBase*)
+t CDllDemandLoader::GetFactory()
+t CDllDemandLoader::Unload()
+t CDllDemandLoader::CDllDemandLoader(char const*)
+t CDllDemandLoader::CDllDemandLoader(char const*)
+t CDllDemandLoader::~CDllDemandLoader()
+t CDllDemandLoader::~CDllDemandLoader()
+t CDllDemandLoader::~CDllDemandLoader()
+t CKeyValuesSystem::GetStringForSymbol(int)
+t CKeyValuesSystem::GetSymbolForString(char const*, bool)
+t CKeyValuesSystem::CaseInsensitiveHash(char const*, int)
+t CKeyValuesSystem::FreeKeyValuesMemory(void*)
+t CKeyValuesSystem::AllocKeyValuesMemory(int)
+t CKeyValuesSystem::RegisterSizeofKeyValues(int)
+t CKeyValuesSystem::MemoryLeakTrackerLessFunc(CKeyValuesSystem::MemoryLeakTracker_t const&, CKeyValuesSystem::MemoryLeakTracker_t const&)
+t CKeyValuesSystem::AddKeyValuesToMemoryLeakList(void*, int)
+t CKeyValuesSystem::RemoveKeyValuesFromMemoryLeakList(void*)
+t CKeyValuesSystem::CKeyValuesSystem()
+t CKeyValuesSystem::CKeyValuesSystem()
+t CKeyValuesSystem::~CKeyValuesSystem()
+t CKeyValuesSystem::~CKeyValuesSystem()
+U CThreadLocalBase::Set(void*)
+U CThreadLocalBase::CThreadLocalBase()
+U CThreadLocalBase::~CThreadLocalBase()
+t CDefaultCvarQuery::QueryInterface(char const*)
+t CDefaultCvarQuery::AreConVarsLinkable(ConVar const*, ConVar const*)
+t CGlobalThreadPool::OnFinalRelease()
+t CGlobalThreadPool::Start(ThreadPoolStartParams_t const&)
+t CGlobalThreadPool::~CGlobalThreadPool()
+t CGlobalThreadPool::~CGlobalThreadPool()
+U CThreadSyncObject::~CThreadSyncObject()
+t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
+t CUtlInplaceBuffer::InplaceGetLinePtr()
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlCharConversion::FindConversion(char const*, int*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlNoEscConversion::FindConversion(char const*, int*)
+t CRefCountServiceBase<true, CRefMT>::OnFinalRelease()
+t CRefCountServiceBase<true, CRefMT>::~CRefCountServiceBase()
+t CRefCountServiceBase<true, CRefMT>::~CRefCountServiceBase()
+T CUniformRandomStream::RandomFloat(float, float)
+T CUniformRandomStream::RandomFloatExp(float, float, float)
+T CUniformRandomStream::GenerateRandomNumber()
+T CUniformRandomStream::SetSeed(int)
+T CUniformRandomStream::RandomInt(int, int)
+T CUniformRandomStream::CUniformRandomStream()
+T CUniformRandomStream::CUniformRandomStream()
+T CGaussianRandomStream::RandomFloat(float, float)
+T CGaussianRandomStream::AttachToStream(IUniformRandomStream*)
+T CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
+T CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
+t CUtlCStringConversion::FindConversion(char const*, int*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CConCommandMemberAccessor<CCvar>::CommandCallback(CCommand const&)
+t CConCommandMemberAccessor<CCvar>::CommandCompletionCallback(char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&)
+t CConCommandMemberAccessor<CCvar>::~CConCommandMemberAccessor()
+t CConCommandMemberAccessor<CCvar>::~CConCommandMemberAccessor()
+t CJob::SetDescription(char const*)
+t CJob::Abort(bool)
+t CJob::DoAbort(bool)
+t CJob::Execute()
+t CJob::Describe()
+t CJob::DoCleanup()
+t CJob::~CJob()
+t CJob::~CJob()
+t CJob::~CJob()
+t CCvar::Disconnect()
+t CCvar::FindCommand(char const*)
+t CCvar::GetCommands()
+t CCvar::QueryInterface(char const*)
+t CCvar::FindCommandBase(char const*)
+t CCvar::InstallCVarQuery(ICvarQuery*)
+t CCvar::RegisterConCommand(ConCommandBase*)
+t CCvar::GetCommandLineValue(char const*)
+t CCvar::RevertFlaggedConVars(int)
+t CCvar::UnregisterConCommand(ConCommandBase*)
+t CCvar::AllocateDLLIdentifier()
+t CCvar::CCVarIteratorInternal::Get()
+t CCvar::CCVarIteratorInternal::Next()
+t CCvar::CCVarIteratorInternal::IsValid()
+t CCvar::CCVarIteratorInternal::SetFirst()
+t CCvar::CCVarIteratorInternal::~CCVarIteratorInternal()
+t CCvar::CCVarIteratorInternal::~CCVarIteratorInternal()
+t CCvar::DisplayQueuedMessages()
+t CCvar::UnregisterConCommands(int)
+t CCvar::FactoryInternalIterator()
+t CCvar::RemoveConsoleDisplayFunc(IConsoleDisplayFunc*)
+t CCvar::CallGlobalChangeCallbacks(ConVar*, char const*, float)
+t CCvar::InstallConsoleDisplayFunc(IConsoleDisplayFunc*)
+t CCvar::RemoveGlobalChangeCallback(void (*)(IConVar*, char const*, float))
+t CCvar::InstallGlobalChangeCallback(void (*)(IConVar*, char const*, float))
+t CCvar::QueueMaterialThreadSetValue(ConVar*, float)
+t CCvar::QueueMaterialThreadSetValue(ConVar*, int)
+t CCvar::QueueMaterialThreadSetValue(ConVar*, char const*)
+t CCvar::ProcessQueuedMaterialThreadConVarSets()
+t CCvar::Find(CCommand const&)
+t CCvar::Init()
+t CCvar::Connect(void* (*)(char const*, int*))
+t CCvar::FindVar(char const*)
+t CCvar::Shutdown()
+t CCvar::CCvar()
+t CCvar::CCvar()
+t CCvar::~CCvar()
+t CWrap::~CWrap()
+t ICvar::ICVarIteratorInternal::~ICVarIteratorInternal()
+t ICvar::ICVarIteratorInternal::~ICVarIteratorInternal()
+t ConVar::ClampValue(float&)
+t ConVar::SetDefault(char const*)
+t ConVar::InternalSetValue(char const*)
+t ConVar::ChangeStringValue(char const*, float)
+t ConVar::InternalSetIntValue(int)
+t ConVar::InstallChangeCallback(void (*)(IConVar*, char const*, float))
+t ConVar::InternalSetFloatValue(float)
+t ConVar::Init()
+t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::Revert()
+t ConVar::AddFlags(int)
+t ConVar::SetValue(float)
+t ConVar::SetValue(int)
+t ConVar::SetValue(char const*)
+t ConVar::ConVar(char const*, char const*, int)
+t ConVar::ConVar(char const*, char const*, int, char const*)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int)
+t ConVar::ConVar(char const*, char const*, int, char const*)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
+t ConVar::~ConVar()
+t ConVar::~ConVar()
+t ConVar::~ConVar()
+U CThread::GetThreadProc()
+U CThread::IsThreadRunning()
+U CThread::Init()
+U CThread::Start(unsigned int)
+U CThread::OnExit()
+U CThread::Resume()
+U CThread::IsAlive()
+U CThread::SetName(char const*)
+U CThread::Suspend()
+U CThread::~CThread()
+t CCommand::DefaultBreakSet()
+t CCommand::Reset()
+t CCommand::Tokenize(char const*, characterset_t*)
+t CCommand::CCommand(int, char const**)
+t CCommand::CCommand()
+t CCommand::CCommand(int, char const**)
+t CCommand::CCommand()
+t CFmtStrN<256>::InitQuietTruncation()
+t CFmtStrN<256>::CFmtStrN(char const*, ...)
+t CTSQueue<CJob*, false>::~CTSQueue()
+t CJobQueue::Push(CJob*, int)
+t CJobQueue::CJobQueue()
+t CJobQueue::~CJobQueue()
+t ConVarRef::Init(char const*, bool)
+t ConVarRef::ConVarRef(IConVar*)
+t ConVarRef::ConVarRef(char const*)
+t ConVarRef::ConVarRef(char const*, bool)
+t ConVarRef::ConVarRef(IConVar*)
+t ConVarRef::ConVarRef(char const*)
+t ConVarRef::ConVarRef(char const*, bool)
+t CVProfile::EnterScope(char const*, int, char const*, bool, int)
+U CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
+t CVProfile::ExitScope()
+U operator new[](unsigned int)@@GLIBCXX_3.4
+t ConCommand::IsCommand() const
+t CUtlString::GetExtension() const
+t CUtlString::StripFilename() const
+t CUtlString::MatchesPattern(CUtlString const&, int) const
+t CUtlString::StripExtension() const
+t CUtlString::GetBaseFilename() const
+t CUtlString::UnqualifiedFilename() const
+t CUtlString::IsEqual_CaseSensitive(char const*) const
+t CUtlString::IsEqual_CaseInsensitive(char const*) const
+t CUtlString::Get() const
+t CUtlString::Left(int) const
+t CUtlString::Right(int) const
+t CUtlString::Slice(int, int) const
+t CUtlString::AbsPath(char const*) const
+t CUtlString::DirName() const
+t CUtlString::Replace(char, char) const
+t CUtlString::Replace(char const*, char const*) const
+t CUtlString::operator==(CUtlString const&) const
+t CUtlString::operator[](int) const
+t CUtlString::operator+(int) const
+t CUtlString::operator+(char const*) const
+t CUtlString::operator+(CUtlString const&) const
+t CEmptyConVar::GetName() const
+t CEmptyConVar::IsFlagSet(int) const
+U CWorkerThread::GetCallParam(CFunctor**) const
+t ConCommandBase::GetHelpText() const
+t ConCommandBase::IsRegistered() const
+t ConCommandBase::GetDLLIdentifier() const
+t ConCommandBase::GetName() const
+t ConCommandBase::GetNext() const
+t ConCommandBase::IsCommand() const
+t ConCommandBase::IsFlagSet(int) const
+U CThreadLocalBase::Get() const
+t CUtlCharConversion::GetDelimiter() const
+t CUtlCharConversion::GetEscapeChar() const
+t CUtlCharConversion::GetDelimiterLength() const
+t CUtlCharConversion::GetConversionLength(char) const
+t CUtlCharConversion::GetConversionString(char) const
+t CUtlCharConversion::MaxConversionLength() const
+t CCvar::FindCommand(char const*) const
+t CCvar::GetCommands() const
+t CCvar::ConsolePrintf(char const*, ...) const
+t CCvar::ConsoleDPrintf(char const*, ...) const
+t CCvar::FindCommandBase(char const*) const
+t CCvar::ConsoleColorPrintf(Color const&, char const*, ...) const
+t CCvar::IsMaterialThreadSetAllowed() const
+t CCvar::HasQueuedMaterialThreadConVarSets() const
+t CCvar::FindVar(char const*) const
+t ConVar::GetDefault() const
+t ConVar::GetHelpText() const
+t ConVar::IsRegistered() const
+t ConVar::GetMax(float&) const
+t ConVar::GetMin(float&) const
+t ConVar::GetName() const
+t ConVar::IsCommand() const
+t ConVar::IsFlagSet(int) const
+t CCommand::FindArgInt(char const*, int) const
+t CCommand::FindArg(char const*) const
+t ConVarRef::IsValid() const
+U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+U operator new(unsigned int)@@GLIBCXX_3.4
+t non-virtual thunk to CEmptyConVar::SetValue(float)
+t non-virtual thunk to CEmptyConVar::SetValue(int)
+t non-virtual thunk to CEmptyConVar::SetValue(char const*)
+t non-virtual thunk to ConVar::SetValue(float)
+t non-virtual thunk to ConVar::SetValue(int)
+t non-virtual thunk to ConVar::SetValue(char const*)
+t non-virtual thunk to CEmptyConVar::GetName() const
+t non-virtual thunk to CEmptyConVar::IsFlagSet(int) const
+t non-virtual thunk to ConVar::GetName() const
+t non-virtual thunk to ConVar::IsFlagSet(int) const
+t non-virtual thunk to CConCommandMemberAccessor<CCvar>::CommandCallback(CCommand const&)
+t non-virtual thunk to CConCommandMemberAccessor<CCvar>::CommandCompletionCallback(char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&)
+t non-virtual thunk to CFunctorJob::~CFunctorJob()
+t non-virtual thunk to CFunctorJob::~CFunctorJob()
+t non-virtual thunk to CThreadPool::~CThreadPool()
+t non-virtual thunk to CThreadPool::~CThreadPool()
+t non-virtual thunk to CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t non-virtual thunk to CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t non-virtual thunk to CRefCounted1<IThreadPool, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t non-virtual thunk to CRefCounted1<IThreadPool, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t non-virtual thunk to ThreadPoolTest::CExecuteTestJob::~CExecuteTestJob()
+t non-virtual thunk to ThreadPoolTest::CExecuteTestJob::~CExecuteTestJob()
+t non-virtual thunk to ThreadPoolTest::CExecuteTestExecuteJob::~CExecuteTestExecuteJob()
+t non-virtual thunk to ThreadPoolTest::CExecuteTestExecuteJob::~CExecuteTestExecuteJob()
+t non-virtual thunk to ThreadPoolTest::CCountJob::~CCountJob()
+t non-virtual thunk to ThreadPoolTest::CCountJob::~CCountJob()
+t non-virtual thunk to CGlobalThreadPool::OnFinalRelease()
+t non-virtual thunk to CGlobalThreadPool::~CGlobalThreadPool()
+t non-virtual thunk to CGlobalThreadPool::~CGlobalThreadPool()
+t non-virtual thunk to CJob::~CJob()
+t non-virtual thunk to CJob::~CJob()
+t non-virtual thunk to CThreadPool::GetDummyJob()::CDummyJob::~CDummyJob()
+t non-virtual thunk to CThreadPool::GetDummyJob()::CDummyJob::~CDummyJob()
+r typeinfo for CJobThread
+r typeinfo for ConCommand
+r typeinfo for IAppSystem
+r typeinfo for ICvarQuery
+r typeinfo for CFunctorJob
+r typeinfo for CThreadPool
+r typeinfo for IRefCounted
+r typeinfo for IThreadPool
+r typeinfo for CEmptyConVar
+r typeinfo for CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >
+r typeinfo for CRefCounted1<IThreadPool, CRefCountServiceBase<true, CRefMT> >
+r typeinfo for CWorkerThread
+r typeinfo for CBaseAppSystem<ICvarQuery>
+r typeinfo for ConCommandBase
+r typeinfo for CDefaultAccessor
+r typeinfo for CDllDemandLoader
+r typeinfo for CKeyValuesSystem
+r typeinfo for ICommandCallback
+r typeinfo for IKeyValuesSystem
+r typeinfo for CDefaultCvarQuery
+r typeinfo for CGlobalThreadPool
+r typeinfo for CUtlCharConversion
+r typeinfo for CUtlNoEscConversion
+r typeinfo for ConVar_ServerBounded
+r typeinfo for CRefCountServiceBase<true, CRefMT>
+V typeinfo for CUniformRandomStream
+r typeinfo for IUniformRandomStream
+r typeinfo for CUtlCStringConversion
+r typeinfo for IConCommandBaseAccessor
+r typeinfo for CConCommandMemberAccessor<CCvar>
+r typeinfo for ICommandCompletionCallback
+r typeinfo for CJob
+r typeinfo for CCvar
+r typeinfo for ICvar
+r typeinfo for ConVar
+U typeinfo for CThread
+r typeinfo for IConVar
+r typeinfo for CFmtStrN<256>
+r typeinfo for ThreadPoolTest::CExecuteTestJob
+r typeinfo for ThreadPoolTest::CExecuteTestExecuteJob
+r typeinfo for ThreadPoolTest::CCountJob
+r typeinfo for CCvar::CCVarIteratorInternal
+r typeinfo for ICvar::ICVarIteratorInternal
+r typeinfo for CThreadPool::GetDummyJob()::CDummyJob
+r typeinfo name for CJobThread
+r typeinfo name for ConCommand
+r typeinfo name for IAppSystem
+r typeinfo name for ICvarQuery
+r typeinfo name for CFunctorJob
+r typeinfo name for CThreadPool
+r typeinfo name for IRefCounted
+r typeinfo name for IThreadPool
+r typeinfo name for CEmptyConVar
+r typeinfo name for CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >
+r typeinfo name for CRefCounted1<IThreadPool, CRefCountServiceBase<true, CRefMT> >
+r typeinfo name for CWorkerThread
+r typeinfo name for CBaseAppSystem<ICvarQuery>
+r typeinfo name for ConCommandBase
+r typeinfo name for CDefaultAccessor
+r typeinfo name for CDllDemandLoader
+r typeinfo name for CKeyValuesSystem
+r typeinfo name for ICommandCallback
+r typeinfo name for IKeyValuesSystem
+r typeinfo name for CDefaultCvarQuery
+r typeinfo name for CGlobalThreadPool
+r typeinfo name for CUtlCharConversion
+r typeinfo name for CUtlNoEscConversion
+r typeinfo name for ConVar_ServerBounded
+r typeinfo name for CRefCountServiceBase<true, CRefMT>
+V typeinfo name for CUniformRandomStream
+r typeinfo name for IUniformRandomStream
+r typeinfo name for CUtlCStringConversion
+r typeinfo name for IConCommandBaseAccessor
+r typeinfo name for CConCommandMemberAccessor<CCvar>
+r typeinfo name for ICommandCompletionCallback
+r typeinfo name for CJob
+r typeinfo name for CCvar
+r typeinfo name for ICvar
+r typeinfo name for ConVar
+r typeinfo name for IConVar
+r typeinfo name for CFmtStrN<256>
+r typeinfo name for ThreadPoolTest::CExecuteTestJob
+r typeinfo name for ThreadPoolTest::CExecuteTestExecuteJob
+r typeinfo name for ThreadPoolTest::CCountJob
+r typeinfo name for CCvar::CCVarIteratorInternal
+r typeinfo name for ICvar::ICVarIteratorInternal
+r typeinfo name for CThreadPool::GetDummyJob()::CDummyJob
+r vtable for CJobThread
+r vtable for ConCommand
+r vtable for IAppSystem
+r vtable for ICvarQuery
+r vtable for CFunctorJob
+r vtable for CThreadPool
+r vtable for IRefCounted
+r vtable for IThreadPool
+r vtable for CEmptyConVar
+r vtable for CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >
+r vtable for CRefCounted1<IThreadPool, CRefCountServiceBase<true, CRefMT> >
+r vtable for CWorkerThread
+r vtable for CBaseAppSystem<ICvarQuery>
+r vtable for ConCommandBase
+r vtable for CDefaultAccessor
+r vtable for CDllDemandLoader
+r vtable for CKeyValuesSystem
+r vtable for ICommandCallback
+r vtable for IKeyValuesSystem
+r vtable for CDefaultCvarQuery
+r vtable for CGlobalThreadPool
+r vtable for CUtlCharConversion
+r vtable for CUtlNoEscConversion
+r vtable for CRefCountServiceBase<true, CRefMT>
+V vtable for CUniformRandomStream
+r vtable for IUniformRandomStream
+r vtable for CUtlCStringConversion
+r vtable for IConCommandBaseAccessor
+r vtable for CConCommandMemberAccessor<CCvar>
+r vtable for ICommandCompletionCallback
+r vtable for CJob
+r vtable for CCvar
+r vtable for ICvar
+r vtable for ConVar
+r vtable for IConVar
+r vtable for CFmtStrN<256>
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+r vtable for ThreadPoolTest::CExecuteTestJob
+r vtable for ThreadPoolTest::CExecuteTestExecuteJob
+r vtable for ThreadPoolTest::CCountJob
+r vtable for CCvar::CCVarIteratorInternal
+r vtable for ICvar::ICVarIteratorInternal
+r vtable for CThreadPool::GetDummyJob()::CDummyJob
+b V_pretifymem(float, int, bool)::output
+b V_pretifymem(float, int, bool)::current
+b V_pretifynum(long long)::output
+b V_pretifynum(long long)::current
+r CoroutineTestFunc(void*)::g_pchTestString
+d GetOSType::eOSVersion
+b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
+b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
+b CUtlString::GetEmptyString()::s_emptyString
+b CThreadPool::GetDummyJob()::dummyJob
+t CThreadPool::GetDummyJob()::CDummyJob::DoExecute()
+t CThreadPool::GetDummyJob()::CDummyJob::~CDummyJob()
+t CThreadPool::GetDummyJob()::CDummyJob::~CDummyJob()
+t CThreadPool::GetDummyJob()::CDummyJob::~CDummyJob()
+b CThreadPool::ChangePriority(CJob*, JobPriority_t)::__executeCount
+b CThreadPool::AddJob(CJob*)::__executeCount
+b CUtlLinkedList<CCoroutine, int, false, int, CUtlMemory<UtlLinkedListElem_t<CCoroutine, int>, int> >::AllocInternal(bool)::__executeCount
+b CUtlLinkedList<CCoroutine, int, false, int, CUtlMemory<UtlLinkedListElem_t<CCoroutine, int>, int> >::AllocInternal(bool)::__executeCount
+b ThreadPoolTest::TestForcedExecute()::jobs
+b CCvar::FindVar(char const*)::_counter
+b CFmtStrN<256>::CFmtStrN(char const*, ...)::scAsserted
+d ConVarRef::Init(char const*, bool)::bFirst
+d CUtlRBTree<CVCoverage::Location_t, unsigned short, CVCoverage::CLocationLess, CUtlMemory<UtlRBTreeNode_t<CVCoverage::Location_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+d CUtlRBTree<CKeyValuesSystem::MemoryLeakTracker_t, int, bool (*)(CKeyValuesSystem::MemoryLeakTracker_t const&, CKeyValuesSystem::MemoryLeakTracker_t const&), CUtlMemory<UtlRBTreeNode_t<CKeyValuesSystem::MemoryLeakTracker_t, int>, int> >::Links(int) const::s_Sentinel
+b CCvar::FindVar(char const*) const::_counter

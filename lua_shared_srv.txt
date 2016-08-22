@@ -1,0 +1,2637 @@
+t aa_ahref
+t aa_findcnew
+t aa_table
+t aa_xref
+U abort@@GLIBC_2.0
+U access@@GLIBC_2.0
+t addchar
+t add_fdes
+t addintlen
+d adds.9477
+t addstr
+t adjuststack
+t argv2int
+t asm_bitshift
+t asm_comp
+r asm_compmap
+t asm_conv
+t asm_count_call_slots
+t asm_fparith
+t asm_fpmath
+t asm_fuseahuref
+t asm_fusearef
+t asm_fusefref
+t asm_fuseload
+t asm_fusestrref
+t asm_fusexref
+t asm_fxstore
+t asm_gc_check
+t asm_gencall
+t asm_guardcc
+t asm_href
+t asm_hrefk
+t asm_intarith
+t asm_ir
+t asm_loop
+t asm_mclimit
+t asm_min_max
+t asm_neg_not
+t asm_phi_break
+t asm_retf
+t asm_setup_call_slots
+t asm_setupresult
+t asm_snap_alloc1
+t asm_snap_prep
+t asm_stack_check
+t asm_swapops
+t asm_tobit
+t asm_tointg
+t asm_x87load
+t assign_adjust
+t auxsort
+t base_from_cb_data
+t base_from_object
+t bcemit_branch
+t bcemit_branch_t
+t bcemit_INS
+t bcemit_jmp
+t bcemit_nil
+t bcemit_store
+t bcread_error
+t bcread_fill
+t bcread_ktabk
+t bcread_uleb128
+t bcreg_reserve
+t bcwrite_ktabk
+t bcwrite_proto
+t bcwrite_resize
+B __bss_start
+t callhook
+U chdir@@GLIBC_2.0
+t check_call_unroll
+t check_Lproto
+U chmod@@GLIBC_2.0
+U chown@@GLIBC_2.1
+t classend
+t classify_object_over_fdes
+U clock@@GLIBC_2.0
+U closedir@@GLIBC_2.0
+t close_state
+b completed.7134
+t const_gc
+t const_num
+U cosh@@GLIBC_2.0
+t countint
+t cpcall
+t cpfinalize
+t cploop_opt
+t cpluaopen
+t cpparser
+t cpwriter
+T CreateInterface
+r CSWTCH.187
+r CSWTCH.189
+r CSWTCH.333
+d __CTOR_END__
+d __CTOR_LIST__
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
+B cvar
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_end_catch@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+U __cxa_pure_virtual@@CXXABI_1.3
+U __cxa_rethrow@@CXXABI_1.3
+t dce_propagate
+t debug_frameline
+t debug_framepc
+t debug_getupvalue
+t debug_localname
+t debug_varname
+t __deregister_frame
+t __deregister_frame_info
+t __deregister_frame_info_bases
+U difftime@@GLIBC_2.0
+U dirname@@GLIBC_2.0
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+t __do_global_ctors_aux
+t __do_global_dtors_aux
+d __dso_handle
+d __DTOR_END__
+b dtor_idx.7136
+d __DTOR_LIST__
+b dwarf_reg_size_table
+d DW.ref.__gxx_personality_v0
+d _DYNAMIC
+U __dynamic_cast@@CXXABI_1.3
+D _edata
+t emit_addptr
+t emit_gri
+t emit_loadi
+t emit_loadn
+t emit_movmroi
+t emit_movrr
+t emit_mrm
+t emit_rma
+t emit_rmro
+t emit_rr
+t emit_spload
+t emit_spstore
+t emptybuffer
+B _end
+t err_argmsg
+t err_limit
+t err_msgv
+U __errno_location@@GLIBC_2.0
+U Error
+t err_syntax
+t err_token
+t execute_cfa_program
+t execute_stack_op
+U execvp@@GLIBC_2.0
+U exit@@GLIBC_2.0
+t expr_binop
+t expr_bracket
+t expr_cond
+t expr_discharge
+t expr_field
+t expr_index
+t expr_list
+t expr_next
+t expr_primary
+t expr_table
+t expr_toanyreg
+t expr_tonextreg
+t expr_toreg
+t expr_toreg_nobranch
+t expr_toval
+U fclose@@GLIBC_2.1
+t fde_mixed_encoding_compare
+t fde_single_encoding_compare
+t fde_unencoded_compare
+U feof@@GLIBC_2.0
+U ferror@@GLIBC_2.0
+t ffh_resume
+U fflush@@GLIBC_2.0
+U fgets@@GLIBC_2.0
+r field_ofs
+t fillbuf
+t find_kinit
+T _fini
+t fold_abc_fwd
+t fold_abc_invar
+t fold_abc_k
+t fold_barrier_tab
+t fold_barrier_tnew_tdup
+t fold_comm_bxor
+t fold_comm_comp
+t fold_comm_dup
+t fold_comm_equal
+t fold_comm_swap
+t fold_cse_conv
+t fold_cse_uref
+t fold_fload_cdata_int64_kgc
+t fold_fload_cdata_ptr_int64_cnew
+t fold_fload_cdata_typeid_cnew
+t fold_fload_cdata_typeid_kgc
+t fold_fload_str_len_kgc
+t fold_fload_str_len_snew
+t fold_fload_tab_ah
+t fold_fload_tab_tdup_asize
+t fold_fload_tab_tdup_hmask
+t fold_fload_tab_tnew_asize
+t fold_fload_tab_tnew_hmask
+r fold_func
+t fold_fwd_href_tdup
+t fold_fwd_href_tnew
+t fold_fwd_sload
+r fold_hash
+t fold_kfold_add_kgc
+t fold_kfold_add_kptr
+t fold_kfold_add_kright
+t fold_kfold_bnot
+t fold_kfold_bnot64
+t fold_kfold_bswap
+t fold_kfold_bswap64
+t fold_kfold_conv_kint64_int_i64
+t fold_kfold_conv_kint64_num_i64
+t fold_kfold_conv_kint64_num_u64
+t fold_kfold_conv_kint_ext
+t fold_kfold_conv_kint_i64
+t fold_kfold_conv_kint_num
+t fold_kfold_conv_kintu32_num
+t fold_kfold_conv_knum_i64_num
+t fold_kfold_conv_knum_int_num
+t fold_kfold_conv_knum_u32_num
+t fold_kfold_conv_knum_u64_num
+t fold_kfold_fpmath
+t fold_kfold_hload_kkptr
+t fold_kfold_int64arith
+t fold_kfold_int64arith2
+t fold_kfold_int64comp
+t fold_kfold_int64comp0
+t fold_kfold_int64shift
+t fold_kfold_intarith
+t fold_kfold_intcomp
+t fold_kfold_intcomp0
+t fold_kfold_intovarith
+t fold_kfold_kref
+t fold_kfold_ldexp
+t fold_kfold_numarith
+t fold_kfold_numcomp
+t fold_kfold_numpow
+t fold_kfold_snew_empty
+t fold_kfold_snew_kptr
+t fold_kfold_strcmp
+t fold_kfold_strref
+t fold_kfold_strref_snew
+t fold_kfold_strto
+t fold_kfold_tobit
+t fold_kfold_tostr_kint
+t fold_kfold_tostr_knum
+t fold_merge_eqne_snew_kgc
+t fold_narrow_convert
+t fold_reassoc_bxor
+t fold_reassoc_dup
+t fold_reassoc_intarith_k
+t fold_reassoc_intarith_k64
+t fold_reassoc_minmax_k
+t fold_reassoc_minmax_left
+t fold_reassoc_minmax_right
+t fold_reassoc_shift
+t fold_shortcut_conv_num_int
+t fold_shortcut_dropleft
+t fold_shortcut_left
+t fold_shortcut_leftleft
+t fold_shortcut_round
+t fold_simplify_andk_shiftk
+t fold_simplify_band_k
+t fold_simplify_bor_k
+t fold_simplify_bxor_k
+t fold_simplify_conv_flt_num
+t fold_simplify_conv_i64_num
+t fold_simplify_conv_int_i64
+t fold_simplify_conv_int_num
+t fold_simplify_conv_narrow
+t fold_simplify_conv_sext
+t fold_simplify_floor_conv
+t fold_simplify_intadd_k
+t fold_simplify_intadd_k64
+t fold_simplify_intmod_k
+t fold_simplify_intmod_kleft
+t fold_simplify_intmul_k
+t fold_simplify_intmul_k32
+t fold_simplify_intmul_k64
+t fold_simplify_intsub
+t fold_simplify_intsubaddadd_cancel
+t fold_simplify_intsubadd_leftcancel
+t fold_simplify_intsubadd_rightcancel
+t fold_simplify_intsub_k
+t fold_simplify_intsub_k64
+t fold_simplify_intsub_kleft
+t fold_simplify_intsubsub_leftcancel
+t fold_simplify_intsubsub_rightcancel
+t fold_simplify_numadd_negx
+t fold_simplify_numadd_xneg
+t fold_simplify_nummuldiv_k
+t fold_simplify_nummuldiv_negk
+t fold_simplify_nummuldiv_negneg
+t fold_simplify_numpow_kx
+t fold_simplify_numpow_xk
+t fold_simplify_numsub_k
+t fold_simplify_numsub_negk
+t fold_simplify_numsub_xneg
+t fold_simplify_shift1_ki
+t fold_simplify_shift2_ki
+t fold_simplify_shift_andk
+t fold_simplify_shift_ik
+t fold_simplify_shiftk_andk
+t fold_simplify_tobit_conv
+t fold_xload_kptr
+U fopen64@@GLIBC_2.1
+U fopen@@GLIBC_2.1
+t fori_load
+U fork@@GLIBC_2.0
+U fprintf@@GLIBC_2.0
+U fputc@@GLIBC_2.0
+U fputs@@GLIBC_2.0
+t frame_downheap
+t frame_dummy
+r __FRAME_END__
+b frame_hdr_cache
+b frame_hdr_cache_head
+t frame_heapsort
+t __frame_state_for
+U fread@@GLIBC_2.0
+U free@@GLIBC_2.0
+U freopen@@GLIBC_2.0
+t fs_buf_resize
+t fscope_end
+t fs_finish
+t fs_init
+t fwd_ahload
+U fwrite@@GLIBC_2.0
+t gc_finalize
+r gc_freefunc
+U g_ClockSpeedMillisecondsMultiplier
+U g_ClockSpeedSecondsMultiplier
+t gc_mark
+t gc_onestep
+t gc_sweep
+t gc_traverse_trace
+b get
+t get_cie_encoding
+U getcwd@@GLIBC_2.0
+U getenv@@GLIBC_2.0
+U geteuid@@GLIBC_2.0
+t getfield
+U getpwuid@@GLIBC_2.0
+U gettimeofday@@GLIBC_2.0
+B g_iTypeNum
+b g_LastError
+t global constructors keyed to cvar
+t global constructors keyed to get
+t global constructors keyed to g_LastError
+t global constructors keyed to s_StringCharConversion
+t global constructors keyed to SteamAppSubscribed(int)
+t global constructors keyed to LuaStateToInterface(lua_State*)
+t global constructors keyed to _V_memset(char const*, int, void*, int, int)
+t global constructors keyed to CUtlString::AllocMemory(unsigned int)
+t global constructors keyed to ConCommandBase::s_pConCommandBases
+d _GLOBAL_OFFSET_TABLE_
+t _GLOBAL__sub_I_Base.cpp
+t _GLOBAL__sub_I_Buffer.cpp
+t _GLOBAL__sub_I_Console.cpp
+t _GLOBAL__sub_I_ConsoleInput.cpp
+t _GLOBAL__sub_I_Debug.cpp
+t _GLOBAL__sub_I_File.cpp
+t _GLOBAL__sub_I_Hasher.cpp
+t _GLOBAL__sub_I_Math.cpp
+t _GLOBAL__sub_I_Platform_LINUX.cpp
+t _GLOBAL__sub_I_String.cpp
+t _GLOBAL__sub_I_String_File.cpp
+t _GLOBAL__sub_I_String_Format.cpp
+t _GLOBAL__sub_I_String_Test.cpp
+t _GLOBAL__sub_I_String_Util.cpp
+d g_LuaShared
+T GMOD_LoadBinaryModule
+t GMOD_LuaCreateEmptyUserdata
+t GMODLUA_GetUserType
+t GMOD_LuaPrint
+w __gmon_start__
+U gmtime_r@@GLIBC_2.0
+t gola_close
+t gola_new
+t gola_resolve
+b g_pCVar
+b g_pFullFileSystem
+b g_pProcessUtils
+b g_pUtlSortVectorQSortContext
+U g_VProfCurrentProfile
+U __gxx_personality_v0@@CXXABI_1.3
+t hashkey
+t hookf
+r hooknames.4641
+t __i686.get_pc_thunk.bx
+t __i686.get_pc_thunk.cx
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+b iLastTimeCheck
+t inclinenumber
+t index2adr
+T _init
+t init_dwarf_reg_size_table
+U _IO_getc@@GLIBC_2.0
+U isspace@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+d __JCR_END__
+d __JCR_LIST__
+t jit_checktrace
+r jit_param_default
+r jit_trlinkname
+t jmp_append
+t jmp_patch
+t jmp_patchins
+t jmp_patchtestreg
+t jmp_patchval
+t jmp_tohere
+w _Jv_RegisterClasses
+r KEY_HOOK
+t kfold_intop
+t kfold_xload
+U lchown@@GLIBC_2.0
+U ldexp@@GLIBC_2.0
+t lex_check
+t lex_match
+t lex_number
+t lex_str
+t linear_search_fdes
+U link@@GLIBC_2.0
+t lj_alloc_create
+t lj_alloc_destroy
+t lj_alloc_f
+t lj_alloc_free
+t lj_alloc_malloc
+t lj_alloc_realloc
+t lj_asm_patchexit
+t lj_asm_trace
+t lj_assert_bad_for_arg_type
+t lj_BC_ADDNV
+t lj_BC_ADDVN
+t lj_BC_ADDVV
+t lj_BC_CALL
+t lj_BC_CALLM
+t lj_BC_CALLMT
+t lj_BC_CALLT
+t lj_BC_CAT
+t lj_BC_DIVNV
+t lj_BC_DIVVN
+t lj_BC_DIVVV
+t lj_BC_FNEW
+t lj_BC_FORI
+t lj_BC_FORL
+t lj_BC_FUNCC
+t lj_BC_FUNCCW
+t lj_BC_FUNCF
+t lj_BC_FUNCV
+t lj_BC_GGET
+t lj_BC_GSET
+t lj_BC_IFORL
+t lj_BC_IFUNCF
+t lj_BC_IFUNCV
+t lj_BC_IITERL
+t lj_BC_ILOOP
+t lj_BC_ISEQN
+t lj_BC_ISEQP
+t lj_BC_ISEQS
+t lj_BC_ISEQV
+t lj_BC_ISF
+t lj_BC_ISFC
+t lj_BC_ISGE
+t lj_BC_ISGT
+t lj_BC_ISLE
+t lj_BC_ISLT
+t lj_BC_ISNEN
+t lj_BC_ISNEP
+t lj_BC_ISNES
+t lj_BC_ISNEV
+t lj_BC_ISNEXT
+t lj_BC_IST
+t lj_BC_ISTC
+t lj_BC_ITERC
+t lj_BC_ITERL
+t lj_BC_ITERN
+t lj_BC_JFORI
+t lj_BC_JFORL
+t lj_BC_JFUNCF
+t lj_BC_JFUNCV
+t lj_BC_JITERL
+t lj_BC_JLOOP
+t lj_BC_JMP
+t lj_BC_KNIL
+t lj_BC_KNUM
+t lj_BC_KPRI
+t lj_BC_KSHORT
+t lj_BC_KSTR
+t lj_BC_LEN
+t lj_BC_LOOP
+r lj_bc_mode
+t lj_BC_MODNV
+t lj_BC_MODVN
+t lj_BC_MODVV
+t lj_BC_MOV
+t lj_BC_MULNV
+t lj_BC_MULVN
+t lj_BC_MULVV
+t lj_BC_NOT
+r lj_bc_ofs
+t lj_BC_POW
+t lj_bcread
+t lj_BC_RET
+t lj_BC_RET0
+t lj_BC_RET1
+t lj_BC_RETM
+t lj_BC_SUBNV
+t lj_BC_SUBVN
+t lj_BC_SUBVV
+t lj_BC_TDUP
+t lj_BC_TGETB
+t lj_BC_TGETS
+t lj_BC_TGETV
+t lj_BC_TNEW
+t lj_BC_TSETB
+t lj_BC_TSETM
+t lj_BC_TSETS
+t lj_BC_TSETV
+t lj_BC_UCLO
+t lj_BC_UGET
+t lj_BC_UNM
+t lj_BC_USETN
+t lj_BC_USETP
+t lj_BC_USETS
+t lj_BC_USETV
+t lj_BC_VARG
+t lj_bcwrite
+t lj_cf_bit_tohex
+t lj_cf_collectgarbage
+t lj_cf_coroutine_create
+t lj_cf_coroutine_running
+t lj_cf_coroutine_status
+t lj_cf_coroutine_wrap
+t lj_cf_debug_debug
+t lj_cf_debug_getfenv
+t lj_cf_debug_gethook
+t lj_cf_debug_getinfo
+t lj_cf_debug_getlocal
+t lj_cf_debug_getmetatable
+t lj_cf_debug_getregistry
+t lj_cf_debug_getupvalue
+t lj_cf_debug_setfenv
+t lj_cf_debug_sethook
+t lj_cf_debug_setlocal
+t lj_cf_debug_setmetatable
+t lj_cf_debug_setupvalue
+t lj_cf_debug_traceback
+t lj_cf_debug_upvalueid
+t lj_cf_debug_upvaluejoin
+t lj_cf_error
+t lj_cf_gcinfo
+t lj_cf_getfenv
+t lj_cf_jit_attach
+t lj_cf_jit_flush
+t lj_cf_jit_off
+t lj_cf_jit_on
+t lj_cf_jit_opt_start
+t lj_cf_jit_status
+t lj_cf_jit_util_funcbc
+t lj_cf_jit_util_funcinfo
+t lj_cf_jit_util_funck
+t lj_cf_jit_util_funcuvname
+t lj_cf_jit_util_ircalladdr
+t lj_cf_jit_util_traceexitstub
+t lj_cf_jit_util_traceinfo
+t lj_cf_jit_util_traceir
+t lj_cf_jit_util_tracek
+t lj_cf_jit_util_tracemc
+t lj_cf_jit_util_tracesnap
+t lj_cf_math_random
+t lj_cf_math_randomseed
+t lj_cf_newproxy
+t lj_cf_os_clock
+t lj_cf_os_date
+t lj_cf_os_difftime
+t lj_cf_os_time
+t lj_cf_package_loader_preload
+t lj_cf_package_module
+t lj_cf_package_seeall
+t lj_cf_package_unloadlib
+t lj_cf_print
+t lj_cf_rawequal
+t lj_cf_rawset
+t lj_cf_select
+t lj_cf_setfenv
+t lj_cf_string_dump
+t lj_cf_string_find
+t lj_cf_string_format
+t lj_cf_string_gmatch
+t lj_cf_string_gmatch_aux
+t lj_cf_string_gsub
+t lj_cf_string_match
+t lj_cf_table_concat
+t lj_cf_table_foreach
+t lj_cf_table_foreachi
+t lj_cf_table_insert
+t lj_cf_table_maxn
+t lj_cf_table_remove
+t lj_cf_table_sort
+t lj_cf_unpack
+r lj_char_bits
+t lj_cont_cat
+t lj_cont_condf
+t lj_cont_condt
+t lj_cont_dispatch
+t lj_cont_ffi_callback
+t lj_cont_hook
+t lj_cont_nop
+t lj_cont_ra
+t lj_debug_addloc
+t lj_debug_frame
+t lj_debug_funcname
+t lj_debug_getinfo
+t lj_debug_line
+t lj_debug_pushloc
+t lj_debug_shortname
+t lj_debug_slotname
+t lj_debug_uvname
+t lj_debug_uvnamev
+t lj_dispatch_call
+t lj_dispatch_init
+t lj_dispatch_init_hotcount
+t lj_dispatch_ins
+t lj_dispatch_update
+d lj_err_allmsg
+t lj_err_arg
+t lj_err_argt
+t lj_err_argtype
+t lj_err_argv
+t lj_err_caller
+t lj_err_callermsg
+t lj_err_callerv
+t lj_err_comp
+t lj_err_lex
+t lj_err_mem
+t lj_err_msg
+t lj_err_optype
+t lj_err_optype_call
+t lj_err_run
+t lj_err_str
+t lj_err_throw
+t lj_err_unwind_dwarf
+t lj_ff_assert
+t lj_ff_bit_arshift
+t lj_ff_bit_band
+t lj_ff_bit_bnot
+t lj_ff_bit_bor
+t lj_ff_bit_bswap
+t lj_ff_bit_bxor
+t lj_ff_bit_lshift
+t lj_ff_bit_rol
+t lj_ff_bit_ror
+t lj_ff_bit_rshift
+t lj_ff_bit_tobit
+t lj_ff_coroutine_resume
+t lj_ff_coroutine_wrap_aux
+t lj_ff_coroutine_yield
+t lj_fff_emptystr
+t lj_fff_fallback
+t lj_fff_fallback_1
+t lj_fff_fallback_2
+t lj_fff_fallback_bit_op
+t lj_fff_gcstep
+t lj_fff_newstr
+t lj_fff_res
+t lj_fff_res_
+t lj_fff_res0
+t lj_fff_res1
+t lj_fff_res2
+t lj_fff_resbit
+t lj_fff_resi
+t lj_fff_resn
+t lj_fff_resxmm0
+t lj_ff_getmetatable
+t lj_ffh_assert
+t lj_ffh_bit_band
+t lj_ffh_bit_lshift
+t lj_ffh_bit_tobit
+t lj_ffh_coroutine_resume
+t lj_ffh_coroutine_wrap_aux
+t lj_ffh_coroutine_wrap_err
+t lj_ffh_coroutine_yield
+t lj_ffh_ipairs
+t lj_ffh_ipairs_aux
+t lj_ffh_math_abs
+t lj_ffh_math_atan2
+t lj_ffh_math_ldexp
+t lj_ffh_math_log
+t lj_ffh_math_min
+t lj_ffh_math_sqrt
+t lj_ffh_next
+t lj_ffh_pairs
+t lj_ffh_pcall
+t lj_ffh_rawget
+t lj_ffh_setmetatable
+t lj_ffh_string_byte
+t lj_ffh_string_char
+t lj_ffh_string_len
+t lj_ffh_string_rep
+t lj_ffh_string_reverse
+t lj_ffh_string_sub
+t lj_ffh_table_getn
+t lj_ffh_tonumber
+t lj_ffh_tostring
+t lj_ff_ipairs
+t lj_ff_ipairs_aux
+t lj_ff_math_abs
+t lj_ff_math_acos
+t lj_ff_math_asin
+t lj_ff_math_atan
+t lj_ff_math_atan2
+t lj_ff_math_ceil
+t lj_ff_math_cos
+t lj_ff_math_cosh
+t lj_ff_math_deg
+t lj_ff_math_exp
+t lj_ff_math_floor
+t lj_ff_math_fmod
+t lj_ff_math_frexp
+t lj_ff_math_ldexp
+t lj_ff_math_log
+t lj_ff_math_log10
+t lj_ff_math_max
+t lj_ff_math_min
+t lj_ff_math_modf
+t lj_ff_math_pow
+t lj_ff_math_rad
+t lj_ff_math_sin
+t lj_ff_math_sinh
+t lj_ff_math_sqrt
+t lj_ff_math_tan
+t lj_ff_math_tanh
+t lj_ff_next
+t lj_ff_pairs
+t lj_ff_pcall
+t lj_ff_rawget
+t lj_ffrecord_func
+t lj_ffrecord_select_mode
+t lj_ff_setmetatable
+t lj_ff_string_byte
+t lj_ff_string_char
+t lj_ff_string_len
+t lj_ff_string_lower
+t lj_ff_string_rep
+t lj_ff_string_reverse
+t lj_ff_string_sub
+t lj_ff_string_upper
+t lj_ff_table_getn
+t lj_ff_tonumber
+t lj_ff_tostring
+t lj_ff_type
+t lj_ff_xpcall
+t lj_func_closeuv
+t lj_func_free
+t lj_func_freeproto
+t lj_func_freeuv
+t lj_func_newC
+t lj_func_newL_empty
+t lj_func_newL_gc
+t lj_gc_barrierf
+t lj_gc_barriertrace
+t lj_gc_barrieruv
+t lj_gc_closeuv
+t lj_gc_finalize_udata
+t lj_gc_freeall
+t lj_gc_fullgc
+t lj_gc_separateudata
+t lj_gc_step
+t lj_gc_step_fixtop
+t lj_gc_step_jit
+t lj_ir_call
+r lj_ir_callinfo
+t lj_ir_emit
+t lj_ir_growbot
+t lj_ir_growtop
+t lj_ir_k64
+t lj_ir_k64_find
+t lj_ir_k64_freeall
+t lj_ir_kgc
+t lj_ir_kint
+t lj_ir_kint64
+t lj_ir_knull
+t lj_ir_knumint
+t lj_ir_knum_u64
+t lj_ir_kptr_
+t lj_ir_kslot
+t lj_ir_kvalue
+r lj_ir_mode
+t lj_ir_numcmp
+t lj_ir_rollback
+t lj_ir_strcmp
+t lj_ir_tonum
+t lj_ir_tonumber
+t lj_ir_tostr
+r lj_ir_type_size
+t lj_lex_cleanup
+t lj_lex_error
+t lj_lex_init
+t lj_lex_lookahead
+t lj_lex_next
+t lj_lex_setup
+t lj_lex_token2str
+r lj_lib_cf_base
+r lj_lib_cf_bit
+r lj_lib_cf_coroutine
+r lj_lib_cf_debug
+r lj_lib_cf_jit
+r lj_lib_cf_jit_opt
+r lj_lib_cf_jit_util
+r lj_lib_cf_math
+r lj_lib_cf_os
+r lj_lib_cf_string
+r lj_lib_cf_table
+t lj_lib_checkany
+t lj_lib_checkbit
+t lj_lib_checkfunc
+t lj_lib_checkint
+t lj_lib_checknum
+t lj_lib_checkopt
+t lj_lib_checkstr
+t lj_lib_checktab
+t lj_lib_checktabornil
+r lj_lib_init_base
+r lj_lib_init_bit
+r lj_lib_init_coroutine
+r lj_lib_init_debug
+r lj_lib_init_jit
+r lj_lib_init_jit_opt
+r lj_lib_init_jit_util
+r lj_lib_init_math
+r lj_lib_init_os
+r lj_lib_init_string
+r lj_lib_init_table
+r lj_lib_load
+t lj_lib_optint
+t lj_lib_optstr
+t lj_lib_register
+t lj_math_random_step
+t lj_mcode_abort
+t lj_mcode_commit
+t lj_mcode_free
+t lj_mcode_limiterr
+t lj_mcode_patch
+t lj_mcode_reserve
+t lj_mcode_sync
+t lj_mem_grow
+t lj_mem_newgco
+t lj_mem_realloc
+t lj_meta_arith
+t lj_meta_cache
+t lj_meta_call
+t lj_meta_cat
+t lj_meta_comp
+t lj_meta_equal
+t lj_meta_for
+t lj_meta_init
+t lj_meta_len
+t lj_meta_lookup
+t lj_meta_tget
+t lj_meta_tset
+t lj_obj_equal
+r lj_obj_itypename
+r lj_obj_typename
+t lj_opt_cse
+t lj_opt_cselim
+t lj_opt_dce
+t lj_opt_dse_ahstore
+t lj_opt_dse_fstore
+t lj_opt_dse_ustore
+t lj_opt_dse_xstore
+t lj_opt_fold
+t lj_opt_fwd_aload
+t lj_opt_fwd_fload
+t lj_opt_fwd_hload
+t lj_opt_fwd_hrefk
+t lj_opt_fwd_href_nokey
+t lj_opt_fwd_tab_len
+t lj_opt_fwd_tptr
+t lj_opt_fwd_uload
+t lj_opt_fwd_wasnonnil
+t lj_opt_fwd_xload
+t lj_opt_loop
+t lj_opt_narrow_arith
+t lj_opt_narrow_convert
+t lj_opt_narrow_forl
+t lj_opt_narrow_index
+t lj_opt_narrow_mod
+t lj_opt_narrow_pow
+t lj_opt_narrow_tobit
+t lj_opt_narrow_toint
+t lj_opt_narrow_unm
+t lj_opt_sink
+t lj_parse
+t lj_parse_keepstr
+t lj_record_call
+t lj_record_constify
+t lj_record_idx
+t lj_record_ins
+t lj_record_mm_lookup
+t lj_record_objcmp
+t lj_record_ret
+t lj_record_setup
+t lj_record_tailcall
+t lj_snap_add
+t lj_snap_grow_buf_
+t lj_snap_grow_map_
+t lj_snap_purge
+t lj_snap_regspmap
+t lj_snap_replay
+t lj_snap_restore
+t lj_snap_shrink
+t lj_state_free
+t lj_state_growstack
+t lj_state_growstack1
+t lj_state_new
+t lj_state_relimitstack
+t lj_state_shrinkstack
+t lj_str_bufint
+t lj_str_bufnum
+t lj_str_cmp
+t lj_str_free
+t lj_str_fromint
+t lj_str_fromnum
+t lj_str_fromnumber
+t lj_str_needbuf
+t lj_str_new
+t lj_str_pushf
+t lj_str_pushvf
+t lj_str_resize
+t lj_strscan_num
+t lj_strscan_scan
+t lj_tab_dup
+t lj_tab_free
+t lj_tab_get
+t lj_tab_getinth
+t lj_tab_getstr
+t lj_tab_len
+t lj_tab_new
+t lj_tab_new1
+t lj_tab_newkey
+t lj_tab_next
+t lj_tab_reasize
+t lj_tab_set
+t lj_tab_setinth
+t lj_tab_setstr
+t lj_trace_err
+t lj_trace_err_info
+t lj_trace_exit
+t lj_trace_flush
+t lj_trace_flushall
+t lj_trace_flushproto
+t lj_trace_free
+t lj_trace_freestate
+t lj_trace_hot
+t lj_trace_initstate
+t lj_trace_ins
+t lj_trace_reenableproto
+t lj_udata_free
+t lj_udata_new
+t lj_vm_asm_begin
+t lj_vm_call
+t lj_vm_call_dispatch
+t lj_vm_call_dispatch_f
+t lj_vm_callhook
+t lj_vm_call_tail
+t lj_vm_ceil
+t lj_vm_ceil_sse
+t lj_vm_cosh
+t lj_vm_cpcall
+t lj_vm_cpuid
+t lj_vmeta_arith_nv
+t lj_vmeta_arith_nvo
+t lj_vmeta_arith_vn
+t lj_vmeta_arith_vno
+t lj_vmeta_arith_vv
+t lj_vmeta_arith_vvo
+t lj_vmeta_binop
+t lj_vmeta_call
+t lj_vmeta_call_ra
+t lj_vmeta_comp
+t lj_vmeta_equal
+t lj_vmeta_equal_cd
+t lj_vmeta_for
+t lj_vmeta_len
+t lj_vmeta_tgetb
+t lj_vmeta_tgets
+t lj_vmeta_tgetv
+t lj_vmeta_tsetb
+t lj_vmeta_tsets
+t lj_vmeta_tsetv
+t lj_vmeta_unm
+t lj_vmevent_call
+t lj_vmevent_prepare
+t lj_vm_exit_handler
+t lj_vm_exit_interp
+t lj_vm_exp2raw
+t lj_vm_exp2_x87
+t lj_vm_exp_x87
+t lj_vm_ffi_call
+t lj_vm_ffi_callback
+t lj_vm_floor
+t lj_vm_floor_sse
+t lj_vm_foldarith
+t lj_vm_foldfpm
+t lj_vm_growstack_c
+t lj_vm_growstack_f
+t lj_vm_growstack_v
+t lj_vm_hotcall
+t lj_vm_hotloop
+t lj_vm_inshook
+t lj_vm_leave_cp
+t lj_vm_leave_unw
+t lj_vm_log2
+t lj_vm_mod
+t lj_vm_modi
+t lj_vm_pcall
+t lj_vm_pow
+t lj_vm_powi_sse
+t lj_vm_pow_sse
+t lj_vm_record
+t lj_vm_resume
+t lj_vm_rethook
+t lj_vm_return
+t lj_vm_returnc
+t lj_vm_returnp
+t lj_vm_sinh
+t lj_vm_tanh
+t lj_vm_trunc
+t lj_vm_trunc_sse
+t lj_vm_unwind_c
+t lj_vm_unwind_c_eh
+t lj_vm_unwind_ff
+t lj_vm_unwind_ff_eh
+t lj_vm_unwind_rethrow
+t lj_vm_unwind_yield
+t llex
+t ll_sym
+U localtime@@GLIBC_2.0
+U localtime_r@@GLIBC_2.0
+t lstat
+t __lstat
+T lua_atpanic
+T lua_call
+T lua_checkstack
+T lua_close
+T lua_concat
+T lua_cpcall
+T lua_createtable
+T lua_dump
+T lua_equal
+T lua_error
+T lua_gc
+T lua_getallocf
+T lua_getfenv
+T lua_getfield
+T lua_gethook
+T lua_gethookcount
+T lua_gethookmask
+T lua_getinfo
+T lua_getlocal
+T lua_getmetatable
+T lua_getstack
+T lua_gettable
+T lua_gettop
+T lua_getupvalue
+t lua_init_stack_gmod
+T lua_insert
+T lua_iscfunction
+T lua_isnumber
+T lua_isstring
+T lua_isuserdata
+T luaJIT_setmode
+T luaJIT_version_2_0_3
+T luaL_addlstring
+T luaL_addstring
+T luaL_addvalue
+T luaL_argerror
+T luaL_buffinit
+T luaL_callmeta
+T luaL_checkany
+T luaL_checkinteger
+T luaL_checklstring
+T luaL_checknumber
+T luaL_checkoption
+T luaL_checkstack
+T luaL_checktype
+T luaL_checkudata
+T luaL_error
+T lua_lessthan
+T luaL_execresult
+T luaL_fileresult
+T luaL_findtable
+T luaL_getmetafield
+T luaL_gsub
+T luaL_loadbuffer
+T luaL_loadbufferx
+T luaL_loadfile
+T luaL_loadfilex
+T luaL_loadstring
+T luaL_newmetatable
+T luaL_newmetatable_type
+T luaL_newstate
+t luaL_newstate_GMOD
+T lua_load
+T lua_loadx
+T luaL_openlib
+T luaL_openlibs
+T luaL_optinteger
+T luaL_optlstring
+T luaL_optnumber
+T luaL_prepbuffer
+T luaL_pushresult
+T luaL_ref
+T luaL_register
+T luaL_traceback
+T luaL_typerror
+T luaL_unref
+T luaL_where
+b lua_maxcalls
+T lua_newstate
+T lua_newthread
+T lua_newuserdata
+T lua_next
+T lua_objlen
+T luaopen_base
+T luaopen_bit
+T luaopen_debug
+T luaopen_jit
+T luaopen_math
+T luaopen_os
+T luaopen_package
+T luaopen_string
+T luaopen_table
+T lua_pcall
+T lua_pushboolean
+T lua_pushcclosure
+T lua_pushfstring
+T lua_pushinteger
+T lua_pushlightuserdata
+T lua_pushlstring
+T lua_pushnil
+T lua_pushnumber
+T lua_pushstring
+T lua_pushthread
+T lua_pushvalue
+T lua_pushvfstring
+T lua_rawequal
+T lua_rawget
+T lua_rawgeti
+T lua_rawset
+T lua_rawseti
+T lua_remove
+T lua_replace
+t lua_resume
+T lua_resume_real
+T lua_setallocf
+T lua_setfenv
+T lua_setfield
+T lua_sethook
+T lua_setlocal
+T lua_setmetatable
+T lua_settable
+T lua_settop
+T lua_setupvalue
+T lua_status
+T lua_toboolean
+T lua_tocfunction
+T lua_tointeger
+T lua_tolstring
+T lua_tonumber
+T lua_topointer
+T lua_tothread
+T lua_touserdata
+T lua_type
+T lua_typename
+T lua_upvalueid
+T lua_upvaluejoin
+T lua_xmove
+T lua_yield
+U __lxstat64@@GLIBC_2.2
+U __lxstat@@GLIBC_2.0
+U malloc@@GLIBC_2.0
+b marker.8860
+t match
+t matchbracketclass
+r match_class_map
+t max_expand
+U mbstowcs@@GLIBC_2.0
+t mcode_allocarea
+t mcode_protect
+t mcode_protfail
+U memchr@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U mkdir@@GLIBC_2.0
+U mkfifo@@GLIBC_2.0
+t mknod
+t __mknod
+U mktime@@GLIBC_2.0
+U mmap64@@GLIBC_2.1
+U mount@@GLIBC_2.0
+U mprotect@@GLIBC_2.0
+U mremap@@GLIBC_2.0
+U Msg
+U munmap@@GLIBC_2.0
+t narrow_conv_backprop
+t narrow_stripov_backprop
+t newtab
+b object_mutex
+b once_regsizes.9698
+U open64@@GLIBC_2.2
+U opendir@@GLIBC_2.0
+U open@@GLIBC_2.0
+r package_global
+r package_lib
+r package_loaders
+t panic
+t parse_args
+t parse_assignment
+t parse_block
+t parse_body
+t parse_break
+t parse_chunk
+t parse_label
+t parse_then
+U Plat_IsInDebugSession
+U Plat_localtime
+U __pow_finite@@GLIBC_2.15
+U __printf_chk@@GLIBC_2.3.4
+U printf@@GLIBC_2.0
+r priority
+U __progname_full@@GLIBC_2.0
+U __progname@@GLIBC_2.0
+U program_invocation_name@@GLIBC_2.0
+U program_invocation_short_name@@GLIBC_2.0
+t propagatemark
+w pthread_cancel@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
+U pthread_mutexattr_init@@GLIBC_2.0
+U pthread_mutexattr_settype@@GLIBC_2.1
+U pthread_mutex_destroy@@GLIBC_2.0
+U pthread_mutex_init@@GLIBC_2.0
+U pthread_mutex_lock@@GLIBC_2.0
+U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+t push_captures
+t push_onecapture
+U putchar@@GLIBC_2.0
+t qsort_s
+t ra_alloc1
+t ra_allocref
+t ra_dest
+t ra_destreg
+t ra_evict
+t ra_evictset
+t ra_left
+U rand@@GLIBC_2.0
+t random_init
+t ra_pick
+t ra_rematk
+t ra_rename
+t ra_restore
+t ra_scratch
+t ra_spill
+U readdir@@GLIBC_2.0
+t read_encoded_value_with_base
+t reader_file
+t reader_string
+t read_long_string
+t read_sleb128
+U realloc@@GLIBC_2.0
+U realpath@@GLIBC_2.3
+t rec_call_setup
+t rec_comp_fixup
+t rec_comp_prep
+t recff_assert
+t recff_bit_nary
+t recff_bit_shift
+t recff_bit_unary
+t recff_c
+r recff_func
+t recff_getmetatable
+r recff_idmap
+t recff_io_flush
+t recff_io_fp
+t recff_io_write
+t recff_ipairs
+t recff_ipairs_aux
+t recff_math_abs
+t recff_math_atan2
+t recff_math_atrig
+t recff_math_degrad
+t recff_math_htrig
+t recff_math_ldexp
+t recff_math_log
+t recff_math_minmax
+t recff_math_modf
+t recff_math_pow
+t recff_math_random
+t recff_math_round
+t recff_math_unary
+t recff_metacall_cp
+t recff_nyi
+t recff_nyiu
+t recff_pcall
+t recff_rawequal
+t recff_rawget
+t recff_rawset
+t recff_select
+t recff_setmetatable
+t recff_string_len
+t recff_string_range
+t recff_table_getn
+t recff_table_insert
+t recff_table_remove
+t recff_tonumber
+t recff_tostring
+t recff_type
+t recff_xpcall
+t recff_xpcall_cp
+t rec_for
+t rec_for_check
+t rec_for_loop
+t rec_func_lua
+t rec_func_setup
+t rec_idx_abc
+t rec_loop_interp
+t rec_loop_jit
+t rec_mm_arith
+t rec_mm_callcomp
+t rec_mm_prep
+t rec_stop
+t rec_upvalue
+t __register_frame
+t __register_frame_info
+t __register_frame_info_bases
+t __register_frame_info_table
+t __register_frame_info_table_bases
+t __register_frame_table
+t release_unused_segments
+U rename@@GLIBC_2.0
+t resizestack
+t resizetab
+U rmdir@@GLIBC_2.0
+t save_grow
+U scandir@@GLIBC_2.0
+t search_object
+B seeder
+b seen_objects
+U select@@GLIBC_2.0
+t set2
+t set_fast_math
+t setfield
+t setintfield
+t setjitmode
+t setptmode
+t setptmode_all
+t settabsi
+t settabss
+t singlematch
+U sinh@@GLIBC_2.0
+t sink_phidep
+t size_of_encoded_value
+t skip_sep
+t sload
+t snap_pref
+t snap_replay_const
+t snap_restoreval
+t snap_usedef
+b s_NoEscConversion
+t sort_comp
+U sprintf@@GLIBC_2.0
+U srand@@GLIBC_2.0
+b s_StringCharConversion
+U __stack_chk_fail@@GLIBC_2.4
+t __stack_chk_fail_local
+t stack_init
+t start_capture
+t stat
+t __stat
+U stderr@@GLIBC_2.0
+U stdin@@GLIBC_2.0
+b steamapicontext
+U strcasecmp@@GLIBC_2.0
+U strcasestr@@GLIBC_2.1
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strdup@@GLIBC_2.0
+U strerror@@GLIBC_2.0
+t str_find_aux
+U strftime@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncasecmp@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncmp@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strpbrk@@GLIBC_2.0
+U strrchr@@GLIBC_2.0
+t strscan_dec
+t strscan_double
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+b subs.9478
+U symlink@@GLIBC_2.0
+t T.224
+t T.335
+t T.53
+t T.63
+U tanh@@GLIBC_2.0
+U ThreadGetCurrentId
+U ThreadInMainThread
+U time@@GLIBC_2.0
+U tmpnam@@GLIBC_2.0
+r tokennames
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+t trace_exit_cp
+t trace_flushroot
+t trace_start
+t trace_state
+t treatstackoption
+t __udivdi3
+U unlink@@GLIBC_2.0
+b unseen_objects
+t _Unwind_Backtrace
+t _Unwind_DebugHook
+t _Unwind_DeleteException
+t _Unwind_FindEnclosingFunction
+t _Unwind_Find_FDE
+t _Unwind_ForcedUnwind
+t _Unwind_ForcedUnwind_Phase2
+t _Unwind_GetCFA
+t _Unwind_GetDataRelBase
+t _Unwind_GetGR
+t _Unwind_GetIP
+t _Unwind_GetIPInfo
+t _Unwind_GetLanguageSpecificData
+t _Unwind_GetRegionStart
+t _Unwind_GetTextRelBase
+t _Unwind_IteratePhdrCallback
+t _Unwind_RaiseException
+t _Unwind_RaiseException_Phase2
+t _Unwind_Resume
+t _Unwind_Resume_or_Rethrow
+t _Unwind_SetGR
+t _Unwind_SetIP
+t _Unwind_SetSpColumn
+t unwindstack
+U usleep@@GLIBC_2.0
+U utime@@GLIBC_2.0
+U utimes@@GLIBC_2.0
+t uw_frame_state_for
+t uw_init_context_1
+t uw_install_context_1
+t uw_update_context
+t uw_update_context_1
+t var_lookup_
+t var_new
+U __vsnprintf_chk@@GLIBC_2.3.4
+U vsnprintf@@GLIBC_2.0
+U __vswprintf_chk@@GLIBC_2.4
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+t __wrap_access
+t __wrap_chmod
+t __wrap_chown
+t __wrap_creat
+t __wrap_fopen
+t __wrap_fopen64
+t __wrap_freopen
+t __wrap_lchown
+t __wrap_link
+t __wrap_lstat
+t __wrap___lxstat
+t __wrap___lxstat64
+t __wrap_mkdir
+t __wrap_mkfifo
+t __wrap_mknod
+t __wrap_mount
+t __wrap_open
+t __wrap_open64
+t __wrap_opendir
+t __wrap_realpath
+t __wrap_rename
+t __wrap_rmdir
+t __wrap_scandir
+t __wrap_stat
+t __wrap_symlink
+t __wrap_unlink
+t __wrap_utime
+t __wrap_utimes
+t __wrap___xstat
+t __wrap___xstat64
+t writer_buf
+t __x86.get_pc_thunk.bx
+t __x86.get_pc_thunk.cx
+U __xmknod@@GLIBC_2.0
+U __xpg_basename@@GLIBC_2.0
+U __xstat64@@GLIBC_2.2
+U __xstat@@GLIBC_2.0
+T md5_finish(md5_context*, unsigned char*)
+T md5_starts(md5_context*)
+T md5_update(md5_context*, unsigned char*, int)
+t V_FileBase(char const*, char*, int)
+t _V_memmove(char const*, int, void*, void const*, int)
+t V_snprintf(char*, int, char const*, ...)
+t V_strlower(char*)
+t V_strnicmp(char const*, char const*, int)
+t V_strnistr(char const*, char const*, int)
+t _V_strrchr(char const*, int, char const*, char)
+t V_StrRight(char const*, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtowcs(char const*, int, wchar_t*, int)
+t V_wcstostr(wchar_t const*, int, char*, int)
+t AllocString(char const*, int)
+U ConColorMsg(Color const&, char const*, ...)
+T crc32_start(unsigned long)
+t Q_URLDecode(char*, int, char const*, int)
+t Q_URLEncode(char*, int, char const*, int)
+t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_vsnprintf(char*, int, char const*, char*)
+t _V_wcslower(char const*, int, wchar_t*)
+t DoThreadTest(char const*, unsigned int)
+t InfiLoopHook(lua_State*, lua_Debug*)
+t V_FixSlashes(char*, char)
+t V_pretifymem(float, int, bool)
+t V_pretifynum(long long)
+t V_vsnwprintf(wchar_t*, int, wchar_t const*, char*)
+t iHexCharToInt(char)
+t PATHSEPARATOR(char)
+t Q_UTF16ToUTF8(unsigned short const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF8(wchar_t const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF16(char const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF32(char const*, wchar_t*, int, EStringConvertErrorPolicy)
+t V_AppendSlash(char*, int)
+t V_binarytohex(unsigned char const*, int, char*, int)
+t V_GetFileName(char const*)
+t V_hextobinary(char const*, int, unsigned char*, int)
+t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t _V_UCS2ToUTF8(unsigned short const*, char*, int)
+t _V_UTF8ToUCS2(char const*, int, unsigned short*, int)
+t cIntToHexDigit(int)
+t Q_IsMeanSpaceW(wchar_t)
+t Q_URLDecodeRaw(char*, int, char const*, int)
+t Q_URLEncodeRaw(char*, int, char const*, int)
+t Q_UTF16ToUTF32(unsigned short const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF16(wchar_t const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Sys_GetFactory(CSysModule*)
+t Sys_GetFactory(char const*)
+t Sys_LoadModule(char const*, Sys_Flags)
+t V_SetExtension(char*, char const*, int)
+t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t V_StripLastDir(char*, int)
+t V_vsnprintfRet(char*, int, char const*, char*, bool*)
+t ConVar_Register(int, IConCommandBaseAccessor*)
+t GetModuleHandle(char const*)
+t Q_UChar32ToUTF8(wchar_t, char*)
+t Q_UnicodeLength(char const*)
+t Q_UnicodeLength(unsigned short const*)
+t Q_UnicodeLength(wchar_t const*)
+t Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
+t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
+t Sys_LoadLibrary(char const*, Sys_Flags)
+t V_FixupPathName(char*, unsigned int, char const*)
+t V_StripFilename(char*)
+t Q_IsValidUChar32(wchar_t)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UnicodeAdvance(char*, int)
+t Q_UnicodeAdvance(unsigned short*, int)
+t Q_UnicodeAdvance(wchar_t*, int)
+t Q_UTF16ToUChar32(unsigned short const*, wchar_t&, bool&)
+t Sys_UnloadModule(CSysModule*)
+t V_IsAbsolutePath(char const*)
+t V_StripExtension(char const*, char*, int)
+t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
+t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
+t CharacterSetBuild(characterset_t*, char const*)
+t CloseLuaInterface(ILuaInterface*)
+t ConVar_PrintFlags(ConCommandBase const*)
+t ConVar_Unregister()
+t Q_UnicodeValidate(char const*)
+t Q_UnicodeValidate(unsigned short const*)
+t Q_UnicodeValidate(wchar_t const*)
+t StringAfterPrefix(char const*, char const*)
+t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
+t V_ComposeFileName(char const*, char const*, char*, int)
+t V_ExtractFilePath(char const*, char*, int)
+t CreateLuaInterface(bool)
+t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF32(char const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t ReadStackIntoError(lua_State*)
+t SteamAppSubscribed(int)
+t Sys_GetFactoryThis()
+t V_DefaultExtension(char*, char const*, int)
+t V_FixDoubleSlashes(char*)
+t V_GetFileExtension(char const*)
+t V_MakeAbsolutePath(char*, int, char const*, char const*)
+t V_MakeRelativePath(char const*, char const*, char*, int)
+t V_RemoveDotSlashes(char*, char, bool)
+t LuaStateToInterface(lua_State*)
+t Q_UChar32ToUTF16Len(wchar_t)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t V_StripTrailingSlash(char*)
+t ConnectTier1Libraries(void* (**)(char const*, int*), int)
+t DefaultCompletionFunc(char const*, char (*) [128])
+t Sys_IsDebuggerPresent()
+t V_GetCurrentDirectory(char*, int)
+t V_SetCurrentDirectory(char const*)
+t V_UnqualifiedFileName(char const*)
+t BGetLocalFormattedDate(long, char*, int)
+t BGetLocalFormattedTime(long, char*, int)
+t GetNoEscCharConversion()
+t V_ExtractFileExtension(char const*, char*, int)
+t V_normalizeFloatString(char*)
+t ConVar_PrintDescription(ConCommandBase const*)
+t CreateInterfaceInternal(char const*, int*)
+t AdvancedLuaErrorReporter(lua_State*)
+t DisconnectTier1Libraries()
+t GetCStringCharConversion()
+t Q_RemoveAllEvilCharacters(char*)
+t Sys_RunningWithDebugModules()
+t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
+t StringAfterPrefixCaseSensitive(char const*, char const*)
+t V_AddBackSlashesToSpecialChars(char const*)
+t SteamDepotIsSubscribedAndDownloaded(int, char const*, bool)
+t Q_StripPrecedingAndTrailingWhitespace(char*)
+t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
+T md5(unsigned char*, int, unsigned char*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
+T crc32(void const*, int, unsigned long, unsigned long*)
+U ConMsg(char const*, ...)
+T md5_32(void const*, int, unsigned int, void*)
+t V_atof(char const*)
+t V_atoi(char const*)
+T globber(char const*, char const*)
+T md5hash(void const*, int, unsigned int)
+T wildcmp(char const*, char const*)
+t V_atoi64(char const*)
+t V_nibble(char)
+t V_strupr(char*)
+T crc32_add(unsigned long&, void const*, int)
+T crc32_end(unsigned long&)
+t LuaShared()
+t pathmatch(char const*, char**, bool, char*, unsigned int)
+t V_atoui64(char const*)
+t _V_memcmp(char const*, int, void const*, void const*, int)
+t _V_memcpy(char const*, int, void*, void const*, int)
+t _V_memset(char const*, int, void*, int, int)
+t V_qsort_s(void*, unsigned int, unsigned int, int (*)(void*, void const*, void const*), void*)
+t _V_strcmp(char const*, int, char const*, char const*)
+t _V_strcpy(char const*, int, char*, char const*)
+t V_stricmp(char const*, char const*)
+t V_stristr(char*, char const*)
+t V_stristr(char const*, char const*)
+t V_StrLeft(char const*, int, char*, int)
+t _V_strlen(char const*, int, char const*)
+t V_strncat(char*, char const*, unsigned int, int)
+t V_strnchr(char const*, char, int)
+t V_strncmp(char const*, char const*, int)
+t V_strncpy(char*, char const*, int)
+t V_strnlwr(char*, unsigned int)
+t _V_strstr(char const*, int, char const*, char const*)
+t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
+t _V_wcslen(char const*, int, wchar_t const*)
+t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
+t V_wcsncpy(wchar_t*, wchar_t const*, int)
+t _V_wcsupr(char const*, int, wchar_t*)
+U operator delete[](void*)@@GLIBCXX_3.4
+U operator delete(void*)@@GLIBCXX_3.4
+b guard variable for AllocTempVector()::s_nIndex
+b guard variable for AllocTempVector()::s_vecTemp
+b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
+b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
+b guard variable for CUtlString::GetEmptyString()::s_emptyString
+b guard variable for Bootil::Debug::Listeners()::Listeners
+b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+b s_BreakSet
+t FastToLower(char)
+r md5_padding
+t md5_process(md5_context*, unsigned char*)
+b s_bShowDiag
+b s_nCVarFlag
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b g_CLuaShared
+b s_bConnected
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b s_bRegistered
+b s_EmptyConVar
+t WriteToBuffer(lua_State*, void const*, unsigned int, void*)
+b cMessageBuffer
+d s_BackSlashMap
+r g_PooledStrings
+b s_bBuiltBreakSet
+d s_nDLLIdentifier
+b s_DefaultAccessor
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+b __g_CreateCLuaSharedILuaShared_reg
+d s_pConversionArrays_NoEscConversion
+t __CreateCLuaSharedILuaShared_interface()
+d s_pConversionArrays_StringCharConversion
+t Descend(char*, unsigned int, bool, unsigned int)
+t LuaPanic(lua_State*)
+r crc_table
+t CLuaShared::UnMountLua(char const*)
+t CLuaShared::CreateCache(std::string const&, std::string const&, long)
+t CLuaShared::FindScripts(std::string const&, std::string const&, std::vector<LuaFindResult, std::allocator<LuaFindResult> >&)
+t CLuaShared::MountLuaAdd(char const*, char const*)
+t CLuaShared::AddSearchPath(char const*, char const*)
+t CLuaShared::SetLuaFindHook(LuaClientDatatableHook*)
+t CLuaShared::GetLuaInterface(unsigned char)
+t CLuaShared::SetFileContents(char const*, char const*)
+t CLuaShared::CloseLuaInterface(ILuaInterface*)
+t CLuaShared::LoadFile_FromFile(std::string const&, std::string const&, bool, bool)
+t CLuaShared::CreateLuaInterface(unsigned char, bool)
+t CLuaShared::LoadFile_FromDataTable(std::string const&, std::string const&, bool)
+t CLuaShared::Init(void* (*)(char const*, int*), bool, CSteamAPIContext*, IGet*)
+t CLuaShared::GetCache(std::string const&)
+t CLuaShared::LoadFile(std::string const&, std::string const&, bool, bool)
+t CLuaShared::MountLua(char const*)
+t CLuaShared::Shutdown()
+t CLuaShared::DumpStats()
+t CLuaShared::CLuaShared()
+t CLuaShared::CLuaShared()
+t CLuaShared::~CLuaShared()
+t CLuaShared::~CLuaShared()
+t CLuaShared::~CLuaShared()
+t ConCommand::CanAutoComplete()
+t ConCommand::AutoCompleteSuggest(char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&)
+t ConCommand::Dispatch(CCommand const&)
+t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
+t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
+t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::~ConCommand()
+t ConCommand::~ConCommand()
+t ConCommand::~ConCommand()
+t CUtlBuffer::ParseToken(characterset_t*, char*, int, bool)
+t CUtlBuffer::ParseToken(char const*, char const*, char*, int)
+t CUtlBuffer::ConvertCRLF(CUtlBuffer&)
+t CUtlBuffer::GetOverflow(int)
+t CUtlBuffer::IsBigEndian()
+t CUtlBuffer::PutOverflow(int)
+t CUtlBuffer::AssumeMemory(void*, int, int, int)
+t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::SetBigEndian(bool)
+t CUtlBuffer::EatCPPComment()
+t CUtlBuffer::EatWhiteSpace()
+t CUtlBuffer::OnGetOverflow(int)
+t CUtlBuffer::OnPutOverflow(int)
+t CUtlBuffer::SetBufferType(bool, bool)
+t CUtlBuffer::EnsureCapacity(int)
+t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekWhiteSpace(int)
+t CUtlBuffer::PeekStringMatch(int, char const*, int)
+t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
+t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
+t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
+t CUtlBuffer::GetStringInternal(char*, unsigned int)
+t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
+t CUtlBuffer::AddNullTermination()
+t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
+t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
+t CUtlBuffer::ActivateByteSwapping(bool)
+t CUtlBuffer::CheckArbitraryPeekGet(int, int&)
+t CUtlBuffer::GetDelimitedCharInternal(CUtlCharConversion*)
+t CUtlBuffer::PeekDelimitedStringLength(CUtlCharConversion*, bool)
+t CUtlBuffer::Get(void*, int)
+t CUtlBuffer::Put(void const*, int)
+t CUtlBuffer::Swap(CUtlMemory<unsigned char, int>&)
+t CUtlBuffer::Swap(CUtlBuffer&)
+t CUtlBuffer::Scanf(char const*, ...)
+t CUtlBuffer::Printf(char const*, ...)
+t CUtlBuffer::GetChar()
+t CUtlBuffer::GetLine(char*, int)
+t CUtlBuffer::GetUpTo(void*, int)
+t CUtlBuffer::PeekGet(int, int)
+t CUtlBuffer::SeekGet(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::SeekPut(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::VaScanf(char const*, char*)
+t CUtlBuffer::CheckGet(int)
+t CUtlBuffer::CheckPut(int)
+t CUtlBuffer::GetToken(char const*)
+t CUtlBuffer::VaPrintf(char const*, char*)
+t CUtlBuffer::PutString(char const*)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int)
+t CUtlMemory<unsigned char, int>::Init(int, int)
+t CUtlMemory<unsigned char, int>::Purge()
+t CUtlString::FixSlashes(char)
+t CUtlString::AllocMemory(unsigned int)
+t CUtlString::GetForModify()
+t CUtlString::GetEmptyString()
+t CUtlString::StripTrailingSlash()
+t CUtlString::Set(char const*)
+t CUtlString::Trim(char)
+t CUtlString::Trim(char const*)
+t CUtlString::Clear()
+t CUtlString::Purge()
+t CUtlString::Append(char const*)
+t CUtlString::Append(char const*, int)
+t CUtlString::Format(char const*, ...)
+t CUtlString::FormatV(char const*, char*)
+t CUtlString::ToLower()
+t CUtlString::ToUpper()
+t CUtlString::PathJoin(char const*, char const*)
+t CUtlString::TrimLeft(char)
+t CUtlString::TrimLeft(char const*)
+t CUtlString::SetDirect(char const*, int)
+t CUtlString::SetLength(int)
+t CUtlString::TrimRight(char)
+t CUtlString::TrimRight(char const*)
+t CUtlString::operator=(char const*)
+t CUtlString::operator=(CUtlString const&)
+t CUtlString::~CUtlString()
+t CUtlString::operator+=(char)
+t CUtlString::operator+=(double)
+t CUtlString::operator+=(int)
+t CUtlString::operator+=(char const*)
+t CUtlString::operator+=(CUtlString const&)
+t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
+t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
+t CUtlVector<LuaFile*, CUtlMemory<LuaFile*, int> >::InsertBefore(int, LuaFile* const&)
+t CUtlVector<LuaFile*, CUtlMemory<LuaFile*, int> >::~CUtlVector()
+t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
+U CVProfNode::EnterScope()
+U CVProfNode::GetSubNode(char const*, int, char const*, int)
+U CVProfNode::ExitScope()
+t ILuaShared::~ILuaShared()
+t ILuaShared::~ILuaShared()
+t CVProfScope::~CVProfScope()
+t CEmptyConVar::SetValue(float)
+t CEmptyConVar::SetValue(int)
+t CEmptyConVar::SetValue(char const*)
+t CEmptyConVar::~CEmptyConVar()
+t CEmptyConVar::~CEmptyConVar()
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+b InterfaceReg::s_pInterfaceRegs
+t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t CLuaInterface::DELETE_ME1(char const*, int)
+t CLuaInterface::_DELETE_ME(ILuaObject*, void*)
+t CLuaInterface::GetUpvalue(int, int)
+t CLuaInterface::isUserData(int)
+t CLuaInterface::ErrorNoHalt(char const*, ...)
+t CLuaInterface::GetLuaState()
+t CLuaInterface::GetNewTable()
+t CLuaInterface::RunStringEx(char const*, char const*, char const*, bool, bool, bool, bool)
+t CLuaInterface::SetIsServer(bool)
+t CLuaInterface::CallInternal(int, int)
+t CLuaInterface::CreateObject()
+t CLuaInterface::DoStackCheck()
+t CLuaInterface::ErrorFromLua(char const*, ...)
+t CLuaInterface::RunLuaModule(char const*)
+t CLuaInterface::CompileString(Bootil::Buffer&, std::string const&)
+t CLuaInterface::DestroyObject(ILuaObject*)
+t CLuaInterface::GetDataString(int, void**)
+t CLuaInterface::PushLuaObject(ILuaObject*)
+t CLuaInterface::SetMemberFast(ILuaObject*, int, int)
+t CLuaInterface::_DELETE_ME2466(int)
+t CLuaInterface::DELETE_ME_5437(int)
+t CLuaInterface::ExecuteLuaFile(LuaFile*, bool, bool, char const*, bool)
+t CLuaInterface::GetCurrentFile(std::string&)
+t CLuaInterface::NewGlobalTable(char const*)
+t CLuaInterface::AddThreadedCall(GarrysMod::Lua::IThreadedCall*)
+t CLuaInterface::CallInternalGet(int, ILuaObject*)
+t CLuaInterface::GetPooledString(int)
+t CLuaInterface::PushLuaFunction(int (*)(lua_State*))
+t CLuaInterface::FindAndRunScript(char const*, bool, bool, char const*, bool)
+t CLuaInterface::GetStringOrError(int)
+t CLuaInterface::PushPooledString(int)
+t CLuaInterface::RunThreadedCalls()
+t CLuaInterface::FindObjectOnTable(int, int)
+t CLuaInterface::GetActualTypeName(int)
+t CLuaInterface::IsDedicatedServer()
+t CLuaInterface::GetCurrentLocation()
+t CLuaInterface::GetMetaTableObject(int)
+t CLuaInterface::GetMetaTableObject(char const*, int)
+t CLuaInterface::NewTemporaryObject()
+t CLuaInterface::CallInternalGetBool(int)
+t CLuaInterface::CallFunctionProtected(int, int, bool)
+t CLuaInterface::CallInternalGetString(int)
+t CLuaInterface::CallInternalNoReturns(int)
+t CLuaInterface::ShutdownThreadedCalls()
+t CLuaInterface::FindOnObjectsMetaTable(int, int)
+t CLuaInterface::SetupInfiniteLoopProtection()
+t CLuaInterface::Msg(char const*, ...)
+t CLuaInterface::Init(ILuaCallback*, bool)
+t CLuaInterface::Cycle()
+t CLuaInterface::Error(char const*)
+t CLuaInterface::Global()
+t CLuaInterface::GetInfo(char const*, void*)
+t CLuaInterface::GetPath()
+t CLuaInterface::IsEqual(ILuaObject*, ILuaObject*)
+t CLuaInterface::PopPath()
+t CLuaInterface::PushNil()
+t CLuaInterface::Require(char const*)
+t CLuaInterface::GetColor(int)
+t CLuaInterface::GetFlags(int)
+t CLuaInterface::GetLocal(void*, int)
+t CLuaInterface::GetStack(int, void*)
+t CLuaInterface::IsClient()
+t CLuaInterface::IsServer()
+t CLuaInterface::LuaError(char const*, int)
+t CLuaInterface::PushLong(long)
+t CLuaInterface::PushPath(char const*)
+t CLuaInterface::SetState(lua_State*)
+t CLuaInterface::Shutdown()
+t CLuaInterface::CheckType(int, int)
+t CLuaInterface::GetObject(int)
+t CLuaInterface::GetPathID()
+t CLuaInterface::GetReturn(int)
+t CLuaInterface::MsgColour(Color const&, char const*, ...)
+t CLuaInterface::PushColor(int, int, int, int)
+t CLuaInterface::RunMacros(std::string&)
+t CLuaInterface::RunString(char const*, char const*, char const*, bool, bool)
+t CLuaInterface::SetGlobal(char const*, char const*)
+t CLuaInterface::SetMember(ILuaObject*, float)
+t CLuaInterface::SetMember(ILuaObject*, float, ILuaObject*)
+t CLuaInterface::SetMember(ILuaObject*, char const*)
+t CLuaInterface::SetMember(ILuaObject*, char const*, ILuaObject*)
+t CLuaInterface::SetMember(ILuaObject*, ILuaObject*, ILuaObject*)
+t CLuaInterface::SetPathID(char const*)
+t CLuaInterface::TypeError(char const*, int)
+t CLuaInterface::CLuaInterface(bool)
+t CLuaInterface::CLuaInterface(bool)
+t ConCommandBase::CopyString(char const*)
+t ConCommandBase::CreateBase(char const*, char const*, int)
+b ConCommandBase::s_pAccessor
+b ConCommandBase::s_pConCommandBases
+t ConCommandBase::Init()
+t ConCommandBase::GetNext()
+t ConCommandBase::AddFlags(int)
+t ConCommandBase::Shutdown()
+t ConCommandBase::ConCommandBase(char const*, char const*, int)
+t ConCommandBase::ConCommandBase()
+t ConCommandBase::ConCommandBase(char const*, char const*, int)
+t ConCommandBase::ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t IBaseInterface::~IBaseInterface()
+t IBaseInterface::~IBaseInterface()
+t CDefaultAccessor::RegisterConCommandBase(ConCommandBase*)
+t CDllDemandLoader::GetFactory()
+t CDllDemandLoader::Unload()
+t CDllDemandLoader::CDllDemandLoader(char const*)
+t CDllDemandLoader::CDllDemandLoader(char const*)
+t CDllDemandLoader::~CDllDemandLoader()
+t CDllDemandLoader::~CDllDemandLoader()
+t CDllDemandLoader::~CDllDemandLoader()
+t CBaseLuaInterface::PushNumber(double)
+t CBaseLuaInterface::PushString(char const*, unsigned int)
+t CBaseLuaInterface::ThreadLock()
+t CBaseLuaInterface::ThrowError(char const*)
+t CBaseLuaInterface::CheckNumber(int)
+t CBaseLuaInterface::CheckString(int)
+t CBaseLuaInterface::CreateTable()
+t CBaseLuaInterface::GetTypeName(int)
+t CBaseLuaInterface::GetUserdata(int)
+t CBaseLuaInterface::NewUserdata(unsigned int)
+t CBaseLuaInterface::PushSpecial(int)
+t CBaseLuaInterface::GetCFunction(int)
+t CBaseLuaInterface::GetMetaTable(int)
+t CBaseLuaInterface::PushCClosure(int (*)(lua_State*), int)
+t CBaseLuaInterface::PushUserdata(void*)
+t CBaseLuaInterface::SetMetaTable(int)
+t CBaseLuaInterface::ThreadUnlock()
+t CBaseLuaInterface::PushCFunction(int (*)(lua_State*))
+t CBaseLuaInterface::ReferenceFree(int)
+t CBaseLuaInterface::ReferencePush(int)
+t CBaseLuaInterface::PreCreateTable(int, int)
+t CBaseLuaInterface::ReferenceCreate()
+t CBaseLuaInterface::CreateMetaTableType(char const*, int)
+t CBaseLuaInterface::Pop(int)
+t CBaseLuaInterface::Top()
+t CBaseLuaInterface::Call(int, int)
+t CBaseLuaInterface::Next(int)
+t CBaseLuaInterface::Push(int)
+t CBaseLuaInterface::Equal(int, int)
+t CBaseLuaInterface::PCall(int, int, int)
+t CBaseLuaInterface::Insert(int)
+t CBaseLuaInterface::IsType(int, int)
+t CBaseLuaInterface::ObjLen(int)
+t CBaseLuaInterface::RawGet(int)
+t CBaseLuaInterface::RawSet(int)
+t CBaseLuaInterface::Remove(int)
+t CBaseLuaInterface::GetBool(int)
+t CBaseLuaInterface::GetType(int)
+t CBaseLuaInterface::PushNil()
+t CBaseLuaInterface::ArgError(int, char const*)
+t CBaseLuaInterface::GetField(int, char const*)
+t CBaseLuaInterface::GetTable(int)
+t CBaseLuaInterface::PushBool(bool)
+t CBaseLuaInterface::RawEqual(int, int)
+t CBaseLuaInterface::SetField(int, char const*)
+t CBaseLuaInterface::SetTable(int)
+t CBaseLuaInterface::CheckType(int, int)
+t CBaseLuaInterface::GetNumber(int)
+t CBaseLuaInterface::GetString(int, unsigned int*)
+t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
+t CUtlInplaceBuffer::InplaceGetLinePtr()
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlCharConversion::FindConversion(char const*, int*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlNoEscConversion::FindConversion(char const*, int*)
+t CUtlCStringConversion::FindConversion(char const*, int*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t ILuaInterface_DeleteMe::DELETE_ME2()
+t CWrap::~CWrap()
+T Bootil::AutoBuffer::EnsureCapacity(unsigned int)
+T Bootil::AutoBuffer::Clear()
+T Bootil::AutoBuffer::AutoBuffer(int)
+T Bootil::AutoBuffer::AutoBuffer(int)
+T Bootil::AutoBuffer::~AutoBuffer()
+T Bootil::AutoBuffer::~AutoBuffer()
+T Bootil::AutoBuffer::~AutoBuffer()
+T Bootil::IsShuttingDown()
+T Bootil::File::GetTempDir()
+t Bootil::File::RemoveFile(std::string const&)
+t Bootil::File::CreateFolder(std::string const&, bool)
+t Bootil::File::RemoveFolder(std::string const&, bool)
+T Bootil::File::GetTempFilename()
+t Bootil::File::GetFilesInFolder(std::string const&, std::vector<std::string, std::allocator<std::string> >&, bool)
+t Bootil::File::RelativeToAbsolute(std::string const&)
+t Bootil::File::CRC(std::string const&)
+t Bootil::File::Copy(std::string const&, std::string const&)
+t Bootil::File::Find(std::vector<std::string, std::allocator<std::string> >*, std::vector<std::string, std::allocator<std::string> >*, std::string const&, bool)
+t Bootil::File::Read(std::string const&, Bootil::Buffer&)
+t Bootil::File::Read(std::string const&, std::string&)
+t Bootil::File::Size(std::string const&)
+t Bootil::File::Write(std::string const&, Bootil::Buffer const&)
+t Bootil::File::Write(std::string const&, std::string const&)
+t Bootil::File::Append(std::string const&, std::string const&)
+t Bootil::File::Exists(std::string const&)
+t Bootil::File::IsFolder(std::string const&)
+T Bootil::Math::Random::Int(int, int)
+T Bootil::Math::Random::Bool()
+T Bootil::Math::Random::Seed(unsigned int)
+T Bootil::Debug::PopupMessage(char const*, ...)
+T Bootil::Debug::SuppressPopups(bool)
+T Bootil::Debug::Crash::SetupCallback()
+T Bootil::Debug::Crash::SetMinidumpFunction(void (*)(unsigned int, void*))
+T Bootil::Debug::Crash::FunctionCalledOnCrash(unsigned int, void*)
+T Bootil::Debug::Crash::DoCrash()
+b Bootil::Debug::Crash::g_MinidumpFunction
+T Bootil::Debug::Internal::DoAssert(char const*, unsigned int, char const*, char const*, char const*, ...)
+T Bootil::Debug::IListener::Add(Bootil::Debug::IListener*)
+T Bootil::Debug::IListener::Remove(Bootil::Debug::IListener*)
+T Bootil::Debug::LastError()
+T Bootil::Debug::Listeners()
+b Bootil::Debug::s_strError
+b Bootil::Debug::s_bSuppressPopups
+t std::string Bootil::ToStr<float>(float const&)
+t std::string Bootil::ToStr<int>(int const&)
+t std::string Bootil::ToStr<unsigned int>(unsigned int const&)
+t std::string Bootil::ToStr<unsigned long long>(unsigned long long const&)
+T Bootil::Buffer::GetCurrent()
+T Bootil::Buffer::ReadString()
+T Bootil::Buffer::SetWritten(unsigned int)
+T Bootil::Buffer::WriteBuffer(Bootil::Buffer const&)
+t Bootil::Buffer::WriteString(std::string const&, bool)
+T Bootil::Buffer::EnsureCapacity(unsigned int)
+T Bootil::Buffer::SetExternalBuffer(void*, int)
+T Bootil::Buffer::Read(void*, int)
+T Bootil::Buffer::Clear()
+T Bootil::Buffer::Write(void const*, unsigned int)
+T Bootil::Buffer::SetPos(unsigned int)
+T Bootil::Buffer::MoveMem(unsigned int, unsigned int, unsigned int)
+T Bootil::Buffer::TrimLeft(unsigned int)
+T Bootil::Buffer::Buffer(void*, int)
+T Bootil::Buffer::Buffer()
+T Bootil::Buffer::Buffer(void*, int)
+T Bootil::Buffer::Buffer()
+T Bootil::Buffer::~Buffer()
+T Bootil::Buffer::~Buffer()
+T Bootil::Buffer::~Buffer()
+T Bootil::Hasher::MD5::Easy(void const*, unsigned int)
+t Bootil::Hasher::MD5::String(std::string const&)
+T Bootil::Hasher::CRC32::Add(unsigned long&, void const*, unsigned int)
+T Bootil::Hasher::CRC32::End(unsigned long&)
+T Bootil::Hasher::CRC32::Easy(void const*, unsigned int, unsigned long)
+T Bootil::Hasher::CRC32::Start(unsigned long)
+t Bootil::Hasher::CRC32::String(std::string const&, unsigned long)
+T Bootil::Output::Msg(char const*, ...)
+T Bootil::Output::Error(char const*, ...)
+T Bootil::Output::Warning(char const*, ...)
+t Bootil::String::ToCharBuffer(std::string const&, char*, int)
+t Bootil::String::File::FixSlashes(std::string&, std::string const&, std::string const&)
+t Bootil::String::File::LastDirectory(std::string&)
+t Bootil::String::File::StripFilename(std::string&)
+t Bootil::String::File::IsAbsolutePath(std::string const&)
+t Bootil::String::File::StripExtension(std::string&)
+t Bootil::String::File::UpOneDirectory(std::string&)
+t Bootil::String::File::ExtractFilename(std::string&)
+t Bootil::String::File::IsFileExtension(std::string const&, std::string const&)
+t Bootil::String::File::GetFileExtension(std::string const&)
+t Bootil::String::File::ToWindowsSlashes(std::string&)
+t Bootil::String::File::CleanPath(std::string&)
+t Bootil::String::Test::StartsWith(std::string const&, std::string const&)
+t Bootil::String::Test::ContainsAny(std::string const&, std::string const&)
+t Bootil::String::Test::ContainsChar(std::string const&, char)
+t Bootil::String::Test::ContainsOnly(std::string const&, std::string const&)
+t Bootil::String::Test::Contains(std::string const&, std::string const&, bool)
+t Bootil::String::Test::EndsWith(std::string const&, std::string const&)
+t Bootil::String::Test::ICompare(std::string const&, std::string const&)
+t Bootil::String::Test::IsNumber(std::string const&)
+t Bootil::String::Test::Wildcard(std::string const&, std::string const&)
+t Bootil::String::Util::TrimBefore(std::string&, std::string const&, bool)
+t Bootil::String::Util::SplitLength(std::string const&, int, std::vector<std::string, std::allocator<std::string> >&)
+t Bootil::String::Util::FindAndReplace(std::string&, std::string const&, std::string const&)
+t Bootil::String::Util::Trim(std::string&, std::string const&)
+t Bootil::String::Util::Count(std::string const&, char)
+t Bootil::String::Util::Split(std::string const&, std::string const&, std::vector<std::string, std::allocator<std::string> >&)
+t Bootil::String::Util::TrimLeft(std::string&, std::string const&)
+t Bootil::String::Util::TrimAfter(std::string&, std::string const&, bool)
+t Bootil::String::Util::TrimRight(std::string&, std::string const&)
+t Bootil::String::Lower(std::string&)
+t Bootil::String::Upper(std::string&)
+T Bootil::String::Format::NiceDouble(double)
+T Bootil::String::Format::BinaryToHex(void const*, unsigned int)
+T Bootil::String::Format::MemoryPerSecond(int)
+T Bootil::String::Format::CommaSeperatedInt(int)
+T Bootil::String::Format::Int(int)
+t Bootil::String::Format::Time(std::string const&, unsigned int)
+T Bootil::String::Format::Print(char const*, ...)
+T Bootil::String::Format::Print(wchar_t const*, ...)
+T Bootil::String::Format::YesNo(bool)
+T Bootil::String::Format::Memory(int)
+T Bootil::String::Format::UInt64(unsigned long long)
+T Bootil::String::Format::VarArgs(char const*, char*)
+T Bootil::String::Format::VarArgs(wchar_t const*, char*)
+T Bootil::String::Format::NiceFloat(float)
+T Bootil::String::Random(int, bool, bool, bool, bool)
+t Bootil::String::SortList(std::vector<std::string, std::allocator<std::string> >&, bool)
+T Bootil::Console::BGColorPop()
+T Bootil::Console::FGColorPop()
+T Bootil::Console::WaitForKey()
+T Bootil::Console::BGColorPush(Bootil::Console::ConsoleColor)
+T Bootil::Console::FGColorPush(Bootil::Console::ConsoleColor)
+T Bootil::Console::UpdateColor()
+T Bootil::Console::PosPushRelative(int, int)
+T Bootil::Console::SetCursorVisible(bool)
+T Bootil::Console::Cls()
+T Bootil::Console::Msg(Bootil::Console::ConsoleColor, Bootil::Console::ConsoleColor, char const*, ...)
+B Bootil::Console::Input::m_CaretPos
+T Bootil::Console::Input::PostOutput()
+T Bootil::Console::Input::OnBackspace()
+T Bootil::Console::Input::GetLineInProgress()
+T Bootil::Console::Input::Plat_GetConsoleCharNonBlocking()
+T Bootil::Console::Input::Cycle()
+T Bootil::Console::Input::Flush()
+T Bootil::Console::Input::OnLeft()
+T Bootil::Console::Input::GetLine()
+B Bootil::Console::Input::m_Lines
+T Bootil::Console::Input::OnRight()
+T Bootil::Console::Input::DrawLine()
+T Bootil::Console::Input::OnReturn()
+T Bootil::Console::Input::ClearLine()
+B Bootil::Console::Input::m_strLine
+T Bootil::Console::Input::PreOutput()
+T Bootil::Console::PosPop()
+T Bootil::Console::PosPush(int, int)
+b Bootil::Console::g_PosStack
+b Bootil::Console::s_bg
+b Bootil::Console::s_fg
+T Bootil::Startup()
+T Bootil::Platform::CurrentDir()
+T Bootil::Platform::GetKeyChar()
+t Bootil::Platform::LibraryLoad(std::string const&)
+t Bootil::Platform::OpenWebpage(std::string const&)
+T Bootil::Platform::ProgramName()
+T Bootil::Platform::Architecture()
+T Bootil::Platform::DesktopWidth()
+T Bootil::Platform::IsKeyPressed()
+T Bootil::Platform::LibraryClose(void*)
+T Bootil::Platform::PlatformName()
+t Bootil::Platform::StartProcess(std::string const&, bool)
+T Bootil::Platform::TemporaryDir()
+T Bootil::Platform::DesktopHeight()
+T Bootil::Platform::ProgramFolder()
+t Bootil::Platform::DebuggerOutput(std::string const&)
+T Bootil::Platform::CurrentUserName()
+T Bootil::Platform::FullProgramName()
+t Bootil::Platform::GetAbsolutePath(std::string const&)
+T Bootil::Platform::GetMilliseconds()
+t Bootil::Platform::SetupAssociation(std::string)
+T Bootil::Platform::FormatSystemError(unsigned long)
+T Bootil::Platform::PlatformNameShort()
+T Bootil::Platform::TemporaryFilename()
+t Bootil::Platform::GetFunctionAddress(void*, std::string const&)
+t Bootil::Platform::Popup(std::string const&, std::string const&)
+T Bootil::Platform::Sleep(unsigned int)
+t Bootil::Platform::FindFiles(std::vector<std::string, std::allocator<std::string> >*, std::vector<std::string, std::allocator<std::string> >*, std::string const&, bool)
+T Bootil::Platform::LastError()
+T Bootil::Shutdown()
+b Bootil::g_bShuttingDown
+t ConVar::ClampValue(float&)
+t ConVar::SetDefault(char const*)
+t ConVar::InternalSetValue(char const*)
+t ConVar::ChangeStringValue(char const*, float)
+t ConVar::InternalSetIntValue(int)
+t ConVar::InstallChangeCallback(void (*)(IConVar*, char const*, float))
+t ConVar::InternalSetFloatValue(float)
+t ConVar::Init()
+t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::Revert()
+t ConVar::AddFlags(int)
+t ConVar::SetValue(float)
+t ConVar::SetValue(int)
+t ConVar::SetValue(char const*)
+t ConVar::ConVar(char const*, char const*, int)
+t ConVar::ConVar(char const*, char const*, int, char const*)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int)
+t ConVar::ConVar(char const*, char const*, int, char const*)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
+t ConVar::~ConVar()
+t ConVar::~ConVar()
+t ConVar::~ConVar()
+t CCommand::DefaultBreakSet()
+t CCommand::Reset()
+t CCommand::Tokenize(char const*, characterset_t*)
+t CCommand::CCommand(int, char const**)
+t CCommand::CCommand()
+t CCommand::CCommand(int, char const**)
+t CCommand::CCommand()
+t CLuaError::StackEntry::~StackEntry()
+t CLuaError::~CLuaError()
+t ConVarRef::Init(char const*, bool)
+t ConVarRef::ConVarRef(IConVar*)
+t ConVarRef::ConVarRef(char const*)
+t ConVarRef::ConVarRef(char const*, bool)
+t ConVarRef::ConVarRef(IConVar*)
+t ConVarRef::ConVarRef(char const*)
+t ConVarRef::ConVarRef(char const*, bool)
+r GarrysMod::Lua::Type::Name
+U operator new[](unsigned int)@@GLIBCXX_3.4
+t ConCommand::IsCommand() const
+t CUtlString::GetExtension() const
+t CUtlString::StripFilename() const
+t CUtlString::MatchesPattern(CUtlString const&, int) const
+t CUtlString::StripExtension() const
+t CUtlString::GetBaseFilename() const
+t CUtlString::UnqualifiedFilename() const
+t CUtlString::IsEqual_CaseSensitive(char const*) const
+t CUtlString::IsEqual_CaseInsensitive(char const*) const
+t CUtlString::Get() const
+t CUtlString::Left(int) const
+t CUtlString::Right(int) const
+t CUtlString::Slice(int, int) const
+t CUtlString::AbsPath(char const*) const
+t CUtlString::DirName() const
+t CUtlString::Replace(char, char) const
+t CUtlString::Replace(char const*, char const*) const
+t CUtlString::operator==(CUtlString const&) const
+t CUtlString::operator[](int) const
+t CUtlString::operator+(int) const
+t CUtlString::operator+(char const*) const
+t CUtlString::operator+(CUtlString const&) const
+t CEmptyConVar::GetName() const
+t CEmptyConVar::IsFlagSet(int) const
+t ConCommandBase::GetHelpText() const
+t ConCommandBase::IsRegistered() const
+t ConCommandBase::GetDLLIdentifier() const
+t ConCommandBase::GetName() const
+t ConCommandBase::GetNext() const
+t ConCommandBase::IsCommand() const
+t ConCommandBase::IsFlagSet(int) const
+t CUtlCharConversion::GetDelimiter() const
+t CUtlCharConversion::GetEscapeChar() const
+t CUtlCharConversion::GetDelimiterLength() const
+t CUtlCharConversion::GetConversionLength(char) const
+t CUtlCharConversion::GetConversionString(char) const
+t CUtlCharConversion::MaxConversionLength() const
+T Bootil::Buffer::GetWritten() const
+T Bootil::Buffer::GetPos() const
+T Bootil::Buffer::GetBase(unsigned int) const
+T Bootil::Buffer::GetSize() const
+t ConVar::GetDefault() const
+t ConVar::GetHelpText() const
+t ConVar::IsRegistered() const
+t ConVar::GetMax(float&) const
+t ConVar::GetMin(float&) const
+t ConVar::GetName() const
+t ConVar::IsCommand() const
+t ConVar::IsFlagSet(int) const
+t CCommand::FindArgInt(char const*, int) const
+t CCommand::FindArg(char const*) const
+t ConVarRef::IsValid() const
+U std::string::find_last_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::find_first_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::find(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::rfind(char, unsigned int) const@@GLIBCXX_3.4
+U std::string::rfind(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::compare(char const*) const@@GLIBCXX_3.4
+U std::__basic_file<char>::is_open() const@@GLIBCXX_3.4
+U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::basic_string(wchar_t const*, std::allocator<wchar_t> const&)@@GLIBCXX_3.4
+U std::istream::read(char*, int)@@GLIBCXX_3.4
+U std::istream::seekg(long long, std::_Ios_Seekdir)@@GLIBCXX_3.4
+U std::istream::tellg()@@GLIBCXX_3.4
+U std::ostream::write(char const*, int)@@GLIBCXX_3.4
+U std::ostream::operator<<(std::basic_streambuf<char, std::char_traits<char> >*)@@GLIBCXX_3.4
+U std::string::_M_leak_hard()@@GLIBCXX_3.4
+t char* std::string::_S_construct<std::istreambuf_iterator<char, std::char_traits<char> > >(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::allocator<char> const&, std::input_iterator_tag)
+U std::string::_M_replace_aux(unsigned int, unsigned int, unsigned int, char)@@GLIBCXX_3.4
+U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::_Rep::_M_dispose(std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
+U std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::swap(std::string&)@@GLIBCXX_3.4
+U std::string::append(char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::append(std::string const&)@@GLIBCXX_3.4
+U std::string::assign(char const*)@@GLIBCXX_3.4
+U std::string::assign(char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::assign(std::string const&)@@GLIBCXX_3.4
+U std::string::insert(unsigned int, char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::replace(unsigned int, unsigned int, char const*, unsigned int)@@GLIBCXX_3.4
+U std::string::reserve(unsigned int)@@GLIBCXX_3.4
+U std::string::_M_mutate(unsigned int, unsigned int, unsigned int)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@@GLIBCXX_3.4
+t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_M_initialize_map(unsigned int)
+t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::~_Deque_base()
+t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::~_Deque_base()
+t std::_Deque_base<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> >::_M_initialize_map(unsigned int)
+t std::_Deque_base<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> >::~_Deque_base()
+t std::_Deque_base<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> >::~_Deque_base()
+t std::_Deque_base<std::string, std::allocator<std::string> >::_M_initialize_map(unsigned int)
+U std::__basic_file<char>::~__basic_file()@@GLIBCXX_3.4
+U std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode)@@GLIBCXX_3.4
+U std::basic_filebuf<char, std::char_traits<char> >::close()@@GLIBCXX_3.4
+U std::basic_filebuf<char, std::char_traits<char> >::basic_filebuf()@@GLIBCXX_3.4
+U std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf()@@GLIBCXX_3.4
+U std::basic_ifstream<char, std::char_traits<char> >::~basic_ifstream()@@GLIBCXX_3.4
+U std::basic_ofstream<char, std::char_traits<char> >::~basic_ofstream()@@GLIBCXX_3.4
+U std::_List_node_base::hook(std::_List_node_base*)@@GLIBCXX_3.4
+U std::_List_node_base::unhook()@@GLIBCXX_3.4
+t std::list<Bootil::Debug::IListener*, std::allocator<Bootil::Debug::IListener*> >::~list()
+t std::list<Bootil::Debug::IListener*, std::allocator<Bootil::Debug::IListener*> >::~list()
+t std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_M_reallocate_map(unsigned int, bool)
+t std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::deque(std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> > const&)
+t std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::deque(std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> > const&)
+t std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> >::deque(std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> > const&)
+t std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> >::deque(std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> > const&)
+t std::deque<std::string, std::allocator<std::string> >::_M_push_back_aux(std::string const&)
+t std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_aux(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>)
+t std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&)
+t std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&)
+t std::deque<std::string, std::allocator<std::string> >::~deque()
+t std::deque<std::string, std::allocator<std::string> >::~deque()
+t std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::~queue()
+t std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::~queue()
+t std::stack<Bootil::Console::ConsoleColor, std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> > >::~stack()
+t std::stack<Bootil::Console::ConsoleColor, std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> > >::~stack()
+t std::stack<Bootil::Console::PosInfo, std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> > >::~stack()
+t std::stack<Bootil::Console::PosInfo, std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> > >::~stack()
+U std::locale::~locale()@@GLIBCXX_3.4
+t std::vector<LuaFindResult, std::allocator<LuaFindResult> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, LuaFindResult const&)
+t std::vector<CLuaError::StackEntry, std::allocator<CLuaError::StackEntry> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CLuaError::StackEntry*, std::vector<CLuaError::StackEntry, std::allocator<CLuaError::StackEntry> > >, CLuaError::StackEntry const&)
+t std::vector<std::string, std::allocator<std::string> >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, std::string const&)
+t std::vector<std::string, std::allocator<std::string> >::~vector()
+t std::vector<std::string, std::allocator<std::string> >::~vector()
+U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
+U std::ios_base::Init::Init()@@GLIBCXX_3.4
+U std::ios_base::Init::~Init()@@GLIBCXX_3.4
+U std::ios_base::ios_base()@@GLIBCXX_3.4
+U std::ios_base::~ios_base()@@GLIBCXX_3.4
+t std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::string const&)
+t std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique(std::string const&)
+t std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*)
+U std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)@@GLIBCXX_3.4
+U std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)@@GLIBCXX_3.4
+U operator new(unsigned int)@@GLIBCXX_3.4
+t void std::__adjust_heap<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, int, LuaFindResult>(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, int, int, LuaFindResult)
+t void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, int, std::string>(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, int, int, std::string)
+t void std::__adjust_heap<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, int, std::string>(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, int, int, std::string)
+t void std::__heap_select<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >)
+t void std::__insertion_sort<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > > >(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, __gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >)
+t void std::__insertion_sort<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >)
+t void std::__insertion_sort<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >)
+t void std::__introsort_loop<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, int>(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, __gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, int)
+t void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, int>(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, int)
+t void std::__introsort_loop<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, int>(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, int)
+U std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)@@GLIBCXX_3.4.9
+U std::__throw_bad_alloc()@@GLIBCXX_3.4
+U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::__throw_out_of_range(char const*)@@GLIBCXX_3.4
+t __gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, LuaFindResult>(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, __gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, LuaFindResult)
+t void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > > >(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, __gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >)
+t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, LuaFindResult>(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, LuaFindResult)
+t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >)
+t void std::__unguarded_linear_insert<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >)
+U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+U std::cout@@GLIBCXX_3.4
+t void std::make_heap<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > > >(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, __gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >)
+t void std::make_heap<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >)
+t void std::make_heap<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >)
+t void std::sort_heap<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >)
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+b std::__ioinit
+t non-virtual thunk to CEmptyConVar::SetValue(float)
+t non-virtual thunk to CEmptyConVar::SetValue(int)
+t non-virtual thunk to CEmptyConVar::SetValue(char const*)
+t non-virtual thunk to ConVar::SetValue(float)
+t non-virtual thunk to ConVar::SetValue(int)
+t non-virtual thunk to ConVar::SetValue(char const*)
+t non-virtual thunk to CEmptyConVar::GetName() const
+t non-virtual thunk to CEmptyConVar::IsFlagSet(int) const
+t non-virtual thunk to ConVar::GetName() const
+t non-virtual thunk to ConVar::IsFlagSet(int) const
+r typeinfo for CLuaShared
+r typeinfo for ConCommand
+r typeinfo for ILuaShared
+r typeinfo for CEmptyConVar
+r typeinfo for CLuaInterface
+r typeinfo for ILuaInterface
+r typeinfo for ConCommandBase
+r typeinfo for IBaseInterface
+r typeinfo for CDefaultAccessor
+r typeinfo for CDllDemandLoader
+r typeinfo for ILuaInterface001
+r typeinfo for CBaseLuaInterface
+r typeinfo for CUtlCharConversion
+r typeinfo for CUtlNoEscConversion
+r typeinfo for ConVar_ServerBounded
+r typeinfo for CUtlCStringConversion
+r typeinfo for ILuaInterface_DeleteMe
+r typeinfo for IConCommandBaseAccessor
+r typeinfo for ConVar
+r typeinfo for IConVar
+V typeinfo for Bootil::AutoBuffer
+V typeinfo for Bootil::Buffer
+r typeinfo for GarrysMod::Lua::ILuaBase
+r typeinfo name for CLuaShared
+r typeinfo name for ConCommand
+r typeinfo name for ILuaShared
+r typeinfo name for CEmptyConVar
+r typeinfo name for CLuaInterface
+r typeinfo name for ILuaInterface
+r typeinfo name for ConCommandBase
+r typeinfo name for IBaseInterface
+r typeinfo name for CDefaultAccessor
+r typeinfo name for CDllDemandLoader
+r typeinfo name for ILuaInterface001
+r typeinfo name for CBaseLuaInterface
+r typeinfo name for CUtlCharConversion
+r typeinfo name for CUtlNoEscConversion
+r typeinfo name for ConVar_ServerBounded
+r typeinfo name for CUtlCStringConversion
+r typeinfo name for ILuaInterface_DeleteMe
+r typeinfo name for IConCommandBaseAccessor
+r typeinfo name for ConVar
+r typeinfo name for IConVar
+V typeinfo name for Bootil::AutoBuffer
+V typeinfo name for Bootil::Buffer
+r typeinfo name for GarrysMod::Lua::ILuaBase
+U VTT for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
+U VTT for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
+r vtable for CLuaShared
+r vtable for ConCommand
+r vtable for ILuaShared
+r vtable for CEmptyConVar
+r vtable for CLuaInterface
+r vtable for ILuaInterface
+r vtable for ConCommandBase
+r vtable for IBaseInterface
+r vtable for CDefaultAccessor
+r vtable for CDllDemandLoader
+r vtable for ILuaInterface001
+r vtable for CBaseLuaInterface
+r vtable for CUtlCharConversion
+r vtable for CUtlNoEscConversion
+r vtable for CUtlCStringConversion
+r vtable for ILuaInterface_DeleteMe
+r vtable for IConCommandBaseAccessor
+r vtable for ConVar
+r vtable for IConVar
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+V vtable for Bootil::AutoBuffer
+V vtable for Bootil::Buffer
+r vtable for GarrysMod::Lua::ILuaBase
+U vtable for std::basic_filebuf<char, std::char_traits<char> >@@GLIBCXX_3.4
+U vtable for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
+U vtable for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
+U vtable for std::basic_streambuf<char, std::char_traits<char> >@@GLIBCXX_3.4
+U vtable for std::basic_ios<char, std::char_traits<char> >@@GLIBCXX_3.4
+b V_pretifymem(float, int, bool)::output
+b V_pretifymem(float, int, bool)::current
+b V_pretifynum(long long)::output
+b V_pretifynum(long long)::current
+b GMODLUA_GetUserType::strName
+b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
+b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
+b CUtlString::GetEmptyString()::s_emptyString
+r CLuaInterface::GetStringOrError(int)::strDefault
+b CLuaInterface::GetCurrentLocation()::strOutput
+r CBaseLuaInterface::PushNumber(double)::__FUNCTION__
+r CBaseLuaInterface::PushString(char const*, unsigned int)::__FUNCTION__
+r CBaseLuaInterface::ThrowError(char const*)::__FUNCTION__
+r CBaseLuaInterface::CreateTable()::__FUNCTION__
+r CBaseLuaInterface::GetTypeName(int)::__FUNCTION__
+r CBaseLuaInterface::GetUserdata(int)::__FUNCTION__
+r CBaseLuaInterface::NewUserdata(unsigned int)::__FUNCTION__
+r CBaseLuaInterface::PushSpecial(int)::__FUNCTION__
+r CBaseLuaInterface::GetCFunction(int)::__FUNCTION__
+r CBaseLuaInterface::GetMetaTable(int)::__FUNCTION__
+r CBaseLuaInterface::PushCClosure(int (*)(lua_State*), int)::__FUNCTION__
+r CBaseLuaInterface::PushUserdata(void*)::__FUNCTION__
+r CBaseLuaInterface::SetMetaTable(int)::__FUNCTION__
+r CBaseLuaInterface::PushCFunction(int (*)(lua_State*))::__FUNCTION__
+r CBaseLuaInterface::ReferenceFree(int)::__FUNCTION__
+r CBaseLuaInterface::ReferencePush(int)::__FUNCTION__
+r CBaseLuaInterface::PreCreateTable(int, int)::__FUNCTION__
+r CBaseLuaInterface::ReferenceCreate()::__FUNCTION__
+r CBaseLuaInterface::CreateMetaTableType(char const*, int)::__FUNCTION__
+r CBaseLuaInterface::Pop(int)::__FUNCTION__
+r CBaseLuaInterface::Top()::__FUNCTION__
+r CBaseLuaInterface::Call(int, int)::__FUNCTION__
+r CBaseLuaInterface::Next(int)::__FUNCTION__
+r CBaseLuaInterface::Push(int)::__FUNCTION__
+r CBaseLuaInterface::Equal(int, int)::__FUNCTION__
+r CBaseLuaInterface::PCall(int, int, int)::__FUNCTION__
+r CBaseLuaInterface::Insert(int)::__FUNCTION__
+r CBaseLuaInterface::IsType(int, int)::__FUNCTION__
+r CBaseLuaInterface::RawGet(int)::__FUNCTION__
+r CBaseLuaInterface::RawSet(int)::__FUNCTION__
+r CBaseLuaInterface::Remove(int)::__FUNCTION__
+r CBaseLuaInterface::GetBool(int)::__FUNCTION__
+r CBaseLuaInterface::GetType(int)::__FUNCTION__
+r CBaseLuaInterface::PushNil()::__FUNCTION__
+r CBaseLuaInterface::ArgError(int, char const*)::__FUNCTION__
+r CBaseLuaInterface::GetField(int, char const*)::__FUNCTION__
+r CBaseLuaInterface::GetTable(int)::__FUNCTION__
+r CBaseLuaInterface::PushBool(bool)::__FUNCTION__
+r CBaseLuaInterface::RawEqual(int, int)::__FUNCTION__
+r CBaseLuaInterface::SetField(int, char const*)::__FUNCTION__
+r CBaseLuaInterface::SetTable(int)::__FUNCTION__
+r CBaseLuaInterface::CheckType(int, int)::__FUNCTION__
+r CBaseLuaInterface::GetNumber(int)::__FUNCTION__
+r CBaseLuaInterface::GetString(int, unsigned int*)::__FUNCTION__
+r Bootil::File::GetTempDir()::__FUNCTION__
+b Bootil::Debug::Listeners()::Listeners
+b Bootil::String::Format::Print(char const*, ...)::strOut
+b Bootil::String::Format::Print(wchar_t const*, ...)::strOut
+b Bootil::String::Format::VarArgs(char const*, char*)::string
+b Bootil::String::Format::VarArgs(wchar_t const*, char*)::string
+b Bootil::Platform::GetMilliseconds()::startSeconds
+d ConVarRef::Init(char const*, bool)::bFirst

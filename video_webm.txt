@@ -1,0 +1,1238 @@
+U abort@@GLIBC_2.0
+U access@@GLIBC_2.0
+U __assert_fail@@GLIBC_2.0
+T _book_maptype1_quantvals
+T _book_unquantize
+A __bss_start
+U calloc@@GLIBC_2.0
+U chdir@@GLIBC_2.0
+U chmod@@GLIBC_2.0
+U chown@@GLIBC_2.1
+U closedir@@GLIBC_2.0
+T CreateInterface
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
+B cvar
+U __cxa_atexit@@GLIBC_2.1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+U __cxa_pure_virtual@@CXXABI_1.3
+U DevMsg
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+T drft_backward
+T drft_clear
+T drft_forward
+T drft_init
+U __dynamic_cast@@CXXABI_1.3
+A _edata
+A _end
+U __errno_location@@GLIBC_2.0
+U Error
+U exit@@GLIBC_2.0
+U exp@@GLIBC_2.0
+U fclose@@GLIBC_2.1
+T _fini
+T _float32_pack
+T _float32_unpack
+R floor0_exportbundle
+T floor1_encode
+R floor1_exportbundle
+T floor1_fit
+T floor1_interpolate_fit
+R _floor_P
+U fopen64@@GLIBC_2.1
+U fopen@@GLIBC_2.1
+U fprintf@@GLIBC_2.0
+U free@@GLIBC_2.0
+U freopen@@GLIBC_2.0
+U fseek@@GLIBC_2.0
+U ftell@@GLIBC_2.0
+U fwrite@@GLIBC_2.0
+U GetCPUInformation
+U getcwd@@GLIBC_2.0
+U getenv@@GLIBC_2.0
+U gettimeofday@@GLIBC_2.0
+w __gmon_start__
+U __gxx_personality_v0@@CXXABI_1.3
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T _ilog
+T _init
+U isspace@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+w _Jv_RegisterClasses
+U KeyValuesSystem
+U lchown@@GLIBC_2.0
+U link@@GLIBC_2.0
+U log10@@GLIBC_2.0
+U log@@GLIBC_2.0
+U longjmp@@GLIBC_2.0
+U __lxstat64@@GLIBC_2.2
+U __lxstat@@GLIBC_2.0
+T _make_words
+U malloc@@GLIBC_2.0
+R mapping0_exportbundle
+R _mapping_P
+U mbstowcs@@GLIBC_2.0
+T mdct_backward
+T mdct_clear
+T mdct_forward
+T mdct_init
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U mkdir@@GLIBC_2.0
+U mkfifo@@GLIBC_2.0
+U mount@@GLIBC_2.0
+U Msg
+T oggpack_adv
+T oggpack_adv1
+T oggpackB_adv
+T oggpackB_adv1
+T oggpackB_bits
+T oggpackB_bytes
+T oggpackB_get_buffer
+T oggpack_bits
+T oggpackB_look
+T oggpackB_look1
+T oggpackB_read
+T oggpackB_read1
+T oggpackB_readinit
+T oggpackB_reset
+T oggpackB_write
+T oggpackB_writealign
+T oggpackB_writecheck
+T oggpackB_writeclear
+T oggpackB_writecopy
+T oggpackB_writeinit
+T oggpackB_writetrunc
+T oggpack_bytes
+T oggpack_get_buffer
+T oggpack_look
+T oggpack_look1
+T oggpack_read
+T oggpack_read1
+T oggpack_readinit
+T oggpack_reset
+T oggpack_write
+T oggpack_writealign
+T oggpack_writecheck
+T oggpack_writeclear
+T oggpack_writecopy
+T oggpack_writeinit
+T oggpack_writetrunc
+U open64@@GLIBC_2.2
+U opendir@@GLIBC_2.0
+U open@@GLIBC_2.0
+U Plat_IsInDebugSession
+U Plat_localtime
+U __pow_finite@@GLIBC_2.15
+U pow@@GLIBC_2.0
+U printf@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+U pthread_create@@GLIBC_2.1
+U pthread_join@@GLIBC_2.0
+w pthread_mutex_lock@@GLIBC_2.0
+w pthread_mutex_unlock@@GLIBC_2.0
+U pthread_once@@GLIBC_2.0
+U puts@@GLIBC_2.0
+U qsort@@GLIBC_2.0
+U rand@@GLIBC_2.0
+U rand_r@@GLIBC_2.0
+U readdir@@GLIBC_2.0
+U realloc@@GLIBC_2.0
+U realpath@@GLIBC_2.3
+U rename@@GLIBC_2.0
+T res0_free_info
+T res0_free_look
+T res0_inverse
+T res0_look
+T res0_pack
+T res0_unpack
+T res1_class
+T res1_forward
+T res1_inverse
+T res2_class
+T res2_forward
+T res2_inverse
+R residue0_exportbundle
+R residue1_exportbundle
+R residue2_exportbundle
+R _residue_P
+U rmdir@@GLIBC_2.0
+U scandir@@GLIBC_2.0
+U sched_yield@@GLIBC_2.0
+U sem_destroy@@GLIBC_2.1
+U sem_init@@GLIBC_2.1
+U sem_post@@GLIBC_2.1
+U sem_wait@@GLIBC_2.1
+U _setjmp@@GLIBC_2.0
+U __snprintf_chk@@GLIBC_2.3.4
+U sqrt@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
+U __stack_chk_fail@@GLIBC_2.4
+U stderr@@GLIBC_2.0
+U strcasecmp@@GLIBC_2.0
+U strcasestr@@GLIBC_2.1
+U strcat@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strdup@@GLIBC_2.0
+U strftime@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncasecmp@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strpbrk@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+U swprintf@@GLIBC_2.2
+U symlink@@GLIBC_2.0
+U sysconf@@GLIBC_2.0
+U ThreadGetCurrentId
+U ThreadInterlockedAssignIf
+U ThreadInterlockedExchange
+U time@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+U unlink@@GLIBC_2.0
+U utime@@GLIBC_2.0
+U utimes@@GLIBC_2.0
+T _ve_envelope_clear
+T _ve_envelope_init
+T _ve_envelope_mark
+T _ve_envelope_search
+T _ve_envelope_shift
+T _vi_gpsy_free
+T _vi_psy_free
+T vorbis_analysis
+T vorbis_analysis_blockout
+T vorbis_analysis_buffer
+T vorbis_analysis_headerout
+T vorbis_analysis_init
+T vorbis_analysis_wrote
+T _vorbis_apply_window
+T vorbis_bitrate_addblock
+T vorbis_bitrate_clear
+T vorbis_bitrate_flushpacket
+T vorbis_bitrate_init
+T vorbis_bitrate_managed
+T _vorbis_block_alloc
+T vorbis_block_clear
+T vorbis_block_init
+T _vorbis_block_ripcord
+T vorbis_book_clear
+T vorbis_book_codelen
+T vorbis_book_codeword
+T vorbis_book_decode
+T vorbis_book_decodev_add
+T vorbis_book_decodevs_add
+T vorbis_book_decodev_set
+T vorbis_book_decodevv_add
+T vorbis_book_encode
+T vorbis_book_init_decode
+T vorbis_book_init_encode
+T vorbis_comment_add
+T vorbis_comment_add_tag
+T vorbis_comment_clear
+T vorbis_commentheader_out
+T vorbis_comment_init
+T vorbis_comment_query
+T vorbis_comment_query_count
+T vorbis_dsp_clear
+T vorbis_encode_ctl
+T vorbis_encode_init
+T vorbis_encode_init_vbr
+T vorbis_encode_setup_init
+T vorbis_encode_setup_managed
+T vorbis_encode_setup_vbr
+T vorbis_granule_time
+T vorbis_info_blocksize
+T vorbis_info_clear
+T vorbis_info_init
+T vorbis_lpc_from_data
+T vorbis_lpc_predict
+T vorbis_lpc_to_lsp
+T vorbis_lsp_to_curve
+T vorbis_staticbook_destroy
+T vorbis_staticbook_pack
+T vorbis_staticbook_unpack
+T vorbis_synthesis_blockin
+T vorbis_synthesis_headerin
+T vorbis_synthesis_idheader
+T vorbis_synthesis_init
+T vorbis_synthesis_lapout
+T vorbis_synthesis_pcmout
+T vorbis_synthesis_read
+T vorbis_synthesis_restart
+T vorbis_version_string
+T vorbis_window
+T _vorbis_window_get
+T vp8_ac2quant
+T vp8_activity_masking
+T vp8_ac_uv_quant
+T vp8_ac_yquant
+T vp8_adjust_key_frame_context
+T vp8_alloc_compressor_data
+T vp8_alloc_frame_buffers
+T vp8_auto_select_speed
+R vp8_bilinear_filters
+R vp8_bilinear_filters_x86_4
+R vp8_bilinear_filters_x86_8
+B vp8_bilinear_predict16x16
+T vp8_bilinear_predict16x16_c
+T vp8_bilinear_predict16x16_mmx
+T vp8_bilinear_predict16x16_sse2
+T vp8_bilinear_predict16x16_ssse3
+B vp8_bilinear_predict4x4
+T vp8_bilinear_predict4x4_c
+T vp8_bilinear_predict4x4_mmx
+B vp8_bilinear_predict8x4
+T vp8_bilinear_predict8x4_c
+T vp8_bilinear_predict8x4_mmx
+B vp8_bilinear_predict8x8
+T vp8_bilinear_predict8x8_c
+T vp8_bilinear_predict8x8_mmx
+T vp8_bilinear_predict8x8_sse2
+T vp8_bilinear_predict8x8_ssse3
+R vp8_bits_per_mb
+T vp8_blend_b_c
+T vp8_blend_mb_inner_c
+T vp8_blend_mb_outer_c
+R vp8_block2above
+R vp8_block2left
+B vp8_block_error
+T vp8_block_error_c
+T vp8_block_error_mmx
+T vp8_block_error_xmm
+R vp8_bmode_encodings
+R vp8_bmode_prob
+R vp8_bmode_tree
+T vp8_build_block_doffsets
+T vp8_build_block_offsets
+T vp8_build_component_cost_table
+T vp8_build_inter16x16_predictors_mb
+T vp8_build_inter16x16_predictors_mbuv
+T vp8_build_inter16x16_predictors_mby
+T vp8_build_inter4x4_predictors_mbuv
+T vp8_build_inter_predictors_b
+T vp8_build_inter_predictors_mb
+B vp8_build_intra_predictors_mbuv_s
+T vp8_build_intra_predictors_mbuv_s_c
+T vp8_build_intra_predictors_mbuv_s_sse2
+T vp8_build_intra_predictors_mbuv_s_ssse3
+B vp8_build_intra_predictors_mby_s
+T vp8_build_intra_predictors_mby_s_c
+T vp8_build_intra_predictors_mby_s_sse2
+T vp8_build_intra_predictors_mby_s_ssse3
+T vp8_calc_ref_frame_costs
+T vp8_calc_ss_err
+T vp8_cal_sad
+T vp8_change_config
+R vp8_coef_bands
+R vp8_coef_encodings
+R vp8_coef_tree
+R vp8_coef_update_probs
+T vp8_compute_frame_size_bounds
+T vp8_convert_rfct_to_prob
+B vp8_copy32xn
+T vp8_copy32xn_c
+T vp8_copy32xn_sse2
+T vp8_copy32xn_sse3
+T vp8_copy_and_extend_frame
+T vp8_copy_and_extend_frame_with_rect
+B vp8_copy_mem16x16
+T vp8_copy_mem16x16_c
+T vp8_copy_mem16x16_mmx
+T vp8_copy_mem16x16_sse2
+B vp8_copy_mem8x4
+T vp8_copy_mem8x4_c
+T vp8_copy_mem8x4_mmx
+B vp8_copy_mem8x8
+T vp8_copy_mem8x8_c
+T vp8_copy_mem8x8_mmx
+T vp8_cost_mv_ref
+T vp8_cost_tokens
+T vp8_cost_tokens2
+T vp8_create_common
+T vp8_create_compressor
+R vp8cx_base_skip_false_prob
+T vp8cx_create_encoder_threads
+T vp8cx_encode_inter_macroblock
+T vp8cx_encode_intra_macroblock
+T vp8cx_frame_init_quantizer
+T vp8cx_initialize_me_consts
+T vp8cx_init_mbrthread_data
+T vp8cx_init_quantizer
+T vp8cx_mb_init_quantizer
+T vp8cx_pick_filter_level
+T vp8cx_pick_filter_level_fast
+T vp8cx_remove_encoder_threads
+T vp8cx_set_alt_lf_level
+T vp8_dc2quant
+B vp8_dc_only_idct_add
+T vp8_dc_only_idct_add_c
+T vp8_dc_only_idct_add_mmx
+T vp8_dc_quant
+D vp8_dct_value_cost_ptr
+D vp8_dct_value_tokens_ptr
+T vp8_dc_uv_quant
+T vp8_de_alloc_frame_buffers
+T vp8_deblock
+T vp8_default_bmode_probs
+T vp8_default_coef_probs
+R vp8_default_inv_zig_zag
+R vp8_default_mv_context
+R vp8_default_zig_zag1d
+R vp8_default_zig_zag_mask
+T vp8_denoiser_allocate
+T vp8_denoiser_denoise_mb
+T vp8_denoiser_free
+B vp8_dequant_idct_add
+T vp8_dequant_idct_add_c
+T vp8_dequant_idct_add_mmx
+B vp8_dequant_idct_add_uv_block
+T vp8_dequant_idct_add_uv_block_c
+T vp8_dequant_idct_add_uv_block_mmx
+T vp8_dequant_idct_add_uv_block_sse2
+B vp8_dequant_idct_add_y_block
+T vp8_dequant_idct_add_y_block_c
+T vp8_dequant_idct_add_y_block_mmx
+T vp8_dequant_idct_add_y_block_sse2
+B vp8_dequantize_b
+T vp8_dequantize_b_c
+T vp8_dequantize_b_impl_mmx
+T vp8_dequantize_b_mmx
+B vp8_diamond_search_sad
+T vp8_diamond_search_sad_c
+T vp8_diamond_search_sadx4
+T vp8_encode_frame
+T vp8_encode_inter16x16
+T vp8_encode_inter16x16y
+T vp8_encode_intra
+T vp8_encode_intra16x16mbuv
+T vp8_encode_intra16x16mby
+T vp8_encode_intra4x4block
+T vp8_encode_intra4x4mby
+T vp8_encode_motion_vector
+T vp8_encode_value
+T vp8_end_first_pass
+T vp8_end_second_pass
+T vp8_estimate_entropy_savings
+T vp8_extend_mb_row
+D vp8_extra_bits
+B vp8_fast_quantize_b
+T vp8_fast_quantize_b_c
+T vp8_fast_quantize_b_impl_mmx
+T vp8_fast_quantize_b_mmx
+T vp8_fast_quantize_b_pair_c
+T vp8_fast_quantize_b_sse2
+T vp8_fast_quantize_b_ssse3
+T vp8_filter_block1d16_h6_only_sse2
+T vp8_filter_block1d16_h6_sse2
+T vp8_filter_block1d16_h6_ssse3
+T vp8_filter_block1d16_v6_sse2
+T vp8_filter_block1d16_v6_ssse3
+T vp8_filter_block1d4_h6_ssse3
+T vp8_filter_block1d4_v6_ssse3
+T vp8_filter_block1d8_h6_only_sse2
+T vp8_filter_block1d8_h6_sse2
+T vp8_filter_block1d8_h6_ssse3
+T vp8_filter_block1d8_v6_only_sse2
+T vp8_filter_block1d8_v6_sse2
+T vp8_filter_block1d8_v6_ssse3
+T vp8_filter_block1dc_v6_mmx
+T vp8_filter_block1d_h6_mmx
+T vp8_filter_block2d_bil4x4_var_mmx
+T vp8_filter_block2d_bil_var_mmx
+T vp8_filter_block2d_bil_var_sse2
+T vp8_filter_block2d_bil_var_ssse3
+B vp8_filter_by_weight16x16
+T vp8_filter_by_weight16x16_c
+T vp8_filter_by_weight16x16_sse2
+T vp8_filter_by_weight4x4_c
+B vp8_filter_by_weight8x8
+T vp8_filter_by_weight8x8_c
+T vp8_filter_by_weight8x8_sse2
+T vp8_find_best_half_pixel_step
+T vp8_find_best_sub_pixel_step
+T vp8_find_best_sub_pixel_step_iteratively
+T vp8_find_near_mvs
+T vp8_find_near_mvs_bias
+T vp8_first_pass
+T vp8_fix_contexts
+B vp8_full_search_sad
+T vp8_full_search_sad_c
+T vp8_full_search_sadx3
+T vp8_full_search_sadx8
+T vp8_gaussian
+T vp8_get16x16var_sse2
+B vp8_get4x4sse_cs
+T vp8_get4x4sse_cs_c
+T vp8_get4x4sse_cs_mmx
+T vp8_get4x4var_mmx
+T vp8_get8x8var_mmx
+T vp8_get8x8var_sse2
+T vp8_get_compressed_data
+B vp8_get_mb_ss
+T vp8_get_mb_ss_c
+T vp8_get_mb_ss_mmx
+T vp8_get_mb_ss_sse2
+T vp8_get_preview_raw_frame
+T vp8_get_quantizer
+T vp8_get_reference
+R vp8_gf_boost_qadjustment
+T vp8_half_horiz_variance16x_h_sse2
+T vp8_half_horiz_variance8x_h_sse2
+T vp8_half_horiz_vert_variance16x_h_sse2
+T vp8_half_horiz_vert_variance8x_h_sse2
+T vp8_half_vert_variance16x_h_sse2
+T vp8_half_vert_variance8x_h_sse2
+T vp8_hex_search
+T vp8_horizontal_line_1_2_scale_c
+T vp8_horizontal_line_2_1_scale_c
+T vp8_horizontal_line_2_3_scale_c
+T vp8_horizontal_line_3_4_scale_c
+T vp8_horizontal_line_3_5_scale_c
+T vp8_horizontal_line_4_5_scale_c
+T vp8_horizontal_line_5_3_scale_c
+T vp8_horizontal_line_5_4_scale_c
+T vp8_idct_dequant_0_2x_sse2
+T vp8_idct_dequant_dc_0_2x_sse2
+T vp8_idct_dequant_dc_full_2x_sse2
+T vp8_idct_dequant_full_2x_sse2
+T vp8_init3smotion_compensation
+T vp8_init_dsmotion_compensation
+T vp8_init_first_pass
+T vp8_initialize_rd_consts
+T vp8_init_mbmode_probs
+T vp8_init_mode_costs
+T vp8_init_second_pass
+T vp8_intra4x4_predict_c
+T vp8_intra4x4_predict_d_c
+T vp8_intra_pred_uv_dc128_mmx
+T vp8_intra_pred_uv_dcleft_mmx2
+T vp8_intra_pred_uv_dc_mmx2
+T vp8_intra_pred_uv_dctop_mmx2
+T vp8_intra_pred_uv_ho_mmx2
+T vp8_intra_pred_uv_ho_ssse3
+T vp8_intra_pred_uv_tm_sse2
+T vp8_intra_pred_uv_tm_ssse3
+T vp8_intra_pred_uv_ve_mmx
+T vp8_intra_pred_y_dc128_sse2
+T vp8_intra_pred_y_dcleft_sse2
+T vp8_intra_pred_y_dc_sse2
+T vp8_intra_pred_y_dctop_sse2
+T vp8_intra_pred_y_ho_sse2
+T vp8_intra_pred_y_tm_sse2
+T vp8_intra_pred_y_tm_ssse3
+T vp8_intra_pred_y_ve_sse2
+R vp8_kf_bmode_prob
+T vp8_kf_default_bmode_probs
+R vp8_kf_uv_mode_prob
+R vp8_kf_ymode_encodings
+R vp8_kf_ymode_prob
+R vp8_kf_ymode_tree
+T vp8_last_vertical_band_1_2_scale_c
+T vp8_last_vertical_band_2_3_scale_c
+T vp8_last_vertical_band_3_4_scale_c
+T vp8_last_vertical_band_3_5_scale_c
+T vp8_last_vertical_band_4_5_scale_c
+T vp8_lookahead_depth
+T vp8_lookahead_destroy
+T vp8_lookahead_init
+T vp8_lookahead_peek
+T vp8_lookahead_pop
+T vp8_lookahead_push
+B vp8_loop_filter_bh
+T vp8_loop_filter_bh_c
+T vp8_loop_filter_bh_mmx
+T vp8_loop_filter_bhs_c
+T vp8_loop_filter_bhs_mmx
+T vp8_loop_filter_bh_sse2
+T vp8_loop_filter_bhs_sse2
+B vp8_loop_filter_bv
+T vp8_loop_filter_bv_c
+T vp8_loop_filter_bv_mmx
+T vp8_loop_filter_bvs_c
+T vp8_loop_filter_bvs_mmx
+T vp8_loop_filter_bv_sse2
+T vp8_loop_filter_bvs_sse2
+T vp8_loop_filter_frame
+T vp8_loopfilter_frame
+T vp8_loop_filter_frame_init
+T vp8_loop_filter_frame_yonly
+T vp8_loop_filter_horizontal_edge_c
+T vp8_loop_filter_horizontal_edge_mmx
+T vp8_loop_filter_horizontal_edge_sse2
+T vp8_loop_filter_horizontal_edge_uv_sse2
+T vp8_loop_filter_init
+B vp8_loop_filter_mbh
+T vp8_loop_filter_mbh_c
+T vp8_loop_filter_mbh_mmx
+T vp8_loop_filter_mbh_sse2
+B vp8_loop_filter_mbv
+T vp8_loop_filter_mbv_c
+T vp8_loop_filter_mbv_mmx
+T vp8_loop_filter_mbv_sse2
+T vp8_loop_filter_partial_frame
+B vp8_loop_filter_simple_bh
+B vp8_loop_filter_simple_bv
+T vp8_loop_filter_simple_horizontal_edge_c
+T vp8_loop_filter_simple_horizontal_edge_mmx
+T vp8_loop_filter_simple_horizontal_edge_sse2
+B vp8_loop_filter_simple_mbh
+B vp8_loop_filter_simple_mbv
+T vp8_loop_filter_simple_vertical_edge_c
+T vp8_loop_filter_simple_vertical_edge_mmx
+T vp8_loop_filter_simple_vertical_edge_sse2
+T vp8_loop_filter_update_sharpness
+T vp8_loop_filter_vertical_edge_c
+T vp8_loop_filter_vertical_edge_mmx
+T vp8_loop_filter_vertical_edge_sse2
+T vp8_loop_filter_vertical_edge_uv_sse2
+T vp8_machine_specific_config
+B vp8_mbblock_error
+T vp8_mbblock_error_c
+T vp8_mbblock_error_mmx
+T vp8_mbblock_error_mmx_impl
+T vp8_mbblock_error_xmm
+T vp8_mbblock_error_xmm_impl
+R vp8_mb_feature_data_bits
+T vp8_mbloop_filter_horizontal_edge_c
+T vp8_mbloop_filter_horizontal_edge_mmx
+T vp8_mbloop_filter_horizontal_edge_sse2
+T vp8_mbloop_filter_horizontal_edge_uv_sse2
+T vp8_mbloop_filter_vertical_edge_c
+T vp8_mbloop_filter_vertical_edge_mmx
+T vp8_mbloop_filter_vertical_edge_sse2
+T vp8_mbloop_filter_vertical_edge_uv_sse2
+B vp8_mbpost_proc_across_ip
+T vp8_mbpost_proc_across_ip_c
+T vp8_mbpost_proc_across_ip_xmm
+B vp8_mbpost_proc_down
+T vp8_mbpost_proc_down_c
+T vp8_mbpost_proc_down_mmx
+T vp8_mbpost_proc_down_xmm
+R vp8_mbsplit_count
+R vp8_mbsplit_encodings
+R vp8_mbsplit_offset
+R vp8_mbsplit_probs
+R vp8_mbsplits
+R vp8_mbsplit_tree
+B vp8_mbuverror
+T vp8_mbuverror_c
+T vp8_mbuverror_mmx
+T vp8_mbuverror_mmx_impl
+T vp8_mbuverror_xmm
+T vp8_mbuverror_xmm_impl
+R vp8_mode_contexts
+R vp8_mode_order
+B vp8_mse16x16
+T vp8_mse16x16_c
+T vp8_mse16x16_mmx
+T vp8_mse16x16_wmt
+T vp8_mse2psnr
+T vp8_multiframe_quality_enhance
+T vp8_mv_bit_cost
+T vp8_mv_cont
+T vp8_mv_pred
+R vp8_mv_ref_encoding_array
+T vp8_mv_ref_probs
+R vp8_mv_ref_tree
+R vp8_mv_update_probs
+T vp8_new_frame_rate
+R vp8_norm
+T vp8_optimize_mbuv
+T vp8_optimize_mby
+T vp8_pack_bitstream
+T vp8_pack_tokens_c
+T vp8_pick_frame_size
+T vp8_pick_inter_mode
+T vp8_pick_intra_mode
+B vp8_plane_add_noise
+T vp8_plane_add_noise_c
+T vp8_plane_add_noise_mmx
+T vp8_plane_add_noise_wmt
+B vp8_post_proc_down_and_across
+T vp8_post_proc_down_and_across_c
+T vp8_post_proc_down_and_across_mmx
+T vp8_post_proc_down_and_across_xmm
+T vp8_post_proc_frame
+R vp8_prev_token_class
+R vp8_prob_cost
+T vp8_quantize_mb_c
+T vp8_quantize_mbuv_c
+T vp8_quantize_mby_c
+T vp8_rd_pick_inter_mode
+T vp8_rd_pick_intra_mode
+T vp8_receive_raw_frame
+R vp8_ref_frame_order
+B vp8_refining_search_sad
+T vp8_refining_search_sad_c
+T vp8_refining_search_sadx4
+B vp8_regular_quantize_b
+T vp8_regular_quantize_b_c
+T vp8_regular_quantize_b_pair_c
+T vp8_regular_quantize_b_sse2
+T vp8_regular_quantize_b_sse4
+T vp8_regulate_q
+T vp8_remove_common
+T vp8_remove_compressor
+T vp8_restore_coding_context
+T vp8_reverse_trans
+R vp8_rv
+B vp8_sad16x16
+T vp8_sad16x16_c
+T vp8_sad16x16_mmx
+T vp8_sad16x16_sse3
+T vp8_sad16x16_wmt
+B vp8_sad16x16x3
+T vp8_sad16x16x3_c
+T vp8_sad16x16x3_sse3
+T vp8_sad16x16x3_ssse3
+B vp8_sad16x16x4d
+T vp8_sad16x16x4d_c
+T vp8_sad16x16x4d_sse3
+B vp8_sad16x16x8
+T vp8_sad16x16x8_c
+T vp8_sad16x16x8_sse4
+B vp8_sad16x8
+T vp8_sad16x8_c
+T vp8_sad16x8_mmx
+T vp8_sad16x8_wmt
+B vp8_sad16x8x3
+T vp8_sad16x8x3_c
+T vp8_sad16x8x3_sse3
+T vp8_sad16x8x3_ssse3
+B vp8_sad16x8x4d
+T vp8_sad16x8x4d_c
+T vp8_sad16x8x4d_sse3
+B vp8_sad16x8x8
+T vp8_sad16x8x8_c
+T vp8_sad16x8x8_sse4
+B vp8_sad4x4
+T vp8_sad4x4_c
+T vp8_sad4x4_mmx
+T vp8_sad4x4_wmt
+B vp8_sad4x4x3
+T vp8_sad4x4x3_c
+T vp8_sad4x4x3_sse3
+B vp8_sad4x4x4d
+T vp8_sad4x4x4d_c
+T vp8_sad4x4x4d_sse3
+B vp8_sad4x4x8
+T vp8_sad4x4x8_c
+T vp8_sad4x4x8_sse4
+B vp8_sad8x16
+T vp8_sad8x16_c
+T vp8_sad8x16_mmx
+T vp8_sad8x16_wmt
+B vp8_sad8x16x3
+T vp8_sad8x16x3_c
+T vp8_sad8x16x3_sse3
+B vp8_sad8x16x4d
+T vp8_sad8x16x4d_c
+T vp8_sad8x16x4d_sse3
+B vp8_sad8x16x8
+T vp8_sad8x16x8_c
+T vp8_sad8x16x8_sse4
+B vp8_sad8x8
+T vp8_sad8x8_c
+T vp8_sad8x8_mmx
+T vp8_sad8x8_wmt
+B vp8_sad8x8x3
+T vp8_sad8x8x3_c
+T vp8_sad8x8x3_sse3
+B vp8_sad8x8x4d
+T vp8_sad8x8x4d_c
+T vp8_sad8x8x4d_sse3
+B vp8_sad8x8x8
+T vp8_sad8x8x8_c
+T vp8_sad8x8x8_sse4
+T vp8_save_coding_context
+T vp8_scale_frame
+T vp8_second_pass
+T vp8_set_active_map
+T vp8_set_internal_size
+T vp8_set_mbmode_and_mvs
+T vp8_set_quantizer
+T vp8_set_reference
+T vp8_set_roimap
+T vp8_set_speed_features
+T vp8_setup_block_dptrs
+T vp8_setup_block_ptrs
+T vp8_setup_intra_recon
+T vp8_setup_key_frame
+T vp8_setup_version
+B vp8_short_fdct4x4
+T vp8_short_fdct4x4_c
+T vp8_short_fdct4x4_mmx
+T vp8_short_fdct4x4_sse2
+B vp8_short_fdct8x4
+T vp8_short_fdct8x4_c
+T vp8_short_fdct8x4_mmx
+T vp8_short_fdct8x4_sse2
+B vp8_short_idct4x4llm
+T vp8_short_idct4x4llm_c
+T vp8_short_idct4x4llm_mmx
+B vp8_short_inv_walsh4x4
+T vp8_short_inv_walsh4x4_1_c
+T vp8_short_inv_walsh4x4_c
+T vp8_short_inv_walsh4x4_mmx
+T vp8_short_inv_walsh4x4_sse2
+B vp8_short_walsh4x4
+T vp8_short_walsh4x4_c
+T vp8_short_walsh4x4_sse2
+R vp8_six_tap_mmx
+B vp8_sixtap_predict16x16
+T vp8_sixtap_predict16x16_c
+T vp8_sixtap_predict16x16_mmx
+T vp8_sixtap_predict16x16_sse2
+T vp8_sixtap_predict16x16_ssse3
+B vp8_sixtap_predict4x4
+T vp8_sixtap_predict4x4_c
+T vp8_sixtap_predict4x4_mmx
+T vp8_sixtap_predict4x4_ssse3
+B vp8_sixtap_predict8x4
+T vp8_sixtap_predict8x4_c
+T vp8_sixtap_predict8x4_mmx
+T vp8_sixtap_predict8x4_sse2
+T vp8_sixtap_predict8x4_ssse3
+B vp8_sixtap_predict8x8
+T vp8_sixtap_predict8x8_c
+T vp8_sixtap_predict8x8_mmx
+T vp8_sixtap_predict8x8_sse2
+T vp8_sixtap_predict8x8_ssse3
+T vp8_skip_fractional_mv_step
+R vp8_small_mvencodings
+R vp8_small_mvtree
+T vp8_start_encode
+T vp8_stop_encode
+T vp8_strict_quantize_b_c
+T vp8_stuff_mb
+R vp8_sub_mv_ref_encoding_array
+R vp8_sub_mv_ref_prob2
+R vp8_sub_mv_ref_tree
+R vp8_sub_pel_filters
+B vp8_sub_pixel_mse16x16
+T vp8_sub_pixel_mse16x16_c
+T vp8_sub_pixel_mse16x16_mmx
+T vp8_sub_pixel_mse16x16_wmt
+B vp8_sub_pixel_variance16x16
+T vp8_sub_pixel_variance16x16_c
+T vp8_sub_pixel_variance16x16_mmx
+T vp8_sub_pixel_variance16x16_ssse3
+T vp8_sub_pixel_variance16x16_wmt
+B vp8_sub_pixel_variance16x8
+T vp8_sub_pixel_variance16x8_c
+T vp8_sub_pixel_variance16x8_mmx
+T vp8_sub_pixel_variance16x8_ssse3
+T vp8_sub_pixel_variance16x8_wmt
+B vp8_sub_pixel_variance4x4
+T vp8_sub_pixel_variance4x4_c
+T vp8_sub_pixel_variance4x4_mmx
+T vp8_sub_pixel_variance4x4_wmt
+B vp8_sub_pixel_variance8x16
+T vp8_sub_pixel_variance8x16_c
+T vp8_sub_pixel_variance8x16_mmx
+T vp8_sub_pixel_variance8x16_wmt
+B vp8_sub_pixel_variance8x8
+T vp8_sub_pixel_variance8x8_c
+T vp8_sub_pixel_variance8x8_mmx
+T vp8_sub_pixel_variance8x8_wmt
+B vp8_subtract_b
+T vp8_subtract_b_c
+T vp8_subtract_b_mmx
+T vp8_subtract_b_mmx_impl
+T vp8_subtract_b_sse2
+T vp8_subtract_b_sse2_impl
+B vp8_subtract_mbuv
+T vp8_subtract_mbuv_c
+T vp8_subtract_mbuv_mmx
+T vp8_subtract_mbuv_sse2
+B vp8_subtract_mby
+T vp8_subtract_mby_c
+T vp8_subtract_mby_mmx
+T vp8_subtract_mby_sse2
+T vp8_swap_yv12_buffer
+B vp8_temporal_filter_apply
+T vp8_temporal_filter_apply_c
+T vp8_temporal_filter_apply_sse2
+T vp8_temporal_filter_prepare_c
+T vp8_tokenize_mb
+T vp8_tokens_from_tree
+T vp8_tokens_from_tree_offset
+T vp8_transform_intra_mby
+T vp8_transform_mbuv
+T vp8_tree_probs_from_distribution
+T vp8_unpack_block1d16_h6_sse2
+T vp8_update_coef_probs
+T vp8_update_entropy
+T vp8_update_gf_useage_maps
+T vp8_update_rate_correction_factors
+T vp8_update_reference
+T vp8_update_zbin_extra
+T vp8_use_as_reference
+R vp8_uv_mode_encodings
+R vp8_uv_mode_prob
+R vp8_uv_mode_tree
+T VP8_UVSSE
+B vp8_variance16x16
+T vp8_variance16x16_c
+T vp8_variance16x16_mmx
+T vp8_variance16x16_wmt
+B vp8_variance16x8
+T vp8_variance16x8_c
+T vp8_variance16x8_mmx
+T vp8_variance16x8_wmt
+B vp8_variance4x4
+T vp8_variance4x4_c
+T vp8_variance4x4_mmx
+T vp8_variance4x4_wmt
+B vp8_variance8x16
+T vp8_variance8x16_c
+T vp8_variance8x16_mmx
+T vp8_variance8x16_wmt
+B vp8_variance8x8
+T vp8_variance8x8_c
+T vp8_variance8x8_mmx
+T vp8_variance8x8_wmt
+T vp8_variance_and_sad_16x16_sse2
+B vp8_variance_halfpixvar16x16_h
+T vp8_variance_halfpixvar16x16_h_c
+T vp8_variance_halfpixvar16x16_h_mmx
+B vp8_variance_halfpixvar16x16_hv
+T vp8_variance_halfpixvar16x16_hv_c
+T vp8_variance_halfpixvar16x16_hv_mmx
+T vp8_variance_halfpixvar16x16_hv_wmt
+T vp8_variance_halfpixvar16x16_h_wmt
+B vp8_variance_halfpixvar16x16_v
+T vp8_variance_halfpixvar16x16_v_c
+T vp8_variance_halfpixvar16x16_v_mmx
+T vp8_variance_halfpixvar16x16_v_wmt
+T vp8_vertical_band_1_2_scale_c
+T vp8_vertical_band_2_1_scale_c
+T vp8_vertical_band_2_1_scale_i_c
+T vp8_vertical_band_2_3_scale_c
+T vp8_vertical_band_3_4_scale_c
+T vp8_vertical_band_3_5_scale_c
+T vp8_vertical_band_4_5_scale_c
+T vp8_vertical_band_5_3_scale_c
+T vp8_vertical_band_5_4_scale_c
+T vp8_write_mvprobs
+R vp8_ymode_encodings
+R vp8_ymode_prob
+R vp8_ymode_tree
+T vp8_yv12_alloc_frame_buffer
+T vp8_yv12_copy_frame_c
+T vp8_yv12_copy_partial_frame_c
+T vp8_yv12_copy_y_c
+T vp8_yv12_de_alloc_frame_buffer
+T vp8_yv12_extend_frame_borders_c
+T vp8_yv12_scale_or_center
+T _vp_ampmax_decay
+T _vp_couple_quantize_normalize
+T _vp_global_free
+T _vp_global_look
+T _vp_noisemask
+T _vp_offset_and_mix
+T _vp_psy_clear
+T _vp_psy_init
+T _vp_tonemask
+T vpx_calloc
+T vpx_codec_control_
+T vpx_codec_destroy
+T vpx_codec_enc_config_default
+T vpx_codec_enc_config_set
+T vpx_codec_enc_init_multi_ver
+T vpx_codec_enc_init_ver
+T vpx_codec_encode
+T vpx_codec_error
+T vpx_codec_error_detail
+T vpx_codec_err_to_string
+T vpx_codec_get_caps
+T vpx_codec_get_cx_data
+T vpx_codec_get_global_headers
+T vpx_codec_get_preview_frame
+T vpx_codec_iface_name
+T vpx_codec_pkt_list_add
+T vpx_codec_pkt_list_get
+T vpx_codec_set_cx_data_buf
+T vpx_codec_version
+T vpx_codec_version_extra_str
+T vpx_codec_version_str
+T vpx_codec_vp8_cx
+D vpx_codec_vp8_cx_algo
+T vpx_free
+T vpx_img_alloc
+T vpx_img_flip
+T vpx_img_free
+T vpx_img_set_rect
+T vpx_img_wrap
+T vpx_malloc
+T vpx_memalign
+T vpx_memcpy
+T vpx_mem_get_version
+T vpx_memmove
+T vpx_memset
+T vpx_mem_set_functions
+T vpx_mem_set_heap_size
+T vpx_mem_unset_functions
+T vpx_realloc
+T vpx_reset_mmx_state
+T vpx_rtcd
+U vsnprintf@@GLIBC_2.0
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstol@@GLIBC_2.0
+U wcstoll@@GLIBC_2.1
+U wcstombs@@GLIBC_2.0
+U __xmknod@@GLIBC_2.0
+U __xstat64@@GLIBC_2.2
+U __xstat@@GLIBC_2.0
+U ConColorMsg(Color const&, char const*, ...)
+U ConMsg(char const*, ...)
+U DevMsg(char const*, ...)
+U operator delete[](void*)@@GLIBCXX_3.4
+U operator delete(void*)@@GLIBCXX_3.4
+U operator delete(void*, std::nothrow_t const&)@@GLIBCXX_3.4
+T mkvmuxer::AudioTrack::AudioTrack(unsigned int*)
+T mkvmuxer::AudioTrack::AudioTrack(unsigned int*)
+T mkvmuxer::AudioTrack::~AudioTrack()
+T mkvmuxer::AudioTrack::~AudioTrack()
+T mkvmuxer::AudioTrack::~AudioTrack()
+T mkvmuxer::GetVersion(int*, int*, int*, int*)
+T mkvmuxer::IMkvWriter::IMkvWriter()
+T mkvmuxer::IMkvWriter::IMkvWriter()
+T mkvmuxer::IMkvWriter::~IMkvWriter()
+T mkvmuxer::IMkvWriter::~IMkvWriter()
+T mkvmuxer::IMkvWriter::~IMkvWriter()
+T mkvmuxer::VideoTrack::SetStereoMode(unsigned long long)
+T mkvmuxer::VideoTrack::VideoTrack(unsigned int*)
+T mkvmuxer::VideoTrack::VideoTrack(unsigned int*)
+T mkvmuxer::VideoTrack::~VideoTrack()
+T mkvmuxer::VideoTrack::~VideoTrack()
+T mkvmuxer::VideoTrack::~VideoTrack()
+T mkvmuxer::GetUIntSize(unsigned long long)
+T mkvmuxer::SegmentInfo::set_muxing_app(char const*)
+T mkvmuxer::SegmentInfo::set_writing_app(char const*)
+T mkvmuxer::SegmentInfo::Init()
+T mkvmuxer::SegmentInfo::Write(mkvmuxer::IMkvWriter*)
+T mkvmuxer::SegmentInfo::SegmentInfo()
+T mkvmuxer::SegmentInfo::SegmentInfo()
+T mkvmuxer::SegmentInfo::~SegmentInfo()
+T mkvmuxer::SegmentInfo::~SegmentInfo()
+T mkvmuxer::SerializeInt(mkvmuxer::IMkvWriter*, long long, int)
+T mkvmuxer::WriteUIntSize(mkvmuxer::IMkvWriter*, unsigned long long, int)
+T mkvmuxer::SerializeFloat(mkvmuxer::IMkvWriter*, float)
+T mkvmuxer::ContentEncoding::SetEncryptionID(unsigned char const*, unsigned long long)
+T mkvmuxer::ContentEncoding::ContentEncoding()
+T mkvmuxer::ContentEncoding::ContentEncoding()
+T mkvmuxer::ContentEncoding::~ContentEncoding()
+T mkvmuxer::ContentEncoding::~ContentEncoding()
+T mkvmuxer::EbmlElementSize(unsigned long long, float)
+T mkvmuxer::EbmlElementSize(unsigned long long, char const*)
+T mkvmuxer::EbmlElementSize(unsigned long long, unsigned char const*, unsigned long long)
+T mkvmuxer::EbmlElementSize(unsigned long long, unsigned long long)
+T mkvmuxer::WriteEbmlHeader(mkvmuxer::IMkvWriter*)
+T mkvmuxer::GetCodedUIntSize(unsigned long long)
+T mkvmuxer::WriteEbmlElement(mkvmuxer::IMkvWriter*, unsigned long long, float)
+T mkvmuxer::WriteEbmlElement(mkvmuxer::IMkvWriter*, unsigned long long, char const*)
+T mkvmuxer::WriteEbmlElement(mkvmuxer::IMkvWriter*, unsigned long long, unsigned char const*, unsigned long long)
+T mkvmuxer::WriteEbmlElement(mkvmuxer::IMkvWriter*, unsigned long long, unsigned long long)
+T mkvmuxer::WriteSimpleBlock(mkvmuxer::IMkvWriter*, unsigned char const*, unsigned long long, unsigned long long, long long, unsigned long long)
+T mkvmuxer::WriteVoidElement(mkvmuxer::IMkvWriter*, unsigned long long)
+T mkvmuxer::WriteMetadataBlock(mkvmuxer::IMkvWriter*, unsigned char const*, unsigned long long, unsigned long long, long long, unsigned long long)
+T mkvmuxer::ContentEncAESSettings::ContentEncAESSettings()
+T mkvmuxer::ContentEncAESSettings::ContentEncAESSettings()
+T mkvmuxer::EbmlMasterElementSize(unsigned long long, unsigned long long)
+T mkvmuxer::WriteEbmlMasterElement(mkvmuxer::IMkvWriter*, unsigned long long, unsigned long long)
+T mkvmuxer::Cues::AddCue(mkvmuxer::CuePoint*)
+T mkvmuxer::Cues::Cues()
+T mkvmuxer::Cues::Cues()
+T mkvmuxer::Cues::~Cues()
+T mkvmuxer::Cues::~Cues()
+T mkvmuxer::Frame::Init(unsigned char const*, unsigned long long)
+T mkvmuxer::Frame::Frame()
+T mkvmuxer::Frame::Frame()
+T mkvmuxer::Frame::~Frame()
+T mkvmuxer::Frame::~Frame()
+T mkvmuxer::Track::set_codec_id(char const*)
+T mkvmuxer::Track::set_language(char const*)
+T mkvmuxer::Track::SetCodecPrivate(unsigned char const*, unsigned long long)
+T mkvmuxer::Track::AddContentEncoding()
+T mkvmuxer::Track::set_name(char const*)
+T mkvmuxer::Track::Track(unsigned int*)
+T mkvmuxer::Track::Track(unsigned int*)
+T mkvmuxer::Track::~Track()
+T mkvmuxer::Track::~Track()
+T mkvmuxer::Track::~Track()
+R mkvmuxer::Tracks::kVp8CodecId
+R mkvmuxer::Tracks::kVorbisCodecId
+T mkvmuxer::Tracks::AddTrack(mkvmuxer::Track*, int)
+T mkvmuxer::Tracks::Tracks()
+T mkvmuxer::Tracks::Tracks()
+T mkvmuxer::Tracks::~Tracks()
+T mkvmuxer::Tracks::~Tracks()
+T mkvmuxer::Chapter::add_string(char const*, char const*, char const*)
+T mkvmuxer::Chapter::ExpandDisplaysArray()
+T mkvmuxer::Chapter::Init(unsigned int*)
+T mkvmuxer::Chapter::Clear()
+T mkvmuxer::Chapter::set_id(char const*)
+T mkvmuxer::Chapter::Display::set_country(char const*)
+T mkvmuxer::Chapter::Display::set_language(char const*)
+T mkvmuxer::Chapter::Display::Init()
+T mkvmuxer::Chapter::Display::Clear()
+T mkvmuxer::Chapter::Display::set_title(char const*)
+T mkvmuxer::Chapter::set_time(mkvmuxer::Segment const&, unsigned long long, unsigned long long)
+T mkvmuxer::Chapter::Chapter()
+T mkvmuxer::Chapter::Chapter()
+T mkvmuxer::Chapter::~Chapter()
+T mkvmuxer::Chapter::~Chapter()
+T mkvmuxer::Cluster::AddMetadata(unsigned char const*, unsigned long long, unsigned long long, unsigned long long, unsigned long long)
+T mkvmuxer::Cluster::DoWriteBlock(unsigned char const*, unsigned long long, unsigned long long, unsigned long long, unsigned long long, unsigned long long (*)(mkvmuxer::IMkvWriter*, unsigned char const*, unsigned long long, unsigned long long, long long, unsigned long long))
+T mkvmuxer::Cluster::AddPayloadSize(unsigned long long)
+T mkvmuxer::Cluster::WriteClusterHeader()
+T mkvmuxer::Cluster::Init(mkvmuxer::IMkvWriter*)
+T mkvmuxer::Cluster::AddFrame(unsigned char const*, unsigned long long, unsigned long long, unsigned long long, bool)
+T mkvmuxer::Cluster::Finalize()
+T mkvmuxer::Cluster::Cluster(unsigned long long, long long)
+T mkvmuxer::Cluster::Cluster(unsigned long long, long long)
+T mkvmuxer::Cluster::~Cluster()
+T mkvmuxer::Cluster::~Cluster()
+T mkvmuxer::MakeUID(unsigned int*)
+T mkvmuxer::Segment::AddChapter()
+T mkvmuxer::Segment::OutputCues(bool)
+T mkvmuxer::Segment::QueueFrame(mkvmuxer::Frame*)
+T mkvmuxer::Segment::AddCuePoint(unsigned long long, unsigned long long)
+T mkvmuxer::Segment::AddMetadata(unsigned char const*, unsigned long long, unsigned long long, unsigned long long, unsigned long long)
+T mkvmuxer::Segment::SetChunking(bool, char const*)
+T mkvmuxer::Segment::AddAudioTrack(int, int, int)
+T mkvmuxer::Segment::AddVideoTrack(int, int, int)
+T mkvmuxer::Segment::MakeNewCluster(unsigned long long)
+T mkvmuxer::Segment::WriteFramesAll()
+T mkvmuxer::Segment::CheckHeaderInfo()
+T mkvmuxer::Segment::WriteSegmentHeader()
+T mkvmuxer::Segment::WriteFramesLessThan(unsigned long long)
+T mkvmuxer::Segment::DoNewClusterProcessing(unsigned long long, unsigned long long, bool)
+T mkvmuxer::Segment::ForceNewClusterOnNextFrame()
+T mkvmuxer::Segment::Init(mkvmuxer::IMkvWriter*)
+T mkvmuxer::Segment::AddFrame(unsigned char const*, unsigned long long, unsigned long long, unsigned long long, bool)
+T mkvmuxer::Segment::AddTrack(int)
+T mkvmuxer::Segment::Finalize()
+T mkvmuxer::Segment::CuesTrack(unsigned long long)
+T mkvmuxer::Segment::MaxOffset()
+T mkvmuxer::Segment::Segment()
+T mkvmuxer::Segment::Segment()
+T mkvmuxer::Segment::~Segment()
+T mkvmuxer::Segment::~Segment()
+T mkvmuxer::WriteID(mkvmuxer::IMkvWriter*, unsigned long long)
+T mkvmuxer::Chapters::AddChapter(unsigned int*)
+T mkvmuxer::Chapters::ExpandChaptersArray()
+T mkvmuxer::Chapters::Chapters()
+T mkvmuxer::Chapters::Chapters()
+T mkvmuxer::Chapters::~Chapters()
+T mkvmuxer::Chapters::~Chapters()
+T mkvmuxer::CuePoint::CuePoint()
+T mkvmuxer::CuePoint::CuePoint()
+T mkvmuxer::CuePoint::~CuePoint()
+T mkvmuxer::CuePoint::~CuePoint()
+T mkvmuxer::SeekHead::AddSeekEntry(unsigned int, unsigned long long)
+T mkvmuxer::SeekHead::Write(mkvmuxer::IMkvWriter*)
+T mkvmuxer::SeekHead::SeekHead()
+T mkvmuxer::SeekHead::SeekHead()
+T mkvmuxer::SeekHead::~SeekHead()
+T mkvmuxer::SeekHead::~SeekHead()
+T mkvmuxer::MkvWriter::ElementStartNotify(unsigned long long, long long)
+T mkvmuxer::MkvWriter::Open(char const*)
+T mkvmuxer::MkvWriter::Close()
+T mkvmuxer::MkvWriter::Write(void const*, unsigned int)
+T mkvmuxer::MkvWriter::Position(long long)
+T mkvmuxer::MkvWriter::MkvWriter()
+T mkvmuxer::MkvWriter::MkvWriter()
+T mkvmuxer::MkvWriter::~MkvWriter()
+T mkvmuxer::MkvWriter::~MkvWriter()
+T mkvmuxer::MkvWriter::~MkvWriter()
+T mkvmuxer::WriteUInt(mkvmuxer::IMkvWriter*, unsigned long long)
+U operator new[](unsigned int)@@GLIBCXX_3.4
+U operator new[](unsigned int, std::nothrow_t const&)@@GLIBCXX_3.4
+T mkvmuxer::AudioTrack::PayloadSize() const
+T mkvmuxer::AudioTrack::Write(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::VideoTrack::PayloadSize() const
+T mkvmuxer::VideoTrack::VideoPayloadSize() const
+T mkvmuxer::VideoTrack::Write(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::SegmentInfo::Finalize(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::ContentEncoding::EncodingSize(unsigned long long, unsigned long long) const
+T mkvmuxer::ContentEncoding::EncryptionSize() const
+T mkvmuxer::ContentEncoding::Size() const
+T mkvmuxer::ContentEncoding::Write(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::ContentEncAESSettings::PayloadSize() const
+T mkvmuxer::ContentEncAESSettings::Size() const
+T mkvmuxer::ContentEncAESSettings::Write(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::Cues::GetCueByIndex(int) const
+T mkvmuxer::Cues::Write(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::Track::PayloadSize() const
+T mkvmuxer::Track::GetContentEncodingByIndex(unsigned int) const
+T mkvmuxer::Track::Size() const
+T mkvmuxer::Track::Write(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::Tracks::TrackIsAudio(unsigned long long) const
+T mkvmuxer::Tracks::TrackIsVideo(unsigned long long) const
+T mkvmuxer::Tracks::GetTrackByIndex(unsigned int) const
+T mkvmuxer::Tracks::GetTrackByNumber(unsigned long long) const
+T mkvmuxer::Tracks::Write(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::Chapter::ShallowCopy(mkvmuxer::Chapter*) const
+T mkvmuxer::Chapter::Display::WriteDisplay(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::Chapter::WriteAtom(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::Cluster::Size() const
+T mkvmuxer::Segment::UpdateChunkName(char const*, char**) const
+T mkvmuxer::Segment::GetTrackByNumber(unsigned long long) const
+T mkvmuxer::Segment::TestFrame(unsigned long long, unsigned long long, bool) const
+T mkvmuxer::Chapters::WriteEdition(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::Chapters::Count() const
+T mkvmuxer::Chapters::Write(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::CuePoint::PayloadSize() const
+T mkvmuxer::CuePoint::Size() const
+T mkvmuxer::CuePoint::Write(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::SeekHead::MaxEntrySize() const
+T mkvmuxer::SeekHead::Finalize(mkvmuxer::IMkvWriter*) const
+T mkvmuxer::MkvWriter::Position() const
+T mkvmuxer::MkvWriter::Seekable() const
+U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+U operator new(unsigned int)@@GLIBCXX_3.4
+U operator new(unsigned int, std::nothrow_t const&)@@GLIBCXX_3.4
+U std::nothrow@@GLIBCXX_3.4
+V typeinfo for mkvmuxer::AudioTrack
+V typeinfo for mkvmuxer::IMkvWriter
+V typeinfo for mkvmuxer::VideoTrack
+V typeinfo for mkvmuxer::Track
+V typeinfo for mkvmuxer::MkvWriter
+V typeinfo name for mkvmuxer::AudioTrack
+V typeinfo name for mkvmuxer::IMkvWriter
+V typeinfo name for mkvmuxer::VideoTrack
+V typeinfo name for mkvmuxer::Track
+V typeinfo name for mkvmuxer::MkvWriter
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+V vtable for mkvmuxer::AudioTrack
+V vtable for mkvmuxer::IMkvWriter
+V vtable for mkvmuxer::VideoTrack
+V vtable for mkvmuxer::Track
+V vtable for mkvmuxer::MkvWriter
