@@ -1,10 +1,14 @@
+r a.10968
+d aAlterTableFuncs.22482
 U abort@@GLIBC_2.0
 t absFunc
-d aBuiltinFunc.19990
+d aBuiltinFunc.24857
+d aCacheMode.32047
 U access@@GLIBC_2.0
 t accessPayload
-r aCode.24682
-r aCopy.23088
+r aCode.23245
+r aCode.31315
+r aCopy.28746
 U __acosf_finite@@GLIBC_2.15
 U __acos_finite@@GLIBC_2.15
 b ACT_1010
@@ -260,13 +264,12 @@ b ACT_ZOMBINE_GRENADE_IDLE
 b ACT_ZOMBINE_GRENADE_PULL
 b ACT_ZOMBINE_GRENADE_RUN
 b ACT_ZOMBINE_GRENADE_WALK
-d aDateTimeFuncs.7779
+d aDateTimeFuncs.9199
 t addArgumentToVtab
 t add_fdes
-t addModuleArgument.isra.310
+t addModuleArgument.isra.409
 d adds.9477
-t addToSavepointBitvecs.isra.35
-t addToVTrans
+t addToSavepointBitvecs.isra.51
 t addWhereTerm
 r aDigits
 T adler32
@@ -351,7 +354,8 @@ b AE_METROPOLICE_DEPLOY_MANHACK
 b AE_METROPOLICE_DRAW_PISTOL
 b AE_METROPOLICE_SHOVE
 b AE_METROPOLICE_START_DEPLOY
-r aEnc.19322
+r aEnc.24088
+r aEndOp.29478
 b AE_PASSENGER_PHYSICS_PUSH
 b AE_POISONHEADCRAB_FLINCH_HOP
 b AE_POISONHEADCRAB_FOOTSTEP
@@ -395,13 +399,17 @@ b AE_ZOMBIE_STEP_LEFT
 b AE_ZOMBIE_STEP_RIGHT
 b AE_ZOMBIE_SWATITEM
 b AE_ZOMBINE_PULLPIN
+r aFlag.18713
+r aFlag.19753
+r aFlagOp.31608
 r aHardLimit
-r aHash.24678
+r aHash.31311
 b ai_actbusy_search_time
 b ai_ally_manager_debug
 b ai_auto_contact_solver
 b ai_block_damage
 b ai_citizen_debug_commander
+r aiClass
 b ai_debug_actbusy
 b ai_debug_assault
 b ai_debug_avoidancebounds
@@ -494,70 +502,93 @@ b ai_use_think_optimizations
 b ai_use_visibility_cache
 b ai_vehicle_avoidance
 r aJournalMagic
-r aKeyword.21755
-r aLen.24680
+r aKeyword.27147
+r aLen.20445
+r aLen.31313
 t allocateBtreePage
 t allocateCursor
+t allocSpace.part.150
+t allowedOp
 b allowNPCs
-r aMsg.25035
+r aMap.29085
+r aMJNeeded.18535
+r aMsg.31737
+r aMx.8809
 t analysisLoader
 t analyzeAggregate
 t analyzeAggregatesInSelect
 t analyzeDatabase
 t analyzeOneTable
 t analyzeTable
-r and_logic.16425
-r aNext.24679
+r and_logic.19721
+r aNext.31312
 d AngryExpressions
 b AngryZombieCounter
 b anim_showstate
 b anim_showstatelog
 b antlion_easycrush
-r aOffset.24681
-t appendSpace
+r aOffset.31314
+d aOpenMode.32048
+t apiOomError
 t applyAffinity
-t applyAffinity.part.280
-t applyNumericAffinity.part.264
-r aPragma.21346
+t applyAffinity.part.323
+t applyNumericAffinity
+r aPragmaNames
 r aPrefix
 U asctime@@GLIBC_2.0
 U __asinf_finite@@GLIBC_2.15
 U __asin_finite@@GLIBC_2.15
-r aSize.15258
-t assemblePage
-r aStart.24017
-r aStep.24016
+r aStart.29548
+r aStartOp.29477
+r aStep.29547
+d aSyscall
+r aTable.22597
 U __atan2f_finite@@GLIBC_2.15
 U __atan2_finite@@GLIBC_2.15
 U atanf@@GLIBC_2.0
 U atan@@GLIBC_2.0
+t attachFunc
+r attach_func.22906
+r aType.18984
 b autoaim_max_deflect
 b autoaim_max_dist
 b autoaim_unlock_target
+r autoInc.25234
 t autoIncBegin
-d aVfs.11584
+r autoIncEnd.25251
+t autoIncrementEnd
+d aVfs.13458
 t avgFinalize
-r az.19209
-r azColName.21641
+r az.23922
+d azCol.26687
+d azCol.26701
+d azCol.26714
+d azCol.26725
+d azCol.26731
+d azCol.26738
+d azCol.26748
+d azCol.26772
+d azCol.26888
+r azColName.27001
 r azCompileOpt
-d azDirs.11388
-r azModeName.21403
-r azName.9692
-r azOne.19854
-r azType.18796
-t backupOnePage.isra.212
+d azDirs.13192
+b aZero.19754
+r azModeName.26592
+r azName.11056
+r azOne.24725
+r azType.19599
+r azType.23399
+t backupOnePage.isra.416
+t backupUpdate
 t balance
 r base_dist
 t base_from_cb_data
 t base_from_object
 r base_length
-t bestBtreeIndex
-t bestIndex.constprop.327
-t bestOrClauseIndex
-t bestVirtualIndex
 t binCollFunc
 t bindText
 t blobReadWrite
+t blobSeekToRow
 r bl_order
 b bot_attack
 b bot_changeclass
@@ -581,16 +612,23 @@ T Bt3Zip_MatchFinder_GetMatches
 T Bt3Zip_MatchFinder_Skip
 t Bt4_MatchFinder_GetMatches
 t Bt4_MatchFinder_Skip
-t btreeCreateTable
 t btreeEndTransaction
 t btreeGetPage
-t btreeInitPage.part.180
+t btreeGetUnusedPage
+t btreeHeapInsert
+t btreeInitPage.part.326
 t btreeInvokeBusyHandler
+t btreeLockCarefully
 t btreeMoveto
+t btreeNext
 t btreePageLookup
-t btreeParseCell
+t btreeParseCellAdjustSizeForOverflow.isra.117
 t btreeParseCellPtr
-t btreeRestoreCursorPosition.part.271
+t btreeParseCellPtrIndex
+t btreeParseCellPtrNoPayload
+t btreePrevious
+t btreeReleaseAllCursorPages
+t btreeRestoreCursorPosition.part.431
 b buffer
 b bugbait_distract_time
 b bugbait_grenade_radius
@@ -598,6 +636,7 @@ b bugbait_hear_radius
 b bugbait_radius
 t build_tree
 b bulletSpeed
+t cachedCellSize
 U CallAssertFailedNotifyFunc
 t callFinaliser
 U calloc@@GLIBC_2.0
@@ -616,10 +655,13 @@ b cc_Test_RemoveAllRandomEntities
 b cc_Test_SpawnRandomEntities
 t cdateFunc
 t cellSizePtr
+t cellSizePtrNoPayload
 t changes
+t charFunc
 U chdir@@GLIBC_2.0
 t checkAppendMsg
-t checkColumnOverlap.part.139
+t checkColumnOverlap.part.228
+t checkConstraintExprNode
 t checkList
 t checkPtrmap
 t checkRef
@@ -637,30 +679,31 @@ t clearCell
 t clearDatabasePage
 t clearSelect
 b cl_forwardspeed
+t closeCursorsInFrame
 U closedir@@GLIBC_2.0
 U close@@GLIBC_2.0
+t closePendingFds
 t closeUnixFile
 b cl_sidespeed
 b cl_upspeed
-r cntIdx.21499
 t codeApplyAffinity
-t codeAttach.isra.198
+t codeAttach
 t codeCompare
 t codeDistinct
 t codeEqualityTerm
-t codeInteger.isra.292
-t codeOffset.isra.296
+t codeInteger.isra.399
+t codeOffset.part.403
 t codeReal
 b collision_shake_amp
 b collision_shake_freq
 b collision_shake_time
 b colorcorrection
 U ColorSpewMessage
-t columnIndex.isra.134
+t columnIndex.isra.220
 t columnMallocFailure
 t columnMem
 t columnName
-t columnType
+t columnTypeImpl
 b COMBINE_AE_ALTFIRE
 b COMBINE_AE_BEGIN_ALTFIRE
 b combine_guard_spawn_health
@@ -668,7 +711,6 @@ b combine_spawn_health
 U CommandLine_Tier0
 b commentary
 b commentary_available
-t compare2pow63
 t comparisonAffinity
 t compileoptiongetFunc
 t compileoptionusedFunc
@@ -677,14 +719,18 @@ T compress
 T compress2
 t compress_block
 T compressBound
+t computeCellSize
 t computeHMS.part.2
 t computeJD.part.0
-t computeLimitRegisters
+t computeLimitRegisters.part.445
+t computeNumericType
 t computeYMD_HMS
 t computeYMD.part.1
 d configuration_table
+t connectionIsBusy.part.272
 t contextMalloc
-t copyNodeContent.part.237
+t convertCompoundSelectToSubquery
+t copyNodeContent.part.436
 t corruptSchema
 U cosf@@GLIBC_2.0
 U cos@@GLIBC_2.0
@@ -695,71 +741,71 @@ T crc32_combine
 t crc32_combine_
 T crc32_combine64
 r crc_table
+t createAggContext.isra.316
 t createCollation
 T CreateInterface
 t createModule
-t createVarMap.part.104
 r CSWTCH.1082
 r CSWTCH.1379
-r CSWTCH.1775
-r CSWTCH.1833
-r CSWTCH.1847
-r CSWTCH.1850
-r CSWTCH.1860
-r CSWTCH.1861
-r CSWTCH.1943
-r CSWTCH.1964
-r CSWTCH.1975
-r CSWTCH.2010
-r CSWTCH.2035
-r CSWTCH.2096
-r CSWTCH.2097
-r CSWTCH.2101
-r CSWTCH.2128
-r CSWTCH.2139
-r CSWTCH.2145
-r CSWTCH.2171
-r CSWTCH.2176
+r CSWTCH.1777
+r CSWTCH.1835
+r CSWTCH.1849
+r CSWTCH.1852
+r CSWTCH.1862
+r CSWTCH.1863
+r CSWTCH.1945
+r CSWTCH.1966
+r CSWTCH.1977
+r CSWTCH.2012
+r CSWTCH.2037
+r CSWTCH.2098
+r CSWTCH.2099
+r CSWTCH.2103
+r CSWTCH.2130
+r CSWTCH.2141
+r CSWTCH.2147
+r CSWTCH.2173
 r CSWTCH.2178
-r CSWTCH.2189
-r CSWTCH.2207
+r CSWTCH.2180
+r CSWTCH.2191
 r CSWTCH.2209
 r CSWTCH.2211
-r CSWTCH.2284
-r CSWTCH.2294
-r CSWTCH.2306
-r CSWTCH.2389
+r CSWTCH.2213
+r CSWTCH.2308
 r CSWTCH.2391
-r CSWTCH.2465
-r CSWTCH.2498
+r CSWTCH.2393
+r CSWTCH.2467
 r CSWTCH.2500
-r CSWTCH.2505
-r CSWTCH.2556
-r CSWTCH.2557
+r CSWTCH.2502
+r CSWTCH.2507
 r CSWTCH.2558
-r CSWTCH.2640
-r CSWTCH.2709
-r CSWTCH.2758
+r CSWTCH.2559
+r CSWTCH.2560
+r CSWTCH.2642
+r CSWTCH.2711
 r CSWTCH.2760
 r CSWTCH.2762
-r CSWTCH.2801
-r CSWTCH.2811
-r CSWTCH.2823
-r CSWTCH.2884
-r CSWTCH.2888
-r CSWTCH.2951
-r CSWTCH.2956
-r CSWTCH.3015
-r CSWTCH.3027
-r CSWTCH.3289
-r CSWTCH.3446
+r CSWTCH.2764
+r CSWTCH.2803
+r CSWTCH.2813
+r CSWTCH.2825
+r CSWTCH.2886
+r CSWTCH.2953
+r CSWTCH.2958
+r CSWTCH.3017
+r CSWTCH.3029
+r CSWTCH.3291
 r CSWTCH.3448
 r CSWTCH.3450
-r CSWTCH.3494
+r CSWTCH.3452
 r CSWTCH.3495
-r CSWTCH.4654
+r CSWTCH.3496
+r CSWTCH.3497
+r CSWTCH.3509
+r CSWTCH.4002
 r CSWTCH.4656
-r CSWTCH.544
+r CSWTCH.4658
+r CSWTCH.548
 r CSWTCH.606
 t ctimeFunc
 t ctimestampFunc
@@ -785,6 +831,8 @@ b darkness_ignore_LOS_to_sources
 b datacache
 t dateFunc
 t datetimeFunc
+t dbMallocRawFinish
+t dbReallocFinish
 b debug_materialmodifycontrol
 b debugoverlay
 b debug_physimpact
@@ -793,9 +841,10 @@ b debug_touchlinks
 b decalfrequency
 d decalsystem
 t decodeFlags
+t decodeIntArray.isra.213
 b def
-d defaultMethods.12038
-r defaultMethods.7997
+r defaultMethods.14003
+r defaultMethods.9452
 b defaultteam
 T deflate
 T deflateBound
@@ -820,6 +869,8 @@ t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
 t destroyRootPage
+t detachFunc
+r detach_func.22899
 b developer
 U DevMsg
 b DevShotSystem
@@ -847,28 +898,26 @@ r dotlockIoMethods
 t dotlockLock
 t dotlockUnlock
 b DrawBattleLines
-t dropCell.part.181
-r dropTrigger.22785
+t dropCell.part.328
 d __dso_handle
 d __DTOR_END__
 b dtor_idx.7136
 d __DTOR_LIST__
-b dummy.14977
-t dup8bytes
+b dummy.18317
 t dupedExprNodeSize
 t dupedExprSize
-U dup@@GLIBC_2.0
 b dwarf_reg_size_table
 d DW.ref.__gxx_personality_v0
 d _DYNAMIC
 U __dynamic_cast@@CXXABI_1.3
 D _edata
-r encnames.21512
+r encnames.26870
 B _end
-r endCode.21475
+r endCode.26864
 b engine
 b enginesound
 b enginetrace
+t enlargeAndAppend
 b ent_debugkeys
 d ENTITYIO_FIXUP_STRING
 b ent_messages_draw
@@ -897,10 +946,11 @@ d envZombieMoanIgnited
 d envZombieMoanVolume
 d envZombieMoanVolumeFast
 d envZombieMoanVolumeLong
+t errlogFunc
 U __errno_location@@GLIBC_2.0
 U Error
 b errorListener
-t evalConstExpr
+t estimateIndexWidth
 d eventFuncs
 t execExecSql
 t execSql
@@ -910,16 +960,22 @@ U execvp@@GLIBC_2.0
 U exit@@GLIBC_2.0
 U _ExitOnFatalAssert
 U __expf_finite@@GLIBC_2.15
+t explainAppendTerm
+t explainComposite.part.391
+t explainTempTable.part.395
+t exprAlwaysFalse
+t exprAlwaysTrue
 t exprAnalyze
-t exprAnalyzeAll
-t exprCodeBetween.isra.305
+t exprCodeBetween.isra.443
 t exprDup
-t exprListTableUsage
+t exprIsConst
+t exprMightBeIndexed.part.290
 t exprNodeIsConstant
-t exprSelectTableUsage
+t exprNot.isra.363.part.364
+t exprSelectUsage
 t exprSetHeight
-t exprTableUsage
-t exprWalkNoop
+t exprSrcCount
+t exprTableRegister.isra.283
 r extra_blbits
 r extra_dbits
 r extra_lbits
@@ -929,22 +985,23 @@ t fastlz2_compress
 T fastlz_compress
 T fastlz_compress_level
 T fastlz_decompress
+U fchmod@@GLIBC_2.0
+U fchown@@GLIBC_2.0
 U fclose@@GLIBC_2.1
 U fcntl@@GLIBC_2.0
-U fdatasync@@GLIBC_2.0
 U __fdelt_chk@@GLIBC_2.15
 t fde_mixed_encoding_compare
 t fde_single_encoding_compare
 t fde_unencoded_compare
+t fileHasMoved.isra.21
 U fileno@@GLIBC_2.0
 b filesystem
 t FillDistancesPrices
 t fill_window
-t finalizeAggFunctions.isra.288
+t finalDbSize
+t finalizeAggFunctions.isra.394
 t findBtree
-t findElementGivenHash
-t findLockInfo.isra.242
-t findTerm
+t findElementWithHash
 T _fini
 b fire_absorbrate
 b fire_dmgbase
@@ -958,6 +1015,7 @@ b fire_incomingheatscale
 b fire_maxabsorb
 b fish_dormant
 t fkLookupParent
+t fkParentIsModified
 t fkScanChildren
 t fkTriggerDelete
 b flashlight
@@ -1002,14 +1060,17 @@ t frame_heapsort
 t __frame_state_for
 U fread@@GLIBC_2.0
 U free@@GLIBC_2.0
+t freeIndex
 t freeP4
 t freePage2
-t freePage.part.238
+t freePage.part.437
 b free_pass_peek_debug
+t freeSpace
 U freopen@@GLIBC_2.0
 b friendlyfire
 U fseek@@GLIBC_2.0
 b fSentencesInit
+t fstat64
 U fsync@@GLIBC_2.0
 U ftell@@GLIBC_2.0
 U ftruncate64@@GLIBC_2.1
@@ -1019,6 +1080,7 @@ b func_breakdmg_explosive
 b func_break_max_pieces
 b func_break_reduction_factor
 b funccalls
+t functionDestroy.isra.271
 t functionSearch
 U fwrite@@GLIBC_2.0
 U __fxstat64@@GLIBC_2.2
@@ -1142,7 +1204,7 @@ b g_DefaultResponseSystemSaveRestoreBlockHandler
 b g_DisableAI
 b gEffectManager
 t generateColumnNames
-t generateOutputSubroutine.isra.300
+t generateOutputSubroutine.isra.404
 b g_EntityClassnames
 b g_EntityCollisionHash
 b g_EntityListPool
@@ -1153,7 +1215,8 @@ b gEntList
 b g_EntListMemPool
 b get
 t getAndInitPage
-r getCacheSize.21381
+r getCacheSize.26620
+t getCellInfo
 t get_cie_encoding
 U GetCPUInformation
 T get_crc_table
@@ -1161,12 +1224,15 @@ U getcwd@@GLIBC_2.0
 t getDigits
 U getenv@@GLIBC_2.0
 U geteuid@@GLIBC_2.0
+t getIntArg
 T GetMatchesSpec1
 t getOverflowPage
+U getpagesize@@GLIBC_2.0
 U getpid@@GLIBC_2.0
 U getpwuid@@GLIBC_2.0
 t getRowTrigger
 t getSafetyLevel
+t getTextArg
 U gettimeofday@@GLIBC_2.0
 b g_EventList
 b g_EventQueue
@@ -2312,7 +2378,9 @@ d g_RotationInterpolators
 b groundlinksallocated
 t groupConcatFinalize
 t groupConcatStep
-t growOpArray
+t growOp3
+t growOpArray.isra.389
+t growVTrans
 b g_SaveRestoreBlockSet
 b g_SentBanMasks
 b g_SentGameRulesMasks
@@ -2379,6 +2447,8 @@ b g_WeaponList
 U __gxx_personality_v0@@CXXABI_1.3
 d gZombiePassengerImpactDamageTable
 b hack
+t handleDeferredMoveto
+t handleMovedCursor
 b hap_airboat_gun_mag
 b hap_jeep_cannon_mag
 b hap_turret_mag
@@ -2450,30 +2520,34 @@ U iconv_close@@GLIBC_2.1
 U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 t identPut
-r idxErr.21495
 b igarrysmod
 b iHornetPuff
 b iHornetTrail
-r iLength.21300
+r iLength.26517
+t incrAggDepth
 t incrVacuumStep
 T _init
 t init_dwarf_reg_size_table
 b injured_help_plee_range
+b inodeList
 U inotify_add_watch@@GLIBC_2.4
 U inotify_init@@GLIBC_2.4
 U inotify_rm_watch@@GLIBC_2.4
 t insertCell
-t insertElement.isra.12
-t invalidateCursorsOnModifiedBtrees
+t insertElement.isra.17
+t instrFunc
 t invalidateTempStorage
-r iOffset.21299
+t invokeProfileCallback
+t invokeValueDestructor
+r iOffset.26516
 U _IO_getc@@GLIBC_2.0
 b iResultCount
 U isalnum@@GLIBC_2.0
 t isDate
 U isspace@@GLIBC_2.0
+t isSystemTable
 U iswspace@@GLIBC_2.0
-r iValue.21301
+r iValue.26518
 b jalopy_blocked_exit_max_speed
 b jalopy_cargo_anim_time
 b jalopy_radar_test_ent
@@ -2481,9 +2555,9 @@ d __JCR_END__
 d __JCR_LIST__
 t juliandayFunc
 w _Jv_RegisterClasses
-t keyInfoFromExprList.isra.277
+t keyInfoFromExprList
 U KeyValuesSystem
-t keywordCode.part.207
+t keywordCode
 d k_flMaxEntityEulerAngle
 d k_flMaxEntityPosCoord
 d k_flMaxEntitySpeed
@@ -2561,7 +2635,7 @@ t LenEnc_Encode2
 t LenEnc_SetPrices
 R _length_code
 t lengthFunc
-r lenOne.19853
+r lenOne.24724
 t likeFunc
 r likeInfoAlt
 r likeInfoNorm
@@ -2576,8 +2650,6 @@ t loadAnalysis
 t loadExt
 U localtime@@GLIBC_2.0
 t localtimeOffset
-t locateFkeyIndex
-b lockList
 U Log
 U __log10_finite@@GLIBC_2.15
 U __logf_finite@@GLIBC_2.15
@@ -2592,6 +2664,7 @@ U lseek64@@GLIBC_2.2
 b lservercfgfile
 t lstat
 t __lstat
+t lstat64
 b lua_errorurl
 b lua_log
 b lua_networkvar_bytespertick
@@ -2640,10 +2713,8 @@ T LzmaProps_Decode
 T LzmaUncompress
 U malloc@@GLIBC_2.0
 U malloc_usable_size@@GLIBC_2.0
-t mallocWithAlarm
 b mapcyclefile
 b marker.8860
-r master_schema.21567
 t MatchFinder_CheckLimits
 T MatchFinder_Construct
 T MatchFinder_Create
@@ -2669,6 +2740,7 @@ b m_debugOverlayLine
 b m_DisableTransmitPlayer
 b mdlcache
 b mdllib
+t measureAllocationSize
 b Medium_Hull
 b Medium_Tall_Hull
 b mem0
@@ -2678,7 +2750,7 @@ U memcmp@@GLIBC_2.0
 U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
 U MemFreeScratch
-d MemJournalMethods
+r MemJournalMethods
 t memjrnlClose
 t memjrnlFileSize
 t memjrnlRead
@@ -2695,12 +2767,13 @@ b m_flLastMoveYaw
 t minMaxFinalize
 t minmaxFunc
 t minmaxStep
-r misuse.25194
+r misuse.31958
 U mkdir@@GLIBC_2.0
 U mkfifo@@GLIBC_2.0
 t mknod
 t __mknod
 U mktime@@GLIBC_2.0
+U mmap64@@GLIBC_2.1
 d m_nDebugOverlayIndex
 t __moddi3
 b modelinfo
@@ -2734,9 +2807,13 @@ b mp_timelimit
 b mp_waitingforplayers_cancel
 b mp_waitingforplayers_restart
 b mp_waitingforplayers_time
+U mremap@@GLIBC_2.0
 b m_ReportedErrors
 U Msg
-t multiSelectCollSeq.isra.276
+t multiSelect
+t multiSelectCollSeq.isra.381
+t multiSelectOrderByKeyInfo.constprop.480
+U munmap@@GLIBC_2.0
 T MyAlloc
 T MyFree
 t MyWrite
@@ -2805,7 +2882,7 @@ b nb_update_framelimit
 b nb_update_frequency
 b nb_update_maxslide
 b networkstringtable
-t newDatabase
+t newDatabase.part.425
 b NextBotAllowAvoiding
 b NextBotAllowClimbing
 b NextBotAllowGapJumping
@@ -2832,8 +2909,16 @@ t nolockIoFinderImpl
 r nolockIoMethods
 t nolockLock
 t nolockUnlock
+t noopMutexAlloc
+t noopMutexEnd
+t noopMutexEnter
+t noopMutexFree
+t noopMutexInit
+t noopMutexLeave
+t noopMutexTry
 d NormalExpressions
 b notarget
+t notValid.isra.357
 b npc_ally_deathmessage
 b npc_alyx_crouch
 b npc_alyx_force_stop_moving
@@ -2854,40 +2939,58 @@ b npc_strider_shake_ropes_magnitude
 b npc_strider_shake_ropes_radius
 b npc_vphysics
 t nullifFunc
-r nullMem.15618
+r nullMem.19200
+r nullRow.23262
+t numericType
 b object_mutex
 b old_radius_damage
 b once_regsizes.9698
-r one.17455
 U open64@@GLIBC_2.2
-r openBlob.16605
+r openBlob.20185
 t openDatabase
 t openDirectory
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
-b openList
 t openStatTable
-t openSubJournal
 d Opposite
-r ops.23642
+r ops.29806
 b option_duck_method
-r or_logic.16426
-r outOfMem.25193
+r or_logic.19722
+t out2Prerelease.isra.160
+t out2PrereleaseWithClear
+r outOfMem.31957
 b p4
+t pageFindSlot
+t pageFreeArray.isra.329
+t pageInsertArray
+t pagerAddPageToRollbackJournal
 t pageReinit
-t pager_end_transaction.part.107
-t pager_open_journal
+t pager_end_transaction
+t pagerExclusiveLock
+t pagerFixMaplimit
+t pagerLockDb.part.49
+t pagerOpenSavepoint
+t pagerOpenWal
+t pagerPagecount
 t pager_playback
 t pager_playback_one_page
-t pager_reset.part.88
+t pager_reset
 t pagerStress
-t pager_truncate.part.38
+t pagerSyncHotJournal
+t pager_truncate
+t pagerUndoCallback
+t pager_unlock
 t pagerUnlockAndRollback
-t pager_unlock.part.106
-t pager_wait_on_lock.part.45
+t pagerUnlockDb
+t pager_wait_on_lock
+t pagerWalFrames
 t pager_write
+t pager_write_changecounter.isra.303
+t pagerWriteLargeSector.isra.415
 t pager_write_pagelist
 t parseHhMmSs
+t parserAddExprIdListTerm
+t parserDoubleLinkSelect
 b particle_test_attach_attachment
 b particle_test_attach_mode
 b particle_test_file
@@ -2904,22 +3007,24 @@ t pcache1Create
 t pcache1Destroy
 t pcache1EnforceMaxPage
 t pcache1Fetch
+t pcache1FetchStage2
 t pcache1Free
 t pcache1FreePage
 b pcache1_g
 t pcache1Init
 t pcache1Pagecount
-t pcache1PinPage
 t pcache1Rekey
 t pcache1RemoveFromHash
+t pcache1ResizeHash.isra.41
+t pcache1Shrink
 t pcache1Shutdown
 t pcache1Truncate
 t pcache1TruncateUnsafe
 t pcache1Unpin
-t pcacheAddToDirtyList
+t pcacheFetchFinishWithInit
+t pcacheManageDirtyList
 t pcacheMergeDirtyList
-t pcacheRemoveFromDirtyList
-t pcacheUnpin
+t pcacheSortDirtyList
 b pDatabase
 d pfFastCos
 d pfFastSinCos
@@ -2946,7 +3051,9 @@ b physgun_dampFactor
 b physgun_maxangular
 b physgun_maxDampAngular
 b physgun_maxDampSpeed
+b physgun_maxrange
 b physgun_maxSpeed
+b physgun_minrange
 b physgun_teleportDistance
 b physgun_timeToArrive
 b physgun_timeToArriveRagdoll
@@ -3009,7 +3116,8 @@ b p_LuaSaveSystem
 r posixIoFinder
 t posixIoFinderImpl
 r posixIoMethods
-t _posixUnlock.constprop.322
+t posixOpen
+t posixUnlock.isra.333
 d power2_n
 U __powf_finite@@GLIBC_2.15
 U __pow_finite@@GLIBC_2.15
@@ -3017,6 +3125,7 @@ d predef_flexcontroller_names
 d predef_flexcontroller_values
 b pResultTable
 U __printf_chk@@GLIBC_2.3.4
+t printfFunc
 U printf@@GLIBC_2.0
 U __progname_full@@GLIBC_2.0
 U __progname@@GLIBC_2.0
@@ -3056,9 +3165,11 @@ w pthread_once@@GLIBC_2.0
 U pthread_self@@GLIBC_2.0
 t ptrmapGet
 t ptrmapPut
-t ptrmapPutOvflPtr.part.236
-t pushOntoSorter.isra.308
+t ptrmapPutOvflPtr.part.435
+t pushDownWhereTerms
+t pushOntoSorter.isra.446
 U putchar@@GLIBC_2.0
+t putVarint64
 d pWeaponSoundCategories
 U qsort@@GLIBC_2.0
 t qsort_s
@@ -3073,24 +3184,26 @@ t randomBlob
 U RandomFloat
 t randomFunc
 U RandomInt
+b randomnessPid
 U RandomSeed
 b random_valve
 t RangeEnc_EncodeBit
 t RangeEnc_EncodeBit.constprop.15
 t RangeEnc_EncodeBit.constprop.16
 t RangeEnc_ShiftLow
-t read32bits
-r readCookie.21526
+r readCookie.26879
+t readDbPage
 U readdir@@GLIBC_2.0
 t read_encoded_value_with_base
 U read@@GLIBC_2.0
 t readJournalHdr
+U readlink@@GLIBC_2.0
 t readMasterJournal
 t ReadMatchDistances
 t read_sleb128
 U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
-t referencesOtherTables.isra.146
+t rebuildPage
 t __register_frame
 t __register_frame_info
 t __register_frame_info_bases
@@ -3099,28 +3212,27 @@ t __register_frame_info_table_bases
 t __register_frame_table
 d registry
 t reindexDatabases
-t reindexTable.isra.302
+t reindexTable.isra.448
 t releaseAllSavepoints
-t releaseLockInfo
-t releaseMemArray.part.225
+t releaseMemArray.part.149
 t reloadTableSchema
 t relocatePage
 U rename@@GLIBC_2.0
 t renameParentFunc
 t renameTableFunc
 t renameTriggerFunc
-t renderLogMsg
 t replaceFunc
 t resetAccumulator
-t resolveAlias.isra.194
-t resolveAsName.isra.109.part.110
-t resolveAttachExpr
+t resizeIndexObject.part.206
+t resolveAlias.isra.281
+t resolveAsName.isra.177.part.178
 t resolveExprStep
 t resolveOrderGroupBy
 t resolveP2Values
 t resolveSelectStep
 d responseSystemSaveRestoreOps
 t returnSingleInt
+t returnSingleText
 d rgdpvpreset
 b rgv3tStuckTable
 b r_JeepFOV
@@ -3128,10 +3240,16 @@ b r_JeepViewDampenDamp
 b r_JeepViewDampenFreq
 b r_JeepViewZHeight
 U rmdir@@GLIBC_2.0
+t robust_close
+t robustFchown
+t robust_ftruncate
+t robust_open
 t roundFunc
-t rowSetMerge
+t rowSetEntryAlloc
+t rowSetEntryMerge
+t rowSetEntrySort
+t rowSetListToTree
 t rowSetNDeepTree
-t rowSetToList
 t rowSetTreeToList
 b rpg_missle_use_custom_detonators
 b rr_debug_qa
@@ -3142,7 +3260,10 @@ b r_vehicleBrakeRate
 b r_VehicleViewDampen
 b r_visualizetraces
 d s_aGestureSlotNames
-t saveAllCursors.isra.216
+t saveAllCursors.isra.429
+t saveCursorKey
+t saveCursorPosition
+t saveCursorsOnList
 b s_bMathlibInitialized
 U scandir@@GLIBC_2.0
 d ScaredExpressions
@@ -3156,29 +3277,33 @@ b s_dragSelectionSetBorderColor
 b s_dragSelectionSetDeleteColor
 t search_object
 B seeder
+t seekAndWriteFd
 b seen_objects
-t selectAddColumnTypeAndCollation.isra.275
 t selectAddSubqueryTypeInfo
-t selectColumnsFromExprList.isra.159
 t selectExpander
 U select@@GLIBC_2.0
 t selectInnerLoop
 t selectNodeIsConstant
+t selectPopWith
 d s_ElementNames
 t send_tree
+t serialGet
 b servercfgfile
 b serverenginetools
 b serverpluginhelpers
+t setAllColumnNames
+t setAllPagerFlags.part.219
 t setChildPtrmaps
-r setCookie.21524
+r setCookie.26877
+t setDateTimeToCurrent
 t set_fast_math
 U _setjmp@@GLIBC_2.0
 t setJoinExpr
 t setLikeOptFlag
-r setMeta6.21419
+r setMeta6.26662
 t setResultStrOrError
 t setSectorSize
-t setupLookaside.part.149
+t setupLookaside.part.270
 b sFlashSprite
 b s_FogSystem
 b sHaloSprite
@@ -3445,7 +3570,8 @@ b sk_zombie_poison_health
 b sk_zombie_soldier_health
 U sleep@@GLIBC_2.0
 b Small_Centered_Hull
-d sMutex.8530
+r sMutex.10010
+r sMutex.9506
 d s_nExplosionTexture
 b sniperLines
 b sniperspeak
@@ -3454,7 +3580,6 @@ b sniper_xbox_delay
 b s_NoEscConversion
 U __snprintf_chk@@GLIBC_2.3.4
 U snprintf@@GLIBC_2.0
-t softHeapLimitEnforcer
 b soundemitterbase
 b soundscape_debug
 t sourceidFunc
@@ -3479,10 +3604,11 @@ t sqlite3AddPrimaryKey
 t sqlite3AffinityType
 T sqlite3_aggregate_context
 T sqlite3_aggregate_count
+t sqlite3AllocateIndexObject
 t sqlite3AnalysisLoad
 t sqlite3Analyze
-t sqlite3ApiExit
 r sqlite3Apis
+t sqlite3AppendChar
 t sqlite3ArrayAllocate
 t sqlite3AtoF
 t sqlite3Atoi64
@@ -3490,16 +3616,15 @@ t sqlite3AuthCheck
 t sqlite3AuthReadCol
 b sqlite3Autoext
 T sqlite3_auto_extension
-t sqlite3AutoincrementEnd
 T sqlite3_backup_finish
 T sqlite3_backup_init
 T sqlite3_backup_pagecount
 T sqlite3_backup_remaining
 T sqlite3_backup_step
-t sqlite3BackupUpdate
 t sqlite3BeginWriteOperation
 t sqlite3BinaryCompareCollSeq
 T sqlite3_bind_blob
+T sqlite3_bind_blob64
 T sqlite3_bind_double
 T sqlite3_bind_int
 T sqlite3_bind_int64
@@ -3509,17 +3634,20 @@ T sqlite3_bind_parameter_index
 T sqlite3_bind_parameter_name
 T sqlite3_bind_text
 T sqlite3_bind_text16
+T sqlite3_bind_text64
 T sqlite3_bind_value
 T sqlite3_bind_zeroblob
+T sqlite3_bind_zeroblob64
 t sqlite3BitvecClear
 t sqlite3BitvecDestroy
 t sqlite3BitvecSet
-t sqlite3BitvecTest
-t sqlite3BitvecTest.part.15
+t sqlite3BitvecTestNotNull
 T sqlite3_blob_bytes
 T sqlite3_blob_close
+t sqlite3BlobCompare.isra.301
 T sqlite3_blob_open
 T sqlite3_blob_read
+T sqlite3_blob_reopen
 T sqlite3_blob_write
 t sqlite3BtreeBeginTrans
 t sqlite3BtreeClearTable
@@ -3528,48 +3656,55 @@ t sqlite3BtreeCloseCursor
 t sqlite3BtreeCommit
 t sqlite3BtreeCommitPhaseOne
 t sqlite3BtreeCommitPhaseTwo
+t sqlite3BtreeCreateTable
 t sqlite3BtreeCursor
 t sqlite3BtreeData
-t sqlite3BtreeDataFetch.part.80
 t sqlite3BtreeDelete
-t sqlite3BtreeEnter
 t sqlite3BtreeEnterAll
-t sqlite3BtreeFactory
-t sqlite3BtreeFirst
+t sqlite3BtreeEnter.part.103
 t sqlite3BtreeGetAutoVacuum
 t sqlite3BtreeGetMeta
 t sqlite3BtreeInsert
-t sqlite3BtreeKeyFetch.part.79
-t sqlite3BtreeKeySize.part.78
 t sqlite3BtreeLast
 t sqlite3BtreeLeave
 t sqlite3BtreeLeaveAll
 t sqlite3BtreeMovetoUnpacked
-t sqlite3BtreeMutexArrayEnter
-t sqlite3BtreeMutexArrayLeave
 t sqlite3BtreeNext
+t sqlite3BtreeOpen
 t sqlite3BtreePrevious
 t sqlite3BtreePutData
 t sqlite3BtreeRollback
-t sqlite3BtreeSavepoint.part.233
+t sqlite3BtreeSavepoint.part.426
 t sqlite3BtreeSecureDelete
 t sqlite3BtreeSetAutoVacuum
 t sqlite3BtreeSetCacheSize
+t sqlite3BtreeSetPagerFlags
 t sqlite3BtreeSetPageSize
+t sqlite3BtreeSetSpillSize
+t sqlite3BtreeSetVersion
 t sqlite3BtreeTripAllCursors
 t sqlite3BtreeUpdateMeta
+b sqlite3BuiltinFunctions
 T sqlite3_busy_handler
 T sqlite3_busy_timeout
-t sqlite3ChangeCookie
+T sqlite3_cancel_auto_extension
+t sqlite3ChangeCookie.isra.402
 T sqlite3_changes
 t sqlite3CheckObjectName
+t sqlite3Checkpoint
 T sqlite3_clear_bindings
+t sqlite3ClearStatTables
 T sqlite3_close
+t sqlite3Close
 t sqlite3CloseSavepoints
+T sqlite3_close_v2
+t sqlite3CodeOnce
 t sqlite3CodeRowTrigger
 t sqlite3CodeRowTriggerDirect
 t sqlite3CodeSubselect
+t sqlite3CodeVerifyNamedSchema
 t sqlite3CodeVerifySchema
+t sqlite3CollapseDatabaseArray
 T sqlite3_collation_needed
 T sqlite3_collation_needed16
 T sqlite3_column_blob
@@ -3578,15 +3713,17 @@ T sqlite3_column_bytes16
 T sqlite3_column_count
 T sqlite3_column_decltype
 T sqlite3_column_decltype16
-t sqlite3ColumnDefault.isra.297.part.298
+t sqlite3ColumnDefault.isra.397.part.398
 T sqlite3_column_double
 T sqlite3_column_int
 T sqlite3_column_int64
 T sqlite3_column_name
 T sqlite3_column_name16
+t sqlite3ColumnsFromExprList.isra.458
 T sqlite3_column_text
 T sqlite3_column_text16
 T sqlite3_column_type
+t sqlite3ColumnType.isra.285.part.286
 T sqlite3_column_value
 T sqlite3_commit_hook
 t sqlite3CompareAffinity
@@ -3606,25 +3743,35 @@ t sqlite3CreateForeignKey
 t sqlite3CreateFunc
 T sqlite3_create_function
 T sqlite3_create_function16
-t sqlite3CreateIndex.isra.317
+T sqlite3_create_function_v2
+t sqlite3CreateIndex
 T sqlite3_create_module
 T sqlite3_create_module_v2
 r sqlite3CtypeMap
 T sqlite3_data_count
+B sqlite3_data_directory
+T sqlite3_db_cacheflush
 T sqlite3_db_config
+T sqlite3_db_filename
 t sqlite3DbFree
 T sqlite3_db_handle
 t sqlite3DbMallocRaw
+t sqlite3DbMallocRawNN
 t sqlite3DbMallocSize
 t sqlite3DbMallocZero
 T sqlite3_db_mutex
+t sqlite3DbNameToBtree
+T sqlite3_db_readonly
 t sqlite3DbRealloc
 t sqlite3DbReallocOrFree
+T sqlite3_db_release_memory
 T sqlite3_db_status
 t sqlite3DbStrDup
 t sqlite3DbStrNDup
 T sqlite3_declare_vtab
+t sqlite3DecOrHexToI64
 t sqlite3DefaultRowEst
+t sqlite3DeleteColumnNames.isra.234
 t sqlite3DeleteFrom
 t sqlite3DeleteTable
 t sqlite3DeleteTrigger
@@ -3638,26 +3785,35 @@ t sqlite3EndTable
 T sqlite3_errcode
 T sqlite3_errmsg
 T sqlite3_errmsg16
-t sqlite3Error
+t sqlite3ErrorFinish
 t sqlite3ErrorMsg
+t sqlite3ErrorWithMsg
+T sqlite3_errstr
+t sqlite3ErrStr.part.273
 T sqlite3_exec
 T sqlite3_expired
 t sqlite3Expr
+t sqlite3ExprAddCollateString
 t sqlite3ExprAffinity
 t sqlite3ExprAlloc
 t sqlite3ExprAnalyzeAggList
+t sqlite3ExprAnalyzeAggregates
 t sqlite3ExprAnd
 t sqlite3ExprAttachSubtrees
 t sqlite3ExprCacheClear
-t sqlite3ExprCachePop.constprop.330
+t sqlite3ExprCachePop
 t sqlite3ExprCacheRemove
-t sqlite3ExprCacheStore.part.119
+t sqlite3ExprCacheStore.part.192
+t sqlite3ExprCanBeNull
 t sqlite3ExprCode
-t sqlite3ExprCodeExprList.isra.307
+t sqlite3ExprCodeAtInit
+t sqlite3ExprCodeCopy
+t sqlite3ExprCodeExprList
 t sqlite3ExprCodeGetColumn
+t sqlite3ExprCodeGetColumnOfTable
+t sqlite3ExprCodeGetColumnToReg
 t sqlite3ExprCodeIN
-t sqlite3ExprCodeIsNullJump
-t sqlite3ExprCodeMove.part.299
+t sqlite3ExprCodeMove
 t sqlite3ExprCodeTarget
 t sqlite3ExprCodeTemp
 t sqlite3ExprCollSeq
@@ -3665,16 +3821,18 @@ t sqlite3ExprCompare
 t sqlite3ExprDelete
 t sqlite3ExprFunction
 t sqlite3ExprIfFalse
+t sqlite3ExprIfFalseDup.constprop.478
 t sqlite3ExprIfTrue
-t sqlite3ExprIsInteger.part.115
-t sqlite3ExprListAppend.isra.304
-t sqlite3ExprListCheckLength
+t sqlite3ExprImpliesExpr
+t sqlite3ExprIsInteger.part.187
+t sqlite3ExprListAppend.isra.411
+t sqlite3ExprListCompare
 t sqlite3ExprListDelete
 t sqlite3ExprListDup
-t sqlite3ExprListSetName.isra.113
+t sqlite3ExprListSetName.isra.184
 t sqlite3ExprNeedsNoAffinityChange
-t sqlite3ExprSetColl
-t sqlite3ExprSetHeight
+t sqlite3ExprSetHeightAndFlags.part.359
+t sqlite3ExprWalkNoop
 T sqlite3_extended_errcode
 T sqlite3_extended_result_codes
 T sqlite3_file_control
@@ -3689,18 +3847,17 @@ t sqlite3FixExpr
 t sqlite3FixExprList
 t sqlite3FixSelect
 t sqlite3FixSrcList
-t sqlite3FkActions.part.312
+t sqlite3FkActions.part.460
 t sqlite3FkCheck
-t sqlite3FkOldmask.part.205
-t sqlite3FkReferences.isra.202
-t sqlite3FkRequired.isra.203
+t sqlite3FkLocateIndex
+t sqlite3FkOldmask.part.367
+t sqlite3FkRequired.isra.216
 T sqlite3_free
 T sqlite3_free_table
-t sqlite3FuncDefInsert
 t sqlite3GenerateConstraintChecks
 t sqlite3GenerateIndexKey
 t sqlite3GenerateRowDelete
-t sqlite3GenerateRowIndexDelete.isra.301
+t sqlite3GenerateRowIndexDelete
 T sqlite3_get_autocommit
 T sqlite3_get_auxdata
 t sqlite3GetCollSeq
@@ -3710,12 +3867,10 @@ t sqlite3_get_table_cb
 t sqlite3GetToken
 t sqlite3GetVarint
 t sqlite3GetVarint32
-t sqlite3GetVdbe.isra.286.part.287
-b sqlite3GlobalFunctions
+t sqlite3GetVdbe.part.390
 T sqlite3_global_recover
 t sqlite3HaltConstraint
 t sqlite3HashClear
-t sqlite3HashFind
 t sqlite3HashInsert
 t sqlite3HexToBlob
 b sqlite3Hooks
@@ -3723,42 +3878,52 @@ t sqlite3IdListAppend
 t sqlite3IdListDelete
 t sqlite3IdListDup
 t sqlite3IdListIndex
+t sqlite3IndexAffinityOk
 t sqlite3IndexAffinityStr
 t sqlite3IndexedByLookup
-t sqlite3IndexKeyinfo
+t sqlite3Init
 t sqlite3InitCallback
 T sqlite3_initialize
-t sqlite3_initialize.part.210
+t sqlite3_initialize.part.311
 t sqlite3InitOne
 t sqlite3Insert
+t sqlite3InsertBuiltinFuncs
 T sqlite3_interrupt
+r sqlite3IntTokens
 t sqlite3InvalidFunction
 t sqlite3InvokeBusyHandler
-t sqlite3IsNumber
 t sqlite3IsReadOnly
 t sqlite3IsRowid
 t sqlite3JoinType
+t sqlite3KeyInfoAlloc
+t sqlite3KeyInfoOfIndex
+t sqlite3KeyInfoUnref
 T sqlite3_last_insert_rowid
+t sqlite3LeaveMutexAndCloseZombie
 T sqlite3_libversion
 T sqlite3_libversion_number
 T sqlite3_limit
 T sqlite3_load_extension
 t sqlite3LocateCollSeq
 t sqlite3LocateTable
+t sqlite3LocateTableItem
 t sqlite3LockAndPrepare
 T sqlite3_log
+t sqlite3LogEst
+t sqlite3LogEstAdd
 T sqlite3_malloc
 t sqlite3Malloc
-t sqlite3MallocAlarm
+T sqlite3_malloc64
+t sqlite3MallocAlarm.isra.4
+t sqlite3MallocSize
 t sqlite3MallocZero
-t sqlite3MAppendf
-t sqlite3MaterializeView.isra.309
+t sqlite3MatchSpanName
+t sqlite3MaterializeView.isra.449
 t sqlite3MemCompare
 t sqlite3MemFree
 t sqlite3MemInit
 t sqlite3MemMalloc
 T sqlite3_memory_alarm
-t sqlite3MemoryAlarm
 T sqlite3_memory_highwater
 T sqlite3_memory_used
 t sqlite3MemRealloc
@@ -3767,51 +3932,56 @@ t sqlite3MemShutdown
 t sqlite3MemSize
 T sqlite3_mprintf
 t sqlite3MPrintf
+T sqlite3_msize
 T sqlite3_mutex_alloc
 T sqlite3_mutex_enter
 T sqlite3_mutex_free
+t sqlite3MutexInit
 T sqlite3_mutex_leave
 T sqlite3_mutex_try
 t sqlite3NameFromToken
 t sqlite3NestedParse
 T sqlite3_next_stmt
+t sqlite3OomFault.part.10
 r sqlite3OpcodeProperty
 T sqlite3_open
 T sqlite3_open16
-t sqlite3OpenMasterTable
-t sqlite3OpenTableAndIndices.part.290
-t sqlite3OpenTable.part.289
+t sqlite3OpenTable
+t sqlite3OpenTableAndIndices.part.407
 t sqlite3OpenTempDatabase
 T sqlite3_open_v2
 t sqlite3OsCloseFree
+t sqlite3OsCurrentTimeInt64
 T sqlite3_os_end
 T sqlite3_os_init
+t sqlite3OsOpenMalloc
 T sqlite3_overload_function
-t sqlite3PageFree
-t sqlite3PageMalloc
-t sqlite3PagerAcquire
-t sqlite3PagerAcquire.part.215
-t sqlite3PagerBegin
 t sqlite3PagerClose
-t sqlite3PagerCommitPhaseOne.part.235
-t sqlite3PagerJournalMode
-t sqlite3PagerOpenSavepoint
-t sqlite3PagerPagecount.part.44
+t sqlite3PagerCommitPhaseOne.part.441
+t sqlite3PagerGet
+t sqlite3PagerLookup.isra.66
+t sqlite3PagerOpenWal
 t sqlite3PagerRollback
+t sqlite3PagerSavepoint
+t sqlite3PagerSetJournalMode
 t sqlite3PagerSetPagesize
-t sqlite3PagerUnref
+t sqlite3PagerSharedLock
+t sqlite3PagerSync
+t sqlite3PagerUnrefNotNull
 t sqlite3PagerWrite
 t sqlite3Parser
-t sqlite3PcacheCleanAll.isra.20
+t sqlite3ParserReset
+t sqlite3ParseUri
 t sqlite3PcacheDrop
-t sqlite3PcacheFetch
-t sqlite3PcacheMakeClean.part.19
+t sqlite3PcacheFetchFinish
+t sqlite3PcacheMakeClean
 t sqlite3PcacheMakeDirty
 t sqlite3PcacheMove
 t sqlite3PcacheRelease
+t sqlite3PcacheSetPageSize.part.28
 t sqlite3PcacheTruncate
 d sqlite3PendingByte
-t sqlite3PExpr.isra.190
+t sqlite3PExpr
 t sqlite3Pragma
 T sqlite3_prepare
 t sqlite3Prepare
@@ -3822,20 +3992,26 @@ T sqlite3_prepare_v2
 b sqlite3Prng
 T sqlite3_profile
 T sqlite3_progress_handler
-t sqlite3PutVarint
+t sqlite3PutVarint.part.14
 T sqlite3_randomness
 t sqlite3ReadSchema
 T sqlite3_realloc
 t sqlite3Realloc
+T sqlite3_realloc64
 t sqlite3RefillIndex
 T sqlite3_release_memory
-t sqlite3ReleaseTempReg.part.123
+t sqlite3ReleaseTempReg.part.196
 T sqlite3_reset
+t sqlite3ResetAllSchemasOfConnection
 T sqlite3_reset_auto_extension
-t sqlite3ResetInternalSchema
+t sqlite3ResetOneSchema
+t sqlite3ResolveExprListNames
 t sqlite3ResolveExprNames
-t sqlite3ResolveOrderGroupBy.isra.195
+t sqlite3ResolveOrderGroupBy.isra.354
+t sqlite3ResolvePartIdxLabel.part.210
+t sqlite3ResolveSelfReference
 T sqlite3_result_blob
+T sqlite3_result_blob64
 T sqlite3_result_double
 T sqlite3_result_error
 T sqlite3_result_error16
@@ -3846,36 +4022,44 @@ T sqlite3_result_int
 T sqlite3_result_int64
 T sqlite3_result_null
 t sqlite3ResultSetOfSelect
+T sqlite3_result_subtype
 T sqlite3_result_text
 T sqlite3_result_text16
 T sqlite3_result_text16be
 T sqlite3_result_text16le
+T sqlite3_result_text64
 T sqlite3_result_value
 T sqlite3_result_zeroblob
+T sqlite3_result_zeroblob64
 t sqlite3RollbackAll
 T sqlite3_rollback_hook
-t sqlite3RowSetClear
+t sqlite3RowidConstraint
 t sqlite3RowSetInsert
 t sqlite3RunParser
 t sqlite3SafetyCheckOk
 t sqlite3SafetyCheckSickOrOk
 b sqlite3SavedPrng
 t sqlite3Savepoint
-t sqlite3SchemaFree
+t sqlite3SchemaClear
 t sqlite3SchemaGet
+t sqlite3ScratchFree
+t sqlite3ScratchMalloc
 t sqlite3Select
-t sqlite3SelectDelete
+t sqlite3SelectAddColumnTypeAndCollation.isra.388
 t sqlite3SelectDup
 t sqlite3SelectNew
 t sqlite3SelectPrep
 T sqlite3_set_authorizer
 T sqlite3_set_auxdata
+t sqlite3SetHasNullFlag
 t sqlite3SetString
 b sqlite3SharedCacheList
 T sqlite3_shutdown
 T sqlite3_sleep
+r sqlite3SmallTypeSizes
 T sqlite3_snprintf
 T sqlite3_soft_heap_limit
+T sqlite3_soft_heap_limit64
 T sqlite3_sourceid
 T sqlite3_sql
 t sqlite3SrcListAppend
@@ -3884,36 +4068,54 @@ t sqlite3SrcListAssignCursors
 t sqlite3SrcListDelete
 t sqlite3SrcListDup
 t sqlite3SrcListEnlarge
-t sqlite3SrcListIndexedBy.isra.131
+t sqlite3SrcListIndexedBy.isra.208
 t sqlite3SrcListLookup
 t sqlite3StartTable
 b sqlite3Stat
 T sqlite3_status
+T sqlite3_status64
 T sqlite3_step
+T sqlite3_stmt_busy
+T sqlite3_stmt_readonly
 T sqlite3_stmt_status
-t sqlite3StrAccumAppend.part.8
+t sqlite3StrAccumAppend
+t sqlite3StrAccumAppendAll
+t sqlite3StrAccumEnlarge.part.313
 t sqlite3StrAccumFinish
+t sqlite3StrAccumReset
+r sqlite3StrBINARY
+T sqlite3_strglob
+T sqlite3_stricmp
+T sqlite3_strlike
 T sqlite3_strnicmp
-t sqlite3TableAffinityStr
+T sqlite3_system_errno
+t sqlite3SystemError
+t sqlite3TableAffinity
+T sqlite3_table_column_metadata
 t sqlite3TableLock
 B sqlite3_temp_directory
 T sqlite3_test_control
 T sqlite3_thread_cleanup
+t sqlite3ThreadCreate
+t sqlite3ThreadJoin.constprop.485
 T sqlite3_threadsafe
 T sqlite3_total_changes
 T sqlite3_trace
 T sqlite3_transfer_bindings
 t sqlite3TransferBindings
 t sqlite3TriggerColmask
-t sqlite3TriggerInsertStep
-t sqlite3TriggerList.isra.138
+t sqlite3TriggerList.isra.226
 t sqlite3TriggersExist
 t sqlite3TwoPartName
+t sqlite3UniqueConstraint
 t sqlite3Update
 T sqlite3_update_hook
 r sqlite3UpperToLower
+T sqlite3_uri_boolean
+T sqlite3_uri_int64
+T sqlite3_uri_parameter
 T sqlite3_user_data
-t sqlite3Utf16to8
+t sqlite3Utf16to8.constprop.476
 t sqlite3Utf8CharLen
 t sqlite3Utf8Read
 r sqlite3Utf8Trans1
@@ -3922,12 +4124,14 @@ T sqlite3_value_bytes
 t sqlite3ValueBytes
 T sqlite3_value_bytes16
 T sqlite3_value_double
+T sqlite3_value_dup
+T sqlite3_value_free
 t sqlite3ValueFree
-t sqlite3ValueFromExpr
 T sqlite3_value_int
 T sqlite3_value_int64
 t sqlite3ValueNew
 T sqlite3_value_numeric_type
+T sqlite3_value_subtype
 T sqlite3_value_text
 t sqlite3ValueText
 T sqlite3_value_text16
@@ -3936,55 +4140,66 @@ T sqlite3_value_text16le
 T sqlite3_value_type
 t sqlite3VdbeAddOp3
 t sqlite3VdbeAddOp4
+t sqlite3VdbeAddOp4Dup8.constprop.479
 t sqlite3VdbeAddOp4Int
-t sqlite3VdbeAddOpList
+t sqlite3VdbeAddOpList.isra.408
+t sqlite3VdbeAddParseSchemaOp
+t sqlite3VdbeAllocUnpackedRecord
 t sqlite3VdbeChangeEncoding
 t sqlite3VdbeChangeP4
-t sqlite3VdbeChangeToNoop.isra.226
+t sqlite3VdbeChangeP5.part.143
+t sqlite3VdbeChangeToNoop.isra.231
 t sqlite3VdbeCheckFk
+t sqlite3VdbeClearObject
 t sqlite3VdbeCloseStatement
 t sqlite3VdbeCreate
-t sqlite3VdbeCursorMoveto
 t sqlite3VdbeDelete
 t sqlite3VdbeDeleteAuxData
-t sqlite3VdbeDeleteUnpackedRecord
+t sqlite3VdbeDeletePriorOpcode
+t sqlite3VdbeEndCoroutine
+t sqlite3VdbeEnter.isra.145.part.146
+t sqlite3VdbeError
 t sqlite3VdbeExec
 t sqlite3VdbeFinalize
 t sqlite3VdbeFrameRestore
-t sqlite3VdbeFreeCursor.isra.223
+t sqlite3VdbeFreeCursor.isra.453
 t sqlite3VdbeHalt
 t sqlite3VdbeIntegerAffinity
 t sqlite3VdbeIntValue
-t sqlite3VdbeMakeLabel
+t sqlite3VdbeLeave.part.148
+t sqlite3VdbeLoadString
+t sqlite3VdbeMakeLabel.isra.387
 t sqlite3VdbeMakeReady
+t sqlite3VdbeMemCast
+t sqlite3VdbeMemClearAndResize
 t sqlite3VdbeMemCopy
 t sqlite3VdbeMemExpandBlob
 t sqlite3VdbeMemFinalize
 t sqlite3VdbeMemFromBtree
 t sqlite3VdbeMemGrow
-t sqlite3VdbeMemHandleBom
 t sqlite3VdbeMemIntegerify
 t sqlite3VdbeMemMakeWriteable
-t sqlite3VdbeMemMove
-t sqlite3VdbeMemNulTerminate
+t sqlite3VdbeMemNumerify
 t sqlite3VdbeMemRelease
-t sqlite3VdbeMemReleaseExternal
 t sqlite3VdbeMemSetDouble
-t sqlite3VdbeMemSetNull
 t sqlite3VdbeMemSetRowSet
 t sqlite3VdbeMemSetStr
 t sqlite3VdbeMemShallowCopy
-t sqlite3VdbeMemStoreType.isra.105
 t sqlite3VdbeMemStringify
+t sqlite3VdbeMemTranslate
+t sqlite3VdbeMultiLoad
 t sqlite3VdbeParameterIndex
 t sqlite3VdbeRealValue
 t sqlite3VdbeRecordCompare
-t sqlite3VdbeRecordUnpack
+t sqlite3VdbeRecordCompareWithSkip
+t sqlite3VdbeRecordUnpack.isra.152
 t sqlite3VdbeReset
 t sqlite3VdbeSerialGet
-t sqlite3VdbeSerialType
-t sqlite3VdbeSetColName.part.258
+t sqlite3VdbeSetColName.part.319
 t sqlite3VdbeSetNumCols
+t sqlite3VdbeSetP4KeyInfo
+t sqlite3VdbeSorterReset
+t sqlite3VdbeTransferError
 t sqlite3VdbeUsesBtree
 R sqlite3_version
 T sqlite3_vfs_find
@@ -3993,21 +4208,48 @@ T sqlite3_vfs_unregister
 t sqlite3ViewGetColumnNames
 T sqlite3_vmprintf
 t sqlite3VMPrintf
+T sqlite3_vsnprintf
+t sqlite3VtabClear
+T sqlite3_vtab_config
+t sqlite3VtabDisconnect
+t sqlite3VtabEponymousTableClear.isra.239
 t sqlite3VtabFinishParse
+t sqlite3VtabImportErrmsg.isra.278
 t sqlite3VtabMakeWritable
+T sqlite3_vtab_on_conflict
 t sqlite3VtabOverloadFunction
+t sqlite3VtabSavepoint
 t sqlite3VtabUnlock
 t sqlite3VtabUnlockList
 t sqlite3VXPrintf
-t sqlite3WalkExpr
+T sqlite3_wal_autocheckpoint
+T sqlite3_wal_checkpoint
+t sqlite3WalCheckpoint
+T sqlite3_wal_checkpoint_v2
+t sqlite3_wal_checkpoint_v2.part.455
+t sqlite3WalClose
+t sqlite3WalDefaultHook
+t sqlite3WalEndReadTransaction
+t sqlite3WalEndWriteTransaction.part.96
+t sqlite3WalFindFrame
+T sqlite3_wal_hook
 t sqlite3WalkExprList
 t sqlite3WalkSelect
 t sqlite3WhereBegin
+t sqlite3WhereClauseClear
+t sqlite3WhereCodeOneLoopStart
 t sqlite3WhereEnd
+t sqlite3WhereExplainOneScan.isra.393
+t sqlite3WhereExprAnalyze
+t sqlite3WhereExprListUsage
+t sqlite3WhereExprUsage
+t sqlite3WhereFindTerm
+t sqlite3WhereSplit
+t sqlite3WithAdd
+t sqlite3WithDelete
 t sqlite3XPrintf
 t sqliteDefaultBusyCallback
-t sqliteErrorFromPosixError
-t sqliteResetColumnNames
+t sqliteErrorFromPosixError.constprop.477
 b s_RagdollLRU
 t srand
 U sscanf@@GLIBC_2.0
@@ -4018,13 +4260,22 @@ U __stack_chk_fail@@GLIBC_2.4
 t __stack_chk_fail_local
 t stat
 t __stat
+t stat4Destructor
+t stat64
+t statGet
+r statGetFuncdef
 d static_bl_desc
 d static_d_desc
 r static_dtree
 d static_l_desc
 r static_ltree
-b staticMutexes.8507
+b staticMutexes.9987
 b staticpropmgr
+t statInit
+r statInitFuncdef
+r statMutex
+t statPush
+r statPushFuncdef
 U stderr@@GLIBC_2.0
 U stdin@@GLIBC_2.0
 d steamapicontext
@@ -4093,6 +4344,7 @@ b strider_test_height
 U strlen@@GLIBC_2.0
 U strncasecmp@@GLIBC_2.0
 U strncat@@GLIBC_2.0
+U strncmp@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
 U strpbrk@@GLIBC_2.0
 U strrchr@@GLIBC_2.0
@@ -4102,8 +4354,7 @@ U strtok@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 b studiorender
-t subjournalPage
-t subjRequiresPage.isra.32
+t subjournalPageIfRequired
 b subs.9478
 t substExpr
 t substExprList
@@ -4211,34 +4462,33 @@ b sv_waterdist
 b sv_waterfriction
 U swprintf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
-t syncJournal.part.174
+t syncJournal
 U sysconf@@GLIBC_2.0
 t Sys_Error
 t SzAlloc
 d szExpressionTypes
 t SzFree
 t T.1080
-t T.1692
-t T.1765
-t T.1786
-t T.1954
-t T.2080
-t T.2086
-t T.2113
-t T.2134
-t T.2298
-t T.2381
-t T.2409
-t T.2434
-t T.2487
-t T.2639
-t T.2775
-t T.2817
-t T.3047
-t tableOfTrigger.isra.201
+t T.1694
+t T.1767
+t T.1788
+t T.1956
+t T.2082
+t T.2088
+t T.2115
+t T.2140
+t T.2300
+t T.2387
+t T.2414
+t T.2436
+t T.2489
+t T.2641
+t T.2777
+t T.2819
+t T.3049
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
-t targetSrcList.isra.303
+t targetSrcList.isra.410
 t __tcf_0
 t __tcf_0
 t __tcf_0
@@ -4506,7 +4756,7 @@ b teamlist
 b teamoverride
 b teamplay
 b template_debug
-r temp_master_schema.21568
+t termCanDriveIndex.isra.256
 b Test_EHandle
 b test_it
 b test_massive_dmg
@@ -4528,9 +4778,7 @@ U ThreadInterlockedExchange
 U ThreadInterlockedExchangeAdd
 U ThreadInterlockedExchangePointer
 U ThreadInterlockedIncrement
-t threadLockingTest
 U ThreadSleep
-d threadsOverrideEachOthersLocks
 b thumper_show_radius
 t timeFunc
 U time@@GLIBC_2.0
@@ -4547,7 +4795,8 @@ U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
 b trace_report
 T _tr_align
-r trans.24825
+r trans.31452
+t translateColumnToCopy
 T _tr_flush_bits
 T _tr_flush_block
 t triggerStepAllocate
@@ -4559,10 +4808,12 @@ b tv_delaymapchange
 t typeofFunc
 t __udivdi3
 t __umoddi3
+t unicodeFunc
 t unixAccess
 t unixCheckReservedLock
 t unixClose
 t unixCurrentTime
+t unixCurrentTimeInt64
 t unixDelete
 t unixDeviceCharacteristics
 t unixDlClose
@@ -4570,23 +4821,40 @@ t unixDlError
 t unixDlOpen
 t unixDlSym
 t unixEnterMutex
+t unixFetch
 t unixFileControl
+t unixFileLock
 t unixFileSize
 t unixFullPathname
 t unixGetLastError
+t unixGetpagesize
+t unixGetSystemCall
+t unixGetTempname
 t unixLeaveMutex
 t unixLock
+t unixLogErrorAtLine
+t unixMapfile.part.330
+t unixNextSystemCall
 t unixOpen
 t unixRandomness
 t unixRead
 t unixSectorSize
+t unixSetSystemCall
+t unixShmBarrier
+t unixShmLock
+t unixShmMap
+t unixShmPurge
+t unixShmSystemLock.isra.23
+t unixShmUnmap
 t unixSleep
 t unixSync
 t unixTruncate
+t unixUnfetch
 t unixUnlock
 t unixWrite
 U unlink@@GLIBC_2.0
-t unlockBtreeIfUnused.isra.217.part.218
+t unlockBtreeIfUnused.isra.421.part.422
+t unlockBtreeMutex.isra.102
 b unseen_objects
 t _Unwind_Backtrace
 t _Unwind_DebugHook
@@ -4622,15 +4890,63 @@ t uw_init_context_1
 t uw_install_context_1
 t uw_update_context
 t uw_update_context_1
-t vacuumFinalize.part.268
+t vacuumFinalize.part.457
+t valueBytes
+t valueFromExpr.constprop.483
+t valueToText
 d variantFuncs
+t vdbeChangeP4Full
+t vdbeClrCopy
+t vdbeCompareMemString
 t vdbeFreeOpArray
+t vdbeIncrFree
+t vdbeIncrMergerNew
+t vdbeIncrPopulate
+t vdbeIncrPopulateThread
+t vdbeLeave.isra.147
+t vdbeMemAddTerminator
+t vdbeMemClear
+t vdbeMemClearExternAndSetNull
+t vdbeMemFromBtreeResize
+t vdbeMergeEngineFree
+t vdbeMergeEngineInit
+t vdbeMergeEngineLevel0
+t vdbeMergeEngineNew
+t vdbeMergeEngineStep
+t vdbePmaReadBlob
+t vdbePmaReaderBgIncrInit
+t vdbePmaReaderClear
+t vdbePmaReaderIncrInit
+t vdbePmaReaderIncrMergeInit
+t vdbePmaReaderNext
+t vdbePmaReaderSeek.part.164
+t vdbePmaReadVarint
+t vdbePmaWriteBlob
+t vdbePmaWriterFinish
+t vdbePmaWriteVarint
+t vdbeRecordCompareInt
+t vdbeRecordCompareString
+t vdbeReleaseAndSetInt64
 t vdbeSafetyNotNull
+t vdbeSortAllocUnpacked.isra.166.part.167
+t vdbeSorterCompare
+t vdbeSorterCompareInt
+t vdbeSorterCompareText
+t vdbeSorterExtendFile
+t vdbeSorterFlushPMA
+t vdbeSorterFlushThread
+t vdbeSorterJoinAll
+t vdbeSorterListToPMA
+t vdbeSorterMerge
+t vdbeSorterOpenTempFile
+t vdbeSorterRowkey
+t vdbeSorterSort.isra.169
 t vdbeUnbind
 b vec3_angle
 b vec3_invalid
 b vec3_origin
 d vehiclesound_parsenames
+t verifyDbFile
 t versionFunc
 b vfsList
 t vfsUnlink
@@ -4644,6 +4960,29 @@ U __vswprintf_chk@@GLIBC_2.4
 U vswprintf@@GLIBC_2.2
 t vtabCallConstructor
 U vtune
+t walBusyLock
+t walChecksumBytes
+t walCleanupHash
+t walEncodeFrame
+t walHashGet
+t walIndexAppend
+t walIndexClose
+t walIndexPage
+t walIndexReadHdr
+t walIndexTryHdr
+t walIndexWriteHdr
+t walkExpr
+t walLimitSize.isra.336
+t walLockExclusive.isra.88.part.89
+t walLockShared.isra.84.part.85
+t walMerge
+t walRestartHdr
+t walShmBarrier.isra.82.part.83
+t walTryBeginRead
+t walUnlockExclusive.isra.90.part.91
+t walUnlockShared.isra.86.part.87
+t walWriteOneFrame.isra.302
+t walWriteToLog
 U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
@@ -4653,12 +4992,28 @@ U wcstoll@@GLIBC_2.1
 U wcstombs@@GLIBC_2.0
 b weapon_showproficiency
 b weaponstay
-t whereClauseClear
 t whereClauseInsert
 t whereInfoFree
+t whereLoopAddBtree
+t whereLoopAddBtreeIndex
+t whereLoopAddOr
+t whereLoopAddVirtual
+t whereLoopAddVirtualOne
+t whereLoopCheaperProperSubset
+t whereLoopClear
+t whereLoopClearUnion
+t whereLoopFindLesser
+t whereLoopInsert.isra.261
+t whereLoopOutputAdjust.isra.262
+t whereLoopResize.part.260
+t whereOrInsert
 t whereOrName
-t whereSplit
+t wherePathSatisfiesOrderBy.isra.383
+t wherePathSolver
+t whereScanInit
+t whereScanNext
 t whereTempTriggers
+t whereUsablePartialIndex
 b Wide_Human_Hull
 b Wide_Short_Hull
 t __wrap_access
@@ -4691,9 +5046,9 @@ t __wrap_utime
 t __wrap_utimes
 t __wrap___xstat
 t __wrap___xstat64
-t write32bits
 U write@@GLIBC_2.0
 t writeJournalHdr
+r x.10964
 t __x86.get_pc_thunk.bx
 t __x86.get_pc_thunk.cx
 b xbox_autothrottle
@@ -4705,7 +5060,6 @@ b xc_crouch_debounce
 b xc_crouch_range
 b xc_uncrouch_on_jump
 b xc_use_crouch_limiter
-t xferCompatibleCollation
 t xferCompatibleIndex
 U __xmknod@@GLIBC_2.0
 U __xpg_basename@@GLIBC_2.0
@@ -4713,15 +5067,14 @@ U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
 r yy_action
 r yy_default
-t yy_destructor.isra.199
+t yy_destructor.isra.269
 r yyFallback
-t yy_find_shift_action
 r yy_lookahead
 t yy_pop_parser_stack
 r yy_reduce_ofst
 r yyRuleInfo
 r yy_shift_ofst
-t yyStackOverflow.isra.200
+t yyStackOverflow
 t Angle__Set(ILuaInterface*)
 t BlendBones(CStudioHdr const*, Quaternion*, Vector*, mstudioseqdesc_t&, int, Quaternion const*, Vector const*, float, int)
 t Bot_RunAll()
@@ -5105,7 +5458,6 @@ t datamap_t* DataMapInit<CTriggerImpact>(CTriggerImpact*)
 t datamap_t* DataMapInit<CTriggerRemove>(CTriggerRemove*)
 t datamap_t* DataMapInit<CWeaponAlyxGun>(CWeaponAlyxGun*)
 t datamap_t* DataMapInit<CWeaponBugBait>(CWeaponBugBait*)
-t datamap_t* DataMapInit<CWeaponPhysGun>(CWeaponPhysGun*)
 t datamap_t* DataMapInit<FailPosition_t>(FailPosition_t*)
 t datamap_t* DataMapInit<globalentity_t>(globalentity_t*)
 t datamap_t* DataMapInit<physfollower_t>(physfollower_t*)
@@ -5880,6 +6232,7 @@ t cIntToHexDigit(int)
 t CleanupExploit(char const*, char const*)
 t ClientPrecache()
 t CNavArea__Draw(ILuaInterface*)
+t CNavArea____eq(ILuaInterface*)
 t CNavArea__GetZ(ILuaInterface*)
 t CommandNavJump()
 t CommandNavLoad()
@@ -5911,6 +6264,7 @@ t GameStartFrame()
 t GetAllChildren(CBaseEntity*, CUtlVector<CBaseEntity*, CUtlMemory<CBaseEntity*, int> >&)
 t GetBspFilename(char const*)
 t Get_CNavLadder(int)
+t GetCurrentTime()
 t GetDebugPlayer()
 t GetEyePosition(CStudioHdr*, Vector&)
 t GetLocalPlayer()
@@ -6825,6 +7179,7 @@ t PhysObj__IsAsleep(ILuaInterface*)
 t PhysShouldCollide(IPhysicsObject*, IPhysicsObject*)
 t PhysSolidOverride(solid_t&, string_t)
 t PlaneIntersection(VPlane const&, VPlane const&, VPlane const&, Vector&)
+t Player__AccountID(ILuaInterface*)
 t Player__AddDeaths(ILuaInterface*)
 t Player__ChatPrint(ILuaInterface*)
 t Player__Crouching(ILuaInterface*)
@@ -6915,7 +7270,6 @@ t X360GammaToLinear(float)
 t X360LinearToGamma(float)
 t AddSurfacepropFile(char const*, IPhysicsSurfaceProps*, IFileSystem*)
 t AimTarget_ListCopy(CBaseEntity**, int)
-t ArrayCompareHelper(unsigned char, unsigned char*, unsigned int)
 t AvoidPushawayProps(CBaseCombatCharacter*, CUserCmd*)
 t BSpline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t CalcBoneQuaternion(int, float, Quaternion const&, RadianEuler const&, Vector const&, int, Quaternion const&, mstudioanim_t const*, Quaternion&)
@@ -7631,6 +7985,7 @@ t Vehicle__StartEngine(ILuaInterface*)
 t V_StripTrailingSlash(char*)
 t WatchPositionChanges(CBaseEntity*, CBaseEntity*)
 t Weapon__CallOnClient(ILuaInterface*)
+t Weapon__GetPrintName(ILuaInterface*)
 t WorldToLocalRotation(VMatrix const&, Vector const&, float)
 t AllocateStringHelper2(char const*, char*)
 t Angle____eq__Redirect(lua_State*)
@@ -8475,6 +8830,7 @@ t CMoveData__GetOldButtons(ILuaInterface*)
 t CMoveData__SetMoveAngles(ILuaInterface*)
 t CMoveData__SetOldButtons(ILuaInterface*)
 t CNavArea__Draw__Redirect(lua_State*)
+t CNavArea____eq__Redirect(lua_State*)
 t CNavArea__GetHidingSpots(ILuaInterface*)
 t CNavArea__GetRandomPoint(ILuaInterface*)
 t CNavArea__GetZ__Redirect(lua_State*)
@@ -8906,6 +9262,7 @@ t GetGlobalLuaLibraryFactory()
 t GetInvalidWeaponInfoHandle()
 t GlobalEntity_GetNumGlobals()
 t HapticMsg_SetConstantForce(CBasePlayer*, Vector)
+t IMaterial__GetVectorLinear(ILuaInterface*)
 t IMaterial__Width__Redirect(lua_State*)
 t InternalBitBufErrorHandler(BitBufErrorType, char const*)
 t IntersectRayWithAACylinder(Ray_t const&, Vector const&, float, float, CBaseTrace*)
@@ -9131,6 +9488,7 @@ t PhysObj__IsCollisionEnabled(ILuaInterface*)
 t PhysObj__LocalToWorldVector(ILuaInterface*)
 t PhysObj__SetDragCoefficient(ILuaInterface*)
 t PhysObj__WorldToLocalVector(ILuaInterface*)
+t Player__AccountID__Redirect(lua_State*)
 t Player__AddDeaths__Redirect(lua_State*)
 t Player__ChatPrint__Redirect(lua_State*)
 t Player__Crouching__Redirect(lua_State*)
@@ -9774,6 +10132,7 @@ t Vehicle__SetSteering__Redirect(lua_State*)
 t Vehicle__SetThrottle__Redirect(lua_State*)
 t Vehicle__StartEngine__Redirect(lua_State*)
 t Weapon__CallOnClient__Redirect(lua_State*)
+t Weapon__GetPrintName__Redirect(lua_State*)
 t CalcClosestPointOnLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
 t CEffectData__GetColor__Redirect(lua_State*)
 t CEffectData__GetFlags__Redirect(lua_State*)
@@ -10374,6 +10733,7 @@ t Entity__Weapon_SetActivity__Redirect(lua_State*)
 t Entity__WorldToLocalAngles__Redirect(lua_State*)
 t GetCommentarySaveRestoreBlockHandler()
 t GetEventQueueSaveRestoreBlockHandler()
+t IMaterial__GetVectorLinear__Redirect(lua_State*)
 t IsLineOfSightBetweenTwoEntitiesClear(CBaseEntity*, EEntityOffsetMode_t, CBaseEntity*, EEntityOffsetMode_t, CBaseEntity*, int, unsigned int, bool (*)(IHandleEntity*, int), float)
 t ITexture__GetMappingHeight__Redirect(lua_State*)
 t ModelSoundsCache_PrecacheScriptSound(char const*)
@@ -10850,13 +11210,12 @@ t _V_wcsupr(char const*, int, wchar_t*)
 t WaveTrace(char const*, char const*)
 T zcalloc
 T zcfree
-r zChars.11389
 U operator delete[](void*)@@GLIBCXX_3.4
 U operator delete(void*)@@GLIBCXX_3.4
 t zeroblobFunc
-r zerobyte.12522
+r zerobyte.14711
 b ZERO_FLOAT16
-r zeroHdr.12255
+r zeroHdr.14330
 t zeroPage
 D z_errmsg
 T zError
@@ -11298,7 +11657,6 @@ b guard variable for datamap_t* DataMapInit<CTriggerRemove>(CTriggerRemove*)::da
 b guard variable for datamap_t* DataMapInit<CWeaponAlyxGun>(CWeaponAlyxGun*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CWeaponBugBait>(CWeaponBugBait*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CWeaponBugBait>(CWeaponBugBait*)::dataDesc
-b guard variable for datamap_t* DataMapInit<CWeaponPhysGun>(CWeaponPhysGun*)::nameHolder
 b guard variable for datamap_t* DataMapInit<FailPosition_t>(FailPosition_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<globalentity_t>(globalentity_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<physfollower_t>(physfollower_t*)::nameHolder
@@ -12217,7 +12575,7 @@ b guard variable for CAIWeaponRPG::GetBulletSpread()::cone
 b guard variable for CIntroScreen::DoDraw(CMatRenderContextPtr&, char const*, int, int, float)::iTexID
 b guard variable for CNPC_Citizen::GetSquadCommandRepresentative()::hCurrent
 b guard variable for GModDataPack::GetFromDatatable(std::string const&)::strOutput
-b guard variable for GModDataPack::FindFileInDatatable(std::string const&, bool)::strReturn
+b guard variable for GModDataPack::FindFileInDatatable(std::string const&, bool, bool)::strReturn
 b guard variable for CAIWeaponSMG1::GetBulletSpread()::cone
 b guard variable for CHLMachineGun::GetBulletSpread()::cone
 b guard variable for CWeaponPistol::GetBulletSpread()::cone
@@ -12303,6 +12661,7 @@ b guard variable for bool CNavMesh::ForAllAreasOverlappingExtent<CFuncNavObstruc
 b guard variable for bool CNavMesh::ForAllAreasOverlappingExtent<CRegisterPrerequisite>(CRegisterPrerequisite&, Extent const&)::searchMarker
 b guard variable for void CNavMesh::CollectAreasOverlappingExtent<CNavArea>(Extent const&, CUtlVector<CNavArea*, CUtlMemory<CNavArea*, int> >*)::searchMarker
 b guard variable for CNavNode::GetNode(Vector const&)::lookup
+b guard variable for CPhysBeam::ComputeEndPos()::physgun_maxrange
 b guard variable for CTextStat::GetTextStatsList()::theList
 b guard variable for GarrysMod::Lua::Libraries::Timer::DoSimpleTimers()::strTimerName
 b guard variable for CUtlRBTree<CUtlString, unsigned short, bool (*)(CUtlString const&, CUtlString const&), CUtlMemory<UtlRBTreeNode_t<CUtlString, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
@@ -12382,7 +12741,7 @@ b guard variable for CNavArea::ComputeVisibilityDelta(CNavArea const*) const::de
 b guard variable for CNavArea::Draw() const::blink
 b guard variable for CNavMesh::GetNearestNavArea(Vector const&, bool, float, bool, bool, int) const::searchMarker
 b guard variable for variant_t::Entity() const::hNull
-r zKeyText.21750
+r zKeyText.27142
 b ai_disable
 b ai_network
 b aitesthull
@@ -16873,6 +17232,7 @@ b Angle_Forward__Factory
 b Angle___index__Factory
 b bullseye_strider_focus
 b CNavArea_Draw__Factory
+b CNavArea___eq__Factory
 b CNavArea_GetZ__Factory
 t ComputePushStartMatrix(matrix3x4_t&, CBaseEntity*, pushblock_t const&)
 t ComputeSeparatingPlane(matrix3x4_t const&, matrix3x4_t const&, Vector const&, Vector const&, float, cplane_t*)
@@ -17538,6 +17898,7 @@ b NPC_SetCondition__Factory
 b NPC_TaskComplete__Factory
 b PhysObj_IsAsleep__Factory
 d PHYS_SAVE_RESTORE_VERSION
+b Player_AccountID__Factory
 b Player_AddDeaths__Factory
 b Player_ChatPrint__Factory
 b Player_Crouching__Factory
@@ -18219,6 +18580,7 @@ b Vehicle_SetSteering__Factory
 b Vehicle_SetThrottle__Factory
 b Vehicle_StartEngine__Factory
 b Weapon_CallOnClient__Factory
+b Weapon_GetPrintName__Factory
 b worker__GLobal__AddCSLuaFile
 b worker__GLobal__BroadcastLua
 b worker__GLobal__ConVarExists
@@ -18956,6 +19318,7 @@ b g_CHLSelectFireMachineGun_ClassReg
 b g_CPhysicsPropMultiplayer_ClassReg
 b g_CPropVehiclePrisonerPod_ClassReg
 b g_CVortigauntEffectDispel_ClassReg
+b IMaterial_GetVectorLinear__Factory
 b ITexture_GetMappingHeight__Factory
 b LL_Global_Function_SetGlobalEntity
 b LL_Global_Function_SetGlobalString
@@ -21373,6 +21736,7 @@ t CUtlVector<Action<CLuaNextBot>*, CUtlMemory<Action<CLuaNextBot>*, int> >::~CUt
 t CUtlVector<CSheet*, CUtlMemory<CSheet*, int> >::EnsureCount(int)
 t CUtlVector<CSheet*, CUtlMemory<CSheet*, int> >::~CUtlVector()
 t CUtlVector<Vector*, CUtlMemory<Vector*, int> >::InsertBefore(int, Vector* const&)
+t CUtlVector<LuaFile*, CUtlMemory<LuaFile*, int> >::InsertBefore(int, LuaFile* const&)
 t CUtlVector<CAI_Hint*, CUtlMemory<CAI_Hint*, int> >::GrowVector(int)
 t CUtlVector<CAI_Hint*, CUtlMemory<CAI_Hint*, int> >::FindAndRemove(CAI_Hint* const&)
 t CUtlVector<CAI_Hint*, CUtlMemory<CAI_Hint*, int> >::~CUtlVector()
@@ -22759,6 +23123,7 @@ t CBaseEntity::IncrementInterpolationFrame()
 t CBaseEntity::PhysicsCheckWaterTransition()
 t CBaseEntity::PhysicsNotifyOtherOfUntouch(CBaseEntity*, CBaseEntity*)
 t CBaseEntity::SetCollisionBoundsFromModel()
+t CBaseEntity::ShouldForceTransmitsForTeam(int)
 t CBaseEntity::ComputeStepSimulationNetwork(StepSimulationData*)
 t CBaseEntity::GMOD_ShouldPlayPhysicsSounds()
 t CBaseEntity::IsSimulatingOnAlternateTicks()
@@ -23297,9 +23662,10 @@ t CBounceBomb::OnRestore()
 t CBounceBomb::OpenHooks(bool)
 t CBounceBomb::~CBounceBomb()
 t CBounceBomb::~CBounceBomb()
-t CCallResult<CHTTP, HTTPRequestCompleted_t>::GetCallbackSizeBytes()
-t CCallResult<CHTTP, HTTPRequestCompleted_t>::Run(void*)
-t CCallResult<CHTTP, HTTPRequestCompleted_t>::Run(void*, bool, unsigned long long)
+t CCallResult<CLuaHTTPRequest, HTTPRequestCompleted_t>::GetCallbackSizeBytes()
+t CCallResult<CLuaHTTPRequest, HTTPRequestCompleted_t>::Run(void*)
+t CCallResult<CLuaHTTPRequest, HTTPRequestCompleted_t>::Run(void*, bool, unsigned long long)
+t CCallResult<CLuaHTTPRequest, HTTPRequestCompleted_t>::~CCallResult()
 t CDmxElement::AddAttribute(char const*)
 t CDmxElement::GetAttribute(int)
 t CDmxElement::GetAttribute(char const*)
@@ -27376,7 +27742,7 @@ t GModDataPack::FindInDatatable(std::string const&, std::vector<LuaFindResult, s
 t GModDataPack::BuildSearchPaths()
 t GModDataPack::GetFromDatatable(std::string const&)
 t GModDataPack::SendFileToClient(int, int)
-t GModDataPack::FindFileInDatatable(std::string const&, bool)
+t GModDataPack::FindFileInDatatable(std::string const&, bool, bool)
 t GModDataPack::GetCRCFromDatatable(std::string const&)
 t GModDataPack::GetClientSearchPaths()
 t GModDataPack::Reset()
@@ -29857,6 +30223,7 @@ t CBaseAnimating::GetBoneManipulator(bool)
 t CBaseAnimating::GetFlexManipulator(bool)
 t CBaseAnimating::GetSequenceMoveYaw(int)
 t CBaseAnimating::InputBecomeRagdoll(inputdata_t&)
+t CBaseAnimating::InputSetModelScale(inputdata_t&)
 t CBaseAnimating::IsActivityFinished()
 t CBaseAnimating::SetBoneManipulator(CBaseEntity*)
 t CBaseAnimating::SetFlexManipulator(CBaseEntity*)
@@ -33458,19 +33825,18 @@ t CWeaponCubemap::Spawn()
 t CWeaponCubemap::Precache()
 t CWeaponCubemap::~CWeaponCubemap()
 t CWeaponCubemap::~CWeaponCubemap()
-t CWeaponPhysGun::CanHolster()
 t CWeaponPhysGun::DropEntity()
-t CWeaponPhysGun::GetBaseMap()
 t CWeaponPhysGun::HasAnyAmmo()
 d CWeaponPhysGun::m_acttable
 t CWeaponPhysGun::GetFireRate()
 t CWeaponPhysGun::ActivityList()
-t CWeaponPhysGun::MoveEntityTo(Vector)
 t CWeaponPhysGun::ItemPostFrame()
 t CWeaponPhysGun::PrimaryAttack()
-t CWeaponPhysGun::GetDataDescMap()
+t CWeaponPhysGun::CreatePhysBeam()
 t CWeaponPhysGun::GetServerClass()
-t CWeaponPhysGun::UpdateRotation(QAngle)
+t CWeaponPhysGun::RemovePhysBeam()
+t CWeaponPhysGun::UpdatePosition()
+t CWeaponPhysGun::UpdateRotation()
 t CWeaponPhysGun::SecondaryAttack()
 t CWeaponPhysGun::ActivityListCount()
 d CWeaponPhysGun::m_pClassSendTable
@@ -33481,7 +33847,6 @@ t CWeaponPhysGun::Reload()
 t CWeaponPhysGun::Holster(CBaseCombatWeapon*)
 t CWeaponPhysGun::Activate()
 t CWeaponPhysGun::Precache()
-d CWeaponPhysGun::m_DataMap
 t CWeaponPhysGun::OnRestore()
 t CWeaponPhysGun::CWeaponPhysGun()
 t CWeaponPhysGun::CWeaponPhysGun()
@@ -34509,6 +34874,10 @@ t CLuaEntityClass::MetaTableDerive()
 t CLuaEntityClass::CLuaEntityClass(char const*, int, void (*)(), char const*)
 t CLuaEntityClass::CLuaEntityClass(char const*, int, void (*)(), char const*)
 t CLuaEntityClass::~CLuaEntityClass()
+t CLuaHTTPRequest::OnComplete(HTTPRequestCompleted_t*, bool)
+t CLuaHTTPRequest::ReadHeaders(CLuaTable&)
+t CLuaHTTPRequest::OnFailure(char const*)
+t CLuaHTTPRequest::CLuaHTTPRequest(ILuaObject*)
 t CLuaNextBotBody::StartActivity(Activity, unsigned int)
 t CLuaNextBotBody::Update()
 t CLuaNextBotBody::~CLuaNextBotBody()
@@ -34652,7 +35021,6 @@ t CMultiplayRules::CMultiplayRules()
 t CMultiplayRules::~CMultiplayRules()
 t CMultiplayRules::~CMultiplayRules()
 t CMultiplayRules::~CMultiplayRules()
-t CNetworkVarBase<CHandle<CBaseEntity>, CWeaponPhysGun::NetworkVar_m_hGrabbedEntity>::Set(CHandle<CBaseEntity> const&)
 t bool const& CNetworkVarBase<bool, CWeapon_SLAM::NetworkVar_m_bNeedDetonatorDraw>::operator=<bool>(bool const&)
 t bool const& CNetworkVarBase<bool, CWeapon_SLAM::NetworkVar_m_bNeedDetonatorHolster>::operator=<bool>(bool const&)
 t bool const& CNetworkVarBase<bool, CPlayerLocalData::NetworkVar_m_bDucked>::operator=<bool>(bool const&)
@@ -37789,7 +38157,6 @@ t CBaseCombatWeapon::SetSubType(int)
 t CBaseCombatWeapon::WeaponIdle()
 t CBaseCombatWeapon::AbortReload()
 t CBaseCombatWeapon::AddViewKick()
-t CBaseCombatWeapon::CanOverload()
 t CBaseCombatWeapon::CheckReload()
 t CBaseCombatWeapon::DestroyItem()
 t CBaseCombatWeapon::FireBullets(FireBulletsInfo_t const&)
@@ -37816,6 +38183,7 @@ t CBaseCombatWeapon::GetLastWeapon()
 t CBaseCombatWeapon::GetSpreadBias(WeaponProficiency_t)
 t CBaseCombatWeapon::ItemBusyFrame()
 t CBaseCombatWeapon::ItemPostFrame()
+t CBaseCombatWeapon::PoseParamList(int&)
 t CBaseCombatWeapon::PrimaryAttack()
 t CBaseCombatWeapon::StopSprinting()
 t CBaseCombatWeapon::GetDataDescMap()
@@ -37887,6 +38255,7 @@ t CBaseCombatWeapon::DisplayAltFireHudHint()
 t CBaseCombatWeapon::MaintainIdealActivity()
 t CBaseCombatWeapon::MyCombatWeaponPointer()
 t CBaseCombatWeapon::Operator_ForceNPCFire(CBaseCombatCharacter*, bool)
+t CBaseCombatWeapon::PoseParameterOverride(bool)
 t CBaseCombatWeapon::ReloadOrSwitchWeapons()
 t CBaseCombatWeapon::RescindAltFireHudHint()
 t CBaseCombatWeapon::ShouldBlockPrimaryFire()
@@ -41538,6 +41907,7 @@ t CBasePlayerAnimState::SetOuterPoseParameter(int, float)
 t CBasePlayerAnimState::ShouldUpdateAnimState()
 t CBasePlayerAnimState::DebugShowAnimStateFull(int)
 t CBasePlayerAnimState::SelectWeightedSequence(Activity)
+t CBasePlayerAnimState::ShouldResetMainSequence(int, int)
 t CBasePlayerAnimState::UpdateAimSequenceLayers(float, int, bool, CSequenceTransitioner*, float)
 t CBasePlayerAnimState::BodyYawTranslateActivity(Activity)
 t CBasePlayerAnimState::CalcMovementPlaybackRate(bool*)
@@ -41728,10 +42098,10 @@ d CFuncReflectiveGlass::m_DataMap
 t CFuncReflectiveGlass::~CFuncReflectiveGlass()
 t CFuncReflectiveGlass::~CFuncReflectiveGlass()
 b CGameUI_DataDescInit::g_DataMapHolder
-t CGravControllerPoint::AddHoldAngle(QAngle)
 t CGravControllerPoint::AttachEntity(CBasePlayer*, CBaseEntity*, IPhysicsObject*, Vector const&)
 t CGravControllerPoint::DetachEntity(bool)
 t CGravControllerPoint::SetTargetPosition(Vector const&, CBasePlayer*)
+t CGravControllerPoint::SetTargetRotation(QAngle const&)
 t CGravControllerPoint::Simulate(IPhysicsMotionController*, IPhysicsObject*, float, Vector&, Vector&)
 t CGravControllerPoint::CGravControllerPoint()
 t CGravControllerPoint::CGravControllerPoint()
@@ -42856,6 +43226,7 @@ t CMultiPlayerAnimState::UpdateInterpolators()
 t CMultiPlayerAnimState::IsGestureSlotPlaying(int, Activity)
 t CMultiPlayerAnimState::ShutdownGestureSlots()
 t CMultiPlayerAnimState::ShouldUpdateAnimState()
+t CMultiPlayerAnimState::VerifyAnimLayerInSlot(int)
 t CMultiPlayerAnimState::ComputeGestureSequence(CStudioHdr*)
 t CMultiPlayerAnimState::GetGesturePlaybackRate()
 t CMultiPlayerAnimState::SelectWeightedSequence(Activity)
@@ -43266,6 +43637,7 @@ t CBaseMultiplayerPlayer::GetMultiplayerExpresser()
 t CBaseMultiplayerPlayer::StopScoringEscortPoints()
 t CBaseMultiplayerPlayer::StartScoringEscortPoints(float)
 t CBaseMultiplayerPlayer::CalculateTeamBalanceScore()
+t CBaseMultiplayerPlayer::ShouldRunRateLimitedCommand(char const*)
 t CBaseMultiplayerPlayer::ShouldRunRateLimitedCommand(CCommand const&)
 t CBaseMultiplayerPlayer::ShouldShowVoiceSubtitleToEnemy()
 t CBaseMultiplayerPlayer::Spawn()
@@ -45066,7 +45438,6 @@ t CUtlVectorUltraConservative<HidingSpot*, CUtlVectorUltraConservativeAllocator>
 t CUtlVectorUltraConservative<SpotEncounter*, CUtlVectorUltraConservativeAllocator>::RemoveAll()
 b CWeaponAlyxGun_DataDescInit::g_DataMapHolder
 b CWeaponBugBait_DataDescInit::g_DataMapHolder
-b CWeaponPhysGun_DataDescInit::g_DataMapHolder
 b DT_PropVehicleChoreoGeneric::g_SendTable
 b DT_PropVehicleChoreoGeneric::g_SendTableInit
 b FailPosition_t_DataDescInit::g_DataMapHolder
@@ -46090,10 +46461,6 @@ t CFish::CFish()
 t CFish::~CFish()
 t CFish::~CFish()
 t CFish::~CFish()
-t CHTTP::OnComplete(HTTPRequestCompleted_t*, bool)
-t CHTTP::Init(ILuaObject*)
-t CHTTP::AddHeader(unsigned int, CLuaTable*, char const*)
-t CHTTP::OnFailure(char const*)
 t CItem::ComeToRest()
 t CItem::GetBaseMap()
 t CItem::ObjectCaps()
@@ -49384,13 +49751,14 @@ t entitem_t::operator delete(void*)
 t entitem_t::operator new(unsigned int)
 t entitem_t::operator new(unsigned int, int, char const*, int)
 t GarrysMod::AutoRefresh::FindRootFile(std::string const&)
+t GarrysMod::AutoRefresh::FindRootFile_(std::string const&, CUtlVector<LuaFile*, CUtlMemory<LuaFile*, int> >&)
 t GarrysMod::AutoRefresh::EntityFilename(std::string const&)
 b GarrysMod::AutoRefresh::g_ChangeMonitor
 t GarrysMod::AutoRefresh::HandleChange_Lua(std::string const&, std::string const&, std::string const&)
 t GarrysMod::AutoRefresh::HandleChange_VMT(std::string const&, std::string const&, std::string const&)
 t GarrysMod::AutoRefresh::HandleChange_VTF(std::string const&, std::string const&, std::string const&)
 t GarrysMod::AutoRefresh::ConvertLuaFilename(std::string const&)
-t GarrysMod::AutoRefresh::HandleLuaFileChange(std::string const&, std::string const&, std::string const&)
+t GarrysMod::AutoRefresh::HandleLuaFileChange(std::string const&)
 t GarrysMod::AutoRefresh::Init()
 t GarrysMod::AutoRefresh::Cycle()
 b GarrysMod::StringTable::g_StringTable_GameInfo
@@ -49776,6 +50144,7 @@ t CBaseEntity::GetModelName() const
 t CBaseEntity::GetNextThink(int) const
 t CBaseEntity::GetWaterType() const
 t CBaseEntity::IsBaseObject() const
+t CBaseEntity::IsCombatItem() const
 t CBaseEntity::GetDamageType() const
 t CBaseEntity::GetModelIndex() const
 t CBaseEntity::GetRefEHandle() const
@@ -49787,6 +50156,8 @@ t CBaseEntity::ShouldCollide(int, int) const
 t CBaseEntity::ContextExpired(int) const
 t CBaseEntity::GetAbsVelocity() const
 t CBaseEntity::GetContextName(int) const
+t CBaseEntity::HealthFraction() const
+t CBaseEntity::ShouldBlockNav() const
 t CBaseEntity::GetContextCount() const
 t CBaseEntity::GetContextValue(int) const
 t CBaseEntity::GetNextThinkTick(int) const
@@ -50295,6 +50666,7 @@ t CBaseCombatWeapon::GetRumbleEffect() const
 t CBaseCombatWeapon::GetSkinOverride() const
 t CBaseCombatWeapon::GetSpriteActive() const
 t CBaseCombatWeapon::GetSpriteAutoaim() const
+t CBaseCombatWeapon::ForceWeaponSwitch() const
 t CBaseCombatWeapon::GetSpriteInactive() const
 t CBaseCombatWeapon::UsesClipsForAmmo1() const
 t CBaseCombatWeapon::UsesClipsForAmmo2() const
@@ -50306,6 +50678,7 @@ t CBaseCombatWeapon::AllowsAutoSwitchFrom() const
 t CBaseCombatWeapon::GetSecondaryAmmoType() const
 t CBaseCombatWeapon::GetSpriteZoomedAutoaim() const
 t CBaseCombatWeapon::GetSpriteZoomedCrosshair() const
+t CBaseCombatWeapon::CanPerformSecondaryAttack() const
 t CBaseCombatWeapon::GetName() const
 t CBaseCombatWeapon::GetOwner() const
 t CBaseCombatWeapon::IsWeapon() const
@@ -51002,8 +51375,7 @@ b zombie_decaymax
 b zombie_decaymin
 b zombie_moanfreq
 b zombie_stepfreq
-r zOrd.8805
-r zSpaces.8738
+r zOrd.10316
 t void std::__adjust_heap<__gnu_cxx::__normal_iterator<fileinfo_t*, std::vector<fileinfo_t, std::allocator<fileinfo_t> > >, int, fileinfo_t, bool (*)(fileinfo_t const&, fileinfo_t const&)>(__gnu_cxx::__normal_iterator<fileinfo_t*, std::vector<fileinfo_t, std::allocator<fileinfo_t> > >, int, int, fileinfo_t, bool (*)(fileinfo_t const&, fileinfo_t const&))
 t void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, int, std::string>(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, int, int, std::string)
 t void std::__adjust_heap<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, int, std::string>(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, int, int, std::string)
@@ -51788,8 +52160,8 @@ b std::__ioinit
 t std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
 t std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
 t std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
-r zText.21298
-r zText.24677
+r zText.26515
+r zText.31310
 t non-virtual thunk to NextBotPlayer<CGMOD_Player>::OnNavAreaChanged(CNavArea*, CNavArea*)
 t non-virtual thunk to NextBotPlayer<CGMOD_Player>::Update()
 t non-virtual thunk to NextBotPlayer<CGMOD_Player>::~NextBotPlayer()
@@ -52523,7 +52895,7 @@ r typeinfo for CBasePlayer
 r typeinfo for CBaseToggle
 r typeinfo for CBloodSplat
 r typeinfo for CBounceBomb
-r typeinfo for CCallResult<CHTTP, HTTPRequestCompleted_t>
+r typeinfo for CCallResult<CLuaHTTPRequest, HTTPRequestCompleted_t>
 r typeinfo for CEnvGunfire
 r typeinfo for CEnvHudHint
 r typeinfo for CEnvShooter
@@ -54596,7 +54968,7 @@ r typeinfo name for CBasePlayer
 r typeinfo name for CBaseToggle
 r typeinfo name for CBloodSplat
 r typeinfo name for CBounceBomb
-r typeinfo name for CCallResult<CHTTP, HTTPRequestCompleted_t>
+r typeinfo name for CCallResult<CLuaHTTPRequest, HTTPRequestCompleted_t>
 r typeinfo name for CEnvGunfire
 r typeinfo name for CEnvHudHint
 r typeinfo name for CEnvShooter
@@ -56675,7 +57047,7 @@ r vtable for CBasePlayer
 r vtable for CBaseToggle
 r vtable for CBloodSplat
 r vtable for CBounceBomb
-r vtable for CCallResult<CHTTP, HTTPRequestCompleted_t>
+r vtable for CCallResult<CLuaHTTPRequest, HTTPRequestCompleted_t>
 r vtable for CEnvGunfire
 r vtable for CEnvHudHint
 r vtable for CEnvShooter
@@ -59256,8 +59628,6 @@ b datamap_t* DataMapInit<CWeaponAlyxGun>(CWeaponAlyxGun*)::nameHolder
 b datamap_t* DataMapInit<CWeaponAlyxGun>(CWeaponAlyxGun*)::dataDesc
 b datamap_t* DataMapInit<CWeaponBugBait>(CWeaponBugBait*)::nameHolder
 d datamap_t* DataMapInit<CWeaponBugBait>(CWeaponBugBait*)::dataDesc
-b datamap_t* DataMapInit<CWeaponPhysGun>(CWeaponPhysGun*)::nameHolder
-b datamap_t* DataMapInit<CWeaponPhysGun>(CWeaponPhysGun*)::dataDesc
 b datamap_t* DataMapInit<FailPosition_t>(FailPosition_t*)::nameHolder
 d datamap_t* DataMapInit<FailPosition_t>(FailPosition_t*)::dataDesc
 b datamap_t* DataMapInit<globalentity_t>(globalentity_t*)::nameHolder
@@ -60678,7 +61048,8 @@ b real__net__ReadString(ILuaInterface*)::strString
 d PrecacheInstancedScene(char const*)::nMakingReslists
 b EntityFactoryDictionary()::s_EntityFactory
 r GetAttachTypeFromString(char const*)::pAttachmentNames
-b GetSequenceLinearMotion(CStudioHdr*, int, float const*, Vector*)::msgCount
+b GetSequenceLinearMotion(CStudioHdr*, int, float const*, Vector*)::__executeCount
+b GetSequenceLinearMotion(CStudioHdr*, int, float const*, Vector*)::__executeCount
 b GetPhysObjSaveRestoreOps(PhysInterfaceId_t)::inited
 b Interpolator_NameForCurveType(int, bool)::outname
 r SetPhysicsObjectFromPhysCollide(CBaseEntity*, CPhysCollide*)::strName
@@ -60782,7 +61153,7 @@ r CNPC_Citizen::SelectModel()::CitizenTypeMappings
 b CNPC_Citizen::GetSquadCommandRepresentative()::hCurrent
 b CNPC_Citizen::GetSquadCommandRepresentative()::lastTime
 b GModDataPack::GetFromDatatable(std::string const&)::strOutput
-b GModDataPack::FindFileInDatatable(std::string const&, bool)::strReturn
+b GModDataPack::FindFileInDatatable(std::string const&, bool, bool)::strReturn
 d CAI_Navigator::SimplifyPathQuick()::quickScanParams
 d CAI_Navigator::SimplifyPathForward(float)::fullScanParams
 r CAI_Navigator::Move(float)::failures
@@ -60850,6 +61221,7 @@ b CBoneManipulate::GetBoneAngle(unsigned char)::a
 b CBoneManipulate::GetBoneScale(unsigned char)::v
 b CBoneManipulate::GetBonePosition(unsigned char)::v
 t CGameStringPool::Dump()::_Local::F(char const* const*, char const* const*)
+r CLuaHTTPRequest::ReadHeaders(CLuaTable&)::C.491
 b CMultiplayRules::DetermineMapCycleFilename(char*, int, bool)::szLastResult
 t CNPC_BaseZombie::FindNearestPhysicsObject(int)::CZombieSwatEntitiesEnum::EnumElement(IHandleEntity*)
 d CNPC_Vortigaunt::SetScriptedScheduleIgnoreConditions(Interruptability_t)::g_VortConditions
@@ -60871,7 +61243,7 @@ b CAIWeaponCrossbow::GetBulletSpread()::cone
 b CBaseCombatWeapon::GetBulletSpread()::cone
 d CBaseCombatWeapon::GetProficiencyValues()::defaultWeaponProficiencyTable
 b CLuaNetworkedVars::Cycle()::fNextTime
-r CNPC_AntlionGuard::SummonAntlions()::C.2102
+r CNPC_AntlionGuard::SummonAntlions()::C.2104
 r CPropJeepEpisodic::CreateHazardLights()::s_szAttach
 r CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
 b CAI_FollowBehavior::GetFollowPoint()::invalid
@@ -60938,7 +61310,7 @@ b ISaveRestoreOps* CUtlVectorDataopsInstantiator<13>::GetDataOps<CUtlVector<CHan
 b ISaveRestoreOps* CUtlVectorDataopsInstantiator<13>::GetDataOps<CUtlVector<CHandle<CBaseFlex>, CUtlMemory<CHandle<CBaseFlex>, int> > >(CUtlVector<CHandle<CBaseFlex>, CUtlMemory<CHandle<CBaseFlex>, int> >*)::ops
 b ISaveRestoreOps* CUtlVectorDataopsInstantiator<16>::GetDataOps<CUtlVector<float, CUtlMemory<float, int> > >(CUtlVector<float, CUtlMemory<float, int> >*)::ops
 b ISaveRestoreOps* CUtlVectorDataopsInstantiator<5>::GetDataOps<CUtlVector<int, CUtlMemory<int, int> > >(CUtlVector<int, CUtlMemory<int, int> >*)::ops
-r CAI_MappedActivityBehavior_Temporary::UpdateTranslateActivityMap()::C.1793
+r CAI_MappedActivityBehavior_Temporary::UpdateTranslateActivityMap()::C.1795
 d GMod::Util::Base64Encode(unsigned char*, unsigned int, unsigned char*, unsigned int)::pLookupTable
 b CSave::Log(char const*, _fieldtypes, void*, int)::szBuf
 b CSave::Log(char const*, _fieldtypes, void*, int)::szTempBuf
@@ -60992,6 +61364,7 @@ d CRestore::ReadFields(char const*, void*, datamap_t*, typedescription_t*, int):
 r CAI_Motor::MoveNormalExecute(AILocalMoveGoal_t const&)::moveResults
 r CNPC_Alyx::ReadinessLevelChanged(int)::readinessTransitions
 d ConVarRef::Init(char const*, bool)::bFirst
+b CPhysBeam::ComputeEndPos()::physgun_maxrange
 b CTextStat::GetTextStatsList()::theList
 b GarrysMod::Lua::Libraries::Timer::DoSimpleTimers()::strTimerName
 b KeyValues::SaveKeyToFile(KeyValues*, IBaseFileSystem*, void*, CUtlBuffer*, int, bool, bool)::buf
