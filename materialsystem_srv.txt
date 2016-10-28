@@ -2171,6 +2171,7 @@ t CMaterialSystem::EndUpdateLightmaps()
 t CMaterialSystem::GetCurrentMaterial()
 t CMaterialSystem::GetDXLevelDefaults(unsigned int&, unsigned int&)
 t CMaterialSystem::GetRenderCallQueue()
+t CMaterialSystem::GMOD_TextureExists(char const*)
 t CMaterialSystem::IsRenderThreadSafe()
 t CMaterialSystem::OnSetPrimitiveType(IMesh*, MaterialPrimitiveType_t)
 t CMaterialSystem::ReacquireResources()
@@ -2560,6 +2561,7 @@ t CTextureManager::ReleaseTextures()
 t CTextureManager::FindOrLoadTexture(char const*, char const*, int)
 t CTextureManager::IdentityLightWarp()
 t CTextureManager::ReloadFilesInList(IFileList*)
+t CTextureManager::GMOD_TextureExists(char const*)
 t CTextureManager::RemoveTextureAlias(char const*)
 t CTextureManager::SetExcludedTextures(char const*)
 t CTextureManager::GenerateErrorTexture(ITexture*, IVTFTexture*)
@@ -3153,6 +3155,7 @@ t CDummyMaterialSystem::DestroyIndexBuffer(IIndexBuffer*)
 t CDummyMaterialSystem::EndUpdateLightmaps()
 t CDummyMaterialSystem::GetCurrentMaterial()
 t CDummyMaterialSystem::GetDXLevelDefaults(unsigned int&, unsigned int&)
+t CDummyMaterialSystem::GMOD_TextureExists(char const*)
 t CDummyMaterialSystem::IsRenderThreadSafe()
 t CDummyMaterialSystem::PopCustomClipPlane()
 t CDummyMaterialSystem::ReacquireResources()
@@ -4881,6 +4884,7 @@ t CTexture::IsError() const
 t CTexture::GetFlags() const
 t CTexture::IsCubeMap() const
 t CUtlDict<int, unsigned short>::Find(char const*) const
+t CUtlDict<ITextureInternal*, unsigned short>::Find(char const*) const
 t CUtlDict<IShader*, unsigned short>::Find(char const*) const
 t CUtlDict<char const*, unsigned short>::Find(char const*) const
 t CMaterial::GetChangeID() const
