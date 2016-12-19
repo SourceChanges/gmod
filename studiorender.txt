@@ -22,6 +22,7 @@ U __cxa_guard_acquire@@CXXABI_1.3
 U __cxa_guard_release@@CXXABI_1.3
 U __cxa_pure_virtual@@CXXABI_1.3
 U DevMsg
+U DevWarning
 U dlclose@@GLIBC_2.0
 U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4

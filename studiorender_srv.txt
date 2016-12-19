@@ -34,6 +34,7 @@ t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
 U DevMsg
+U DevWarning
 U dlclose@@GLIBC_2.0
 U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4

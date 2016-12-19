@@ -774,7 +774,7 @@ r CSWTCH.2213
 r CSWTCH.2308
 r CSWTCH.2391
 r CSWTCH.2393
-r CSWTCH.2467
+r CSWTCH.2466
 r CSWTCH.2500
 r CSWTCH.2502
 r CSWTCH.2507
@@ -4476,9 +4476,9 @@ t T.1956
 t T.2082
 t T.2088
 t T.2115
-t T.2140
+t T.2142
 t T.2300
-t T.2387
+t T.2404
 t T.2414
 t T.2436
 t T.2489
@@ -7862,6 +7862,7 @@ t IsBoxIntersectingRay(float __vector const&, float __vector const&, Ray_t const
 t IsBoxIntersectingRay(float __vector const&, float __vector const&, float __vector const&, float __vector const&, float __vector const&, float __vector const&)
 t IsOBBIntersectingOBB(Vector const&, QAngle const&, Vector const&, Vector const&, Vector const&, QAngle const&, Vector const&, Vector const&, float)
 t IsRayIntersectingOBB(Ray_t const&, Vector const&, QAngle const&, Vector const&, Vector const&)
+t ITexture____tostring(ILuaInterface*)
 t LookupWeaponInfoSlot(char const*)
 t LzmaDecodeProperties(_CLzmaProperties*, unsigned char const*, int)
 t MapEntity_ParseToken(char const*, char*)
@@ -8637,6 +8638,7 @@ t Entity__ForcePlayerDrop(ILuaInterface*)
 t Entity__GetBaseVelocity(ILuaInterface*)
 t Entity__GetBonePosition(ILuaInterface*)
 t Entity__GetCreationTime(ILuaInterface*)
+t Entity__GetFlexIDByName(ILuaInterface*)
 t Entity__GetGroundEntity(ILuaInterface*)
 t Entity__GetHitBoxBounds(ILuaInterface*)
 t Entity__GetMaterialType(ILuaInterface*)
@@ -8752,7 +8754,6 @@ t real__game__MapLoadType(ILuaInterface*)
 t real__GLobal__DebugInfo(ILuaInterface*)
 t real__GLobal__EmitSound(ILuaInterface*)
 t real__GLobal__FrameTime(ILuaInterface*)
-t real__GLobal__GetConVar(ILuaInterface*)
 t real__GLobal__LerpAngle(ILuaInterface*)
 t real__GLobal__RunString(ILuaInterface*)
 t real__GLobal__ServerLog(ILuaInterface*)
@@ -9503,6 +9504,7 @@ t Player__IsVehicle__Redirect(lua_State*)
 t Player__ResetHull__Redirect(lua_State*)
 t Player__SetDeaths__Redirect(lua_State*)
 t Player__SetViewOffsetDucked(ILuaInterface*)
+t Player__SimulateGravGunDrop(ILuaInterface*)
 t Player__SteamID64__Redirect(lua_State*)
 t Player__StripAmmo__Redirect(lua_State*)
 t Player__ViewPunch__Redirect(lua_State*)
@@ -9909,6 +9911,7 @@ t Player__SetMaxSpeed__Redirect(lua_State*)
 t Player__SetNoTarget__Redirect(lua_State*)
 t Player__SetRunSpeed__Redirect(lua_State*)
 t Player__SetStepSize__Redirect(lua_State*)
+t Player__SimulateGravGunPickup(ILuaInterface*)
 t Player__StopWalking__Redirect(lua_State*)
 t Player__StopZooming__Redirect(lua_State*)
 t Player__StripWeapon__Redirect(lua_State*)
@@ -10046,6 +10049,7 @@ t IRestore__ReadString__Redirect(lua_State*)
 t IRestore__ReadVector__Redirect(lua_State*)
 t IRestore__StartBlock__Redirect(lua_State*)
 t IsBoxIntersectingSphereExtents(Vector const&, Vector const&, Vector const&, float)
+t ITexture____tostring__Redirect(lua_State*)
 t LookerCouldSeeTargetInDarkness(CBaseEntity*, CBaseEntity*)
 t Motion_GetPositionInterpolator(int)
 t NextBot__GetActivity__Redirect(lua_State*)
@@ -10259,6 +10263,7 @@ t Player__CreateRagdoll__Redirect(lua_State*)
 t Player__DoAttackEvent__Redirect(lua_State*)
 t Player__DoReloadEvent__Redirect(lua_State*)
 t Player__DrawViewModel__Redirect(lua_State*)
+t Player__GetPreferredCarryAngles(ILuaInterface*)
 t Player__GetPunchAngle__Redirect(lua_State*)
 t Player__GetViewEntity__Redirect(lua_State*)
 t Player__GetViewOffset__Redirect(lua_State*)
@@ -10414,6 +10419,7 @@ t Player__SetWeaponColor__Redirect(lua_State*)
 t Player__SpectateEntity__Redirect(lua_State*)
 t Player__StartSprinting__Redirect(lua_State*)
 t Player__ViewPunchReset__Redirect(lua_State*)
+t real__GLobal__GetConVar_Internal(ILuaInterface*)
 t real__GLobal__SuppressHostEvents(ILuaInterface*)
 t real__GLobal__UnPredictedCurTime(ILuaInterface*)
 t real__navmesh__GetNearestNavArea(ILuaInterface*)
@@ -10455,6 +10461,7 @@ t Entity__GetBaseVelocity__Redirect(lua_State*)
 t Entity__GetBonePosition__Redirect(lua_State*)
 t Entity__GetConstrainedPhysObjects(ILuaInterface*)
 t Entity__GetCreationTime__Redirect(lua_State*)
+t Entity__GetFlexIDByName__Redirect(lua_State*)
 t Entity__GetGroundEntity__Redirect(lua_State*)
 t Entity__GetHitBoxBounds__Redirect(lua_State*)
 t Entity__GetManipulateBonePosition(ILuaInterface*)
@@ -10811,6 +10818,7 @@ t PhysObj__WorldToLocalVector__Redirect(lua_State*)
 t Player__GetViewOffsetDucked__Redirect(lua_State*)
 t PlayerPickupControllerIsHoldingEntity(CBaseEntity*, CBaseEntity*)
 t Player__SetViewOffsetDucked__Redirect(lua_State*)
+t Player__SimulateGravGunDrop__Redirect(lua_State*)
 t Q_StripPrecedingAndTrailingWhitespace(char*)
 t real__GLobal__BuildNetworkedVarsTable(ILuaInterface*)
 t real__GLobal__SetPhysConstraintSystem(ILuaInterface*)
@@ -10902,6 +10910,7 @@ t Motion_GetNumberOfRotationInterpolators()
 t PathFollower__MoveCursorToEnd__Redirect(lua_State*)
 t PhysObj__CalculateForceOffset__Redirect(lua_State*)
 t PhysObj__ComputeShadowControl__Redirect(lua_State*)
+t Player__SimulateGravGunPickup__Redirect(lua_State*)
 t Vehicle__GetWheelContactPoint__Redirect(lua_State*)
 t Vehicle__IsVehicleBodyInWater__Redirect(lua_State*)
 T md5(unsigned char*, int, unsigned char*)
@@ -10969,6 +10978,7 @@ t PathFollower__MoveCursorToClosestPosition(ILuaInterface*)
 t PathFollower__MoveCursorToStart__Redirect(lua_State*)
 t PhysObj__RecheckCollisionFilter__Redirect(lua_State*)
 t Player__AnimRestartMainSequence__Redirect(lua_State*)
+t Player__GetPreferredCarryAngles__Redirect(lua_State*)
 t Player__TranslateWeaponActivity__Redirect(lua_State*)
 t real__util__KeyValuesToTablePreserveOrder(ILuaInterface*)
 t SendProxy_CropFlagsToPlayerFlagBitsLength(SendProp const*, void const*, void const*, DVariant*, int, int)
@@ -16750,6 +16760,7 @@ b npc_turret_ceiling
 b particle_test_stop
 d pFollowerBoneNames
 d pFollowerBoneNames
+d pFollowerBoneNames
 b phys_bone_follower
 b physics_npc_solver
 b phys_ragdollmagnet
@@ -17714,7 +17725,6 @@ t redir__game__MapLoadType(lua_State*)
 t redir__GLobal__DebugInfo(lua_State*)
 t redir__GLobal__EmitSound(lua_State*)
 t redir__GLobal__FrameTime(lua_State*)
-t redir__GLobal__GetConVar(lua_State*)
 t redir__GLobal__LerpAngle(lua_State*)
 t redir__GLobal__RunString(lua_State*)
 t redir__GLobal__ServerLog(lua_State*)
@@ -17975,7 +17985,6 @@ b Weapon_IsVehicle__Factory
 b worker__GLobal__DebugInfo
 b worker__GLobal__EmitSound
 b worker__GLobal__FrameTime
-b worker__GLobal__GetConVar
 b worker__GLobal__LerpAngle
 b worker__GLobal__RunString
 b worker__GLobal__ServerLog
@@ -18503,6 +18512,8 @@ b IRestore_ReadEntity__Factory
 b IRestore_ReadString__Factory
 b IRestore_ReadVector__Factory
 b IRestore_StartBlock__Factory
+b ITexture___tostring__Factory
+b LL_Global_Function_GetConVar
 b nav_remove_from_selected_set
 b NextBot_GetActivity__Factory
 b NPC_AddRelationship__Factory
@@ -18956,6 +18967,7 @@ b Entity_ForcePlayerDrop__Factory
 b Entity_GetBaseVelocity__Factory
 b Entity_GetBonePosition__Factory
 b Entity_GetCreationTime__Factory
+b Entity_GetFlexIDByName__Factory
 b Entity_GetGroundEntity__Factory
 b Entity_GetHitBoxBounds__Factory
 b Entity_GetMaterialType__Factory
@@ -19246,6 +19258,7 @@ b precache_weapon_ai_weapon_crowbar
 b precache_weapon_ai_weapon_shotgun
 b precache_weapon_weapon_physcannon
 b __proxy_SendProxy_TestProxyToggle
+t redir__GLobal__GetConVar_Internal(lua_State*)
 t redir__GLobal__SuppressHostEvents(lua_State*)
 t redir__GLobal__UnPredictedCurTime(lua_State*)
 t redir__navmesh__GetNearestNavArea(lua_State*)
@@ -19345,6 +19358,7 @@ b Weapon_GetNextPrimaryFire__Factory
 b Weapon_GetPrimaryAmmoType__Factory
 b Weapon_GetWeaponViewModel__Factory
 b Weapon_SetNextPrimaryFire__Factory
+b worker__GLobal__GetConVar_Internal
 b worker__GLobal__SuppressHostEvents
 b worker__GLobal__UnPredictedCurTime
 b CEffectData_GetSurfaceProp__Factory
@@ -19392,6 +19406,7 @@ b PhysObj_SetDragCoefficient__Factory
 b PhysObj_WorldToLocalVector__Factory
 b Player_GetViewOffsetDucked__Factory
 b Player_SetViewOffsetDucked__Factory
+b Player_SimulateGravGunDrop__Factory
 b precache_weapon_ai_weapon_stunstick
 b __proxy_SendProxy_SendPredictableId
 b __proxy_SendProxy_SendPredictableId
@@ -19491,6 +19506,7 @@ b nav_add_to_selected_set_by_id_command
 b PathFollower_MoveCursorToEnd__Factory
 b PhysObj_CalculateForceOffset__Factory
 b PhysObj_ComputeShadowControl__Factory
+b Player_SimulateGravGunPickup__Factory
 b precache_weapon_weapon_citizenpackage
 b __proxy_SendProxy_ClientSideAnimation
 t redir__GLobal__PrecacheParticleSystem(lua_State*)
@@ -19564,6 +19580,7 @@ b PathFollower_GetPositionOnPath__Factory
 b PathFollower_MoveCursorToStart__Factory
 b PhysObj_RecheckCollisionFilter__Factory
 b Player_AnimRestartMainSequence__Factory
+b Player_GetPreferredCarryAngles__Factory
 b Player_TranslateWeaponActivity__Factory
 b __proxy_SendProxy_SendNonLocalDataTable
 b Vehicle_GetVehicleViewPosition__Factory
@@ -40038,21 +40055,29 @@ t CGrenadeHelicopter::BecomeActive()
 t CGrenadeHelicopter::ExplodeThink()
 t CGrenadeHelicopter::OnTakeDamage(CTakeDamageInfo const&)
 t CGrenadeHelicopter::OnEntityEvent(EntityEvent_t, void*)
+t CGrenadeHelicopter::OnPhysGunDrop(CBasePlayer*, PhysGunDrop_t)
+t CGrenadeHelicopter::SendMissEvent()
 t CGrenadeHelicopter::GetDataDescMap()
 t CGrenadeHelicopter::GetShakeRadius()
+t CGrenadeHelicopter::InputExplodeIn(inputdata_t&)
 t CGrenadeHelicopter::RampSoundThink()
 t CGrenadeHelicopter::UpdateOnRemove()
 t CGrenadeHelicopter::GetBombLifetime()
+t CGrenadeHelicopter::OnPhysGunPickup(CBasePlayer*, PhysGunPickup_t)
 t CGrenadeHelicopter::PhysicsSimulate()
+t CGrenadeHelicopter::IsThrownByPlayer()
 t CGrenadeHelicopter::ExplodeConcussion(CBaseEntity*)
 t CGrenadeHelicopter::GetShakeAmplitude()
 t CGrenadeHelicopter::VPhysicsCollision(int, gamevcollisionevent_t*)
 t CGrenadeHelicopter::StopWarningBlinker()
 t CGrenadeHelicopter::WarningBlinkerThink()
 t CGrenadeHelicopter::PreferredCarryAngles()
+t CGrenadeHelicopter::PhysGunLaunchVelocity(Vector const&, float)
 t CGrenadeHelicopter::ResolveFlyCollisionCustom(CGameTrace&, Vector&)
+t CGrenadeHelicopter::ShouldPuntUseLaunchForces(PhysGunForce_t)
 t CGrenadeHelicopter::HasPreferredCarryAnglesForPlayer(CBasePlayer*)
 t CGrenadeHelicopter::Spawn()
+t CGrenadeHelicopter::Classify()
 t CGrenadeHelicopter::Precache()
 d CGrenadeHelicopter::m_DataMap
 t CGrenadeHelicopter::~CGrenadeHelicopter()
@@ -43270,6 +43295,7 @@ t CNPC_AttackHelicopter::InputDropBomb(inputdata_t&)
 t CNPC_AttackHelicopter::LoadSchedules()
 t CNPC_AttackHelicopter::ShootAtPlayer(Vector const&, Vector const&)
 t CNPC_AttackHelicopter::SquadSlotName(int)
+t CNPC_AttackHelicopter::CreateVPhysics()
 t CNPC_AttackHelicopter::DoImpactEffect(CGameTrace&, int)
 t CNPC_AttackHelicopter::GetDataDescMap()
 t CNPC_AttackHelicopter::IsBombDropFair(Vector const&, Vector const&)
@@ -43295,6 +43321,7 @@ t CNPC_AttackHelicopter::PrescheduleThink()
 t CNPC_AttackHelicopter::SpotlightStartup()
 t CNPC_AttackHelicopter::CreateChopperHusk()
 t CNPC_AttackHelicopter::GetMaxSpeedFiring()
+t CNPC_AttackHelicopter::InitBoneFollowers()
 t CNPC_AttackHelicopter::InputSelfDestruct(inputdata_t&)
 t CNPC_AttackHelicopter::SpotlightShutdown()
 t CNPC_AttackHelicopter::StopLoopingSounds()
@@ -52502,7 +52529,11 @@ t non-virtual thunk to CPropJeepEpisodic::OnFailedPhysGunPickup(Vector)
 t non-virtual thunk to CPropJeepEpisodic::PhysGunLaunchVelocity(Vector const&, float)
 t non-virtual thunk to CPropJeepEpisodic::ShouldPuntUseLaunchForces(PhysGunForce_t)
 t non-virtual thunk to CPropJeepEpisodic::PhysGunLaunchAngularImpulse()
+t non-virtual thunk to CGrenadeHelicopter::OnPhysGunDrop(CBasePlayer*, PhysGunDrop_t)
+t non-virtual thunk to CGrenadeHelicopter::OnPhysGunPickup(CBasePlayer*, PhysGunPickup_t)
 t non-virtual thunk to CGrenadeHelicopter::PreferredCarryAngles()
+t non-virtual thunk to CGrenadeHelicopter::PhysGunLaunchVelocity(Vector const&, float)
+t non-virtual thunk to CGrenadeHelicopter::ShouldPuntUseLaunchForces(PhysGunForce_t)
 t non-virtual thunk to CGrenadeHelicopter::HasPreferredCarryAnglesForPlayer(CBasePlayer*)
 t non-virtual thunk to CPhysicsPropMultiplayer::GetPhysicsMode()
 t non-virtual thunk to CPhysicsPropMultiplayer::SetPhysicsMode(int)
