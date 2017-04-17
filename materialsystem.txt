@@ -122,6 +122,7 @@ U ThreadGetCurrentId
 U ThreadInMainThread
 U ThreadInterlockedAssignIf
 U ThreadInterlockedAssignIf64
+U ThreadInterlockedCompareExchangePointer
 U ThreadInterlockedDecrement
 U ThreadInterlockedExchange
 U ThreadInterlockedIncrement
@@ -167,7 +168,6 @@ U operator new[](unsigned int)@@GLIBCXX_3.4
 U CThreadLocalBase::Get() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 U operator new(unsigned int)@@GLIBCXX_3.4
-U std::terminate()@@GLIBCXX_3.4
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

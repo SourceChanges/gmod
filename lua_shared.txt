@@ -11,7 +11,6 @@ T CreateInterface
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
 U __ctype_toupper_loc@@GLIBC_2.3
-B cvar
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
 U __cxa_end_catch@@CXXABI_1.3
@@ -27,7 +26,6 @@ U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
-U __dynamic_cast@@CXXABI_1.3
 D _edata
 B _end
 U __errno_location@@GLIBC_2.0
@@ -68,7 +66,6 @@ U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 U _IO_getc@@GLIBC_2.0
-U isspace@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
 w _Jv_RegisterClasses
 U lchown@@GLIBC_2.0
@@ -106,7 +103,7 @@ T lua_isnumber
 T lua_isstring
 T lua_isuserdata
 T luaJIT_setmode
-T luaJIT_version_2_0_3
+T luaJIT_version_2_0_4
 T luaL_addlstring
 T luaL_addstring
 T luaL_addvalue
@@ -242,12 +239,8 @@ U program_invocation_name@@GLIBC_2.0
 U program_invocation_short_name@@GLIBC_2.0
 w pthread_cancel@@GLIBC_2.0
 w __pthread_key_create@@GLIBC_2.0
-U pthread_mutexattr_init@@GLIBC_2.0
-U pthread_mutexattr_settype@@GLIBC_2.1
-U pthread_mutex_destroy@@GLIBC_2.0
-U pthread_mutex_init@@GLIBC_2.0
-U pthread_mutex_lock@@GLIBC_2.0
-U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_mutex_lock@@GLIBC_2.0
+w pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
 U putchar@@GLIBC_2.0
 U rand@@GLIBC_2.0
@@ -282,7 +275,6 @@ U strpbrk@@GLIBC_2.0
 U strrchr@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
-U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 U symlink@@GLIBC_2.0
 U tanh@@GLIBC_2.0
@@ -314,18 +306,15 @@ U __xstat@@GLIBC_2.0
 T md5_finish(md5_context*, unsigned char*)
 T md5_starts(md5_context*)
 T md5_update(md5_context*, unsigned char*, int)
-U ConColorMsg(Color const&, char const*, ...)
 T crc32_start(unsigned long)
 T md5(unsigned char*, int, unsigned char*)
 T crc32(void const*, int, unsigned long, unsigned long*)
-U ConMsg(char const*, ...)
 T md5_32(void const*, int, unsigned int, void*)
 T globber(char const*, char const*)
 T md5hash(void const*, int, unsigned int)
 T wildcmp(char const*, char const*)
 T crc32_add(unsigned long&, void const*, int)
 T crc32_end(unsigned long&)
-U operator delete[](void*)@@GLIBCXX_3.4
 U operator delete(void*)@@GLIBCXX_3.4
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
@@ -512,7 +501,6 @@ U VTT for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U VTT for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
 V vtable for Bootil::AutoBuffer
 V vtable for Bootil::Buffer
 U vtable for std::basic_filebuf<char, std::char_traits<char> >@@GLIBCXX_3.4

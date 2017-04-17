@@ -571,7 +571,8 @@ U SteamAPI_RegisterCallResult
 U SteamAPI_SetTryCatchCallbacks
 U SteamAPI_UnregisterCallback
 U SteamAPI_UnregisterCallResult
-U SteamClient
+U SteamInternal_ContextInit
+U SteamInternal_CreateInterface
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U __strcat_chk@@GLIBC_2.3.4

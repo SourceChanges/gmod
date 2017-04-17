@@ -69,6 +69,7 @@ U close@@GLIBC_2.0
 r cmds
 T c__next_word
 b colorcorrection
+U ColorSpewMessage
 U CommandLine_Tier0
 b completed.7134
 T compress
@@ -388,7 +389,7 @@ t global constructors keyed to s_hMatSystemModule
 t global constructors keyed to s_StringCharConversion
 t global constructors keyed to FillDepotList(std::list<IGameDepotSystem::Information, std::allocator<IGameDepotSystem::Information> >&)
 t global constructors keyed to GMOD_CopyFile(char const*, char const*)
-t global constructors keyed to WaitForSteamCall(unsigned long long, unsigned int, bool)
+t global constructors keyed to WaitForSteamCall(unsigned long long)
 t global constructors keyed to FileSystemFactory(char const*, int*)
 t global constructors keyed to FileSystem_UseVProjectBinDir(bool)
 t global constructors keyed to ThreadStubProcessMD5Requests(void*)
@@ -398,7 +399,7 @@ t global constructors keyed to _V_memset(char const*, int, void*, int, int)
 t global constructors keyed to CStdioFile::m_LockedFDMap
 t global constructors keyed to CUtlString::AllocMemory(unsigned int)
 t global constructors keyed to CUtlSymbol::s_pSymbolTable
-t global constructors keyed to Steamworks::GenerateAddonFilename(RemoteStorageGetPublishedFileDetailsResult_t const&)
+t global constructors keyed to Steamworks::SubscribedFiles::SubscribedFiles(EUserUGCList, EUserUGCListSortOrder)
 t global constructors keyed to CPackedStore::FindFileEntry(char const*, char const*, char const*, unsigned char**, unsigned char**)
 t global constructors keyed to LegacyAddons::System::System()
 t global constructors keyed to ConCommandBase::s_pConCommandBases
@@ -435,7 +436,6 @@ t _GLOBAL__sub_I_File.cpp
 t _GLOBAL__sub_I_gf2n.cpp
 t _GLOBAL__sub_I_Hasher.cpp
 t _GLOBAL__sub_I_integer.cpp
-t _GLOBAL__sub_I_Json.cpp
 t _GLOBAL__sub_I_Math.cpp
 t _GLOBAL__sub_I_Mutex.cpp
 t _GLOBAL__sub_I_Platform_LINUX.cpp
@@ -447,7 +447,6 @@ t _GLOBAL__sub_I_String_Test.cpp
 t _GLOBAL__sub_I_String_To.cpp
 t _GLOBAL__sub_I_String_Util.cpp
 t _GLOBAL__sub_I_Thread.cpp
-t _GLOBAL__sub_I_Tree.cpp
 b gmod_language
 w __gmon_start__
 U gmtime@@GLIBC_2.0
@@ -882,7 +881,6 @@ t SkipMatchesSpec
 U sleep@@GLIBC_2.0
 b s_MaterialSystemFactory
 b s_NoEscConversion
-U __snprintf_chk@@GLIBC_2.3.4
 T snvis
 b s_pCurrentAppSystem
 U _SpewInfo
@@ -1358,7 +1356,6 @@ t ConcatRotations(float const (*) [3], float const (*) [3], float (*) [3])
 t ConVar_Register(int, IConCommandBaseAccessor*)
 t DoesFileExistIn(char const*, char const*)
 t GetModuleHandle(char const*)
-t GetPageContents(unsigned int)
 t GetSteamCfgPath(char*, int)
 t InitSinCosTable()
 t IOAsyncCallback(FileAsyncRequest_t const&, int, FSAsyncStatus_t)
@@ -1422,7 +1419,7 @@ t V_IsAbsolutePath(char const*)
 t V_StripExtension(char const*, char*, int)
 t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
 t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
-t WaitForSteamCall(unsigned long long, unsigned int, bool)
+t WaitForSteamCall(unsigned long long)
 t BasisToQuaternion(Vector const&, Vector const&, Vector const&, Quaternion&)
 t CharacterSetBuild(characterset_t*, char const*)
 t ConVar_PrintFlags(ConCommandBase const*)
@@ -1511,6 +1508,7 @@ t ConnectTier1Libraries(void* (**)(char const*, int*), int)
 t ConnectTier2Libraries(void* (**)(char const*, int*), int)
 t DefaultCompletionFunc(char const*, char (*) [128])
 t EF_VID_ForceLockState(int)
+t GenerateAddonFilename(SteamUGCDetails_t const&)
 t GreatestCommonDivisor(int, int)
 t SolveInverseQuadratic(float, float, float, float, float, float, float&, float&, float&)
 t Sys_GetExecutableName(char*)
@@ -2005,7 +2003,6 @@ t CStdioFile::FS_fflush()
 t CStdioFile::FS_fwrite(void const*, unsigned int)
 t CStdioFile::~CStdioFile()
 t CStdioFile::~CStdioFile()
-t CSteamHTTP::~CSteamHTTP()
 t CUtlBuffer::ParseToken(characterset_t*, char*, int, bool)
 t CUtlBuffer::ParseToken(char const*, char const*, char*, int)
 t CUtlBuffer::ConvertCRLF(CUtlBuffer&)
@@ -2187,6 +2184,7 @@ t CUtlSymbol::CUtlSymbol(char const*)
 t CUtlSymbol::CUtlSymbol(char const*)
 t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
 t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::~CUtlVector()
+t CUtlVector<SteamUGCDetails_t, CUtlMemory<SteamUGCDetails_t, int> >::InsertBefore(int, SteamUGCDetails_t const&)
 t CUtlVector<ChunkHashFraction_t, CUtlMemory<ChunkHashFraction_t, int> >::GrowVector(int)
 t CUtlVector<ChunkHashFraction_t, CUtlMemory<ChunkHashFraction_t, int> >::EnsureCount(int)
 t CUtlVector<ChunkHashFraction_t, CUtlMemory<ChunkHashFraction_t, int> >::~CUtlVector()
@@ -2207,6 +2205,8 @@ t CUtlVector<CBaseFileSystem::COpenedFile, CUtlMemory<CBaseFileSystem::COpenedFi
 t CUtlVector<CBaseFileSystem::COpenedFile, CUtlMemory<CBaseFileSystem::COpenedFile, int> >::~CUtlVector()
 t CUtlVector<CBaseFileSystem::CSearchPath, CUtlMemory<CBaseFileSystem::CSearchPath, int> >::InsertBefore(int, CBaseFileSystem::CSearchPath const&)
 t CUtlVector<CBaseFileSystem::CSearchPath, CUtlMemory<CBaseFileSystem::CSearchPath, int> >::~CUtlVector()
+t CUtlVector<GarrysMod::DedicatedServer::SteamUGCDetails_t_edit, CUtlMemory<GarrysMod::DedicatedServer::SteamUGCDetails_t_edit, int> >::InsertBefore(int, GarrysMod::DedicatedServer::SteamUGCDetails_t_edit const&)
+t CUtlVector<GarrysMod::DedicatedServer::SteamUGCDetails_t_edit, CUtlMemory<GarrysMod::DedicatedServer::SteamUGCDetails_t_edit, int> >::~CUtlVector()
 t CUtlVector<IAppSystem*, CUtlMemory<IAppSystem*, int> >::InsertBefore(int, IAppSystem* const&)
 t CUtlVector<IAppSystem*, CUtlMemory<IAppSystem*, int> >::~CUtlVector()
 t CUtlVector<IAsyncFileFetch*, CUtlMemory<IAsyncFileFetch*, int> >::InsertBefore(int, IAsyncFileFetch* const&)
@@ -2236,45 +2236,36 @@ t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, 
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::RemoveAll()
 t CUtlVector<long long, CUtlMemory<long long, int> >::InsertBefore(int, long long const&)
 t CUtlVector<long long, CUtlMemory<long long, int> >::~CUtlVector()
+t CUtlVector<unsigned long long, CUtlMemory<unsigned long long, int> >::InsertBefore(int, unsigned long long const&)
+t CUtlVector<unsigned long long, CUtlMemory<unsigned long long, int> >::~CUtlVector()
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
 U CVProfNode::ExitScope()
 t CWin32File::CreateTempFile(CUtlString&, CUtlString&)
 t MD5Value_t::Zero()
-t Steamworks::FileDetails::Request::SteamResponse(RemoteStorageGetPublishedFileDetailsResult_t*, bool)
-t Steamworks::VoteDetails::Request::SteamResponse(RemoteStorageGetPublishedItemVoteDetailsResult_t*, bool)
-t Steamworks::SubscribedFiles::FindMyVote(unsigned long long)
-t Steamworks::SubscribedFiles::FindByTitle(std::string const&)
+t Steamworks::FileDetails::Request::SteamResponse(SteamUGCRequestUGCDetailsResult_t*, bool)
 t Steamworks::SubscribedFiles::GetMoreFiles()
-t Steamworks::SubscribedFiles::FindByFileName(std::string const&)
-t Steamworks::SubscribedFiles::OnReceiveMyVote(Steamworks::MyVotes::Request*)
-t Steamworks::SubscribedFiles::RequestFileInfo(unsigned long long)
-t Steamworks::SubscribedFiles::Steam_FilesList(RemoteStorageEnumerateUserSubscribedFilesResult_t*, bool)
+t Steamworks::SubscribedFiles::Steam_FilesList(SteamUGCQueryCompleted_t*, bool)
 t Steamworks::SubscribedFiles::GetCurrentAmount()
-t Steamworks::SubscribedFiles::OnReceiveFileInfo(Steamworks::FileDetails::Request*)
-t Steamworks::SubscribedFiles::OnReceiveVoteInfo(Steamworks::VoteDetails::Request*)
 t Steamworks::SubscribedFiles::Ready()
 t Steamworks::SubscribedFiles::Finish()
 t Steamworks::SubscribedFiles::Refresh(CSteamAPIContext*)
-t Steamworks::SubscribedFiles::FindVotes(unsigned long long)
-t Steamworks::SubscribedFiles::SubscribedFiles(bool, bool, bool)
-t Steamworks::SubscribedFiles::SubscribedFiles(bool, bool, bool)
+t Steamworks::SubscribedFiles::SubscribedFiles(EUserUGCList, EUserUGCListSortOrder)
+t Steamworks::SubscribedFiles::SubscribedFiles(EUserUGCList, EUserUGCListSortOrder)
 t Steamworks::SubscribedFiles::~SubscribedFiles()
 t Steamworks::SubscribedFiles::~SubscribedFiles()
-t Steamworks::GenerateAddonFilename(RemoteStorageGetPublishedFileDetailsResult_t const&)
-t Steamworks::MyVotes::Request::SteamResponse(RemoteStorageUserVoteDetails_t*, bool)
-t CCallResult<Steamworks::FileDetails::Request, RemoteStorageGetPublishedFileDetailsResult_t>::GetCallbackSizeBytes()
-t CCallResult<Steamworks::FileDetails::Request, RemoteStorageGetPublishedFileDetailsResult_t>::Run(void*)
-t CCallResult<Steamworks::FileDetails::Request, RemoteStorageGetPublishedFileDetailsResult_t>::Run(void*, bool, unsigned long long)
-t CCallResult<Steamworks::VoteDetails::Request, RemoteStorageGetPublishedItemVoteDetailsResult_t>::GetCallbackSizeBytes()
-t CCallResult<Steamworks::VoteDetails::Request, RemoteStorageGetPublishedItemVoteDetailsResult_t>::Run(void*)
-t CCallResult<Steamworks::VoteDetails::Request, RemoteStorageGetPublishedItemVoteDetailsResult_t>::Run(void*, bool, unsigned long long)
-t CCallResult<Steamworks::SubscribedFiles, RemoteStorageEnumerateUserSubscribedFilesResult_t>::GetCallbackSizeBytes()
-t CCallResult<Steamworks::SubscribedFiles, RemoteStorageEnumerateUserSubscribedFilesResult_t>::Run(void*)
-t CCallResult<Steamworks::SubscribedFiles, RemoteStorageEnumerateUserSubscribedFilesResult_t>::Run(void*, bool, unsigned long long)
-t CCallResult<Steamworks::MyVotes::Request, RemoteStorageUserVoteDetails_t>::GetCallbackSizeBytes()
-t CCallResult<Steamworks::MyVotes::Request, RemoteStorageUserVoteDetails_t>::Run(void*)
-t CCallResult<Steamworks::MyVotes::Request, RemoteStorageUserVoteDetails_t>::Run(void*, bool, unsigned long long)
+t CCallResult<ISteamUGC_GetItemInfo, SteamUGCQueryCompleted_t>::GetCallbackSizeBytes()
+t CCallResult<ISteamUGC_GetItemInfo, SteamUGCQueryCompleted_t>::Run(void*)
+t CCallResult<ISteamUGC_GetItemInfo, SteamUGCQueryCompleted_t>::Run(void*, bool, unsigned long long)
+t CCallResult<ISteamUGC_GetCollectionInfo, SteamUGCQueryCompleted_t>::GetCallbackSizeBytes()
+t CCallResult<ISteamUGC_GetCollectionInfo, SteamUGCQueryCompleted_t>::Run(void*)
+t CCallResult<ISteamUGC_GetCollectionInfo, SteamUGCQueryCompleted_t>::Run(void*, bool, unsigned long long)
+t CCallResult<Steamworks::FileDetails::Request, SteamUGCRequestUGCDetailsResult_t>::GetCallbackSizeBytes()
+t CCallResult<Steamworks::FileDetails::Request, SteamUGCRequestUGCDetailsResult_t>::Run(void*)
+t CCallResult<Steamworks::FileDetails::Request, SteamUGCRequestUGCDetailsResult_t>::Run(void*, bool, unsigned long long)
+t CCallResult<Steamworks::SubscribedFiles, SteamUGCQueryCompleted_t>::GetCallbackSizeBytes()
+t CCallResult<Steamworks::SubscribedFiles, SteamUGCQueryCompleted_t>::Run(void*)
+t CCallResult<Steamworks::SubscribedFiles, SteamUGCQueryCompleted_t>::Run(void*, bool, unsigned long long)
 t CCallResult<Addon::Task::DownloadFile, RemoteStorageDownloadUGCResult_t>::GetCallbackSizeBytes()
 t CCallResult<Addon::Task::DownloadFile, RemoteStorageDownloadUGCResult_t>::Run(void*)
 t CCallResult<Addon::Task::DownloadFile, RemoteStorageDownloadUGCResult_t>::Run(void*, bool, unsigned long long)
@@ -2401,6 +2392,8 @@ t CBufferStream::Put(void const*, int)
 t CBufferStream::Tell()
 t CCallbackImpl<12>::GetCallbackSizeBytes()
 t CCallbackImpl<12>::Run(void*, bool, unsigned long long)
+t CCallbackImpl<16>::GetCallbackSizeBytes()
+t CCallbackImpl<16>::Run(void*, bool, unsigned long long)
 t CFileAsyncJob::GetResult(void**, int*)
 t CFileAsyncJob::~CFileAsyncJob()
 t CFileAsyncJob::~CFileAsyncJob()
@@ -3005,6 +2998,7 @@ t CPackedStoreReadCache::~CPackedStoreReadCache()
 t CUtlCStringConversion::FindConversion(char const*, int*)
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t ISteamUGC_GetItemInfo::OnReceiveWorkshopItems(SteamUGCQueryCompleted_t*, bool)
 t CCleanupUtlSymbolTable::~CCleanupUtlSymbolTable()
 t CFileAsyncWriteFileJob::DoCleanup()
 t CFileAsyncWriteFileJob::~CFileAsyncWriteFileJob()
@@ -3026,6 +3020,7 @@ t CDedicatedAppSystemGroup::Main()
 t CDedicatedAppSystemGroup::Create()
 t CDedicatedAppSystemGroup::Destroy()
 t CDedicatedAppSystemGroup::PreInit()
+t ISteamUGC_ItemDownloader::OnItemDownloaded(DownloadItemResult_t*)
 t CResourcePreloadAnonymous::CreateResource(char const*)
 t CResourcePreloadAnonymous::OnEndMapLoading(bool)
 t CResourcePreloadAnonymous::PurgeUnreferencedResources()
@@ -3037,6 +3032,7 @@ d ZIP_PreloadDirectoryEntry::m_DataMap
 t CDedicatedSteamApplication::Create()
 t CDedicatedSteamApplication::CDedicatedSteamApplication(CSteamAppSystemGroup*)
 t CDedicatedSteamApplication::CDedicatedSteamApplication(CSteamAppSystemGroup*)
+t ISteamUGC_GetCollectionInfo::OnReceiveWorkshopItems(SteamUGCQueryCompleted_t*, bool)
 b ZIP_FileHeader_DataDescInit::g_DataMapHolder
 t CDatadescGeneratedNameHolder::~CDatadescGeneratedNameHolder()
 b ZIP_PreloadHeader_DataDescInit::g_DataMapHolder
@@ -3283,6 +3279,7 @@ t Addon::FileHandle::Tell()
 t Addon::FileHandle::Release()
 t Addon::FileHandle::FileHandle(Addon::FileInfo*)
 t Addon::FileHandle::FileHandle(Addon::FileInfo*)
+t Addon::FileSystem::GetSubList()
 t Addon::FileSystem::HasChanges()
 t Addon::FileSystem::FindInAddon(std::string const&, std::string, CUtlLinkedList<Addon::SearchFile, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<Addon::SearchFile, unsigned short>, unsigned short> >&)
 t Addon::FileSystem::GetFileSize(std::string)
@@ -3303,7 +3300,9 @@ t Addon::FileSystem::IsOfflineMode()
 t Addon::FileSystem::NormalizePath(std::string&)
 t Addon::FileSystem::SetShouldMount(std::string const&, bool)
 t Addon::FileSystem::AddonDownloaded(IAddonSystem::Information&)
+t Addon::FileSystem::AddSubscription(SteamUGCDetails_t const&)
 t Addon::FileSystem::SetDownloadNotify(IAddonDownloadNotification*)
+t Addon::FileSystem::MountFloatingAddons()
 t Addon::FileSystem::ScanForSubscriptions(CSteamAPIContext*, char const*)
 t Addon::FileSystem::CreateEmptyParentFolders(std::string, void*, std::string const&)
 t Addon::FileSystem::OnRemoteStoragePublishedFileSubscribed(RemoteStoragePublishedFileSubscribed_t*)
@@ -3314,7 +3313,7 @@ t Addon::FileSystem::Clear()
 t Addon::FileSystem::Think()
 t Addon::FileSystem::AddJob(Addon::Job::Base*)
 t Addon::FileSystem::Notify()
-t Addon::FileSystem::AddFile(RemoteStorageGetPublishedFileDetailsResult_t const&)
+t Addon::FileSystem::AddFile(SteamUGCDetails_t const&)
 t Addon::FileSystem::AddFile(IAddonSystem::Information const&)
 t Addon::FileSystem::GetFile(std::string)
 t Addon::FileSystem::GetList()
@@ -3489,18 +3488,6 @@ T Bootil::Compression::FastLZ::Is(void const*, unsigned int)
 T Bootil::Compression::FastLZ::Extract(void const*, unsigned int, Bootil::Buffer&)
 T Bootil::Compression::FastLZ::Compress(void const*, unsigned int, Bootil::Buffer&)
 T Bootil::IsShuttingDown()
-t void Bootil::Data::Json::WriteValue<rapidjson::PrettyWriter<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::PrettyWriter<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, Bootil::Data::TreeT<std::string> const&)
-t void Bootil::Data::Json::WriteValue<rapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, Bootil::Data::TreeT<std::string> const&)
-t void Bootil::Data::Json::DoJsonExport<rapidjson::PrettyWriter<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::PrettyWriter<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, Bootil::Data::TreeT<std::string> const&)
-t void Bootil::Data::Json::DoJsonExport<rapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, Bootil::Data::TreeT<std::string> const&)
-t Bootil::Data::Json::Export(Bootil::Data::TreeT<std::string> const&, std::string&, bool)
-t Bootil::Data::Json::Import(Bootil::Data::TreeT<std::string>&, char const*)
-t Bootil::Data::Json::DoImport(Bootil::Data::TreeT<std::string>&, rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&)
-t Bootil::Data::TreeT<std::string>::GetChildNum(int)
-t Bootil::Data::TreeT<std::string>::AddChild()
-t Bootil::Data::TreeT<std::string>::GetChild(std::string const&)
-t Bootil::Data::TreeT<std::string>::~TreeT()
-t Bootil::Data::TreeT<std::string>::~TreeT()
 T Bootil::File::GetTempDir()
 t Bootil::File::RemoveFile(std::string const&)
 t Bootil::File::CreateFolder(std::string const&, bool)
@@ -6669,6 +6656,7 @@ t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int)
 t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int)
 t void CByteswap::SwapBufferToTargetEndian<unsigned int>(unsigned int*, unsigned int*, int)
 t CByteswap::SwapFieldsToTargetEndian(void*, void*, datamap_t*)
+t CCallback<ISteamUGC_ItemDownloader, DownloadItemResult_t, true>::Run(void*)
 t CCallback<Addon::FileSystem, RemoteStoragePublishedFileSubscribed_t, false>::Run(void*)
 t CCallback<Addon::FileSystem, RemoteStoragePublishedFileUnsubscribed_t, false>::Run(void*)
 t CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*), FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::operator()()
@@ -6677,11 +6665,13 @@ t CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, Loader
 t CFunctor4<void (*)(FileJob_t*, void*, int, LoaderError_t), FileJob_t*, void*, int, LoaderError_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::operator()()
 t CFunctor4<void (*)(FileJob_t*, void*, int, LoaderError_t), FileJob_t*, void*, int, LoaderError_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor4()
 t CFunctor4<void (*)(FileJob_t*, void*, int, LoaderError_t), FileJob_t*, void*, int, LoaderError_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor4()
-t CLanguage::ProcessFile(std::string)
-t CLanguage::ChangeLanguage(char const*)
+t CLanguage::ProcessFile(std::string, char const*)
+t CLanguage::ChangeLanguage(char const*, bool)
+t CLanguage::ReloadLanguage()
 t CLanguage::ChangeLanguage_Steam(char const*)
 t CLanguage::TellLuaLanguageChanged(char const*)
-t CLanguage::GetString(char const*, wchar_t*, int)
+t CLanguage::GetString(char const*, wchar_t*, unsigned int)
+t CLanguage::~CLanguage()
 t ConVarRef::Init(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)
@@ -6715,10 +6705,19 @@ t GameDepot::System::System()
 t GameDepot::System::System()
 t GameDepot::System::~System()
 b GameDepot::bInitialized
-t GarrysMod::DedicatedServer::ProcessAddons(Bootil::Data::TreeT<std::string>&)
+t GarrysMod::DedicatedServer::MountAddon(SteamUGCDetails_t, std::string)
+t GarrysMod::DedicatedServer::DownloadAddon()
+b GarrysMod::DedicatedServer::addonsToProcess
 t GarrysMod::DedicatedServer::RunAddonProcess(char const*)
-t GarrysMod::DedicatedServer::DownloadAndMountAddon(std::string, std::string, std::string, std::string)
+t GarrysMod::DedicatedServer::DownloadCollection()
+b GarrysMod::DedicatedServer::collectionsProcessed
+b GarrysMod::DedicatedServer::collectionsToProcess
 t GarrysMod::DedicatedServer::RunChecks(char const*)
+t GarrysMod::DedicatedServer::operator==(GarrysMod::DedicatedServer::SteamUGCDetails_t_edit const&, GarrysMod::DedicatedServer::SteamUGCDetails_t_edit const&)
+b GarrysMod::DedicatedServer::clr
+b GarrysMod::DedicatedServer::clr_err
+b GarrysMod::DedicatedServer::clr_suc
+b GarrysMod::DedicatedServer::clr_proc
 t KeyValues::deleteThis()
 t KeyValues::GetWString(char const*, wchar_t const*)
 t KeyValues::SaveToFile(IBaseFileSystem*, char const*, char const*, bool, bool)
@@ -6806,14 +6805,6 @@ t KeyValues::operator delete(void*)
 t KeyValues::operator delete(void*, int, char const*, int)
 t KeyValues::operator new(unsigned int)
 t KeyValues::operator new(unsigned int, int, char const*, int)
-W rapidjson::PrettyWriter<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::PrettyPrefix(rapidjson::Type)
-W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseValue<0u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&)
-W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseNumber<0u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&)
-W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseString<0u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&)
-W bool rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::Parse<0u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&)
-t rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >* rapidjson::internal::Stack<rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::Push<rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(unsigned int) [clone .constprop.71]
-W rapidjson::internal::Stack<rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::~Stack()
-W rapidjson::internal::Stack<rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::~Stack()
 U operator new[](unsigned int)@@GLIBCXX_3.4
 t ConCommand::IsCommand() const
 t CUtlRBTree<TrackedFile_t, int, bool (*)(TrackedFile_t const&, TrackedFile_t const&), CUtlMemory<UtlRBTreeNode_t<TrackedFile_t, int>, int> >::NextInorder(int) const
@@ -6905,20 +6896,6 @@ t CUtlCharConversion::GetConversionString(char) const
 t CUtlCharConversion::MaxConversionLength() const
 t CSteamAppSystemGroup::GetGameInfoPath() const
 t CFileAsyncAppendFileJob::IsWrite() const
-t Bootil::Data::TreeT<std::string>::ChildValue(std::string const&, std::string const&) const
-t bool Bootil::Data::TreeT<std::string>::StringToVar<bool>(std::string const&) const
-t double Bootil::Data::TreeT<std::string>::StringToVar<double>(std::string const&) const
-t float Bootil::Data::TreeT<std::string>::StringToVar<float>(std::string const&) const
-t int Bootil::Data::TreeT<std::string>::StringToVar<int>(std::string const&) const
-t std::string Bootil::Data::TreeT<std::string>::VarToString<bool>(bool) const
-t std::string Bootil::Data::TreeT<std::string>::VarToString<double>(double) const
-t std::string Bootil::Data::TreeT<std::string>::VarToString<float>(float) const
-t std::string Bootil::Data::TreeT<std::string>::VarToString<int>(int) const
-t unsigned char Bootil::Data::TreeT<std::string>::VarID<bool>() const
-t unsigned char Bootil::Data::TreeT<std::string>::VarID<double>() const
-t unsigned char Bootil::Data::TreeT<std::string>::VarID<float>() const
-t unsigned char Bootil::Data::TreeT<std::string>::VarID<int>() const
-t unsigned char Bootil::Data::TreeT<std::string>::VarID<std::string>() const
 T Bootil::Buffer::GetWritten() const
 T Bootil::Buffer::GetPos() const
 T Bootil::Buffer::GetBase(unsigned int) const
@@ -8182,8 +8159,6 @@ U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic
 t std::_List_base<ILegacyAddons::Information, std::allocator<ILegacyAddons::Information> >::_M_clear()
 t std::_List_base<IGamemodeSystem::Information, std::allocator<IGamemodeSystem::Information> >::_M_clear()
 t std::_List_base<Addon::MountedAddon, std::allocator<Addon::MountedAddon> >::_M_clear()
-t std::_List_base<Bootil::Data::TreeT<std::string>, std::allocator<Bootil::Data::TreeT<std::string> > >::_M_clear()
-t std::_List_base<Bootil::Data::TreeT<std::string>, std::allocator<Bootil::Data::TreeT<std::string> > >::~_List_base()
 t std::_Deque_base<unsigned int, std::allocator<unsigned int> >::_M_initialize_map(unsigned int)
 t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_M_initialize_map(unsigned int)
 t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::~_Deque_base()
@@ -8225,8 +8200,6 @@ t std::map<std::string, Addon::FileInfo, std::less<std::string>, std::allocator<
 t std::list<IAddonSystem::Information, std::allocator<IAddonSystem::Information> >::~list()
 t std::list<IGameDepotSystem::Information, std::allocator<IGameDepotSystem::Information> >::push_back(IGameDepotSystem::Information const&)
 t std::list<Addon::MountedAddon, std::allocator<Addon::MountedAddon> >::push_back(Addon::MountedAddon const&)
-t std::list<Bootil::Data::TreeT<std::string>, std::allocator<Bootil::Data::TreeT<std::string> > >::_M_create_node(Bootil::Data::TreeT<std::string> const&) [clone .isra.66]
-t std::list<Bootil::Data::TreeT<std::string>, std::allocator<Bootil::Data::TreeT<std::string> > >::push_back(Bootil::Data::TreeT<std::string> const&)
 t std::list<Bootil::Debug::IListener*, std::allocator<Bootil::Debug::IListener*> >::~list()
 t std::list<Bootil::Debug::IListener*, std::allocator<Bootil::Debug::IListener*> >::~list()
 t std::pair<std::string const, Addon::FileInfo>::~pair()
@@ -8468,8 +8441,6 @@ t void std::sort_heap<std::_Deque_iterator<CryptoPP::MeterFilter::MessageRange, 
 t void std::sort_heap<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >)
 U std::terminate()@@GLIBCXX_3.4
 t bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
-b std::__ioinit
-b std::__ioinit
 b std::__ioinit
 b std::__ioinit
 b std::__ioinit
@@ -8865,7 +8836,6 @@ t non-virtual thunk to CryptoPP::AdditiveCipherTemplate<CryptoPP::AbstractPolicy
 t non-virtual thunk to CryptoPP::CipherModeFinalTemplate_ExternalCipher<CryptoPP::ConcretePolicyHolder<CryptoPP::Empty, CryptoPP::AdditiveCipherTemplate<CryptoPP::AbstractPolicyHolder<CryptoPP::AdditiveCipherAbstractPolicy, CryptoPP::CTR_ModePolicy> >, CryptoPP::AdditiveCipherAbstractPolicy> >::~CipherModeFinalTemplate_ExternalCipher()
 t non-virtual thunk to CryptoPP::CipherModeFinalTemplate_ExternalCipher<CryptoPP::ConcretePolicyHolder<CryptoPP::Empty, CryptoPP::AdditiveCipherTemplate<CryptoPP::AbstractPolicyHolder<CryptoPP::AdditiveCipherAbstractPolicy, CryptoPP::CTR_ModePolicy> >, CryptoPP::AdditiveCipherAbstractPolicy> >::~CipherModeFinalTemplate_ExternalCipher()
 t non-virtual thunk to CryptoPP::CipherModeFinalTemplate_ExternalCipher<CryptoPP::ConcretePolicyHolder<CryptoPP::Empty, CryptoPP::AdditiveCipherTemplate<CryptoPP::AbstractPolicyHolder<CryptoPP::AdditiveCipherAbstractPolicy, CryptoPP::CTR_ModePolicy> >, CryptoPP::AdditiveCipherAbstractPolicy> >::AlgorithmName() const
-t non-virtual thunk to Steamworks::SubscribedFiles::OnReceiveVoteInfo(Steamworks::VoteDetails::Request*)
 t non-virtual thunk to CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t non-virtual thunk to CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t non-virtual thunk to CFileAsyncJob::~CFileAsyncJob()
@@ -9698,7 +9668,6 @@ t non-virtual thunk to CryptoPP::InvertibleRSAFunction::~InvertibleRSAFunction()
 t non-virtual thunk to CryptoPP::InvertibleRSAFunction::~InvertibleRSAFunction()
 t non-virtual thunk to CryptoPP::InvertibleRSAFunction_ISO::~InvertibleRSAFunction_ISO()
 t non-virtual thunk to CryptoPP::InvertibleRSAFunction_ISO::~InvertibleRSAFunction_ISO()
-t non-virtual thunk to Steamworks::SubscribedFiles::OnReceiveMyVote(Steamworks::MyVotes::Request*)
 t non-virtual thunk to CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t non-virtual thunk to CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t non-virtual thunk to CryptoPP::RSAFunction::~RSAFunction()
@@ -9817,10 +9786,10 @@ t non-virtual thunk to CryptoPP::TF_ObjectImplBase<CryptoPP::TF_EncryptorBase, C
 r typeinfo for ConCommand
 r typeinfo for CStdioFile
 r typeinfo for IAppSystem
-r typeinfo for CCallResult<Steamworks::FileDetails::Request, RemoteStorageGetPublishedFileDetailsResult_t>
-r typeinfo for CCallResult<Steamworks::VoteDetails::Request, RemoteStorageGetPublishedItemVoteDetailsResult_t>
-r typeinfo for CCallResult<Steamworks::SubscribedFiles, RemoteStorageEnumerateUserSubscribedFilesResult_t>
-r typeinfo for CCallResult<Steamworks::MyVotes::Request, RemoteStorageUserVoteDetails_t>
+r typeinfo for CCallResult<ISteamUGC_GetItemInfo, SteamUGCQueryCompleted_t>
+r typeinfo for CCallResult<ISteamUGC_GetCollectionInfo, SteamUGCQueryCompleted_t>
+r typeinfo for CCallResult<Steamworks::FileDetails::Request, SteamUGCRequestUGCDetailsResult_t>
+r typeinfo for CCallResult<Steamworks::SubscribedFiles, SteamUGCQueryCompleted_t>
 r typeinfo for CCallResult<Addon::Task::DownloadFile, RemoteStorageDownloadUGCResult_t>
 r typeinfo for CFileHandle
 r typeinfo for CFileStream
@@ -9840,6 +9809,7 @@ r typeinfo for IWriteStream
 r typeinfo for CBufferStream
 r typeinfo for CCallbackBase
 r typeinfo for CCallbackImpl<12>
+r typeinfo for CCallbackImpl<16>
 r typeinfo for CFileAsyncJob
 r typeinfo for CFileTracker2
 r typeinfo for CQueuedLoader
@@ -9855,6 +9825,7 @@ r typeinfo for ConCommandBase
 r typeinfo for CTier2SteamApp
 r typeinfo for CAppSystemGroup
 r typeinfo for CBaseFileSystem
+r typeinfo for CCallbackManual<ISteamUGC_ItemDownloader, DownloadItemResult_t, true>
 r typeinfo for CCallbackManual<Addon::FileSystem, RemoteStoragePublishedFileSubscribed_t, false>
 r typeinfo for CCallbackManual<Addon::FileSystem, RemoteStoragePublishedFileUnsubscribed_t, false>
 r typeinfo for CTier0AppSystem<IFileSystem>
@@ -9910,6 +9881,7 @@ U typeinfo for CThread
 r typeinfo for IConVar
 r typeinfo for INetAPI
 r typeinfo for CFunctor
+r typeinfo for CCallback<ISteamUGC_ItemDownloader, DownloadItemResult_t, true>
 r typeinfo for CCallback<Addon::FileSystem, RemoteStoragePublishedFileSubscribed_t, false>
 r typeinfo for CCallback<Addon::FileSystem, RemoteStoragePublishedFileUnsubscribed_t, false>
 r typeinfo for CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*), FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
@@ -9922,9 +9894,7 @@ U typeinfo for unsigned char@@CXXABI_1.3
 U typeinfo for int@@CXXABI_1.3
 U typeinfo for unsigned int@@CXXABI_1.3
 r typeinfo for Steamworks::FileDetails::Receiver
-r typeinfo for Steamworks::VoteDetails::Receiver
 r typeinfo for Steamworks::SubscribedFiles
-r typeinfo for Steamworks::MyVotes::Receiver
 r typeinfo for LegacyAddons::System
 r typeinfo for Addon::FileSystem
 r typeinfo for Addon::Job::Base
@@ -10505,10 +10475,10 @@ r typeinfo for CBaseFileSystem::InitAsync()::CBreakThread
 r typeinfo name for ConCommand
 r typeinfo name for CStdioFile
 r typeinfo name for IAppSystem
-r typeinfo name for CCallResult<Steamworks::FileDetails::Request, RemoteStorageGetPublishedFileDetailsResult_t>
-r typeinfo name for CCallResult<Steamworks::VoteDetails::Request, RemoteStorageGetPublishedItemVoteDetailsResult_t>
-r typeinfo name for CCallResult<Steamworks::SubscribedFiles, RemoteStorageEnumerateUserSubscribedFilesResult_t>
-r typeinfo name for CCallResult<Steamworks::MyVotes::Request, RemoteStorageUserVoteDetails_t>
+r typeinfo name for CCallResult<ISteamUGC_GetItemInfo, SteamUGCQueryCompleted_t>
+r typeinfo name for CCallResult<ISteamUGC_GetCollectionInfo, SteamUGCQueryCompleted_t>
+r typeinfo name for CCallResult<Steamworks::FileDetails::Request, SteamUGCRequestUGCDetailsResult_t>
+r typeinfo name for CCallResult<Steamworks::SubscribedFiles, SteamUGCQueryCompleted_t>
 r typeinfo name for CCallResult<Addon::Task::DownloadFile, RemoteStorageDownloadUGCResult_t>
 r typeinfo name for CFileHandle
 r typeinfo name for CFileStream
@@ -10528,6 +10498,7 @@ r typeinfo name for IWriteStream
 r typeinfo name for CBufferStream
 r typeinfo name for CCallbackBase
 r typeinfo name for CCallbackImpl<12>
+r typeinfo name for CCallbackImpl<16>
 r typeinfo name for CFileAsyncJob
 r typeinfo name for CFileTracker2
 r typeinfo name for CQueuedLoader
@@ -10543,6 +10514,7 @@ r typeinfo name for ConCommandBase
 r typeinfo name for CTier2SteamApp
 r typeinfo name for CAppSystemGroup
 r typeinfo name for CBaseFileSystem
+r typeinfo name for CCallbackManual<ISteamUGC_ItemDownloader, DownloadItemResult_t, true>
 r typeinfo name for CCallbackManual<Addon::FileSystem, RemoteStoragePublishedFileSubscribed_t, false>
 r typeinfo name for CCallbackManual<Addon::FileSystem, RemoteStoragePublishedFileUnsubscribed_t, false>
 r typeinfo name for CTier0AppSystem<IFileSystem>
@@ -10597,6 +10569,7 @@ r typeinfo name for CNetAPI
 r typeinfo name for IConVar
 r typeinfo name for INetAPI
 r typeinfo name for CFunctor
+r typeinfo name for CCallback<ISteamUGC_ItemDownloader, DownloadItemResult_t, true>
 r typeinfo name for CCallback<Addon::FileSystem, RemoteStoragePublishedFileSubscribed_t, false>
 r typeinfo name for CCallback<Addon::FileSystem, RemoteStoragePublishedFileUnsubscribed_t, false>
 r typeinfo name for CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*), FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
@@ -10605,9 +10578,7 @@ r typeinfo name for CLanguage
 r typeinfo name for CPackFile
 r typeinfo name for IFileList
 r typeinfo name for Steamworks::FileDetails::Receiver
-r typeinfo name for Steamworks::VoteDetails::Receiver
 r typeinfo name for Steamworks::SubscribedFiles
-r typeinfo name for Steamworks::MyVotes::Receiver
 r typeinfo name for LegacyAddons::System
 r typeinfo name for Addon::FileSystem
 r typeinfo name for Addon::Job::Base
@@ -11474,10 +11445,10 @@ t virtual thunk to CryptoPP::DL_GroupParameters<CryptoPP::EC2NPoint>::SavePrecom
 r vtable for ConCommand
 r vtable for CStdioFile
 r vtable for IAppSystem
-r vtable for CCallResult<Steamworks::FileDetails::Request, RemoteStorageGetPublishedFileDetailsResult_t>
-r vtable for CCallResult<Steamworks::VoteDetails::Request, RemoteStorageGetPublishedItemVoteDetailsResult_t>
-r vtable for CCallResult<Steamworks::SubscribedFiles, RemoteStorageEnumerateUserSubscribedFilesResult_t>
-r vtable for CCallResult<Steamworks::MyVotes::Request, RemoteStorageUserVoteDetails_t>
+r vtable for CCallResult<ISteamUGC_GetItemInfo, SteamUGCQueryCompleted_t>
+r vtable for CCallResult<ISteamUGC_GetCollectionInfo, SteamUGCQueryCompleted_t>
+r vtable for CCallResult<Steamworks::FileDetails::Request, SteamUGCRequestUGCDetailsResult_t>
+r vtable for CCallResult<Steamworks::SubscribedFiles, SteamUGCQueryCompleted_t>
 r vtable for CCallResult<Addon::Task::DownloadFile, RemoteStorageDownloadUGCResult_t>
 r vtable for CFileHandle
 r vtable for CFileStream
@@ -11496,6 +11467,7 @@ r vtable for IWriteStream
 r vtable for CBufferStream
 r vtable for CCallbackBase
 r vtable for CCallbackImpl<12>
+r vtable for CCallbackImpl<16>
 r vtable for CFileAsyncJob
 r vtable for CFileTracker2
 r vtable for CQueuedLoader
@@ -11511,6 +11483,7 @@ r vtable for ConCommandBase
 r vtable for CTier2SteamApp
 r vtable for CAppSystemGroup
 r vtable for CBaseFileSystem
+r vtable for CCallbackManual<ISteamUGC_ItemDownloader, DownloadItemResult_t, true>
 r vtable for CCallbackManual<Addon::FileSystem, RemoteStoragePublishedFileSubscribed_t, false>
 r vtable for CCallbackManual<Addon::FileSystem, RemoteStoragePublishedFileUnsubscribed_t, false>
 r vtable for CTier0AppSystem<IFileSystem>
@@ -11563,6 +11536,7 @@ r vtable for CNetAPI
 r vtable for IConVar
 r vtable for INetAPI
 r vtable for CFunctor
+r vtable for CCallback<ISteamUGC_ItemDownloader, DownloadItemResult_t, true>
 r vtable for CCallback<Addon::FileSystem, RemoteStoragePublishedFileSubscribed_t, false>
 r vtable for CCallback<Addon::FileSystem, RemoteStoragePublishedFileUnsubscribed_t, false>
 r vtable for CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*), FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
@@ -11576,9 +11550,7 @@ U vtable for __cxxabiv1::__pointer_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
 r vtable for Steamworks::FileDetails::Receiver
-r vtable for Steamworks::VoteDetails::Receiver
 r vtable for Steamworks::SubscribedFiles
-r vtable for Steamworks::MyVotes::Receiver
 r vtable for LegacyAddons::System
 r vtable for Addon::FileSystem
 r vtable for Addon::Job::Base
@@ -12170,7 +12142,7 @@ t CBaseFileSystem::InitAsync()::CBreakThread::~CBreakThread()
 t CBaseFileSystem::InitAsync()::CBreakThread::~CBreakThread()
 t CBaseFileSystem::InitAsync()::CBreakThread::~CBreakThread()
 r CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
-r CSys::LoadModules(CDedicatedAppSystemGroup*)::C.906
+r CSys::LoadModules(CDedicatedAppSystemGroup*)::C.911
 b Addon::FileSystem::Load()::Loaded
 b Addon::Reader::OpenFile(std::string const&)::buffer
 r Bootil::File::GetTempDir()::__FUNCTION__
@@ -12221,11 +12193,6 @@ r CryptoPP::operator<<(std::ostream&, CryptoPP::Integer const&)::upper
 b Gamemode::System::FindByName(std::string const&)::info
 d ConVarRef::Init(char const*, bool)::bFirst
 b KeyValues::SaveKeyToFile(KeyValues*, IBaseFileSystem*, void*, CUtlBuffer*, int, bool, bool)::buf
-u rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::GenericValue(rapidjson::Type)::defaultFlags
-u void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseStringToStream<0u, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::StackStream>(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::StackStream&)::escape
-u rapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::WriteString(char const*, unsigned int)::escape
-u rapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::WriteString(char const*, unsigned int)::hexDigits
-u rapidjson::internal::Pow10(int)::e
 d CUtlRBTree<FileInVPK_t, int, bool (*)(FileInVPK_t const&, FileInVPK_t const&), CUtlMemory<UtlRBTreeNode_t<FileInVPK_t, int>, int> >::Links(int) const::s_Sentinel
 d CUtlRBTree<TrackedFile_t, int, bool (*)(TrackedFile_t const&, TrackedFile_t const&), CUtlMemory<UtlRBTreeNode_t<TrackedFile_t, int>, int> >::Links(int) const::s_Sentinel
 d CUtlRBTree<CachedVPKRead_t, unsigned short, bool (*)(CachedVPKRead_t const&, CachedVPKRead_t const&), CUtlMemory<UtlRBTreeNode_t<CachedVPKRead_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel

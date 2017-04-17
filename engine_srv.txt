@@ -73,8 +73,8 @@ T crc32_combine64
 r crc_table
 T CreateInterface
 U CreateSimpleThread
-r CSWTCH.1777
-r CSWTCH.1951
+r CSWTCH.1789
+r CSWTCH.1962
 r CSWTCH.911
 d __CTOR_END__
 d __CTOR_LIST__
@@ -589,7 +589,6 @@ d g_pSharedChangeInfo
 d g_pSndIO
 b g_pSoundEmitterSystem
 b g_pSoundServices
-U g_pSteamClientGameServer
 b g_pStudioRender
 b gpszProductString
 b gpszVersionString
@@ -1075,13 +1074,14 @@ U SteamAPI_SetBreakpadAppID
 U SteamAPI_SetMiniDumpComment
 U SteamAPI_SetTryCatchCallbacks
 U SteamAPI_UnregisterCallback
-U SteamClient
 U SteamGameServer_GetHSteamPipe
 U SteamGameServer_GetHSteamUser
 U SteamGameServer_GetIPCCallCount
-U SteamGameServer_InitSafe
 U SteamGameServer_RunCallbacks
 U SteamGameServer_Shutdown
+U SteamInternal_ContextInit
+U SteamInternal_CreateInterface
+U SteamInternal_GameServer_Init
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U strcat@@GLIBC_2.0
@@ -1158,13 +1158,13 @@ b sv_visiblemaxplayers
 U swprintf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
 t T.1139
-t T.1616
-t T.1617
-t T.1969
-t T.2987
+t T.1627
+t T.1628
+t T.1980
+t T.2981
 t T.486
 t T.721
-t T.820
+t T.831
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
 t __tcf_0
@@ -2750,6 +2750,7 @@ t IsBoxIntersectingBoxExtents(Vector const&, Vector const&, Vector const&, Vecto
 t Overlay_OverlayPlaneToWorld(Vector const&, msurface2_t*, Vector const&, Vector&)
 t Overlay_WorldToOverlayPlane(Vector const&, Vector const&, Vector const&, Vector&)
 t Parabolic_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t SteamInternal_OnContextInit(void*)
 t Sys_RunningWithDebugModules()
 t TransformAnglesToLocalSpace(QAngle const&, matrix3x4_t const&)
 t TransformAnglesToWorldSpace(QAngle const&, matrix3x4_t const&)
@@ -5379,7 +5380,6 @@ U CVProfNode::ExitScope()
 U CVProfNode::MarkFrame()
 U CVProfNode::ResetPeak()
 t DecodeInfo::CopyVars(DecodeInfo const*)
-t void ICallQueue::QueueCall<IMaterialSystem*, IMaterialSystem, void, bool, bool>(IMaterialSystem*, void (IMaterialSystem::*)(bool), bool const&)
 t IGameEvent::~IGameEvent()
 t IGameEvent::~IGameEvent()
 b loopback_t::s_Allocator
@@ -6164,7 +6164,7 @@ t CModelRender::StudioSetupLighting(DrawModelState_t const&, Vector const&, Ligh
 t CModelRender::DrawModelShadowSetup(IClientRenderable*, int, int, DrawModelInfo_t*, matrix3x4_t*)
 t CModelRender::IsModelInstanceValid(unsigned short)
 t CModelRender::DrawModelExStaticProp(ModelRenderInfo_t&)
-t CModelRender::ForcedMaterialOverride(IMaterial*, OverrideType_t)
+t CModelRender::ForcedMaterialOverride(IMaterial*, char)
 t CModelRender::SuppressEngineLighting(bool)
 t CModelRender::DebugDrawLightingOrigin(DrawModelState_t const&, ModelRenderInfo_t const&)
 t CModelRender::DrawStaticPropArrayFast(StaticPropRenderInfo_t*, int, bool)
@@ -6198,6 +6198,10 @@ t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::AddRef()
 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::Release()
 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t CRefCounted1<CFunctor, CRefCountServiceNull>::AddRef()
+t CRefCounted1<CFunctor, CRefCountServiceNull>::Release()
+t CRefCounted1<CFunctor, CRefCountServiceNull>::~CRefCounted1()
+t CRefCounted1<CFunctor, CRefCountServiceNull>::~CRefCounted1()
 U CThreadEvent::Set()
 U CThreadEvent::Wait(unsigned int)
 U CThreadEvent::CThreadEvent(bool)
@@ -7075,12 +7079,12 @@ t CMemberFunctor0<CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_
 t CMemberFunctor0<CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >*, void (CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor0<CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >*, void (CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >*, void (CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor0()
-t CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
-t CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
-t CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
-t CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
-t CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
-t CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CThreadLocalInt<int>::~CThreadLocalInt()
 t CThreadLocalInt<unsigned int>::~CThreadLocalInt()
 t CThreadLocalPtr<CGMODDataTable>::~CThreadLocalPtr()
@@ -7793,6 +7797,7 @@ t CDedicatedServerAPI::RunFrame()
 t CEntityListAlongRay::EnumElement(IHandleEntity*)
 t CFSMountContentInfo::CFSMountContentInfo()
 t CFSMountContentInfo::CFSMountContentInfo()
+t void CMatRenderCallQueue::QueueCall<IMaterialSystem*, IMaterialSystem, void, bool, bool>(IMaterialSystem*, void (IMaterialSystem::*)(bool), bool const&)
 t CNetworkStringTable::DataChanged(int, CNetworkStringTableItem*)
 t CNetworkStringTable::GetCallback()
 t CNetworkStringTable::ParseUpdate(bf_read&, int)
@@ -10228,10 +10233,6 @@ t non-virtual thunk to CMemberFunctor0<CParallelProcessor<PackWork_t, CFuncJobIt
 t non-virtual thunk to CMemberFunctor0<CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >*, void (CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor0()
 t non-virtual thunk to CMemberFunctor0<CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >*, void (CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor0()
 t non-virtual thunk to CMemberFunctor0<CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >*, void (CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor0()
-t non-virtual thunk to CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
-t non-virtual thunk to CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
-t non-virtual thunk to CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
-t non-virtual thunk to CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
 t non-virtual thunk to CBaseClientState::ProcessMenu(SVC_Menu*)
 t non-virtual thunk to CBaseClientState::ProcessTick(NET_Tick*)
 t non-virtual thunk to CBaseClientState::ProcessPrint(SVC_Print*)
@@ -10343,6 +10344,7 @@ r typeinfo for CEngineTrace
 r typeinfo for CModelLoader
 r typeinfo for CModelRender
 r typeinfo for CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >
+r typeinfo for CRefCounted1<CFunctor, CRefCountServiceNull>
 r typeinfo for CTraceFilter
 r typeinfo for CVoiceServer
 r typeinfo for CVProfExport
@@ -10408,8 +10410,8 @@ r typeinfo for CLC_BaselineAck
 r typeinfo for CMDLCacheNotify
 r typeinfo for CMemberFunctor0<CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >*, void (CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor0<CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >*, void (CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo for CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo for CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
+r typeinfo for CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo for CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CTier0AppSystem<IDedicatedServerAPI>
 r typeinfo for CTier1AppSystem<IDedicatedServerAPI, 0>
 r typeinfo for CTier2AppSystem<IDedicatedServerAPI, 0>
@@ -10504,6 +10506,7 @@ r typeinfo for CLC_RespondCvarValue
 r typeinfo for ConVar_ServerBounded
 r typeinfo for CPureServerWhitelist
 r typeinfo for CRefCountServiceBase<true, CRefMT>
+r typeinfo for CRefCountServiceNull
 r typeinfo for CSteamAppSystemGroup
 r typeinfo for IPartitionEnumerator
 r typeinfo for IPureServerWhitelist
@@ -10623,6 +10626,7 @@ r typeinfo name for CEngineTrace
 r typeinfo name for CModelLoader
 r typeinfo name for CModelRender
 r typeinfo name for CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >
+r typeinfo name for CRefCounted1<CFunctor, CRefCountServiceNull>
 r typeinfo name for CTraceFilter
 r typeinfo name for CVoiceServer
 r typeinfo name for CVProfExport
@@ -10688,8 +10692,8 @@ r typeinfo name for CLC_BaselineAck
 r typeinfo name for CMDLCacheNotify
 r typeinfo name for CMemberFunctor0<CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >*, void (CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor0<CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >*, void (CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo name for CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo name for CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
+r typeinfo name for CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo name for CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CTier0AppSystem<IDedicatedServerAPI>
 r typeinfo name for CTier1AppSystem<IDedicatedServerAPI, 0>
 r typeinfo name for CTier2AppSystem<IDedicatedServerAPI, 0>
@@ -10784,6 +10788,7 @@ r typeinfo name for CLC_RespondCvarValue
 r typeinfo name for ConVar_ServerBounded
 r typeinfo name for CPureServerWhitelist
 r typeinfo name for CRefCountServiceBase<true, CRefMT>
+r typeinfo name for CRefCountServiceNull
 r typeinfo name for CSteamAppSystemGroup
 r typeinfo name for IPartitionEnumerator
 r typeinfo name for IPureServerWhitelist
@@ -10904,6 +10909,7 @@ r vtable for CEngineTrace
 r vtable for CModelLoader
 r vtable for CModelRender
 r vtable for CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >
+r vtable for CRefCounted1<CFunctor, CRefCountServiceNull>
 r vtable for CTraceFilter
 r vtable for CVoiceServer
 r vtable for CVProfExport
@@ -10969,8 +10975,8 @@ r vtable for CLC_BaselineAck
 r vtable for CMDLCacheNotify
 r vtable for CMemberFunctor0<CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >*, void (CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
 r vtable for CMemberFunctor0<CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >*, void (CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r vtable for CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r vtable for CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
+r vtable for CMemberFunctor1<CModelRender*, int (CManagedDataCacheClient<CColorMeshData, colormeshparams_t, CColorMeshData*>::*)(memhandle_t__*), memhandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r vtable for CMemberFunctor1<IMaterialSystem*, void (IMaterialSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CTier0AppSystem<IDedicatedServerAPI>
 r vtable for CTier1AppSystem<IDedicatedServerAPI, 0>
 r vtable for CTier2AppSystem<IDedicatedServerAPI, 0>
@@ -11204,6 +11210,7 @@ b Map_VisCurrentCluster()::visclusterwarningcount
 b MapPropOffsetsToIndices(CBaseEdict const*, CSendTablePrecalc*, unsigned short const*, unsigned short, unsigned short*)::testDict
 b EngineBitBufErrorHandler(BitBufErrorType, char const*)::errorNames
 r IntersectRayWithBoxBrush(TraceInfo_t*, cbrush_t const*, cboxbrush_t*)::signbits
+d SteamInternal_ModuleContext()::s_CallbackCounterAndContext
 b Host_CleanupConVarStringValue(char const*)::clean
 r Host_ReadPreStartupConfiguration()::s_PreStartupConfigConVars
 r void ConstructStringVArgsInternal_Impl<char>(char*, int, char const*, int, char*)::k_cMaxFormatStringArguments

@@ -165,8 +165,6 @@ b g_pVCRFile
 b g_SDLWindow
 b g_SpewBuffer
 b g_SpewBufferEnabled
-b g_SpewBufferFlushing
-b g_SpewBufferMutex
 B g_Telemetry
 b g_ThreadMainThreadID
 b g_TimesLessChildren
@@ -523,13 +521,11 @@ b s_pFileName
 t TimeCompare(TimeSums_t const&, TimeSums_t const&)
 t VCR_GetMode()
 b vec2_origin
-b vec2_origin
 b linuxCmdline
 b s_bInittedWD
 b s_GroupCount
 r s_pDeveloper
 t _SpewMessage(SpewType_t, char const*, int, Color const*, char const*, char*)
-b vec2_invalid
 b vec2_invalid
 r g_ColorLookup
 b s_nBufCurSize
@@ -585,8 +581,6 @@ t VCR_Error(char const*, ...)
 t VCR_Event(VCREvent)
 t VCR_Start(char const*, bool, IVCRHelpers*)
 t VCR_Write(void const*, int)
-t CUtlVector<SpewBufferEntry, CUtlMemory<SpewBufferEntry, int> >::InsertBefore(int, SpewBufferEntry const&)
-t CUtlVector<SpewBufferEntry, CUtlMemory<SpewBufferEntry, int> >::~CUtlVector()
 T CVProfNode::EnterScope()
 T CVProfNode::GetSubNode(char const*, int, char const*)
 T CVProfNode::GetSubNode(char const*, int, char const*, int)
@@ -740,6 +734,7 @@ T CThread::CThread()
 T CThread::~CThread()
 T CThread::~CThread()
 T CThread::~CThread()
+t CTSList<SpewBufferEntry>::~CTSList()
 t CTSList<int>::~CTSList()
 t CL2Cache::End()
 t CL2Cache::Start()

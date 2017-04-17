@@ -2622,7 +2622,6 @@ D GostR3411_94_CryptoProParamSet
 D GostR3411_94_TestParamSet
 T gost_set_default_param
 T gost_sign_keygen
-U g_pSteamClientGameServer
 U g_pThreadPool
 U g_pVCR
 U g_VProfCurrentProfile
@@ -4233,13 +4232,14 @@ U SteamAPI_SetTryCatchCallbacks
 U SteamAPI_Shutdown
 U SteamAPI_UnregisterCallback
 U SteamAPI_WriteMiniDump
-U SteamClient
 U SteamGameServer_GetHSteamPipe
 U SteamGameServer_GetHSteamUser
 U SteamGameServer_GetIPCCallCount
-U SteamGameServer_InitSafe
 U SteamGameServer_RunCallbacks
 U SteamGameServer_Shutdown
+U SteamInternal_ContextInit
+U SteamInternal_CreateInterface
+U SteamInternal_GameServer_Init
 T store_bignum
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1

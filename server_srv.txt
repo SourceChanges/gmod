@@ -747,66 +747,66 @@ T CreateInterface
 t createModule
 r CSWTCH.1082
 r CSWTCH.1379
-r CSWTCH.1777
-r CSWTCH.1835
-r CSWTCH.1849
-r CSWTCH.1852
-r CSWTCH.1862
-r CSWTCH.1863
-r CSWTCH.1945
-r CSWTCH.1966
-r CSWTCH.1977
-r CSWTCH.2012
-r CSWTCH.2037
-r CSWTCH.2098
-r CSWTCH.2099
-r CSWTCH.2103
-r CSWTCH.2130
-r CSWTCH.2141
+r CSWTCH.1783
+r CSWTCH.1841
+r CSWTCH.1855
+r CSWTCH.1858
+r CSWTCH.1868
+r CSWTCH.1869
+r CSWTCH.1951
+r CSWTCH.1972
+r CSWTCH.1983
+r CSWTCH.2018
+r CSWTCH.2043
+r CSWTCH.2104
+r CSWTCH.2105
+r CSWTCH.2109
+r CSWTCH.2136
 r CSWTCH.2147
-r CSWTCH.2173
-r CSWTCH.2178
-r CSWTCH.2180
-r CSWTCH.2191
-r CSWTCH.2209
-r CSWTCH.2211
-r CSWTCH.2213
-r CSWTCH.2308
-r CSWTCH.2391
-r CSWTCH.2393
-r CSWTCH.2466
-r CSWTCH.2500
-r CSWTCH.2502
-r CSWTCH.2507
-r CSWTCH.2558
-r CSWTCH.2559
-r CSWTCH.2560
-r CSWTCH.2642
-r CSWTCH.2711
-r CSWTCH.2760
-r CSWTCH.2762
-r CSWTCH.2764
-r CSWTCH.2803
-r CSWTCH.2813
-r CSWTCH.2825
-r CSWTCH.2886
-r CSWTCH.2953
-r CSWTCH.2958
-r CSWTCH.3017
-r CSWTCH.3029
-r CSWTCH.3291
-r CSWTCH.3448
-r CSWTCH.3450
-r CSWTCH.3452
+r CSWTCH.2153
+r CSWTCH.2179
+r CSWTCH.2184
+r CSWTCH.2186
+r CSWTCH.2197
+r CSWTCH.2215
+r CSWTCH.2217
+r CSWTCH.2219
+r CSWTCH.2314
+r CSWTCH.2397
+r CSWTCH.2399
+r CSWTCH.2472
+r CSWTCH.2506
+r CSWTCH.2508
+r CSWTCH.2513
+r CSWTCH.2564
+r CSWTCH.2565
+r CSWTCH.2566
+r CSWTCH.2648
+r CSWTCH.2717
+r CSWTCH.2766
+r CSWTCH.2768
+r CSWTCH.2770
+r CSWTCH.2809
+r CSWTCH.2820
+r CSWTCH.2831
+r CSWTCH.2893
+r CSWTCH.2959
+r CSWTCH.2964
+r CSWTCH.3023
+r CSWTCH.3035
+r CSWTCH.3297
+r CSWTCH.3454
+r CSWTCH.3456
+r CSWTCH.3458
 r CSWTCH.3495
-r CSWTCH.3496
-r CSWTCH.3497
+r CSWTCH.3502
+r CSWTCH.3503
 r CSWTCH.3509
 r CSWTCH.4002
-r CSWTCH.4656
-r CSWTCH.4658
-r CSWTCH.548
-r CSWTCH.606
+r CSWTCH.4662
+r CSWTCH.4664
+r CSWTCH.511
+r CSWTCH.569
 t ctimeFunc
 t ctimestampFunc
 d __CTOR_END__
@@ -1118,8 +1118,6 @@ b g_AlyxList
 b gameeventmanager
 d gamestats
 b gamestatsuploader
-b gAngleCount
-b gAngleIndex
 b g_antlion_cascade_push
 b g_antlionguard_hemorrhage
 d gAntlionGuardImpactDamageTable
@@ -2249,7 +2247,6 @@ b g_pServerWorldTable
 b g_pShadowEntities
 b g_pSharedChangeInfo
 b g_pSoundEmitterSystem
-U g_pSteamClientGameServer
 b g_pStringTableClientSideChoreoScenes
 b g_pStringTableEffectDispatch
 b g_pStringTableInfoPanel
@@ -2434,8 +2431,6 @@ b g_UtilTimer
 b g_VariantSaveDataOps
 b g_VBAllocTracker
 b g_vecAttackDir
-b gVectorCount
-b gVectorIndex
 b g_VectorPool
 b g_verticalBob
 b g_VguiScreenStringOps
@@ -4285,10 +4280,11 @@ U SteamAPI_RegisterCallback
 U SteamAPI_RegisterCallResult
 U SteamAPI_UnregisterCallback
 U SteamAPI_UnregisterCallResult
-U SteamClient
 d steamgameserverapicontext
 U SteamGameServer_GetHSteamPipe
 U SteamGameServer_GetHSteamUser
+U SteamInternal_ContextInit
+U SteamInternal_CreateInterface
 d sTeamNames
 b step_spline
 U strcasecmp@@GLIBC_2.0
@@ -4468,24 +4464,23 @@ t Sys_Error
 t SzAlloc
 d szExpressionTypes
 t SzFree
-t T.1080
-t T.1694
-t T.1767
-t T.1788
-t T.1956
-t T.2082
-t T.2088
-t T.2115
-t T.2142
-t T.2300
-t T.2404
-t T.2414
-t T.2436
-t T.2489
-t T.2641
-t T.2777
-t T.2819
-t T.3049
+t T.1087
+t T.1700
+t T.1773
+t T.1794
+t T.1962
+t T.2092
+t T.2094
+t T.2121
+t T.2306
+t T.2411
+t T.2420
+t T.2442
+t T.2495
+t T.2647
+t T.2783
+t T.2825
+t T.3055
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
 t targetSrcList.isra.410
@@ -5143,7 +5138,6 @@ t AIStrongOpt()
 t AI_TraceLOS(Vector const&, Vector const&, CBaseEntity*, CGameTrace*, ITraceFilter*)
 t AllocString(char const*, int)
 t Angle____eq(ILuaInterface*)
-t Angle____gc(ILuaInterface*)
 t AngleMatrix(RadianEuler const&, matrix3x4_t&)
 t AngleMatrix(RadianEuler const&, Vector const&, matrix3x4_t&)
 t AngleMatrix(QAngle const&, matrix3x4_t&)
@@ -6053,7 +6047,6 @@ t VectorAngles(float const*, float*)
 t VectorAngles(Vector const&, QAngle&)
 t VectorAngles(Vector const&, Vector const&, QAngle&)
 t Vector____eq(ILuaInterface*)
-t Vector____gc(ILuaInterface*)
 t VectorMatrix(Vector const&, matrix3x4_t&)
 t VectorRotate(float const*, matrix3x4_t const&, float*)
 t VectorRotate(Vector const&, Quaternion const&, Vector&)
@@ -6321,7 +6314,6 @@ t SENTENCEG_Init()
 t SetScaleMatrix(float, float, float, matrix3x4_t&)
 t SolveQuadratic(float, float, float, float&, float&)
 t _SSE_RSqrtFast(float)
-t SteamUserStats()
 t StringLessThan(char const* const&, char const* const&)
 t Studio_GetMass(CStudioHdr*)
 t Studio_SolveIK(int, int, int, Vector&, matrix3x4_t*)
@@ -7924,6 +7916,7 @@ t Push_CTakeDamageInfo(CTakeDamageInfo const*)
 t QuaternionAccumulate(Quaternion const&, float, Quaternion const&, Quaternion&)
 t QuaternionDotProduct(Quaternion const&, Quaternion const&)
 t RagdollGetBoneMatrix(ragdoll_t const&, CBoneAccessor&, int)
+t real__ents__GetCount(ILuaInterface*)
 t real__game__AddDecal(ILuaInterface*)
 t real__game__GetWorld(ILuaInterface*)
 t real__game__MountGMA(ILuaInterface*)
@@ -7990,7 +7983,6 @@ t Weapon__GetPrintName(ILuaInterface*)
 t WorldToLocalRotation(VMatrix const&, Vector const&, float)
 t AllocateStringHelper2(char const*, char*)
 t Angle____eq__Redirect(lua_State*)
-t Angle____gc__Redirect(lua_State*)
 t AngleVectorsTranspose(QAngle const&, Vector*, Vector*, Vector*)
 t Angle__Zero__Redirect(lua_State*)
 t AssignRangeMultiplier(int, float)
@@ -8544,6 +8536,7 @@ t real__net__WriteMatrix(ILuaInterface*)
 t real__net__WriteNormal(ILuaInterface*)
 t real__net__WriteString(ILuaInterface*)
 t real__net__WriteVector(ILuaInterface*)
+t real__player__GetCount(ILuaInterface*)
 t real__system__HasFocus(ILuaInterface*)
 t real__umsg__PoolString(ILuaInterface*)
 t real__util__Decompress(ILuaInterface*)
@@ -8586,7 +8579,6 @@ t UTIL_ScreenShakeObject(CBaseEntity*, Vector const&, float, float, float, float
 t UTIL_ValidateSoundName(string_t&, char const*)
 t VecCheckThrowTolerance(CBaseEntity*, Vector const&, Vector, float, float)
 t Vector____eq__Redirect(lua_State*)
-t Vector____gc__Redirect(lua_State*)
 t Vector__Zero__Redirect(lua_State*)
 t Vehicle__BoostTimeLeft(ILuaInterface*)
 t Vehicle__GetWheelCount(ILuaInterface*)
@@ -8996,6 +8988,7 @@ t VMatrix__Scale__Redirect(lua_State*)
 t VMatrix__SetUp__Redirect(lua_State*)
 t VMatrix____sub__Redirect(lua_State*)
 t WeaponManager_AddManaged(CBaseEntity*)
+t Weapon__SetLastShootTime(ILuaInterface*)
 t ActivityList_HighestIndex()
 t ActivityList_IndexForName(char const*)
 t ActivityList_NameForIndex(int)
@@ -9324,7 +9317,9 @@ t real__debugoverlay__Sphere(ILuaInterface*)
 t real__engine__GetGamemodes(ILuaInterface*)
 t real__engine__TickInterval(ILuaInterface*)
 t real__game__ConsoleCommand(ILuaInterface*)
+t real__game__GetGlobalState(ILuaInterface*)
 t real__game__RemoveRagdolls(ILuaInterface*)
+t real__game__SetGlobalState(ILuaInterface*)
 t real__GLobal__AddCSLuaFile(ILuaInterface*)
 t real__GLobal__BroadcastLua(ILuaInterface*)
 t real__GLobal__ConVarExists(ILuaInterface*)
@@ -9531,6 +9526,7 @@ t SendProxy_FuncRotatingAngle(SendProp const*, void const*, void const*, DVarian
 t SendProxy_StringT_To_String(SendProp const*, void const*, void const*, DVariant*, int, int)
 t SENTENCEG_PlaySentenceIndex(edict_t*, int, float, soundlevel_t, int, int)
 t StatsTrackingIsFullyEnabled()
+t SteamInternal_OnContextInit(void*)
 t StriderBuster_GetPickupTime(CBaseEntity*)
 t Studio_FindRandomAttachment(CStudioHdr const*, char const*)
 t Sys_RunningWithDebugModules()
@@ -9723,6 +9719,8 @@ t RagdollSetupAnimatedFriction(IPhysicsEnvironment*, ragdoll_t*, int)
 t real__debugoverlay__SweptBox(ILuaInterface*)
 t real__debugoverlay__Triangle(ILuaInterface*)
 t real__engine__ActiveGamemode(ILuaInterface*)
+t real__game__GetGlobalCounter(ILuaInterface*)
+t real__game__SetGlobalCounter(ILuaInterface*)
 t real__GLobal__AddOriginToPVS(ILuaInterface*)
 t real__GLobal__DeriveGamemode(ILuaInterface*)
 t real__GLobal__GetGlobal2Bool(ILuaInterface*)
@@ -10619,6 +10617,7 @@ t Vector3DMultiplyPositionProjective(VMatrix const&, Vector const&, Vector&)
 t Vehicle__IsEngineEnabled__Redirect(lua_State*)
 t Vehicle__IsEngineStarted__Redirect(lua_State*)
 t Vehicle__SetSpringLength__Redirect(lua_State*)
+t Weapon__SetLastShootTime__Redirect(lua_State*)
 t ActivityList_RegisterSharedActivity(char const*, int)
 t CalculateSphereFromProjectionMatrix(VMatrix const&, Vector*, float*)
 t CaselessStringLessThanIgnoreSlashes(char const* const&, char const* const&)
@@ -14443,6 +14442,7 @@ b vec4_origin
 b vec4_origin
 b vec4_origin
 b vec4_origin
+b vec4_origin
 b vgui_screen
 r VORT_ATTACK
 b waterbullet
@@ -16072,6 +16072,7 @@ b vec4_invalid
 b vec4_invalid
 b vec4_invalid
 b vec4_invalid
+b vec4_invalid
 b wc_link_edit
 b xen_ttrigger
 b ACT_CROW_LAND
@@ -16711,7 +16712,6 @@ b func_tankapcrocket
 b func_traincontrols
 b func_useableladder
 b func_weight_button
-b gAnglePoolInstance
 b g_CCorpse_ClassReg
 b g_CEmbers_ClassReg
 b g_CPlasma_ClassReg
@@ -16802,7 +16802,6 @@ b ai_show_connect_fly
 b ai_test_los_command
 b ai_weapon_stunstick
 b Angle___eq__Factory
-b Angle___gc__Factory
 b Angle_Zero__Factory
 d barnacleLinearTable
 b basehl1combatweapon
@@ -16841,7 +16840,6 @@ b grenade_beam_chaser
 b g_ServerChoreoTools
 b g_StartTimeCurThink
 b g_TEPlayerAnimEvent
-b gVectorPoolInstance
 b info_player_combine
 b info_projecteddecal
 b item_ammo_357_large
@@ -17061,7 +17059,6 @@ b trigger_physics_trap
 b trigger_weapon_strip
 t ValidateMOTDFilename(IConVar*, char const*, float)
 b Vector___eq__Factory
-b Vector___gc__Factory
 b Vector_Zero__Factory
 b VMatrix_Set__Factory
 r VORTIGAUNT_LEFT_CLAW
@@ -17178,6 +17175,7 @@ b prop_dynamic_override
 b prop_physics_override
 b prop_ragdoll_attached
 b prop_vehicle_jeep_old
+t redir__ents__GetCount(lua_State*)
 t redir__game__AddDecal(lua_State*)
 t redir__game__GetWorld(lua_State*)
 t redir__game__MountGMA(lua_State*)
@@ -17441,6 +17439,7 @@ b Entity_SetSkin__Factory
 b Entity_TestPVS__Factory
 b Entity_Visible__Factory
 b env_citadel_energy_core
+b fectory__ents__GetCount
 b fectory__game__AddDecal
 b fectory__game__GetWorld
 b fectory__game__MountGMA
@@ -17541,6 +17540,7 @@ t redir__net__WriteMatrix(lua_State*)
 t redir__net__WriteNormal(lua_State*)
 t redir__net__WriteString(lua_State*)
 t redir__net__WriteVector(lua_State*)
+t redir__player__GetCount(lua_State*)
 t redir__system__HasFocus(lua_State*)
 t redir__umsg__PoolString(lua_State*)
 t redir__util__Decompress(lua_State*)
@@ -17831,6 +17831,7 @@ b fectory__net__WriteMatrix
 b fectory__net__WriteNormal
 b fectory__net__WriteString
 b fectory__net__WriteVector
+b fectory__player__GetCount
 b fectory__system__HasFocus
 b fectory__umsg__PoolString
 b fectory__util__Decompress
@@ -18364,7 +18365,9 @@ t redir__debugoverlay__Sphere(lua_State*)
 t redir__engine__GetGamemodes(lua_State*)
 t redir__engine__TickInterval(lua_State*)
 t redir__game__ConsoleCommand(lua_State*)
+t redir__game__GetGlobalState(lua_State*)
 t redir__game__RemoveRagdolls(lua_State*)
+t redir__game__SetGlobalState(lua_State*)
 t redir__GLobal__AddCSLuaFile(lua_State*)
 t redir__GLobal__BroadcastLua(lua_State*)
 t redir__GLobal__ConVarExists(lua_State*)
@@ -18676,7 +18679,9 @@ b fectory__debugoverlay__Sphere
 b fectory__engine__GetGamemodes
 b fectory__engine__TickInterval
 b fectory__game__ConsoleCommand
+b fectory__game__GetGlobalState
 b fectory__game__RemoveRagdolls
+b fectory__game__SetGlobalState
 b fectory__sound__GetProperties
 b fectory__system__BatteryPower
 b fectory__util__DistanceToLine
@@ -18755,6 +18760,8 @@ b __proxy_SendProxy_FlexWeights
 t redir__debugoverlay__SweptBox(lua_State*)
 t redir__debugoverlay__Triangle(lua_State*)
 t redir__engine__ActiveGamemode(lua_State*)
+t redir__game__GetGlobalCounter(lua_State*)
+t redir__game__SetGlobalCounter(lua_State*)
 t redir__GLobal__AddOriginToPVS(lua_State*)
 t redir__GLobal__DeriveGamemode(lua_State*)
 t redir__GLobal__GetGlobal2Bool(lua_State*)
@@ -18991,6 +18998,8 @@ d EVENTQUEUE_SAVE_RESTORE_VERSION
 b fectory__debugoverlay__SweptBox
 b fectory__debugoverlay__Triangle
 b fectory__engine__ActiveGamemode
+b fectory__game__GetGlobalCounter
+b fectory__game__SetGlobalCounter
 b fectory__navmesh__GetMarkedArea
 b fectory__navmesh__SetMarkedArea
 b fectory__physenv__GetAirDensity
@@ -19175,6 +19184,7 @@ b sv_maxusrcmdprocessticks_holdaim
 b Vehicle_IsEngineEnabled__Factory
 b Vehicle_IsEngineStarted__Factory
 b Vehicle_SetSpringLength__Factory
+b Weapon_SetLastShootTime__Factory
 b worker__GLobal__DropEntityIfHeld
 b worker__GLobal__GetGlobal2Entity
 b worker__GLobal__GetGlobal2String
@@ -21683,7 +21693,6 @@ t CUtlVector<IHandleEntity*, CUtlMemory<IHandleEntity*, int> >::InsertBefore(int
 t CUtlVector<memhandle_t__*, CUtlMemory<memhandle_t__*, int> >::InsertBefore(int, memhandle_t__* const&)
 t CUtlVector<AI_EnemyInfo_t*, CUtlMemory<AI_EnemyInfo_t*, int> >::InsertBefore(int, AI_EnemyInfo_t* const&)
 t CUtlVector<AI_EnemyInfo_t*, CUtlMemory<AI_EnemyInfo_t*, int> >::~CUtlVector()
-t CUtlVector<AngleContainer*, CUtlMemory<AngleContainer*, int> >::EnsureCount(int)
 t CUtlVector<CChoreoChannel*, CUtlMemory<CChoreoChannel*, int> >::InsertBefore(int, CChoreoChannel* const&)
 t CUtlVector<CChoreoChannel*, CUtlMemory<CChoreoChannel*, int> >::~CUtlVector()
 t CUtlVector<CEnvSoundscape*, CUtlMemory<CEnvSoundscape*, int> >::InsertBefore(int, CEnvSoundscape* const&)
@@ -21699,7 +21708,6 @@ t CUtlVector<CTeamSpawnPoint*, CUtlMemory<CTeamSpawnPoint*, int> >::~CUtlVector(
 t CUtlVector<IEntityListener*, CUtlMemory<IEntityListener*, int> >::InsertBefore(int, IEntityListener* const&)
 t CUtlVector<QueuedMessage_t*, CUtlMemory<QueuedMessage_t*, int> >::InsertBefore(int, QueuedMessage_t* const&)
 t CUtlVector<QueuedMessage_t*, CUtlMemory<QueuedMessage_t*, int> >::~CUtlVector()
-t CUtlVector<VectorContainer*, CUtlMemory<VectorContainer*, int> >::EnsureCount(int)
 t CUtlVector<AI_FollowGroup_t*, CUtlMemory<AI_FollowGroup_t*, int> >::InsertBefore(int, AI_FollowGroup_t* const&)
 t CUtlVector<CAI_BehaviorBase*, CUtlMemory<CAI_BehaviorBase*, int> >::InsertBefore(int, CAI_BehaviorBase* const&)
 t CUtlVector<CBaseAchievement*, CUtlMemory<CBaseAchievement*, int> >::InsertBefore(int, CBaseAchievement* const&)
@@ -25862,6 +25870,7 @@ t CGMOD_Player::DeathSound(CTakeDamageInfo const&)
 t CGMOD_Player::GetBaseMap()
 t CGMOD_Player::KillSilent()
 t CGMOD_Player::SnapToGrid(Vector&)
+t CGMOD_Player::FireBullets(FireBulletsInfo_t const&)
 t CGMOD_Player::GetUniqueID()
 t CGMOD_Player::OnPlayerSay(char const*)
 t CGMOD_Player::PlayGesture(int)
@@ -37765,7 +37774,6 @@ t CSingleplayRules::CSingleplayRules()
 t CSingleplayRules::~CSingleplayRules()
 t CSingleplayRules::~CSingleplayRules()
 t CSortedCacheFile::Less(CSortedCacheFile const&, CSortedCacheFile const&, void*)
-t CSteamAPIContext::Init()
 b CStressEntityReg::s_pHead
 t CTacticalMission::~CTacticalMission()
 t CTacticalMission::~CTacticalMission()
@@ -39762,7 +39770,6 @@ t CAIWeaponStunStick::CAIWeaponStunStick()
 t CAIWeaponStunStick::CAIWeaponStunStick()
 t CAIWeaponStunStick::~CAIWeaponStunStick()
 t CAIWeaponStunStick::~CAIWeaponStunStick()
-t CAnglePoolInstance::~CAnglePoolInstance()
 t CBarnacleTongueTip::GetBaseMap()
 t CBarnacleTongueTip::CreateSpring(CBaseAnimating*)
 t CBarnacleTongueTip::GetDataDescMap()
@@ -41343,7 +41350,6 @@ t CVariantSaveDataOps::Save(SaveRestoreFieldInfo_t const&, ISave*)
 t CVariantSaveDataOps::IsEmpty(SaveRestoreFieldInfo_t const&)
 t CVariantSaveDataOps::Restore(SaveRestoreFieldInfo_t const&, IRestore*)
 t CVariantSaveDataOps::MakeEmpty(SaveRestoreFieldInfo_t const&)
-t CVectorPoolInstance::~CVectorPoolInstance()
 t CVoiceGameMgrHelper::CanPlayerHearPlayer(CBasePlayer*, CBasePlayer*, bool&)
 t CVoiceGameMgrHelper::~CVoiceGameMgrHelper()
 t CVoiceGameMgrHelper::~CVoiceGameMgrHelper()
@@ -61082,6 +61088,7 @@ r GetAttachTypeFromString(char const*)::pAttachmentNames
 b GetSequenceLinearMotion(CStudioHdr*, int, float const*, Vector*)::__executeCount
 b GetSequenceLinearMotion(CStudioHdr*, int, float const*, Vector*)::__executeCount
 b GetPhysObjSaveRestoreOps(PhysInterfaceId_t)::inited
+d SteamInternal_ModuleContext()::s_CallbackCounterAndContext
 b Interpolator_NameForCurveType(int, bool)::outname
 r SetPhysicsObjectFromPhysCollide(CBaseEntity*, CPhysCollide*)::strName
 d ActivityList_RegisterSharedActivity(char const*, int)::lastActivityIndex
@@ -61252,7 +61259,7 @@ b CBoneManipulate::GetBoneAngle(unsigned char)::a
 b CBoneManipulate::GetBoneScale(unsigned char)::v
 b CBoneManipulate::GetBonePosition(unsigned char)::v
 t CGameStringPool::Dump()::_Local::F(char const* const*, char const* const*)
-r CLuaHTTPRequest::ReadHeaders(CLuaTable&)::C.491
+r CLuaHTTPRequest::ReadHeaders(CLuaTable&)::C.504
 b CMultiplayRules::DetermineMapCycleFilename(char*, int, bool)::szLastResult
 t CNPC_BaseZombie::FindNearestPhysicsObject(int)::CZombieSwatEntitiesEnum::EnumElement(IHandleEntity*)
 d CNPC_Vortigaunt::SetScriptedScheduleIgnoreConditions(Interruptability_t)::g_VortConditions
@@ -61274,7 +61281,7 @@ b CAIWeaponCrossbow::GetBulletSpread()::cone
 b CBaseCombatWeapon::GetBulletSpread()::cone
 d CBaseCombatWeapon::GetProficiencyValues()::defaultWeaponProficiencyTable
 b CLuaNetworkedVars::Cycle()::fNextTime
-r CNPC_AntlionGuard::SummonAntlions()::C.2104
+r CNPC_AntlionGuard::SummonAntlions()::C.2110
 r CPropJeepEpisodic::CreateHazardLights()::s_szAttach
 r CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
 b CAI_FollowBehavior::GetFollowPoint()::invalid
@@ -61341,7 +61348,7 @@ b ISaveRestoreOps* CUtlVectorDataopsInstantiator<13>::GetDataOps<CUtlVector<CHan
 b ISaveRestoreOps* CUtlVectorDataopsInstantiator<13>::GetDataOps<CUtlVector<CHandle<CBaseFlex>, CUtlMemory<CHandle<CBaseFlex>, int> > >(CUtlVector<CHandle<CBaseFlex>, CUtlMemory<CHandle<CBaseFlex>, int> >*)::ops
 b ISaveRestoreOps* CUtlVectorDataopsInstantiator<16>::GetDataOps<CUtlVector<float, CUtlMemory<float, int> > >(CUtlVector<float, CUtlMemory<float, int> >*)::ops
 b ISaveRestoreOps* CUtlVectorDataopsInstantiator<5>::GetDataOps<CUtlVector<int, CUtlMemory<int, int> > >(CUtlVector<int, CUtlMemory<int, int> >*)::ops
-r CAI_MappedActivityBehavior_Temporary::UpdateTranslateActivityMap()::C.1795
+r CAI_MappedActivityBehavior_Temporary::UpdateTranslateActivityMap()::C.1801
 d GMod::Util::Base64Encode(unsigned char*, unsigned int, unsigned char*, unsigned int)::pLookupTable
 b CSave::Log(char const*, _fieldtypes, void*, int)::szBuf
 b CSave::Log(char const*, _fieldtypes, void*, int)::szTempBuf

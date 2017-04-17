@@ -251,9 +251,7 @@ U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
 U ThreadGetCurrentId
 U ThreadInterlockedAssignIf
-U ThreadInterlockedDecrement
 U ThreadInterlockedExchange
-U ThreadInterlockedIncrement
 U time@@GLIBC_2.0
 U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
@@ -1022,10 +1020,6 @@ t CUtlVector<unsigned short, CUtlMemory<unsigned short, int> >::InsertBefore(int
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
 U CVProfNode::ExitScope()
-t void ICallQueue::QueueCall<CStudioRender*, CStudioRender, void, StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int, StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int>(CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__* const&, StudioRenderContext_t const&, matrix3x4_t* const&, studiohdr_t* const&, Ray_t const&, Vector const&, IMaterial* const&, float const&, int const&, bool const&, int const&)
-t void ICallQueue::QueueCall<CStudioRender*, CStudioRender, void, StudioDecalHandle_t__*, StudioDecalHandle_t__*>(CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__* const&)
-t void ICallQueue::QueueCall<CStudioRender*, CStudioRender, void, DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int, DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int>(CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t* const&, FlexWeights_t const&, int const&)
-t void ICallQueue::QueueCall<CStudioRender*, CStudioRender, void, DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int, DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int>(CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int const&)
 t CVProfScope::~CVProfScope()
 t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&)
 t CEmptyConVar::SetValue(float)
@@ -1033,12 +1027,11 @@ t CEmptyConVar::SetValue(int)
 t CEmptyConVar::SetValue(char const*)
 t CEmptyConVar::~CEmptyConVar()
 t CEmptyConVar::~CEmptyConVar()
-t CMeshBuilder::End(bool, bool)
 t CMeshBuilder::~CMeshBuilder()
-t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::AddRef()
-t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::Release()
-t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
-t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t CRefCounted1<CFunctor, CRefCountServiceNull>::AddRef()
+t CRefCounted1<CFunctor, CRefCountServiceNull>::Release()
+t CRefCounted1<CFunctor, CRefCountServiceNull>::~CRefCounted1()
+t CRefCounted1<CFunctor, CRefCountServiceNull>::~CRefCounted1()
 t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 b InterfaceReg::s_pInterfaceRegs
@@ -1072,7 +1065,7 @@ t CStudioRender::R_StudioDrawHulls(int, bool)
 t CStudioRender::R_StudioFlexVerts(mstudiomesh_t*, int)
 t CStudioRender::AddTriangleToDecal(CStudioRender::DecalBuildInfo_t&, int, int, int, int, int, int)
 t CStudioRender::ComputeFlexWeights(int, mstudioflex_t*, MorphWeight_t*)
-t CStudioRender::ComputePoseToDecal(Ray_t const&, Vector const&)
+t CStudioRender::ComputePoseToDecal(Vector const&, Vector const&, Vector const&)
 t CStudioRender::InitDebugMaterials()
 t CStudioRender::RenderGlintTexture(eyeballstate_t const*, Vector const&, Vector const&, Vector const&)
 t CStudioRender::R_StudioDrawPoints(IMatRenderContext*, int, void*, IMaterial**, int*, int, int, ColorMeshInfo_t*)
@@ -1124,7 +1117,7 @@ t void CStudioRender::ComputeFlexedVertex_StreamOffset<mstudiovertanim_wrinkle_t
 t CStudioRender::R_StudioSoftwareProcessMesh_Normals(mstudiomesh_t*, CMeshBuilder&, int, unsigned short*, StudioModelLighting_t, bool, float, bool, bool)
 t CStudioRender::R_StudioProcessFlexedMesh_StreamOffset(mstudiomesh_t*, int)
 t CStudioRender::Init()
-t CStudioRender::AddDecal(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int)
+t CStudioRender::AddDecal(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Vector const&, Vector const&, Vector const&, IMaterial*, float, int, bool, int)
 t CStudioRender::AddGlint(CPixelWriter&, float, float, Vector const&)
 t CStudioRender::Shutdown()
 t CStudioRender::AddShadow(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*)
@@ -1181,24 +1174,24 @@ t CUtlLinkedList<CStudioRender::Decal_t, unsigned short, false, unsigned short, 
 t CUtlLinkedList<CStudioRender::Decal_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::Decal_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
 t mstudiomodel_t::CacheVertexData(void*)
-t CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
-t CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor0()
-t CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor0()
-t CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
-t CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
-t CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
-t CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
-t CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor3()
-t CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor3()
-t CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
-t CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor4()
-t CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor4()
-t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
-t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor5()
-t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor5()
-t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
-t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor5()
-t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor5()
+t CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
+t CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
+t CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
+t CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
+t CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
+t CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
+t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
+t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
+t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
+t CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CTier1AppSystem<IStudioRender, 0>::Disconnect()
 t CTier1AppSystem<IStudioRender, 0>::Init()
 t CTier1AppSystem<IStudioRender, 0>::Connect(void* (*)(char const*, int*))
@@ -1217,9 +1210,9 @@ t CDllDemandLoader::CDllDemandLoader(char const*)
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
-t CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
-t CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor11()
-t CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor11()
+t CMemberFunctor12<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Vector const&, Vector const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Vector, Vector, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor12<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Vector const&, Vector const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Vector, Vector, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor12()
+t CMemberFunctor12<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Vector const&, Vector const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Vector, Vector, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor12()
 t CCachedRenderData::StartModel()
 t CCachedRenderData::SetBodyPart(int)
 t CCachedRenderData::CreateFlexVertex(int)
@@ -1239,6 +1232,10 @@ t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
 t CUtlCharConversion::FindConversion(char const*, int*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t void CMatRenderCallQueue::QueueCall<CStudioRender*, CStudioRender, void, StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Vector const&, Vector const&, Vector const&, IMaterial*, float, int, bool, int, StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Vector, Vector, Vector, IMaterial*, float, int, bool, int>(CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Vector const&, Vector const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__* const&, StudioRenderContext_t const&, matrix3x4_t* const&, studiohdr_t* const&, Vector const&, Vector const&, Vector const&, IMaterial* const&, float const&, int const&, bool const&, int const&)
+t void CMatRenderCallQueue::QueueCall<CStudioRender*, CStudioRender, void, StudioDecalHandle_t__*, StudioDecalHandle_t__*>(CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__* const&)
+t void CMatRenderCallQueue::QueueCall<CStudioRender*, CStudioRender, void, DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int, DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int>(CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t* const&, FlexWeights_t const&, int const&)
+t void CMatRenderCallQueue::QueueCall<CStudioRender*, CStudioRender, void, DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int, DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int>(CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int const&)
 t CProcessMeshWrapper<0, 0, 0, 0, 0>::R_StudioSoftwareProcessMesh(mstudio_meshvertexdata_t const*, matrix3x4_t*, CCachedRenderData&, CMeshBuilder&, int, unsigned short*, unsigned int, IMaterial*)
 t CProcessMeshWrapper<0, 0, 0, 0, 1>::R_StudioSoftwareProcessMesh(mstudio_meshvertexdata_t const*, matrix3x4_t*, CCachedRenderData&, CMeshBuilder&, int, unsigned short*, unsigned int, IMaterial*)
 t CProcessMeshWrapper<0, 0, 0, 1, 0>::R_StudioSoftwareProcessMesh(mstudio_meshvertexdata_t const*, matrix3x4_t*, CCachedRenderData&, CMeshBuilder&, int, unsigned short*, unsigned int, IMaterial*)
@@ -1291,9 +1288,6 @@ t CUtlFixedLinkedList<CStudioRender::DecalModelList_t>::~CUtlFixedLinkedList()
 t CUtlNoEscConversion::FindConversion(char const*, int*)
 t CKeyValuesErrorStack::ReportError(char const*)
 t CMatRenderContextPtr::~CMatRenderContextPtr()
-t CRefCountServiceBase<true, CRefMT>::OnFinalRelease()
-t CRefCountServiceBase<true, CRefMT>::~CRefCountServiceBase()
-t CRefCountServiceBase<true, CRefMT>::~CRefCountServiceBase()
 t CStudioRenderContext::BeginFrame()
 t CStudioRenderContext::Disconnect()
 t CStudioRenderContext::UnloadModel(studiohwdata_t*)
@@ -1337,7 +1331,7 @@ t CStudioRenderContext::DrawStaticPropShadows(DrawModelInfo_t const&, matrix3x4_
 t CStudioRenderContext::MeshNeedsTangentSpace(studiohdr_t*, studioloddata_t*, mstudiomesh_t*)
 t CStudioRenderContext::SetAmbientLightColors(Vector const*)
 t CStudioRenderContext::SetAmbientLightColors(Vector4D const*)
-t CStudioRenderContext::ForcedMaterialOverride(IMaterial*, OverrideType_t)
+t CStudioRenderContext::ForcedMaterialOverride(IMaterial*, char)
 t CStudioRenderContext::R_StudioBuildMeshGroup(char const*, bool, studiomeshgroup_t*, OptimizedModel::StripGroupHeader_t*, mstudiomesh_t*, studiohdr_t*, unsigned long long)
 t CStudioRenderContext::R_StudioBuildMeshStrips(studiomeshgroup_t*, OptimizedModel::StripGroupHeader_t*, studiohdr_t*)
 t CStudioRenderContext::R_StudioCreateSingleMesh(studiohdr_t*, studioloddata_t*, mstudiomesh_t*, OptimizedModel::MeshHeader_t*, int, studiomeshdata_t*, int*)
@@ -1351,7 +1345,7 @@ t CStudioRenderContext::R_StudioDestroyStaticMeshes(int, studiomeshdata_t**)
 t CStudioRenderContext::ComputeHWMorphDecalBoneRemap(studiohdr_t*, OptimizedModel::FileHeader_t*, studiohwdata_t*, int)
 t CStudioRenderContext::GetMaterialListFromBodyAndSkin(unsigned short, int, int, int, IMaterial**)
 t CStudioRenderContext::ComputeLightingConstDirectional(Vector const*, int, LightDesc_t*, Vector const&, Vector const&, Vector&, float)
-t CStudioRenderContext::GMOD_ForcedMaterialOverrideByIndex(int, IMaterial*, OverrideType_t)
+t CStudioRenderContext::GMOD_ForcedMaterialOverrideByIndex(int, IMaterial*, char)
 t CStudioRenderContext::GMOD_ResetMaterialOverridesByIndex()
 t CStudioRenderContext::Init()
 t CStudioRenderContext::Connect(void* (*)(char const*, int*))
@@ -2121,48 +2115,32 @@ t non-virtual thunk to CEmptyConVar::GetName() const
 t non-virtual thunk to CEmptyConVar::IsFlagSet(int) const
 t non-virtual thunk to ConVar::GetName() const
 t non-virtual thunk to ConVar::IsFlagSet(int) const
-t non-virtual thunk to CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
-t non-virtual thunk to CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
-t non-virtual thunk to CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor0()
-t non-virtual thunk to CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor0()
-t non-virtual thunk to CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
-t non-virtual thunk to CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
-t non-virtual thunk to CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor3()
-t non-virtual thunk to CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor3()
-t non-virtual thunk to CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor4()
-t non-virtual thunk to CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor4()
-t non-virtual thunk to CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor5()
-t non-virtual thunk to CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor5()
-t non-virtual thunk to CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor5()
-t non-virtual thunk to CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor5()
-t non-virtual thunk to CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor11()
-t non-virtual thunk to CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor11()
 r typeinfo for ConCommand
 r typeinfo for IAppSystem
 r typeinfo for IRefCounted
 r typeinfo for CEmptyConVar
-r typeinfo for CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >
+r typeinfo for CRefCounted1<CFunctor, CRefCountServiceNull>
 r typeinfo for IStudioRender
 r typeinfo for CBaseAppSystem<IStudioRender>
 r typeinfo for ConCommandBase
-r typeinfo for CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo for CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo for CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo for CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
+r typeinfo for CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo for CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo for CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo for CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CTier0AppSystem<IStudioRender>
 r typeinfo for CTier1AppSystem<IStudioRender, 0>
 r typeinfo for CTier2AppSystem<IStudioRender, 0>
 r typeinfo for CTier3AppSystem<IStudioRender, 0>
 r typeinfo for CDefaultAccessor
 r typeinfo for CDllDemandLoader
-r typeinfo for CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
+r typeinfo for CMemberFunctor12<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Vector const&, Vector const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Vector, Vector, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CUtlCharConversion
 r typeinfo for CUtlNoEscConversion
 r typeinfo for ITextureRegenerator
 r typeinfo for ConVar_ServerBounded
-r typeinfo for CRefCountServiceBase<true, CRefMT>
+r typeinfo for CRefCountServiceNull
 r typeinfo for CStudioRenderContext
 r typeinfo for CUtlCStringConversion
 r typeinfo for IConCommandBaseAccessor
@@ -2174,28 +2152,28 @@ r typeinfo name for ConCommand
 r typeinfo name for IAppSystem
 r typeinfo name for IRefCounted
 r typeinfo name for CEmptyConVar
-r typeinfo name for CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >
+r typeinfo name for CRefCounted1<CFunctor, CRefCountServiceNull>
 r typeinfo name for IStudioRender
 r typeinfo name for CBaseAppSystem<IStudioRender>
 r typeinfo name for ConCommandBase
-r typeinfo name for CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo name for CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo name for CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo name for CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo name for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r typeinfo name for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
+r typeinfo name for CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo name for CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo name for CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo name for CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo name for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo name for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CTier0AppSystem<IStudioRender>
 r typeinfo name for CTier1AppSystem<IStudioRender, 0>
 r typeinfo name for CTier2AppSystem<IStudioRender, 0>
 r typeinfo name for CTier3AppSystem<IStudioRender, 0>
 r typeinfo name for CDefaultAccessor
 r typeinfo name for CDllDemandLoader
-r typeinfo name for CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
+r typeinfo name for CMemberFunctor12<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Vector const&, Vector const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Vector, Vector, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CUtlCharConversion
 r typeinfo name for CUtlNoEscConversion
 r typeinfo name for ITextureRegenerator
 r typeinfo name for ConVar_ServerBounded
-r typeinfo name for CRefCountServiceBase<true, CRefMT>
+r typeinfo name for CRefCountServiceNull
 r typeinfo name for CStudioRenderContext
 r typeinfo name for CUtlCStringConversion
 r typeinfo name for IConCommandBaseAccessor
@@ -2207,27 +2185,26 @@ r vtable for ConCommand
 r vtable for IAppSystem
 r vtable for IRefCounted
 r vtable for CEmptyConVar
-r vtable for CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >
+r vtable for CRefCounted1<CFunctor, CRefCountServiceNull>
 r vtable for IStudioRender
 r vtable for CBaseAppSystem<IStudioRender>
 r vtable for ConCommandBase
-r vtable for CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r vtable for CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r vtable for CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r vtable for CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r vtable for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
-r vtable for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
+r vtable for CMemberFunctor0<CStudioRender*, void (CStudioRender::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r vtable for CMemberFunctor1<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*), StudioDecalHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r vtable for CMemberFunctor3<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r vtable for CMemberFunctor4<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r vtable for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*), IMaterial*, void*, FlashlightState_t*, VMatrix*, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r vtable for CMemberFunctor5<CStudioRender*, void (CStudioRender::*)(DrawModelInfo_t const&, StudioRenderContext_t const&, matrix3x4_t*, FlexWeights_t const&, int), DrawModelInfo_t, StudioRenderContext_t, matrix3x4_t*, FlexWeights_t, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CTier0AppSystem<IStudioRender>
 r vtable for CTier1AppSystem<IStudioRender, 0>
 r vtable for CTier2AppSystem<IStudioRender, 0>
 r vtable for CTier3AppSystem<IStudioRender, 0>
 r vtable for CDefaultAccessor
 r vtable for CDllDemandLoader
-r vtable for CMemberFunctor11<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Ray_t const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Ray_t, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
+r vtable for CMemberFunctor12<CStudioRender*, void (CStudioRender::*)(StudioDecalHandle_t__*, StudioRenderContext_t const&, matrix3x4_t*, studiohdr_t*, Vector const&, Vector const&, Vector const&, IMaterial*, float, int, bool, int), StudioDecalHandle_t__*, StudioRenderContext_t, matrix3x4_t*, studiohdr_t*, Vector, Vector, Vector, IMaterial*, float, int, bool, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CUtlCharConversion
 r vtable for CUtlNoEscConversion
 r vtable for ITextureRegenerator
-r vtable for CRefCountServiceBase<true, CRefMT>
 r vtable for CStudioRenderContext
 r vtable for CUtlCStringConversion
 r vtable for IConCommandBaseAccessor

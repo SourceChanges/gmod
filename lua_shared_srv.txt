@@ -97,7 +97,6 @@ d __CTOR_LIST__
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
 U __ctype_toupper_loc@@GLIBC_2.3
-B cvar
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
 U __cxa_end_catch@@CXXABI_1.3
@@ -112,6 +111,8 @@ t debug_framepc
 t debug_getupvalue
 t debug_localname
 t debug_varname
+b DefaultAng
+b DefaultVec
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
@@ -131,7 +132,6 @@ d __DTOR_LIST__
 b dwarf_reg_size_table
 d DW.ref.__gxx_personality_v0
 d _DYNAMIC
-U __dynamic_cast@@CXXABI_1.3
 D _edata
 t emit_addptr
 t emit_gri
@@ -357,15 +357,11 @@ U getpwuid@@GLIBC_2.0
 U gettimeofday@@GLIBC_2.0
 B g_iTypeNum
 b g_LastError
-t global constructors keyed to cvar
 t global constructors keyed to get
 t global constructors keyed to g_LastError
-t global constructors keyed to s_StringCharConversion
 t global constructors keyed to SteamAppSubscribed(int)
 t global constructors keyed to LuaStateToInterface(lua_State*)
 t global constructors keyed to _V_memset(char const*, int, void*, int, int)
-t global constructors keyed to CUtlString::AllocMemory(unsigned int)
-t global constructors keyed to ConCommandBase::s_pConCommandBases
 d _GLOBAL_OFFSET_TABLE_
 t _GLOBAL__sub_I_Base.cpp
 t _GLOBAL__sub_I_Buffer.cpp
@@ -391,10 +387,7 @@ U gmtime_r@@GLIBC_2.0
 t gola_close
 t gola_new
 t gola_resolve
-b g_pCVar
 b g_pFullFileSystem
-b g_pProcessUtils
-b g_pUtlSortVectorQSortContext
 U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
 t hashkey
@@ -411,7 +404,6 @@ t index2adr
 T _init
 t init_dwarf_reg_size_table
 U _IO_getc@@GLIBC_2.0
-U isspace@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
 d __JCR_END__
 d __JCR_LIST__
@@ -590,7 +582,6 @@ t lj_cf_os_clock
 t lj_cf_os_date
 t lj_cf_os_difftime
 t lj_cf_os_time
-t lj_cf_package_loader_preload
 t lj_cf_package_module
 t lj_cf_package_seeall
 t lj_cf_package_unloadlib
@@ -1086,7 +1077,7 @@ T lua_isnumber
 T lua_isstring
 T lua_isuserdata
 T luaJIT_setmode
-T luaJIT_version_2_0_3
+T luaJIT_version_2_0_4
 T luaL_addlstring
 T luaL_addstring
 T luaL_addvalue
@@ -1116,7 +1107,6 @@ T luaL_loadstring
 T luaL_newmetatable
 T luaL_newmetatable_type
 T luaL_newstate
-t luaL_newstate_GMOD
 T lua_load
 T lua_loadx
 T luaL_openlib
@@ -1132,7 +1122,6 @@ T luaL_traceback
 T luaL_typerror
 T luaL_unref
 T luaL_where
-b lua_maxcalls
 T lua_newstate
 T lua_newthread
 T lua_newuserdata
@@ -1231,7 +1220,6 @@ U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
 r package_global
 r package_lib
-r package_loaders
 t panic
 t parse_args
 t parse_assignment
@@ -1254,12 +1242,8 @@ U program_invocation_short_name@@GLIBC_2.0
 t propagatemark
 w pthread_cancel@@GLIBC_2.0
 w __pthread_key_create@@GLIBC_2.0
-U pthread_mutexattr_init@@GLIBC_2.0
-U pthread_mutexattr_settype@@GLIBC_2.1
-U pthread_mutex_destroy@@GLIBC_2.0
-U pthread_mutex_init@@GLIBC_2.0
-U pthread_mutex_lock@@GLIBC_2.0
-U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_mutex_lock@@GLIBC_2.0
+w pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
 t push_captures
 t push_onecapture
@@ -1385,11 +1369,9 @@ t snap_pref
 t snap_replay_const
 t snap_restoreval
 t snap_usedef
-b s_NoEscConversion
 t sort_comp
 U sprintf@@GLIBC_2.0
 U srand@@GLIBC_2.0
-b s_StringCharConversion
 U __stack_chk_fail@@GLIBC_2.4
 t __stack_chk_fail_local
 t stack_init
@@ -1419,14 +1401,12 @@ t strscan_dec
 t strscan_double
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
-U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 b subs.9478
 U symlink@@GLIBC_2.0
 t T.224
 t T.335
 t T.53
-t T.63
 U tanh@@GLIBC_2.0
 U ThreadGetCurrentId
 U ThreadInMainThread
@@ -1541,15 +1521,12 @@ t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
-U ConColorMsg(Color const&, char const*, ...)
 T crc32_start(unsigned long)
 t Q_URLDecode(char*, int, char const*, int)
 t Q_URLEncode(char*, int, char const*, int)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
-t DoThreadTest(char const*, unsigned int)
-t InfiLoopHook(lua_State*, lua_Debug*)
 t V_FixSlashes(char*, char)
 t V_pretifymem(float, int, bool)
 t V_pretifynum(long long)
@@ -1581,7 +1558,6 @@ t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t V_StripLastDir(char*, int)
 t V_vsnprintfRet(char*, int, char const*, char*, bool*)
-t ConVar_Register(int, IConCommandBaseAccessor*)
 t GetModuleHandle(char const*)
 t Q_UChar32ToUTF8(wchar_t, char*)
 t Q_UnicodeLength(char const*)
@@ -1605,10 +1581,7 @@ t V_IsAbsolutePath(char const*)
 t V_StripExtension(char const*, char*, int)
 t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
 t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
-t CharacterSetBuild(characterset_t*, char const*)
 t CloseLuaInterface(ILuaInterface*)
-t ConVar_PrintFlags(ConCommandBase const*)
-t ConVar_Unregister()
 t Q_UnicodeValidate(char const*)
 t Q_UnicodeValidate(unsigned short const*)
 t Q_UnicodeValidate(wchar_t const*)
@@ -1638,22 +1611,16 @@ t Q_URLEncodeInternal(char*, int, char const*, int, bool)
 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
 t V_StripTrailingSlash(char*)
-t ConnectTier1Libraries(void* (**)(char const*, int*), int)
-t DefaultCompletionFunc(char const*, char (*) [128])
 t Sys_IsDebuggerPresent()
 t V_GetCurrentDirectory(char*, int)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t BGetLocalFormattedDate(long, char*, int)
 t BGetLocalFormattedTime(long, char*, int)
-t GetNoEscCharConversion()
 t V_ExtractFileExtension(char const*, char*, int)
 t V_normalizeFloatString(char*)
-t ConVar_PrintDescription(ConCommandBase const*)
 t CreateInterfaceInternal(char const*, int*)
 t AdvancedLuaErrorReporter(lua_State*)
-t DisconnectTier1Libraries()
-t GetCStringCharConversion()
 t Q_RemoveAllEvilCharacters(char*)
 t Sys_RunningWithDebugModules()
 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
@@ -1666,7 +1633,6 @@ T md5(unsigned char*, int, unsigned char*)
 t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
 t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
 T crc32(void const*, int, unsigned long, unsigned long*)
-U ConMsg(char const*, ...)
 T md5_32(void const*, int, unsigned int, void*)
 t V_atof(char const*)
 t V_atoi(char const*)
@@ -1703,55 +1669,35 @@ t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
-U operator delete[](void*)@@GLIBCXX_3.4
 U operator delete(void*)@@GLIBCXX_3.4
 b guard variable for AllocTempVector()::s_nIndex
 b guard variable for AllocTempVector()::s_vecTemp
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
-b guard variable for CUtlString::GetEmptyString()::s_emptyString
 b guard variable for Bootil::Debug::Listeners()::Listeners
 b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-b s_BreakSet
 t FastToLower(char)
 r md5_padding
 t md5_process(md5_context*, unsigned char*)
 b s_bShowDiag
-b s_nCVarFlag
-b vec2_origin
-b vec2_origin
-b vec2_origin
-b vec2_origin
 b vec2_origin
 b vec2_origin
 b vec2_origin
 b vec2_origin
 b vec2_origin
 b g_CLuaShared
-b s_bConnected
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
-b vec2_invalid
-b vec2_invalid
-b vec2_invalid
-b vec2_invalid
-b s_bRegistered
-b s_EmptyConVar
 t WriteToBuffer(lua_State*, void const*, unsigned int, void*)
 b cMessageBuffer
 d s_BackSlashMap
 r g_PooledStrings
-b s_bBuiltBreakSet
-d s_nDLLIdentifier
-b s_DefaultAccessor
 t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
 b __g_CreateCLuaSharedILuaShared_reg
-d s_pConversionArrays_NoEscConversion
 t __CreateCLuaSharedILuaShared_interface()
-d s_pConversionArrays_StringCharConversion
 t Descend(char*, unsigned int, bool, unsigned int)
 t LuaPanic(lua_State*)
 r crc_table
@@ -1778,106 +1724,6 @@ t CLuaShared::CLuaShared()
 t CLuaShared::~CLuaShared()
 t CLuaShared::~CLuaShared()
 t CLuaShared::~CLuaShared()
-t ConCommand::CanAutoComplete()
-t ConCommand::AutoCompleteSuggest(char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&)
-t ConCommand::Dispatch(CCommand const&)
-t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
-t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [128]))
-t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [128]))
-t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
-t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [128]))
-t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [128]))
-t ConCommand::~ConCommand()
-t ConCommand::~ConCommand()
-t ConCommand::~ConCommand()
-t CUtlBuffer::ParseToken(characterset_t*, char*, int, bool)
-t CUtlBuffer::ParseToken(char const*, char const*, char*, int)
-t CUtlBuffer::ConvertCRLF(CUtlBuffer&)
-t CUtlBuffer::GetOverflow(int)
-t CUtlBuffer::IsBigEndian()
-t CUtlBuffer::PutOverflow(int)
-t CUtlBuffer::AssumeMemory(void*, int, int, int)
-t CUtlBuffer::CheckPeekGet(int, int)
-t CUtlBuffer::SetBigEndian(bool)
-t CUtlBuffer::EatCPPComment()
-t CUtlBuffer::EatWhiteSpace()
-t CUtlBuffer::OnGetOverflow(int)
-t CUtlBuffer::OnPutOverflow(int)
-t CUtlBuffer::SetBufferType(bool, bool)
-t CUtlBuffer::EnsureCapacity(int)
-t CUtlBuffer::PeekLineLength()
-t CUtlBuffer::PeekWhiteSpace(int)
-t CUtlBuffer::PeekStringMatch(int, char const*, int)
-t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
-t CUtlBuffer::PeekStringLength()
-t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
-t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
-t CUtlBuffer::GetStringInternal(char*, unsigned int)
-t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
-t CUtlBuffer::AddNullTermination()
-t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
-t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
-t CUtlBuffer::ActivateByteSwapping(bool)
-t CUtlBuffer::CheckArbitraryPeekGet(int, int&)
-t CUtlBuffer::GetDelimitedCharInternal(CUtlCharConversion*)
-t CUtlBuffer::PeekDelimitedStringLength(CUtlCharConversion*, bool)
-t CUtlBuffer::Get(void*, int)
-t CUtlBuffer::Put(void const*, int)
-t CUtlBuffer::Swap(CUtlMemory<unsigned char, int>&)
-t CUtlBuffer::Swap(CUtlBuffer&)
-t CUtlBuffer::Scanf(char const*, ...)
-t CUtlBuffer::Printf(char const*, ...)
-t CUtlBuffer::GetChar()
-t CUtlBuffer::GetLine(char*, int)
-t CUtlBuffer::GetUpTo(void*, int)
-t CUtlBuffer::PeekGet(int, int)
-t CUtlBuffer::SeekGet(CUtlBuffer::SeekType_t, int)
-t CUtlBuffer::SeekPut(CUtlBuffer::SeekType_t, int)
-t CUtlBuffer::VaScanf(char const*, char*)
-t CUtlBuffer::CheckGet(int)
-t CUtlBuffer::CheckPut(int)
-t CUtlBuffer::GetToken(char const*)
-t CUtlBuffer::VaPrintf(char const*, char*)
-t CUtlBuffer::PutString(char const*)
-t CUtlBuffer::CUtlBuffer(int, int, int)
-t CUtlBuffer::CUtlBuffer(void const*, int, int)
-t CUtlBuffer::CUtlBuffer(int, int, int)
-t CUtlBuffer::CUtlBuffer(void const*, int, int)
-t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int)
-t CUtlMemory<unsigned char, int>::Init(int, int)
-t CUtlMemory<unsigned char, int>::Purge()
-t CUtlString::FixSlashes(char)
-t CUtlString::AllocMemory(unsigned int)
-t CUtlString::GetForModify()
-t CUtlString::GetEmptyString()
-t CUtlString::StripTrailingSlash()
-t CUtlString::Set(char const*)
-t CUtlString::Trim(char)
-t CUtlString::Trim(char const*)
-t CUtlString::Clear()
-t CUtlString::Purge()
-t CUtlString::Append(char const*)
-t CUtlString::Append(char const*, int)
-t CUtlString::Format(char const*, ...)
-t CUtlString::FormatV(char const*, char*)
-t CUtlString::ToLower()
-t CUtlString::ToUpper()
-t CUtlString::PathJoin(char const*, char const*)
-t CUtlString::TrimLeft(char)
-t CUtlString::TrimLeft(char const*)
-t CUtlString::SetDirect(char const*, int)
-t CUtlString::SetLength(int)
-t CUtlString::TrimRight(char)
-t CUtlString::TrimRight(char const*)
-t CUtlString::operator=(char const*)
-t CUtlString::operator=(CUtlString const&)
-t CUtlString::~CUtlString()
-t CUtlString::operator+=(char)
-t CUtlString::operator+=(double)
-t CUtlString::operator+=(int)
-t CUtlString::operator+=(char const*)
-t CUtlString::operator+=(CUtlString const&)
-t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<LuaFile*, CUtlMemory<LuaFile*, int> >::InsertBefore(int, LuaFile* const&)
 t CUtlVector<LuaFile*, CUtlMemory<LuaFile*, int> >::~CUtlVector()
@@ -1888,44 +1734,59 @@ U CVProfNode::ExitScope()
 t ILuaShared::~ILuaShared()
 t ILuaShared::~ILuaShared()
 t CVProfScope::~CVProfScope()
-t CEmptyConVar::SetValue(float)
-t CEmptyConVar::SetValue(int)
-t CEmptyConVar::SetValue(char const*)
-t CEmptyConVar::~CEmptyConVar()
-t CEmptyConVar::~CEmptyConVar()
 t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 b InterfaceReg::s_pInterfaceRegs
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
-t CLuaInterface::DELETE_ME1(char const*, int)
-t CLuaInterface::_DELETE_ME(ILuaObject*, void*)
 t CLuaInterface::GetUpvalue(int, int)
 t CLuaInterface::isUserData(int)
+t CLuaInterface::PushNumber(double)
+t CLuaInterface::PushString(char const*, unsigned int)
+t CLuaInterface::PushVector(Vector const&)
+t CLuaInterface::ThrowError(char const*)
+t CLuaInterface::CheckNumber(int)
+t CLuaInterface::CheckString(int)
+t CLuaInterface::CreateTable()
 t CLuaInterface::ErrorNoHalt(char const*, ...)
-t CLuaInterface::GetLuaState()
 t CLuaInterface::GetNewTable()
+t CLuaInterface::GetTypeName(int)
+t CLuaInterface::GetUserdata(int)
+t CLuaInterface::NewUserdata(unsigned int)
+t CLuaInterface::PushSpecial(int)
 t CLuaInterface::RunStringEx(char const*, char const*, char const*, bool, bool, bool, bool)
 t CLuaInterface::SetIsServer(bool)
+t CLuaInterface::SetUserType(int, void*)
 t CLuaInterface::CallInternal(int, int)
 t CLuaInterface::CreateObject()
 t CLuaInterface::DoStackCheck()
 t CLuaInterface::ErrorFromLua(char const*, ...)
+t CLuaInterface::GetCFunction(int)
+t CLuaInterface::GetMetaTable(int)
+t CLuaInterface::PushCClosure(int (*)(lua_State*), int)
+t CLuaInterface::PushUserdata(void*)
+t CLuaInterface::PushUserType(void*, int)
 t CLuaInterface::RunLuaModule(char const*)
+t CLuaInterface::SetMetaTable(int)
 t CLuaInterface::CompileString(Bootil::Buffer&, std::string const&)
 t CLuaInterface::DestroyObject(ILuaObject*)
 t CLuaInterface::GetDataString(int, void**)
+t CLuaInterface::PushCFunction(int (*)(lua_State*))
 t CLuaInterface::PushLuaObject(ILuaObject*)
+t CLuaInterface::PushMetaTable(int)
+t CLuaInterface::ReferenceFree(int)
+t CLuaInterface::ReferencePush(int)
 t CLuaInterface::SetMemberFast(ILuaObject*, int, int)
-t CLuaInterface::_DELETE_ME2466(int)
-t CLuaInterface::DELETE_ME_5437(int)
 t CLuaInterface::ExecuteLuaFile(LuaFile*, bool, bool, char const*, bool)
 t CLuaInterface::GetCurrentFile(std::string&)
 t CLuaInterface::NewGlobalTable(char const*)
-t CLuaInterface::AddThreadedCall(GarrysMod::Lua::IThreadedCall*)
+t CLuaInterface::PreCreateTable(int, int)
+t CLuaInterface::AddThreadedCall(ILuaThreadedCall*)
 t CLuaInterface::CallInternalGet(int, ILuaObject*)
+t CLuaInterface::CreateMetaTable(char const*)
 t CLuaInterface::GetPooledString(int)
 t CLuaInterface::PushLuaFunction(int (*)(lua_State*))
+t CLuaInterface::ReferenceCreate()
 t CLuaInterface::FindAndRunScript(char const*, bool, bool, char const*, bool)
 t CLuaInterface::GetStringOrError(int)
 t CLuaInterface::PushPooledString(int)
@@ -1938,43 +1799,69 @@ t CLuaInterface::GetMetaTableObject(int)
 t CLuaInterface::GetMetaTableObject(char const*, int)
 t CLuaInterface::NewTemporaryObject()
 t CLuaInterface::CallInternalGetBool(int)
+t CLuaInterface::CreateMetaTableType(char const*, int)
 t CLuaInterface::CallFunctionProtected(int, int, bool)
 t CLuaInterface::CallInternalGetString(int)
 t CLuaInterface::CallInternalNoReturns(int)
 t CLuaInterface::ShutdownThreadedCalls()
 t CLuaInterface::FindOnObjectsMetaTable(int, int)
-t CLuaInterface::SetupInfiniteLoopProtection()
 t CLuaInterface::Msg(char const*, ...)
+t CLuaInterface::Pop(int)
+t CLuaInterface::Top()
+t CLuaInterface::Call(int, int)
 t CLuaInterface::Init(ILuaCallback*, bool)
+t CLuaInterface::Next(int)
+t CLuaInterface::Push(int)
 t CLuaInterface::Cycle()
+t CLuaInterface::Equal(int, int)
 t CLuaInterface::Error(char const*)
+t CLuaInterface::PCall(int, int, int)
 t CLuaInterface::Global()
+t CLuaInterface::Insert(int)
+t CLuaInterface::IsType(int, int)
+t CLuaInterface::ObjLen(int)
+t CLuaInterface::RawGet(int)
+t CLuaInterface::RawSet(int)
+t CLuaInterface::Remove(int)
+t CLuaInterface::GetBool(int)
 t CLuaInterface::GetInfo(char const*, void*)
 t CLuaInterface::GetPath()
+t CLuaInterface::GetType(int)
 t CLuaInterface::IsEqual(ILuaObject*, ILuaObject*)
 t CLuaInterface::PopPath()
 t CLuaInterface::PushNil()
 t CLuaInterface::Require(char const*)
+t CLuaInterface::ArgError(int, char const*)
+t CLuaInterface::GetAngle(int)
 t CLuaInterface::GetColor(int)
+t CLuaInterface::GetField(int, char const*)
 t CLuaInterface::GetFlags(int)
 t CLuaInterface::GetLocal(void*, int)
 t CLuaInterface::GetStack(int, void*)
+t CLuaInterface::GetTable(int)
 t CLuaInterface::IsClient()
 t CLuaInterface::IsServer()
 t CLuaInterface::LuaError(char const*, int)
+t CLuaInterface::PushBool(bool)
 t CLuaInterface::PushLong(long)
 t CLuaInterface::PushPath(char const*)
+t CLuaInterface::RawEqual(int, int)
+t CLuaInterface::SetField(int, char const*)
 t CLuaInterface::SetState(lua_State*)
+t CLuaInterface::SetTable(int)
 t CLuaInterface::Shutdown()
 t CLuaInterface::CheckType(int, int)
+t CLuaInterface::GetNumber(int)
 t CLuaInterface::GetObject(int)
 t CLuaInterface::GetPathID()
 t CLuaInterface::GetReturn(int)
+t CLuaInterface::GetString(int, unsigned int*)
+t CLuaInterface::GetVector(int)
 t CLuaInterface::MsgColour(Color const&, char const*, ...)
-t CLuaInterface::PushColor(int, int, int, int)
+t CLuaInterface::PushAngle(QAngle const&)
+t CLuaInterface::PushColor(Color)
 t CLuaInterface::RunMacros(std::string&)
 t CLuaInterface::RunString(char const*, char const*, char const*, bool, bool)
-t CLuaInterface::SetGlobal(char const*, char const*)
 t CLuaInterface::SetMember(ILuaObject*, float)
 t CLuaInterface::SetMember(ILuaObject*, float, ILuaObject*)
 t CLuaInterface::SetMember(ILuaObject*, char const*)
@@ -1982,26 +1869,10 @@ t CLuaInterface::SetMember(ILuaObject*, char const*, ILuaObject*)
 t CLuaInterface::SetMember(ILuaObject*, ILuaObject*, ILuaObject*)
 t CLuaInterface::SetPathID(char const*)
 t CLuaInterface::TypeError(char const*, int)
-t CLuaInterface::CLuaInterface(bool)
-t CLuaInterface::CLuaInterface(bool)
-t ConCommandBase::CopyString(char const*)
-t ConCommandBase::CreateBase(char const*, char const*, int)
-b ConCommandBase::s_pAccessor
-b ConCommandBase::s_pConCommandBases
-t ConCommandBase::Init()
-t ConCommandBase::GetNext()
-t ConCommandBase::AddFlags(int)
-t ConCommandBase::Shutdown()
-t ConCommandBase::ConCommandBase(char const*, char const*, int)
-t ConCommandBase::ConCommandBase()
-t ConCommandBase::ConCommandBase(char const*, char const*, int)
-t ConCommandBase::ConCommandBase()
-t ConCommandBase::~ConCommandBase()
-t ConCommandBase::~ConCommandBase()
-t ConCommandBase::~ConCommandBase()
+t CLuaInterface::CLuaInterface()
+t CLuaInterface::CLuaInterface()
 t IBaseInterface::~IBaseInterface()
 t IBaseInterface::~IBaseInterface()
-t CDefaultAccessor::RegisterConCommandBase(ConCommandBase*)
 t CDllDemandLoader::GetFactory()
 t CDllDemandLoader::Unload()
 t CDllDemandLoader::CDllDemandLoader(char const*)
@@ -2009,67 +1880,6 @@ t CDllDemandLoader::CDllDemandLoader(char const*)
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
-t CBaseLuaInterface::PushNumber(double)
-t CBaseLuaInterface::PushString(char const*, unsigned int)
-t CBaseLuaInterface::ThreadLock()
-t CBaseLuaInterface::ThrowError(char const*)
-t CBaseLuaInterface::CheckNumber(int)
-t CBaseLuaInterface::CheckString(int)
-t CBaseLuaInterface::CreateTable()
-t CBaseLuaInterface::GetTypeName(int)
-t CBaseLuaInterface::GetUserdata(int)
-t CBaseLuaInterface::NewUserdata(unsigned int)
-t CBaseLuaInterface::PushSpecial(int)
-t CBaseLuaInterface::GetCFunction(int)
-t CBaseLuaInterface::GetMetaTable(int)
-t CBaseLuaInterface::PushCClosure(int (*)(lua_State*), int)
-t CBaseLuaInterface::PushUserdata(void*)
-t CBaseLuaInterface::SetMetaTable(int)
-t CBaseLuaInterface::ThreadUnlock()
-t CBaseLuaInterface::PushCFunction(int (*)(lua_State*))
-t CBaseLuaInterface::ReferenceFree(int)
-t CBaseLuaInterface::ReferencePush(int)
-t CBaseLuaInterface::PreCreateTable(int, int)
-t CBaseLuaInterface::ReferenceCreate()
-t CBaseLuaInterface::CreateMetaTableType(char const*, int)
-t CBaseLuaInterface::Pop(int)
-t CBaseLuaInterface::Top()
-t CBaseLuaInterface::Call(int, int)
-t CBaseLuaInterface::Next(int)
-t CBaseLuaInterface::Push(int)
-t CBaseLuaInterface::Equal(int, int)
-t CBaseLuaInterface::PCall(int, int, int)
-t CBaseLuaInterface::Insert(int)
-t CBaseLuaInterface::IsType(int, int)
-t CBaseLuaInterface::ObjLen(int)
-t CBaseLuaInterface::RawGet(int)
-t CBaseLuaInterface::RawSet(int)
-t CBaseLuaInterface::Remove(int)
-t CBaseLuaInterface::GetBool(int)
-t CBaseLuaInterface::GetType(int)
-t CBaseLuaInterface::PushNil()
-t CBaseLuaInterface::ArgError(int, char const*)
-t CBaseLuaInterface::GetField(int, char const*)
-t CBaseLuaInterface::GetTable(int)
-t CBaseLuaInterface::PushBool(bool)
-t CBaseLuaInterface::RawEqual(int, int)
-t CBaseLuaInterface::SetField(int, char const*)
-t CBaseLuaInterface::SetTable(int)
-t CBaseLuaInterface::CheckType(int, int)
-t CBaseLuaInterface::GetNumber(int)
-t CBaseLuaInterface::GetString(int, unsigned int*)
-t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
-t CUtlInplaceBuffer::InplaceGetLinePtr()
-t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
-t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
-t CUtlCharConversion::FindConversion(char const*, int*)
-t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
-t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
-t CUtlNoEscConversion::FindConversion(char const*, int*)
-t CUtlCStringConversion::FindConversion(char const*, int*)
-t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
-t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
-t ILuaInterface_DeleteMe::DELETE_ME2()
 t CWrap::~CWrap()
 T Bootil::AutoBuffer::EnsureCapacity(unsigned int)
 T Bootil::AutoBuffer::Clear()
@@ -2258,103 +2068,14 @@ t Bootil::Platform::FindFiles(std::vector<std::string, std::allocator<std::strin
 T Bootil::Platform::LastError()
 T Bootil::Shutdown()
 b Bootil::g_bShuttingDown
-t ConVar::ClampValue(float&)
-t ConVar::SetDefault(char const*)
-t ConVar::InternalSetValue(char const*)
-t ConVar::ChangeStringValue(char const*, float)
-t ConVar::InternalSetIntValue(int)
-t ConVar::InstallChangeCallback(void (*)(IConVar*, char const*, float))
-t ConVar::InternalSetFloatValue(float)
-t ConVar::Init()
-t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
-t ConVar::Revert()
-t ConVar::AddFlags(int)
-t ConVar::SetValue(float)
-t ConVar::SetValue(int)
-t ConVar::SetValue(char const*)
-t ConVar::ConVar(char const*, char const*, int)
-t ConVar::ConVar(char const*, char const*, int, char const*)
-t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
-t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
-t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
-t ConVar::ConVar(char const*, char const*, int)
-t ConVar::ConVar(char const*, char const*, int, char const*)
-t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
-t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
-t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
-t ConVar::~ConVar()
-t ConVar::~ConVar()
-t ConVar::~ConVar()
-t CCommand::DefaultBreakSet()
-t CCommand::Reset()
-t CCommand::Tokenize(char const*, characterset_t*)
-t CCommand::CCommand(int, char const**)
-t CCommand::CCommand()
-t CCommand::CCommand(int, char const**)
-t CCommand::CCommand()
 t CLuaError::StackEntry::~StackEntry()
 t CLuaError::~CLuaError()
-t ConVarRef::Init(char const*, bool)
-t ConVarRef::ConVarRef(IConVar*)
-t ConVarRef::ConVarRef(char const*)
-t ConVarRef::ConVarRef(char const*, bool)
-t ConVarRef::ConVarRef(IConVar*)
-t ConVarRef::ConVarRef(char const*)
-t ConVarRef::ConVarRef(char const*, bool)
 r GarrysMod::Lua::Type::Name
 U operator new[](unsigned int)@@GLIBCXX_3.4
-t ConCommand::IsCommand() const
-t CUtlString::GetExtension() const
-t CUtlString::StripFilename() const
-t CUtlString::MatchesPattern(CUtlString const&, int) const
-t CUtlString::StripExtension() const
-t CUtlString::GetBaseFilename() const
-t CUtlString::UnqualifiedFilename() const
-t CUtlString::IsEqual_CaseSensitive(char const*) const
-t CUtlString::IsEqual_CaseInsensitive(char const*) const
-t CUtlString::Get() const
-t CUtlString::Left(int) const
-t CUtlString::Right(int) const
-t CUtlString::Slice(int, int) const
-t CUtlString::AbsPath(char const*) const
-t CUtlString::DirName() const
-t CUtlString::Replace(char, char) const
-t CUtlString::Replace(char const*, char const*) const
-t CUtlString::operator==(CUtlString const&) const
-t CUtlString::operator[](int) const
-t CUtlString::operator+(int) const
-t CUtlString::operator+(char const*) const
-t CUtlString::operator+(CUtlString const&) const
-t CEmptyConVar::GetName() const
-t CEmptyConVar::IsFlagSet(int) const
-t ConCommandBase::GetHelpText() const
-t ConCommandBase::IsRegistered() const
-t ConCommandBase::GetDLLIdentifier() const
-t ConCommandBase::GetName() const
-t ConCommandBase::GetNext() const
-t ConCommandBase::IsCommand() const
-t ConCommandBase::IsFlagSet(int) const
-t CUtlCharConversion::GetDelimiter() const
-t CUtlCharConversion::GetEscapeChar() const
-t CUtlCharConversion::GetDelimiterLength() const
-t CUtlCharConversion::GetConversionLength(char) const
-t CUtlCharConversion::GetConversionString(char) const
-t CUtlCharConversion::MaxConversionLength() const
 T Bootil::Buffer::GetWritten() const
 T Bootil::Buffer::GetPos() const
 T Bootil::Buffer::GetBase(unsigned int) const
 T Bootil::Buffer::GetSize() const
-t ConVar::GetDefault() const
-t ConVar::GetHelpText() const
-t ConVar::IsRegistered() const
-t ConVar::GetMax(float&) const
-t ConVar::GetMin(float&) const
-t ConVar::GetName() const
-t ConVar::IsCommand() const
-t ConVar::IsFlagSet(int) const
-t CCommand::FindArgInt(char const*, int) const
-t CCommand::FindArg(char const*) const
-t ConVarRef::IsValid() const
 U std::string::find_last_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
 U std::string::find_first_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
 U std::string::find(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
@@ -2485,86 +2206,34 @@ b std::__ioinit
 b std::__ioinit
 b std::__ioinit
 b std::__ioinit
-t non-virtual thunk to CEmptyConVar::SetValue(float)
-t non-virtual thunk to CEmptyConVar::SetValue(int)
-t non-virtual thunk to CEmptyConVar::SetValue(char const*)
-t non-virtual thunk to ConVar::SetValue(float)
-t non-virtual thunk to ConVar::SetValue(int)
-t non-virtual thunk to ConVar::SetValue(char const*)
-t non-virtual thunk to CEmptyConVar::GetName() const
-t non-virtual thunk to CEmptyConVar::IsFlagSet(int) const
-t non-virtual thunk to ConVar::GetName() const
-t non-virtual thunk to ConVar::IsFlagSet(int) const
 r typeinfo for CLuaShared
-r typeinfo for ConCommand
 r typeinfo for ILuaShared
-r typeinfo for CEmptyConVar
 r typeinfo for CLuaInterface
 r typeinfo for ILuaInterface
-r typeinfo for ConCommandBase
 r typeinfo for IBaseInterface
-r typeinfo for CDefaultAccessor
 r typeinfo for CDllDemandLoader
-r typeinfo for ILuaInterface001
-r typeinfo for CBaseLuaInterface
-r typeinfo for CUtlCharConversion
-r typeinfo for CUtlNoEscConversion
-r typeinfo for ConVar_ServerBounded
-r typeinfo for CUtlCStringConversion
-r typeinfo for ILuaInterface_DeleteMe
-r typeinfo for IConCommandBaseAccessor
-r typeinfo for ConVar
-r typeinfo for IConVar
 V typeinfo for Bootil::AutoBuffer
 V typeinfo for Bootil::Buffer
 r typeinfo for GarrysMod::Lua::ILuaBase
 r typeinfo name for CLuaShared
-r typeinfo name for ConCommand
 r typeinfo name for ILuaShared
-r typeinfo name for CEmptyConVar
 r typeinfo name for CLuaInterface
 r typeinfo name for ILuaInterface
-r typeinfo name for ConCommandBase
 r typeinfo name for IBaseInterface
-r typeinfo name for CDefaultAccessor
 r typeinfo name for CDllDemandLoader
-r typeinfo name for ILuaInterface001
-r typeinfo name for CBaseLuaInterface
-r typeinfo name for CUtlCharConversion
-r typeinfo name for CUtlNoEscConversion
-r typeinfo name for ConVar_ServerBounded
-r typeinfo name for CUtlCStringConversion
-r typeinfo name for ILuaInterface_DeleteMe
-r typeinfo name for IConCommandBaseAccessor
-r typeinfo name for ConVar
-r typeinfo name for IConVar
 V typeinfo name for Bootil::AutoBuffer
 V typeinfo name for Bootil::Buffer
 r typeinfo name for GarrysMod::Lua::ILuaBase
 U VTT for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U VTT for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 r vtable for CLuaShared
-r vtable for ConCommand
 r vtable for ILuaShared
-r vtable for CEmptyConVar
 r vtable for CLuaInterface
 r vtable for ILuaInterface
-r vtable for ConCommandBase
 r vtable for IBaseInterface
-r vtable for CDefaultAccessor
 r vtable for CDllDemandLoader
-r vtable for ILuaInterface001
-r vtable for CBaseLuaInterface
-r vtable for CUtlCharConversion
-r vtable for CUtlNoEscConversion
-r vtable for CUtlCStringConversion
-r vtable for ILuaInterface_DeleteMe
-r vtable for IConCommandBaseAccessor
-r vtable for ConVar
-r vtable for IConVar
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
 V vtable for Bootil::AutoBuffer
 V vtable for Bootil::Buffer
 r vtable for GarrysMod::Lua::ILuaBase
@@ -2580,53 +2249,8 @@ b V_pretifynum(long long)::current
 b GMODLUA_GetUserType::strName
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
-b CUtlString::GetEmptyString()::s_emptyString
 r CLuaInterface::GetStringOrError(int)::strDefault
 b CLuaInterface::GetCurrentLocation()::strOutput
-r CBaseLuaInterface::PushNumber(double)::__FUNCTION__
-r CBaseLuaInterface::PushString(char const*, unsigned int)::__FUNCTION__
-r CBaseLuaInterface::ThrowError(char const*)::__FUNCTION__
-r CBaseLuaInterface::CreateTable()::__FUNCTION__
-r CBaseLuaInterface::GetTypeName(int)::__FUNCTION__
-r CBaseLuaInterface::GetUserdata(int)::__FUNCTION__
-r CBaseLuaInterface::NewUserdata(unsigned int)::__FUNCTION__
-r CBaseLuaInterface::PushSpecial(int)::__FUNCTION__
-r CBaseLuaInterface::GetCFunction(int)::__FUNCTION__
-r CBaseLuaInterface::GetMetaTable(int)::__FUNCTION__
-r CBaseLuaInterface::PushCClosure(int (*)(lua_State*), int)::__FUNCTION__
-r CBaseLuaInterface::PushUserdata(void*)::__FUNCTION__
-r CBaseLuaInterface::SetMetaTable(int)::__FUNCTION__
-r CBaseLuaInterface::PushCFunction(int (*)(lua_State*))::__FUNCTION__
-r CBaseLuaInterface::ReferenceFree(int)::__FUNCTION__
-r CBaseLuaInterface::ReferencePush(int)::__FUNCTION__
-r CBaseLuaInterface::PreCreateTable(int, int)::__FUNCTION__
-r CBaseLuaInterface::ReferenceCreate()::__FUNCTION__
-r CBaseLuaInterface::CreateMetaTableType(char const*, int)::__FUNCTION__
-r CBaseLuaInterface::Pop(int)::__FUNCTION__
-r CBaseLuaInterface::Top()::__FUNCTION__
-r CBaseLuaInterface::Call(int, int)::__FUNCTION__
-r CBaseLuaInterface::Next(int)::__FUNCTION__
-r CBaseLuaInterface::Push(int)::__FUNCTION__
-r CBaseLuaInterface::Equal(int, int)::__FUNCTION__
-r CBaseLuaInterface::PCall(int, int, int)::__FUNCTION__
-r CBaseLuaInterface::Insert(int)::__FUNCTION__
-r CBaseLuaInterface::IsType(int, int)::__FUNCTION__
-r CBaseLuaInterface::RawGet(int)::__FUNCTION__
-r CBaseLuaInterface::RawSet(int)::__FUNCTION__
-r CBaseLuaInterface::Remove(int)::__FUNCTION__
-r CBaseLuaInterface::GetBool(int)::__FUNCTION__
-r CBaseLuaInterface::GetType(int)::__FUNCTION__
-r CBaseLuaInterface::PushNil()::__FUNCTION__
-r CBaseLuaInterface::ArgError(int, char const*)::__FUNCTION__
-r CBaseLuaInterface::GetField(int, char const*)::__FUNCTION__
-r CBaseLuaInterface::GetTable(int)::__FUNCTION__
-r CBaseLuaInterface::PushBool(bool)::__FUNCTION__
-r CBaseLuaInterface::RawEqual(int, int)::__FUNCTION__
-r CBaseLuaInterface::SetField(int, char const*)::__FUNCTION__
-r CBaseLuaInterface::SetTable(int)::__FUNCTION__
-r CBaseLuaInterface::CheckType(int, int)::__FUNCTION__
-r CBaseLuaInterface::GetNumber(int)::__FUNCTION__
-r CBaseLuaInterface::GetString(int, unsigned int*)::__FUNCTION__
 r Bootil::File::GetTempDir()::__FUNCTION__
 b Bootil::Debug::Listeners()::Listeners
 b Bootil::String::Format::Print(char const*, ...)::strOut
@@ -2634,4 +2258,3 @@ b Bootil::String::Format::Print(wchar_t const*, ...)::strOut
 b Bootil::String::Format::VarArgs(char const*, char*)::string
 b Bootil::String::Format::VarArgs(wchar_t const*, char*)::string
 b Bootil::Platform::GetMilliseconds()::startSeconds
-d ConVarRef::Init(char const*, bool)::bFirst

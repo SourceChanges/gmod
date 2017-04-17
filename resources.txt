@@ -1716,7 +1716,6 @@ U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node
 U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
 U std::cout@@GLIBCXX_3.4
 U std::nothrow@@GLIBCXX_3.4
-U std::terminate()@@GLIBCXX_3.4
 V typeinfo for CBoxFilter
 V typeinfo for CResizeEngine
 V typeinfo for CBicubicFilter

@@ -120,7 +120,6 @@ U gettimeofday@@GLIBC_2.0
 U GMOD_SpewBufferFlush
 w __gmon_start__
 U gmtime@@GLIBC_2.0
-U g_pSteamClientGameServer
 U g_pThreadPool
 U g_pVCR
 U g_VProfCurrentProfile
@@ -510,9 +509,10 @@ U SteamAPI_RegisterCallback
 U SteamAPI_RegisterCallResult
 U SteamAPI_UnregisterCallback
 U SteamAPI_UnregisterCallResult
-U SteamClient
 U SteamGameServer_GetHSteamPipe
 U SteamGameServer_GetHSteamUser
+U SteamInternal_ContextInit
+U SteamInternal_CreateInterface
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U __strcat_chk@@GLIBC_2.3.4

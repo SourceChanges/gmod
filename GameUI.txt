@@ -513,7 +513,8 @@ U __stack_chk_fail@@GLIBC_2.4
 U stderr@@GLIBC_2.0
 U SteamAPI_GetHSteamPipe
 U SteamAPI_GetHSteamUser
-U SteamClient
+U SteamInternal_ContextInit
+U SteamInternal_CreateInterface
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U strcat@@GLIBC_2.0
