@@ -74,7 +74,7 @@ r crc_table
 T CreateInterface
 U CreateSimpleThread
 r CSWTCH.1789
-r CSWTCH.1962
+r CSWTCH.1961
 r CSWTCH.911
 d __CTOR_END__
 d __CTOR_LIST__
@@ -1160,7 +1160,7 @@ U symlink@@GLIBC_2.0
 t T.1139
 t T.1627
 t T.1628
-t T.1980
+t T.1979
 t T.2981
 t T.486
 t T.721
@@ -8361,7 +8361,7 @@ t CLZMA::GetActualSize(unsigned char*)
 t CLZSS::Uncompress(unsigned char*, unsigned char*)
 t CLZSS::IsCompressed(unsigned char*)
 t CLZSS::GetActualSize(unsigned char*)
-t CLZSS::SafeUncompress(unsigned char*, unsigned char*, unsigned int)
+t CLZSS::SafeUncompress(unsigned char*, unsigned int, unsigned char*, unsigned int)
 t CLZSS::CompressNoAlloc(unsigned char*, int, unsigned char*, unsigned int*)
 t CLZSS::Compress(unsigned char*, int, unsigned int*)
 t CLZSS::BuildHash(unsigned char*)
