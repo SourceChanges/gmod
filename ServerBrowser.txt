@@ -54,6 +54,8 @@ U iswalnum@@GLIBC_2.0
 U iswcntrl@@GLIBC_2.0
 U iswdigit@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 T JoiningSecureServerCall
 w _Jv_RegisterClasses
 U KeyValuesSystem
@@ -80,7 +82,7 @@ U Plat_IsInDebugSession
 U Plat_localtime
 U __pow_finite@@GLIBC_2.15
 U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
 U pthread_mutexattr_init@@GLIBC_2.0
 U pthread_mutexattr_settype@@GLIBC_2.1
 U pthread_mutex_destroy@@GLIBC_2.0

@@ -1,15 +1,13 @@
 U abort@@GLIBC_2.0
 t add_fdes
-d adds.9477
-t base_from_cb_data
-t base_from_object
+d adds.8619
+t base_from_cb_data.isra.4
+t base_from_object.isra.3
 B __bss_start
 U chdir@@GLIBC_2.0
 t classify_object_over_fdes
-b completed.7134
+b completed.6591
 T CreateInterface
-d __CTOR_END__
-d __CTOR_LIST__
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
 U __ctype_toupper_loc@@GLIBC_2.3
@@ -21,17 +19,15 @@ U __cxa_pure_virtual@@CXXABI_1.3
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
+t deregister_tm_clones
 U dlclose@@GLIBC_2.0
 U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
-t __do_global_ctors_aux
 t __do_global_dtors_aux
+t __do_global_dtors_aux_fini_array_entry
 d __dso_handle
-d __DTOR_END__
-b dtor_idx.7136
-d __DTOR_LIST__
 b dwarf_reg_size_table
 d _DYNAMIC
 D _edata
@@ -45,6 +41,7 @@ t fde_unencoded_compare
 T _fini
 t frame_downheap
 t frame_dummy
+t __frame_dummy_init_array_entry
 r __FRAME_END__
 b frame_hdr_cache
 b frame_hdr_cache_head
@@ -53,44 +50,153 @@ t __frame_state_for
 U free@@GLIBC_2.0
 t get_cie_encoding
 U getcwd@@GLIBC_2.0
-t global constructors keyed to g_pShaderUtil
-t global constructors keyed to _V_memset(char const*, int, void*, int, int)
 d _GLOBAL_OFFSET_TABLE_
+t _GLOBAL__sub_I_g_pShaderUtil
+t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
 w __gmon_start__
 b g_pShaderUtil
 U __gxx_personality_v0@@CXXABI_1.3
-t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
 U iconv_close@@GLIBC_2.1
 U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 d __JCR_END__
 d __JCR_LIST__
 w _Jv_RegisterClasses
+t .L122
+t .L19
+t .L191
+t .L192
+t .L195
+t .L196
+t .L197
+t .L198
+t .L21
+t .L22
+t .L223
+t .L226
+t .L227
+t .L23
+t .L230
+t .L231
+t .L232
+t .L233
+t .L24
+t .L25
+t .L26
+t .L27
+t .L28
+t .L29
+t .L30
+t .L31
+t .L32
+t .L325
+t .L328
+t .L329
+t .L33
+t .L330
+t .L331
+t .L332
+t .L334
+t .L336
+t .L337
+t .L338
+t .L339
+t .L34
+t .L340
+t .L341
+t .L342
+t .L343
+t .L344
+t .L345
+t .L346
+t .L347
+t .L348
+t .L349
+t .L35
+t .L350
+t .L351
+t .L352
+t .L354
+t .L36
+t .L367
+t .L368
+t .L37
+t .L371
+t .L372
+t .L373
+t .L374
+t .L38
+t .L39
+t .L40
+t .L41
+t .L415
+t .L417
+t .L418
+t .L419
+t .L42
+t .L420
+t .L421
+t .L422
+t .L423
+t .L424
+t .L425
+t .L426
+t .L427
+t .L428
+t .L429
+t .L43
+t .L430
+t .L431
+t .L432
+t .L44
+t .L440
+t .L523
+t .L524
+t .L526
+t .L527
+t .L528
+t .L529
+t .L56
+t .L57
+t .L60
+t .L61
+t .L61
+t .L62
+t .L63
+t .L64
+t .L65
+t .L68
+t .L69
+t .L70
+t .L71
 t linear_search_fdes
 U malloc@@GLIBC_2.0
-b marker.8860
+b marker.8357
 U mbstowcs@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
 U Msg
 b object_mutex
-b once_regsizes.9698
+b once_regsizes.8769
 U Plat_FloatTime
 U Plat_IsInDebugSession
 U Plat_localtime
 U __pow_finite@@GLIBC_2.15
 U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+w __pthread_key_create
 w pthread_mutex_lock@@GLIBC_2.0
 w pthread_mutex_unlock@@GLIBC_2.0
-w pthread_once@@GLIBC_2.0
+w pthread_once
 t qsort_s
 t read_encoded_value_with_base
+t read_sleb128
 t read_sleb128
 U realloc@@GLIBC_2.0
 t __register_frame
@@ -99,6 +205,7 @@ t __register_frame_info_bases
 t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
+t register_tm_clones
 t search_object
 b seen_objects
 t set_fast_math
@@ -114,8 +221,10 @@ U strncasecmp@@GLIBC_2.0
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
 U strstr@@GLIBC_2.0
-b subs.9478
+b subs.8620
+b terminator.8463
 U time@@GLIBC_2.0
+d __TMC_END__
 U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
 t __udivdi3
@@ -142,7 +251,6 @@ t _Unwind_Resume
 t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
-t _Unwind_SetSpColumn
 t uw_frame_state_for
 t uw_init_context_1
 t uw_install_context_1
@@ -156,6 +264,7 @@ U wcsncat@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
 U wcstombs@@GLIBC_2.0
 t __x86.get_pc_thunk.bx
+t __x86.get_pc_thunk.cx
 t V_FileBase(char const*, char*, int)
 t _V_memmove(char const*, int, void*, void const*, int)
 t V_snprintf(char*, int, char const*, ...)
@@ -165,6 +274,7 @@ t V_strnistr(char const*, char const*, int)
 t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int) [clone .part.4]
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
@@ -219,6 +329,7 @@ t V_FixupPathName(char*, unsigned int, char const*)
 t V_StripFilename(char*)
 t Q_IsValidUChar32(wchar_t)
 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*) [clone .part.5]
 t Q_UnicodeAdvance(char*, int)
 t Q_UnicodeAdvance(unsigned short*, int)
 t Q_UnicodeAdvance(wchar_t*, int)
@@ -236,6 +347,7 @@ t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
 t V_ComposeFileName(char const*, char const*, char*, int)
 t V_ExtractFilePath(char const*, char*, int)
 t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UChar32ToUTF8Len(wchar_t) [clone .part.2]
 t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
@@ -249,7 +361,9 @@ t V_MakeRelativePath(char const*, char const*, char*, int)
 t V_RemoveDotSlashes(char*, char, bool)
 t Q_UChar32ToUTF16Len(wchar_t)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool) [clone .part.7]
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool) [clone .part.6]
 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
 t V_StripTrailingSlash(char*)
@@ -301,10 +415,6 @@ t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
 U operator delete[](void*)@@GLIBCXX_3.4
 U operator delete(void*)@@GLIBCXX_3.4
-b guard variable for IsEmulatingGL()::bIsEmulatingGL
-b guard variable for AllocTempVector()::s_nIndex
-b guard variable for AllocTempVector()::s_vecTemp
-b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b guard variable for CShaderAPIEmpty::GetFlashlightState(VMatrix&) const::blah
 b guard variable for CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const::blah
 b guard variable for CShaderAPIEmpty::GetToneMappingScaleLinear() const::dummy
@@ -316,13 +426,14 @@ b vec4_origin
 b vec2_invalid
 b vec2_invalid
 b vec4_invalid
+t CopyToMaxChars(char*, int, char const*, int) [clone .part.0]
 b g_ShaderShadow
 d s_BackSlashMap
 b g_ShaderAPIEmpty
 b s_ShaderDeviceEmpty
-t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool) [clone .constprop.14]
 t ShaderInterfaceFactory(char const*, int*)
-b s_ShaderDeviceMgrEmpty
+d s_ShaderDeviceMgrEmpty
 b __g_CreateCShaderAPIEmptyIShaderAPI_reg
 t __CreateCShaderAPIEmptyIShaderAPI_interface()
 b __g_CreateCShaderDeviceEmptyIShaderDevice_reg
@@ -375,13 +486,15 @@ t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
 t IShaderAPI::OverrideBlend(bool, bool, int, int)
 t IShaderAPI::GMOD_ForceFilterMode(bool, int)
 t IShaderAPI::OverrideBlendSeparateAlpha(bool, bool, int, int)
-t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
-t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&) [clone .constprop.15]
+t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
+t IIndexBuffer::~IIndexBuffer()
 t IIndexBuffer::~IIndexBuffer()
 t IIndexBuffer::~IIndexBuffer()
 b InterfaceReg::s_pInterfaceRegs
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t IVertexBuffer::~IVertexBuffer()
 t IVertexBuffer::~IVertexBuffer()
 t IVertexBuffer::~IVertexBuffer()
 t CShaderAPIEmpty::BeginFrame()
@@ -664,6 +777,7 @@ t CShaderDeviceEmpty::AddView(void*)
 t CShaderDeviceEmpty::Present()
 t CShaderDeviceEmpty::SetView(void*)
 t CShaderDeviceEmpty::~CShaderDeviceEmpty()
+t CShaderDeviceEmpty::~CShaderDeviceEmpty()
 t CShaderShadowEmpty::StencilFunc(ShaderStencilFunc_t)
 t CShaderShadowEmpty::StencilMask(int)
 t CShaderShadowEmpty::EnableTexGen(TextureStage_t, bool)
@@ -732,6 +846,7 @@ t CShaderDeviceMgrEmpty::Init()
 t CShaderDeviceMgrEmpty::Connect(void* (*)(char const*, int*))
 t CShaderDeviceMgrEmpty::SetMode(void*, int, ShaderDeviceInfo_t const&)
 t CShaderDeviceMgrEmpty::Shutdown()
+t IMesh::~IMesh()
 t IMesh::~IMesh()
 t IMesh::~IMesh()
 U operator new[](unsigned int)@@GLIBCXX_3.4
@@ -1000,15 +1115,12 @@ r typeinfo name for IHardwareConfigInternal
 r typeinfo name for IMaterialSystemHardwareConfig
 r typeinfo name for IMesh
 r vtable for CEmptyMesh
-r vtable for IAppSystem
 r vtable for IShaderAPI
 r vtable for IIndexBuffer
-r vtable for IShaderDevice
 r vtable for IShaderShadow
 r vtable for IVertexBuffer
 r vtable for CShaderAPIEmpty
 r vtable for CDllDemandLoader
-r vtable for IShaderDeviceMgr
 r vtable for IDebugTextureInfo
 r vtable for IShaderDynamicAPI
 r vtable for CShaderDeviceEmpty

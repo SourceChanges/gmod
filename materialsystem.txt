@@ -14,7 +14,6 @@ U CommandLine_Tier0
 U cosf@@GLIBC_2.0
 U cos@@GLIBC_2.0
 T CreateInterface
-U CreateThreadPool
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
 U __ctype_toupper_loc@@GLIBC_2.3
@@ -58,6 +57,8 @@ T _init
 U isgraph@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
 U KeyValuesSystem
 U __log_finite@@GLIBC_2.15
@@ -77,7 +78,7 @@ U Plat_IsInDebugSession
 U Plat_localtime
 U __pow_finite@@GLIBC_2.15
 U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
 U pthread_mutexattr_init@@GLIBC_2.0
 U pthread_mutexattr_settype@@GLIBC_2.1
 U pthread_mutex_destroy@@GLIBC_2.0
@@ -131,6 +132,7 @@ U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
+U V_CreateThreadPool
 U vsnprintf@@GLIBC_2.0
 U vswprintf@@GLIBC_2.2
 U Warning

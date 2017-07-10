@@ -125,6 +125,8 @@ T _init
 U _IO_getc@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
 U lchown@@GLIBC_2.0
 R _length_code
@@ -156,12 +158,10 @@ U __progname_full@@GLIBC_2.0
 U __progname@@GLIBC_2.0
 U program_invocation_name@@GLIBC_2.0
 U program_invocation_short_name@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
 w __pthread_key_create@@GLIBC_2.0
 w pthread_mutex_lock@@GLIBC_2.0
 w pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
-U putchar@@GLIBC_2.0
 U rand@@GLIBC_2.0
 U readdir@@GLIBC_2.0
 U read@@GLIBC_2.0
@@ -369,8 +369,6 @@ U Awesomium::WebStringArray::~WebStringArray()
 U Awesomium::WebCore::Initialize(Awesomium::WebConfig const&)
 U Awesomium::WebCore::Shutdown()
 U Awesomium::WebConfig::WebConfig()
-W Awesomium::WebConfig::~WebConfig()
-W Awesomium::WebConfig::~WebConfig()
 U Awesomium::WebString::CreateFromUTF8(char const*, unsigned int)
 U Awesomium::WebString::operator=(Awesomium::WebString const&)
 U Awesomium::WebString::WebString()
@@ -435,7 +433,6 @@ U std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char,
 U std::__throw_bad_alloc()@@GLIBCXX_3.4
 U std::__throw_out_of_range(char const*)@@GLIBCXX_3.4
 U std::cout@@GLIBCXX_3.4
-U std::terminate()@@GLIBCXX_3.4
 V typeinfo for Bootil::AutoBuffer
 V typeinfo for Bootil::Buffer
 V typeinfo name for Bootil::AutoBuffer

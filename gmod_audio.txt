@@ -68,6 +68,8 @@ U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
 U malloc@@GLIBC_2.0
 U mbstowcs@@GLIBC_2.0
@@ -80,7 +82,6 @@ U Plat_IsInDebugSession
 U Plat_localtime
 U __pow_finite@@GLIBC_2.15
 U printf@@GLIBC_2.0
-w pthread_cancel
 w __pthread_key_create
 w pthread_mutex_lock@@GLIBC_2.0
 w pthread_mutex_unlock@@GLIBC_2.0
@@ -128,11 +129,9 @@ U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4
 U std::string::_Rep::_M_dispose(std::allocator<char> const&)@@GLIBCXX_3.4
 U std::string::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
 U std::string::swap(std::string&)@@GLIBCXX_3.4
-U std::string::assign(std::string const&)@@GLIBCXX_3.4
 U std::string::reserve(unsigned int)@@GLIBCXX_3.4
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@@GLIBCXX_3.4
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
-U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@@GLIBCXX_3.4
 U std::ios_base::Init::Init()@@GLIBCXX_3.4
 U std::ios_base::Init::~Init()@@GLIBCXX_3.4
 U operator new(unsigned int)@@GLIBCXX_3.4

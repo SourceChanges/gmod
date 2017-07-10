@@ -1,67 +1,73 @@
-t aa_ahref
+t aa_ahref.isra.2
 t aa_findcnew
-t aa_table
-t aa_xref
+t aa_table.isra.1
+t aa_xref.isra.6
 U abort@@GLIBC_2.0
 U access@@GLIBC_2.0
 t addchar
 t add_fdes
 t addintlen
-d adds.9477
+d adds.8619
 t addstr
-t adjuststack
+t adjuststack.isra.0.part.1
 t argv2int
 t asm_bitshift
-t asm_comp
+t asm_callx
+t asm_collectargs.isra.23
 r asm_compmap
-t asm_conv
-t asm_count_call_slots
+t asm_count_call_slots.isra.30
 t asm_fparith
-t asm_fpmath
+t asm_fref
 t asm_fuseahuref
-t asm_fusearef
-t asm_fusefref
+t asm_fusearef.isra.40
+t asm_fusefref.isra.39
 t asm_fuseload
 t asm_fusestrref
 t asm_fusexref
+t asm_fxload
 t asm_fxstore
 t asm_gc_check
 t asm_gencall
 t asm_guardcc
-t asm_href
-t asm_hrefk
 t asm_intarith
 t asm_ir
-t asm_loop
+t asm_isk32.isra.27.part.28
 t asm_mclimit
 t asm_min_max
 t asm_neg_not
+t asm_obar
 t asm_phi_break
-t asm_retf
+t asm_phi_copyspill
 t asm_setup_call_slots
-t asm_setupresult
+t asm_setupresult.isra.43
+t asm_snap_alloc
 t asm_snap_alloc1
 t asm_snap_prep
 t asm_stack_check
+t asm_strref
+t asm_strto
 t asm_swapops
-t asm_tobit
+t asm_tbar.isra.44
 t asm_tointg
+t asm_tostr
+t asm_uref
 t asm_x87load
-t assign_adjust
+t assign_adjust.isra.32
 t auxsort
-t base_from_cb_data
-t base_from_object
+t base_from_cb_data.isra.4
+t base_from_object.isra.3
 t bcemit_branch
 t bcemit_branch_t
 t bcemit_INS
 t bcemit_jmp
 t bcemit_nil
 t bcemit_store
-t bcread_error
+t bcread_error.isra.10
 t bcread_fill
 t bcread_ktabk
-t bcread_uleb128
-t bcreg_reserve
+t bcread_resize
+t bcread_uleb128.isra.6
+t bcreg_bump
 t bcwrite_ktabk
 t bcwrite_proto
 t bcwrite_resize
@@ -72,16 +78,17 @@ t check_call_unroll
 t check_Lproto
 U chmod@@GLIBC_2.0
 U chown@@GLIBC_2.1
-t classend
+t classend.isra.6
 t classify_object_over_fdes
 U clock@@GLIBC_2.0
 U closedir@@GLIBC_2.0
 t close_state
-b completed.7134
+b colorcorrection
+b completed.6591
 t const_gc
 t const_num
 U cosh@@GLIBC_2.0
-t countint
+t countint.part.8
 t cpcall
 t cpfinalize
 t cploop_opt
@@ -89,14 +96,11 @@ t cpluaopen
 t cpparser
 t cpwriter
 T CreateInterface
-r CSWTCH.187
-r CSWTCH.189
-r CSWTCH.333
-d __CTOR_END__
-d __CTOR_LIST__
+r CSWTCH.347
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
 U __ctype_toupper_loc@@GLIBC_2.3
+B cvar
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
 U __cxa_end_catch@@CXXABI_1.3
@@ -107,15 +111,18 @@ U __cxa_pure_virtual@@CXXABI_1.3
 U __cxa_rethrow@@CXXABI_1.3
 t dce_propagate
 t debug_frameline
-t debug_framepc
+t debug_framepc.isra.4.part.5
 t debug_getupvalue
-t debug_localname
-t debug_varname
+t debug_localname.isra.7
+t debug_read_uleb128
+t debug_varname.isra.6
 b DefaultAng
 b DefaultVec
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
+t deregister_tm_clones
+U DevMsg
 U difftime@@GLIBC_2.0
 U dirname@@GLIBC_2.0
 U dlclose@@GLIBC_2.0
@@ -123,32 +130,30 @@ U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
-t __do_global_ctors_aux
 t __do_global_dtors_aux
+t __do_global_dtors_aux_fini_array_entry
 d __dso_handle
-d __DTOR_END__
-b dtor_idx.7136
-d __DTOR_LIST__
 b dwarf_reg_size_table
 d DW.ref.__gxx_personality_v0
 d _DYNAMIC
+U __dynamic_cast@@CXXABI_1.3
 D _edata
 t emit_addptr
-t emit_gri
+t emit_gmroi.constprop.46
+t emit_gri.isra.7
 t emit_loadi
 t emit_loadn
-t emit_movmroi
-t emit_movrr
+t emit_movrr.isra.16
 t emit_mrm
-t emit_rma
-t emit_rmro
-t emit_rr
-t emit_spload
-t emit_spstore
+t emit_rma.isra.4
+t emit_rmro.isra.5
+t emit_rr.isra.3
+t emit_spload.isra.17
+t emit_spstore.isra.19
 t emptybuffer
 B _end
 t err_argmsg
-t err_limit
+t err_limit.isra.24
 t err_msgv
 U __errno_location@@GLIBC_2.0
 U Error
@@ -163,7 +168,8 @@ t expr_bracket
 t expr_cond
 t expr_discharge
 t expr_field
-t expr_index
+t expr_free.isra.9.part.10
+t expr_index.isra.31
 t expr_list
 t expr_next
 t expr_primary
@@ -179,13 +185,13 @@ t fde_single_encoding_compare
 t fde_unencoded_compare
 U feof@@GLIBC_2.0
 U ferror@@GLIBC_2.0
-t ffh_resume
 U fflush@@GLIBC_2.0
 U fgets@@GLIBC_2.0
 r field_ofs
 t fillbuf
 t find_kinit
 T _fini
+t flagbits_to_strings
 t fold_abc_fwd
 t fold_abc_invar
 t fold_abc_k
@@ -318,6 +324,7 @@ t fold_simplify_tobit_conv
 t fold_xload_kptr
 U fopen64@@GLIBC_2.1
 U fopen@@GLIBC_2.1
+t fori_arg.constprop.17
 t fori_load
 U fork@@GLIBC_2.0
 U fprintf@@GLIBC_2.0
@@ -325,6 +332,7 @@ U fputc@@GLIBC_2.0
 U fputs@@GLIBC_2.0
 t frame_downheap
 t frame_dummy
+t __frame_dummy_init_array_entry
 r __FRAME_END__
 b frame_hdr_cache
 b frame_hdr_cache_head
@@ -337,6 +345,7 @@ t fs_buf_resize
 t fscope_end
 t fs_finish
 t fs_init
+t func_newL
 t fwd_ahload
 U fwrite@@GLIBC_2.0
 t gc_finalize
@@ -344,9 +353,11 @@ r gc_freefunc
 U g_ClockSpeedMillisecondsMultiplier
 U g_ClockSpeedSecondsMultiplier
 t gc_mark
+t gc_mark_gcroot
+t gc_mayclear
 t gc_onestep
 t gc_sweep
-t gc_traverse_trace
+t gc_traverse_trace.part.3
 b get
 t get_cie_encoding
 U getcwd@@GLIBC_2.0
@@ -356,27 +367,36 @@ t getfield
 U getpwuid@@GLIBC_2.0
 U gettimeofday@@GLIBC_2.0
 B g_iTypeNum
+b g_KeyValuesErrorStack
 b g_LastError
-t global constructors keyed to get
-t global constructors keyed to g_LastError
-t global constructors keyed to SteamAppSubscribed(int)
-t global constructors keyed to LuaStateToInterface(lua_State*)
-t global constructors keyed to _V_memset(char const*, int, void*, int, int)
 d _GLOBAL_OFFSET_TABLE_
 t _GLOBAL__sub_I_Base.cpp
 t _GLOBAL__sub_I_Buffer.cpp
 t _GLOBAL__sub_I_Console.cpp
 t _GLOBAL__sub_I_ConsoleInput.cpp
+t _GLOBAL__sub_I_cvar
 t _GLOBAL__sub_I_Debug.cpp
 t _GLOBAL__sub_I_File.cpp
+t _GLOBAL__sub_I_get
+t _GLOBAL__sub_I_g_LastError
+t _GLOBAL__sub_I_g_pFullFileSystem
+t _GLOBAL__sub_I_g_pStudioRender
 t _GLOBAL__sub_I_Hasher.cpp
 t _GLOBAL__sub_I_Math.cpp
 t _GLOBAL__sub_I_Platform_LINUX.cpp
+t _GLOBAL__sub_I_s_StringCharConversion
 t _GLOBAL__sub_I_String.cpp
 t _GLOBAL__sub_I_String_File.cpp
 t _GLOBAL__sub_I_String_Format.cpp
 t _GLOBAL__sub_I_String_Test.cpp
 t _GLOBAL__sub_I_String_Util.cpp
+t _GLOBAL__sub_I__Z18SteamAppSubscribedi
+t _GLOBAL__sub_I__Z19LuaStateToInterfaceP9lua_State
+t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
+t _GLOBAL__sub_I__ZN10CUtlString11AllocMemoryEj
+t _GLOBAL__sub_I__ZN11CLuaConVars4InitEv
+t _GLOBAL__sub_I__ZN14ConCommandBase18s_pConCommandBasesE
+t _GLOBAL__sub_I__ZN9KeyValues22s_pfGetSymbolForStringE
 d g_LuaShared
 T GMOD_LoadBinaryModule
 t GMOD_LuaCreateEmptyUserdata
@@ -384,17 +404,42 @@ t GMODLUA_GetUserType
 t GMOD_LuaPrint
 w __gmon_start__
 U gmtime_r@@GLIBC_2.0
-t gola_close
+t gola_close.isra.22
+t gola_findlabel
 t gola_new
-t gola_resolve
+t gola_resolve.isra.29
+b g_pCVar
+b g_pDataCache
+b g_pDmeMakefileUtils
 b g_pFullFileSystem
+b g_pInputSystem
+b g_pMaterialSystem
+b g_pMaterialSystemDebugTextureInfo
+b g_pMaterialSystemHardwareConfig
+b g_pMatSystemSurface
+b g_pMDLCache
+b g_pNetworkSystem
+b g_pPhysicsCollision
+b g_pProcessUtils
+b g_pQueuedLoader
+b g_pSoundEmitterSystem
+b g_pStudioRender
+b g_pUtlSortVectorQSortContext
+b g_pVGui
+b g_pVGuiInput
+b g_pVGuiLocalize
+b g_pVGuiPanel
+b g_pVGuiSchemeManager
+b g_pVGuiSurface
+b g_pVGuiSystem
+b g_pVideo
+b g_pVTex
+b g_VBAllocTracker
 U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
 t hashkey
 t hookf
-r hooknames.4641
-t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
+r hooknames.4257
 U iconv_close@@GLIBC_2.1
 U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
@@ -404,22 +449,133 @@ t index2adr
 T _init
 t init_dwarf_reg_size_table
 U _IO_getc@@GLIBC_2.0
+U isspace@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 d __JCR_END__
 d __JCR_LIST__
 t jit_checktrace
 r jit_param_default
 r jit_trlinkname
 t jmp_append
+t jmp_dropval
+t jmp_novalue.isra.6
 t jmp_patch
-t jmp_patchins
-t jmp_patchtestreg
+t jmp_patchtestreg.isra.7
 t jmp_patchval
-t jmp_tohere
 w _Jv_RegisterClasses
 r KEY_HOOK
+U KeyValuesSystem
 t kfold_intop
-t kfold_xload
+t kfold_xload.isra.18
+t .L122
+t .L19
+t .L191
+t .L192
+t .L195
+t .L196
+t .L197
+t .L198
+t .L21
+t .L22
+t .L223
+t .L226
+t .L227
+t .L23
+t .L230
+t .L231
+t .L232
+t .L233
+t .L24
+t .L25
+t .L26
+t .L27
+t .L28
+t .L29
+t .L30
+t .L31
+t .L32
+t .L325
+t .L328
+t .L329
+t .L33
+t .L330
+t .L331
+t .L332
+t .L334
+t .L336
+t .L337
+t .L338
+t .L339
+t .L34
+t .L340
+t .L341
+t .L342
+t .L343
+t .L344
+t .L345
+t .L346
+t .L347
+t .L348
+t .L349
+t .L35
+t .L350
+t .L351
+t .L352
+t .L354
+t .L36
+t .L367
+t .L368
+t .L37
+t .L371
+t .L372
+t .L373
+t .L374
+t .L38
+t .L39
+t .L40
+t .L41
+t .L415
+t .L417
+t .L418
+t .L419
+t .L42
+t .L420
+t .L421
+t .L422
+t .L423
+t .L424
+t .L425
+t .L426
+t .L427
+t .L428
+t .L429
+t .L43
+t .L430
+t .L431
+t .L432
+t .L44
+t .L440
+t .L523
+t .L524
+t .L526
+t .L527
+t .L528
+t .L529
+t .L56
+t .L57
+t .L60
+t .L61
+t .L61
+t .L62
+t .L63
+t .L64
+t .L65
+t .L68
+t .L69
+t .L70
+t .L71
 U lchown@@GLIBC_2.0
 U ldexp@@GLIBC_2.0
 t lex_check
@@ -1041,7 +1197,6 @@ t lj_vm_unwind_ff_eh
 t lj_vm_unwind_rethrow
 t lj_vm_unwind_yield
 t llex
-t ll_sym
 U localtime@@GLIBC_2.0
 U localtime_r@@GLIBC_2.0
 t lstat
@@ -1185,15 +1340,19 @@ T lua_yield
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
-b marker.8860
+b marker.8357
 t match
 t matchbracketclass
+t match_class
 r match_class_map
+b materials
 t max_expand
 U mbstowcs@@GLIBC_2.0
 t mcode_allocarea
-t mcode_protect
+t mcode_protect.part.3
 t mcode_protfail
+b mdlcache
+b mdllib
 U memchr@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
@@ -1205,19 +1364,24 @@ t mknod
 t __mknod
 U mktime@@GLIBC_2.0
 U mmap64@@GLIBC_2.1
+t mmcall.isra.3
 U mount@@GLIBC_2.0
 U mprotect@@GLIBC_2.0
 U mremap@@GLIBC_2.0
 U Msg
 U munmap@@GLIBC_2.0
 t narrow_conv_backprop
+t narrow_forl.isra.0.part.1
 t narrow_stripov_backprop
+t narrow_stripov.constprop.2
 t newtab
+t noconflict.isra.29
 b object_mutex
-b once_regsizes.9698
+b once_regsizes.8769
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
+b p4
 r package_global
 r package_lib
 t panic
@@ -1240,14 +1404,13 @@ U __progname@@GLIBC_2.0
 U program_invocation_name@@GLIBC_2.0
 U program_invocation_short_name@@GLIBC_2.0
 t propagatemark
-w pthread_cancel@@GLIBC_2.0
 w __pthread_key_create@@GLIBC_2.0
 w pthread_mutex_lock@@GLIBC_2.0
 w pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
 t push_captures
 t push_onecapture
-U putchar@@GLIBC_2.0
+U qsort@@GLIBC_2.0
 t qsort_s
 t ra_alloc1
 t ra_allocref
@@ -1262,13 +1425,13 @@ t ra_pick
 t ra_rematk
 t ra_rename
 t ra_restore
-t ra_scratch
-t ra_spill
+t ra_spill.isra.36
 U readdir@@GLIBC_2.0
 t read_encoded_value_with_base
 t reader_file
 t reader_string
 t read_long_string
+t read_sleb128
 t read_sleb128
 U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
@@ -1323,9 +1486,9 @@ t recff_xpcall_cp
 t rec_for
 t rec_for_check
 t rec_for_loop
-t rec_func_lua
 t rec_func_setup
 t rec_idx_abc
+t rec_iterl
 t rec_loop_interp
 t rec_loop_jit
 t rec_mm_arith
@@ -1339,6 +1502,7 @@ t __register_frame_info_bases
 t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
+t register_tm_clones
 t release_unused_segments
 U rename@@GLIBC_2.0
 t resizestack
@@ -1352,30 +1516,31 @@ b seen_objects
 U select@@GLIBC_2.0
 t set2
 t set_fast_math
-t setfield
 t setintfield
 t setjitmode
 t setptmode
 t setptmode_all
-t settabsi
-t settabss
 t singlematch
 U sinh@@GLIBC_2.0
+t sink_checkalloc.isra.0
 t sink_phidep
 t size_of_encoded_value
 t skip_sep
 t sload
-t snap_pref
-t snap_replay_const
+t snap_pref.isra.10
+t snap_replay_const.isra.9
 t snap_restoreval
-t snap_usedef
+t snap_sunk_store2.isra.6
+t snap_usedef.isra.7.part.8
+b s_NoEscConversion
 t sort_comp
 U sprintf@@GLIBC_2.0
 U srand@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
+b s_StringCharConversion
 U __stack_chk_fail@@GLIBC_2.4
 t __stack_chk_fail_local
 t stack_init
-t start_capture
 t stat
 t __stat
 U stderr@@GLIBC_2.0
@@ -1401,16 +1566,20 @@ t strscan_dec
 t strscan_double
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
-b subs.9478
+b studiorender
+b subs.8620
+U swprintf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
-t T.224
-t T.335
-t T.53
 U tanh@@GLIBC_2.0
+b terminator.8463
 U ThreadGetCurrentId
 U ThreadInMainThread
+U ThreadInterlockedAssignIf
+U ThreadInterlockedExchange
 U time@@GLIBC_2.0
+d __TMC_END__
 U tmpnam@@GLIBC_2.0
 r tokennames
 U tolower@@GLIBC_2.0
@@ -1418,7 +1587,7 @@ U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
 t trace_exit_cp
-t trace_flushroot
+t trace_flushroot.isra.6
 t trace_start
 t trace_state
 t treatstackoption
@@ -1447,7 +1616,6 @@ t _Unwind_Resume
 t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
-t _Unwind_SetSpColumn
 t unwindstack
 U usleep@@GLIBC_2.0
 U utime@@GLIBC_2.0
@@ -1467,6 +1635,8 @@ U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
+U wcstol@@GLIBC_2.0
+U wcstoll@@GLIBC_2.1
 U wcstombs@@GLIBC_2.0
 t __wrap_access
 t __wrap_chmod
@@ -1505,6 +1675,8 @@ U __xmknod@@GLIBC_2.0
 U __xpg_basename@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
+t HashString(char const*)
+t LuaConVars()
 T md5_finish(md5_context*, unsigned char*)
 T md5_starts(md5_context*)
 T md5_update(md5_context*, unsigned char*, int)
@@ -1517,16 +1689,20 @@ t V_strnistr(char const*, char const*, int)
 t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int) [clone .part.4]
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
+U ConColorMsg(Color const&, char const*, ...)
 T crc32_start(unsigned long)
+t MurmurHash2(void const*, int, unsigned int)
 t Q_URLDecode(char*, int, char const*, int)
 t Q_URLEncode(char*, int, char const*, int)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
+t MurmurHash64(void const*, int, unsigned int)
 t V_FixSlashes(char*, char)
 t V_pretifymem(float, int, bool)
 t V_pretifynum(long long)
@@ -1558,6 +1734,7 @@ t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t V_StripLastDir(char*, int)
 t V_vsnprintfRet(char*, int, char const*, char*, bool*)
+t ConVar_Register(int, IConCommandBaseAccessor*)
 t GetModuleHandle(char const*)
 t Q_UChar32ToUTF8(wchar_t, char*)
 t Q_UnicodeLength(char const*)
@@ -1572,6 +1749,7 @@ t V_FixupPathName(char*, unsigned int, char const*)
 t V_StripFilename(char*)
 t Q_IsValidUChar32(wchar_t)
 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*) [clone .part.5]
 t Q_UnicodeAdvance(char*, int)
 t Q_UnicodeAdvance(unsigned short*, int)
 t Q_UnicodeAdvance(wchar_t*, int)
@@ -1581,7 +1759,10 @@ t V_IsAbsolutePath(char const*)
 t V_StripExtension(char const*, char*, int)
 t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
 t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
+t CharacterSetBuild(characterset_t*, char const*)
 t CloseLuaInterface(ILuaInterface*)
+t ConVar_PrintFlags(ConCommandBase const*)
+t ConVar_Unregister()
 t Q_UnicodeValidate(char const*)
 t Q_UnicodeValidate(unsigned short const*)
 t Q_UnicodeValidate(wchar_t const*)
@@ -1590,7 +1771,9 @@ t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
 t V_ComposeFileName(char const*, char const*, char*, int)
 t V_ExtractFilePath(char const*, char*, int)
 t CreateLuaInterface(bool)
+t HashStringCaseless(char const*)
 t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UChar32ToUTF8Len(wchar_t) [clone .part.2]
 t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
@@ -1604,26 +1787,41 @@ t V_GetFileExtension(char const*)
 t V_MakeAbsolutePath(char*, int, char const*, char const*)
 t V_MakeRelativePath(char const*, char const*, char*, int)
 t V_RemoveDotSlashes(char*, char, bool)
+t EvaluateConditional(char const*)
 t LuaStateToInterface(lua_State*)
 t Q_UChar32ToUTF16Len(wchar_t)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool) [clone .part.7]
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool) [clone .part.6]
 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t MurmurHash2LowerCase(char const*, unsigned int)
 t V_StripTrailingSlash(char*)
+t ConnectTier1Libraries(void* (**)(char const*, int*), int)
+t ConnectTier2Libraries(void* (**)(char const*, int*), int)
+t ConnectTier3Libraries(void* (**)(char const*, int*), int)
+t DefaultCompletionFunc(char const*, char (*) [128])
 t Sys_IsDebuggerPresent()
 t V_GetCurrentDirectory(char*, int)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t BGetLocalFormattedDate(long, char*, int)
 t BGetLocalFormattedTime(long, char*, int)
+t GetNoEscCharConversion()
 t V_ExtractFileExtension(char const*, char*, int)
 t V_normalizeFloatString(char*)
+t ConVar_PrintDescription(ConCommandBase const*)
 t CreateInterfaceInternal(char const*, int*)
 t AdvancedLuaErrorReporter(lua_State*)
+t DisconnectTier1Libraries()
+t DisconnectTier2Libraries()
+t DisconnectTier3Libraries()
+t GetCStringCharConversion()
 t Q_RemoveAllEvilCharacters(char*)
 t Sys_RunningWithDebugModules()
 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
+t HashStringCaselessConventional(char const*)
 t StringAfterPrefixCaseSensitive(char const*, char const*)
 t V_AddBackSlashesToSpecialChars(char const*)
 t SteamDepotIsSubscribedAndDownloaded(int, char const*, bool)
@@ -1633,10 +1831,17 @@ T md5(unsigned char*, int, unsigned char*)
 t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
 t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
 T crc32(void const*, int, unsigned long, unsigned long*)
+t Hash4(void const*)
+t Hash8(void const*)
+U ConMsg(char const*, ...)
+U DevMsg(char const*, ...)
+t Hash12(void const*)
+t Hash16(void const*)
 T md5_32(void const*, int, unsigned int, void*)
 t V_atof(char const*)
 t V_atoi(char const*)
 T globber(char const*, char const*)
+t HashInt(unsigned int)
 T md5hash(void const*, int, unsigned int)
 T wildcmp(char const*, char const*)
 t V_atoi64(char const*)
@@ -1644,6 +1849,7 @@ t V_nibble(char)
 t V_strupr(char*)
 T crc32_add(unsigned long&, void const*, int)
 T crc32_end(unsigned long&)
+t HashBlock(void const*, unsigned int)
 t LuaShared()
 t pathmatch(char const*, char**, bool, char*, unsigned int)
 t V_atoui64(char const*)
@@ -1669,35 +1875,73 @@ t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
+U operator delete[](void*)@@GLIBCXX_3.4
 U operator delete(void*)@@GLIBCXX_3.4
-b guard variable for AllocTempVector()::s_nIndex
-b guard variable for AllocTempVector()::s_vecTemp
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
+b guard variable for AllocString(char const*)::stringtable
+b guard variable for CUtlString::GetEmptyString()::s_emptyString
 b guard variable for Bootil::Debug::Listeners()::Listeners
-b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+b s_BreakSet
+t AllocString(char const*)
 t FastToLower(char)
 r md5_padding
 t md5_process(md5_context*, unsigned char*)
 b s_bShowDiag
+b s_nCVarFlag
+b s_pTokenBuf
 b vec2_origin
 b vec2_origin
 b vec2_origin
 b vec2_origin
 b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec4_origin
+b vec4_origin
 b g_CLuaShared
+b s_bConnected
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+b vec4_invalid
+b vec4_invalid
+b g_CLuaConVars
+b s_bRegistered
+b s_EmptyConVar
 t WriteToBuffer(lua_State*, void const*, unsigned int, void*)
 b cMessageBuffer
+t CopyToMaxChars(char*, int, char const*, int) [clone .part.0]
 d s_BackSlashMap
+r g_nRandomValues
 r g_PooledStrings
-t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+b s_bBuiltBreakSet
+d s_nDLLIdentifier
+d s_DefaultAccessor
+d s_LastFileLoadingFrom
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool) [clone .constprop.14]
 b __g_CreateCLuaSharedILuaShared_reg
+d s_pConversionArrays_NoEscConversion
+b __g_CreateCLuaConVarsILuaConVars_reg
 t __CreateCLuaSharedILuaShared_interface()
+t __CreateCLuaConVarsILuaConVars_interface()
+d s_pConversionArrays_StringCharConversion
 t Descend(char*, unsigned int, bool, unsigned int)
 t LuaPanic(lua_State*)
 r crc_table
@@ -1706,6 +1950,7 @@ t CLuaShared::CreateCache(std::string const&, std::string const&, long)
 t CLuaShared::FindScripts(std::string const&, std::string const&, std::vector<LuaFindResult, std::allocator<LuaFindResult> >&)
 t CLuaShared::MountLuaAdd(char const*, char const*)
 t CLuaShared::AddSearchPath(char const*, char const*)
+t CLuaShared::GetStackTraces()
 t CLuaShared::SetLuaFindHook(LuaClientDatatableHook*)
 t CLuaShared::GetLuaInterface(unsigned char)
 t CLuaShared::SetFileContents(char const*, char const*)
@@ -1724,18 +1969,153 @@ t CLuaShared::CLuaShared()
 t CLuaShared::~CLuaShared()
 t CLuaShared::~CLuaShared()
 t CLuaShared::~CLuaShared()
-t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
+t ConCommand::CanAutoComplete()
+t ConCommand::AutoCompleteSuggest(char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&)
+t ConCommand::Dispatch(CCommand const&)
+t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
+t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
+t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [128]))
+t ConCommand::~ConCommand()
+t ConCommand::~ConCommand()
+t ConCommand::~ConCommand()
+t CUtlBuffer::ParseToken(characterset_t*, char*, int, bool)
+t CUtlBuffer::ParseToken(char const*, char const*, char*, int)
+t CUtlBuffer::ConvertCRLF(CUtlBuffer&)
+t CUtlBuffer::GetOverflow(int)
+t CUtlBuffer::IsBigEndian()
+t CUtlBuffer::PutOverflow(int)
+t CUtlBuffer::AssumeMemory(void*, int, int, int)
+t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::CheckPeekGet(int, int) [clone .part.16]
+t CUtlBuffer::SetBigEndian(bool)
+t CUtlBuffer::EatCPPComment()
+t CUtlBuffer::EatWhiteSpace()
+t CUtlBuffer::OnGetOverflow(int)
+t CUtlBuffer::OnPutOverflow(int)
+t CUtlBuffer::SetBufferType(bool, bool)
+t CUtlBuffer::EnsureCapacity(int)
+t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekLineLength() [clone .part.21]
+t CUtlBuffer::PeekWhiteSpace(int)
+t CUtlBuffer::PeekStringMatch(int, char const*, int)
+t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
+t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PeekStringLength() [clone .part.20]
+t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
+t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
+t CUtlBuffer::GetStringInternal(char*, unsigned int)
+t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
+t CUtlBuffer::AddNullTermination()
+t CUtlBuffer::AddNullTermination() [clone .part.23]
+t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
+t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
+t CUtlBuffer::ActivateByteSwapping(bool)
+t CUtlBuffer::CheckArbitraryPeekGet(int, int&)
+t CUtlBuffer::GetDelimitedCharInternal(CUtlCharConversion*)
+t CUtlBuffer::PeekDelimitedStringLength(CUtlCharConversion*, bool)
+t CUtlBuffer::Get(void*, int)
+t CUtlBuffer::Put(void const*, int)
+t CUtlBuffer::Swap(CUtlMemory<unsigned char, int>&)
+t CUtlBuffer::Swap(CUtlBuffer&)
+t CUtlBuffer::Scanf(char const*, ...)
+t CUtlBuffer::Printf(char const*, ...)
+t CUtlBuffer::GetLine(char*, int)
+t CUtlBuffer::GetUpTo(void*, int)
+t CUtlBuffer::PeekGet(int, int)
+t CUtlBuffer::SeekGet(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::SeekPut(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::VaScanf(char const*, char*)
+t CUtlBuffer::CheckGet(int)
+t CUtlBuffer::CheckPut(int)
+t CUtlBuffer::GetToken(char const*)
+t CUtlBuffer::VaPrintf(char const*, char*)
+t CUtlBuffer::PutString(char const*)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Purge()
+t CUtlMemory<char, int>::Purge()
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.25] [clone .constprop.32]
+t CUtlMemory<unsigned char, int>::Purge()
+t CUtlMemory<int, int>::Purge()
+t CUtlMemory<CLuaInterface::LuaPathStack, int>::Purge()
+t CUtlMemory<LuaFile*, int>::Purge()
+t CUtlMemory<KeyValues*, int>::Purge()
+t CUtlString::FixSlashes(char)
+t CUtlString::AllocMemory(unsigned int)
+t CUtlString::GetForModify()
+t CUtlString::GetEmptyString()
+t CUtlString::StripTrailingSlash()
+t CUtlString::Set(char const*)
+t CUtlString::Trim(char)
+t CUtlString::Trim(char const*)
+t CUtlString::Clear()
+t CUtlString::Purge()
+t CUtlString::Append(char const*)
+t CUtlString::Append(char const*, int)
+t CUtlString::Format(char const*, ...)
+t CUtlString::FormatV(char const*, char*)
+t CUtlString::ToLower()
+t CUtlString::ToUpper()
+t CUtlString::PathJoin(char const*, char const*)
+t CUtlString::TrimLeft(char)
+t CUtlString::TrimLeft(char const*)
+t CUtlString::SetDirect(char const*, int)
+t CUtlString::SetLength(int)
+t CUtlString::TrimRight(char)
+t CUtlString::TrimRight(char const*)
+t CUtlString::operator=(char const*)
+t CUtlString::operator=(CUtlString const&)
+t CUtlString::~CUtlString()
+t CUtlString::~CUtlString()
+t CUtlString::operator+=(char)
+t CUtlString::operator+=(double)
+t CUtlString::operator+=(int)
+t CUtlString::operator+=(char const*)
+t CUtlString::operator+=(CUtlString const&)
+t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
+t CUtlVector<char, CUtlMemory<char, int> >::GrowVector(int)
+t CUtlVector<char, CUtlMemory<char, int> >::ShiftElementsRight(int, int)
+t CUtlVector<int, CUtlMemory<int, int> >::GrowVector(int)
+t CUtlVector<int, CUtlMemory<int, int> >::ShiftElementsRight(int, int)
 t CUtlVector<LuaFile*, CUtlMemory<LuaFile*, int> >::InsertBefore(int, LuaFile* const&)
-t CUtlVector<LuaFile*, CUtlMemory<LuaFile*, int> >::~CUtlVector()
+t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::GrowVector(int)
+t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::ShiftElementsRight(int, int)
+t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
+t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
+t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::SetCount(int)
+t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::RemoveAll()
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
 U CVProfNode::ExitScope()
 t ILuaShared::~ILuaShared()
 t ILuaShared::~ILuaShared()
-t CVProfScope::~CVProfScope()
-t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
-t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t ILuaShared::~ILuaShared()
+t CLuaConVars::ClearCache()
+t CLuaConVars::CreateConVar(char const*, char const*, char const*, int)
+t CLuaConVars::DestroyManaged()
+t CLuaConVars::CreateConCommand(char const*, char const*, int, void (*)(CCommand const&), int (*)(char const*, char (*) [128]))
+t CLuaConVars::Init()
+t CLuaConVars::Cache(char const*, char const*)
+t CLuaConVars::~CLuaConVars()
+t CLuaConVars::~CLuaConVars()
+t CLuaConVars::~CLuaConVars()
+t ILuaConVars::~ILuaConVars()
+t ILuaConVars::~ILuaConVars()
+t ILuaConVars::~ILuaConVars()
+t CEmptyConVar::SetValue(float)
+t CEmptyConVar::SetValue(int)
+t CEmptyConVar::SetValue(char const*)
+t CEmptyConVar::~CEmptyConVar()
+t CEmptyConVar::~CEmptyConVar()
+t CEmptyConVar::~CEmptyConVar()
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&) [clone .constprop.15]
+t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
 b InterfaceReg::s_pInterfaceRegs
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
@@ -1755,9 +2135,9 @@ t CLuaInterface::GetUserdata(int)
 t CLuaInterface::NewUserdata(unsigned int)
 t CLuaInterface::PushSpecial(int)
 t CLuaInterface::RunStringEx(char const*, char const*, char const*, bool, bool, bool, bool)
-t CLuaInterface::SetIsServer(bool)
 t CLuaInterface::SetUserType(int, void*)
 t CLuaInterface::CallInternal(int, int)
+t CLuaInterface::CreateConVar(char const*, char const*, char const*, int)
 t CLuaInterface::CreateObject()
 t CLuaInterface::DoStackCheck()
 t CLuaInterface::ErrorFromLua(char const*, ...)
@@ -1787,13 +2167,15 @@ t CLuaInterface::CreateMetaTable(char const*)
 t CLuaInterface::GetPooledString(int)
 t CLuaInterface::PushLuaFunction(int (*)(lua_State*))
 t CLuaInterface::ReferenceCreate()
+t CLuaInterface::AppendStackTrace(char*, unsigned int)
+t CLuaInterface::CreateConCommand(char const*, char const*, int, void (*)(CCommand const&), int (*)(char const*, char (*) [128]))
 t CLuaInterface::FindAndRunScript(char const*, bool, bool, char const*, bool)
 t CLuaInterface::GetStringOrError(int)
 t CLuaInterface::PushPooledString(int)
 t CLuaInterface::RunThreadedCalls()
+t CLuaInterface::FilterConVarFlags(int&)
 t CLuaInterface::FindObjectOnTable(int, int)
 t CLuaInterface::GetActualTypeName(int)
-t CLuaInterface::IsDedicatedServer()
 t CLuaInterface::GetCurrentLocation()
 t CLuaInterface::GetMetaTableObject(int)
 t CLuaInterface::GetMetaTableObject(char const*, int)
@@ -1818,6 +2200,7 @@ t CLuaInterface::Error(char const*)
 t CLuaInterface::PCall(int, int, int)
 t CLuaInterface::Global()
 t CLuaInterface::Insert(int)
+t CLuaInterface::IsMenu()
 t CLuaInterface::IsType(int, int)
 t CLuaInterface::ObjLen(int)
 t CLuaInterface::RawGet(int)
@@ -1831,6 +2214,7 @@ t CLuaInterface::IsEqual(ILuaObject*, ILuaObject*)
 t CLuaInterface::PopPath()
 t CLuaInterface::PushNil()
 t CLuaInterface::Require(char const*)
+t CLuaInterface::SetType(unsigned char)
 t CLuaInterface::ArgError(int, char const*)
 t CLuaInterface::GetAngle(int)
 t CLuaInterface::GetColor(int)
@@ -1871,8 +2255,26 @@ t CLuaInterface::SetPathID(char const*)
 t CLuaInterface::TypeError(char const*, int)
 t CLuaInterface::CLuaInterface()
 t CLuaInterface::CLuaInterface()
+t ConCommandBase::CopyString(char const*)
+t ConCommandBase::CreateBase(char const*, char const*, int)
+b ConCommandBase::s_pAccessor
+b ConCommandBase::s_pConCommandBases
+t ConCommandBase::Init()
+t ConCommandBase::GetNext()
+t ConCommandBase::AddFlags(int)
+t ConCommandBase::Shutdown()
+t ConCommandBase::ConCommandBase(char const*, char const*, int)
+t ConCommandBase::ConCommandBase()
+t ConCommandBase::ConCommandBase(char const*, char const*, int)
+t ConCommandBase::ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t ConCommandBase::~ConCommandBase()
+t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
 t IBaseInterface::~IBaseInterface()
 t IBaseInterface::~IBaseInterface()
+t IBaseInterface::~IBaseInterface()
+t CDefaultAccessor::RegisterConCommandBase(ConCommandBase*)
 t CDllDemandLoader::GetFactory()
 t CDllDemandLoader::Unload()
 t CDllDemandLoader::CDllDemandLoader(char const*)
@@ -1880,7 +2282,17 @@ t CDllDemandLoader::CDllDemandLoader(char const*)
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
-t CWrap::~CWrap()
+t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
+t CUtlInplaceBuffer::InplaceGetLinePtr()
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlCharConversion::FindConversion(char const*, int*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlNoEscConversion::FindConversion(char const*, int*)
+t CUtlCStringConversion::FindConversion(char const*, int*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 T Bootil::AutoBuffer::EnsureCapacity(unsigned int)
 T Bootil::AutoBuffer::Clear()
 T Bootil::AutoBuffer::AutoBuffer(int)
@@ -2068,14 +2480,197 @@ t Bootil::Platform::FindFiles(std::vector<std::string, std::allocator<std::strin
 T Bootil::Platform::LastError()
 T Bootil::Shutdown()
 b Bootil::g_bShuttingDown
+t ConVar::ClampValue(float&)
+t ConVar::SetDefault(char const*)
+t ConVar::InternalSetValue(char const*)
+t ConVar::ChangeStringValue(char const*, float)
+t ConVar::InternalSetIntValue(int)
+t ConVar::InstallChangeCallback(void (*)(IConVar*, char const*, float))
+t ConVar::InternalSetFloatValue(float)
+t ConVar::Init()
+t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::Revert()
+t ConVar::AddFlags(int)
+t ConVar::SetValue(float)
+t ConVar::SetValue(int)
+t ConVar::SetValue(char const*)
+t ConVar::ConVar(char const*, char const*, int)
+t ConVar::ConVar(char const*, char const*, int, char const*)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int)
+t ConVar::ConVar(char const*, char const*, int, char const*)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
+t ConVar::~ConVar()
+t ConVar::~ConVar()
+t ConVar::~ConVar()
+t CCommand::DefaultBreakSet()
+t CCommand::Reset()
+t CCommand::Tokenize(char const*, characterset_t*)
+t CCommand::CCommand(int, char const**)
+t CCommand::CCommand()
+t CCommand::CCommand(int, char const**)
+t CCommand::CCommand()
+t CLuaError::StackEntry::~StackEntry()
 t CLuaError::StackEntry::~StackEntry()
 t CLuaError::~CLuaError()
+t CLuaError::~CLuaError()
+t ConVarRef::Init(char const*, bool)
+t ConVarRef::ConVarRef(IConVar*)
+t ConVarRef::ConVarRef(char const*)
+t ConVarRef::ConVarRef(char const*, bool)
+t ConVarRef::ConVarRef(IConVar*)
+t ConVarRef::ConVarRef(char const*)
+t ConVarRef::ConVarRef(char const*, bool)
+t CVProfile::ExitScope()
 r GarrysMod::Lua::Type::Name
+t KeyValues::deleteThis()
+t KeyValues::GetWString(char const*, wchar_t const*)
+t KeyValues::SaveToFile(IBaseFileSystem*, char const*, char const*, bool, bool)
+t KeyValues::SetNextKey(KeyValues*)
+t KeyValues::SetWString(char const*, wchar_t const*)
+t KeyValues::GetDataType(char const*)
+t KeyValues::CreateNewKey()
+t KeyValues::GetNextValue()
+t KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*)
+t KeyValues::ReadAsBinary(CUtlBuffer&, int)
+t KeyValues::RemoveSubKey(KeyValues*)
+t KeyValues::WriteIndents(IBaseFileSystem*, void*, CUtlBuffer*, int)
+t KeyValues::ChainKeyValue(KeyValues*)
+t KeyValues::GetFirstValue()
+t KeyValues::InternalWrite(IBaseFileSystem*, void*, CUtlBuffer*, void const*, int)
+t KeyValues::MergeBaseKeys(CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >&)
+t KeyValues::SaveKeyToFile(KeyValues*, IBaseFileSystem*, void*, CUtlBuffer*, int, bool, bool)
+t KeyValues::WriteAsBinary(CUtlBuffer&)
+t KeyValues::FindLastSubKey()
+t KeyValues::LoadFromBuffer(char const*, CUtlBuffer&, IBaseFileSystem*, char const*)
+t KeyValues::LoadFromBuffer(char const*, char const*, IBaseFileSystem*, char const*)
+t KeyValues::SetStringValue(char const*)
+t KeyValues::RemoveEverything()
+t KeyValues::UsesConditionals(bool)
+t KeyValues::GetNextTrueSubKey()
+t KeyValues::ParseIncludedKeys(char const*, char const*, IBaseFileSystem*, char const*, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >&)
+t KeyValues::AppendIncludedKeys(CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >&)
+t KeyValues::GetFirstTrueSubKey()
+t KeyValues::RecursiveSaveToFile(IBaseFileSystem*, void*, CUtlBuffer*, int, bool, bool)
+t KeyValues::RecursiveSaveToFile(CUtlBuffer&, int, bool, bool)
+t KeyValues::UnpackIntoStructure(KeyValuesUnpackStructure const*, void*, unsigned int)
+t KeyValues::UsesEscapeSequences(bool)
+t KeyValues::WriteConvertedString(IBaseFileSystem*, void*, CUtlBuffer*, char const*)
+t KeyValues::ProcessResolutionKeys(char const*)
+t KeyValues::RecursiveCopyKeyValues(KeyValues&)
+d KeyValues::s_pfGetStringForSymbol
+d KeyValues::s_pfGetSymbolForString
+b KeyValues::s_pGrowableStringTable
+t KeyValues::RecursiveLoadFromBuffer(char const*, CUtlBuffer&)
+t KeyValues::RecursiveMergeKeyValues(KeyValues*)
+t KeyValues::GetStringForSymbolClassic(int)
+t KeyValues::GetSymbolForStringClassic(char const*, bool)
+t KeyValues::SetUseGrowableStringTable(bool)
+t KeyValues::GetStringForSymbolGrowable(int)
+t KeyValues::GetSymbolForStringGrowable(char const*, bool)
+t KeyValues::AddSubkeyUsingKnownLastChild(KeyValues*, KeyValues*)
+t KeyValues::CreateKeyUsingKnownLastChild(char const*, KeyValues*)
+t KeyValues::Init()
+t KeyValues::Clear()
+t KeyValues::GetInt(char const*, int)
+t KeyValues::GetPtr(char const*, void*)
+t KeyValues::SetInt(char const*, int)
+t KeyValues::SetPtr(char const*, void*)
+t KeyValues::FindKey(char const*, bool)
+t KeyValues::GetBool(char const*, bool)
+t KeyValues::IsEmpty(char const*)
+t KeyValues::SetName(char const*)
+t KeyValues::GetColor(char const*)
+t KeyValues::GetFloat(char const*, float)
+t KeyValues::SetColor(char const*, Color)
+t KeyValues::SetFloat(char const*, float)
+t KeyValues::AddSubKey(KeyValues*)
+t KeyValues::CreateKey(char const*)
+t KeyValues::GetString(char const*, char const*)
+t KeyValues::GetUint64(char const*, unsigned long long)
+t KeyValues::ReadToken(CUtlBuffer&, bool&, bool&)
+t KeyValues::SetString(char const*, char const*)
+t KeyValues::SetUint64(char const*, unsigned long long)
+t KeyValues::operator=(KeyValues&)
+t KeyValues::KeyValues(char const*)
+t KeyValues::KeyValues(char const*, char const*, int)
+t KeyValues::KeyValues(char const*, char const*, int, char const*, int)
+t KeyValues::KeyValues(char const*, char const*, wchar_t const*)
+t KeyValues::KeyValues(char const*, char const*, char const*)
+t KeyValues::KeyValues(char const*, char const*, char const*, char const*, char const*)
+t KeyValues::KeyValues(char const*)
+t KeyValues::KeyValues(char const*, char const*, int)
+t KeyValues::KeyValues(char const*, char const*, int, char const*, int)
+t KeyValues::KeyValues(char const*, char const*, wchar_t const*)
+t KeyValues::KeyValues(char const*, char const*, char const*)
+t KeyValues::KeyValues(char const*, char const*, char const*, char const*, char const*)
+t KeyValues::~KeyValues()
+t KeyValues::~KeyValues()
+t KeyValues::operator delete(void*)
+t KeyValues::operator delete(void*, int, char const*, int)
+t KeyValues::operator new(unsigned int)
+t KeyValues::operator new(unsigned int, int, char const*, int)
 U operator new[](unsigned int)@@GLIBCXX_3.4
+t ConCommand::IsCommand() const
+t CUtlString::GetExtension() const
+t CUtlString::StripFilename() const
+t CUtlString::MatchesPattern(CUtlString const&, int) const
+t CUtlString::StripExtension() const
+t CUtlString::GetBaseFilename() const
+t CUtlString::UnqualifiedFilename() const
+t CUtlString::IsEqual_CaseSensitive(char const*) const
+t CUtlString::IsEqual_CaseInsensitive(char const*) const
+t CUtlString::Get() const
+t CUtlString::Left(int) const
+t CUtlString::Right(int) const
+t CUtlString::Slice(int, int) const
+t CUtlString::AbsPath(char const*) const
+t CUtlString::DirName() const
+t CUtlString::Replace(char, char) const
+t CUtlString::Replace(char const*, char const*) const
+t CUtlString::operator==(CUtlString const&) const
+t CUtlString::operator[](int) const
+t CUtlString::operator+(int) const
+t CUtlString::operator+(char const*) const
+t CUtlString::operator+(CUtlString const&) const
+t CEmptyConVar::GetName() const
+t CEmptyConVar::IsFlagSet(int) const
+t ConCommandBase::GetHelpText() const
+t ConCommandBase::IsRegistered() const
+t ConCommandBase::GetDLLIdentifier() const
+t ConCommandBase::GetName() const
+t ConCommandBase::GetNext() const
+t ConCommandBase::IsCommand() const
+t ConCommandBase::IsFlagSet(int) const
+t CUtlCharConversion::GetDelimiter() const
+t CUtlCharConversion::GetEscapeChar() const
+t CUtlCharConversion::GetDelimiterLength() const
+t CUtlCharConversion::GetConversionLength(char) const
+t CUtlCharConversion::GetConversionString(char) const
+t CUtlCharConversion::MaxConversionLength() const
 T Bootil::Buffer::GetWritten() const
 T Bootil::Buffer::GetPos() const
 T Bootil::Buffer::GetBase(unsigned int) const
 T Bootil::Buffer::GetSize() const
+t ConVar::GetDefault() const
+t ConVar::GetHelpText() const
+t ConVar::IsRegistered() const
+t ConVar::GetMax(float&) const
+t ConVar::GetMin(float&) const
+t ConVar::GetName() const
+t ConVar::IsCommand() const
+t ConVar::IsFlagSet(int) const
+t CCommand::FindArgInt(char const*, int) const
+t CCommand::FindArg(char const*) const
+t ConVarRef::IsValid() const
+t KeyValues::CopySubkeys(KeyValues*) const
+t KeyValues::FindKey(int) const
+t KeyValues::GetName() const
+t KeyValues::MakeCopy() const
 U std::string::find_last_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
 U std::string::find_first_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
 U std::string::find(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
@@ -2099,7 +2694,6 @@ U std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> 
 U std::string::swap(std::string&)@@GLIBCXX_3.4
 U std::string::append(char const*, unsigned int)@@GLIBCXX_3.4
 U std::string::append(std::string const&)@@GLIBCXX_3.4
-U std::string::assign(char const*)@@GLIBCXX_3.4
 U std::string::assign(char const*, unsigned int)@@GLIBCXX_3.4
 U std::string::assign(std::string const&)@@GLIBCXX_3.4
 U std::string::insert(unsigned int, char const*, unsigned int)@@GLIBCXX_3.4
@@ -2111,6 +2705,8 @@ U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int)@@GLIBCXX_3.4
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@@GLIBCXX_3.4
 t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_M_initialize_map(unsigned int)
+t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_Deque_base(std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >&&)
+t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_Deque_base(std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >&&)
 t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::~_Deque_base()
 t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::~_Deque_base()
 t std::_Deque_base<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> >::_M_initialize_map(unsigned int)
@@ -2124,19 +2720,12 @@ U std::basic_filebuf<char, std::char_traits<char> >::basic_filebuf()@@GLIBCXX_3.
 U std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf()@@GLIBCXX_3.4
 U std::basic_ifstream<char, std::char_traits<char> >::~basic_ifstream()@@GLIBCXX_3.4
 U std::basic_ofstream<char, std::char_traits<char> >::~basic_ofstream()@@GLIBCXX_3.4
-U std::_List_node_base::hook(std::_List_node_base*)@@GLIBCXX_3.4
-U std::_List_node_base::unhook()@@GLIBCXX_3.4
 t std::list<Bootil::Debug::IListener*, std::allocator<Bootil::Debug::IListener*> >::~list()
 t std::list<Bootil::Debug::IListener*, std::allocator<Bootil::Debug::IListener*> >::~list()
 t std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_M_reallocate_map(unsigned int, bool)
-t std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::deque(std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> > const&)
-t std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::deque(std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> > const&)
-t std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> >::deque(std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> > const&)
-t std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> >::deque(std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> > const&)
-t std::deque<std::string, std::allocator<std::string> >::_M_push_back_aux(std::string const&)
+t void std::deque<std::string, std::allocator<std::string> >::_M_push_back_aux<std::string const&>(std::string const&)
+t void std::deque<std::string, std::allocator<std::string> >::_M_push_back_aux<std::string const&>(std::string const&)
 t std::deque<std::string, std::allocator<std::string> >::_M_destroy_data_aux(std::_Deque_iterator<std::string, std::string&, std::string*>, std::_Deque_iterator<std::string, std::string&, std::string*>)
-t std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&)
-t std::deque<std::string, std::allocator<std::string> >::deque(std::deque<std::string, std::allocator<std::string> > const&)
 t std::deque<std::string, std::allocator<std::string> >::~deque()
 t std::deque<std::string, std::allocator<std::string> >::~deque()
 t std::queue<std::string, std::deque<std::string, std::allocator<std::string> > >::~queue()
@@ -2146,9 +2735,22 @@ t std::stack<Bootil::Console::ConsoleColor, std::deque<Bootil::Console::ConsoleC
 t std::stack<Bootil::Console::PosInfo, std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> > >::~stack()
 t std::stack<Bootil::Console::PosInfo, std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> > >::~stack()
 U std::locale::~locale()@@GLIBCXX_3.4
-t std::vector<LuaFindResult, std::allocator<LuaFindResult> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, LuaFindResult const&)
-t std::vector<CLuaError::StackEntry, std::allocator<CLuaError::StackEntry> >::_M_insert_aux(__gnu_cxx::__normal_iterator<CLuaError::StackEntry*, std::vector<CLuaError::StackEntry, std::allocator<CLuaError::StackEntry> > >, CLuaError::StackEntry const&)
-t std::vector<std::string, std::allocator<std::string> >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, std::string const&)
+t void std::vector<LuaFindResult, std::allocator<LuaFindResult> >::_M_emplace_back_aux<LuaFindResult>(LuaFindResult&&)
+t void std::vector<LuaFindResult, std::allocator<LuaFindResult> >::_M_emplace_back_aux<LuaFindResult>(LuaFindResult&&)
+t void std::vector<ManagedConVar, std::allocator<ManagedConVar> >::emplace_back<ManagedConVar>(ManagedConVar&&)
+t void std::vector<ManagedConVar, std::allocator<ManagedConVar> >::emplace_back<ManagedConVar>(ManagedConVar&&)
+t void std::vector<ManagedConVar, std::allocator<ManagedConVar> >::_M_emplace_back_aux<ManagedConVar>(ManagedConVar&&)
+t void std::vector<ManagedConVar, std::allocator<ManagedConVar> >::_M_emplace_back_aux<ManagedConVar>(ManagedConVar&&)
+t void std::vector<CLuaError::StackEntry, std::allocator<CLuaError::StackEntry> >::_M_emplace_back_aux<CLuaError::StackEntry const&>(CLuaError::StackEntry const&)
+t void std::vector<CLuaError::StackEntry, std::allocator<CLuaError::StackEntry> >::_M_emplace_back_aux<CLuaError::StackEntry const&>(CLuaError::StackEntry const&)
+t void std::vector<char const*, std::allocator<char const*> >::_M_emplace_back_aux<char const* const&>(char const* const&)
+t void std::vector<char const*, std::allocator<char const*> >::_M_emplace_back_aux<char const* const&>(char const* const&)
+t std::vector<char const*, std::allocator<char const*> >::~vector()
+t std::vector<char const*, std::allocator<char const*> >::~vector()
+t void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&)
+t void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string>(std::string&&)
+t void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&)
+t void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string>(std::string&&)
 t std::vector<std::string, std::allocator<std::string> >::~vector()
 t std::vector<std::string, std::allocator<std::string> >::~vector()
 U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
@@ -2157,11 +2759,15 @@ U std::ios_base::Init::Init()@@GLIBCXX_3.4
 U std::ios_base::Init::~Init()@@GLIBCXX_3.4
 U std::ios_base::ios_base()@@GLIBCXX_3.4
 U std::ios_base::~ios_base()@@GLIBCXX_3.4
-t std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::string const&)
-t std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique(std::string const&)
+t std::pair<std::_Rb_tree_iterator<std::string>, bool> std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique<std::string>(std::string&&)
 t std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*)
+t std::_Rb_tree_iterator<std::pair<std::string const, std::string> > std::_Rb_tree<std::string, std::pair<std::string const, std::string>, std::_Select1st<std::pair<std::string const, std::string> >, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<std::string&&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<std::string const, std::string> >, std::piecewise_construct_t const&, std::tuple<std::string&&>&&, std::tuple<>&&)
+t std::_Rb_tree_iterator<std::pair<std::string const, std::string> > std::_Rb_tree<std::string, std::pair<std::string const, std::string>, std::_Select1st<std::pair<std::string const, std::string> >, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<std::string&&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<std::string const, std::string> >, std::piecewise_construct_t const&, std::tuple<std::string&&>&&, std::tuple<>&&)
+t std::_Rb_tree<std::string, std::pair<std::string const, std::string>, std::_Select1st<std::pair<std::string const, std::string> >, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >::_M_get_insert_unique_pos(std::string const&)
+t std::_Rb_tree<std::string, std::pair<std::string const, std::string>, std::_Select1st<std::pair<std::string const, std::string> >, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, std::string> >*)
 U std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)@@GLIBCXX_3.4
 U std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)@@GLIBCXX_3.4
+U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 U operator new(unsigned int)@@GLIBCXX_3.4
 t void std::__adjust_heap<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, int, LuaFindResult>(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, int, int, LuaFindResult)
 t void std::__adjust_heap<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, int, std::string>(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, int, int, std::string)
@@ -2176,18 +2782,19 @@ t void std::__introsort_loop<std::reverse_iterator<__gnu_cxx::__normal_iterator<
 U std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)@@GLIBCXX_3.4.9
 U std::__throw_bad_alloc()@@GLIBCXX_3.4
 U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
 U std::__throw_out_of_range(char const*)@@GLIBCXX_3.4
-t __gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, LuaFindResult>(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, __gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, LuaFindResult)
-t void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > > >(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, __gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >)
-t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, LuaFindResult>(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, LuaFindResult)
+t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > > >(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >)
 t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >)
 t void std::__unguarded_linear_insert<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >)
+U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
 U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
 U std::cout@@GLIBCXX_3.4
 t void std::make_heap<__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > > >(__gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >, __gnu_cxx::__normal_iterator<LuaFindResult*, std::vector<LuaFindResult, std::allocator<LuaFindResult> > >)
 t void std::make_heap<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >)
 t void std::make_heap<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >)
 t void std::sort_heap<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > > >(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >)
+r std::piecewise_construct
 b std::__ioinit
 b std::__ioinit
 b std::__ioinit
@@ -2206,34 +2813,83 @@ b std::__ioinit
 b std::__ioinit
 b std::__ioinit
 b std::__ioinit
+b std::__ioinit
+t non-virtual thunk to CEmptyConVar::SetValue(float)
+t non-virtual thunk to CEmptyConVar::SetValue(int)
+t non-virtual thunk to CEmptyConVar::SetValue(char const*)
+t non-virtual thunk to ConVar::SetValue(float)
+t non-virtual thunk to ConVar::SetValue(int)
+t non-virtual thunk to ConVar::SetValue(char const*)
+t non-virtual thunk to CEmptyConVar::GetName() const
+t non-virtual thunk to CEmptyConVar::IsFlagSet(int) const
+t non-virtual thunk to ConVar::GetName() const
+t non-virtual thunk to ConVar::IsFlagSet(int) const
 r typeinfo for CLuaShared
+r typeinfo for ConCommand
 r typeinfo for ILuaShared
+r typeinfo for CLuaConVars
+r typeinfo for ILuaConVars
+r typeinfo for CEmptyConVar
 r typeinfo for CLuaInterface
 r typeinfo for ILuaInterface
+r typeinfo for ConCommandBase
 r typeinfo for IBaseInterface
+r typeinfo for CDefaultAccessor
 r typeinfo for CDllDemandLoader
+r typeinfo for CUtlCharConversion
+r typeinfo for CUtlNoEscConversion
+r typeinfo for ConVar_ServerBounded
+r typeinfo for CUtlCStringConversion
+r typeinfo for IConCommandBaseAccessor
+r typeinfo for ConVar
+r typeinfo for IConVar
 V typeinfo for Bootil::AutoBuffer
 V typeinfo for Bootil::Buffer
 r typeinfo for GarrysMod::Lua::ILuaBase
 r typeinfo name for CLuaShared
+r typeinfo name for ConCommand
 r typeinfo name for ILuaShared
+r typeinfo name for CLuaConVars
+r typeinfo name for ILuaConVars
+r typeinfo name for CEmptyConVar
 r typeinfo name for CLuaInterface
 r typeinfo name for ILuaInterface
+r typeinfo name for ConCommandBase
 r typeinfo name for IBaseInterface
+r typeinfo name for CDefaultAccessor
 r typeinfo name for CDllDemandLoader
+r typeinfo name for CUtlCharConversion
+r typeinfo name for CUtlNoEscConversion
+r typeinfo name for ConVar_ServerBounded
+r typeinfo name for CUtlCStringConversion
+r typeinfo name for IConCommandBaseAccessor
+r typeinfo name for ConVar
+r typeinfo name for IConVar
 V typeinfo name for Bootil::AutoBuffer
 V typeinfo name for Bootil::Buffer
 r typeinfo name for GarrysMod::Lua::ILuaBase
 U VTT for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U VTT for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 r vtable for CLuaShared
+r vtable for ConCommand
 r vtable for ILuaShared
+r vtable for CLuaConVars
+r vtable for ILuaConVars
+r vtable for CEmptyConVar
 r vtable for CLuaInterface
 r vtable for ILuaInterface
+r vtable for ConCommandBase
 r vtable for IBaseInterface
+r vtable for CDefaultAccessor
 r vtable for CDllDemandLoader
+r vtable for CUtlCharConversion
+r vtable for CUtlNoEscConversion
+r vtable for CUtlCStringConversion
+r vtable for ConVar
+r vtable for IConVar
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
 V vtable for Bootil::AutoBuffer
 V vtable for Bootil::Buffer
 r vtable for GarrysMod::Lua::ILuaBase
@@ -2249,7 +2905,9 @@ b V_pretifynum(long long)::current
 b GMODLUA_GetUserType::strName
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
-r CLuaInterface::GetStringOrError(int)::strDefault
+b AllocString(char const*)::stringtable
+b CLuaShared::GetStackTraces()::buffer
+b CUtlString::GetEmptyString()::s_emptyString
 b CLuaInterface::GetCurrentLocation()::strOutput
 r Bootil::File::GetTempDir()::__FUNCTION__
 b Bootil::Debug::Listeners()::Listeners
@@ -2258,3 +2916,5 @@ b Bootil::String::Format::Print(wchar_t const*, ...)::strOut
 b Bootil::String::Format::VarArgs(char const*, char*)::string
 b Bootil::String::Format::VarArgs(wchar_t const*, char*)::string
 b Bootil::Platform::GetMilliseconds()::startSeconds
+d ConVarRef::Init(char const*, bool)::bFirst
+b KeyValues::SaveKeyToFile(KeyValues*, IBaseFileSystem*, void*, CUtlBuffer*, int, bool, bool)::buf

@@ -35,6 +35,8 @@ U iconv_open@@GLIBC_2.1
 T _init
 U isspace@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
 U malloc@@GLIBC_2.0
 U mbstowcs@@GLIBC_2.0
@@ -50,7 +52,7 @@ U Plat_localtime
 U Plat_MSTime
 U __pow_finite@@GLIBC_2.15
 U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
 w pthread_mutex_lock@@GLIBC_2.0
 w pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
@@ -108,7 +110,6 @@ U operator new[](unsigned int)@@GLIBCXX_3.4
 U CThreadLocalBase::Get() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 U operator new(unsigned int)@@GLIBCXX_3.4
-U std::terminate()@@GLIBCXX_3.4
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

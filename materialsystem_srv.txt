@@ -2,13 +2,13 @@ U abort@@GLIBC_2.0
 U __acosf_finite@@GLIBC_2.15
 U __acos_finite@@GLIBC_2.15
 t add_fdes
-d adds.9477
+d adds.8619
 U __asin_finite@@GLIBC_2.15
 U __atan2f_finite@@GLIBC_2.15
 U __atan2_finite@@GLIBC_2.15
 U atan@@GLIBC_2.0
-t base_from_cb_data
-t base_from_object
+t base_from_cb_data.isra.4
+t base_from_object.isra.3
 B __bss_start
 U CallAssertFailedNotifyFunc
 U cbrtf@@GLIBC_2.0
@@ -17,19 +17,14 @@ t classify_object_over_fdes
 b colorcorrection
 U ColorSpewMessage
 U CommandLine_Tier0
-b completed.7134
+b completed.6591
 U cosf@@GLIBC_2.0
 U cos@@GLIBC_2.0
 T CreateInterface
-U CreateThreadPool
-r CSWTCH.2851
-r CSWTCH.369
-r CSWTCH.520
-r CSWTCH.522
-r CSWTCH.621
-r CSWTCH.623
-d __CTOR_END__
-d __CTOR_LIST__
+r CSWTCH.17
+r CSWTCH.1704
+r CSWTCH.93
+r CSWTCH.95
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
 U __ctype_toupper_loc@@GLIBC_2.3
@@ -43,6 +38,7 @@ U __cxa_pure_virtual@@CXXABI_1.3
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
+t deregister_tm_clones
 U DevMsg
 U DevWarning
 U dlclose@@GLIBC_2.0
@@ -50,13 +46,10 @@ U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
-t __do_global_ctors_aux
 t __do_global_dtors_aux
+t __do_global_dtors_aux_fini_array_entry
 U DoNewAssertDialog
 d __dso_handle
-d __DTOR_END__
-b dtor_idx.7136
-d __DTOR_LIST__
 b dwarf_reg_size_table
 d _DYNAMIC
 U __dynamic_cast@@CXXABI_1.3
@@ -91,6 +84,7 @@ r Four_Twos
 r Four_Zeros
 t frame_downheap
 t frame_dummy
+t __frame_dummy_init_array_entry
 r __FRAME_END__
 b frame_hdr_cache
 b frame_hdr_cache_head
@@ -102,12 +96,12 @@ b g_bForceTextureAllMips
 b g_ColorCorrectionSystem
 b g_config
 b g_config_internal
-b g_ConVarAccessor
+d g_ConVarAccessor
 d g_downFaceVerts
-b g_DummyHardwareConfig
-b g_DummyMaterial
+d g_DummyHardwareConfig
+d g_DummyMaterial
 b g_DummyMaterialVar
-b g_DummyTexture
+d g_DummyTexture
 t get_cie_encoding
 U GetCPUInformation
 U getcwd@@GLIBC_2.0
@@ -118,57 +112,57 @@ d g_frontFaceVerts
 b g_KeyValuesErrorStack
 d g_leftFaceVerts
 b g_LinearToVertex
-t global constructors keyed to cvar
-t global constructors keyed to Four_PointFives
-t global constructors keyed to g_bForceTextureAllMips
-t global constructors keyed to g_ConVarAccessor
-t global constructors keyed to g_FrameNum
-t global constructors keyed to g_LinearToVertex
-t global constructors keyed to g_pDummyMesh
-t global constructors keyed to g_pFullFileSystem
-t global constructors keyed to g_pHardwareConfig
-t global constructors keyed to g_pOcclusionQueryMgr
-t global constructors keyed to g_pShaderSystem
-t global constructors keyed to lineartovertex
-t global constructors keyed to mat_debugalttab
-t global constructors keyed to mat_report_queue_status
-t global constructors keyed to pch_materialsystem.cpp
-t global constructors keyed to s_bMathlibInitialized
-t global constructors keyed to s_StringCharConversion
-t global constructors keyed to ValidateMatrices(VMatrix const&, VMatrix const&, float)
-t global constructors keyed to MaybeSetScaleVaue(FloatBitMap_t const&, FloatBitMap_t&, int, int, float, float)
-t global constructors keyed to ParseFileInternal(char const*, char*, bool*, characterset_t*, unsigned int)
-t global constructors keyed to SetupMatrixIdentity()
-t global constructors keyed to CreateNullRenderContext()
-t global constructors keyed to InitializeStandardMaterials()
-t global constructors keyed to CreateColorCorrectionTexture(ITextureInternal*, unsigned int)
-t global constructors keyed to Pow_FixedPoint_Exponent_SIMD(float __vector const&, int)
-t global constructors keyed to EnableThreadedMaterialVarAccess(bool, IMaterialVar**, int)
-t global constructors keyed to _SSE_Sqrt(float)
-t global constructors keyed to _V_memset(char const*, int, void*, int, int)
-t global constructors keyed to CUtlString::AllocMemory(unsigned int)
-t global constructors keyed to CUtlSymbol::s_pSymbolTable
-t global constructors keyed to ImageLoader::ConvertToATIxN(unsigned char const*, ImageFormat, unsigned char*, ImageFormat, int, int, int, int)
-t global constructors keyed to ImageLoader::ImageFormatInfo(ImageFormat)
-t global constructors keyed to ImageLoader::ConstructGammaTable(unsigned char*, float, float)
-t global constructors keyed to CImagePacker::GetEfficiency()
-t global constructors keyed to CMemoryStack::CMemoryStack()
-t global constructors keyed to CMaterialDict::MaterialLessFunc(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&)
-t global constructors keyed to CMatLightmaps::CMatLightmaps()
-t global constructors keyed to FloatBitMap_t::FloatBitMap_t(int, int)
-t global constructors keyed to ConCommandBase::s_pConCommandBases
-t global constructors keyed to CUtlMemoryPool::g_ReportFunc
-t global constructors keyed to CMaterialSubRect::s_Allocator
-t global constructors keyed to CVertexMorphDict::VertexMorphDictLess::Less(CVertexMorphDict::MorphVertexList_t const&, CVertexMorphDict::MorphVertexList_t const&, void*)
-t global constructors keyed to CMaterialReference::CMaterialReference(char const*, char const*, bool)
-t global constructors keyed to VTFFileBaseHeader_t::m_DataMap
-t global constructors keyed to ColorCorrectionLookup_t::ColorCorrectionLookup_t(unsigned int)
-t global constructors keyed to EditorRenderStateList_t::s_Allocator
-t global constructors keyed to KeyValues::s_pfGetSymbolForString
-t global constructors keyed to TGALoader::GetInfo(CUtlBuffer&, int*, int*, ImageFormat*, float*)
-t global constructors keyed to TGAWriter::WriteToBuffer(unsigned char*, CUtlBuffer&, int, int, ImageFormat, ImageFormat)
-t global constructors keyed to CMaterial_QueueFriendly::GetName() const
 d _GLOBAL_OFFSET_TABLE_
+t _GLOBAL__sub_I_cvar
+t _GLOBAL__sub_I_Four_PointFives
+t _GLOBAL__sub_I_g_bForceTextureAllMips
+t _GLOBAL__sub_I_g_ConVarAccessor
+t _GLOBAL__sub_I_g_FrameNum
+t _GLOBAL__sub_I_g_LinearToVertex
+t _GLOBAL__sub_I_g_pDummyMesh
+t _GLOBAL__sub_I_g_pFullFileSystem
+t _GLOBAL__sub_I_g_pHardwareConfig
+t _GLOBAL__sub_I_g_pOcclusionQueryMgr
+t _GLOBAL__sub_I_g_pShaderSystem
+t _GLOBAL__sub_I_lineartovertex
+t _GLOBAL__sub_I_mat_debugalttab
+t _GLOBAL__sub_I_mat_report_queue_status
+t _GLOBAL__sub_I_pch_materialsystem.cpp
+t _GLOBAL__sub_I_s_bMathlibInitialized
+t _GLOBAL__sub_I_s_StringCharConversion
+t _GLOBAL__sub_I__Z16ValidateMatricesRK7VMatrixS1_f
+t _GLOBAL__sub_I__Z17MaybeSetScaleVaueRK13FloatBitMap_tRS_iiff
+t _GLOBAL__sub_I__Z17ParseFileInternalPKcPcPbP14characterset_tj
+t _GLOBAL__sub_I__Z19SetupMatrixIdentityv
+t _GLOBAL__sub_I__Z23CreateNullRenderContextv
+t _GLOBAL__sub_I__Z27InitializeStandardMaterialsv
+t _GLOBAL__sub_I__Z28CreateColorCorrectionTextureP16ITextureInternalj
+t _GLOBAL__sub_I__Z28Pow_FixedPoint_Exponent_SIMDRKU8__vectorfi
+t _GLOBAL__sub_I__Z31EnableThreadedMaterialVarAccessbPP12IMaterialVari
+t _GLOBAL__sub_I__Z9_SSE_Sqrtf
+t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
+t _GLOBAL__sub_I__ZN10CUtlString11AllocMemoryEj
+t _GLOBAL__sub_I__ZN10CUtlSymbol14s_pSymbolTableE
+t _GLOBAL__sub_I__ZN11ImageLoader14ConvertToATIxNEPKh11ImageFormatPhS2_iiii
+t _GLOBAL__sub_I__ZN11ImageLoader15ImageFormatInfoE11ImageFormat
+t _GLOBAL__sub_I__ZN11ImageLoader19ConstructGammaTableEPhff
+t _GLOBAL__sub_I__ZN12CImagePacker13GetEfficiencyEv
+t _GLOBAL__sub_I__ZN12CMemoryStackC2Ev
+t _GLOBAL__sub_I__ZN13CMaterialDict16MaterialLessFuncERKNS_16MaterialLookup_tES2_
+t _GLOBAL__sub_I__ZN13CMatLightmapsC2Ev
+t _GLOBAL__sub_I__ZN13FloatBitMap_tC2Eii
+t _GLOBAL__sub_I__ZN14ConCommandBase18s_pConCommandBasesE
+t _GLOBAL__sub_I__ZN14CUtlMemoryPool12g_ReportFuncE
+t _GLOBAL__sub_I__ZN16CMaterialSubRect11s_AllocatorE
+t _GLOBAL__sub_I__ZN16CVertexMorphDict19VertexMorphDictLess4LessERKNS_17MorphVertexList_tES3_Pv
+t _GLOBAL__sub_I__ZN18CMaterialReferenceC2EPKcS1_b
+t _GLOBAL__sub_I__ZN19VTFFileBaseHeader_t9m_DataMapE
+t _GLOBAL__sub_I__ZN23ColorCorrectionLookup_tC2Ej
+t _GLOBAL__sub_I__ZN23EditorRenderStateList_t11s_AllocatorE
+t _GLOBAL__sub_I__ZN9KeyValues22s_pfGetSymbolForStringE
+t _GLOBAL__sub_I__ZN9TGALoader7GetInfoER10CUtlBufferPiS2_P11ImageFormatPf
+t _GLOBAL__sub_I__ZN9TGAWriter13WriteToBufferEPhR10CUtlBufferii11ImageFormatS3_
+t _GLOBAL__sub_I__ZNK23CMaterial_QueueFriendly7GetNameEv
 b g_MaterialSystem
 b g_MatSysMutex
 U GMOD_SpewBufferEnd
@@ -227,8 +221,6 @@ d g_upFaceVerts
 b g_VBAllocTracker
 U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
-t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
 U iconv_close@@GLIBC_2.1
 U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
@@ -237,16 +229,125 @@ t init_dwarf_reg_size_table
 U isgraph@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 d __JCR_END__
 d __JCR_LIST__
 w _Jv_RegisterClasses
 U KeyValuesSystem
+t .L122
+t .L19
+t .L191
+t .L192
+t .L195
+t .L196
+t .L197
+t .L198
+t .L21
+t .L22
+t .L223
+t .L226
+t .L227
+t .L23
+t .L230
+t .L231
+t .L232
+t .L233
+t .L24
+t .L25
+t .L26
+t .L27
+t .L28
+t .L29
+t .L30
+t .L31
+t .L32
+t .L325
+t .L328
+t .L329
+t .L33
+t .L330
+t .L331
+t .L332
+t .L334
+t .L336
+t .L337
+t .L338
+t .L339
+t .L34
+t .L340
+t .L341
+t .L342
+t .L343
+t .L344
+t .L345
+t .L346
+t .L347
+t .L348
+t .L349
+t .L35
+t .L350
+t .L351
+t .L352
+t .L354
+t .L36
+t .L367
+t .L368
+t .L37
+t .L371
+t .L372
+t .L373
+t .L374
+t .L38
+t .L39
+t .L40
+t .L41
+t .L415
+t .L417
+t .L418
+t .L419
+t .L42
+t .L420
+t .L421
+t .L422
+t .L423
+t .L424
+t .L425
+t .L426
+t .L427
+t .L428
+t .L429
+t .L43
+t .L430
+t .L431
+t .L432
+t .L44
+t .L440
+t .L523
+t .L524
+t .L526
+t .L527
+t .L528
+t .L529
+t .L56
+t .L57
+t .L60
+t .L61
+t .L61
+t .L62
+t .L63
+t .L64
+t .L65
+t .L68
+t .L69
+t .L70
+t .L71
 t linear_search_fdes
 b lineartolightmap
 b lineartovertex
 U __log_finite@@GLIBC_2.15
 U malloc@@GLIBC_2.0
-b marker.8860
+b marker.8357
 b mat_accelerate_adjust_exposure_down
 b mat_debugalttab
 b materials
@@ -264,6 +365,7 @@ U mbstowcs@@GLIBC_2.0
 b mdllib
 U memalign@@GLIBC_2.0
 U MemAllocScratch
+U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U MemFreeScratch
 U memmove@@GLIBC_2.0
@@ -271,7 +373,7 @@ U memset@@GLIBC_2.0
 U Msg
 r nanmask
 b object_mutex
-b once_regsizes.9698
+b once_regsizes.8769
 b p4
 d pfFastCos
 d pfFastSinCos
@@ -288,7 +390,7 @@ U Plat_localtime
 d power2_n
 U __pow_finite@@GLIBC_2.15
 U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
 U pthread_mutexattr_init@@GLIBC_2.0
 U pthread_mutexattr_settype@@GLIBC_2.1
 U pthread_mutex_destroy@@GLIBC_2.0
@@ -303,6 +405,7 @@ U raise@@GLIBC_2.0
 U rand@@GLIBC_2.0
 t read_encoded_value_with_base
 t read_sleb128
+t read_sleb128
 U realloc@@GLIBC_2.0
 t __register_frame
 t __register_frame_info
@@ -310,6 +413,7 @@ t __register_frame_info_bases
 t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
+t register_tm_clones
 b s_bMathlibInitialized
 t search_object
 b seen_objects
@@ -344,11 +448,12 @@ U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
-b subs.9478
+b subs.8620
 U swprintf@@GLIBC_2.2
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
 t __tcf_0
+b terminator.8463
 U ThreadGetCurrentId
 U ThreadInMainThread
 U ThreadInterlockedAssignIf
@@ -358,6 +463,7 @@ U ThreadInterlockedDecrement
 U ThreadInterlockedExchange
 U ThreadInterlockedIncrement
 U time@@GLIBC_2.0
+d __TMC_END__
 U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
@@ -386,12 +492,12 @@ t _Unwind_Resume
 t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
-t _Unwind_SetSpColumn
 t uw_frame_state_for
 t uw_init_context_1
 t uw_install_context_1
 t uw_update_context
 t uw_update_context_1
+U V_CreateThreadPool
 b vec3_angle
 b vec3_invalid
 b vec3_origin
@@ -405,6 +511,7 @@ U wcstol@@GLIBC_2.0
 U wcstoll@@GLIBC_2.1
 U wcstombs@@GLIBC_2.0
 t __x86.get_pc_thunk.bx
+t __x86.get_pc_thunk.cx
 U ConWarning(char const*, ...)
 U DevWarning(char const*, ...)
 t HashString(char const*)
@@ -425,6 +532,7 @@ t V_strnistr(char const*, char const*, int)
 t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int) [clone .part.4]
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
@@ -606,6 +714,7 @@ t QuaternionInvert(Quaternion const&, Quaternion&)
 t QuaternionMatrix(Quaternion const&, matrix3x4_t&)
 t QuaternionMatrix(Quaternion const&, Vector const&, matrix3x4_t&)
 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*) [clone .part.5]
 t Q_UnicodeAdvance(char*, int)
 t Q_UnicodeAdvance(unsigned short*, int)
 t Q_UnicodeAdvance(wchar_t*, int)
@@ -660,6 +769,7 @@ t MathLib_MMXEnabled()
 t MathLib_SSEEnabled()
 t MatrixBuildRotateZ(VMatrix&, float)
 t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UChar32ToUTF8Len(wchar_t) [clone .part.2]
 t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
@@ -689,7 +799,9 @@ t QuaternionConjugate(Quaternion const&, Quaternion&)
 t QuaternionNormalize(Quaternion&)
 t Q_UChar32ToUTF16Len(wchar_t)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool) [clone .part.7]
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool) [clone .part.6]
 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
 t SetupMatrixIdentity()
@@ -805,6 +917,7 @@ t GenerateLineStripIndexBuffer(unsigned short*, int, int)
 t MatrixBuildPerspectiveZRange(VMatrix&, double, double)
 t MatrixBuildRotationAboutAxis(VMatrix&, Vector const&, float)
 t MatrixBuildRotationAboutAxis(Vector const&, float, matrix3x4_t&)
+t Pow_FixedPoint_Exponent_SIMD(float __vector(4) const&, int)
 t Pow_FixedPoint_Exponent_SIMD(float __vector const&, int)
 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
 t CalcClosestPointOnLineSegment(Vector const&, Vector const&, Vector const&, Vector&, float*)
@@ -822,7 +935,6 @@ t EnableThreadedMaterialVarAccess(bool, IMaterialVar**, int)
 t SolveInverseReciprocalQuadratic(float, float, float, float, float, float, float&, float&, float&)
 t CalcSqrDistAndClosestPointOnAABB(Vector const&, Vector const&, Vector const&, Vector&, float&)
 t MatrixBuildPerspectiveOffCenterX(VMatrix&, double, double, double, double, double, double, double, double)
-t UtlMemory_CalcNewAllocationCount(int, int, int, int)
 t CalcLineToLineIntersectionSegment(Vector const&, Vector const&, Vector const&, Vector const&, Vector*, Vector*, float*, float*)
 t CalculateAABBFromProjectionMatrix(VMatrix const&, Vector*, Vector*)
 t Kochanek_Bartels_Spline_NormalizeX(float, float, float, Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
@@ -851,7 +963,7 @@ t V_atof(char const*)
 t V_atoi(char const*)
 t BSpline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t FastPow(float, float)
-t HashInt(int)
+t HashInt(unsigned int)
 t _rsqrtf(float)
 t Approach(float, float, float)
 t CalcFovX(float, float)
@@ -906,12 +1018,7 @@ b guard variable for datamap_t* DataMapInit<VTFFileHeaderV7_2_t>(VTFFileHeaderV7
 b guard variable for datamap_t* DataMapInit<VTFFileHeaderV7_3_t>(VTFFileHeaderV7_3_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<VTFFileHeaderX360_t>(VTFFileHeaderX360_t*)::nameHolder
 b guard variable for IsEmulatingGL()::bIsEmulatingGL
-b guard variable for AllocTempVector()::s_nIndex
-b guard variable for AllocTempVector()::s_vecTemp
-b guard variable for CreateNormalizationCubemap(ITextureInternal*)::s_NormalizationCubemap
-b guard variable for CreateSignedNormalizationCubemap(ITextureInternal*)::s_SignedNormalizationCubemap
 b guard variable for CUtlString::GetEmptyString()::s_emptyString
-b guard variable for GLMContext::SetMaxUsedVertexShaderConstantsHint(unsigned int)::bUseMaxVertexShadeConstantHints
 b guard variable for CMaterialVar::GetMatrixValue()::identity
 b guard variable for CMatLightmaps::LockLightmap(int)::_counter
 b guard variable for CMatLightmaps::UpdateLightmap(int, int*, int*, float*, float*, float*, float*)::_counter
@@ -920,7 +1027,6 @@ b guard variable for CMatRenderContext::SetFlashlightStateEx(FlashlightState_t c
 b guard variable for CMatRenderContext::Bind(IMaterial*, void*)::matTextureListConVar
 b guard variable for CMatRenderContext::Bind(IMaterial*, void*)::matShowWaterTextureConVar
 b guard variable for CReplacementProxy::GetMaterial()::localplayer_visionflags
-b guard variable for CDummyMaterialSystem::CreateMorph(unsigned int, char const*)::s_DummyMorph
 b guard variable for CMatQueuedRenderContext::BeginRender()::_counter
 b guard variable for CTexture::ApplyRenderTargetSizeMode(int&, int&, ImageFormat)::replay_screenshotresolution
 b guard variable for CMorphMgr::EndMorphAccumulation(IMorphMgrRenderContext*)::_counter
@@ -1121,6 +1227,7 @@ b s_bSSEEnabled
 b s_EmptyConVar
 b s_pVTFTexture
 b texgammatable
+t CopyToMaxChars(char*, int, char const*, int) [clone .part.0]
 b g_DummyIndices
 b lineartoscreen
 b linearToScreen
@@ -1146,7 +1253,7 @@ r _ps_cephes_FOPI
 b s_b3DNowEnabled
 b texturetolinear
 b textureToLinear
-t TransformNormal(SphereCalc_t*, Vector&)
+t TransformNormal(SphereCalc_t*, Vector&) [clone .isra.6]
 b linearToLightmap
 b mat_fastspecular
 b mat_monitorgamma
@@ -1162,7 +1269,7 @@ r g_ImageFormatInfo
 b mat_lightmap_pfms
 b mat_showmiplevels
 r _ps_inv_sign_mask
-b s_DefaultAccessor
+d s_DefaultAccessor
 b s_nStatFrameCount
 b s_nStatMorphCount
 b s_nTotalQuadCount
@@ -1204,7 +1311,7 @@ b mat_forcehardwaresync
 b r_waterforceexpensive
 d s_LastFileLoadingFrom
 b s_pVertexColorIgnoreZ
-t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool) [clone .constprop.14]
 b mat_compressedtextures
 b g_Mathlib_GammaToLinear
 b g_Mathlib_LinearToGamma
@@ -1213,16 +1320,13 @@ b mat_hdr_enabled_command
 b mat_monitorgamma_tv_exp
 b mat_motion_blur_enabled
 t mat_reporthwmorphmemory(CCommand const&)
-r pszReplacementForceCopy
 b r_shadowrendertotexture
 b s_bMaterialsInitialized
 b s_TempFileSystemFactory
 t ForceTextureIntoHardware(ITexture*, IMaterial*, IMaterialVar*)
 b r_flashlightdepthtexture
 b s_nOptimalReadBufferSize
-b s_ResourcePreloadCubemap
 b g_BreakSetIncludingColons
-b s_ResourcePreloadMaterial
 r pConvarsAllowedInDXSupport
 d s_pBoxFaceIndicesInsideOut
 t GenericAllocateReusableData(unsigned char**, int*, int)
@@ -1268,7 +1372,7 @@ r _ps_0p5
 t CalcInit(SphereCalc_t*, int, unsigned char**, LookDir_t)
 t DrawAxes(Vector const&, Vector*, int, Color, CMeshBuilder&)
 t GetICVar()
-t CalcColor(SphereCalc_t*, int, Vector const&, unsigned char*)
+t CalcColor(SphereCalc_t*, int, Vector const&, unsigned char*) [clone .isra.7]
 b mat_proxy
 b mat_vsync
 t CDummyMesh::UnlockMesh(int, int, MeshDesc_t&)
@@ -1301,6 +1405,7 @@ t CDummyMesh::GetMesh()
 t CDummyMesh::LockMesh(int, int, MeshDesc_t&)
 t CDummyMesh::ModifyEnd(MeshDesc_t&)
 t CDummyMesh::ModifyEnd(IndexDesc_t&)
+t CDummyMesh::~CDummyMesh()
 t CDummyMesh::~CDummyMesh()
 t CDummyMesh::~CDummyMesh()
 t ColorSpace::LinearToTexture(float)
@@ -1337,6 +1442,7 @@ t CUtlBuffer::IsBigEndian()
 t CUtlBuffer::PutOverflow(int)
 t CUtlBuffer::AssumeMemory(void*, int, int, int)
 t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::CheckPeekGet(int, int) [clone .part.16]
 t CUtlBuffer::SetBigEndian(bool)
 t CUtlBuffer::EatCPPComment()
 t CUtlBuffer::EatWhiteSpace()
@@ -1345,15 +1451,18 @@ t CUtlBuffer::OnPutOverflow(int)
 t CUtlBuffer::SetBufferType(bool, bool)
 t CUtlBuffer::EnsureCapacity(int)
 t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekLineLength() [clone .part.21]
 t CUtlBuffer::PeekWhiteSpace(int)
 t CUtlBuffer::PeekStringMatch(int, char const*, int)
 t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
 t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PeekStringLength() [clone .part.20]
 t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
 t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
 t CUtlBuffer::GetStringInternal(char*, unsigned int)
 t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
 t CUtlBuffer::AddNullTermination()
+t CUtlBuffer::AddNullTermination() [clone .part.23]
 t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
 t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
 t CUtlBuffer::ActivateByteSwapping(bool)
@@ -1366,7 +1475,6 @@ t CUtlBuffer::Swap(CUtlMemory<unsigned char, int>&)
 t CUtlBuffer::Swap(CUtlBuffer&)
 t CUtlBuffer::Scanf(char const*, ...)
 t CUtlBuffer::Printf(char const*, ...)
-t CUtlBuffer::GetChar()
 t CUtlBuffer::GetLine(char*, int)
 t CUtlBuffer::GetUpTo(void*, int)
 t CUtlBuffer::PeekGet(int, int)
@@ -1382,55 +1490,100 @@ t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
-t CUtlBuffer::~CUtlBuffer()
-t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int)
-t CUtlMemory<unsigned char, int>::Init(int, int)
+t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Purge()
+t CUtlMemory<CUtlVector<CMorph::MorphQuad_t, CUtlMemory<CMorph::MorphQuad_t, int> >, int>::Purge()
+t CUtlMemory<CUtlVector<CMorph::MorphSegment_t, CUtlMemory<CMorph::MorphSegment_t, int> >, int>::Purge()
+t CUtlMemory<CImagePacker, int>::Grow(int)
+t CUtlMemory<CImagePacker, int>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MissingMaterial_t, int>, int>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, KeyValues*, int>::Node_t, int>, int>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<MorphVertexInfo_t, int>::Purge()
+t CUtlMemory<ResourceEntryInfo, int>::Purge()
+t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::Purge()
+t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<S3RGBA, int>::Purge()
+t CUtlMemory<char, int>::Purge()
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.25] [clone .constprop.32]
 t CUtlMemory<unsigned char, int>::Purge()
-t CUtlMemory<unsigned char, int>::~CUtlMemory()
+t CUtlMemory<int, int>::Purge()
+t CUtlMemory<unsigned int, int>::Purge()
+t CUtlMemory<CVTFTexture::ResourceMemorySection, int>::Purge()
+t CUtlMemory<CShaderSystem::ShaderDLLInfo_t, int>::Purge()
+t CUtlMemory<CVertexMorphDict::MorphVertexList_t, int>::Purge()
+t CUtlMemory<TextureLodOverride::OverrideInfo, int>::Purge()
+t CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int>::Purge()
+t CUtlMemory<CMatRenderContextBase::PlaneStackElement, int>::Purge()
+t CUtlMemory<CMatRenderContextBase::RenderTargetStackElement_t, int>::Purge()
+t CUtlMemory<CMorph::MorphQuad_t, int>::Purge()
+t CUtlMemory<CMorph::MorphSegment_t, int>::Purge()
+t CUtlMemory<CTexture::DataChunk, int>::Purge()
+t CUtlMemory<IMaterialVar*, int>::Purge()
+t CUtlMemory<ITextureInternal*, int>::Purge()
+t CUtlMemory<ColorCorrectionLookup_t*, int>::Purge()
+t CUtlMemory<IShader*, int>::Purge()
+t CUtlMemory<KeyValues*, int>::Purge()
+t CUtlMemory<char*, int>::Purge()
+t CUtlMemory<void (*)(int), int>::Purge()
+t CUtlMemory<void (*)(), int>::Purge()
+t CUtlMemory<char const*, int>::Purge()
+t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Purge()
+t CUtlMemory<void*, int>::Purge()
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::Insert(CMaterialDict::MaterialLookup_t const&)
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
-t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::NewNode()
-t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::~CUtlRBTree()
+t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::RemoveAt(unsigned short) [clone .part.22]
+t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CMaterialDict::MissingMaterial_t, int, bool (*)(CMaterialDict::MissingMaterial_t const&, CMaterialDict::MissingMaterial_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MissingMaterial_t, int>, int> >::RotateLeft(int)
 t CUtlRBTree<CMaterialDict::MissingMaterial_t, int, bool (*)(CMaterialDict::MissingMaterial_t const&, CMaterialDict::MissingMaterial_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MissingMaterial_t, int>, int> >::RotateRight(int)
 t CUtlRBTree<CMaterialDict::MissingMaterial_t, int, bool (*)(CMaterialDict::MissingMaterial_t const&, CMaterialDict::MissingMaterial_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MissingMaterial_t, int>, int> >::InsertRebalance(int)
 t CUtlRBTree<CMaterialDict::MissingMaterial_t, int, bool (*)(CMaterialDict::MissingMaterial_t const&, CMaterialDict::MissingMaterial_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MissingMaterial_t, int>, int> >::Insert(CMaterialDict::MissingMaterial_t const&)
-t CUtlRBTree<CMaterialDict::MissingMaterial_t, int, bool (*)(CMaterialDict::MissingMaterial_t const&, CMaterialDict::MissingMaterial_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MissingMaterial_t, int>, int> >::NewNode()
+t CUtlRBTree<CMaterialDict::MissingMaterial_t, int, bool (*)(CMaterialDict::MissingMaterial_t const&, CMaterialDict::MissingMaterial_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MissingMaterial_t, int>, int> >::RemoveAll()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
-t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Purge()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Insert(CUtlSymbolTable::CStringPoolIndex const&)
-t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::NewNode()
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<char const*, int, unsigned short>::Node_t const&)
-t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::~CUtlRBTree()
+t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::~CUtlRBTree()
 t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t const&)
 t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
-t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::~CUtlRBTree()
+t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::~CUtlRBTree()
 t CUtlRBTree<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, IShader*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, IShader*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, IShader*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, IShader*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<char const*, IShader*, unsigned short>::Node_t const&)
-t CUtlRBTree<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, IShader*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, IShader*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CUtlMap<char const*, KeyValues*, int>::Node_t, int, CUtlMap<char const*, KeyValues*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, KeyValues*, int>::Node_t, int>, int> >::RotateLeft(int)
 t CUtlRBTree<CUtlMap<char const*, KeyValues*, int>::Node_t, int, CUtlMap<char const*, KeyValues*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, KeyValues*, int>::Node_t, int>, int> >::RotateRight(int)
 t CUtlRBTree<CUtlMap<char const*, KeyValues*, int>::Node_t, int, CUtlMap<char const*, KeyValues*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, KeyValues*, int>::Node_t, int>, int> >::InsertRebalance(int)
 t CUtlRBTree<CUtlMap<char const*, KeyValues*, int>::Node_t, int, CUtlMap<char const*, KeyValues*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, KeyValues*, int>::Node_t, int>, int> >::Insert(CUtlMap<char const*, KeyValues*, int>::Node_t const&)
-t CUtlRBTree<CUtlMap<char const*, KeyValues*, int>::Node_t, int, CUtlMap<char const*, KeyValues*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, KeyValues*, int>::Node_t, int>, int> >::NewNode()
 t CUtlRBTree<CUtlMap<char const*, KeyValues*, int>::Node_t, int, CUtlMap<char const*, KeyValues*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, KeyValues*, int>::Node_t, int>, int> >::RemoveAll()
 t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
@@ -1438,8 +1591,9 @@ t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned
 t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<char const*, char const*, unsigned short>::Node_t const&)
 t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
-t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::~CUtlRBTree()
+t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::~CUtlRBTree()
 t CUtlString::FixSlashes(char)
 t CUtlString::AllocMemory(unsigned int)
 t CUtlString::GetForModify()
@@ -1466,6 +1620,7 @@ t CUtlString::TrimRight(char const*)
 t CUtlString::operator=(char const*)
 t CUtlString::operator=(CUtlString const&)
 t CUtlString::~CUtlString()
+t CUtlString::~CUtlString()
 t CUtlString::operator+=(char)
 t CUtlString::operator+=(double)
 t CUtlString::operator+=(int)
@@ -1479,56 +1634,47 @@ t CUtlSymbol::CurrTable()
 t CUtlSymbol::CUtlSymbol(char const*)
 t CUtlSymbol::CUtlSymbol(char const*)
 t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
-t CUtlVector<CImagePacker, CUtlMemory<CImagePacker, int> >::InsertBefore(int)
 t CUtlVector<ResourceEntryInfo, CUtlMemory<ResourceEntryInfo, int> >::GrowVector(int)
-t CUtlVector<ResourceEntryInfo, CUtlMemory<ResourceEntryInfo, int> >::~CUtlVector()
-t CUtlVector<S3RGBA, CUtlMemory<S3RGBA, int> >::SetCount(int)
-t CUtlVector<S3RGBA, CUtlMemory<S3RGBA, int> >::~CUtlVector()
+t CUtlVector<ResourceEntryInfo, CUtlMemory<ResourceEntryInfo, int> >::ShiftElementsRight(int, int)
 t CUtlVector<char, CUtlMemory<char, int> >::GrowVector(int)
-t CUtlVector<char, CUtlMemory<char, int> >::SetCount(int)
+t CUtlVector<char, CUtlMemory<char, int> >::ShiftElementsRight(int, int)
 t CUtlVector<int, CUtlMemory<int, int> >::GrowVector(int)
 t CUtlVector<int, CUtlMemory<int, int> >::EnsureCount(int)
+t CUtlVector<int, CUtlMemory<int, int> >::InsertBefore(int, int const&)
+t CUtlVector<int, CUtlMemory<int, int> >::ShiftElementsRight(int, int)
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
-t CUtlVector<unsigned int, CUtlMemory<unsigned int, int> >::InsertBefore(int, unsigned int const&)
-t CUtlVector<unsigned int, CUtlMemory<unsigned int, int> >::~CUtlVector()
+t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<CVTFTexture::ResourceMemorySection, CUtlMemory<CVTFTexture::ResourceMemorySection, int> >::GrowVector(int)
 t CUtlVector<CVTFTexture::ResourceMemorySection, CUtlMemory<CVTFTexture::ResourceMemorySection, int> >::InsertBefore(int, CVTFTexture::ResourceMemorySection const&)
 t CUtlVector<CVTFTexture::ResourceMemorySection, CUtlMemory<CVTFTexture::ResourceMemorySection, int> >::ShiftElementsRight(int, int)
-t CUtlVector<CVTFTexture::ResourceMemorySection, CUtlMemory<CVTFTexture::ResourceMemorySection, int> >::~CUtlVector()
 t CUtlVector<CShaderSystem::ShaderDLLInfo_t, CUtlMemory<CShaderSystem::ShaderDLLInfo_t, int> >::InsertBefore(int)
 t CUtlVector<CShaderSystem::ShaderDLLInfo_t, CUtlMemory<CShaderSystem::ShaderDLLInfo_t, int> >::Remove(int)
+t CUtlVector<CShaderSystem::ShaderDLLInfo_t, CUtlMemory<CShaderSystem::ShaderDLLInfo_t, int> >::RemoveAll()
 t CUtlVector<CShaderSystem::ShaderDLLInfo_t, CUtlMemory<CShaderSystem::ShaderDLLInfo_t, int> >::~CUtlVector()
+t CUtlVector<CShaderSystem::ShaderDLLInfo_t, CUtlMemory<CShaderSystem::ShaderDLLInfo_t, int> >::~CUtlVector()
+t CUtlVector<CVertexMorphDict::MorphVertexList_t, CUtlMemory<CVertexMorphDict::MorphVertexList_t, int> >::RemoveAll()
 t CUtlVector<TextureLodOverride::OverrideInfo, CUtlMemory<TextureLodOverride::OverrideInfo, int> >::EnsureCount(int)
-t CUtlVector<TextureLodOverride::OverrideInfo, CUtlMemory<TextureLodOverride::OverrideInfo, int> >::~CUtlVector()
 t CUtlVector<CMatRenderContextBase::PlaneStackElement, CUtlMemory<CMatRenderContextBase::PlaneStackElement, int> >::InsertBefore(int, CMatRenderContextBase::PlaneStackElement const&)
-t CUtlVector<CMatRenderContextBase::PlaneStackElement, CUtlMemory<CMatRenderContextBase::PlaneStackElement, int> >::~CUtlVector()
-t CUtlVector<CMorph::MorphQuad_t, CUtlMemory<CMorph::MorphQuad_t, int> >::InsertBefore(int)
+t CUtlVector<CMatRenderContextBase::PlaneStackElement, CUtlMemory<CMatRenderContextBase::PlaneStackElement, int> >::ShiftElementsLeft(int, int)
 t CUtlVector<CMorph::MorphSegment_t, CUtlMemory<CMorph::MorphSegment_t, int> >::InsertBefore(int, CMorph::MorphSegment_t const&)
 t CUtlVector<CTexture::DataChunk, CUtlMemory<CTexture::DataChunk, int> >::InsertBefore(int, CTexture::DataChunk const&)
-t CUtlVector<CTexture::DataChunk, CUtlMemory<CTexture::DataChunk, int> >::~CUtlVector()
 t CUtlVector<IMaterialVar*, CUtlMemory<IMaterialVar*, int> >::InsertBefore(int, IMaterialVar* const&)
-t CUtlVector<IMaterialVar*, CUtlMemory<IMaterialVar*, int> >::~CUtlVector()
 t CUtlVector<ITextureInternal*, CUtlMemory<ITextureInternal*, int> >::InsertBefore(int, ITextureInternal* const&)
-t CUtlVector<ITextureInternal*, CUtlMemory<ITextureInternal*, int> >::~CUtlVector()
 t CUtlVector<ColorCorrectionLookup_t*, CUtlMemory<ColorCorrectionLookup_t*, int> >::InsertBefore(int, ColorCorrectionLookup_t* const&)
-t CUtlVector<IShader*, CUtlMemory<IShader*, int> >::InsertBefore(int, IShader* const&)
-t CUtlVector<IShader*, CUtlMemory<IShader*, int> >::~CUtlVector()
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::GrowVector(int)
+t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::ShiftElementsRight(int, int)
+t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
-t CUtlVector<void (*)(int), CUtlMemory<void (*)(int), int> >::InsertBefore(int, void (* const&)(int))
-t CUtlVector<void (*)(int), CUtlMemory<void (*)(int), int> >::~CUtlVector()
-t CUtlVector<void (*)(), CUtlMemory<void (*)(), int> >::InsertBefore(int, void (* const&)())
-t CUtlVector<void (*)(), CUtlMemory<void (*)(), int> >::~CUtlVector()
 t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
-t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::~CUtlVector()
 t CUtlVector<void*, CUtlMemory<void*, int> >::GrowVector(int)
-t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
+t CUtlVector<void*, CUtlMemory<void*, int> >::ShiftElementsRight(int, int)
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::SetCount(int)
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::RemoveAll()
 t CUtlVector<CUtlVector<CMorph::MorphQuad_t, CUtlMemory<CMorph::MorphQuad_t, int> >, CUtlMemory<CUtlVector<CMorph::MorphQuad_t, CUtlMemory<CMorph::MorphQuad_t, int> >, int> >::InsertBefore(int)
 t CUtlVector<CUtlVector<CMorph::MorphQuad_t, CUtlMemory<CMorph::MorphQuad_t, int> >, CUtlMemory<CUtlVector<CMorph::MorphQuad_t, CUtlMemory<CMorph::MorphQuad_t, int> >, int> >::RemoveAll()
+t CUtlVector<CUtlVector<CMorph::MorphQuad_t, CUtlMemory<CMorph::MorphQuad_t, int> >, CUtlMemory<CUtlVector<CMorph::MorphQuad_t, CUtlMemory<CMorph::MorphQuad_t, int> >, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<CMorph::MorphQuad_t, CUtlMemory<CMorph::MorphQuad_t, int> >, CUtlMemory<CUtlVector<CMorph::MorphQuad_t, CUtlMemory<CMorph::MorphQuad_t, int> >, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<CMorph::MorphSegment_t, CUtlMemory<CMorph::MorphSegment_t, int> >, CUtlMemory<CUtlVector<CMorph::MorphSegment_t, CUtlMemory<CMorph::MorphSegment_t, int> >, int> >::InsertBefore(int)
 U CVProfNode::EnterScope()
@@ -1542,8 +1688,7 @@ t CFunctorJob::Describe()
 t CFunctorJob::DoExecute()
 t CFunctorJob::~CFunctorJob()
 t CFunctorJob::~CFunctorJob()
-t CTSListBase::~CTSListBase()
-t CVProfScope::~CVProfScope()
+t CFunctorJob::~CFunctorJob()
 t CVTFTexture::ReadHeader(CUtlBuffer&, VTFFileHeader_t&)
 t CVTFTexture::PostProcess(bool, LookDir_t, bool)
 t CVTFTexture::Unserialize(CUtlBuffer&, bool, int)
@@ -1701,9 +1846,11 @@ t ImageLoader::RGBA8888ToBGR888_BLUESCREEN(unsigned char const*, unsigned char*,
 t ImageLoader::RGBA8888ToRGB888_BLUESCREEN(unsigned char const*, unsigned char*, int)
 t IVTFTexture::~IVTFTexture()
 t IVTFTexture::~IVTFTexture()
+t IVTFTexture::~IVTFTexture()
 t CEmptyConVar::SetValue(float)
 t CEmptyConVar::SetValue(int)
 t CEmptyConVar::SetValue(char const*)
+t CEmptyConVar::~CEmptyConVar()
 t CEmptyConVar::~CEmptyConVar()
 t CEmptyConVar::~CEmptyConVar()
 t CImagePacker::GetEfficiency()
@@ -1762,27 +1909,29 @@ t CMemoryStack::CMemoryStack()
 t CMemoryStack::CMemoryStack()
 t CMemoryStack::~CMemoryStack()
 t CMemoryStack::~CMemoryStack()
-t CMeshBuilder::End(bool, bool)
-t CMeshBuilder::~CMeshBuilder()
 t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::AddRef()
 t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::Release()
 t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t CRefCounted1<IMatRenderContext, CRefCountServiceNull>::~CRefCounted1()
 t CRefCounted1<IMatRenderContext, CRefCountServiceNull>::~CRefCounted1()
 t CRefCounted1<IMatRenderContext, CRefCountServiceNull>::~CRefCounted1()
 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::AddRef()
 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::Release()
 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t CRefCounted1<CFunctor, CRefCountServiceNull>::AddRef()
 t CRefCounted1<CFunctor, CRefCountServiceNull>::Release()
 t CRefCounted1<CFunctor, CRefCountServiceNull>::~CRefCounted1()
 t CRefCounted1<CFunctor, CRefCountServiceNull>::~CRefCounted1()
+t CRefCounted1<CFunctor, CRefCountServiceNull>::~CRefCounted1()
 U CThreadEvent::Set()
 U CThreadEvent::CThreadEvent(bool)
-t CUtlEnvelope<Rect_t>::~CUtlEnvelope()
-t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
-t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&) [clone .constprop.15]
+t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
+t IIndexBuffer::~IIndexBuffer()
 t IIndexBuffer::~IIndexBuffer()
 t IIndexBuffer::~IIndexBuffer()
 t IMaterialVar::FindSymbol(char const*)
@@ -1796,6 +1945,7 @@ t IMaterialVar::Create(IMaterial*, char const*, VMatrix const&)
 t IMaterialVar::Create(IMaterial*, char const*, char const*)
 t IMaterialVar::Destroy(IMaterialVar*)
 t IMaterialVar::GetSymbol(char const*)
+t IMaterialVar::GetSymbol(char const*) [clone .part.12]
 b InterfaceReg::s_pInterfaceRegs
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
@@ -1809,6 +1959,7 @@ t CDummyTexture::DecrementReferenceCount()
 t CDummyTexture::IncrementReferenceCount()
 t CDummyTexture::Download(Rect_t*, int)
 t CIndexBuilder::~CIndexBuilder()
+t CIndexBuilder::~CIndexBuilder()
 t CMaterialDict::AddMaterial(char const*, char const*)
 t CMaterialDict::RemoveMaterial(IMaterialInternal*)
 t CMaterialDict::MaterialLessFunc(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&)
@@ -1821,7 +1972,6 @@ t CMaterialDict::RemoveMaterialFromMaterialList(IMaterialInternal*)
 t CMaterialDict::RemoveMaterialFromMaterialList(unsigned short)
 t CMaterialDict::RemoveAllMaterialsFromMaterialList()
 t CMaterialDict::Shutdown()
-t CMaterialDict::~CMaterialDict()
 t CMatLightmaps::GetSortInfo(MaterialSystem_SortInfo_t*)
 t CMatLightmaps::LockLightmap(int)
 t CMatLightmaps::GetNumSortIDs()
@@ -1852,13 +2002,13 @@ t CMatLightmaps::BumpedLightmapBitsToPixelWriter_HDRI(float*, float*, float*, fl
 t CMatLightmaps::Shutdown()
 t CMatLightmaps::CMatLightmaps()
 t CMatLightmaps::CMatLightmaps()
-t CMatLightmaps::~CMatLightmaps()
 t CShaderSystem::BufferSpew(SpewType_t, Color const&, char const*)
 t CShaderSystem::FindShader(char const*)
 t CShaderSystem::BindTexture(Sampler_t, ITexture*, int)
 t CShaderSystem::BindTexture(Sampler_t, Sampler_t, ITexture*, int)
 t CShaderSystem::LoadBumpMap(IMaterialVar*, char const*)
 t CShaderSystem::LoadCubeMap(IMaterialVar**, IMaterialVar*, int)
+t CShaderSystem::LoadCubeMap(IMaterialVar**, IMaterialVar*, int) [clone .part.14]
 t CShaderSystem::LoadTexture(IMaterialVar*, char const*, int)
 t CShaderSystem::ModShutdown()
 t CShaderSystem::DrawElements(IShader*, IMaterialVar**, ShaderRenderState_t*, VertexCompressionType_t, unsigned int)
@@ -1871,6 +2021,7 @@ t CShaderSystem::LoadShaderDLL(char const*, char const*, bool)
 t CShaderSystem::DrawEnvmapMask(IShader*, IMaterialVar**, ShaderRenderState_t*, VertexCompressionType_t)
 t CShaderSystem::InitRenderState(IShader*, int, IMaterialVar**, ShaderRenderState_t*, char const*)
 t CShaderSystem::UnloadShaderDLL(int)
+t CShaderSystem::UnloadShaderDLL(int) [clone .part.35]
 t CShaderSystem::UnloadShaderDLL(char const*)
 t CShaderSystem::DrawUsingMaterial(IMaterialInternal*, VertexCompressionType_t)
 t CShaderSystem::LoadAllShaderDLLs()
@@ -1902,6 +2053,7 @@ t CShaderSystem::Shutdown()
 t CShaderSystem::CShaderSystem()
 t CShaderSystem::CShaderSystem()
 t CShaderSystem::~CShaderSystem()
+t CShaderSystem::~CShaderSystem()
 t CSolidTexture::RegenerateTextureBits(ITexture*, IVTFTexture*, Rect_t*)
 t CSolidTexture::Release()
 U CThreadRWLock::UnlockWrite()
@@ -1910,8 +2062,10 @@ U CThreadRWLock::LockForWrite()
 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoInsertUnconstructed(unsigned int, bool)
 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::BumpEntry(unsigned int)
 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoRealloc(int)
-t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::~CUtlHashtable()
+t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::RemoveAll()
 t CUtlStringMap<TextureLodOverride::OverrideInfo>::~CUtlStringMap()
+t CUtlStringMap<TextureLodOverride::OverrideInfo>::~CUtlStringMap()
+t CVProfCounter::~CVProfCounter()
 t CVProfCounter::~CVProfCounter()
 t FloatBitMap_t::SmartPaste(FloatBitMap_t const&, int, int, unsigned int)
 t FloatBitMap_t::Uncompress(float)
@@ -1938,6 +2092,7 @@ t FloatBitMap_t::FloatBitMap_t(char const*)
 t FloatBitMap_t::FloatBitMap_t(FloatBitMap_t const*)
 t FloatBitMap_t::~FloatBitMap_t()
 t FloatBitMap_t::~FloatBitMap_t()
+t IVertexBuffer::~IVertexBuffer()
 t IVertexBuffer::~IVertexBuffer()
 t IVertexBuffer::~IVertexBuffer()
 t CBaseAppSystem<IMaterialSystemInternal>::Disconnect()
@@ -2003,6 +2158,7 @@ t CMatQueuedMesh::ModifyBeginEx(bool, int, int, int, int, MeshDesc_t&)
 t CMatQueuedMesh::BeginCastBuffer(MaterialIndexFormat_t)
 t CMatQueuedMesh::BeginCastBuffer(unsigned long long)
 t CMatQueuedMesh::DisableFlexMesh()
+t CMatQueuedMesh::OnGetDynamicMesh(unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*, int)
 t CMatQueuedMesh::SetPrimitiveType(MaterialPrimitiveType_t)
 t CMatQueuedMesh::ComputeMemoryUsed()
 t CMatQueuedMesh::CopyToMeshBuilder(int, int, int, int, int, CMeshBuilder&)
@@ -2024,7 +2180,7 @@ t CMatQueuedMesh::ModifyEnd(MeshDesc_t&)
 t CMatQueuedMesh::ModifyEnd(IndexDesc_t&)
 t CMatQueuedMesh::~CMatQueuedMesh()
 t CMatQueuedMesh::~CMatQueuedMesh()
-t CMatRenderData<CPrimList>::~CMatRenderData()
+t CMatQueuedMesh::~CMatQueuedMesh()
 t ConCommandBase::CopyString(char const*)
 t ConCommandBase::CreateBase(char const*, char const*, int)
 b ConCommandBase::s_pAccessor
@@ -2043,14 +2199,15 @@ t ConCommandBase::~ConCommandBase()
 t CThreadAcquire::DoExecute()
 t CThreadAcquire::~CThreadAcquire()
 t CThreadAcquire::~CThreadAcquire()
+t CThreadAcquire::~CThreadAcquire()
 t CThreadRelease::DoExecute()
 t CThreadRelease::~CThreadRelease()
 t CThreadRelease::~CThreadRelease()
-t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::AllocInternal(bool)
+t CThreadRelease::~CThreadRelease()
 t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlLinkedList<COcclusionQueryMgr::OcclusionQueryObject_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<COcclusionQueryMgr::OcclusionQueryObject_t, int> > >::AllocInternal(bool)
 t CUtlLinkedList<COcclusionQueryMgr::OcclusionQueryObject_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<COcclusionQueryMgr::OcclusionQueryObject_t, int> > >::Unlink(int)
-t CUtlLinkedList<COcclusionQueryMgr::OcclusionQueryObject_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<COcclusionQueryMgr::OcclusionQueryObject_t, int> > >::~CUtlLinkedList()
+t CUtlLinkedList<COcclusionQueryMgr::OcclusionQueryObject_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<COcclusionQueryMgr::OcclusionQueryObject_t, int> > >::RemoveAll()
 t CUtlMemoryPool::AddNewBlob()
 t CUtlMemoryPool::ReportLeaks()
 b CUtlMemoryPool::g_ReportFunc
@@ -2070,7 +2227,10 @@ t CUtlSortVector<MorphVertexInfo_t, CVertexMorphDict::CMorphVertexListLess, CUtl
 t CUtlSortVector<MorphVertexInfo_t, CVertexMorphDict::CMorphVertexListLess, CUtlVector<MorphVertexInfo_t, CUtlMemory<MorphVertexInfo_t, int> > >::CompareHelper(MorphVertexInfo_t const*, MorphVertexInfo_t const*)
 t CUtlSortVector<CVertexMorphDict::MorphVertexList_t, CVertexMorphDict::VertexMorphDictLess, CUtlVector<CVertexMorphDict::MorphVertexList_t, CUtlMemory<CVertexMorphDict::MorphVertexList_t, int> > >::Insert(CVertexMorphDict::MorphVertexList_t const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
+t CVertexBuilder::~CVertexBuilder()
+t CVertexBuilder::~CVertexBuilder()
 t IMaterialProxy::GMOD_CanBeQueued()
+t IMaterialProxy::~IMaterialProxy()
 t IMaterialProxy::~IMaterialProxy()
 t IMaterialProxy::~IMaterialProxy()
 t CMaterialSystem::BeginFrame(float)
@@ -2195,8 +2355,10 @@ t CMaterialSystem::DebugPrintUsedMaterials(char const*, bool)
 t CMaterialSystem::DebugPrintUsedMaterials(CCommand const&)
 t CMaterialSystem::GetMaterialProxyFactory()
 t CMaterialSystem::ReleaseStandardTextures()
+t CMaterialSystem::ReleaseStandardTextures() [clone .part.64]
 t CMaterialSystem::SetMaterialProxyFactory(IMaterialProxyFactory*)
 t CMaterialSystem::AllocateStandardTextures()
+t CMaterialSystem::AllocateStandardTextures() [clone .part.63]
 t CMaterialSystem::CreateMatQueueThreadPool()
 t CMaterialSystem::OnRenderingAsyncComplete()
 t CMaterialSystem::RemoveModeChangeCallBack(void (*)())
@@ -2247,289 +2409,385 @@ t CMaterialSystem::~CMaterialSystem()
 t CMemberFunctor0<CLateBoundPtr<IMesh>, void (IMesh::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor0<CLateBoundPtr<IMesh>, void (IMesh::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CLateBoundPtr<IMesh>, void (IMesh::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
+t CMemberFunctor0<CLateBoundPtr<IMesh>, void (IMesh::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<IShaderAPI*, void (IShaderAPI::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor0<IShaderAPI*, void (IShaderAPI::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<IShaderAPI*, void (IShaderAPI::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<IShaderAPI*, void (IShaderAPI::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMaterialVar*, void (CMaterialVar::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor0<CMaterialVar*, void (CMaterialVar::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMaterialVar*, void (CMaterialVar::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
+t CMemberFunctor0<CMaterialVar*, void (CMaterialVar::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMatLightmaps*, void (CMatLightmaps::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor0<CMatLightmaps*, void (CMatLightmaps::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMatLightmaps*, void (CMatLightmaps::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMatLightmaps*, void (CMatLightmaps::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<ITextureInternal*, void (ITexture::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor0<ITextureInternal*, void (ITexture::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<ITextureInternal*, void (ITexture::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
+t CMemberFunctor0<ITextureInternal*, void (ITexture::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<IMaterialInternal*, void (IMaterial::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor0<IMaterialInternal*, void (IMaterial::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<IMaterialInternal*, void (IMaterial::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<IMaterialInternal*, void (IMaterial::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMatRenderContextBase*, void (IMatRenderContext::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor0<CMatRenderContextBase*, void (IMatRenderContext::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMatRenderContextBase*, void (IMatRenderContext::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
+t CMemberFunctor0<CMatRenderContextBase*, void (IMatRenderContext::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor0<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor0<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
+t CMemberFunctor0<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMaterial*, void (CMaterial::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor0<CMaterial*, void (CMaterial::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMaterial*, void (CMaterial::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor0<CMaterial*, void (CMaterial::*)(), CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor0()
 t CMemberFunctor1<CLateBoundPtr<IMesh>, void (IMesh::*)(MaterialPrimitiveType_t), MaterialPrimitiveType_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CLateBoundPtr<IMesh>, void (IMesh::*)(MaterialPrimitiveType_t), MaterialPrimitiveType_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CLateBoundPtr<IMesh>, void (IMesh::*)(MaterialPrimitiveType_t), MaterialPrimitiveType_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CLateBoundPtr<IMesh>, void (IMesh::*)(MaterialPrimitiveType_t), MaterialPrimitiveType_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(int), int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(int), int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(int), int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(int), int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(IMaterialVar*), IMaterialVar*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(IMaterialVar*), IMaterialVar*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(IMaterialVar*), IMaterialVar*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(IMaterialVar*), IMaterialVar*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(ITexture*), ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(ITexture*), ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(ITexture*), ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(ITexture*), ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(IMaterial*), IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(IMaterial*), IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(IMaterial*), IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(IMaterial*), IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(char const*), CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(char const*), CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(char const*), CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(char const*), CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(VMatrix const&), VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(VMatrix const&), VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(VMatrix const&), VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialVar*, void (CMaterialVar::*)(VMatrix const&), VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialSystem*, void (CMaterialSystem::*)(CMatQueuedRenderContext*), CMatQueuedRenderContext*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMaterialSystem*, void (CMaterialSystem::*)(CMatQueuedRenderContext*), CMatQueuedRenderContext*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMaterialSystem*, void (CMaterialSystem::*)(CMatQueuedRenderContext*), CMatQueuedRenderContext*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMaterialSystem*, void (CMaterialSystem::*)(CMatQueuedRenderContext*), CMatQueuedRenderContext*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<IMaterialInternal*, void (IMaterial::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<IMaterialInternal*, void (IMaterial::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<IMaterialInternal*, void (IMaterial::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<IMaterialInternal*, void (IMaterial::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<IMaterialInternal*, void (IMaterial::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<IMaterialInternal*, void (IMaterial::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<IMaterialInternal*, void (IMaterial::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<IMaterialInternal*, void (IMaterial::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<COcclusionQueryMgr*, void (COcclusionQueryMgr::*)(OcclusionQueryObjectHandle_t__*), OcclusionQueryObjectHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<COcclusionQueryMgr*, void (COcclusionQueryMgr::*)(OcclusionQueryObjectHandle_t__*), OcclusionQueryObjectHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<COcclusionQueryMgr*, void (COcclusionQueryMgr::*)(OcclusionQueryObjectHandle_t__*), OcclusionQueryObjectHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<COcclusionQueryMgr*, void (COcclusionQueryMgr::*)(OcclusionQueryObjectHandle_t__*), OcclusionQueryObjectHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, bool (IMatRenderContext::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, bool (IMatRenderContext::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, bool (IMatRenderContext::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, bool (IMatRenderContext::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialFogMode_t), MaterialFogMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialFogMode_t), MaterialFogMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialFogMode_t), MaterialFogMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialFogMode_t), MaterialFogMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialCullMode_t), MaterialCullMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialCullMode_t), MaterialCullMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialCullMode_t), MaterialCullMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialCullMode_t), MaterialCullMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(StencilOperation_t), StencilOperation_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(StencilOperation_t), StencilOperation_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(StencilOperation_t), StencilOperation_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(StencilOperation_t), StencilOperation_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialMatrixMode_t), MaterialMatrixMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialMatrixMode_t), MaterialMatrixMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialMatrixMode_t), MaterialMatrixMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialMatrixMode_t), MaterialMatrixMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialHeightClipMode_t), MaterialHeightClipMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialHeightClipMode_t), MaterialHeightClipMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialHeightClipMode_t), MaterialHeightClipMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialHeightClipMode_t), MaterialHeightClipMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(StencilComparisonFunction_t), StencilComparisonFunction_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(StencilComparisonFunction_t), StencilComparisonFunction_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(StencilComparisonFunction_t), StencilComparisonFunction_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(StencilComparisonFunction_t), StencilComparisonFunction_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialNonInteractiveMode_t), MaterialNonInteractiveMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialNonInteractiveMode_t), MaterialNonInteractiveMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialNonInteractiveMode_t), MaterialNonInteractiveMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(MaterialNonInteractiveMode_t), MaterialNonInteractiveMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(Vector), Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(Vector), Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(Vector), Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(Vector), Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(int), int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(int), int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(int), int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(int), int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned int), unsigned int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned int), unsigned int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned int), unsigned int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned int), unsigned int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(OcclusionQueryObjectHandle_t__*), OcclusionQueryObjectHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(OcclusionQueryObjectHandle_t__*), OcclusionQueryObjectHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(OcclusionQueryObjectHandle_t__*), OcclusionQueryObjectHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(OcclusionQueryObjectHandle_t__*), OcclusionQueryObjectHandle_t__*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMesh*), IMesh*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMesh*), IMesh*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMesh*), IMesh*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMesh*), IMesh*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMorph*), IMorph*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMorph*), IMorph*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMorph*), IMorph*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMorph*), IMorph*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*), ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*), ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*), ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*), ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*), IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*), IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*), IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*), IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(char const*), CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(char const*), CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(char const*), CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(char const*), CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(float const*), CUtlEnvelope<float>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(float const*), CUtlEnvelope<float>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(float const*), CUtlEnvelope<float>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(float const*), CUtlEnvelope<float>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(LightCube_t const&), LightCube_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(LightCube_t const&), LightCube_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(LightCube_t const&), LightCube_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(LightCube_t const&), LightCube_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(Vector const&), Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(Vector const&), Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(Vector const&), Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(Vector const&), Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(VMatrix const&), VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(VMatrix const&), VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(VMatrix const&), VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContext::*)(VMatrix const&), VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(float), float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(IMaterialInternal*), IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(IMaterialInternal*), IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(IMaterialInternal*), IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(IMaterialInternal*), IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(void*), void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(void*), void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(void*), void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<CMatRenderContextBase*, void (IMatRenderContextInternal::*)(void*), void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor1<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
+t CMemberFunctor1<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(bool), bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<IMesh*, void (IMesh::*)(MaterialPrimitiveType_t), MaterialPrimitiveType_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor1<IMesh*, void (IMesh::*)(MaterialPrimitiveType_t), MaterialPrimitiveType_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<IMesh*, void (IMesh::*)(MaterialPrimitiveType_t), MaterialPrimitiveType_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor1<IMesh*, void (IMesh::*)(MaterialPrimitiveType_t), MaterialPrimitiveType_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor1()
 t CMemberFunctor2<CLateBoundPtr<IMesh>, void (IMesh::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<CLateBoundPtr<IMesh>, void (IMesh::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CLateBoundPtr<IMesh>, void (IMesh::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<CLateBoundPtr<IMesh>, void (IMesh::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CLateBoundPtr<IMesh>, void (IMesh::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CLateBoundPtr<IMesh>, void (IMesh::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CLateBoundPtr<IMesh>, void (IMesh::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CLateBoundPtr<IMesh>, void (IMesh::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IShaderAPI*, void (IShaderAPI::*)(bool, int), bool, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<IShaderAPI*, void (IShaderAPI::*)(bool, int), bool, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IShaderAPI*, void (IShaderAPI::*)(bool, int), bool, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<IShaderAPI*, void (IShaderAPI::*)(bool, int), bool, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(float, int), float, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(float, int), float, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(float, int), float, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(float, int), float, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(unsigned long, void*), unsigned long, void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(unsigned long, void*), unsigned long, void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(unsigned long, void*), unsigned long, void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(unsigned long, void*), unsigned long, void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(Vector4D const&, int), Vector4D, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(Vector4D const&, int), Vector4D, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(Vector4D const&, int), Vector4D, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterialVar*, void (CMaterialVar::*)(Vector4D const&, int), Vector4D, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IMaterialInternal*, void (IMaterial::*)(MaterialVarFlags_t, bool), MaterialVarFlags_t, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<IMaterialInternal*, void (IMaterial::*)(MaterialVarFlags_t, bool), MaterialVarFlags_t, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IMaterialInternal*, void (IMaterial::*)(MaterialVarFlags_t, bool), MaterialVarFlags_t, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<IMaterialInternal*, void (IMaterial::*)(MaterialVarFlags_t, bool), MaterialVarFlags_t, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(bool, bool), bool, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(bool, bool), bool, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(bool, bool), bool, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(bool, bool), bool, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(float, float), float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(float, float), float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(float, float), float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(float, float), float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, float), int, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, float), int, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, float), int, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, float), int, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*), int, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*), int, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*), int, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*), int, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, LightDesc_t const&), int, LightDesc_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, LightDesc_t const&), int, LightDesc_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, LightDesc_t const&), int, LightDesc_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, LightDesc_t const&), int, LightDesc_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, matrix3x4_t const&), int, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, matrix3x4_t const&), int, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, matrix3x4_t const&), int, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, matrix3x4_t const&), int, matrix3x4_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, Vector const&), int, Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, Vector const&), int, Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, Vector const&), int, Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(int, Vector const&), int, Vector, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned long, char const*), unsigned long, CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned long, char const*), unsigned long, CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned long, char const*), unsigned long, CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned long, char const*), unsigned long, CUtlEnvelope<char const*>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(IMesh*, IMaterial*), IMesh*, IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(IMesh*, IMaterial*), IMesh*, IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(IMesh*, IMaterial*), IMesh*, IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(IMesh*, IMaterial*), IMesh*, IMaterial*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, MaterialNonInteractiveMode_t), ITexture*, MaterialNonInteractiveMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, MaterialNonInteractiveMode_t), ITexture*, MaterialNonInteractiveMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, MaterialNonInteractiveMode_t), ITexture*, MaterialNonInteractiveMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, MaterialNonInteractiveMode_t), ITexture*, MaterialNonInteractiveMode_t, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int), ITexture*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int), ITexture*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int), ITexture*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int), ITexture*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, void*), IMaterial*, void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, void*), IMaterial*, void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, void*), IMaterial*, void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, void*), IMaterial*, void*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&), FlashlightState_t, VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&), FlashlightState_t, VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&), FlashlightState_t, VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&), FlashlightState_t, VMatrix, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(unsigned int, bool), unsigned int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(unsigned int, bool), unsigned int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(unsigned int, bool), unsigned int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(unsigned int, bool), unsigned int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(unsigned int, float), unsigned int, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(unsigned int, float), unsigned int, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(unsigned int, float), unsigned int, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(unsigned int, float), unsigned int, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(unsigned short*, int), unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(unsigned short*, int), unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(unsigned short*, int), unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(unsigned short*, int), unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IMesh*, void (IMesh::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<IMesh*, void (IMesh::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IMesh*, void (IMesh::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IMesh*, void (IMesh::*)(int, int), int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IMesh*, void (IMesh::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor2<IMesh*, void (IMesh::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<IMesh*, void (IMesh::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
+t CMemberFunctor2<IMesh*, void (IMesh::*)(IMesh*, int), IMesh*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterial*, void (CMaterial::*)(MaterialVarFlags_t, bool), MaterialVarFlags_t, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor2<CMaterial*, void (CMaterial::*)(MaterialVarFlags_t, bool), MaterialVarFlags_t, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterial*, void (CMaterial::*)(MaterialVarFlags_t, bool), MaterialVarFlags_t, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor2<CMaterial*, void (CMaterial::*)(MaterialVarFlags_t, bool), MaterialVarFlags_t, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor2()
 t CMemberFunctor3<IMaterialInternal*, void (IMaterial::*)(float, float, float), float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor3<IMaterialInternal*, void (IMaterial::*)(float, float, float), float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<IMaterialInternal*, void (IMaterial::*)(float, float, float), float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
+t CMemberFunctor3<IMaterialInternal*, void (IMaterial::*)(float, float, float), float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(bool, bool, bool), bool, bool, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(bool, bool, bool), bool, bool, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(bool, bool, bool), bool, bool, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(bool, bool, bool), bool, bool, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(float, float, float), float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(float, float, float), float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(float, float, float), float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
+t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(float, float, float), float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&, ITexture*), FlashlightState_t, VMatrix, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&, ITexture*), FlashlightState_t, VMatrix, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&, ITexture*), FlashlightState_t, VMatrix, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
+t CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&, ITexture*), FlashlightState_t, VMatrix, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, CPrimList*, int), IMesh*, CPrimList*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, CPrimList*, int), IMesh*, CPrimList*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, CPrimList*, int), IMesh*, CPrimList*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, CPrimList*, int), IMesh*, CPrimList*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
+t CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int), int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int), int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int), int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
+t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int), int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*, Rect_t*, Rect_t*), int, ITexture*, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*, Rect_t*, Rect_t*), int, ITexture*, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*, Rect_t*, Rect_t*), int, ITexture*, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*, Rect_t*, Rect_t*), int, ITexture*, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, float, float, float), ITexture*, float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, float, float, float), ITexture*, float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, float, float, float), ITexture*, float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
+t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, float, float, float), ITexture*, float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned char*, int, int, unsigned short*, int), unsigned char*, int, int, unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned char*, int, int, unsigned short*, int), unsigned char*, int, int, unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned char*, int, int, unsigned short*, int), unsigned char*, int, int, unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
+t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned char*, int, int, unsigned short*, int), unsigned char*, int, int, unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*), unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*), unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*), unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*), unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, bool), int, int, int, int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, bool), int, int, int, int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, bool), int, int, int, int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
+t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, bool), int, int, int, int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, int), int, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, int), int, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, int), int, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, int), int, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, int, int, int), ITexture*, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, int, int, int), ITexture*, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, int, int, int), ITexture*, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
+t CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, int, int, int), ITexture*, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor6<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, ITexture*, int, int, int, int), ITexture*, ITexture*, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor6<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, ITexture*, int, int, int, int), ITexture*, ITexture*, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor6()
 t CMemberFunctor6<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, ITexture*, int, int, int, int), ITexture*, ITexture*, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor6()
 t CMemberFunctor6<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, ITexture*, int, int, int, int), ITexture*, ITexture*, int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor6()
 t CTextureManager::FindTexture(char const*)
@@ -2540,6 +2798,7 @@ t CTextureManager::ShadowNoise2D()
 t CTextureManager::ReloadTextures()
 t CTextureManager::RestoreTexture(ITextureInternal*)
 t CTextureManager::AddTextureAlias(char const*, char const*)
+t CTextureManager::AddTextureAlias(char const*, char const*) [clone .part.86]
 t CTextureManager::IsTextureLoaded(char const*)
 t CTextureManager::ReleaseTextures()
 t CTextureManager::FindOrLoadTexture(char const*, char const*, int)
@@ -2578,6 +2837,7 @@ t CTextureManager::Shutdown()
 t CTextureManager::CTextureManager()
 t CTextureManager::CTextureManager()
 t CTextureManager::~CTextureManager()
+t CTextureManager::~CTextureManager()
 t CTier1AppSystem<IMaterialSystemInternal, 0>::Disconnect()
 t CTier1AppSystem<IMaterialSystemInternal, 0>::Init()
 t CTier1AppSystem<IMaterialSystemInternal, 0>::Connect(void* (*)(char const*, int*))
@@ -2586,8 +2846,6 @@ t CTier2AppSystem<IMaterialSystemInternal, 0>::Disconnect()
 t CTier2AppSystem<IMaterialSystemInternal, 0>::Init()
 t CTier2AppSystem<IMaterialSystemInternal, 0>::Connect(void* (*)(char const*, int*))
 t CTier2AppSystem<IMaterialSystemInternal, 0>::Shutdown()
-t CUtlFixedMemory<UtlLinkedListElem_t<COcclusionQueryMgr::OcclusionQueryObject_t, int> >::Grow(int)
-t CUtlSymbolTable::CTree::~CTree()
 t CUtlSymbolTable::AddString(char const*)
 t CUtlSymbolTable::RemoveAll()
 t CUtlSymbolTable::CUtlSymbolTable(int, int, bool)
@@ -2683,12 +2941,11 @@ t CMaterialSubRect::~CMaterialSubRect()
 t CMemberFunctor14<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int), IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor14<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int), IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor14()
 t CMemberFunctor14<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int), IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor14()
-t CResourcePreload::OnEndMapLoading(bool)
-t CResourcePreload::PurgeUnreferencedResources()
-t CResourcePreload::PurgeAll()
+t CMemberFunctor14<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int), IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor14()
 U CThreadLocalBase::Set(void*)
 U CThreadLocalBase::CThreadLocalBase()
 U CThreadLocalBase::~CThreadLocalBase()
+t CUtlDataEnvelope::Purge()
 t CVertexMorphDict::SortDeltas()
 t CVertexMorphDict::VertexMorphDictLess::Less(CVertexMorphDict::MorphVertexList_t const&, CVertexMorphDict::MorphVertexList_t const&, void*)
 t CVertexMorphDict::Setup()
@@ -2696,13 +2953,13 @@ t CVertexMorphDict::CleanUp()
 t CVertexMorphDict::AddMorph(MorphVertexInfo_t const&)
 t CVertexMorphDict::CVertexMorphDict()
 t CVertexMorphDict::CVertexMorphDict()
-t CVertexMorphDict::~CVertexMorphDict()
 t ITextureInternal::CreateFileTexture(char const*, char const*)
 t ITextureInternal::ChangeRenderTarget(ITextureInternal*, int, int, RenderTargetSizeMode_t, ImageFormat, RenderTargetType_t, unsigned int, unsigned int)
 t ITextureInternal::CreateRenderTarget(char const*, int, int, RenderTargetSizeMode_t, ImageFormat, RenderTargetType_t, unsigned int, unsigned int)
 t ITextureInternal::CreateProceduralTexture(char const*, char const*, int, int, int, ImageFormat, int)
 t ITextureInternal::CreateReferenceTextureFromHandle(char const*, char const*, int)
 t ITextureInternal::Destroy(ITextureInternal*)
+t ITextureInternal::~ITextureInternal()
 t ITextureInternal::~ITextureInternal()
 t ITextureInternal::~ITextureInternal()
 t CDummyMaterialVar::SetIntValue(int)
@@ -2828,6 +3085,7 @@ t CMatRenderContext::ForceDepthFuncEquals(bool)
 t CMatRenderContext::GMOD_ForceFilterMode(bool, int)
 t CMatRenderContext::ReadPixelsAndStretch(Rect_t*, Rect_t*, unsigned char*, ImageFormat, int)
 t CMatRenderContext::SetFlashlightStateEx(FlashlightState_t const&, VMatrix const&, ITexture*)
+t CMatRenderContext::SetFlashlightStateEx(FlashlightState_t const&, VMatrix const&, ITexture*) [clone .part.28]
 t CMatRenderContext::ApplyCustomClipPlanes()
 t CMatRenderContext::CompareMaterialCombos(IMaterial*, IMaterial*, int, int)
 t CMatRenderContext::DisableAllLocalLights()
@@ -2919,6 +3177,7 @@ t CMatRenderContext::Translate(float, float, float)
 t CMatRenderContext::CMatRenderContext()
 t CMatRenderContext::CMatRenderContext()
 t CMatRenderContext::~CMatRenderContext()
+t CMatRenderContext::~CMatRenderContext()
 t CReplacementProxy::GetMaterial()
 t CReplacementProxy::Init(IMaterial*, KeyValues*)
 t CReplacementProxy::OnBind(void*)
@@ -2949,6 +3208,7 @@ t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
 t CUtlInplaceBuffer::InplaceGetLinePtr()
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlSymbolTableMT::~CUtlSymbolTableMT()
 t CUtlSymbolTableMT::~CUtlSymbolTableMT()
 t IMaterialInternal::CreateMaterial(char const*, char const*, KeyValues*)
 t IMaterialInternal::DestroyMaterial(IMaterialInternal*)
@@ -2986,30 +3246,14 @@ t COcclusionQueryMgr::OcclusionQuery_IssueNumPixelsRenderedQuery(OcclusionQueryO
 t COcclusionQueryMgr::COcclusionQueryMgr()
 t COcclusionQueryMgr::COcclusionQueryMgr()
 t COcclusionQueryMgr::~COcclusionQueryMgr()
+t COcclusionQueryMgr::~COcclusionQueryMgr()
 t CUtlCharConversion::FindConversion(char const*, int*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 b TextureLodOverride::s_OverrideMap
 t TextureLodOverride::Add(char const*, TextureLodOverride::OverrideInfo)
 t TextureLodOverride::Get(char const*)
-t CMatRenderCallQueue::QueueFunctorInternal(CFunctor*)
-t void CMatRenderCallQueue::QueueCall<CMatQueuedMesh*, CMatQueuedMesh, void, unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*, unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*>(CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*), unsigned long long const&, unsigned int const&, IMesh* const&, IMesh* const&, IMaterialInternal* const&)
-t void CMatRenderCallQueue::QueueCall<COcclusionQueryMgr*, COcclusionQueryMgr, void, OcclusionQueryObjectHandle_t__*, OcclusionQueryObjectHandle_t__*>(COcclusionQueryMgr*, void (COcclusionQueryMgr::*)(OcclusionQueryObjectHandle_t__*), OcclusionQueryObjectHandle_t__* const&)
-t void CMatRenderCallQueue::QueueCall<CMatRenderContextBase*, IMatRenderContext, void, bool, bool, bool, bool, bool, bool>(CMatRenderContextBase*, void (IMatRenderContext::*)(bool, bool, bool), bool const&, bool const&, bool const&)
-t void CMatRenderCallQueue::QueueCall<CMatRenderContextBase*, IMatRenderContext, void, bool, bool>(CMatRenderContextBase*, void (IMatRenderContext::*)(bool), bool const&)
-t void CMatRenderCallQueue::QueueCall<CMatRenderContextBase*, IMatRenderContext, void, int, ITexture*, Rect_t*, Rect_t*, int, ITexture*, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t> >(CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*, Rect_t*, Rect_t*), int const&, ITexture* const&, CUtlEnvelope<Rect_t> const&, CUtlEnvelope<Rect_t> const&)
-t void CMatRenderCallQueue::QueueCall<CMatRenderContextBase*, IMatRenderContext, void, unsigned int, unsigned int>(CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned int), unsigned int const&)
-t void CMatRenderCallQueue::QueueCall<CMatRenderContextBase*, IMatRenderContext, void, OcclusionQueryObjectHandle_t__*, OcclusionQueryObjectHandle_t__*>(CMatRenderContextBase*, void (IMatRenderContext::*)(OcclusionQueryObjectHandle_t__*), OcclusionQueryObjectHandle_t__* const&)
-t void CMatRenderCallQueue::QueueCall<CMatRenderContextBase*, IMatRenderContext, void, IMesh*, IMaterial*, IMesh*, IMaterial*>(CMatRenderContextBase*, void (IMatRenderContext::*)(IMesh*, IMaterial*), IMesh* const&, IMaterial* const&)
-t void CMatRenderCallQueue::QueueCall<CMatRenderContextBase*, IMatRenderContext, void, ITexture*, int, Rect_t*, Rect_t*, ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t> >(CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture* const&, int const&, CUtlEnvelope<Rect_t> const&, CUtlEnvelope<Rect_t> const&)
-t void CMatRenderCallQueue::QueueCall<CMatRenderContextBase*, IMatRenderContext, void, ITexture*, int, ITexture*, int>(CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int), ITexture* const&, int const&)
-t void CMatRenderCallQueue::QueueCall<CMatRenderContextBase*, IMatRenderContext, void, IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int>(CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int), IMaterial* const&, int const&, int const&, int const&, int const&, float const&, float const&, float const&, float const&, int const&, int const&, void* const&, int const&, int const&)
-t void CMatRenderCallQueue::QueueCall<CMatRenderContextBase*, IMatRenderContext, void, IMaterial*, void*, IMaterial*, void*>(CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, void*), IMaterial* const&, void* const&)
-t void CMatRenderCallQueue::QueueCall<IColorCorrectionSystem*, IColorCorrectionSystem, void, unsigned int, bool, unsigned int, bool>(IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(unsigned int, bool), unsigned int const&, bool const&)
-t void CMatRenderCallQueue::QueueCall<IColorCorrectionSystem*, IColorCorrectionSystem, void, unsigned int, float, unsigned int, float>(IColorCorrectionSystem*, void (IColorCorrectionSystem::*)(unsigned int, float), unsigned int const&, float const&)
-t CUtlConstStringBase<char>::Set(char const*)
 t CUtlNoEscConversion::FindConversion(char const*, int*)
-t CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::Insert(char const*)
 t VTFFileBaseHeader_t::GetBaseMap()
 d VTFFileBaseHeader_t::m_DataMap
 t VTFFileHeaderV7_1_t::GetBaseMap()
@@ -3319,9 +3563,9 @@ t CDummyMaterialSystem::SyncToken(char const*)
 t CDummyMaterialSystem::Translate(float, float, float)
 t CDummyMaterialSystem::~CDummyMaterialSystem()
 t CDummyMaterialSystem::~CDummyMaterialSystem()
-t CKeyValuesErrorStack::ReportError(char const*)
-t CMatRenderContextPtr::~CMatRenderContextPtr()
+t CDummyMaterialSystem::~CDummyMaterialSystem()
 t CRefCountServiceBase<true, CRefMT>::OnFinalRelease()
+t CRefCountServiceBase<true, CRefMT>::~CRefCountServiceBase()
 t CRefCountServiceBase<true, CRefMT>::~CRefCountServiceBase()
 t CRefCountServiceBase<true, CRefMT>::~CRefCountServiceBase()
 t CMatNullRenderContext::BeginBatch(IMesh*)
@@ -3501,6 +3745,7 @@ b CMatRenderContextBase::sm_nRenderStack
 t CMatRenderContextBase::AddRefRenderData()
 t CMatRenderContextBase::BindLightmapPage(int)
 t CMatRenderContextBase::BindLocalCubemap(ITexture*)
+t CMatRenderContextBase::BindLocalCubemap(ITexture*) [clone .part.52]
 t CMatRenderContextBase::UnlockRenderData(void*)
 t CMatRenderContextBase::GetHeightClipMode()
 t CMatRenderContextBase::GetRenderTargetEx(int)
@@ -3510,6 +3755,7 @@ t CMatRenderContextBase::SetRenderTargetEx(int, ITexture*)
 t CMatRenderContextBase::TurnOnToneMapping()
 t CMatRenderContextBase::GetCurrentMaterial()
 t CMatRenderContextBase::RecomputeViewState()
+t CMatRenderContextBase::RecomputeViewState() [clone .part.53]
 b CMatRenderContextBase::sm_nInitializeCount
 b CMatRenderContextBase::sm_nRenderLockCount
 t CMatRenderContextBase::CurrentMatrixChanged()
@@ -3554,12 +3800,12 @@ t CMatRenderContextBase::PopMatrix()
 t CMatRenderContextBase::Translate(float, float, float)
 t CMatRenderContextBase::CMatRenderContextBase()
 t CMatRenderContextBase::CMatRenderContextBase()
-t CMatRenderContextBase::~CMatRenderContextBase()
 t CNormalizationCubemap::RegenerateTextureBits(ITexture*, IVTFTexture*, Rect_t*)
 t CNormalizationCubemap::Release()
 t CUtlCStringConversion::FindConversion(char const*, int*)
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CCleanupUtlSymbolTable::~CCleanupUtlSymbolTable()
 t CCleanupUtlSymbolTable::~CCleanupUtlSymbolTable()
 t CColorCorrectionSystem::CopyLookup(unsigned int, color24 const*)
 t CColorCorrectionSystem::CopyLookup(color24 const*)
@@ -3595,6 +3841,7 @@ t CColorCorrectionSystem::GetLookup(RGBX5551_t)
 t CColorCorrectionSystem::GetLookup(unsigned int, RGBX5551_t)
 t CColorCorrectionSystem::SetLookup(RGBX5551_t, color24)
 t CColorCorrectionSystem::SetLookup(unsigned int, RGBX5551_t, color24)
+t CColorCorrectionSystem::~CColorCorrectionSystem()
 t CColorCorrectionSystem::~CColorCorrectionSystem()
 t CMorphMgrRenderContext::GetRenderId(CMorph*)
 t CMorphMgrRenderContext::CMorphMgrRenderContext()
@@ -3723,6 +3970,7 @@ t CMatQueuedRenderContext::EnableClipping(bool)
 t CMatQueuedRenderContext::GetDynamicMesh(bool, IMesh*, IMesh*, IMaterial*)
 t CMatQueuedRenderContext::GetMaxToRender(IMesh*, bool, int*, int*)
 t CMatQueuedRenderContext::GMOD_QueueLock()
+t CMatQueuedRenderContext::GMOD_QueueLock() [clone .part.57]
 t CMatQueuedRenderContext::LoadBoneMatrix(int, matrix3x4_t const&)
 t CMatQueuedRenderContext::OnSetColorMesh(IMesh*, IMesh*, int)
 t CMatQueuedRenderContext::PopDeformation()
@@ -3739,6 +3987,7 @@ t CMatQueuedRenderContext::GMOD_FlushQueue()
 t CMatQueuedRenderContext::MultMatrixLocal(matrix3x4_t const&)
 t CMatQueuedRenderContext::MultMatrixLocal(VMatrix const&)
 t CMatQueuedRenderContext::PushDeformation(DeformationBase_t const*)
+t CMatQueuedRenderContext::QueueMatrixSync()
 t CMatQueuedRenderContext::ReallocVertices(unsigned char*, int, int, int)
 t CMatQueuedRenderContext::SelectionBuffer(unsigned int*, int)
 t CMatQueuedRenderContext::SetAmbientLight(float, float, float)
@@ -3750,6 +3999,7 @@ t CMatQueuedRenderContext::BindVertexBuffer(int, IVertexBuffer*, int, int, int, 
 t CMatQueuedRenderContext::CreateStaticMesh(unsigned long long, char const*, IMaterial*)
 t CMatQueuedRenderContext::GetDynamicMeshEx(unsigned long long, bool, IMesh*, IMesh*, IMaterial*)
 t CMatQueuedRenderContext::GMOD_QueueUnlock()
+t CMatQueuedRenderContext::GMOD_QueueUnlock() [clone .part.58]
 t CMatQueuedRenderContext::PopSelectionName()
 t CMatQueuedRenderContext::SetStencilEnable(bool)
 t CMatQueuedRenderContext::DestroyStaticMesh(IMesh*)
@@ -3875,6 +4125,7 @@ t CMatQueuedRenderContext::PopMatrix()
 t CMatQueuedRenderContext::SyncToken(char const*)
 t CMatQueuedRenderContext::Translate(float, float, float)
 t CMatQueuedRenderContext::~CMatQueuedRenderContext()
+t CMatQueuedRenderContext::~CMatQueuedRenderContext()
 t ColorCorrectionLookup_t::AllocTexture()
 t ColorCorrectionLookup_t::ReleaseTexture()
 t ColorCorrectionLookup_t::RestoreTexture()
@@ -3882,8 +4133,6 @@ t ColorCorrectionLookup_t::ColorCorrectionLookup_t(unsigned int)
 t ColorCorrectionLookup_t::ColorCorrectionLookup_t(unsigned int)
 t ColorCorrectionLookup_t::~ColorCorrectionLookup_t()
 t ColorCorrectionLookup_t::~ColorCorrectionLookup_t()
-t CResourcePreloadCubemap::CreateResource(char const*)
-t CResourcePreloadCubemap::OnEndMapLoading(bool)
 t CUtlFilenameSymbolTable::FindFileName(char const*)
 t CUtlFilenameSymbolTable::FindOrAddFileName(char const*)
 t CUtlFilenameSymbolTable::String(void* const&, char*, int)
@@ -3893,12 +4142,10 @@ t CUtlFilenameSymbolTable::CUtlFilenameSymbolTable()
 t CUtlFilenameSymbolTable::~CUtlFilenameSymbolTable()
 t CUtlFilenameSymbolTable::~CUtlFilenameSymbolTable()
 b EditorRenderStateList_t::s_Allocator
-t CResourcePreloadMaterial::CreateResource(char const*)
-t CResourcePreloadMaterial::PurgeUnreferencedResources()
-t CResourcePreloadMaterial::PurgeAll()
 t CShaderLibConVarAccessor::RegisterConCommandBase(ConCommandBase*)
 t CConCommandMemberAccessor<CMaterialSystem>::CommandCallback(CCommand const&)
 t CConCommandMemberAccessor<CMaterialSystem>::CommandCompletionCallback(char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&)
+t CConCommandMemberAccessor<CMaterialSystem>::~CConCommandMemberAccessor()
 t CConCommandMemberAccessor<CMaterialSystem>::~CConCommandMemberAccessor()
 t CConCommandMemberAccessor<CMaterialSystem>::~CConCommandMemberAccessor()
 t CReferenceToHandleTexture::SaveToFile(char const*)
@@ -3940,6 +4187,7 @@ b StandardRenderStateList_t::s_Allocator
 t CSignedNormalizationCubemap::RegenerateTextureBits(ITexture*, IVTFTexture*, Rect_t*)
 t CSignedNormalizationCubemap::Release()
 t CDatadescGeneratedNameHolder::~CDatadescGeneratedNameHolder()
+t CDatadescGeneratedNameHolder::~CDatadescGeneratedNameHolder()
 b VTFFileHeader_t_DataDescInit::g_DataMapHolder
 b VTFFileBaseHeader_t_DataDescInit::g_DataMapHolder
 b VTFFileHeaderV7_1_t_DataDescInit::g_DataMapHolder
@@ -3953,6 +4201,7 @@ t CJob::DoCleanup()
 t CJob::~CJob()
 t CJob::~CJob()
 t CJob::~CJob()
+t IMesh::~IMesh()
 t IMesh::~IMesh()
 t IMesh::~IMesh()
 b CMorph::s_nUniqueId
@@ -4013,9 +4262,6 @@ t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, 
 t ConVar::~ConVar()
 t ConVar::~ConVar()
 t ConVar::~ConVar()
-t CUtlMap<char const*, int, unsigned short>::~CUtlMap()
-t CUtlMap<char const*, ITextureInternal*, unsigned short>::~CUtlMap()
-t CUtlMap<char const*, char const*, unsigned short>::~CUtlMap()
 t VMatrix::SetupMatrixOrgAngles(Vector const&, QAngle const&)
 t VMatrix::Scale(Vector const&)
 t VMatrix::operator=(VMatrix const&)
@@ -4026,6 +4272,7 @@ t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
 t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
+t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
 t CTexture::SaveToFile(char const*)
@@ -4048,6 +4295,7 @@ t CTexture::ComputeActualSize(bool, IVTFTexture*)
 t CTexture::GetReferenceCount()
 t CTexture::LoadLowResTexture(IVTFTexture*)
 t CTexture::ReloadFilesInList(IFileList*)
+t CTexture::ReloadFilesInList(IFileList*) [clone .part.21]
 t CTexture::GetEmbeddedTexture(int)
 t CTexture::NotifyUnloadedFile()
 t CTexture::ReconstructTexture()
@@ -4065,8 +4313,10 @@ t CTexture::FreeOptimalReadBuffer(int)
 t CTexture::FreeShaderAPITextures()
 t CTexture::InitProceduralTexture(char const*, char const*, int, int, int, ImageFormat, int)
 t CTexture::ReleaseTextureHandles(bool)
+t CTexture::ReleaseTextureHandles(bool) [clone .part.18]
 t CTexture::SetTextureRegenerator(ITextureRegenerator*)
 t CTexture::AllocateTextureHandles(bool)
+t CTexture::AllocateTextureHandles(bool) [clone .part.17]
 t CTexture::ComputeMipLevelSubRect(Rect_t const*, int, Rect_t*)
 t CTexture::SetupDebuggingTextures(IVTFTexture*)
 t CTexture::DecrementReferenceCount()
@@ -4097,26 +4347,14 @@ t CTexture::CTexture()
 t CTexture::~CTexture()
 t CTexture::~CTexture()
 t CTexture::~CTexture()
+t CTSQueue<ITextureInternal*, false>::Pop()
 t CUtlDict<int, unsigned short>::RemoveAll()
-t CUtlDict<int, unsigned short>::CUtlDict(int, int, int)
-t CUtlDict<int, unsigned short>::~CUtlDict()
 t CUtlDict<ITextureInternal*, unsigned short>::Insert(char const*, ITextureInternal* const&)
 t CUtlDict<ITextureInternal*, unsigned short>::RemoveAt(unsigned short)
 t CUtlDict<ITextureInternal*, unsigned short>::RemoveAll()
-t CUtlDict<ITextureInternal*, unsigned short>::CUtlDict(int, int, int)
-t CUtlDict<ITextureInternal*, unsigned short>::~CUtlDict()
-t CUtlDict<IShader*, unsigned short>::~CUtlDict()
-t CUtlDict<KeyValues*, int>::Purge()
-t CUtlDict<KeyValues*, int>::CUtlDict(int, int, int)
-t CUtlDict<KeyValues*, int>::~CUtlDict()
+t CUtlDict<IShader*, unsigned short>::RemoveAll()
+t CUtlDict<KeyValues*, int>::RemoveAll()
 t CUtlDict<char const*, unsigned short>::RemoveAll()
-t CUtlDict<char const*, unsigned short>::CUtlDict(int, int, int)
-t CUtlDict<char const*, unsigned short>::~CUtlDict()
-t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
-t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::~CUtlHash()
-t void CByteswap::SwapBufferToTargetEndian<float>(float*, float*, int)
-t void CByteswap::SwapBufferToTargetEndian<int>(int*, int*, int)
-t void CByteswap::SwapBufferToTargetEndian<unsigned int>(unsigned int*, unsigned int*, int)
 t CMaterial::IsTwoSided()
 t CMaterial::FindVarFast(char const*, unsigned int*)
 t CMaterial::IsVertexLit()
@@ -4174,6 +4412,7 @@ t CMaterial::SetMaxLightmapPageID(int)
 t CMaterial::SetMinLightmapPageID(int)
 t CMaterial::CheckProxyReplacement(void*)
 t CMaterial::CleanUpStateSnapshots()
+t CMaterial::CleanUpStateSnapshots() [clone .part.26]
 t CMaterial::DestroyRenderPassList(RenderPassList_t*)
 t CMaterial::GetNumAnimationFrames()
 t CMaterial::GetTextureMemoryBytes()
@@ -4195,6 +4434,7 @@ t CMaterial::NeedsFullFrameBufferTexture(bool)
 t CMaterial::ReloadFromWhitelistIfMarked()
 t CMaterial::RefreshPreservingMaterialVars()
 t CMaterial::DecideShouldReloadFromWhitelist(IFileList*)
+t CMaterial::DecideShouldReloadFromWhitelist(IFileList*) [clone .part.44]
 t CMaterial::SetUseFixedFunctionBakedLighting(bool)
 t CMaterial::NeedsPowerOfTwoFrameBufferTexture(bool)
 t CMaterial::FindVar(char const*, bool*, bool)
@@ -4243,11 +4483,9 @@ t ConVarRef::ConVarRef(char const*)
 t ConVarRef::ConVarRef(char const*, bool)
 t CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> >::CopyFrom(CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> > const&)
 t CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> >::GrowStack()
-t CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> >::~CUtlStack()
-t CUtlStack<CMatRenderContextBase::RenderTargetStackElement_t, CUtlMemory<CMatRenderContextBase::RenderTargetStackElement_t, int> >::EnsureCapacity(int)
 t CUtlStack<CMatRenderContextBase::RenderTargetStackElement_t, CUtlMemory<CMatRenderContextBase::RenderTargetStackElement_t, int> >::Push(CMatRenderContextBase::RenderTargetStackElement_t const&)
-t CUtlStack<CMatRenderContextBase::RenderTargetStackElement_t, CUtlMemory<CMatRenderContextBase::RenderTargetStackElement_t, int> >::~CUtlStack()
 U CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
+t CVProfile::ExitScope()
 t KeyValues::deleteThis()
 t KeyValues::GetWString(char const*, wchar_t const*)
 t KeyValues::SaveToFile(IBaseFileSystem*, char const*, char const*, bool, bool)
@@ -4370,7 +4608,7 @@ t TGALoader::DecompressRow(CUtlBuffer&, TGALoader::TGAHeader_t const&, unsigned 
 t TGALoader::ReadSourceImage(CUtlBuffer&, TGALoader::TGAHeader_t&, CUtlMemory<unsigned char, int>&)
 b TGALoader::g_IsRunLengthPacket
 b TGALoader::g_PixelsLeftInPacket
-t TGALoader::ReadFile(char const*, CUtlMemory<unsigned char, int>&, int)
+t TGALoader::ReadFile(char const*, CUtlMemory<unsigned char, int>&, int) [clone .constprop.8]
 t TGAWriter::WriteTGAFile(char const*, int, int, ImageFormat, unsigned char const*, int)
 t TGAWriter::WriteToBuffer(unsigned char*, CUtlBuffer&, int, int, ImageFormat, ImageFormat)
 t TGAWriter::WriteRectNoAlloc(unsigned char*, char const*, int, int, int, int, int, ImageFormat)
@@ -4386,13 +4624,23 @@ t CDummyMesh::IsDynamic() const
 t ConCommand::IsCommand() const
 t CShaderDLL::ShaderCount() const
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
-t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::Links(unsigned short) const
+t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::FirstInorder() const
 t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
+t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::FirstInorder() const
+t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<char const*, int, unsigned short>::Node_t const&) const
+t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const
 t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
+t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::FirstInorder() const
+t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t const&) const
 t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const
 t CUtlRBTree<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, IShader*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
+t CUtlRBTree<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, IShader*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short> >::FirstInorder() const
+t CUtlRBTree<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, IShader*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, IShader*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<char const*, IShader*, unsigned short>::Node_t const&) const
 t CUtlRBTree<CUtlMap<char const*, KeyValues*, int>::Node_t, int, CUtlMap<char const*, KeyValues*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, KeyValues*, int>::Node_t, int>, int> >::NextInorder(int) const
+t CUtlRBTree<CUtlMap<char const*, KeyValues*, int>::Node_t, int, CUtlMap<char const*, KeyValues*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, KeyValues*, int>::Node_t, int>, int> >::FirstInorder() const
 t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
+t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::FirstInorder() const
+t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<char const*, char const*, unsigned short>::Node_t const&) const
 t CUtlRBTree<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, char const*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, char const*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const
 t CUtlString::GetExtension() const
 t CUtlString::StripFilename() const
@@ -4496,7 +4744,7 @@ t CShaderSystem::IsUsingGraphics() const
 t CShaderSystem::ShaderStateCount() const
 t CShaderSystem::ShaderStateString(int) const
 t CShaderSystem::CanUseEditorMaterials() const
-t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const
+t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.48] [clone .constprop.51]
 t FloatBitMap_t::QuarterSize() const
 t FloatBitMap_t::WriteTGAFile(char const*) const
 t FloatBitMap_t::InterpolatedPixel(float, float, int) const
@@ -4528,7 +4776,6 @@ t ConCommandBase::GetName() const
 t ConCommandBase::GetNext() const
 t ConCommandBase::IsCommand() const
 t ConCommandBase::IsFlagSet(int) const
-t int CUtlSortVector<CVertexMorphDict::MorphVertexList_t, CVertexMorphDict::VertexMorphDictLess, CUtlVector<CVertexMorphDict::MorphVertexList_t, CUtlMemory<CVertexMorphDict::MorphVertexList_t, int> > >::FindLessOrEqual<CVertexMorphDict::MorphVertexList_t>(CVertexMorphDict::MorphVertexList_t const&, bool*) const
 t int CUtlSortVector<CVertexMorphDict::MorphVertexList_t, CVertexMorphDict::VertexMorphDictLess, CUtlVector<CVertexMorphDict::MorphVertexList_t, CUtlMemory<CVertexMorphDict::MorphVertexList_t, int> > >::Find<CVertexMorphDict::MorphVertexList_t>(CVertexMorphDict::MorphVertexList_t const&) const
 t CMaterialSystem::GetShaders(int, int, IShader**) const
 t CMaterialSystem::GetMaterial(unsigned short) const
@@ -4882,10 +5129,6 @@ t CTexture::GetName() const
 t CTexture::IsError() const
 t CTexture::GetFlags() const
 t CTexture::IsCubeMap() const
-t CUtlDict<int, unsigned short>::Find(char const*) const
-t CUtlDict<ITextureInternal*, unsigned short>::Find(char const*) const
-t CUtlDict<IShader*, unsigned short>::Find(char const*) const
-t CUtlDict<char const*, unsigned short>::Find(char const*) const
 t CMaterial::GetChangeID() const
 t CMaterial::IsPrecached() const
 t CMaterial::IsPreloaded() const
@@ -5369,9 +5612,7 @@ r typeinfo for CDefaultAccessor
 r typeinfo for CDllDemandLoader
 r typeinfo for CMaterialSubRect
 r typeinfo for CMemberFunctor14<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int), IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
-r typeinfo for CResourcePreload
 r typeinfo for ICommandCallback
-r typeinfo for IResourcePreload
 r typeinfo for ITextureInternal
 r typeinfo for CDummyMaterialVar
 r typeinfo for CMatRenderContext
@@ -5399,10 +5640,8 @@ r typeinfo for IColorCorrectionSystem
 r typeinfo for CColorCorrectionTexture
 r typeinfo for CMaterial_QueueFriendly
 r typeinfo for CMatQueuedRenderContext
-r typeinfo for CResourcePreloadCubemap
 r typeinfo for IConCommandBaseAccessor
 r typeinfo for IMaterialSystemInternal
-r typeinfo for CResourcePreloadMaterial
 r typeinfo for CShaderLibConVarAccessor
 r typeinfo for CConCommandMemberAccessor<CMaterialSystem>
 r typeinfo for CReferenceToHandleTexture
@@ -5563,9 +5802,7 @@ r typeinfo name for CDefaultAccessor
 r typeinfo name for CDllDemandLoader
 r typeinfo name for CMaterialSubRect
 r typeinfo name for CMemberFunctor14<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int), IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
-r typeinfo name for CResourcePreload
 r typeinfo name for ICommandCallback
-r typeinfo name for IResourcePreload
 r typeinfo name for ITextureInternal
 r typeinfo name for CDummyMaterialVar
 r typeinfo name for CMatRenderContext
@@ -5593,10 +5830,8 @@ r typeinfo name for IColorCorrectionSystem
 r typeinfo name for CColorCorrectionTexture
 r typeinfo name for CMaterial_QueueFriendly
 r typeinfo name for CMatQueuedRenderContext
-r typeinfo name for CResourcePreloadCubemap
 r typeinfo name for IConCommandBaseAccessor
 r typeinfo name for IMaterialSystemInternal
-r typeinfo name for CResourcePreloadMaterial
 r typeinfo name for CShaderLibConVarAccessor
 r typeinfo name for CConCommandMemberAccessor<CMaterialSystem>
 r typeinfo name for CReferenceToHandleTexture
@@ -5757,9 +5992,7 @@ r vtable for CDefaultAccessor
 r vtable for CDllDemandLoader
 r vtable for CMaterialSubRect
 r vtable for CMemberFunctor14<CMatRenderContextBase*, void (IMatRenderContext::*)(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int), IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
-r vtable for CResourcePreload
 r vtable for ICommandCallback
-r vtable for IResourcePreload
 r vtable for ITextureInternal
 r vtable for CDummyMaterialVar
 r vtable for CMatRenderContext
@@ -5769,7 +6002,6 @@ r vtable for IMatRenderContext
 r vtable for CUtlCharConversion
 r vtable for IShaderDLLInternal
 r vtable for CUtlNoEscConversion
-r vtable for IMaterialSystemStub
 r vtable for ITextureRegenerator
 r vtable for CCheckerboardTexture
 r vtable for CDummyHardwareConfig
@@ -5781,21 +6013,16 @@ r vtable for CNormalizationCubemap
 r vtable for CUtlCStringConversion
 r vtable for IShaderSystemInternal
 r vtable for CColorCorrectionSystem
-r vtable for IColorCorrectionSystem
 r vtable for CColorCorrectionTexture
 r vtable for CMaterial_QueueFriendly
 r vtable for CMatQueuedRenderContext
-r vtable for CResourcePreloadCubemap
-r vtable for IConCommandBaseAccessor
 r vtable for IMaterialSystemInternal
-r vtable for CResourcePreloadMaterial
 r vtable for CShaderLibConVarAccessor
 r vtable for CConCommandMemberAccessor<CMaterialSystem>
 r vtable for CReferenceToHandleTexture
 r vtable for IMatRenderContextInternal
 r vtable for ICommandCompletionCallback
 r vtable for CSignedNormalizationCubemap
-r vtable for IMaterialSystemHardwareConfig
 r vtable for CJob
 r vtable for IMesh
 r vtable for CMorph
@@ -5832,8 +6059,8 @@ b IsEmulatingGL()::bIsEmulatingGL
 b COM_GetModDirectory()::modDir
 b Bias(float, float)::lastExponent
 b InitializeCharacterSets()::s_CharacterSetInitialized
-b CreateNormalizationCubemap(ITextureInternal*)::s_NormalizationCubemap
-b CreateSignedNormalizationCubemap(ITextureInternal*)::s_SignedNormalizationCubemap
+d CreateNormalizationCubemap(ITextureInternal*)::s_NormalizationCubemap
+d CreateSignedNormalizationCubemap(ITextureInternal*)::s_SignedNormalizationCubemap
 b CDummyMesh::Lock(int, bool, VertexDesc_t&)::dummyFloat
 b CDummyMesh::Lock(int, bool, VertexDesc_t&)::dummyChar
 b CUtlString::GetEmptyString()::s_emptyString
@@ -5897,7 +6124,7 @@ b CMatRenderContext::Bind(IMaterial*, void*)::matShowWaterTextureConVar
 b CReplacementProxy::GetMaterial()::localplayer_visionflags
 r CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
 b COcclusionQueryMgr::BeginOcclusionQueryDrawing(OcclusionQueryObjectHandle_t__*)::s_nWarnCount
-b CDummyMaterialSystem::CreateMorph(unsigned int, char const*)::s_DummyMorph
+d CDummyMaterialSystem::CreateMorph(unsigned int, char const*)::s_DummyMorph
 b CMatRenderContextBase::LockRenderData(int)::__executeCount
 b CMatQueuedRenderContext::BeginRender()::_counter
 b CMatQueuedRenderContext::CreateMorph(unsigned int, char const*)::__executeCount

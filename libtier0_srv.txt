@@ -1,7 +1,7 @@
 U abort@@GLIBC_2.0
 U access@@GLIBC_2.0
 t add_fdes
-d adds.9477
+d adds.8619
 U alarm@@GLIBC_2.0
 T ApproximateProcessMemoryUsage
 T AreAllAssertsDisabled
@@ -10,8 +10,8 @@ T _AssertValidReadPtr
 T _AssertValidReadWritePtr
 T AssertValidStringPtr
 T _AssertValidWritePtr
-t base_from_cb_data
-t base_from_object
+t base_from_cb_data.isra.4
+t base_from_object.isra.3
 B __bss_start
 T BuildCmdLine
 T CallAssertFailedNotifyFunc
@@ -23,7 +23,7 @@ U clock_gettime@@GLIBC_2.2
 U closedir@@GLIBC_2.0
 T ColorSpewMessage
 T CommandLine_Tier0
-b completed.7134
+b completed.6591
 T COM_TimestampedLog
 T ConColorMsg
 T ConDColorMsg
@@ -36,8 +36,6 @@ T ConWarning
 T CrackSmokingCompiler
 T CreateSimpleThread
 U ctime_r@@GLIBC_2.0
-d __CTOR_END__
-d __CTOR_LIST__
 U __ctype_tolower_loc@@GLIBC_2.3
 U __cxa_allocate_exception@@CXXABI_1.3
 U __cxa_atexit@@GLIBC_2.1.3
@@ -56,6 +54,7 @@ T DefaultSpewFuncAbortOnAsserts
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
+t deregister_tm_clones
 T DevLog
 T DevMsg
 T DevWarning
@@ -65,14 +64,11 @@ T DLog
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
 T DMsg
-t __do_global_ctors_aux
 t __do_global_dtors_aux
+t __do_global_dtors_aux_fini_array_entry
 T DoNewAssertDialog
 d __dso_handle
 T _DSpewMessage
-d __DTOR_END__
-b dtor_idx.7136
-d __DTOR_LIST__
 b dwarf_reg_size_table
 T DWarning
 d _DYNAMIC
@@ -102,6 +98,7 @@ U fprintf@@GLIBC_2.0
 U fputs@@GLIBC_2.0
 t frame_downheap
 t frame_dummy
+t __frame_dummy_init_array_entry
 r __FRAME_END__
 b frame_hdr_cache
 b frame_hdr_cache_head
@@ -140,15 +137,14 @@ U gettimeofday@@GLIBC_2.0
 b g_FileLen
 b g_iCurEvent
 d g_LastReadEvent
-t global constructors keyed to CommandLine_Tier0
-t global constructors keyed to DefaultSpewFunc
-t global constructors keyed to g_bExpectingWindowProcCalls
-t global constructors keyed to g_ClockSpeed
-t global constructors keyed to g_VProfCurrentProfile
-t global constructors keyed to ReportProgress
-t global constructors keyed to CreateSimpleThread(unsigned int (*)(void*), void*, unsigned long*, unsigned int)
-t global constructors keyed to TSListTests::NUM_TEST
 d _GLOBAL_OFFSET_TABLE_
+t _GLOBAL__sub_I_CommandLine_Tier0
+t _GLOBAL__sub_I_DefaultSpewFunc
+t _GLOBAL__sub_I_g_ClockSpeed
+t _GLOBAL__sub_I_g_VProfCurrentProfile
+t _GLOBAL__sub_I_ReportProgress
+t _GLOBAL__sub_I__Z18CreateSimpleThreadPFjPvES_Pmj
+t _GLOBAL__sub_I__ZN11TSListTests8NUM_TESTE
 T GMOD_SpewBufferEnd
 T GMOD_SpewBufferFlush
 T GMOD_SpewBufferStart
@@ -177,8 +173,6 @@ B g_VProfCurrentProfile
 B g_VProfSignalSpike
 U __gxx_personality_v0@@CXXABI_1.3
 T HushAsserts
-t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
 T _init
 t init_dwarf_reg_size_table
 T InitPME
@@ -186,9 +180,118 @@ T InstallProgressReportHandler
 T Is64BitOS
 U isspace@@GLIBC_2.0
 T IsSpewActive
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 d __JCR_END__
 d __JCR_LIST__
 w _Jv_RegisterClasses
+t .L122
+t .L19
+t .L191
+t .L192
+t .L195
+t .L196
+t .L197
+t .L198
+t .L21
+t .L22
+t .L223
+t .L226
+t .L227
+t .L23
+t .L230
+t .L231
+t .L232
+t .L233
+t .L24
+t .L25
+t .L26
+t .L27
+t .L28
+t .L29
+t .L30
+t .L31
+t .L32
+t .L325
+t .L328
+t .L329
+t .L33
+t .L330
+t .L331
+t .L332
+t .L334
+t .L336
+t .L337
+t .L338
+t .L339
+t .L34
+t .L340
+t .L341
+t .L342
+t .L343
+t .L344
+t .L345
+t .L346
+t .L347
+t .L348
+t .L349
+t .L35
+t .L350
+t .L351
+t .L352
+t .L354
+t .L36
+t .L367
+t .L368
+t .L37
+t .L371
+t .L372
+t .L373
+t .L374
+t .L38
+t .L39
+t .L40
+t .L41
+t .L415
+t .L417
+t .L418
+t .L419
+t .L42
+t .L420
+t .L421
+t .L422
+t .L423
+t .L424
+t .L425
+t .L426
+t .L427
+t .L428
+t .L429
+t .L43
+t .L430
+t .L431
+t .L432
+t .L44
+t .L440
+t .L523
+t .L524
+t .L526
+t .L527
+t .L528
+t .L529
+t .L56
+t .L57
+t .L60
+t .L61
+t .L61
+t .L62
+t .L63
+t .L64
+t .L65
+t .L68
+t .L69
+t .L70
+t .L71
 U lchown@@GLIBC_2.0
 t linear_search_fdes
 U link@@GLIBC_2.0
@@ -201,9 +304,10 @@ t __lstat
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
-b marker.8860
+b marker.8357
 U memalign@@GLIBC_2.0
 T MemAllocScratch
+U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 T MemFreeScratch
 U memmove@@GLIBC_2.0
@@ -219,7 +323,7 @@ T NetLog
 T NetMsg
 T NetWarning
 b object_mutex
-b once_regsizes.9698
+b once_regsizes.8769
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
@@ -251,7 +355,6 @@ U popen@@GLIBC_2.1
 U printf@@GLIBC_2.0
 U pthread_attr_init@@GLIBC_2.1
 U pthread_attr_setstacksize@@GLIBC_2.1
-w pthread_cancel@@GLIBC_2.0
 U pthread_cond_destroy@@GLIBC_2.3.2
 U pthread_cond_init@@GLIBC_2.3.2
 U pthread_cond_signal@@GLIBC_2.3.2
@@ -261,6 +364,7 @@ U pthread_detach@@GLIBC_2.0
 U pthread_getschedparam@@GLIBC_2.0
 U pthread_getspecific@@GLIBC_2.0
 U pthread_join@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
 U pthread_key_create@@GLIBC_2.0
 U pthread_key_delete@@GLIBC_2.0
 U pthread_kill@@GLIBC_2.0
@@ -283,6 +387,7 @@ U rand@@GLIBC_2.0
 U readdir@@GLIBC_2.0
 t read_encoded_value_with_base
 t read_sleb128
+t read_sleb128
 U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
 U recvfrom@@GLIBC_2.0
@@ -293,6 +398,7 @@ t __register_frame_info_bases
 t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
+t register_tm_clones
 T ReleaseThreadHandle
 U rename@@GLIBC_2.0
 T ReportProgress
@@ -339,8 +445,9 @@ U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
-b subs.9478
+b subs.8620
 U symlink@@GLIBC_2.0
+b terminator.8463
 T ThreadDetach
 T ThreadGetCurrentHandle
 T ThreadGetCurrentId
@@ -365,6 +472,7 @@ T ThreadSetPriority
 T ThreadSleep
 U time@@GLIBC_2.0
 U timegm@@GLIBC_2.0
+d __TMC_END__
 U tolower@@GLIBC_2.0
 t __udivdi3
 t __umoddi3
@@ -392,7 +500,6 @@ t _Unwind_Resume
 t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
-t _Unwind_SetSpColumn
 U usleep@@GLIBC_2.0
 U utime@@GLIBC_2.0
 U utimes@@GLIBC_2.0
@@ -439,6 +546,7 @@ t __wrap___xstat
 t __wrap___xstat64
 T WriteMiniDump
 t __x86.get_pc_thunk.bx
+t __x86.get_pc_thunk.cx
 U __xmknod@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
@@ -497,8 +605,6 @@ t pathmatch(char const*, char**, bool, char*, unsigned int)
 U operator delete[](void*)@@GLIBCXX_3.4
 U operator delete(void*)@@GLIBCXX_3.4
 T ZeroMemory
-b guard variable for AllocTempVector()::s_nIndex
-b guard variable for AllocTempVector()::s_vecTemp
 b guard variable for DoNewAssertDialog::autoMutex__
 b guard variable for GetCPUInformation::pi
 b guard variable for ShouldUseNewAssertDialog::bMPIWorker
@@ -507,12 +613,10 @@ b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::
 b guard variable for AreAssertsDisabled()::bResult
 b guard variable for IsDebugBreakEnabled()::bResult
 b guard variable for CSharedLibraryCache::GetCache()::Singleton
-b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 t DumpSorted(char const*, double, bool (*)(TimeSums_t const&, TimeSums_t const&), int)
-b g_VCRTrace
-r s_pConsole
-r s_pNetwork
+d g_VCRTrace
 b s_SpewType
+t HTSupported()
 t PeakCompare(TimeSums_t const&, TimeSums_t const&)
 b s_bShowDiag
 t SkipToFname(char const*)
@@ -524,7 +628,6 @@ b vec2_origin
 b linuxCmdline
 b s_bInittedWD
 b s_GroupCount
-r s_pDeveloper
 t _SpewMessage(SpewType_t, char const*, int, Color const*, char const*, char*)
 b vec2_invalid
 r g_ColorLookup
@@ -594,12 +697,11 @@ T CVProfNode::MarkFrame()
 T CVProfNode::ResetPeak()
 T CVProfNode::~CVProfNode()
 T CVProfNode::~CVProfNode()
-t CTSListBase::Detach()
-t CTSListBase::CTSListBase()
+t CTSListBase::~CTSListBase()
 t CTSListBase::~CTSListBase()
 b TSListTests::g_nThreads
 b TSListTests::g_pTestOps
-b TSListTests::g_QueueOps
+d TSListTests::g_QueueOps
 b TSListTests::g_TestList
 b TSListTests::g_pListType
 b TSListTests::g_TestQueue
@@ -633,7 +735,6 @@ t TSListTests::CListOps::Pop(int*)
 t TSListTests::CListOps::Push(int)
 t TSListTests::CListOps::IsEmpty()
 t TSListTests::CListOps::Validate()
-t TSListTests::CTestOps::Validate()
 b TSListTests::g_bStart
 d TSListTests::NUM_TEST
 t TSListTests::TestWait()
@@ -642,10 +743,12 @@ t TSListTests::CQueueOps::Push(int)
 t TSListTests::CQueueOps::IsEmpty()
 t TSListTests::CQueueOps::Validate()
 t TSListTests::DecBucket(int)
-b TSListTests::g_ListOps
+t TSListTests::DecBucket(int) [clone .part.5]
+d TSListTests::g_ListOps
 b TSListTests::g_nPushes
 b TSListTests::g_nTested
 t TSListTests::IncBucket(int)
+t TSListTests::IncBucket(int) [clone .part.4]
 t TSListTests::TestStart()
 t CCommandLine::AppendParm(char const*, char const*)
 t CCommandLine::RemoveParm(char const*)
@@ -686,8 +789,11 @@ T CWorkerThread::CWorkerThread()
 T CWorkerThread::CWorkerThread()
 W CWorkerThread::~CWorkerThread()
 W CWorkerThread::~CWorkerThread()
+W CWorkerThread::~CWorkerThread()
 T CClockSpeedInit::Init()
 t CThreadLocalPtr<SpewInfo_t>::~CThreadLocalPtr()
+t CThreadLocalPtr<SpewInfo_t>::~CThreadLocalPtr()
+t CThreadLocalPtr<CThread>::~CThreadLocalPtr()
 t CThreadLocalPtr<CThread>::~CThreadLocalPtr()
 T CThreadLocalBase::Set(void*)
 T CThreadLocalBase::CThreadLocalBase()
@@ -705,8 +811,9 @@ T CThreadSyncObject::CThreadSyncObject()
 T CThreadSyncObject::~CThreadSyncObject()
 T CThreadSyncObject::~CThreadSyncObject()
 t CSharedLibraryCache::CSharedLibraryItem::~CSharedLibraryItem()
+t CSharedLibraryCache::CSharedLibraryItem::~CSharedLibraryItem()
 t CSharedLibraryCache::~CSharedLibraryCache()
-t CWrap::~CWrap()
+t CSharedLibraryCache::~CSharedLibraryCache()
 T CThread::ThreadProc(void*)
 T CThread::GetThreadId()
 T CThread::SetPriority(int)
@@ -735,6 +842,8 @@ T CThread::~CThread()
 T CThread::~CThread()
 T CThread::~CThread()
 t CTSList<SpewBufferEntry>::~CTSList()
+t CTSList<SpewBufferEntry>::~CTSList()
+t CTSList<int>::~CTSList()
 t CTSList<int>::~CTSList()
 t CL2Cache::End()
 t CL2Cache::Start()
@@ -742,6 +851,7 @@ t CL2Cache::CL2Cache()
 t CL2Cache::CL2Cache()
 t CL2Cache::~CL2Cache()
 t CL2Cache::~CL2Cache()
+t CTSQueue<int, true>::~CTSQueue()
 t CTSQueue<int, true>::~CTSQueue()
 t CVCRTrace::Read(void*, int)
 t CVCRTrace::ReadEvent()
@@ -784,17 +894,22 @@ T CVProfile::GetNumCounters() const
 T CVProfile::GetCounterGroup(int) const
 T CVProfile::GetCounterValue(int) const
 T CVProfile::GetCounterNameAndValue(int, int&) const
-U std::_List_node_base::hook(std::_List_node_base*)@@GLIBCXX_3.4
-U std::_List_node_base::unhook()@@GLIBCXX_3.4
+t std::map<CVProfNode*, double, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::~map()
 t std::map<CVProfNode*, double, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::~map()
 t std::map<char const*, unsigned int, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::~map()
+t std::map<char const*, unsigned int, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::~map()
 t std::list<ThreadHandle_t__*, std::allocator<ThreadHandle_t__*> >::~list()
-t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::_M_insert_aux(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, TimeSums_t const&)
+t std::list<ThreadHandle_t__*, std::allocator<ThreadHandle_t__*> >::~list()
+t void std::vector<TimeSums_t, std::allocator<TimeSums_t> >::_M_emplace_back_aux<TimeSums_t const&>(TimeSums_t const&)
+t void std::vector<TimeSums_t, std::allocator<TimeSums_t> >::_M_emplace_back_aux<TimeSums_t const&>(TimeSums_t const&)
 t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::operator=(std::vector<TimeSums_t, std::allocator<TimeSums_t> > const&)
 t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::~vector()
-t std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_insert_(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<CVProfNode* const, double> const&)
+t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::~vector()
+U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
+t std::pair<std::_Rb_tree_iterator<std::pair<CVProfNode* const, double> >, bool> std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_insert_unique<std::pair<CVProfNode*, double> >(std::pair<CVProfNode*, double>&&)
 t std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_erase(std::_Rb_tree_node<std::pair<CVProfNode* const, double> >*)
-t std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_insert_(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<char const* const, unsigned int> const&)
+t std::pair<std::_Rb_tree_iterator<std::pair<char const* const, unsigned int> >, bool> std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_insert_unique<std::pair<char const*, unsigned int> >(std::pair<char const*, unsigned int>&&)
 t std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<char const* const, unsigned int> >*)
 T CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 U operator new(unsigned int)@@GLIBCXX_3.4
@@ -804,6 +919,7 @@ t void std::__insertion_sort<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vect
 t void std::__introsort_loop<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, bool (*)(TimeSums_t const&, TimeSums_t const&))
 U std::__throw_bad_alloc()@@GLIBCXX_3.4
 U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
 U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
 r typeinfo for CCommandLine
 r typeinfo for ICommandLine
@@ -829,11 +945,9 @@ r vtable for ICommandLine
 V vtable for CWorkerThread
 V vtable for CThread
 r vtable for CVCRTrace
-r vtable for IVCRTrace
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 r vtable for TSListTests::CListOps
-r vtable for TSListTests::CTestOps
 r vtable for TSListTests::CQueueOps
 b Plat_FloatTime::start_time
 b Plat_FloatTime::bInitialized
@@ -854,6 +968,6 @@ b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabl
 b AreAssertsDisabled()::bResult
 b IsDebugBreakEnabled()::bResult
 r CThreadSpinRWLock::UnlockWrite()::newValue
-V CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
+u CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
 b CSharedLibraryCache::GetCache()::Singleton
 b CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)::dummy

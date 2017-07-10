@@ -11,6 +11,7 @@ T CreateInterface
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
 U __ctype_toupper_loc@@GLIBC_2.3
+B cvar
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
 U __cxa_end_catch@@CXXABI_1.3
@@ -19,6 +20,7 @@ U __cxa_guard_acquire@@CXXABI_1.3
 U __cxa_guard_release@@CXXABI_1.3
 U __cxa_pure_virtual@@CXXABI_1.3
 U __cxa_rethrow@@CXXABI_1.3
+U DevMsg
 U difftime@@GLIBC_2.0
 U dirname@@GLIBC_2.0
 U dlclose@@GLIBC_2.0
@@ -26,6 +28,7 @@ U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
+U __dynamic_cast@@CXXABI_1.3
 D _edata
 B _end
 U __errno_location@@GLIBC_2.0
@@ -66,8 +69,12 @@ U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 U _IO_getc@@GLIBC_2.0
+U isspace@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
+U KeyValuesSystem
 U lchown@@GLIBC_2.0
 U ldexp@@GLIBC_2.0
 U link@@GLIBC_2.0
@@ -237,12 +244,11 @@ U __progname_full@@GLIBC_2.0
 U __progname@@GLIBC_2.0
 U program_invocation_name@@GLIBC_2.0
 U program_invocation_short_name@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
 w __pthread_key_create@@GLIBC_2.0
 w pthread_mutex_lock@@GLIBC_2.0
 w pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
-U putchar@@GLIBC_2.0
+U qsort@@GLIBC_2.0
 U rand@@GLIBC_2.0
 U readdir@@GLIBC_2.0
 U realloc@@GLIBC_2.0
@@ -255,6 +261,7 @@ U select@@GLIBC_2.0
 U sinh@@GLIBC_2.0
 U sprintf@@GLIBC_2.0
 U srand@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
 U __stack_chk_fail@@GLIBC_2.4
 U stderr@@GLIBC_2.0
 U stdin@@GLIBC_2.0
@@ -275,11 +282,15 @@ U strpbrk@@GLIBC_2.0
 U strrchr@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U swprintf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
 U tanh@@GLIBC_2.0
 U ThreadGetCurrentId
 U ThreadInMainThread
+U ThreadInterlockedAssignIf
+U ThreadInterlockedExchange
 U time@@GLIBC_2.0
 U tmpnam@@GLIBC_2.0
 U tolower@@GLIBC_2.0
@@ -298,6 +309,8 @@ U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
+U wcstol@@GLIBC_2.0
+U wcstoll@@GLIBC_2.1
 U wcstombs@@GLIBC_2.0
 U __xmknod@@GLIBC_2.0
 U __xpg_basename@@GLIBC_2.0
@@ -306,15 +319,19 @@ U __xstat@@GLIBC_2.0
 T md5_finish(md5_context*, unsigned char*)
 T md5_starts(md5_context*)
 T md5_update(md5_context*, unsigned char*, int)
+U ConColorMsg(Color const&, char const*, ...)
 T crc32_start(unsigned long)
 T md5(unsigned char*, int, unsigned char*)
 T crc32(void const*, int, unsigned long, unsigned long*)
+U ConMsg(char const*, ...)
+U DevMsg(char const*, ...)
 T md5_32(void const*, int, unsigned int, void*)
 T globber(char const*, char const*)
 T md5hash(void const*, int, unsigned int)
 T wildcmp(char const*, char const*)
 T crc32_add(unsigned long&, void const*, int)
 T crc32_end(unsigned long&)
+U operator delete[](void*)@@GLIBCXX_3.4
 U operator delete(void*)@@GLIBCXX_3.4
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
@@ -486,11 +503,14 @@ U std::ios_base::ios_base()@@GLIBCXX_3.4
 U std::ios_base::~ios_base()@@GLIBCXX_3.4
 U std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)@@GLIBCXX_3.4
 U std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)@@GLIBCXX_3.4
+U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 U operator new(unsigned int)@@GLIBCXX_3.4
 U std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)@@GLIBCXX_3.4.9
 U std::__throw_bad_alloc()@@GLIBCXX_3.4
 U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
 U std::__throw_out_of_range(char const*)@@GLIBCXX_3.4
+U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
 U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
 U std::cout@@GLIBCXX_3.4
 V typeinfo for Bootil::AutoBuffer
@@ -501,6 +521,7 @@ U VTT for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U VTT for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
 V vtable for Bootil::AutoBuffer
 V vtable for Bootil::Buffer
 U vtable for std::basic_filebuf<char, std::char_traits<char> >@@GLIBCXX_3.4

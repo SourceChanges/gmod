@@ -47,6 +47,8 @@ U iconv_open@@GLIBC_2.1
 T _init
 U isspace@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
 U KeyValuesSystem
 U __log_finite@@GLIBC_2.15
@@ -62,7 +64,7 @@ U Plat_IsInDebugSession
 U Plat_localtime
 U __pow_finite@@GLIBC_2.15
 U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
 w pthread_mutex_lock@@GLIBC_2.0
 w pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
