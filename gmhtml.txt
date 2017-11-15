@@ -217,6 +217,7 @@ U __vsnprintf_chk@@GLIBC_2.3.4
 U vsnprintf@@GLIBC_2.0
 U __vswprintf_chk@@GLIBC_2.4
 U vswprintf@@GLIBC_2.2
+U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
@@ -366,6 +367,13 @@ U Awesomium::DataSource::~DataSource()
 U Awesomium::WebPreferences::WebPreferences()
 U Awesomium::WebStringArray::Push(Awesomium::WebString const&)
 U Awesomium::WebStringArray::~WebStringArray()
+W Awesomium::ResourceInterceptor::OnWillDownload(int, int, Awesomium::WebURL const&)
+W Awesomium::ResourceInterceptor::OnFilterNavigation(int, int, Awesomium::WebString const&, Awesomium::WebURL const&, bool)
+W Awesomium::ResourceInterceptor::OnRequest(Awesomium::ResourceRequest*)
+W Awesomium::ResourceInterceptor::~ResourceInterceptor()
+W Awesomium::ResourceInterceptor::~ResourceInterceptor()
+W Awesomium::ResourceInterceptor::~ResourceInterceptor()
+U Awesomium::WebURL::~WebURL()
 U Awesomium::WebCore::Initialize(Awesomium::WebConfig const&)
 U Awesomium::WebCore::Shutdown()
 U Awesomium::WebConfig::WebConfig()
@@ -378,6 +386,8 @@ T Bootil::Buffer::GetWritten() const
 T Bootil::Buffer::GetPos() const
 T Bootil::Buffer::GetBase(unsigned int) const
 T Bootil::Buffer::GetSize() const
+U Awesomium::WebURL::spec() const
+U Awesomium::WebURL::scheme() const
 U Awesomium::WebString::ToUTF8(char*, unsigned int) const
 U Awesomium::WebString::IsEmpty() const
 U std::string::find_last_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
@@ -443,6 +453,7 @@ U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 V vtable for Bootil::AutoBuffer
 V vtable for Bootil::Buffer
+V vtable for Awesomium::ResourceInterceptor
 U vtable for std::basic_filebuf<char, std::char_traits<char> >@@GLIBCXX_3.4
 U vtable for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U vtable for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
