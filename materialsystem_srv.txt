@@ -2805,6 +2805,7 @@ t CTextureManager::ReleaseTextures()
 t CTextureManager::FindOrLoadTexture(char const*, char const*, int)
 t CTextureManager::IdentityLightWarp()
 t CTextureManager::ReloadFilesInList(IFileList*)
+t CTextureManager::GMOD_RemoveTexture(ITextureInternal*)
 t CTextureManager::GMOD_TextureExists(char const*)
 t CTextureManager::RemoveTextureAlias(char const*)
 t CTextureManager::SetExcludedTextures(char const*)
@@ -2829,7 +2830,6 @@ t CTextureManager::ReleaseTempRenderTargetBits()
 t CTextureManager::ForceAllTexturesIntoHardware()
 t CTextureManager::AllocateStandardRenderTargets()
 t CTextureManager::RestoreNonRenderTargetTextures()
-t CTextureManager::MarkUnreferencedTextureForCleanup(ITextureInternal*)
 t CTextureManager::CacheExternalStandardRenderTargets()
 t CTextureManager::CleanupPossiblyUnreferencedTextures()
 t CTextureManager::Init(int)
@@ -6152,6 +6152,7 @@ b CMatQueuedRenderContext::CompareMaterialCombos(IMaterial*, IMaterial*, int, in
 b CMatQueuedRenderContext::CompareMaterialCombos(IMaterial*, IMaterial*, int, int)::__executeCount
 b CMatQueuedRenderContext::GetLightmapDimensions(int*, int*)::__executeCount
 b CMatQueuedRenderContext::GetLightmapDimensions(int*, int*)::__executeCount
+b CMatQueuedRenderContext::Bind(IMaterial*, void*)::oldMaterial
 b CMorph::HandleMorphStats(int, int, int)::s_bLastMorphStats
 b CTexture::InitRenderTarget(char const*, int, int, RenderTargetSizeMode_t, ImageFormat, RenderTargetType_t, unsigned int, unsigned int)::id
 b CTexture::ApplyRenderTargetSizeMode(int&, int&, ImageFormat)::bReplayInit

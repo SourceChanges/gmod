@@ -783,6 +783,7 @@ r CSWTCH.3489
 r CSWTCH.3503
 r CSWTCH.3996
 r CSWTCH.477
+r CSWTCH.684
 r CSWTCH.790
 r CSWTCH.840
 r CSWTCH.841
@@ -3030,6 +3031,7 @@ r or_logic.19890
 t out2Prerelease.isra.160
 t out2PrereleaseWithClear
 r outOfMem.32125
+b p2p_enabled
 b p4
 t pageFindSlot
 t pageFreeArray.isra.329
@@ -6892,6 +6894,7 @@ t CC_VoxelTreeView()
 t ClearMultiDamage()
 t CNavArea__IsFlat(ILuaInterface*)
 t CNavArea__IsOpen(ILuaInterface*)
+t CNavArea__Remove(ILuaInterface*)
 t CommandNavCrouch()
 t CommandNavDelete()
 t CommandNavNoJump()
@@ -7346,6 +7349,7 @@ t CNavArea__Contains(ILuaInterface*)
 t CNavArea__GetSizeX(ILuaInterface*)
 t CNavArea__GetSizeY(ILuaInterface*)
 t CNavArea__IsClosed(ILuaInterface*)
+t CNavLadder__Remove(ILuaInterface*)
 t CommandNavDontHide()
 t CommandNavGenerate()
 t CommandNavPlaceSet()
@@ -7375,6 +7379,7 @@ t Entity__GetForward(ILuaInterface*)
 t Entity__GetGravity(ILuaInterface*)
 t Entity__HeadTarget(ILuaInterface*)
 t Entity__IsEFlagSet(ILuaInterface*)
+t Entity__IsScripted(ILuaInterface*)
 t Entity__LookupBone(ILuaInterface*)
 t EntityMessageBegin(CBaseEntity*, bool)
 t Entity____newindex(ILuaInterface*)
@@ -7573,12 +7578,14 @@ t CC_NPC_Create_Aimed(CCommand const&)
 t CC_WarpSelectedHere(CCommand const&)
 t CheckEntityVelocity(Vector&)
 t Chopper_CreateChunk(CBaseEntity*, Vector const&, QAngle const&, char const*, bool)
+t CNavArea__ConnectTo(ILuaInterface*)
 t CNavArea__DrawSpots(ILuaInterface*)
 t CNavArea__GetCenter(ILuaInterface*)
 t CNavArea__GetCorner(ILuaInterface*)
 t CNavArea__GetParent(ILuaInterface*)
 t CNavArea__IsBlocked(ILuaInterface*)
 t CNavArea__IsVisible(ILuaInterface*)
+t CNavArea__SetCorner(ILuaInterface*)
 t CNavArea__SetParent(ILuaInterface*)
 t CNavLadder__IsValid(ILuaInterface*)
 t COM_GetModDirectory()
@@ -7832,6 +7839,7 @@ t CMoveData__GetAngles(ILuaInterface*)
 t CMoveData__GetOrigin(ILuaInterface*)
 t CMoveData__SetAngles(ILuaInterface*)
 t CMoveData__SetOrigin(ILuaInterface*)
+t CNavArea__Disconnect(ILuaInterface*)
 t CNavArea__GetLadders(ILuaInterface*)
 t CNavArea__IsCoplanar(ILuaInterface*)
 t CNavArea____tostring(ILuaInterface*)
@@ -8334,6 +8342,7 @@ t CNavArea__GetParentHow(ILuaInterface*)
 t CNavArea__GetTotalCost(ILuaInterface*)
 t CNavArea__IsUnderwater(ILuaInterface*)
 t CNavArea__SetTotalCost(ILuaInterface*)
+t CNavLadder__Disconnect(ILuaInterface*)
 t CNavLadder____tostring(ILuaInterface*)
 t CommandNavBeginShiftXY()
 t CommandNavCornerSelect()
@@ -8574,6 +8583,7 @@ t CNavArea__GetAttributes(ILuaInterface*)
 t CNavArea__GetExtentInfo(ILuaInterface*)
 t CNavArea__HasAttributes(ILuaInterface*)
 t CNavArea__IsOverlapping(ILuaInterface*)
+t CNavArea__PlaceOnGround(ILuaInterface*)
 t CNavArea__SetAttributes(ILuaInterface*)
 t CommandNavCenterInWorld()
 t ConVar_PrintDescription(ConCommandBase const*)
@@ -9143,6 +9153,7 @@ t CNavArea__GetAdjacentCount(ILuaInterface*)
 t CNavArea__GetLaddersAtSide(ILuaInterface*)
 t CNavArea__IsFlat__Redirect(lua_State*)
 t CNavArea__IsOpen__Redirect(lua_State*)
+t CNavArea__Remove__Redirect(lua_State*)
 t CNavArea__UpdateOnOpenList(ILuaInterface*)
 t CNavLadder__GetPosAtHeight(ILuaInterface*)
 t CNavLadder__GetTopLeftArea(ILuaInterface*)
@@ -9548,6 +9559,7 @@ t CNavArea__GetSizeX__Redirect(lua_State*)
 t CNavArea__GetSizeY__Redirect(lua_State*)
 t CNavArea__IsClosed__Redirect(lua_State*)
 t CNavLadder__GetTopBehindArea(ILuaInterface*)
+t CNavLadder__Remove__Redirect(lua_State*)
 t CNavLadder__SetTopBehindArea(ILuaInterface*)
 t CommandNavBeginDragSelecting()
 t CommandNavClearWalkableMarks()
@@ -9588,6 +9600,7 @@ t Entity__GetPoseParameterName(ILuaInterface*)
 t Entity__HasBoneManipulations(ILuaInterface*)
 t Entity__HeadTarget__Redirect(lua_State*)
 t Entity__IsEFlagSet__Redirect(lua_State*)
+t Entity__IsScripted__Redirect(lua_State*)
 t Entity__LookupBone__Redirect(lua_State*)
 t Entity__ManipulateBoneAngles(ILuaInterface*)
 t Entity__ManipulateBoneJiggle(ILuaInterface*)
@@ -9698,6 +9711,7 @@ t real__GLobal__GetGlobalAngle(ILuaInterface*)
 t real__GLobal__GetGlobalFloat(ILuaInterface*)
 t real__GLobal__ParticleEffect(ILuaInterface*)
 t real__GLobal__SetGlobal2Bool(ILuaInterface*)
+t real__navmesh__CreateNavArea(ILuaInterface*)
 t real__navmesh__GetMarkedArea(ILuaInterface*)
 t real__navmesh__SetMarkedArea(ILuaInterface*)
 t real__physenv__GetAirDensity(ILuaInterface*)
@@ -9754,12 +9768,14 @@ t CLuaLocomotion__JumpAcrossGap(ILuaInterface*)
 t CLuaLocomotion__SetJumpHeight(ILuaInterface*)
 t CLuaLocomotion__SetMaxYawRate(ILuaInterface*)
 t CLuaLocomotion__SetStepHeight(ILuaInterface*)
+t CNavArea__ConnectTo__Redirect(lua_State*)
 t CNavArea__DrawSpots__Redirect(lua_State*)
 t CNavArea__GetCenter__Redirect(lua_State*)
 t CNavArea__GetCorner__Redirect(lua_State*)
 t CNavArea__GetParent__Redirect(lua_State*)
 t CNavArea__IsBlocked__Redirect(lua_State*)
 t CNavArea__IsVisible__Redirect(lua_State*)
+t CNavArea__SetCorner__Redirect(lua_State*)
 t CNavArea__SetParent__Redirect(lua_State*)
 t CNavLadder__GetTopForwardArea(ILuaInterface*)
 t CNavLadder__IsConnectedAtSide(ILuaInterface*)
@@ -9936,6 +9952,7 @@ t CMoveData__GetOrigin__Redirect(lua_State*)
 t CMoveData__SetAngles__Redirect(lua_State*)
 t CMoveData__SetConstraintRadius(ILuaInterface*)
 t CMoveData__SetOrigin__Redirect(lua_State*)
+t CNavArea__Disconnect__Redirect(lua_State*)
 t CNavArea__GetLadders__Redirect(lua_State*)
 t CNavArea__IsCoplanar__Redirect(lua_State*)
 t CNavArea__RemoveFromClosedList(ILuaInterface*)
@@ -10294,6 +10311,7 @@ t CNavArea__GetParentHow__Redirect(lua_State*)
 t CNavArea__GetTotalCost__Redirect(lua_State*)
 t CNavArea__IsUnderwater__Redirect(lua_State*)
 t CNavArea__SetTotalCost__Redirect(lua_State*)
+t CNavLadder__Disconnect__Redirect(lua_State*)
 t CNavLadder____tostring__Redirect(lua_State*)
 t __CreateGameRules_CTeamplayRules()
 t CRecipientFilter____gc__Redirect(lua_State*)
@@ -10416,6 +10434,7 @@ t CNavArea__GetAttributes__Redirect(lua_State*)
 t CNavArea__GetExtentInfo__Redirect(lua_State*)
 t CNavArea__HasAttributes__Redirect(lua_State*)
 t CNavArea__IsOverlapping__Redirect(lua_State*)
+t CNavArea__PlaceOnGround__Redirect(lua_State*)
 t CNavArea__SetAttributes__Redirect(lua_State*)
 t __CreateGameRules_CMultiplayRules()
 t CSoundPatch____tostring__Redirect(lua_State*)
@@ -12518,6 +12537,7 @@ b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 b guard variable for WaveTrace(char const*, char const*)::s_WaveTrace
 b guard variable for GMod_EmitSound(CSoundEmitterSystem*, IRecipientFilter*, int, int, char const*, char const*, float, soundlevel_t, int, int, int, Vector const*, Vector const*, CUtlVector<Vector, CUtlMemory<Vector, int> >*, bool, float, int, float*, bool, bool)::vector_origin
+b guard variable for IsGoodP2PRequest(P2PSessionRequest_t*)::sv_lan
 b guard variable for CalcLocalHierarchyAnimation(CStudioHdr const*, matrix3x4_t*, CBoneBitList&, Vector*, Quaternion*, mstudiobone_t const*, mstudiolocalhierarchy_t*, int, int, float, int, float, int)::rootXform
 b guard variable for PhysFrame(float)::sv_crazyphysics_vehicles
 b guard variable for CCurveData::GetBoundedSample(ICurveDataAccessor*, int, bool&)::nullend
@@ -16502,7 +16522,7 @@ b ACT_SCANNER_FLARE
 b ai_weapon_crowbar
 b ai_weapon_shotgun
 b Angle_Up__Factory
-t CalcZeroframeData(CStudioHdr const*, studiohdr_t const*, virtualgroup_t const*, mstudiobone_t const*, mstudioanimdesc_t&, float, Vector*, Quaternion*, int, float) [clone .isra.18]
+t CalcZeroframeData(CStudioHdr const*, studiohdr_t const*, virtualgroup_t const*, mstudiobone_t const*, mstudioanimdesc_t&, float, Vector*, Quaternion*, int, float) [clone .isra.20]
 t CallbackHighlight(CBaseEntity*)
 b cast_hull_command
 t CC_ResetGameStats(CCommand const&)
@@ -17492,6 +17512,7 @@ d antlionGuardAngularTable
 d cappedPlayerAngularTable
 b CNavArea_IsFlat__Factory
 b CNavArea_IsOpen__Factory
+b CNavArea_Remove__Factory
 b COMBINE_AE_BEGIN_ALTFIRE
 b ConVar_GetFloat__Factory
 b ConVar_SetFloat__Factory
@@ -17918,6 +17939,7 @@ b CNavArea_Contains__Factory
 b CNavArea_GetSizeX__Factory
 b CNavArea_GetSizeY__Factory
 b CNavArea_IsClosed__Factory
+b CNavLadder_Remove__Factory
 b ConVar_GetDefault__Factory
 b ConVar___tostring__Factory
 b CUserCmd_IsForced__Factory
@@ -17940,6 +17962,7 @@ b Entity_GetNWFloat__Factory
 b Entity_HeadTarget__Factory
 b Entity_IsEFlagSet__Factory
 b Entity_IsOnGround__Factory
+b Entity_IsScripted__Factory
 b Entity_LookupBone__Factory
 b Entity___newindex__Factory
 b Entity_ObjectCaps__Factory
@@ -18117,14 +18140,16 @@ b worker__GLobal__EffectData
 b worker__GLobal__HSVToColor
 b worker__GLobal__isfunction
 b worker__GLobal__LerpVector
-t CalcLocalHierarchyAnimation(CStudioHdr const*, matrix3x4_t*, CBoneBitList&, Vector*, Quaternion*, mstudiobone_t const*, mstudiolocalhierarchy_t*, int, int, float, int, float, int) [clone .isra.19]
+t CalcLocalHierarchyAnimation(CStudioHdr const*, matrix3x4_t*, CBoneBitList&, Vector*, Quaternion*, mstudiobone_t const*, mstudiolocalhierarchy_t*, int, int, float, int, float, int) [clone .isra.21]
 t ChoreEventStartTimeLessFunc(CChoreoEvent* const&, CChoreoEvent* const&)
+b CNavArea_ConnectTo__Factory
 b CNavArea_DrawSpots__Factory
 b CNavArea_GetCenter__Factory
 b CNavArea_GetCorner__Factory
 b CNavArea_GetParent__Factory
 b CNavArea_IsBlocked__Factory
 b CNavArea_IsVisible__Factory
+b CNavArea_SetCorner__Factory
 b CNavArea_SetParent__Factory
 b CNavLadder_IsValid__Factory
 t CommandNavSelectOverlapping()
@@ -18334,6 +18359,7 @@ b CMoveData_GetAngles__Factory
 b CMoveData_GetOrigin__Factory
 b CMoveData_SetAngles__Factory
 b CMoveData_SetOrigin__Factory
+b CNavArea_Disconnect__Factory
 b CNavArea_GetLadders__Factory
 b CNavArea_IsCoplanar__Factory
 b CNavArea___tostring__Factory
@@ -18683,6 +18709,7 @@ t redir__GLobal__GetGlobalAngle(lua_State*)
 t redir__GLobal__GetGlobalFloat(lua_State*)
 t redir__GLobal__ParticleEffect(lua_State*)
 t redir__GLobal__SetGlobal2Bool(lua_State*)
+t redir__navmesh__CreateNavArea(lua_State*)
 t redir__navmesh__GetMarkedArea(lua_State*)
 t redir__navmesh__SetMarkedArea(lua_State*)
 t redir__physenv__GetAirDensity(lua_State*)
@@ -18736,6 +18763,7 @@ b CNavArea_GetParentHow__Factory
 b CNavArea_GetTotalCost__Factory
 b CNavArea_IsUnderwater__Factory
 b CNavArea_SetTotalCost__Factory
+b CNavLadder_Disconnect__Factory
 b CNavLadder___tostring__Factory
 b CRecipientFilter___gc__Factory
 b CSoundPatch_GetVolume__Factory
@@ -18875,6 +18903,7 @@ b CNavArea_GetAttributes__Factory
 b CNavArea_GetExtentInfo__Factory
 b CNavArea_HasAttributes__Factory
 b CNavArea_IsOverlapping__Factory
+b CNavArea_PlaceOnGround__Factory
 b CNavArea_SetAttributes__Factory
 d COMMENTARY_SAVE_RESTORE_VERSION
 b CSoundPatch___tostring__Factory
@@ -18915,6 +18944,7 @@ b fectory__engine__ActiveGamemode
 b fectory__engine__GetUserContent
 b fectory__game__GetGlobalCounter
 b fectory__game__SetGlobalCounter
+b fectory__navmesh__CreateNavArea
 b fectory__navmesh__GetMarkedArea
 b fectory__navmesh__SetMarkedArea
 b fectory__physenv__GetAirDensity
@@ -20208,7 +20238,9 @@ t CGarrysMod::PostInitialize()
 t CGarrysMod::StartVideoScale(int, int)
 t CGarrysMod::RunConsoleCommand(char const*)
 t CGarrysMod::GetGameDescription()
+t CGarrysMod::OnP2PSessionRequest(P2PSessionRequest_t*)
 t CGarrysMod::SetupSoundsManifest()
+t CGarrysMod::OnP2PSessionConnectFail(P2PSessionConnectFail_t*)
 t CGarrysMod::Think()
 t CGarrysMod::Shutdown()
 t CGarrysMod::LevelInit(char const*, char const*, char const*, char const*, bool, bool)
@@ -28791,6 +28823,10 @@ t CCallbackImpl<144>::GetCallbackSizeBytes()
 t CCallbackImpl<144>::Run(void*, bool, unsigned long long)
 t CCallbackImpl<20>::GetCallbackSizeBytes()
 t CCallbackImpl<20>::Run(void*, bool, unsigned long long)
+t CCallbackImpl<8>::GetCallbackSizeBytes()
+t CCallbackImpl<8>::Run(void*, bool, unsigned long long)
+t CCallbackImpl<9>::GetCallbackSizeBytes()
+t CCallbackImpl<9>::Run(void*, bool, unsigned long long)
 t CCommandPoint::GetBaseMap()
 t CCommandPoint::ObjectCaps()
 t CCommandPoint::GetDataDescMap()
@@ -50010,6 +50046,8 @@ d CBubbling::m_DataMap
 t CBubbling::~CBubbling()
 t CBubbling::~CBubbling()
 t CBubbling::~CBubbling()
+t CCallback<CGarrysMod, P2PSessionRequest_t, true>::Run(void*)
+t CCallback<CGarrysMod, P2PSessionConnectFail_t, true>::Run(void*)
 t CCallback<CAchievementMgr, UserStatsStored_t, false>::Run(void*)
 t CCallback<CAchievementMgr, UserStatsReceived_t, false>::Run(void*)
 t CCallback<CAchievementMgr, UserAchievementIconFetched_t, false>::Run(void*)
@@ -54239,6 +54277,8 @@ r typeinfo for CCallbackBase
 r typeinfo for CCallbackImpl<12>
 r typeinfo for CCallbackImpl<144>
 r typeinfo for CCallbackImpl<20>
+r typeinfo for CCallbackImpl<8>
+r typeinfo for CCallbackImpl<9>
 r typeinfo for CCommandPoint
 r typeinfo for CCrossbowBolt
 r typeinfo for CDebugHistory
@@ -55932,6 +55972,8 @@ r typeinfo for CBaseFire
 r typeinfo for CBaseFlex
 r typeinfo for CBaseProp
 r typeinfo for CBubbling
+r typeinfo for CCallback<CGarrysMod, P2PSessionRequest_t, true>
+r typeinfo for CCallback<CGarrysMod, P2PSessionConnectFail_t, true>
 r typeinfo for CCallback<CAchievementMgr, UserStatsStored_t, false>
 r typeinfo for CCallback<CAchievementMgr, UserStatsReceived_t, false>
 r typeinfo for CCallback<CAchievementMgr, UserAchievementIconFetched_t, false>
@@ -56308,6 +56350,8 @@ r typeinfo name for CCallbackBase
 r typeinfo name for CCallbackImpl<12>
 r typeinfo name for CCallbackImpl<144>
 r typeinfo name for CCallbackImpl<20>
+r typeinfo name for CCallbackImpl<8>
+r typeinfo name for CCallbackImpl<9>
 r typeinfo name for CCommandPoint
 r typeinfo name for CCrossbowBolt
 r typeinfo name for CDebugHistory
@@ -58000,6 +58044,8 @@ r typeinfo name for CBaseFire
 r typeinfo name for CBaseFlex
 r typeinfo name for CBaseProp
 r typeinfo name for CBubbling
+r typeinfo name for CCallback<CGarrysMod, P2PSessionRequest_t, true>
+r typeinfo name for CCallback<CGarrysMod, P2PSessionConnectFail_t, true>
 r typeinfo name for CCallback<CAchievementMgr, UserStatsStored_t, false>
 r typeinfo name for CCallback<CAchievementMgr, UserStatsReceived_t, false>
 r typeinfo name for CCallback<CAchievementMgr, UserAchievementIconFetched_t, false>
@@ -58380,6 +58426,8 @@ r vtable for CCallbackBase
 r vtable for CCallbackImpl<12>
 r vtable for CCallbackImpl<144>
 r vtable for CCallbackImpl<20>
+r vtable for CCallbackImpl<8>
+r vtable for CCallbackImpl<9>
 r vtable for CCommandPoint
 r vtable for CCrossbowBolt
 r vtable for CDebugHistory
@@ -60036,6 +60084,8 @@ r vtable for CBaseFire
 r vtable for CBaseFlex
 r vtable for CBaseProp
 r vtable for CBubbling
+r vtable for CCallback<CGarrysMod, P2PSessionRequest_t, true>
+r vtable for CCallback<CGarrysMod, P2PSessionConnectFail_t, true>
 r vtable for CCallback<CAchievementMgr, UserStatsStored_t, false>
 r vtable for CCallback<CAchievementMgr, UserStatsReceived_t, false>
 r vtable for CCallback<CAchievementMgr, UserAchievementIconFetched_t, false>
@@ -61891,6 +61941,7 @@ b GMod_EmitSound(CSoundEmitterSystem*, IRecipientFilter*, int, int, char const*,
 b _PitchToString(float)::sz
 b _VolumeToString(float)::sz
 b _ChannelToString(int)::sz
+b IsGoodP2PRequest(P2PSessionRequest_t*)::sv_lan
 b _SoundLevelToString(soundlevel_t)::sz
 b CalcVirtualAnimation(virtualmodel_t*, CStudioHdr const*, Vector*, Quaternion*, mstudioseqdesc_t&, int, int, float, int)::ShowWarning
 b InitializeCharacterSets()::s_CharacterSetInitialized

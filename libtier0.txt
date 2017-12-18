@@ -410,7 +410,7 @@ T CVProfile::GetCounterName(int) const
 T CVProfile::GetNumCounters() const
 T CVProfile::GetCounterGroup(int) const
 T CVProfile::GetCounterValue(int) const
-T CVProfile::GetCounterNameAndValue(int, int&) const
+T CVProfile::GetCounterNameAndValue(int, long long&) const
 U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
 U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
 T CThreadFastMutex::Lock(unsigned int, unsigned int) volatile

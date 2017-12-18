@@ -8669,6 +8669,7 @@ t CGet::SteamFriends()
 t CGet::VersionTimeStr()
 t CGet::SetMotionSensor(IMotionSensor*)
 t CGet::SteamGameServer()
+t CGet::SteamNetworking()
 t CGet::SteamScreenshots()
 t CGet::IsDedicatedServer()
 t CGet::RunSteamCallbacks()
@@ -10227,7 +10228,7 @@ U CVProfile::GetCounterName(int) const
 U CVProfile::GetNumCounters() const
 U CVProfile::GetCounterGroup(int) const
 U CVProfile::GetCounterValue(int) const
-U CVProfile::GetCounterNameAndValue(int, int&) const
+U CVProfile::GetCounterNameAndValue(int, long long&) const
 t KeyValues::CopySubkeys(KeyValues*) const
 t KeyValues::FindKey(int) const
 t KeyValues::GetName() const

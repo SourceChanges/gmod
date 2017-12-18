@@ -161,6 +161,7 @@ b g_pVCRFile
 b g_SDLWindow
 b g_SpewBuffer
 b g_SpewBufferEnabled
+b g_SpewBufferLock
 B g_Telemetry
 b g_ThreadMainThreadID
 b g_TimesLessChildren
@@ -841,8 +842,6 @@ T CThread::CThread()
 T CThread::~CThread()
 T CThread::~CThread()
 T CThread::~CThread()
-t CTSList<SpewBufferEntry>::~CTSList()
-t CTSList<SpewBufferEntry>::~CTSList()
 t CTSList<int>::~CTSList()
 t CTSList<int>::~CTSList()
 t CL2Cache::End()
@@ -893,13 +892,20 @@ T CVProfile::GetCounterName(int) const
 T CVProfile::GetNumCounters() const
 T CVProfile::GetCounterGroup(int) const
 T CVProfile::GetCounterValue(int) const
-T CVProfile::GetCounterNameAndValue(int, int&) const
+T CVProfile::GetCounterNameAndValue(int, long long&) const
+t std::_Deque_base<SpewBufferEntry, std::allocator<SpewBufferEntry> >::_M_initialize_map(unsigned int)
+t std::_Deque_base<SpewBufferEntry, std::allocator<SpewBufferEntry> >::~_Deque_base()
+t std::_Deque_base<SpewBufferEntry, std::allocator<SpewBufferEntry> >::~_Deque_base()
 t std::map<CVProfNode*, double, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::~map()
 t std::map<CVProfNode*, double, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::~map()
 t std::map<char const*, unsigned int, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::~map()
 t std::map<char const*, unsigned int, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::~map()
 t std::list<ThreadHandle_t__*, std::allocator<ThreadHandle_t__*> >::~list()
 t std::list<ThreadHandle_t__*, std::allocator<ThreadHandle_t__*> >::~list()
+t void std::deque<SpewBufferEntry, std::allocator<SpewBufferEntry> >::_M_push_back_aux<SpewBufferEntry const&>(SpewBufferEntry const&)
+t void std::deque<SpewBufferEntry, std::allocator<SpewBufferEntry> >::_M_push_back_aux<SpewBufferEntry const&>(SpewBufferEntry const&)
+t std::queue<SpewBufferEntry, std::deque<SpewBufferEntry, std::allocator<SpewBufferEntry> > >::~queue()
+t std::queue<SpewBufferEntry, std::deque<SpewBufferEntry, std::allocator<SpewBufferEntry> > >::~queue()
 t void std::vector<TimeSums_t, std::allocator<TimeSums_t> >::_M_emplace_back_aux<TimeSums_t const&>(TimeSums_t const&)
 t void std::vector<TimeSums_t, std::allocator<TimeSums_t> >::_M_emplace_back_aux<TimeSums_t const&>(TimeSums_t const&)
 t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::operator=(std::vector<TimeSums_t, std::allocator<TimeSums_t> > const&)

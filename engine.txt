@@ -1105,7 +1105,7 @@ U CVProfile::GetCounterName(int) const
 U CVProfile::GetNumCounters() const
 U CVProfile::GetCounterGroup(int) const
 U CVProfile::GetCounterValue(int) const
-U CVProfile::GetCounterNameAndValue(int, int&) const
+U CVProfile::GetCounterNameAndValue(int, long long&) const
 U std::string::find_last_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
 U std::string::find_first_not_of(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
 U std::string::find(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4

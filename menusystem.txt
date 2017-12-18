@@ -544,7 +544,9 @@ U stderr@@GLIBC_2.0
 U stdin@@GLIBC_2.0
 U SteamAPI_GetHSteamPipe
 U SteamAPI_GetHSteamUser
+U SteamAPI_RegisterCallback
 U SteamAPI_RegisterCallResult
+U SteamAPI_UnregisterCallback
 U SteamAPI_UnregisterCallResult
 U SteamInternal_CreateInterface
 U strcasecmp@@GLIBC_2.0
