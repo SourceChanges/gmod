@@ -2186,8 +2186,6 @@ t CUtlVector<char*, CUtlMemory<char*, int> >::ShiftElementsLeft(int, int)
 t CUtlVector<char*, CUtlMemory<char*, int> >::Sort(int (*)(char* const*, char* const*))
 t CUtlVector<CBaseFileSystem::CFileCacheObject::Info_t*, CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int> >::GrowVector(int)
 t CUtlVector<CBaseFileSystem::CFileCacheObject::Info_t*, CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int> >::ShiftElementsRight(int, int)
-t CUtlVector<CBaseFileSystem::CFileCacheObject::Info_t*, CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int> >::~CUtlVector()
-t CUtlVector<CBaseFileSystem::CFileCacheObject::Info_t*, CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int> >::~CUtlVector()
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
 t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
 t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
@@ -2680,7 +2678,7 @@ t CBaseFileSystem::GetCurrentDirectory(char*, int)
 t CBaseFileSystem::AsyncFinishAllWrites()
 t CBaseFileSystem::CSearchPathsIterator::GetNext()
 t CBaseFileSystem::CSearchPathsIterator::GetFirst()
-t CBaseFileSystem::CSearchPathsIterator::GetFirst() [clone .part.181]
+t CBaseFileSystem::CSearchPathsIterator::GetFirst() [clone .part.180]
 t CBaseFileSystem::CSearchPathsIterator::CSearchPathsIterator(CBaseFileSystem*, char const**, char const*, PathTypeFilter_t)
 t CBaseFileSystem::CSearchPathsIterator::CSearchPathsIterator(CBaseFileSystem*, char const**, char const*, PathTypeFilter_t)
 t CBaseFileSystem::CSearchPathsIterator::~CSearchPathsIterator()
@@ -3794,7 +3792,7 @@ t CQueuedLoader::GetSpewDetail() const
 t CQueuedLoader::IsSameMapLoading() const
 t CQueuedLoader::IsDynamic() const
 t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.48] [clone .constprop.51]
-t unsigned int CUtlHashtable<char const*, CMemoryFileBacking*, DefaultHashFunctor<char const*>, DefaultEqualFunctor<char const*>, undefined_t>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.167]
+t unsigned int CUtlHashtable<char const*, CMemoryFileBacking*, DefaultHashFunctor<char const*>, DefaultEqualFunctor<char const*>, undefined_t>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.166]
 t ConCommandBase::GetHelpText() const
 t ConCommandBase::IsRegistered() const
 t ConCommandBase::GetDLLIdentifier() const
@@ -3892,6 +3890,7 @@ t std::_List_base<ILegacyAddons::Information, std::allocator<ILegacyAddons::Info
 t std::_List_base<IGamemodeSystem::Information, std::allocator<IGamemodeSystem::Information> >::_M_clear()
 t std::_List_base<IGameDepotSystem::Information, std::allocator<IGameDepotSystem::Information> >::_M_clear()
 t std::_List_base<Addon::MountedAddon, std::allocator<Addon::MountedAddon> >::_M_clear()
+t std::_List_base<std::string, std::allocator<std::string> >::_M_clear()
 t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_M_initialize_map(unsigned int)
 t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_Deque_base(std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >&&)
 t std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_Deque_base(std::_Deque_base<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >&&)
@@ -3920,8 +3919,10 @@ t std::map<unsigned long, unsigned long, std::less<unsigned long>, std::allocato
 t std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > >::~map()
 t std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > >::~map()
 t std::map<std::string, std::map<std::string, Addon::FileInfo, std::less<std::string>, std::allocator<std::pair<std::string const, Addon::FileInfo> > >, std::less<std::string>, std::allocator<std::pair<std::string const, std::map<std::string, Addon::FileInfo, std::less<std::string>, std::allocator<std::pair<std::string const, Addon::FileInfo> > > > > >::operator[](std::string const&)
+t std::list<IGameDepotSystem::Information, std::allocator<IGameDepotSystem::Information> >::push_back(IGameDepotSystem::Information const&)
 t std::list<Bootil::Debug::IListener*, std::allocator<Bootil::Debug::IListener*> >::~list()
 t std::list<Bootil::Debug::IListener*, std::allocator<Bootil::Debug::IListener*> >::~list()
+t void std::list<std::string, std::allocator<std::string> >::_M_assign_dispatch<std::string const*>(std::string const*, std::string const*, std::__false_type) [clone .isra.36]
 t std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> >::_M_reallocate_map(unsigned int, bool)
 t void std::deque<std::string, std::allocator<std::string> >::_M_push_back_aux<std::string const&>(std::string const&)
 t void std::deque<std::string, std::allocator<std::string> >::_M_push_back_aux<std::string const&>(std::string const&)
@@ -3944,6 +3945,7 @@ t void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_a
 t void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string>(std::string&&)
 t std::vector<std::string, std::allocator<std::string> >::~vector()
 t std::vector<std::string, std::allocator<std::string> >::~vector()
+U std::__detail::_List_node_base::_M_transfer(std::__detail::_List_node_base*, std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
 U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
 U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
 U std::ios_base::Init::Init()@@GLIBCXX_3.4

@@ -431,6 +431,7 @@ t __x86.get_pc_thunk.cx
 U __xmknod@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
+U DevWarning(char const*, ...)
 t HashString(char const*)
 t V_FileBase(char const*, char*, int)
 t _V_memmove(char const*, int, void*, void const*, int)

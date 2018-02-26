@@ -409,6 +409,7 @@ U wcstoll@@GLIBC_2.1
 U wcstombs@@GLIBC_2.0
 t __x86.get_pc_thunk.bx
 t __x86.get_pc_thunk.cx
+U DevWarning(char const*, ...)
 t HashString(char const*)
 t IsDenormal(float const&)
 t MatrixCopy(matrix3x4_t const&, matrix3x4_t&)
@@ -1449,6 +1450,7 @@ t CStudioRenderContext::RefreshStudioHdr(studiohdr_t*, studiohwdata_t*)
 t CStudioRenderContext::SetEyeViewTarget(studiohdr_t const*, int, Vector const&)
 t CStudioRenderContext::BuildDecalBoneMap(studiohdr_t*, int*, int*, int*, mstudiomesh_t*, OptimizedModel::StripGroupHeader_t*)
 t CStudioRenderContext::GetNumBoneWeights(studiohdr_t const*, OptimizedModel::StripGroupHeader_t const*)
+t CStudioRenderContext::GMOD_MeshOverride(int, IMesh*, IMaterial*, VMatrix)
 t CStudioRenderContext::InvokeBindProxies(DrawModelInfo_t const&)
 t bool CStudioRenderContext::R_AddVertexToMesh<(VertexCompressionType_t)0>(char const*, bool, CMeshBuilder&, OptimizedModel::Vertex_t*, mstudiomesh_t*, mstudio_meshvertexdata_t const*, bool)
 t bool CStudioRenderContext::R_AddVertexToMesh<(VertexCompressionType_t)1>(char const*, bool, CMeshBuilder&, OptimizedModel::Vertex_t*, mstudiomesh_t*, mstudio_meshvertexdata_t const*, bool)
@@ -1469,6 +1471,7 @@ t CStudioRenderContext::MeshNeedsTangentSpace(studiohdr_t*, studioloddata_t*, ms
 t CStudioRenderContext::SetAmbientLightColors(Vector const*)
 t CStudioRenderContext::SetAmbientLightColors(Vector4D const*)
 t CStudioRenderContext::ForcedMaterialOverride(IMaterial*, char)
+t CStudioRenderContext::GMOD_MeshOverrideCount(int)
 t CStudioRenderContext::R_StudioBuildMeshGroup(char const*, bool, studiomeshgroup_t*, OptimizedModel::StripGroupHeader_t*, mstudiomesh_t*, studiohdr_t*, unsigned long long)
 t CStudioRenderContext::R_StudioBuildMeshStrips(studiomeshgroup_t*, OptimizedModel::StripGroupHeader_t*, studiohdr_t*)
 t CStudioRenderContext::R_StudioCreateSingleMesh(studiohdr_t*, studioloddata_t*, mstudiomesh_t*, OptimizedModel::MeshHeader_t*, int, studiomeshdata_t*, int*)

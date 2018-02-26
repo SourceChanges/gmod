@@ -526,6 +526,7 @@ U std::basic_ofstream<char, std::char_traits<char> >::~basic_ofstream()@@GLIBCXX
 U std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_ostringstream()@@GLIBCXX_3.4
 U std::locale::locale()@@GLIBCXX_3.4
 U std::locale::~locale()@@GLIBCXX_3.4
+U std::__detail::_List_node_base::_M_transfer(std::__detail::_List_node_base*, std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
 U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
 U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
 U std::ios_base::Init::Init()@@GLIBCXX_3.4

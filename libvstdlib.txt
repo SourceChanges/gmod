@@ -179,6 +179,7 @@ U wcstombs@@GLIBC_2.0
 U __xmknod@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
+U DevWarning(char const*, ...)
 U ConColorMsg(Color const&, char const*, ...)
 U ConMsg(char const*, ...)
 U DevMsg(char const*, ...)

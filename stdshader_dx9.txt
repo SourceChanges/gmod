@@ -96,6 +96,7 @@ U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
 U wcstombs@@GLIBC_2.0
+U DevWarning(char const*, ...)
 U ConColorMsg(Color const&, char const*, ...)
 U ConMsg(char const*, ...)
 U DevMsg(char const*, ...)

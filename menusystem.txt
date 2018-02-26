@@ -192,7 +192,6 @@ R _length_code
 U link@@GLIBC_2.0
 U localtime
 U __log_finite@@GLIBC_2.15
-U __longjmp_chk@@GLIBC_2.11
 U lseek64@@GLIBC_2.2
 U lseek@@GLIBC_2.0
 U __lxstat64@@GLIBC_2.2
@@ -283,7 +282,6 @@ U pthread_create@@GLIBC_2.1
 U pthread_detach@@GLIBC_2.0
 U pthread_join@@GLIBC_2.0
 w __pthread_key_create@@GLIBC_2.0
-U pthread_mutexattr_destroy@@GLIBC_2.0
 U pthread_mutexattr_init@@GLIBC_2.0
 U pthread_mutexattr_settype@@GLIBC_2.1
 U pthread_mutex_destroy@@GLIBC_2.0
@@ -307,7 +305,6 @@ U rmdir@@GLIBC_2.0
 U scandir@@GLIBC_2.0
 B seeder
 U select@@GLIBC_2.0
-U _setjmp@@GLIBC_2.0
 U setlocale@@GLIBC_2.0
 U ShouldUseNewAssertDialog
 U sincosf@@GLIBC_2.1
@@ -337,6 +334,7 @@ T sqlite3_bind_null
 T sqlite3_bind_parameter_count
 T sqlite3_bind_parameter_index
 T sqlite3_bind_parameter_name
+T sqlite3_bind_pointer
 T sqlite3_bind_text
 T sqlite3_bind_text16
 T sqlite3_bind_text64
@@ -386,8 +384,6 @@ T sqlite3_create_collation_v2
 T sqlite3_create_function
 T sqlite3_create_function16
 T sqlite3_create_function_v2
-T sqlite3_create_module
-T sqlite3_create_module_v2
 T sqlite3_data_count
 B sqlite3_data_directory
 T sqlite3_db_cacheflush
@@ -398,14 +394,12 @@ T sqlite3_db_mutex
 T sqlite3_db_readonly
 T sqlite3_db_release_memory
 T sqlite3_db_status
-T sqlite3_declare_vtab
-T sqlite3_enable_load_extension
-T sqlite3_enable_shared_cache
 T sqlite3_errcode
 T sqlite3_errmsg
 T sqlite3_errmsg16
 T sqlite3_errstr
 T sqlite3_exec
+T sqlite3_expanded_sql
 T sqlite3_expired
 T sqlite3_extended_errcode
 T sqlite3_extended_result_codes
@@ -423,7 +417,6 @@ T sqlite3_last_insert_rowid
 T sqlite3_libversion
 T sqlite3_libversion_number
 T sqlite3_limit
-T sqlite3_load_extension
 T sqlite3_log
 T sqlite3_malloc
 T sqlite3_malloc64
@@ -432,11 +425,6 @@ T sqlite3_memory_highwater
 T sqlite3_memory_used
 T sqlite3_mprintf
 T sqlite3_msize
-T sqlite3_mutex_alloc
-T sqlite3_mutex_enter
-T sqlite3_mutex_free
-T sqlite3_mutex_leave
-T sqlite3_mutex_try
 T sqlite3_next_stmt
 T sqlite3_open
 T sqlite3_open16
@@ -447,7 +435,9 @@ T sqlite3_overload_function
 T sqlite3_prepare
 T sqlite3_prepare16
 T sqlite3_prepare16_v2
+T sqlite3_prepare16_v3
 T sqlite3_prepare_v2
+T sqlite3_prepare_v3
 T sqlite3_profile
 T sqlite3_progress_handler
 T sqlite3_randomness
@@ -467,6 +457,7 @@ T sqlite3_result_error_toobig
 T sqlite3_result_int
 T sqlite3_result_int64
 T sqlite3_result_null
+T sqlite3_result_pointer
 T sqlite3_result_subtype
 T sqlite3_result_text
 T sqlite3_result_text16
@@ -479,6 +470,7 @@ T sqlite3_result_zeroblob64
 T sqlite3_rollback_hook
 T sqlite3_set_authorizer
 T sqlite3_set_auxdata
+T sqlite3_set_last_insert_rowid
 T sqlite3_shutdown
 T sqlite3_sleep
 T sqlite3_snprintf
@@ -504,6 +496,7 @@ T sqlite3_thread_cleanup
 T sqlite3_threadsafe
 T sqlite3_total_changes
 T sqlite3_trace
+T sqlite3_trace_v2
 T sqlite3_transfer_bindings
 T sqlite3_update_hook
 T sqlite3_uri_boolean
@@ -518,7 +511,9 @@ T sqlite3_value_dup
 T sqlite3_value_free
 T sqlite3_value_int
 T sqlite3_value_int64
+T sqlite3_value_nochange
 T sqlite3_value_numeric_type
+T sqlite3_value_pointer
 T sqlite3_value_subtype
 T sqlite3_value_text
 T sqlite3_value_text16
@@ -531,8 +526,7 @@ T sqlite3_vfs_register
 T sqlite3_vfs_unregister
 T sqlite3_vmprintf
 T sqlite3_vsnprintf
-T sqlite3_vtab_config
-T sqlite3_vtab_on_conflict
+T sqlite3_vtab_nochange
 T sqlite3_wal_autocheckpoint
 T sqlite3_wal_checkpoint
 T sqlite3_wal_checkpoint_v2
@@ -556,6 +550,7 @@ U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
 U __strcpy_chk@@GLIBC_2.3.4
 U strcpy@@GLIBC_2.0
+U strcspn@@GLIBC_2.0
 U strdup@@GLIBC_2.0
 U strerror@@GLIBC_2.0
 U strftime@@GLIBC_2.0
@@ -617,6 +612,7 @@ U __xmknod@@GLIBC_2.0
 U __xpg_basename@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
+U DevWarning(char const*, ...)
 T md5_finish(md5_context*, unsigned char*)
 T md5_starts(md5_context*)
 T md5_update(md5_context*, unsigned char*, int)
@@ -1032,14 +1028,17 @@ U Awesomium::JSObject::SetCustomMethod(Awesomium::WebString const&, bool)
 U Awesomium::WebString::CreateFromUTF8(char const*, unsigned int)
 U Awesomium::WebString::WebString()
 U Awesomium::WebString::~WebString()
-W rapidjson::PrettyWriter<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::PrettyPrefix(rapidjson::Type)
-W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseValue<0u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&)
-W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseNumber<0u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&)
-W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseObject<0u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&)
-W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseString<0u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&)
-W bool rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::Parse<0u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&)
-W rapidjson::internal::Stack<rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::~Stack()
-W rapidjson::internal::Stack<rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::~Stack()
+W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator>::ParseValue<4u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator> >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator>&)
+W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator>::ParseNumber<4u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator> >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator>&)
+W unsigned int rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator>::ParseHex4<rapidjson::GenericStringStream<rapidjson::UTF8<char> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, unsigned int)
+W rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator>::EndArray(unsigned int)
+W rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>::Malloc(unsigned int)
+W void rapidjson::UTF8<char>::Encode<rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator>::StackStream<char> >(rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator>::StackStream<char>&, unsigned int)
+W rapidjson::internal::WriteExponent(int, char*)
+W void rapidjson::internal::Stack<rapidjson::CrtAllocator>::Expand<char>(unsigned int)
+W void rapidjson::internal::Stack<rapidjson::CrtAllocator>::Expand<unsigned int>(unsigned int)
+W void rapidjson::internal::Stack<rapidjson::CrtAllocator>::Expand<rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > >(unsigned int)
+W void rapidjson::internal::Stack<rapidjson::CrtAllocator>::Expand<rapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator, 0u>::Level>(unsigned int)
 U operator new[](unsigned int)
 T Bootil::Buffer::GetWritten() const
 T Bootil::Buffer::GetPos() const
