@@ -1,12 +1,12 @@
 U abort@@GLIBC_2.0
 t add_fdes
-d adds.8619
+d adds.8628
 t base_from_cb_data.isra.4
 t base_from_object.isra.3
 B __bss_start
 U chdir@@GLIBC_2.0
 t classify_object_over_fdes
-b completed.6591
+b completed.6600
 T CreateInterface
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
@@ -191,7 +191,7 @@ t .L70
 t .L71
 t linear_search_fdes
 U malloc@@GLIBC_2.0
-b marker.8357
+b marker.8366
 U mbstowcs@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
@@ -199,7 +199,7 @@ U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
 U Msg
 b object_mutex
-b once_regsizes.8769
+b once_regsizes.8778
 U Plat_IsInDebugSession
 U Plat_localtime
 U __pow_finite@@GLIBC_2.15
@@ -252,9 +252,9 @@ U strtod@@GLIBC_2.0
 U strtok@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
-b subs.8620
+b subs.8629
 U swprintf@@GLIBC_2.2
-b terminator.8463
+b terminator.8472
 U ThreadGetCurrentId
 U ThreadInterlockedAssignIf
 U ThreadInterlockedAssignIf64

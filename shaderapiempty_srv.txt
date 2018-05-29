@@ -1,12 +1,12 @@
 U abort@@GLIBC_2.0
 t add_fdes
-d adds.8619
+d adds.8628
 t base_from_cb_data.isra.4
 t base_from_object.isra.3
 B __bss_start
 U chdir@@GLIBC_2.0
 t classify_object_over_fdes
-b completed.6591
+b completed.6600
 T CreateInterface
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
@@ -176,7 +176,7 @@ t .L70
 t .L71
 t linear_search_fdes
 U malloc@@GLIBC_2.0
-b marker.8357
+b marker.8366
 U mbstowcs@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
@@ -184,7 +184,7 @@ U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
 U Msg
 b object_mutex
-b once_regsizes.8769
+b once_regsizes.8778
 U Plat_FloatTime
 U Plat_IsInDebugSession
 U Plat_localtime
@@ -221,8 +221,8 @@ U strncasecmp@@GLIBC_2.0
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
 U strstr@@GLIBC_2.0
-b subs.8620
-b terminator.8463
+b subs.8629
+b terminator.8472
 U time@@GLIBC_2.0
 d __TMC_END__
 U towlower@@GLIBC_2.0
@@ -484,9 +484,9 @@ t CEmptyMesh::~CEmptyMesh()
 t CEmptyMesh::~CEmptyMesh()
 t CEmptyMesh::~CEmptyMesh()
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
-t IShaderAPI::OverrideBlend(bool, bool, int, int)
+t IShaderAPI::OverrideBlend(bool, bool, int, int, int)
 t IShaderAPI::GMOD_ForceFilterMode(bool, int)
-t IShaderAPI::OverrideBlendSeparateAlpha(bool, bool, int, int)
+t IShaderAPI::OverrideBlendSeparateAlpha(bool, bool, int, int, int)
 t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&) [clone .constprop.15]
 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
 t IIndexBuffer::~IIndexBuffer()

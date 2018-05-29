@@ -1,6 +1,6 @@
 U abort@@GLIBC_2.0
 t add_fdes
-d adds.8619
+d adds.8628
 t base_from_cb_data.isra.4
 t base_from_object.isra.3
 B __bss_start
@@ -8,7 +8,7 @@ U chdir@@GLIBC_2.0
 t classify_object_over_fdes
 b colorcorrection
 U CommandLine_Tier0
-b completed.6591
+b completed.6600
 T CreateInterface
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
@@ -229,7 +229,7 @@ t .L70
 t .L71
 t linear_search_fdes
 U malloc@@GLIBC_2.0
-b marker.8357
+b marker.8366
 b materials
 U mbstowcs@@GLIBC_2.0
 b mdlcache
@@ -241,7 +241,7 @@ U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
 U Msg
 b object_mutex
-b once_regsizes.8769
+b once_regsizes.8778
 b p4
 U Plat_FloatTime
 U Plat_IsInDebugSession
@@ -288,8 +288,8 @@ U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 b studiorender
-b subs.8620
-b terminator.8463
+b subs.8629
+b terminator.8472
 U ThreadGetCurrentId
 U ThreadInMainThread
 U ThreadInterlockedAssignIf

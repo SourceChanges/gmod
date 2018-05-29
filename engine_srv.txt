@@ -4,7 +4,7 @@ U access@@GLIBC_2.0
 U __acosf_finite@@GLIBC_2.15
 U __acos_finite@@GLIBC_2.15
 t add_fdes
-d adds.8619
+d adds.8628
 T adler32
 T adler32_combine
 T adler32_combine64
@@ -52,7 +52,7 @@ b com_basedir
 b com_gamedir
 b com_ignorecolons
 U CommandLine_Tier0
-b completed.6591
+b completed.6600
 t compress_block
 U COM_TimestampedLog
 b com_token
@@ -929,7 +929,7 @@ U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U mallinfo@@GLIBC_2.0
 U malloc@@GLIBC_2.0
-b marker.8357
+b marker.8366
 b mat_bumpbasis
 b mat_debugalttab
 b mat_depthbias_normal
@@ -990,7 +990,7 @@ d networkStringTableContainerClient
 d networkStringTableContainerServer
 t NotifyDedicatedServerUI
 b object_mutex
-b once_regsizes.8769
+b once_regsizes.8778
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
@@ -1203,7 +1203,7 @@ U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 b studiorender
-b subs.8620
+b subs.8629
 b sv
 b sv_allow_color_correction
 b sv_allow_voice_from_file
@@ -1263,7 +1263,7 @@ U tan@@GLIBC_2.0
 t __tcf_0
 t __tcf_0
 t __tcf_0
-b terminator.8463
+b terminator.8472
 b testscript_debug
 t TextMessage_DemoMessage
 t TextMessage_DemoMessageFull
@@ -3634,6 +3634,7 @@ b vec4_origin
 b vec4_origin
 b vec4_origin
 b vec4_origin
+b vec4_origin
 t vprof_reset(CCommand const&)
 t bench_upload(CCommand const&)
 b bind_command
@@ -3875,6 +3876,7 @@ b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
+b vec4_invalid
 b vec4_invalid
 b vec4_invalid
 b vec4_invalid
@@ -4302,7 +4304,7 @@ t vprof_record_stop(CCommand const&)
 t vprof_reset_peaks(CCommand const&)
 t vprof_vtune_group(CCommand const&)
 b BindToggle_command
-t CM_UnsweptBoxTrace(TraceInfo_t*, Ray_t const&, int, int) [clone .isra.24]
+t CM_UnsweptBoxTrace(TraceInfo_t*, Ray_t const&, int, int) [clone .isra.25]
 t CreateTempFilename(TempFilename_t&, char const*, char const*, bool)
 b disconnect_command
 t FindSentGroupIndex(VProfListenInfo_t&, char const*)
@@ -8618,7 +8620,7 @@ t CNetworkStringTableContainer::RestoreTick(int)
 t CNetworkStringTableContainer::DirectUpdate(int)
 t CNetworkStringTableContainer::AllowCreation(bool)
 t CNetworkStringTableContainer::EnableRollback(bool)
-t CNetworkStringTableContainer::WriteBaselines(bf_write&, INetChannel*)
+t CNetworkStringTableContainer::WriteBaselines(int, bf_write&, INetChannel*)
 t CNetworkStringTableContainer::RemoveAllTables()
 t CNetworkStringTableContainer::ReadStringTables(bf_read&)
 t CNetworkStringTableContainer::TriggerCallbacks(int)
@@ -9886,7 +9888,7 @@ t CLC_VoiceData::GetType() const
 t CLC_VoiceData::GetGroup() const
 t CLC_VoiceData::ToString() const
 t unsigned int CUtlHashtable<unsigned int, int, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.147]
-t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.81] [clone .constprop.86]
+t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.88] [clone .constprop.93]
 t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.48] [clone .constprop.51]
 t unsigned int CUtlHashtable<model_t*, CModelLoader::CDynamicModelInfo, DefaultHashFunctor<model_t*>, DefaultEqualFunctor<model_t*>, undefined_t>::DoLookup<model_t*>(model_t*, unsigned int, unsigned int*) const [clone .part.103]
 t MM_Checkpoint::GetName() const

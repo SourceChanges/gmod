@@ -1,7 +1,7 @@
 U abort@@GLIBC_2.0
 U access@@GLIBC_2.0
 t add_fdes
-d adds.8619
+d adds.8628
 U alarm@@GLIBC_2.0
 T ApproximateProcessMemoryUsage
 T AreAllAssertsDisabled
@@ -23,7 +23,7 @@ U clock_gettime@@GLIBC_2.2
 U closedir@@GLIBC_2.0
 T ColorSpewMessage
 T CommandLine_Tier0
-b completed.6591
+b completed.6600
 T COM_TimestampedLog
 T ConColorMsg
 T ConDColorMsg
@@ -305,7 +305,7 @@ t __lstat
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
-b marker.8357
+b marker.8366
 U memalign@@GLIBC_2.0
 T MemAllocScratch
 U memcmp@@GLIBC_2.0
@@ -324,7 +324,7 @@ T NetLog
 T NetMsg
 T NetWarning
 b object_mutex
-b once_regsizes.8769
+b once_regsizes.8778
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
@@ -446,9 +446,9 @@ U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
-b subs.8620
+b subs.8629
 U symlink@@GLIBC_2.0
-b terminator.8463
+b terminator.8472
 T ThreadDetach
 T ThreadGetCurrentHandle
 T ThreadGetCurrentId

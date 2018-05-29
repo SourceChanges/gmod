@@ -3,7 +3,7 @@ U access@@GLIBC_2.0
 U __acosf_finite@@GLIBC_2.15
 U __acos_finite@@GLIBC_2.15
 t add_fdes
-d adds.8619
+d adds.8628
 U alphasort@@GLIBC_2.0
 U __asin_finite@@GLIBC_2.15
 U __assert_fail@@GLIBC_2.0
@@ -63,7 +63,7 @@ T c__next_word
 b colorcorrection
 U ColorSpewMessage
 U CommandLine_Tier0
-b completed.6591
+b completed.6600
 U COM_TimestampedLog
 b console
 U cosf@@GLIBC_2.0
@@ -653,7 +653,7 @@ t map_init_meta
 T map_init_vi
 t map_print_some_keys
 T map_set_editor
-b marker.8357
+b marker.8366
 t MatchFinder_CheckLimits
 T MatchFinder_Construct
 T MatchFinder_Create
@@ -698,7 +698,7 @@ t node__put
 r nv
 T nvis
 b object_mutex
-b once_regsizes.8769
+b once_regsizes.8778
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
@@ -889,7 +889,7 @@ T strunvis
 T strunvisx
 T strvis
 T strvisx
-b subs.8620
+b subs.8629
 T svis
 U swprintf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
@@ -949,7 +949,7 @@ t terminal_setflags
 T terminal_settc
 T terminal_telltc
 T terminal_writec
-b terminator.8463
+b terminator.8472
 t tgetent
 t tgetflag
 t tgetnum
@@ -3241,7 +3241,7 @@ W Bootil::Compression::LZMA::ExtractionThread::Finished()
 W Bootil::Compression::LZMA::ExtractionThread::~ExtractionThread()
 W Bootil::Compression::LZMA::ExtractionThread::~ExtractionThread()
 W Bootil::Compression::LZMA::ExtractionThread::~ExtractionThread()
-T Bootil::Compression::LZMA::Extract(void const*, unsigned int, Bootil::Buffer&, Bootil::Compression::ProgressCallback*)
+T Bootil::Compression::LZMA::Extract(void const*, unsigned int, Bootil::Buffer&, Bootil::Compression::ProgressCallback*, unsigned int)
 T Bootil::Compression::LZMA::Compress(void const*, unsigned int, Bootil::Buffer&, int, int)
 T Bootil::IsShuttingDown()
 T Bootil::File::GetTempDir()

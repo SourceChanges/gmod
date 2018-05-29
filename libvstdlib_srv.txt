@@ -1,7 +1,7 @@
 U abort@@GLIBC_2.0
 U access@@GLIBC_2.0
 t add_fdes
-d adds.8619
+d adds.8628
 t base_from_cb_data.isra.4
 t base_from_object.isra.3
 B __bss_start
@@ -11,7 +11,7 @@ U chown@@GLIBC_2.1
 t classify_object_over_fdes
 U closedir@@GLIBC_2.0
 U CommandLine_Tier0
-b completed.6591
+b completed.6600
 T Coroutine_Cancel
 T Coroutine_Continue
 T Coroutine_Create
@@ -243,7 +243,7 @@ t __lstat
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
-b marker.8357
+b marker.8366
 U mbstowcs@@GLIBC_2.0
 U memalign@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
@@ -257,7 +257,7 @@ t __mknod
 U mount@@GLIBC_2.0
 U Msg
 b object_mutex
-b once_regsizes.8769
+b once_regsizes.8778
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
@@ -332,10 +332,10 @@ U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
-b subs.8620
+b subs.8629
 U symlink@@GLIBC_2.0
 t __tcf_0
-b terminator.8463
+b terminator.8472
 U ThreadGetCurrentId
 U ThreadGetPriority
 U ThreadInMainThread

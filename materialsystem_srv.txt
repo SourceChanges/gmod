@@ -2,7 +2,7 @@ U abort@@GLIBC_2.0
 U __acosf_finite@@GLIBC_2.15
 U __acos_finite@@GLIBC_2.15
 t add_fdes
-d adds.8619
+d adds.8628
 U __asin_finite@@GLIBC_2.15
 U __atan2f_finite@@GLIBC_2.15
 U __atan2_finite@@GLIBC_2.15
@@ -17,7 +17,7 @@ t classify_object_over_fdes
 b colorcorrection
 U ColorSpewMessage
 U CommandLine_Tier0
-b completed.6591
+b completed.6600
 U cosf@@GLIBC_2.0
 U cos@@GLIBC_2.0
 T CreateInterface
@@ -347,7 +347,7 @@ b lineartolightmap
 b lineartovertex
 U __log_finite@@GLIBC_2.15
 U malloc@@GLIBC_2.0
-b marker.8357
+b marker.8366
 b mat_accelerate_adjust_exposure_down
 b mat_debugalttab
 b materials
@@ -373,7 +373,7 @@ U memset@@GLIBC_2.0
 U Msg
 r nanmask
 b object_mutex
-b once_regsizes.8769
+b once_regsizes.8778
 b p4
 d pfFastCos
 d pfFastSinCos
@@ -448,12 +448,12 @@ U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
-b subs.8620
+b subs.8629
 U swprintf@@GLIBC_2.2
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
 t __tcf_0
-b terminator.8463
+b terminator.8472
 U ThreadGetCurrentId
 U ThreadInMainThread
 U ThreadInterlockedAssignIf
@@ -2743,10 +2743,6 @@ t CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IM
 t CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, CPrimList*, int), IMesh*, CPrimList*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, CPrimList*, int), IMesh*, CPrimList*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
 t CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, CPrimList*, int), IMesh*, CPrimList*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor3()
-t CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
-t CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
-t CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
-t CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
@@ -2767,6 +2763,10 @@ t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*,
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
 t CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor4()
+t CMemberFunctor5<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int, int), bool, bool, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
+t CMemberFunctor5<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int, int), bool, bool, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
+t CMemberFunctor5<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int, int), bool, bool, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
+t CMemberFunctor5<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int, int), bool, bool, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned char*, int, int, unsigned short*, int), unsigned char*, int, int, unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::operator()()
 t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned char*, int, int, unsigned short*, int), unsigned char*, int, int, unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
 t CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned char*, int, int, unsigned short*, int), unsigned char*, int, int, unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>::~CMemberFunctor5()
@@ -3026,7 +3026,7 @@ t CMatRenderContext::ClearColor3ub(unsigned char, unsigned char, unsigned char)
 t CMatRenderContext::ClearColor4ub(unsigned char, unsigned char, unsigned char, unsigned char)
 t CMatRenderContext::FogMaxDensity(float)
 t CMatRenderContext::OnSetFlexMesh(IMesh*, IMesh*, int)
-t CMatRenderContext::OverrideBlend(bool, bool, int, int)
+t CMatRenderContext::OverrideBlend(bool, bool, int, int, int)
 t CMatRenderContext::SelectionMode(bool)
 t CMatRenderContext::GetDynamicMesh(bool, IMesh*, IMesh*, IMaterial*)
 t CMatRenderContext::GetMaxToRender(IMesh*, bool, int*, int*)
@@ -3126,7 +3126,7 @@ t CMatRenderContext::SetStencilCompareFunction(StencilComparisonFunction_t)
 t CMatRenderContext::SetToneMappingScaleLinear(Vector const&)
 t CMatRenderContext::BeginOcclusionQueryDrawing(OcclusionQueryObjectHandle_t__*)
 t CMatRenderContext::CreateOcclusionQueryObject()
-t CMatRenderContext::OverrideBlendSeparateAlpha(bool, bool, int, int)
+t CMatRenderContext::OverrideBlendSeparateAlpha(bool, bool, int, int, int)
 t CMatRenderContext::SetFloatRenderingParameter(int, float)
 t CMatRenderContext::ClearStencilBufferRectangle(int, int, int, int, int)
 t CMatRenderContext::CopyRenderTargetToTextureEx(ITexture*, int, Rect_t*, Rect_t*)
@@ -3320,7 +3320,7 @@ t CDummyMaterialSystem::ExecuteQueued()
 t CDummyMaterialSystem::FogMaxDensity(float)
 t CDummyMaterialSystem::GetNumSortIDs()
 t CDummyMaterialSystem::GetThreadMode()
-t CDummyMaterialSystem::OverrideBlend(bool, bool, int, int)
+t CDummyMaterialSystem::OverrideBlend(bool, bool, int, int, int)
 t CDummyMaterialSystem::SelectionMode(bool)
 t CDummyMaterialSystem::SetInStubMode(bool)
 t CDummyMaterialSystem::SetThreadMode(MaterialThreadMode_t, int)
@@ -3493,7 +3493,7 @@ t CDummyMaterialSystem::SetToneMappingScaleLinear(Vector const&)
 t CDummyMaterialSystem::BeginOcclusionQueryDrawing(OcclusionQueryObjectHandle_t__*)
 t CDummyMaterialSystem::CreateOcclusionQueryObject()
 t CDummyMaterialSystem::GetWorldSpaceCameraVectors(Vector*, Vector*, Vector*)
-t CDummyMaterialSystem::OverrideBlendSeparateAlpha(bool, bool, int, int)
+t CDummyMaterialSystem::OverrideBlendSeparateAlpha(bool, bool, int, int, int)
 t CDummyMaterialSystem::PopRenderTargetAndViewport()
 t CDummyMaterialSystem::SetFloatRenderingParameter(int, float)
 t CDummyMaterialSystem::BeginRenderTargetAllocation()
@@ -3728,7 +3728,7 @@ t CMatRenderContextBase::PerspectiveX(double, double, double, double)
 t CMatRenderContextBase::SetFrameTime(float)
 t CMatRenderContextBase::SyncMatrices()
 t CMatRenderContextBase::CompactMemory()
-t CMatRenderContextBase::OverrideBlend(bool, bool, int, int)
+t CMatRenderContextBase::OverrideBlend(bool, bool, int, int, int)
 b CMatRenderContextBase::sm_RenderData
 t CMatRenderContextBase::EnableClipping(bool)
 t CMatRenderContextBase::InitializeFrom(CMatRenderContextBase*)
@@ -3774,7 +3774,7 @@ t CMatRenderContextBase::GetFrameBufferCopyTexture(int)
 t CMatRenderContextBase::GetToneMappingScaleLinear()
 t CMatRenderContextBase::SetFrameBufferCopyTexture(ITexture*, int)
 t CMatRenderContextBase::GetWorldSpaceCameraVectors(Vector*, Vector*, Vector*)
-t CMatRenderContextBase::OverrideBlendSeparateAlpha(bool, bool, int, int)
+t CMatRenderContextBase::OverrideBlendSeparateAlpha(bool, bool, int, int, int)
 t CMatRenderContextBase::PopRenderTargetAndViewport()
 t CMatRenderContextBase::SetCurrentMaterialInternal(IMaterialInternal*)
 t CMatRenderContextBase::GetWorldSpaceCameraPosition(Vector*)
@@ -3965,7 +3965,7 @@ t CMatQueuedRenderContext::ClearColor4ub(unsigned char, unsigned char, unsigned 
 t CMatQueuedRenderContext::CompactMemory()
 t CMatQueuedRenderContext::FogMaxDensity(float)
 t CMatQueuedRenderContext::OnSetFlexMesh(IMesh*, IMesh*, int)
-t CMatQueuedRenderContext::OverrideBlend(bool, bool, int, int)
+t CMatQueuedRenderContext::OverrideBlend(bool, bool, int, int, int)
 t CMatQueuedRenderContext::SelectionMode(bool)
 t CMatQueuedRenderContext::EnableClipping(bool)
 t CMatQueuedRenderContext::GetDynamicMesh(bool, IMesh*, IMesh*, IMaterial*)
@@ -4074,7 +4074,7 @@ t CMatQueuedRenderContext::SetStencilCompareFunction(StencilComparisonFunction_t
 t CMatQueuedRenderContext::SetToneMappingScaleLinear(Vector const&)
 t CMatQueuedRenderContext::BeginOcclusionQueryDrawing(OcclusionQueryObjectHandle_t__*)
 t CMatQueuedRenderContext::CreateOcclusionQueryObject()
-t CMatQueuedRenderContext::OverrideBlendSeparateAlpha(bool, bool, int, int)
+t CMatQueuedRenderContext::OverrideBlendSeparateAlpha(bool, bool, int, int, int)
 t CMatQueuedRenderContext::PopRenderTargetAndViewport()
 t CMatQueuedRenderContext::SetCurrentMaterialInternal(IMaterialInternal*)
 t CMatQueuedRenderContext::SetFloatRenderingParameter(int, float)
@@ -5258,7 +5258,7 @@ t non-virtual thunk to CDummyMaterialSystem::BeginPIXEvent(unsigned long, char c
 t non-virtual thunk to CDummyMaterialSystem::ClearColor3ub(unsigned char, unsigned char, unsigned char)
 t non-virtual thunk to CDummyMaterialSystem::ClearColor4ub(unsigned char, unsigned char, unsigned char, unsigned char)
 t non-virtual thunk to CDummyMaterialSystem::FogMaxDensity(float)
-t non-virtual thunk to CDummyMaterialSystem::OverrideBlend(bool, bool, int, int)
+t non-virtual thunk to CDummyMaterialSystem::OverrideBlend(bool, bool, int, int, int)
 t non-virtual thunk to CDummyMaterialSystem::SelectionMode(bool)
 t non-virtual thunk to CDummyMaterialSystem::EnableClipping(bool)
 t non-virtual thunk to CDummyMaterialSystem::GetDynamicMesh(bool, IMesh*, IMesh*, IMaterial*)
@@ -5359,7 +5359,7 @@ t non-virtual thunk to CDummyMaterialSystem::SetToneMappingScaleLinear(Vector co
 t non-virtual thunk to CDummyMaterialSystem::BeginOcclusionQueryDrawing(OcclusionQueryObjectHandle_t__*)
 t non-virtual thunk to CDummyMaterialSystem::CreateOcclusionQueryObject()
 t non-virtual thunk to CDummyMaterialSystem::GetWorldSpaceCameraVectors(Vector*, Vector*, Vector*)
-t non-virtual thunk to CDummyMaterialSystem::OverrideBlendSeparateAlpha(bool, bool, int, int)
+t non-virtual thunk to CDummyMaterialSystem::OverrideBlendSeparateAlpha(bool, bool, int, int, int)
 t non-virtual thunk to CDummyMaterialSystem::PopRenderTargetAndViewport()
 t non-virtual thunk to CDummyMaterialSystem::SetFloatRenderingParameter(int, float)
 t non-virtual thunk to CDummyMaterialSystem::ClearStencilBufferRectangle(int, int, int, int, int)
@@ -5591,12 +5591,12 @@ r typeinfo for CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::
 r typeinfo for CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&, ITexture*), FlashlightState_t, VMatrix, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, CPrimList*, int), IMesh*, CPrimList*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
-r typeinfo for CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int), int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*, Rect_t*, Rect_t*), int, ITexture*, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, float, float, float), ITexture*, float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo for CMemberFunctor5<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int, int), bool, bool, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned char*, int, int, unsigned short*, int), unsigned char*, int, int, unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*), unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo for CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, bool), int, int, int, int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
@@ -5781,12 +5781,12 @@ r typeinfo name for CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderCont
 r typeinfo name for CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&, ITexture*), FlashlightState_t, VMatrix, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, CPrimList*, int), IMesh*, CPrimList*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
-r typeinfo name for CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int), int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*, Rect_t*, Rect_t*), int, ITexture*, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, float, float, float), ITexture*, float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r typeinfo name for CMemberFunctor5<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int, int), bool, bool, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned char*, int, int, unsigned short*, int), unsigned char*, int, int, unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*), unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r typeinfo name for CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, bool), int, int, int, int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
@@ -5971,12 +5971,12 @@ r vtable for CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)
 r vtable for CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CMemberFunctor3<CMatRenderContextBase*, void (IMatRenderContext::*)(FlashlightState_t const&, VMatrix const&, ITexture*), FlashlightState_t, VMatrix, ITexture*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CMemberFunctor3<CMatQueuedRenderContext*, void (CMatQueuedRenderContext::*)(IMesh*, CPrimList*, int), IMesh*, CPrimList*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
-r vtable for CMemberFunctor4<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int), bool, bool, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(unsigned char, unsigned char, unsigned char, unsigned char), unsigned char, unsigned char, unsigned char, unsigned char, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int), int, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(int, ITexture*, Rect_t*, Rect_t*), int, ITexture*, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, float, float, float), ITexture*, float, float, float, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CMemberFunctor4<CMatRenderContextBase*, void (IMatRenderContext::*)(ITexture*, int, Rect_t*, Rect_t*), ITexture*, int, CUtlEnvelope<Rect_t>, CUtlEnvelope<Rect_t>, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
+r vtable for CMemberFunctor5<IShaderAPI*, void (IShaderAPI::*)(bool, bool, int, int, int), bool, bool, int, int, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned char*, int, int, unsigned short*, int), unsigned char*, int, int, unsigned short*, int, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CMemberFunctor5<CMatQueuedMesh*, void (CMatQueuedMesh::*)(unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*), unsigned long long, unsigned int, IMesh*, IMesh*, IMaterialInternal*, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
 r vtable for CMemberFunctor5<CMatRenderContextBase*, void (IMatRenderContext::*)(int, int, int, int, bool), int, int, int, int, bool, CRefCounted1<CFunctor, CRefCountServiceNull>, CFuncMemPolicyNone>
@@ -6152,7 +6152,6 @@ b CMatQueuedRenderContext::CompareMaterialCombos(IMaterial*, IMaterial*, int, in
 b CMatQueuedRenderContext::CompareMaterialCombos(IMaterial*, IMaterial*, int, int)::__executeCount
 b CMatQueuedRenderContext::GetLightmapDimensions(int*, int*)::__executeCount
 b CMatQueuedRenderContext::GetLightmapDimensions(int*, int*)::__executeCount
-b CMatQueuedRenderContext::Bind(IMaterial*, void*)::oldMaterial
 b CMorph::HandleMorphStats(int, int, int)::s_bLastMorphStats
 b CTexture::InitRenderTarget(char const*, int, int, RenderTargetSizeMode_t, ImageFormat, RenderTargetType_t, unsigned int, unsigned int)::id
 b CTexture::ApplyRenderTargetSizeMode(int&, int&, ImageFormat)::bReplayInit

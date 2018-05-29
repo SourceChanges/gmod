@@ -265,7 +265,7 @@ b ACT_ZOMBINE_GRENADE_RUN
 b ACT_ZOMBINE_GRENADE_WALK
 d aDateTimeFuncs.9346
 t add_fdes
-d adds.8619
+d adds.8628
 t addToSavepointBitvecs.isra.287
 t addWhereTerm
 r aDigits
@@ -705,7 +705,7 @@ b commentary_available
 t comparisonAffinity
 t compileoptiongetFunc
 t compileoptionusedFunc
-b completed.6591
+b completed.6600
 T compress
 T compress2
 t compress_block
@@ -771,9 +771,9 @@ r CSWTCH.29
 r CSWTCH.31
 r CSWTCH.3207
 r CSWTCH.3229
-r CSWTCH.474
+r CSWTCH.473
 r CSWTCH.681
-r CSWTCH.787
+r CSWTCH.789
 r CSWTCH.837
 r CSWTCH.838
 t ctimeFunc
@@ -2571,7 +2571,7 @@ t .L2521
 t .L2522
 t .L2523
 t .L2524
-t .L2548
+t .L2547
 t .L26
 t .L27
 t .L28
@@ -2835,7 +2835,7 @@ T LzmaUncompress
 U malloc@@GLIBC_2.0
 U malloc_usable_size@@GLIBC_2.0
 b mapcyclefile
-b marker.8357
+b marker.8366
 t MatchFinder_CheckLimits
 T MatchFinder_Construct
 T MatchFinder_Create
@@ -3062,7 +3062,7 @@ t numericType
 b nUnusedFd
 b object_mutex
 b old_radius_damage
-b once_regsizes.8769
+b once_regsizes.8778
 U open64@@GLIBC_2.2
 r openBlob.19631
 t openDatabase
@@ -4441,7 +4441,7 @@ U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 b studiorender
 t subjournalPageIfRequired
-b subs.8620
+b subs.8629
 t substExpr
 t substExprList
 t substrFunc
@@ -4816,7 +4816,7 @@ b teamoverride
 b teamplay
 b template_debug
 t termCanDriveIndex
-b terminator.8463
+b terminator.8472
 b Test_EHandle
 b test_it
 b test_massive_dmg
@@ -5122,7 +5122,11 @@ r yy_reduce_ofst
 r yyRuleInfo
 r yy_shift_ofst
 t yyStackOverflow
+t Angle__Add(ILuaInterface*)
+t Angle__Div(ILuaInterface*)
+t Angle__Mul(ILuaInterface*)
 t Angle__Set(ILuaInterface*)
+t Angle__Sub(ILuaInterface*)
 t BlendBones(CStudioHdr const*, Quaternion*, Vector*, mstudioseqdesc_t&, int, Quaternion const*, Vector const*, float, int)
 t Bot_RunAll()
 t BulletWizz(Vector, Vector, edict_t*, bool)
@@ -5862,6 +5866,7 @@ t datamap_t* DataMapInit<CEmbers>(CEmbers*)
 t datamap_t* DataMapInit<CGameUI>(CGameUI*)
 t datamap_t* DataMapInit<CHL1Gib>(CHL1Gib*)
 t datamap_t* DataMapInit<CInfoBM>(CInfoBM*)
+t datamap_t* DataMapInit<CMortar>(CMortar*)
 t datamap_t* DataMapInit<CNewNPC>(CNewNPC*)
 t datamap_t* DataMapInit<CPlasma>(CPlasma*)
 t datamap_t* DataMapInit<CSprite>(CSprite*)
@@ -5998,6 +6003,7 @@ t UTIL_Remove(CBaseEntity*)
 t UTIL_Remove(IServerNetworkable*)
 t UTIL_Tracer(Vector const&, Vector const&, int, int, float, bool, char const*, int)
 t Vector__Add(ILuaInterface*)
+t Vector__Div(ILuaInterface*)
 t Vector__Dot(ILuaInterface*)
 t Vector__Mul(ILuaInterface*)
 t Vector__Set(ILuaInterface*)
@@ -6006,6 +6012,7 @@ t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
 t Angle____add(ILuaInterface*)
+t Angle____div(ILuaInterface*)
 t AngleIMatrix(RadianEuler const&, matrix3x4_t&)
 t AngleIMatrix(QAngle const&, matrix3x4_t&)
 t AngleIMatrix(QAngle const&, Vector const&, matrix3x4_t&)
@@ -7319,6 +7326,7 @@ t CNavArea__Contains(ILuaInterface*)
 t CNavArea__GetSizeX(ILuaInterface*)
 t CNavArea__GetSizeY(ILuaInterface*)
 t CNavArea__IsClosed(ILuaInterface*)
+t CNavLadder__GetTop(ILuaInterface*)
 t CNavLadder__Remove(ILuaInterface*)
 t CommandNavDontHide()
 t CommandNavGenerate()
@@ -7465,6 +7473,7 @@ t real__ents__Create(ILuaInterface*)
 t real__ents__GetAll(ILuaInterface*)
 t real__file__Delete(ILuaInterface*)
 t real__file__Exists(ILuaInterface*)
+t real__file__Rename(ILuaInterface*)
 t real__game__GetMap(ILuaInterface*)
 t real__game__KickID(ILuaInterface*)
 t real__GLobal__HTTP(ILuaInterface*)
@@ -7697,6 +7706,7 @@ t Player__GetRunSpeed(ILuaInterface*)
 t Player__GetShootPos(ILuaInterface*)
 t Player__GetStepSize(ILuaInterface*)
 t Player__IsConnected(ILuaInterface*)
+t Player__IsSprinting(ILuaInterface*)
 t Player__IsTimingOut(ILuaInterface*)
 t Player__KeyDownLast(ILuaInterface*)
 t Player__KeyReleased(ILuaInterface*)
@@ -7793,7 +7803,11 @@ t Weapon__GetMaxClip1(ILuaInterface*)
 t Weapon__GetMaxClip2(ILuaInterface*)
 t Weapon__SetHoldType(ILuaInterface*)
 t AllocateStringHelper(char const*, ...)
+t Angle__Add__Redirect(lua_State*)
+t Angle__Div__Redirect(lua_State*)
+t Angle__Mul__Redirect(lua_State*)
 t Angle__Set__Redirect(lua_State*)
+t Angle__Sub__Redirect(lua_State*)
 t BeginRestoreEntities()
 t Calc3WayBlendIndices(int, int, float, float, mstudioseqdesc_t const&, int*, float*)
 t CalcDistanceToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
@@ -7813,6 +7827,7 @@ t CNavArea__Disconnect(ILuaInterface*)
 t CNavArea__GetLadders(ILuaInterface*)
 t CNavArea__IsCoplanar(ILuaInterface*)
 t CNavArea____tostring(ILuaInterface*)
+t CNavLadder__GetWidth(ILuaInterface*)
 t CommandNavCompressID()
 t CommandNavDisconnect()
 t CommandNavEndShiftXY()
@@ -7935,9 +7950,11 @@ t PhysCollide__IsValid(ILuaInterface*)
 t PhysObj__AddGameFlag(ILuaInterface*)
 t PhysObj__AddVelocity(ILuaInterface*)
 t PhysObj__AlignAngles(ILuaInterface*)
+t PhysObj__GetContents(ILuaInterface*)
 t PhysObj__GetMaterial(ILuaInterface*)
 t PhysObj__GetVelocity(ILuaInterface*)
 t PhysObj__HasGameFlag(ILuaInterface*)
+t PhysObj__SetContents(ILuaInterface*)
 t PhysObj__SetMaterial(ILuaInterface*)
 t PhysObj__SetVelocity(ILuaInterface*)
 t PhysParseSurfaceData(IPhysicsSurfaceProps*, IFileSystem*)
@@ -8000,7 +8017,7 @@ t SetupMatrixOrgAngles(Vector const&, QAngle const&)
 t SoundCommandLessFunc(SoundCommand_t* const&, SoundCommand_t* const&)
 t _SSE_VectorNormalize(Vector&)
 t Studio_AlignIKMatrix(matrix3x4_t&, Vector const&)
-t Studio_BuildMatrices(CStudioHdr const*, QAngle const&, Vector const&, Vector const*, Quaternion const*, int, float, matrix3x4_t*, int)
+t Studio_BuildMatrices(CStudioHdr const*, QAngle const&, Vector const&, Vector const*, Quaternion const*, int, float, Vector const*, matrix3x4_t*, int)
 t Studio_GetController(CStudioHdr const*, int, float)
 t Studio_IKShouldLatch(ikcontextikrule_t&, float)
 t Studio_SetController(CStudioHdr const*, int, float, float&)
@@ -8059,6 +8076,7 @@ t CMoveData__SetUpSpeed(ILuaInterface*)
 t CNavArea__IsConnected(ILuaInterface*)
 t CNavArea__PopOpenList(ILuaInterface*)
 t CNavLadder__ConnectTo(ILuaInterface*)
+t CNavLadder__GetBottom(ILuaInterface*)
 t CNavLadder__GetLength(ILuaInterface*)
 t CNavLadder__GetNormal(ILuaInterface*)
 t ColorRGBExp32ToVector(ColorRGBExp32 const&, Vector&)
@@ -8165,6 +8183,7 @@ t PathFollower__IsValid(ILuaInterface*)
 t PhysCollide__TraceBox(ILuaInterface*)
 t PhysModelCreateCustom(CBaseEntity*, CPhysCollide const*, Vector const&, QAngle const&, char const*, bool, solid_t*)
 t PhysObj__EnableMotion(ILuaInterface*)
+t PhysObj__GetShadowPos(ILuaInterface*)
 t PhysObj__LocalToWorld(ILuaInterface*)
 t PhysObj__UpdateShadow(ILuaInterface*)
 t PhysObj__WorldToLocal(ILuaInterface*)
@@ -8256,6 +8275,7 @@ t UTIL_PlayerDecalTrace(CGameTrace*, int)
 t UTIL_StringFieldToInt(char const*, char const**, int)
 t UTIL_StringToIntArray(int*, int, char const*)
 t Vector__Add__Redirect(lua_State*)
+t Vector__Div__Redirect(lua_State*)
 t Vector__Dot__Redirect(lua_State*)
 t Vector__Mul__Redirect(lua_State*)
 t Vector__Set__Redirect(lua_State*)
@@ -8272,6 +8292,7 @@ t Weapon__DefaultReload(ILuaInterface*)
 t Weapon__LastShootTime(ILuaInterface*)
 t WeaponManager_AmmoMod(CBaseCombatWeapon*)
 t Angle____add__Redirect(lua_State*)
+t Angle____div__Redirect(lua_State*)
 t Angle____mul__Redirect(lua_State*)
 t AngleNormalizePositive(float)
 t Angle__Right__Redirect(lua_State*)
@@ -8647,6 +8668,7 @@ t PathFollower__GetLength(ILuaInterface*)
 t PerformObstaclePushaway(CBaseCombatCharacter*)
 t PhysCallbackSetVelocity(IPhysicsObject*, Vector const&)
 t PhysCannonGetHeldEntity(CBaseCombatWeapon*)
+t PhysCollide____tostring(ILuaInterface*)
 t PhysCollisionWarpEffect(gamevcollisionevent_t*, surfacedata_t*)
 t PhysFlushVehicleScripts()
 t PhysGetDefaultAABBSolid(solid_t&)
@@ -8684,6 +8706,7 @@ t ReadAndAllocStringValue(KeyValues*, char const*, char const*)
 t real__ai__GetScheduleID(ILuaInterface*)
 t real__debugoverlay__Box(ILuaInterface*)
 t real__engine__GetAddons(ILuaInterface*)
+t real__engine__TickCount(ILuaInterface*)
 t real__ents__FindByClass(ILuaInterface*)
 t real__ents__FindByModel(ILuaInterface*)
 t real__ents__FireTargets(ILuaInterface*)
@@ -8861,6 +8884,7 @@ t PathFollower____tostring(ILuaInterface*)
 t PhysCollisionScreenShake(gamevcollisionevent_t*, int)
 t PhysCreateVirtualTerrain(CBaseEntity*, objectparams_t const&)
 t PhysObj__GetMeshConvexes(ILuaInterface*)
+t PhysObj__GetShadowAngles(ILuaInterface*)
 t PhysObj__GetSpeedDamping(ILuaInterface*)
 t PhysObj__IsMotionEnabled(ILuaInterface*)
 t PhysObj__OutputDebugInfo(ILuaInterface*)
@@ -8891,8 +8915,10 @@ t real__debugoverlay__Grid(ILuaInterface*)
 t real__debugoverlay__Line(ILuaInterface*)
 t real__debugoverlay__Text(ILuaInterface*)
 t real__engine__LightStyle(ILuaInterface*)
+t real__ents__FindAlongRay(ILuaInterface*)
 t real__ents__FindInSphere(ILuaInterface*)
 t real__game__AddParticles(ILuaInterface*)
+t real__game__GetAmmoForce(ILuaInterface*)
 t real__game__GetIPAddress(ILuaInterface*)
 t real__game__GetTimeScale(ILuaInterface*)
 t real__game__SetTimeScale(ILuaInterface*)
@@ -9242,6 +9268,7 @@ t PhysEnableObjectCollisions(IPhysicsObject*, IPhysicsObject*)
 t PhysFindOrAddVehicleScript(char const*, vehicleparams_t*, vehiclesounds_t*)
 t PhysModelParseSolidByIndex(solid_t&, CBaseEntity*, int, int)
 t PhysModelParseSolidByIndex(solid_t&, CBaseEntity*, vcollide_t*, int)
+t PhysObj__ApplyTorqueCenter(ILuaInterface*)
 t PhysObj__GetAABB__Redirect(lua_State*)
 t PhysObj__GetMass__Redirect(lua_State*)
 t PhysObj__GetMesh__Redirect(lua_State*)
@@ -9377,6 +9404,7 @@ t Entity__GetParent__Redirect(lua_State*)
 t Entity__GetPhysicsObjectNum(ILuaInterface*)
 t Entity__GetSequenceActivity(ILuaInterface*)
 t Entity__GetSequenceMoveDist(ILuaInterface*)
+t Entity__GetSequenceMovement(ILuaInterface*)
 t Entity__HasFlexManipulatior(ILuaInterface*)
 t Entity__IsDormant__Redirect(lua_State*)
 t Entity__IsFlagSet__Redirect(lua_State*)
@@ -9432,6 +9460,7 @@ t PhysCollide____gc__Redirect(lua_State*)
 t PhysDisableEntityCollisions(CBaseEntity*, CBaseEntity*)
 t PhysDisableEntityCollisions(IPhysicsObject*, IPhysicsObject*)
 t PhysDisableObjectCollisions(IPhysicsObject*, IPhysicsObject*)
+t PhysObj__GetVelocityAtPoint(ILuaInterface*)
 t PhysObj__IsAsleep__Redirect(lua_State*)
 t PhysObj__IsCollisionEnabled(ILuaInterface*)
 t PhysObj__LocalToWorldVector(ILuaInterface*)
@@ -9533,6 +9562,7 @@ t CNavArea__GetSizeX__Redirect(lua_State*)
 t CNavArea__GetSizeY__Redirect(lua_State*)
 t CNavArea__IsClosed__Redirect(lua_State*)
 t CNavLadder__GetTopBehindArea(ILuaInterface*)
+t CNavLadder__GetTop__Redirect(lua_State*)
 t CNavLadder__Remove__Redirect(lua_State*)
 t CNavLadder__SetTopBehindArea(ILuaInterface*)
 t CommandNavBeginDragSelecting()
@@ -9676,6 +9706,7 @@ t real__debugoverlay__SweptBox(ILuaInterface*)
 t real__debugoverlay__Triangle(ILuaInterface*)
 t real__engine__ActiveGamemode(ILuaInterface*)
 t real__engine__GetUserContent(ILuaInterface*)
+t real__game__GetAmmoNPCDamage(ILuaInterface*)
 t real__game__GetGlobalCounter(ILuaInterface*)
 t real__game__SetGlobalCounter(ILuaInterface*)
 t real__GLobal__AddOriginToPVS(ILuaInterface*)
@@ -9860,6 +9891,7 @@ t Player__GetRunSpeed__Redirect(lua_State*)
 t Player__GetShootPos__Redirect(lua_State*)
 t Player__GetStepSize__Redirect(lua_State*)
 t Player__IsConnected__Redirect(lua_State*)
+t Player__IsSprinting__Redirect(lua_State*)
 t Player__IsTimingOut__Redirect(lua_State*)
 t Player__KeyDownLast__Redirect(lua_State*)
 t Player__KeyReleased__Redirect(lua_State*)
@@ -9875,6 +9907,7 @@ t Player__StopZooming__Redirect(lua_State*)
 t Player__StripWeapon__Redirect(lua_State*)
 t ReadWeaponDataFromFileForSlot(IFileSystem*, char const*, unsigned short*, unsigned char const*)
 t real__debugoverlay__BoxAngles(ILuaInterface*)
+t real__game__GetAmmoDamageType(ILuaInterface*)
 t real__GLobal__GetGlobal2Angle(ILuaInterface*)
 t real__GLobal__GetGlobal2Float(ILuaInterface*)
 t real__GLobal__GetGlobalEntity(ILuaInterface*)
@@ -9931,6 +9964,7 @@ t CNavArea__GetLadders__Redirect(lua_State*)
 t CNavArea__IsCoplanar__Redirect(lua_State*)
 t CNavArea__RemoveFromClosedList(ILuaInterface*)
 t CNavArea____tostring__Redirect(lua_State*)
+t CNavLadder__GetWidth__Redirect(lua_State*)
 t CommandNavBeginDragDeselecting()
 t CommandNavCheckFileConsistency()
 t CopySoundNameWithModifierToken(char*, char const*, int, char const*)
@@ -10033,9 +10067,11 @@ t PhysGetMassCenterOverrideIndex(string_t)
 t PhysObj__AddGameFlag__Redirect(lua_State*)
 t PhysObj__AddVelocity__Redirect(lua_State*)
 t PhysObj__AlignAngles__Redirect(lua_State*)
+t PhysObj__GetContents__Redirect(lua_State*)
 t PhysObj__GetMaterial__Redirect(lua_State*)
 t PhysObj__GetVelocity__Redirect(lua_State*)
 t PhysObj__HasGameFlag__Redirect(lua_State*)
+t PhysObj__SetContents__Redirect(lua_State*)
 t PhysObj__SetMaterial__Redirect(lua_State*)
 t PhysObj__SetVelocity__Redirect(lua_State*)
 t Pickup_GetPreferredCarryAngles(CBaseEntity*, CBasePlayer*, matrix3x4_t&, QAngle&)
@@ -10072,6 +10108,7 @@ t real__GLobal__SetGlobal2String(ILuaInterface*)
 t real__GLobal__SetGlobal2Vector(ILuaInterface*)
 t real__navmesh__AddWalkableSeed(ILuaInterface*)
 t real__navmesh__BeginGeneration(ILuaInterface*)
+t real__navmesh__GetGroundHeight(ILuaInterface*)
 t real__navmesh__GetMarkedLadder(ILuaInterface*)
 t real__navmesh__GetNavAreaCount(ILuaInterface*)
 t real__navmesh__SetMarkedLadder(ILuaInterface*)
@@ -10123,6 +10160,7 @@ t CNavArea__GetClosestPointOnArea(ILuaInterface*)
 t CNavArea__IsConnected__Redirect(lua_State*)
 t CNavArea__PopOpenList__Redirect(lua_State*)
 t CNavLadder__ConnectTo__Redirect(lua_State*)
+t CNavLadder__GetBottom__Redirect(lua_State*)
 t CNavLadder__GetLength__Redirect(lua_State*)
 t CNavLadder__GetNormal__Redirect(lua_State*)
 t CommandNavRemoveFromSelectedSet()
@@ -10216,6 +10254,7 @@ t PathFollower__MoveCursorToStart(ILuaInterface*)
 t PhysCollide__TraceBox__Redirect(lua_State*)
 t PhysEntityCollisionsAreDisabled(CBaseEntity*, CBaseEntity*)
 t PhysObj__EnableMotion__Redirect(lua_State*)
+t PhysObj__GetShadowPos__Redirect(lua_State*)
 t PhysObj__LocalToWorld__Redirect(lua_State*)
 t PhysObj__RecheckCollisionFilter(ILuaInterface*)
 t PhysObj__UpdateShadow__Redirect(lua_State*)
@@ -10242,6 +10281,7 @@ t PrecacheStandardParticleSystems()
 t RagdollApplyAnimationAsVelocity(ragdoll_t&, matrix3x4_t const*)
 t RagdollApplyAnimationAsVelocity(ragdoll_t&, matrix3x4_t const*, matrix3x4_t const*, float)
 t real__ents__GetMapCreatedEntity(ILuaInterface*)
+t real__game__GetAmmoPlayerDamage(ILuaInterface*)
 t real__GLobal__AddConsoleCommand(ILuaInterface*)
 t real__GLobal__RunConsoleCommand(ILuaInterface*)
 t real__navmesh__GetNavLadderByID(ILuaInterface*)
@@ -10457,6 +10497,7 @@ t NPC__SetArrivalSequence__Redirect(lua_State*)
 t NPC__UseActBusyBehavior__Redirect(lua_State*)
 t NPC__UseAssaultBehavior__Redirect(lua_State*)
 t PathFollower__GetLength__Redirect(lua_State*)
+t PhysCollide____tostring__Redirect(lua_State*)
 t PhysObj__GetSurfaceArea__Redirect(lua_State*)
 t PhysObj__SetVelocityInstantaneous(ILuaInterface*)
 t Player__CrosshairEnable__Redirect(lua_State*)
@@ -10559,6 +10600,7 @@ t PathFollower__MoveCursor__Redirect(lua_State*)
 t PathFollower____tostring__Redirect(lua_State*)
 t PhysHasContactWithOtherInDirection(IPhysicsObject*, Vector const&)
 t PhysObj__GetMeshConvexes__Redirect(lua_State*)
+t PhysObj__GetShadowAngles__Redirect(lua_State*)
 t PhysObj__GetSpeedDamping__Redirect(lua_State*)
 t PhysObj__IsMotionEnabled__Redirect(lua_State*)
 t PhysObj__OutputDebugInfo__Redirect(lua_State*)
@@ -10720,6 +10762,7 @@ t OverrideMoveCache_LevelInitPreEntity()
 t PathFollower__FirstSegment__Redirect(lua_State*)
 t PathFollower__GetHindrance__Redirect(lua_State*)
 t PathFollower__MoveCursorTo__Redirect(lua_State*)
+t PhysObj__ApplyTorqueCenter__Redirect(lua_State*)
 t Player__AnimRestartGesture__Redirect(lua_State*)
 t Player__GetViewPunchAngles__Redirect(lua_State*)
 t Player__IsListenServerHost__Redirect(lua_State*)
@@ -10765,6 +10808,7 @@ t Entity__GetParentAttachment__Redirect(lua_State*)
 t Entity__GetPhysicsObjectNum__Redirect(lua_State*)
 t Entity__GetSequenceActivity__Redirect(lua_State*)
 t Entity__GetSequenceMoveDist__Redirect(lua_State*)
+t Entity__GetSequenceMovement__Redirect(lua_State*)
 t Entity__HasFlexManipulatior__Redirect(lua_State*)
 t Entity__ManipulateBoneScale__Redirect(lua_State*)
 t Entity__SendViewModelMatchingSequence(ILuaInterface*)
@@ -10780,6 +10824,7 @@ t OverrideMoveCache_FindTargetsInRadius(CBaseEntity*, Vector const&, float)
 t OverrideMoveCache_ForceRepopulateList()
 t PathFollower__GetCursorData__Redirect(lua_State*)
 t PathFollower__SetMinLookAheadDistance(ILuaInterface*)
+t PhysObj__GetVelocityAtPoint__Redirect(lua_State*)
 t PhysObj__IsCollisionEnabled__Redirect(lua_State*)
 t PhysObj__LocalToWorldVector__Redirect(lua_State*)
 t PhysObj__SetDragCoefficient__Redirect(lua_State*)
@@ -10949,6 +10994,7 @@ t PhysObj__RecheckCollisionFilter__Redirect(lua_State*)
 t Player__AnimRestartMainSequence__Redirect(lua_State*)
 t Player__GetPreferredCarryAngles__Redirect(lua_State*)
 t Player__TranslateWeaponActivity__Redirect(lua_State*)
+t real__GLobal__CreatePhysCollidesFromModel(ILuaInterface*)
 t real__util__KeyValuesToTablePreserveOrder(ILuaInterface*)
 t SendProxy_CropFlagsToPlayerFlagBitsLength(SendProp const*, void const*, void const*, DVariant*, int, int)
 t Vehicle__GetVehicleViewPosition__Redirect(lua_State*)
@@ -12136,6 +12182,8 @@ b guard variable for datamap_t* DataMapInit<CHL1Gib>(CHL1Gib*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CHL1Gib>(CHL1Gib*)::dataDesc
 b guard variable for datamap_t* DataMapInit<CInfoBM>(CInfoBM*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CInfoBM>(CInfoBM*)::dataDesc
+b guard variable for datamap_t* DataMapInit<CMortar>(CMortar*)::nameHolder
+b guard variable for datamap_t* DataMapInit<CMortar>(CMortar*)::dataDesc
 b guard variable for datamap_t* DataMapInit<CNewNPC>(CNewNPC*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CPlasma>(CPlasma*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CSprite>(CSprite*)::nameHolder
@@ -12624,6 +12672,7 @@ b guard variable for CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsig
 b guard variable for CUtlRBTree<CUtlMap<int, CBaseAchievement*, unsigned short>::Node_t, unsigned short, CUtlMap<int, CBaseAchievement*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CBaseAchievement*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b guard variable for CUtlRBTree<CUtlMap<int, CAchievement_AchievedCount*, unsigned short>::Node_t, unsigned short, CUtlMap<int, CAchievement_AchievedCount*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CAchievement_AchievedCount*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b guard variable for CUtlRBTree<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, Activity, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+b guard variable for CUtlRBTree<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, unsigned int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b guard variable for CUtlRBTree<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short, CUtlMap<CBaseEntity*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b guard variable for CUtlRBTree<CUtlMap<CBaseEntity*, AI_EnemyInfo_t*, unsigned char>::Node_t, unsigned char, CUtlMap<CBaseEntity*, AI_EnemyInfo_t*, unsigned char>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, AI_EnemyInfo_t*, unsigned char>::Node_t, unsigned char>, unsigned char> >::Links(unsigned char) const::s_Sentinel
 b guard variable for CUtlRBTree<CUtlMap<CBaseEntity*, CPhysSaveRestoreBlockHandler::CEntityRestoreSet*, unsigned short>::Node_t, unsigned short, CUtlMap<CBaseEntity*, CPhysSaveRestoreBlockHandler::CEntityRestoreSet*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, CPhysSaveRestoreBlockHandler::CEntityRestoreSet*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
@@ -16144,6 +16193,7 @@ b logic_autosave
 r MAX_PROBE_DIST
 b momentary_door
 b monster_barney
+b monster_mortar
 b monster_zombie
 b move_keyframed
 b nav_begin_area
@@ -16206,7 +16256,7 @@ b ai_show_connect
 b ai_speechfilter
 b ambient_generic
 b ch_createjalopy
-t ClipRayToHitbox(Ray_t const&, mstudiobbox_t*, matrix3x4_t&, CGameTrace&) [clone .isra.3]
+t ClipRayToHitbox(Ray_t const&, mstudiobbox_t*, matrix3x4_t&, CGameTrace&)
 b commentary_auto
 b concussiveblast
 b cycler_wreckage
@@ -16351,7 +16401,7 @@ b g_ConceptInfoMap
 d g_ConVarAccessor
 b g_CTeam_ClassReg
 t GetAllChildren_r(CBaseEntity*, CUtlVector<CBaseEntity*, CUtlMemory<CBaseEntity*, int> >&)
-t Get_CPhysCollide(int, bool) [clone .constprop.21]
+t Get_CPhysCollide(int, bool) [clone .constprop.48]
 b g_GameStringPool
 d glassLinearTable
 b g_MasterResupply
@@ -16560,7 +16610,11 @@ d advisorLinearTable
 b ai_changehintgroup
 t ai_clear_bad_links(CCommand const&)
 b ai_show_visibility
+b Angle_Add__Factory
+b Angle_Div__Factory
+b Angle_Mul__Factory
 b Angle_Set__Factory
+b Angle_Sub__Factory
 b assault_rallypoint
 b basehlcombatweapon
 b cl_spewscriptintro
@@ -16752,6 +16806,7 @@ t redir__ents__Create(lua_State*)
 t redir__ents__GetAll(lua_State*)
 t redir__file__Delete(lua_State*)
 t redir__file__Exists(lua_State*)
+t redir__file__Rename(lua_State*)
 t redir__game__GetMap(lua_State*)
 t redir__game__KickID(lua_State*)
 t redir__GLobal__HTTP(lua_State*)
@@ -16789,6 +16844,7 @@ b trigger_changelevel
 b trigger_waterydeath
 b tv_allow_camera_man
 b Vector_Add__Factory
+b Vector_Div__Factory
 b Vector_Dot__Factory
 b Vector_Mul__Factory
 b Vector_Set__Factory
@@ -16801,6 +16857,7 @@ b ai_script_conditions
 b ai_show_connect_jump
 b ai_show_node_command
 b Angle___add__Factory
+b Angle___div__Factory
 b Angle___mul__Factory
 b Angle_Right__Factory
 b Angle___sub__Factory
@@ -16958,6 +17015,7 @@ b fectory__ents__Create
 b fectory__ents__GetAll
 b fectory__file__Delete
 b fectory__file__Exists
+b fectory__file__Rename
 b fectory__game__GetMap
 b fectory__game__KickID
 b fectory__net__ReadBit
@@ -17566,6 +17624,7 @@ b prop_physics_respawnable
 t redir__ai__GetScheduleID(lua_State*)
 t redir__debugoverlay__Box(lua_State*)
 t redir__engine__GetAddons(lua_State*)
+t redir__engine__TickCount(lua_State*)
 t redir__ents__FindByClass(lua_State*)
 t redir__ents__FindByModel(lua_State*)
 t redir__ents__FireTargets(lua_State*)
@@ -17785,8 +17844,10 @@ t redir__debugoverlay__Grid(lua_State*)
 t redir__debugoverlay__Line(lua_State*)
 t redir__debugoverlay__Text(lua_State*)
 t redir__engine__LightStyle(lua_State*)
+t redir__ents__FindAlongRay(lua_State*)
 t redir__ents__FindInSphere(lua_State*)
 t redir__game__AddParticles(lua_State*)
+t redir__game__GetAmmoForce(lua_State*)
 t redir__game__GetIPAddress(lua_State*)
 t redir__game__GetTimeScale(lua_State*)
 t redir__game__SetTimeScale(lua_State*)
@@ -17851,6 +17912,7 @@ b CNavArea_Contains__Factory
 b CNavArea_GetSizeX__Factory
 b CNavArea_GetSizeY__Factory
 b CNavArea_IsClosed__Factory
+b CNavLadder_GetTop__Factory
 b CNavLadder_Remove__Factory
 b ConVar_GetDefault__Factory
 b ConVar___tostring__Factory
@@ -17897,6 +17959,7 @@ b event_queue_saveload_proxy
 b fectory__ai__GetScheduleID
 b fectory__debugoverlay__Box
 b fectory__engine__GetAddons
+b fectory__engine__TickCount
 b fectory__ents__FindByClass
 b fectory__ents__FindByModel
 b fectory__ents__FireTargets
@@ -18126,8 +18189,10 @@ b fectory__debugoverlay__Grid
 b fectory__debugoverlay__Line
 b fectory__debugoverlay__Text
 b fectory__engine__LightStyle
+b fectory__ents__FindAlongRay
 b fectory__ents__FindInSphere
 b fectory__game__AddParticles
+b fectory__game__GetAmmoForce
 b fectory__game__GetIPAddress
 b fectory__game__GetTimeScale
 b fectory__game__SetTimeScale
@@ -18188,6 +18253,7 @@ b Player_GetRunSpeed__Factory
 b Player_GetShootPos__Factory
 b Player_GetStepSize__Factory
 b Player_IsConnected__Factory
+b Player_IsSprinting__Factory
 b Player_IsTimingOut__Factory
 b Player_KeyDownLast__Factory
 b Player_KeyReleased__Factory
@@ -18272,6 +18338,7 @@ b CNavArea_Disconnect__Factory
 b CNavArea_GetLadders__Factory
 b CNavArea_IsCoplanar__Factory
 b CNavArea___tostring__Factory
+b CNavLadder_GetWidth__Factory
 b CSoundPatch_FadeOut__Factory
 b CUserCmd_GetButtons__Factory
 b CUserCmd_GetImpulse__Factory
@@ -18389,9 +18456,11 @@ b physics_debug_entity_command
 b PhysObj_AddGameFlag__Factory
 b PhysObj_AddVelocity__Factory
 b PhysObj_AlignAngles__Factory
+b PhysObj_GetContents__Factory
 b PhysObj_GetMaterial__Factory
 b PhysObj_GetVelocity__Factory
 b PhysObj_HasGameFlag__Factory
+b PhysObj_SetContents__Factory
 b PhysObj_SetMaterial__Factory
 b PhysObj_SetVelocity__Factory
 r PLANE_SOLVER_THINK_FREQUENCY
@@ -18476,6 +18545,7 @@ b CMoveData_SetUpSpeed__Factory
 b CNavArea_IsConnected__Factory
 b CNavArea_PopOpenList__Factory
 b CNavLadder_ConnectTo__Factory
+b CNavLadder_GetBottom__Factory
 b CNavLadder_GetLength__Factory
 b CNavLadder_GetNormal__Factory
 b CSoundPatch_GetPitch__Factory
@@ -18582,6 +18652,7 @@ b PathFollower_IsValid__Factory
 b PhysCollide_TraceBox__Factory
 b physics_report_active_command
 b PhysObj_EnableMotion__Factory
+b PhysObj_GetShadowPos__Factory
 b PhysObj_LocalToWorld__Factory
 b PhysObj_UpdateShadow__Factory
 b PhysObj_WorldToLocal__Factory
@@ -18607,6 +18678,7 @@ t redir__debugoverlay__SweptBox(lua_State*)
 t redir__debugoverlay__Triangle(lua_State*)
 t redir__engine__ActiveGamemode(lua_State*)
 t redir__engine__GetUserContent(lua_State*)
+t redir__game__GetAmmoNPCDamage(lua_State*)
 t redir__game__GetGlobalCounter(lua_State*)
 t redir__game__SetGlobalCounter(lua_State*)
 t redir__GLobal__AddOriginToPVS(lua_State*)
@@ -18771,6 +18843,7 @@ b precache_weapon_weapon_crowbar
 b precache_weapon_weapon_physgun
 b precache_weapon_weapon_shotgun
 t redir__debugoverlay__BoxAngles(lua_State*)
+t redir__game__GetAmmoDamageType(lua_State*)
 t redir__GLobal__GetGlobal2Angle(lua_State*)
 t redir__GLobal__GetGlobal2Float(lua_State*)
 t redir__GLobal__GetGlobalEntity(lua_State*)
@@ -18849,6 +18922,7 @@ b fectory__debugoverlay__SweptBox
 b fectory__debugoverlay__Triangle
 b fectory__engine__ActiveGamemode
 b fectory__engine__GetUserContent
+b fectory__game__GetAmmoNPCDamage
 b fectory__game__GetGlobalCounter
 b fectory__game__SetGlobalCounter
 b fectory__navmesh__CreateNavArea
@@ -18889,6 +18963,7 @@ b NPC_SetArrivalSequence__Factory
 b NPC_UseActBusyBehavior__Factory
 b NPC_UseAssaultBehavior__Factory
 b PathFollower_GetLength__Factory
+b PhysCollide___tostring__Factory
 b PhysObj_GetSurfaceArea__Factory
 b Player_CrosshairEnable__Factory
 b Player_DropNamedWeapon__Factory
@@ -18916,6 +18991,7 @@ t redir__GLobal__SetGlobal2String(lua_State*)
 t redir__GLobal__SetGlobal2Vector(lua_State*)
 t redir__navmesh__AddWalkableSeed(lua_State*)
 t redir__navmesh__BeginGeneration(lua_State*)
+t redir__navmesh__GetGroundHeight(lua_State*)
 t redir__navmesh__GetMarkedLadder(lua_State*)
 t redir__navmesh__GetNavAreaCount(lua_State*)
 t redir__navmesh__SetMarkedLadder(lua_State*)
@@ -18983,6 +19059,7 @@ b Entity_UseTriggerBounds__Factory
 b Entity_WorldSpaceCenter__Factory
 b env_particle_performance_monitor
 b fectory__debugoverlay__BoxAngles
+b fectory__game__GetAmmoDamageType
 b fectory__navmesh__GetAllNavAreas
 b fectory__navmesh__GetNavAreaByID
 b fectory__physenv__AddSurfaceData
@@ -19012,6 +19089,7 @@ b PathFollower_MoveCursor__Factory
 b PathFollower___tostring__Factory
 b physics_highlight_active_command
 b PhysObj_GetMeshConvexes__Factory
+b PhysObj_GetShadowAngles__Factory
 b PhysObj_GetSpeedDamping__Factory
 b PhysObj_IsMotionEnabled__Factory
 b PhysObj_OutputDebugInfo__Factory
@@ -19027,6 +19105,7 @@ b Player_SetPressedWidget__Factory
 b Player_ShouldDropWeapon__Factory
 b precache_weapon_weapon_stunstick
 t redir__ents__GetMapCreatedEntity(lua_State*)
+t redir__game__GetAmmoPlayerDamage(lua_State*)
 t redir__GLobal__AddConsoleCommand(lua_State*)
 t redir__GLobal__RunConsoleCommand(lua_State*)
 t redir__navmesh__GetNavLadderByID(lua_State*)
@@ -19078,6 +19157,7 @@ b Entity_TakePhysicsDamage__Factory
 b fectory__debugoverlay__ScreenText
 b fectory__navmesh__AddWalkableSeed
 b fectory__navmesh__BeginGeneration
+b fectory__navmesh__GetGroundHeight
 b fectory__navmesh__GetMarkedLadder
 b fectory__navmesh__GetNavAreaCount
 b fectory__navmesh__SetMarkedLadder
@@ -19186,6 +19266,7 @@ b Entity_SetPreventTransmit__Factory
 b Entity_Weapon_SetActivity__Factory
 b Entity_WorldToLocalAngles__Factory
 b fectory__ents__GetMapCreatedEntity
+b fectory__game__GetAmmoPlayerDamage
 b fectory__navmesh__GetNavLadderByID
 b fectory__util__IntersectRayWithOBB
 b g_CHLSelectFireMachineGun_ClassReg
@@ -19204,6 +19285,7 @@ b NPC_GetPathDistanceToGoal__Factory
 b PathFollower_FirstSegment__Factory
 b PathFollower_GetHindrance__Factory
 b PathFollower_MoveCursorTo__Factory
+b PhysObj_ApplyTorqueCenter__Factory
 b Player_AnimRestartGesture__Factory
 b Player_GetViewPunchAngles__Factory
 b Player_IsListenServerHost__Factory
@@ -19247,6 +19329,7 @@ b Entity_GetParentAttachment__Factory
 b Entity_GetPhysicsObjectNum__Factory
 b Entity_GetSequenceActivity__Factory
 b Entity_GetSequenceMoveDist__Factory
+b Entity_GetSequenceMovement__Factory
 b Entity_HasFlexManipulatior__Factory
 b Entity_ManipulateBoneScale__Factory
 b Entity_SetNetworked2Entity__Factory
@@ -19260,6 +19343,7 @@ b hammer_update_safe_entities_command
 b nav_select_obstructed_areas_command
 b NPC_SetMaxRouteRebuildTime__Factory
 b PathFollower_GetCursorData__Factory
+b PhysObj_GetVelocityAtPoint__Factory
 b PhysObj_IsCollisionEnabled__Factory
 b PhysObj_LocalToWorldVector__Factory
 b PhysObj_SetDragCoefficient__Factory
@@ -19500,12 +19584,14 @@ b Entity_RemoveFromMotionController__Factory
 b __g_CreateCPluginBotManagerIBotManager_reg
 b __g_CreateCServerGameDLLIServerGameDLL_reg
 b __proxy_SendProxy_SendLocalWeaponDataTable
+t redir__GLobal__CreatePhysCollidesFromModel(lua_State*)
 t redir__util__KeyValuesToTablePreserveOrder(lua_State*)
 b CLuaLocomotion_IsClimbingOrJumping__Factory
 b CNavArea_ComputeGroundHeightChange__Factory
 b fectory__debugoverlay__EntityTextAtPosition
 b Player_AddVCDSequenceToGestureSlot__Factory
 b Player_AllowImmediateDecalPainting__Factory
+b worker__GLobal__CreatePhysCollidesFromModel
 t __CreateCGameMovementIGameMovement_interface()
 t __CreateCHLTVDirectorIHLTVDirector_interface()
 b CTakeDamageInfo_GetReportedPosition__Factory
@@ -20171,7 +20257,6 @@ t CGMODRules::ItemShouldRespawn(CItem*)
 t CGMODRules::ClientDisconnected(edict_t*)
 t CGMODRules::FlPlayerFallDamage(CBasePlayer*)
 t CGMODRules::GetGameDescription()
-t CGMODRules::GetPlayerSpawnSpot(CBasePlayer*)
 t CGMODRules::FPlayerCanTakeDamage(CBasePlayer*, CBaseEntity*)
 t CGMODRules::ClientSettingsChanged(CBasePlayer*)
 t CGMODRules::CreateStandardEntities()
@@ -20911,6 +20996,8 @@ t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CAchievement_AchievedCount*, unsigned 
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CAchievement_AchievedCount*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, AI_EnemyInfo_t*, unsigned char>::Node_t, unsigned char>, unsigned char>::Grow(int)
@@ -21126,6 +21213,7 @@ t CUtlMemory<CChoreoActor*, int>::Purge()
 t CUtlMemory<CChoreoEvent*, int>::Purge()
 t CUtlMemory<CChoreoScene*, int>::Purge()
 t CUtlMemory<CHintMessage*, int>::Purge()
+t CUtlMemory<CPhysCollide*, int>::Purge()
 t CUtlMemory<CAI_BaseActor*, int>::Purge()
 t CUtlMemory<CAIHintVector*, int>::Purge()
 t CUtlMemory<CAssaultPoint*, int>::Purge()
@@ -21338,6 +21426,12 @@ t CUtlRBTree<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned s
 t CUtlRBTree<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, Activity, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
 t CUtlRBTree<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, Activity, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<unsigned int, Activity, unsigned short>::Node_t const&)
 t CUtlRBTree<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, Activity, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlRBTree<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, unsigned int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
+t CUtlRBTree<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, unsigned int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
+t CUtlRBTree<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, unsigned int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
+t CUtlRBTree<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, unsigned int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t const&)
+t CUtlRBTree<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, unsigned int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short>, unsigned short> >::~CUtlRBTree()
+t CUtlRBTree<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, unsigned int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short>, unsigned short> >::~CUtlRBTree()
 t CUtlRBTree<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short, CUtlMap<CBaseEntity*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short, CUtlMap<CBaseEntity*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short, CUtlMap<CBaseEntity*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
@@ -21932,6 +22026,7 @@ t CUtlVector<CFuncLadder*, CUtlMemory<CFuncLadder*, int> >::~CUtlVector()
 t CUtlVector<CNPC_Hunter*, CUtlMemory<CNPC_Hunter*, int> >::InsertBefore(int, CNPC_Hunter* const&)
 t CUtlVector<CNPC_Hunter*, CUtlMemory<CNPC_Hunter*, int> >::~CUtlVector()
 t CUtlVector<CNPC_Hunter*, CUtlMemory<CNPC_Hunter*, int> >::~CUtlVector()
+t CUtlVector<CPhysConvex*, CUtlMemory<CPhysConvex*, int> >::InsertBefore(int, CPhysConvex* const&)
 t CUtlVector<CRallyPoint*, CUtlMemory<CRallyPoint*, int> >::InsertBefore(int, CRallyPoint* const&)
 t CUtlVector<CSoundPatch*, CUtlMemory<CSoundPatch*, int> >::InsertBefore(int, CSoundPatch* const&)
 t CUtlVector<CSoundPatch*, CUtlMemory<CSoundPatch*, int> >::~CUtlVector()
@@ -26173,7 +26268,6 @@ t CGMOD_Player::PreThink()
 t CGMOD_Player::CanAttack()
 t CGMOD_Player::CanSprint()
 d CGMOD_Player::m_DataMap
-t CGMOD_Player::OnRestore()
 t CGMOD_Player::PlayerUse()
 t CGMOD_Player::PostThink()
 t CGMOD_Player::ViewPunch(QAngle const&)
@@ -28083,10 +28177,13 @@ t GModDataPack::AddOrUpdateFile(LuaFile*, bool)
 t GModDataPack::FindInDatatable(std::string const&, std::vector<LuaFindResult, std::allocator<LuaFindResult> >&, bool)
 t GModDataPack::BuildSearchPaths()
 t GModDataPack::GetFromDatatable(std::string const&)
+t GModDataPack::OnFilesRequested(int, bf_read*, int)
 t GModDataPack::SendFileToClient(int, int)
+t GModDataPack::OnClientConnected(int)
 t GModDataPack::FindFileInDatatable(std::string const&, bool, bool)
 t GModDataPack::GetCRCFromDatatable(std::string const&)
 t GModDataPack::GetClientSearchPaths()
+t GModDataPack::SendFileRequestRequest(int)
 t GModDataPack::Reset()
 t GModDataPack::v000000000000000000000000000oo0000000000000000fff000000000000000000000000000000000o0o()
 t GModDataPack::Contains(char const*)
@@ -30535,6 +30632,7 @@ t CBaseAnimating::SetSequence(int)
 t CBaseAnimating::SetTransmit(CCheckTransmitInfo*, bool)
 t CBaseAnimating::GetBodygroup(int)
 t CBaseAnimating::GetBoneCache()
+t CBaseAnimating::GetBoneScale(int, Vector&)
 t CBaseAnimating::GetEntryNode(int)
 t CBaseAnimating::GetHitboxSet()
 t CBaseAnimating::GotoSequence(int, float, float, int, int&, float&, int&)
@@ -32835,6 +32933,9 @@ t CEntityFactory<CHL1Gib>::Destroy(IServerNetworkable*)
 t CEntityFactory<CInfoBM>::GetEntitySize()
 t CEntityFactory<CInfoBM>::Create(char const*)
 t CEntityFactory<CInfoBM>::Destroy(IServerNetworkable*)
+t CEntityFactory<CMortar>::GetEntitySize()
+t CEntityFactory<CMortar>::Create(char const*)
+t CEntityFactory<CMortar>::Destroy(IServerNetworkable*)
 t CEntityFactory<CNewNPC>::GetEntitySize()
 t CEntityFactory<CNewNPC>::Create(char const*)
 t CEntityFactory<CNewNPC>::Destroy(IServerNetworkable*)
@@ -35526,7 +35627,6 @@ t CNetworkVarBase<float, DustTrail::NetworkVar_m_ParticleLifetime>::Set(float co
 t CNetworkVarBase<int, CBaseEntity::NetworkVar_m_spawnflags>::Set(int const&)
 t CNetworkVarBase<int, CNPC_Manhack::NetworkVar_m_nEnginePitch1>::Set(int const&)
 t CNetworkVarBase<int, CNPC_Manhack::NetworkVar_m_nEnginePitch2>::Set(int const&)
-t CNetworkVarBase<int, CBaseAnimating::NetworkVar_m_nBody>::Set(int const&)
 t CNetworkVarBase<int, CVoteController::NetworkVar_m_iOnlyTeamToVote>::Set(int const&)
 t CNetworkVarBase<int, CBaseCombatWeapon::NetworkVar_m_iClip1>::Set(int const&)
 t CNetworkVarBase<int, CBaseCombatWeapon::NetworkVar_m_iClip2>::Set(int const&)
@@ -40919,10 +41019,12 @@ t CServerGameClients::SetCommandClient(int)
 t CServerGameClients::ClientEarPosition(edict_t*, Vector*)
 t CServerGameClients::ClientPutInServer(edict_t*, char const*)
 t CServerGameClients::NetworkIDValidated(char const*, char const*)
+t CServerGameClients::GMOD_ClientConnected(int)
 t CServerGameClients::ClientSettingsChanged(edict_t*)
 t CServerGameClients::ClientSetupVisibility(edict_t*, edict_t*, unsigned char*, int)
 t CServerGameClients::ClientCommandKeyValues(edict_t*, KeyValues*)
 t CServerGameClients::GMOD_ReceiveClientMessage(int, edict_t*, bf_read*, int)
+t CServerGameClients::GMOD_SentClientStringTables(int)
 t CServerGameClients::PostClientMessagesSent_DEPRECIATED()
 t CSimplePhysicsProp::ObjectCaps()
 t CSimplePhysicsProp::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)
@@ -41296,6 +41398,7 @@ t CDecalEmitterSystem::GetDecalIndexForName(char const*)
 t CDecalEmitterSystem::GetDecalMaterialName(int)
 t CDecalEmitterSystem::LoadDecalsFromScript(char const*)
 t CDecalEmitterSystem::DoModelMaterialPrecache(char const*)
+t CDecalEmitterSystem::LevelShutdownPostEntity()
 t CDecalEmitterSystem::ImpactDecalForGameMaterial(int)
 t CDecalEmitterSystem::TranslateDecalForGameMaterial(char const*, unsigned char)
 t CDecalEmitterSystem::Init()
@@ -42440,6 +42543,7 @@ t CBaseCombatCharacter::GetDefaultRelationshipDisposition(Class_T)
 t CBaseCombatCharacter::YouForgotToImplementOrDeclareServerClass()
 t CBaseCombatCharacter::Spawn()
 t CBaseCombatCharacter::Restore(IRestore&)
+t CBaseCombatCharacter::SetAmmo(int, int)
 t CBaseCombatCharacter::FVisible(CBaseEntity*, int, CBaseEntity**)
 t CBaseCombatCharacter::FVisible(Vector const&, int, CBaseEntity**)
 t CBaseCombatCharacter::GiveAmmo(int, int, bool)
@@ -42767,6 +42871,7 @@ t CLogicCompareInteger::~CLogicCompareInteger()
 t CLogicCompareInteger::~CLogicCompareInteger()
 t CMapLoadEntityFilter::CreateNextEntity(char const*)
 t CMapLoadEntityFilter::ShouldCreateEntity(char const*)
+b CMortar_DataDescInit::g_DataMapHolder
 b CNewNPC_DataDescInit::g_DataMapHolder
 t CNPC_CombineDropship::GetBaseMap()
 t CNPC_CombineDropship::InputHover(inputdata_t&)
@@ -47586,7 +47691,7 @@ W Bootil::Compression::LZMA::ExtractionThread::Finished()
 W Bootil::Compression::LZMA::ExtractionThread::~ExtractionThread()
 W Bootil::Compression::LZMA::ExtractionThread::~ExtractionThread()
 W Bootil::Compression::LZMA::ExtractionThread::~ExtractionThread()
-T Bootil::Compression::LZMA::Extract(void const*, unsigned int, Bootil::Buffer&, Bootil::Compression::ProgressCallback*)
+T Bootil::Compression::LZMA::Extract(void const*, unsigned int, Bootil::Buffer&, Bootil::Compression::ProgressCallback*, unsigned int)
 T Bootil::Compression::LZMA::Compress(void const*, unsigned int, Bootil::Buffer&, int, int)
 t Bootil::Compression::FastLZ::ExtractInThread(void const*, unsigned int, unsigned int, std::string const&)
 W Bootil::Compression::FastLZ::ExtractionThread::GetProgress()
@@ -47598,7 +47703,7 @@ W Bootil::Compression::FastLZ::ExtractionThread::~ExtractionThread()
 W Bootil::Compression::FastLZ::ExtractionThread::~ExtractionThread()
 W Bootil::Compression::FastLZ::ExtractionThread::~ExtractionThread()
 T Bootil::Compression::FastLZ::Is(void const*, unsigned int)
-T Bootil::Compression::FastLZ::Extract(void const*, unsigned int, Bootil::Buffer&)
+T Bootil::Compression::FastLZ::Extract(void const*, unsigned int, Bootil::Buffer&, unsigned int)
 T Bootil::Compression::FastLZ::Compress(void const*, unsigned int, Bootil::Buffer&)
 T Bootil::IsShuttingDown()
 t void Bootil::Data::Json::WriteValue<rapidjson::PrettyWriter<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator, 0u> >(rapidjson::PrettyWriter<rapidjson::GenericStringBuffer<rapidjson::UTF8<char>, rapidjson::CrtAllocator>, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator, 0u>&, Bootil::Data::TreeT<std::string> const&)
@@ -48154,6 +48259,15 @@ d CInfoBM::m_DataMap
 t CInfoBM::~CInfoBM()
 t CInfoBM::~CInfoBM()
 t CInfoBM::~CInfoBM()
+t CMortar::GetBaseMap()
+t CMortar::MortarExplode()
+t CMortar::GetDataDescMap()
+t CMortar::Spawn()
+t CMortar::Precache()
+d CMortar::m_DataMap
+t CMortar::~CMortar()
+t CMortar::~CMortar()
+t CMortar::~CMortar()
 t CNewNPC::GetBaseMap()
 t CNewNPC::LoadSchedules()
 t CNewNPC::SquadSlotName(int)
@@ -48516,6 +48630,9 @@ t CAmmoDef::GMOD_MaxCarry(int)
 t CAmmoDef::MaxSplashSize(int)
 t CAmmoDef::MinSplashSize(int)
 t CAmmoDef::GetAmmoOfIndex(int)
+t CAmmoDef::GMOD_SetConVarMaxCarry(int, char const*)
+t CAmmoDef::GMOD_SetConVarNPCDamage(int, char const*)
+t CAmmoDef::GMOD_SetConVarPlrDamage(int, char const*)
 t CAmmoDef::Flags(int)
 t CAmmoDef::Index(char const*)
 t CAmmoDef::MaxCarry(int)
@@ -50545,6 +50662,7 @@ b GarrysMod::StringTable::g_StringTable_GameInfo
 t GarrysMod::StringTable::Reset()
 t GarrysMod::StringTable::Create()
 r GarrysMod::NetworkMessage::LuaFileDownload
+r GarrysMod::NetworkMessage::RequestLuaFiles
 t GarrysMod::Lua::Cache::GetCompressed(unsigned int, std::string const&, Bootil::Buffer&)
 t GarrysMod::Lua::Cache::StoreCompressed(unsigned int, void*, int)
 t GarrysMod::Lua::Cache::Clear(unsigned int)
@@ -53078,6 +53196,7 @@ t non-virtual thunk to CCollisionEvent::ShouldFreezeContacts(IPhysicsObject**, i
 t non-virtual thunk to CCollisionEvent::ShouldSolvePenetration(IPhysicsObject*, IPhysicsObject*, void*, void*, float)
 t non-virtual thunk to CCollisionEvent::AdditionalCollisionChecksThisTick(int)
 t non-virtual thunk to CDecalEmitterSystem::LevelInitPreEntity()
+t non-virtual thunk to CDecalEmitterSystem::LevelShutdownPostEntity()
 t non-virtual thunk to CDecalEmitterSystem::Init()
 t non-virtual thunk to CDecalEmitterSystem::Shutdown()
 t non-virtual thunk to CDecalEmitterSystem::~CDecalEmitterSystem()
@@ -54537,6 +54656,7 @@ r typeinfo for CEntityFactory<CEmbers>
 r typeinfo for CEntityFactory<CGameUI>
 r typeinfo for CEntityFactory<CHL1Gib>
 r typeinfo for CEntityFactory<CInfoBM>
+r typeinfo for CEntityFactory<CMortar>
 r typeinfo for CEntityFactory<CNewNPC>
 r typeinfo for CEntityFactory<CPlasma>
 r typeinfo for CEntityFactory<CRagGib>
@@ -55475,6 +55595,7 @@ r typeinfo for CEmbers
 r typeinfo for CGameUI
 r typeinfo for CHL1Gib
 r typeinfo for CInfoBM
+r typeinfo for CMortar
 r typeinfo for CNewNPC
 r typeinfo for CPlasma
 r typeinfo for CRagGib
@@ -56589,6 +56710,7 @@ r typeinfo name for CEntityFactory<CEmbers>
 r typeinfo name for CEntityFactory<CGameUI>
 r typeinfo name for CEntityFactory<CHL1Gib>
 r typeinfo name for CEntityFactory<CInfoBM>
+r typeinfo name for CEntityFactory<CMortar>
 r typeinfo name for CEntityFactory<CNewNPC>
 r typeinfo name for CEntityFactory<CPlasma>
 r typeinfo name for CEntityFactory<CRagGib>
@@ -57527,6 +57649,7 @@ r typeinfo name for CEmbers
 r typeinfo name for CGameUI
 r typeinfo name for CHL1Gib
 r typeinfo name for CInfoBM
+r typeinfo name for CMortar
 r typeinfo name for CNewNPC
 r typeinfo name for CPlasma
 r typeinfo name for CRagGib
@@ -58642,6 +58765,7 @@ r vtable for CEntityFactory<CEmbers>
 r vtable for CEntityFactory<CGameUI>
 r vtable for CEntityFactory<CHL1Gib>
 r vtable for CEntityFactory<CInfoBM>
+r vtable for CEntityFactory<CMortar>
 r vtable for CEntityFactory<CNewNPC>
 r vtable for CEntityFactory<CPlasma>
 r vtable for CEntityFactory<CRagGib>
@@ -59548,6 +59672,7 @@ r vtable for CEmbers
 r vtable for CGameUI
 r vtable for CHL1Gib
 r vtable for CInfoBM
+r vtable for CMortar
 r vtable for CNewNPC
 r vtable for CPlasma
 r vtable for CRagGib
@@ -61002,6 +61127,8 @@ b datamap_t* DataMapInit<CHL1Gib>(CHL1Gib*)::nameHolder
 d datamap_t* DataMapInit<CHL1Gib>(CHL1Gib*)::dataDesc
 b datamap_t* DataMapInit<CInfoBM>(CInfoBM*)::nameHolder
 d datamap_t* DataMapInit<CInfoBM>(CInfoBM*)::dataDesc
+b datamap_t* DataMapInit<CMortar>(CMortar*)::nameHolder
+d datamap_t* DataMapInit<CMortar>(CMortar*)::dataDesc
 b datamap_t* DataMapInit<CNewNPC>(CNewNPC*)::nameHolder
 d datamap_t* DataMapInit<CNewNPC>(CNewNPC*)::dataDesc
 b datamap_t* DataMapInit<CPlasma>(CPlasma*)::nameHolder
@@ -61759,6 +61886,7 @@ d CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<
 d CUtlRBTree<CUtlMap<int, CBaseAchievement*, unsigned short>::Node_t, unsigned short, CUtlMap<int, CBaseAchievement*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CBaseAchievement*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 d CUtlRBTree<CUtlMap<int, CAchievement_AchievedCount*, unsigned short>::Node_t, unsigned short, CUtlMap<int, CAchievement_AchievedCount*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CAchievement_AchievedCount*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 d CUtlRBTree<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, Activity, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Activity, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+d CUtlRBTree<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned int, unsigned int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 d CUtlRBTree<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short, CUtlMap<CBaseEntity*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 d CUtlRBTree<CUtlMap<CBaseEntity*, AI_EnemyInfo_t*, unsigned char>::Node_t, unsigned char, CUtlMap<CBaseEntity*, AI_EnemyInfo_t*, unsigned char>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, AI_EnemyInfo_t*, unsigned char>::Node_t, unsigned char>, unsigned char> >::Links(unsigned char) const::s_Sentinel
 d CUtlRBTree<CUtlMap<CBaseEntity*, CPhysSaveRestoreBlockHandler::CEntityRestoreSet*, unsigned short>::Node_t, unsigned short, CUtlMap<CBaseEntity*, CPhysSaveRestoreBlockHandler::CEntityRestoreSet*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CBaseEntity*, CPhysSaveRestoreBlockHandler::CEntityRestoreSet*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel

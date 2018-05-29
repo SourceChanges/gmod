@@ -7,7 +7,7 @@ U access@@GLIBC_2.0
 t addchar
 t add_fdes
 t addintlen
-d adds.8619
+d adds.8628
 t addstr
 t adjuststack.isra.0.part.1
 t argv2int
@@ -84,7 +84,7 @@ U clock@@GLIBC_2.0
 U closedir@@GLIBC_2.0
 t close_state
 b colorcorrection
-b completed.6591
+b completed.6600
 t const_gc
 t const_num
 U cosh@@GLIBC_2.0
@@ -1340,7 +1340,7 @@ T lua_yield
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
-b marker.8357
+b marker.8366
 t match
 t matchbracketclass
 t match_class
@@ -1377,7 +1377,7 @@ t narrow_stripov.constprop.2
 t newtab
 t noconflict.isra.29
 b object_mutex
-b once_regsizes.8769
+b once_regsizes.8778
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
@@ -1569,11 +1569,11 @@ U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 b studiorender
-b subs.8620
+b subs.8629
 U swprintf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
 U tanh@@GLIBC_2.0
-b terminator.8463
+b terminator.8472
 U ThreadGetCurrentId
 U ThreadInMainThread
 U ThreadInterlockedAssignIf
