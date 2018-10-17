@@ -1091,6 +1091,7 @@ U std::string::replace(unsigned int, unsigned int, char const*, unsigned int)@@G
 U std::string::reserve(unsigned int)@@GLIBCXX_3.4
 U std::string::_M_mutate(unsigned int, unsigned int, unsigned int)@@GLIBCXX_3.4
 U std::string::push_back(char)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@@GLIBCXX_3.4
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int)@@GLIBCXX_3.4

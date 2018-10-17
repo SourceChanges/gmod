@@ -735,7 +735,7 @@ r crc_table
 t createAggContext.isra.319
 t createCollation
 T CreateInterface
-r CSWTCH.1010
+r CSWTCH.1011
 r CSWTCH.1067
 r CSWTCH.1069
 r CSWTCH.1123
@@ -744,9 +744,9 @@ r CSWTCH.1199
 r CSWTCH.1201
 r CSWTCH.1208
 r CSWTCH.1209
-r CSWTCH.1260
-r CSWTCH.1272
+r CSWTCH.1261
 r CSWTCH.1273
+r CSWTCH.1274
 r CSWTCH.1413
 r CSWTCH.1469
 r CSWTCH.1497
@@ -758,7 +758,7 @@ r CSWTCH.1639
 r CSWTCH.1673
 r CSWTCH.1674
 r CSWTCH.1675
-r CSWTCH.1767
+r CSWTCH.1768
 r CSWTCH.2009
 r CSWTCH.2011
 r CSWTCH.2013
@@ -1459,7 +1459,6 @@ t _GLOBAL__sub_I_g_UserMessageManager
 t _GLOBAL__sub_I_g_vecAttackDir
 t _GLOBAL__sub_I_Hasher.cpp
 t _GLOBAL__sub_I_hl1_debug_sentence_volume
-t _GLOBAL__sub_I_hl1_npc_turret.cpp
 t _GLOBAL__sub_I_hl2_ai_network.cpp
 t _GLOBAL__sub_I_hl2_episodic
 t _GLOBAL__sub_I_Human_Hull
@@ -1897,6 +1896,7 @@ t _GLOBAL__sub_I__ZN15CEnvEntityMaker9m_DataMapE
 t _GLOBAL__sub_I__ZN15CFlexManipulate9m_DataMapE
 t _GLOBAL__sub_I__ZN15CFuncMoveLinear9m_DataMapE
 t _GLOBAL__sub_I__ZN15CLuaEntityClassC2EPKciPFvvES1_
+t _GLOBAL__sub_I__ZN15CNPC_BaseTurret9m_DataMapE
 t _GLOBAL__sub_I__ZN15CParticleSystem14GetServerClassEv
 t _GLOBAL__sub_I__ZN15CPlayerResource14GetServerClassEv
 t _GLOBAL__sub_I__ZN15CPointSpotlight9m_DataMapE
@@ -2548,36 +2548,36 @@ t .L230
 t .L231
 t .L232
 t .L233
+t .L2396
+t .L2399
 t .L24
-t .L2424
-t .L2427
-t .L2428
-t .L2429
-t .L2431
-t .L2432
-t .L2433
-t .L2434
+t .L2400
+t .L2401
+t .L2403
+t .L2404
+t .L2405
+t .L2406
+t .L2474
+t .L2475
+t .L2477
+t .L2478
+t .L2479
+t .L2480
+t .L2481
+t .L2490
+t .L2491
+t .L2493
+t .L2494
+t .L2495
+t .L2496
 t .L25
-t .L2502
-t .L2503
-t .L2505
-t .L2506
-t .L2507
-t .L2508
-t .L2509
-t .L2518
 t .L2519
-t .L2521
-t .L2522
-t .L2523
-t .L2524
-t .L2547
 t .L26
 t .L27
+t .L278
 t .L28
-t .L282
 t .L29
-t .L299
+t .L295
 t .L30
 t .L31
 t .L32
@@ -2647,19 +2647,19 @@ t .L488
 t .L489
 t .L490
 t .L491
+t .L491
 t .L492
 t .L493
 t .L494
+t .L494
+t .L495
 t .L496
+t .L496
+t .L497
 t .L498
+t .L499
+t .L500
 t .L501
-t .L502
-t .L503
-t .L504
-t .L505
-t .L506
-t .L507
-t .L508
 t .L51
 t .L523
 t .L524
@@ -2676,20 +2676,20 @@ t .L57
 t .L58
 t .L589
 t .L59
+t .L593
+t .L596
+t .L597
+t .L598
+t .L599
 t .L60
 t .L60
 t .L600
+t .L601
+t .L602
 t .L603
-t .L604
-t .L605
-t .L606
-t .L607
-t .L608
-t .L609
 t .L61
 t .L61
 t .L61
-t .L610
 t .L614
 t .L616
 t .L617
@@ -2708,8 +2708,8 @@ t .L70
 t .L71
 t .L739
 t .L740
-t .L790
-t .L806
+t .L783
+t .L799
 t .L874
 t .L876
 t .L877
@@ -3590,6 +3590,7 @@ b sk_metropolice_stitch_behind_hitcount
 b sk_metropolice_stitch_distance
 b sk_metropolice_stitch_reaction
 b sk_metropolice_stitch_tight_hitcount
+b sk_miniturret_health
 b sk_nihilanth_health
 b sk_nihilanth_zap
 b sk_npc_arm
@@ -3648,6 +3649,7 @@ b sk_rollermine_vehicle_intercept
 b sk_satchel_radius
 b sk_scanner_dmg_dive
 b sk_scanner_health
+b sk_sentry_health
 b sk_smg1_grenade_radius
 b sk_stalker_health
 b sk_stalker_melee_dmg
@@ -3657,6 +3659,7 @@ b sk_strider_num_missiles1
 b sk_strider_num_missiles2
 b sk_strider_num_missiles3
 b sk_tripmine_radius
+b sk_turret_health
 b sk_vortigaunt_armor_charge
 b sk_vortigaunt_armor_charge_per_token
 b sk_vortigaunt_dmg_claw
@@ -5287,6 +5290,8 @@ t datamap_t* DataMapInit<CNPC_HGrunt>(CNPC_HGrunt*)
 t datamap_t* DataMapInit<CNPC_Hornet>(CNPC_Hornet*)
 t datamap_t* DataMapInit<CNPC_Hunter>(CNPC_Hunter*)
 t datamap_t* DataMapInit<CNPC_Puppet>(CNPC_Puppet*)
+t datamap_t* DataMapInit<CNPC_Sentry>(CNPC_Sentry*)
+t datamap_t* DataMapInit<CNPC_Turret>(CNPC_Turret*)
 t datamap_t* DataMapInit<CPathCorner>(CPathCorner*)
 t datamap_t* DataMapInit<CPhysImpact>(CPhysImpact*)
 t datamap_t* DataMapInit<CPhysLength>(CPhysLength*)
@@ -5546,6 +5551,7 @@ t datamap_t* DataMapInit<CItem_AmmoCrate>(CItem_AmmoCrate*)
 t datamap_t* DataMapInit<CItem_ItemCrate>(CItem_ItemCrate*)
 t datamap_t* DataMapInit<CMathColorBlend>(CMathColorBlend*)
 t datamap_t* DataMapInit<CNPC_AlienGrunt>(CNPC_AlienGrunt*)
+t datamap_t* DataMapInit<CNPC_BaseTurret>(CNPC_BaseTurret*)
 t datamap_t* DataMapInit<CNPC_BaseZombie>(CNPC_BaseZombie*)
 t datamap_t* DataMapInit<CNPC_Controller>(CNPC_Controller*)
 t datamap_t* DataMapInit<CNPC_DeadBarney>(CNPC_DeadBarney*)
@@ -6043,7 +6049,6 @@ t DescribeAxis(int)
 t EnableNoClip(CBasePlayer*)
 t Entity____eq(ILuaInterface*)
 t Entity__Fire(ILuaInterface*)
-t Entity____gc(ILuaInterface*)
 t GetBodygroup(CStudioHdr*, int, int)
 t Get_CNavArea(int)
 t Get_CUserCmd(int)
@@ -6967,6 +6972,7 @@ t MoveToRandomSpot(CBaseEntity*)
 t bool NavAreaBuildPath<CLuaPathCost>(CNavArea*, CNavArea*, Vector const*, CLuaPathCost&, CNavArea**, float, int, bool)
 t bool NavAreaBuildPath<CSimpleBotPathCost>(CNavArea*, CNavArea*, Vector const*, CSimpleBotPathCost&, CNavArea**, float, int, bool)
 t bool NavAreaBuildPath<IPathCost const>(CNavArea*, CNavArea*, Vector const*, IPathCost const&, CNavArea**, float, int, bool)
+t NetMessageFailed(char const*, bool)
 t NPC__Disposition(ILuaInterface*)
 t NPCEventResponse()
 t NPC__GetActivity(ILuaInterface*)
@@ -7323,9 +7329,11 @@ t ClassifySniperSpot(HidingSpot*)
 t ClientGamePrecache()
 t CMoveData__KeyDown(ILuaInterface*)
 t CNavArea__Contains(ILuaInterface*)
+t CNavArea__GetPlace(ILuaInterface*)
 t CNavArea__GetSizeX(ILuaInterface*)
 t CNavArea__GetSizeY(ILuaInterface*)
 t CNavArea__IsClosed(ILuaInterface*)
+t CNavArea__SetPlace(ILuaInterface*)
 t CNavLadder__GetTop(ILuaInterface*)
 t CNavLadder__Remove(ILuaInterface*)
 t CommandNavDontHide()
@@ -8364,7 +8372,6 @@ t Entity__BoundingRadius(ILuaInterface*)
 t Entity__DeleteOnRemove(ILuaInterface*)
 t Entity____eq__Redirect(lua_State*)
 t Entity__Fire__Redirect(lua_State*)
-t Entity____gc__Redirect(lua_State*)
 t Entity__GetAbsVelocity(ILuaInterface*)
 t Entity__GetAttachments(ILuaInterface*)
 t Entity__GetHitBoxCount(ILuaInterface*)
@@ -8405,6 +8412,7 @@ t GetHintTypeDescription(CAI_Hint*)
 t GetNoEscCharConversion()
 t GetParticleSystemIndex(char const*)
 t GetSoundSaveRestoreOps()
+t GetWindspeedAtLocation(Vector const&)
 t GetZoomOwnerDesiredFOV(CBaseEntity*)
 t HapticMsg_MeleeContact(CBasePlayer*)
 t InstancedScriptedScene(CBaseFlex*, char const*, CHandle<CBaseEntity>*, float, bool, AI_Response*, bool, IRecipientFilter*)
@@ -9273,6 +9281,7 @@ t PhysObj__GetAABB__Redirect(lua_State*)
 t PhysObj__GetMass__Redirect(lua_State*)
 t PhysObj__GetMesh__Redirect(lua_State*)
 t PhysObj__GetName__Redirect(lua_State*)
+t PhysObj__GetPositionMatrix(ILuaInterface*)
 t PhysObj__IsValid__Redirect(lua_State*)
 t PhysObj__SetMass__Redirect(lua_State*)
 t Player__AddFrags__Redirect(lua_State*)
@@ -9315,6 +9324,7 @@ t real__GLobal__WorldToLocal(ILuaInterface*)
 t real__sound__GetProperties(ILuaInterface*)
 t real__system__BatteryPower(ILuaInterface*)
 t real__util__DistanceToLine(ILuaInterface*)
+t real__util__GetSurfaceData(ILuaInterface*)
 t real__util__IsValidRagdoll(ILuaInterface*)
 t real__util__ParticleTracer(ILuaInterface*)
 t RemoveVPhysicsStateWatcher(CBaseEntity*, CBaseEntity*)
@@ -9383,6 +9393,7 @@ t CRecipientFilter__RemovePVS(ILuaInterface*)
 t CSoundPatch____gc__Redirect(lua_State*)
 t CSoundPatch__Play__Redirect(lua_State*)
 t CSoundPatch__Stop__Redirect(lua_State*)
+t CTakeDamageInfo____tostring(ILuaInterface*)
 t CUserCmd__KeyDown__Redirect(lua_State*)
 t Entity__AddEFlags__Redirect(lua_State*)
 t Entity__ClearPoseParameters(ILuaInterface*)
@@ -9558,9 +9569,11 @@ t CMoveData__KeyDown__Redirect(lua_State*)
 t CMoveData__SetImpulseCommand(ILuaInterface*)
 t CMoveData__SetMaxClientSpeed(ILuaInterface*)
 t CNavArea__Contains__Redirect(lua_State*)
+t CNavArea__GetPlace__Redirect(lua_State*)
 t CNavArea__GetSizeX__Redirect(lua_State*)
 t CNavArea__GetSizeY__Redirect(lua_State*)
 t CNavArea__IsClosed__Redirect(lua_State*)
+t CNavArea__SetPlace__Redirect(lua_State*)
 t CNavLadder__GetTopBehindArea(ILuaInterface*)
 t CNavLadder__GetTop__Redirect(lua_State*)
 t CNavLadder__Remove__Redirect(lua_State*)
@@ -10205,6 +10218,7 @@ t Entity__GetSolidFlags__Redirect(lua_State*)
 t Entity__GetSpawnFlags__Redirect(lua_State*)
 t Entity__GetTouchTrace__Redirect(lua_State*)
 t Entity__GetWorkshopID__Redirect(lua_State*)
+t Entity__GetWorldTransformMatrix(ILuaInterface*)
 t Entity__HasSpawnFlags__Redirect(lua_State*)
 t Entity__MapCreationID__Redirect(lua_State*)
 t Entity__PointAtEntity__Redirect(lua_State*)
@@ -10763,6 +10777,7 @@ t PathFollower__FirstSegment__Redirect(lua_State*)
 t PathFollower__GetHindrance__Redirect(lua_State*)
 t PathFollower__MoveCursorTo__Redirect(lua_State*)
 t PhysObj__ApplyTorqueCenter__Redirect(lua_State*)
+t PhysObj__GetPositionMatrix__Redirect(lua_State*)
 t Player__AnimRestartGesture__Redirect(lua_State*)
 t Player__GetViewPunchAngles__Redirect(lua_State*)
 t Player__IsListenServerHost__Redirect(lua_State*)
@@ -10796,6 +10811,7 @@ t CRecipientFilter__AddPlayer__Redirect(lua_State*)
 t CRecipientFilter__AddRecipientsByTeam(ILuaInterface*)
 t CRecipientFilter__RemovePAS__Redirect(lua_State*)
 t CRecipientFilter__RemovePVS__Redirect(lua_State*)
+t CTakeDamageInfo____tostring__Redirect(lua_State*)
 t Entity__ClearPoseParameters__Redirect(lua_State*)
 t Entity__DispatchTraceAttack__Redirect(lua_State*)
 t Entity__FindBodygroupByName__Redirect(lua_State*)
@@ -10980,6 +10996,7 @@ t Entity__GetLocalAngularVelocity__Redirect(lua_State*)
 t Entity__GetManipulateBoneAngles__Redirect(lua_State*)
 t Entity__GetManipulateBoneJiggle__Redirect(lua_State*)
 t Entity__GetSequenceActivityName__Redirect(lua_State*)
+t Entity__GetWorldTransformMatrix__Redirect(lua_State*)
 t Entity__SetCustomCollisionCheck__Redirect(lua_State*)
 t Entity__SetLocalAngularVelocity__Redirect(lua_State*)
 t Entity__SetRagdollBuildFunction__Redirect(lua_State*)
@@ -11333,6 +11350,9 @@ b guard variable for datamap_t* DataMapInit<CNPC_Hornet>(CNPC_Hornet*)::dataDesc
 b guard variable for datamap_t* DataMapInit<CNPC_Hunter>(CNPC_Hunter*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CNPC_Hunter>(CNPC_Hunter*)::dataDesc
 b guard variable for datamap_t* DataMapInit<CNPC_Puppet>(CNPC_Puppet*)::nameHolder
+b guard variable for datamap_t* DataMapInit<CNPC_Sentry>(CNPC_Sentry*)::nameHolder
+b guard variable for datamap_t* DataMapInit<CNPC_Sentry>(CNPC_Sentry*)::dataDesc
+b guard variable for datamap_t* DataMapInit<CNPC_Turret>(CNPC_Turret*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CPathCorner>(CPathCorner*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CPathCorner>(CPathCorner*)::dataDesc
 b guard variable for datamap_t* DataMapInit<CPhysImpact>(CPhysImpact*)::nameHolder
@@ -11720,6 +11740,8 @@ b guard variable for datamap_t* DataMapInit<CItem_ItemCrate>(CItem_ItemCrate*)::
 b guard variable for datamap_t* DataMapInit<CMathColorBlend>(CMathColorBlend*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CMathColorBlend>(CMathColorBlend*)::dataDesc
 b guard variable for datamap_t* DataMapInit<CNPC_AlienGrunt>(CNPC_AlienGrunt*)::nameHolder
+b guard variable for datamap_t* DataMapInit<CNPC_BaseTurret>(CNPC_BaseTurret*)::nameHolder
+b guard variable for datamap_t* DataMapInit<CNPC_BaseTurret>(CNPC_BaseTurret*)::dataDesc
 b guard variable for datamap_t* DataMapInit<CNPC_BaseZombie>(CNPC_BaseZombie*)::nameHolder
 b guard variable for datamap_t* DataMapInit<CNPC_BaseZombie>(CNPC_BaseZombie*)::dataDesc
 b guard variable for datamap_t* DataMapInit<CNPC_Controller>(CNPC_Controller*)::nameHolder
@@ -16102,6 +16124,7 @@ b s_EmptyConVar
 t SetMinMaxSize(CBaseEntity*, Vector const&, Vector const&)
 b s_GameSystems
 b s_HL2EventLog
+b s_iSquadIndex
 b s_Microphones
 d s_nReplaceCtr
 b s_nullVariant
@@ -16194,6 +16217,8 @@ r MAX_PROBE_DIST
 b momentary_door
 b monster_barney
 b monster_mortar
+b monster_sentry
+b monster_turret
 b monster_zombie
 b move_keyframed
 b nav_begin_area
@@ -16338,7 +16363,7 @@ b player_speedmod
 b point_spotlight
 b prop_stickybomb
 r _ps_cephes_FOPI
-t PushHidingSpots(ILuaInterface*, CNavArea*, int) [clone .isra.42]
+t PushHidingSpots(ILuaInterface*, CNavArea*, int) [clone .isra.44]
 t report_entities(CCommand const&)
 b s_b3DNowEnabled
 d s_BannedConvars
@@ -16595,9 +16620,9 @@ r s_pChunkModelName
 r s_pChunkModelName
 b s_SteamAPIContext
 t stringtabletotals(CCommand const&)
-b s_vecWindVelocity
 b sv_ladder_useonly
 b sv_thinktimecheck
+b s_windControllers
 b trigger_proximity
 b vort_charge_token
 b water_lod_control
@@ -16672,6 +16697,7 @@ b LL_Factory_navmesh
 b LL_Factory_physenv
 b logic_multicompare
 b mod_load_showstall
+b monster_miniturret
 b nav_begin_shift_xy
 t nav_select_orphans(CCommand const&)
 b nav_set_place_mode
@@ -16873,7 +16899,6 @@ b dump_globals_command
 t dumpstringtables_new(CCommand const&)
 b Entity___eq__Factory
 b Entity_Fire__Factory
-b Entity___gc__Factory
 b env_entity_dissolver
 b env_headcrabcanister
 b env_projectedtexture
@@ -17909,9 +17934,11 @@ b ai_npc_eventresponsesystem
 t ai_set_move_height_epsilon(CCommand const&)
 b CMoveData_KeyDown__Factory
 b CNavArea_Contains__Factory
+b CNavArea_GetPlace__Factory
 b CNavArea_GetSizeX__Factory
 b CNavArea_GetSizeY__Factory
 b CNavArea_IsClosed__Factory
+b CNavArea_SetPlace__Factory
 b CNavLadder_GetTop__Factory
 b CNavLadder_Remove__Factory
 b ConVar_GetDefault__Factory
@@ -18296,6 +18323,7 @@ t redir__GLobal__WorldToLocal(lua_State*)
 t redir__sound__GetProperties(lua_State*)
 t redir__system__BatteryPower(lua_State*)
 t redir__util__DistanceToLine(lua_State*)
+t redir__util__GetSurfaceData(lua_State*)
 t redir__util__IsValidRagdoll(lua_State*)
 t redir__util__ParticleTracer(lua_State*)
 b report_simthinklist_command
@@ -18604,6 +18632,7 @@ b fectory__game__SetGlobalState
 b fectory__sound__GetProperties
 b fectory__system__BatteryPower
 b fectory__util__DistanceToLine
+b fectory__util__GetSurfaceData
 b fectory__util__IsValidRagdoll
 b fectory__util__ParticleTracer
 b filter_activator_mass_greater
@@ -19286,6 +19315,7 @@ b PathFollower_FirstSegment__Factory
 b PathFollower_GetHindrance__Factory
 b PathFollower_MoveCursorTo__Factory
 b PhysObj_ApplyTorqueCenter__Factory
+b PhysObj_GetPositionMatrix__Factory
 b Player_AnimRestartGesture__Factory
 b Player_GetViewPunchAngles__Factory
 b Player_IsListenServerHost__Factory
@@ -19317,6 +19347,7 @@ b CNavLadder_SetTopRightArea__Factory
 b CRecipientFilter_AddPlayer__Factory
 b CRecipientFilter_RemovePAS__Factory
 b CRecipientFilter_RemovePVS__Factory
+b CTakeDamageInfo___tostring__Factory
 b Entity_ClearPoseParameters__Factory
 b Entity_DispatchTraceAttack__Factory
 b Entity_FindBodygroupByName__Factory
@@ -19513,6 +19544,7 @@ b Entity_GetLocalAngularVelocity__Factory
 b Entity_GetManipulateBoneAngles__Factory
 b Entity_GetManipulateBoneJiggle__Factory
 b Entity_GetSequenceActivityName__Factory
+b Entity_GetWorldTransformMatrix__Factory
 b Entity_SetCustomCollisionCheck__Factory
 b Entity_SetLocalAngularVelocity__Factory
 b Entity_SetRagdollBuildFunction__Factory
@@ -20361,6 +20393,7 @@ t CLuaObject::UnReference()
 t CLuaObject::GetMemberInt(char const*, int)
 t CLuaObject::GetMemberStr(float, char const*)
 t CLuaObject::GetMemberStr(char const*, char const*)
+t CLuaObject::GetStringLen(unsigned int*)
 t CLuaObject::RemoveMember(float)
 t CLuaObject::RemoveMember(char const*)
 t CLuaObject::SetFromStack(int)
@@ -20715,16 +20748,20 @@ t CSENT_anim::AcceptInput(char const*, CBaseEntity*, CBaseEntity*, variant_t, in
 t CSENT_anim::ImpactTrace(CGameTrace*, int, char const*)
 t CSENT_anim::ScriptThink()
 t CSENT_anim::OnTakeDamage(CTakeDamageInfo const&)
+t CSENT_anim::OnPhysGunDrop(CBasePlayer*, PhysGunDrop_t)
 t CSENT_anim::TestCollision(Ray_t const&, unsigned int, CGameTrace&)
 t CSENT_anim::GetDataDescMap()
 t CSENT_anim::GetServerClass()
 t CSENT_anim::UpdateOnRemove()
 t CSENT_anim::VPhysicsUpdate(IPhysicsObject*)
 t CSENT_anim::HandleAnimEvent(animevent_t*)
+t CSENT_anim::OnPhysGunPickup(CBasePlayer*, PhysGunPickup_t)
 t CSENT_anim::GetLuaEntityType()
 t CSENT_anim::GetLuaScriptName()
 d CSENT_anim::m_pClassSendTable
 t CSENT_anim::VPhysicsCollision(int, gamevcollisionevent_t*)
+t CSENT_anim::HasPhysicsAttacker(float)
+t CSENT_anim::SetPhysicsAttacker(CBasePlayer*, float)
 t CSENT_anim::UpdateTransmitState()
 t CSENT_anim::StopMotionController()
 t CSENT_anim::StartMotionController()
@@ -21090,6 +21127,9 @@ t CUtlMemory<UtlLinkedListElem_t<CHandle<CBaseAnimating>, unsigned short>, unsig
 t CUtlMemory<UtlLinkedListElem_t<CHandle<CBaseAnimating>, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<watcher_t, unsigned short>::List_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlLinkedListElem_t<CEnvWindShared::WindAveEvent_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<UtlLinkedListElem_t<CEnvWindShared::WindVariationEvent_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<UtlLinkedListElem_t<CEnvWindShared*, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CDamageModifier*, int>, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CFuncNavBlocker*, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CBaseCombatWeapon*, unsigned short>, unsigned short>::Grow(int)
@@ -23367,7 +23407,7 @@ t CBaseEntity::VPhysicsInitShadow(bool, bool, solid_t*)
 t CBaseEntity::VPhysicsInitStatic()
 t CBaseEntity::VPhysicsSwapObject(IPhysicsObject*)
 t CBaseEntity::VPhysicsTakeDamage(CTakeDamageInfo const&)
-t CBaseEntity::VPhysicsTakeDamage(CTakeDamageInfo const&) [clone .part.90]
+t CBaseEntity::VPhysicsTakeDamage(CTakeDamageInfo const&) [clone .part.92]
 t CBaseEntity::WakeRestingObjects()
 t CBaseEntity::AI_GetClosestPlayer()
 t CBaseEntity::ClassMatchesComplex(char const*)
@@ -24664,7 +24704,7 @@ t CNPC_Barney::~CNPC_Barney()
 t CNPC_Barney::~CNPC_Barney()
 t CNPC_HGrunt::DeathSound(CTakeDamageInfo const&)
 t CNPC_HGrunt::FOkToSpeak()
-t CNPC_HGrunt::FOkToSpeak() [clone .part.32]
+t CNPC_HGrunt::FOkToSpeak() [clone .part.31]
 t CNPC_HGrunt::GetBaseMap()
 t CNPC_HGrunt::MaxYawSpeed()
 t CNPC_HGrunt::TraceAttack(CTakeDamageInfo const&, Vector const&, CGameTrace*, CDmgAccumulator*)
@@ -24922,6 +24962,29 @@ d CNPC_Puppet::m_DataMap
 t CNPC_Puppet::~CNPC_Puppet()
 t CNPC_Puppet::~CNPC_Puppet()
 t CNPC_Puppet::~CNPC_Puppet()
+t CNPC_Sentry::GetBaseMap()
+t CNPC_Sentry::SentryTouch(CBaseEntity*)
+t CNPC_Sentry::Event_Killed(CTakeDamageInfo const&)
+t CNPC_Sentry::GetDataDescMap()
+t CNPC_Sentry::OnTakeDamage_Alive(CTakeDamageInfo const&)
+t CNPC_Sentry::Shoot(Vector&, Vector&)
+t CNPC_Sentry::Spawn()
+t CNPC_Sentry::Precache()
+d CNPC_Sentry::m_DataMap
+t CNPC_Sentry::~CNPC_Sentry()
+t CNPC_Sentry::~CNPC_Sentry()
+t CNPC_Sentry::~CNPC_Sentry()
+t CNPC_Turret::GetBaseMap()
+t CNPC_Turret::SpinUpCall()
+t CNPC_Turret::SpinDownCall()
+t CNPC_Turret::GetDataDescMap()
+t CNPC_Turret::Shoot(Vector&, Vector&)
+t CNPC_Turret::Spawn()
+t CNPC_Turret::Precache()
+d CNPC_Turret::m_DataMap
+t CNPC_Turret::~CNPC_Turret()
+t CNPC_Turret::~CNPC_Turret()
+t CNPC_Turret::~CNPC_Turret()
 t CNullEntity::Spawn()
 t CNullEntity::~CNullEntity()
 t CNullEntity::~CNullEntity()
@@ -29608,6 +29671,7 @@ t CNPC_Houndeye::SetActivity(Activity)
 t CNPC_Houndeye::SonicAttack()
 t CNPC_Houndeye::WarmUpSound()
 t CNPC_Houndeye::Event_Killed(CTakeDamageInfo const&)
+t CNPC_Houndeye::SquadRecruit(int, int)
 t CNPC_Houndeye::FLSoundVolume(CSound*)
 t CNPC_Houndeye::LoadSchedules()
 t CNPC_Houndeye::SquadSlotName(int)
@@ -29626,6 +29690,8 @@ b CNPC_Houndeye::gm_SquadSlotIdSpace
 t CNPC_Houndeye::InitCustomSchedules()
 t CNPC_Houndeye::ShouldGoToIdleState()
 d CNPC_Houndeye::gm_pszErrorClassName
+t CNPC_Houndeye::InnateRange1MaxRange()
+t CNPC_Houndeye::InnateRange1MinRange()
 t CNPC_Houndeye::GetSchedulingErrorName()
 t CNPC_Houndeye::RangeAttack1Conditions(float, float)
 t CNPC_Houndeye::GetClassScheduleIdSpace()
@@ -29634,6 +29700,7 @@ t CNPC_Houndeye::Spawn()
 t CNPC_Houndeye::RunTask(Task_t const*)
 t CNPC_Houndeye::Classify()
 t CNPC_Houndeye::Precache()
+t CNPC_Houndeye::StartNPC()
 t CNPC_Houndeye::IdleSound()
 d CNPC_Houndeye::m_DataMap
 t CNPC_Houndeye::PainSound(CTakeDamageInfo const&)
@@ -31344,6 +31411,12 @@ t CEntityFactory<CNPC_Pigeon>::Destroy(IServerNetworkable*)
 t CEntityFactory<CNPC_Puppet>::GetEntitySize()
 t CEntityFactory<CNPC_Puppet>::Create(char const*)
 t CEntityFactory<CNPC_Puppet>::Destroy(IServerNetworkable*)
+t CEntityFactory<CNPC_Sentry>::GetEntitySize()
+t CEntityFactory<CNPC_Sentry>::Create(char const*)
+t CEntityFactory<CNPC_Sentry>::Destroy(IServerNetworkable*)
+t CEntityFactory<CNPC_Turret>::GetEntitySize()
+t CEntityFactory<CNPC_Turret>::Create(char const*)
+t CEntityFactory<CNPC_Turret>::Destroy(IServerNetworkable*)
 t CEntityFactory<CNullEntity>::GetEntitySize()
 t CEntityFactory<CNullEntity>::Create(char const*)
 t CEntityFactory<CNullEntity>::Destroy(IServerNetworkable*)
@@ -32106,6 +32179,9 @@ t CEntityFactory<CNPC_DeadBarney>::Destroy(IServerNetworkable*)
 t CEntityFactory<CNPC_DeadHGrunt>::GetEntitySize()
 t CEntityFactory<CNPC_DeadHGrunt>::Create(char const*)
 t CEntityFactory<CNPC_DeadHGrunt>::Destroy(IServerNetworkable*)
+t CEntityFactory<CNPC_MiniTurret>::GetEntitySize()
+t CEntityFactory<CNPC_MiniTurret>::Create(char const*)
+t CEntityFactory<CNPC_MiniTurret>::Destroy(IServerNetworkable*)
 t CEntityFactory<CNPC_RollerMine>::GetEntitySize()
 t CEntityFactory<CNPC_RollerMine>::Create(char const*)
 t CEntityFactory<CNPC_RollerMine>::Destroy(IServerNetworkable*)
@@ -33205,6 +33281,7 @@ t CEnvSoundscape::CEnvSoundscape()
 t CEnvSoundscape::~CEnvSoundscape()
 t CEnvSoundscape::~CEnvSoundscape()
 t CEnvSoundscape::~CEnvSoundscape()
+t CEnvWindShared::UpdateTreeSway(float)
 t CEnvWindShared::UpdateWindSound(float)
 t CEnvWindShared::NetworkStateChanged(void*)
 t CEnvWindShared::NetworkStateChanged()
@@ -33343,6 +33420,7 @@ t CLuaGameObject::GetMemberVector(int)
 t CLuaGameObject::GetMemberVector(char const*, Vector const*)
 t CLuaGameObject::SetMemberEntity(float, CBaseEntity*)
 t CLuaGameObject::SetMemberEntity(char const*, CBaseEntity*)
+t CLuaGameObject::SetMemberVector(float, Vector*)
 t CLuaGameObject::SetMemberVector(char const*, Vector*)
 t CLuaGameObject::SetMemberVector(char const*, Vector&)
 t CLuaGameObject::SetMemberPhysObject(char const*, IPhysicsObject*)
@@ -34251,6 +34329,11 @@ t CUtlLinkedList<CCommandBuffer::Command_t, int, true, int, CUtlFixedMemory<UtlL
 t CUtlLinkedList<CCommandBuffer::Command_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CCommandBuffer::Command_t, int> > >::AllocInternal(bool)
 t CUtlLinkedList<CCommandBuffer::Command_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CCommandBuffer::Command_t, int> > >::Unlink(int)
 t CUtlLinkedList<CCommandBuffer::Command_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CCommandBuffer::Command_t, int> > >::RemoveAll()
+t CUtlLinkedList<CEnvWindShared::WindAveEvent_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CEnvWindShared::WindAveEvent_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlLinkedList<CEnvWindShared::WindVariationEvent_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CEnvWindShared::WindVariationEvent_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlLinkedList<CEnvWindShared*, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CEnvWindShared*, unsigned short>, unsigned short> >::Unlink(unsigned short)
+t CUtlLinkedList<CEnvWindShared*, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CEnvWindShared*, unsigned short>, unsigned short> >::~CUtlLinkedList()
+t CUtlLinkedList<CEnvWindShared*, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CEnvWindShared*, unsigned short>, unsigned short> >::~CUtlLinkedList()
 t CUtlLinkedList<CDamageModifier*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CDamageModifier*, int>, int> >::Unlink(int)
 t CUtlLinkedList<CDamageModifier*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CDamageModifier*, int>, int> >::RemoveAll()
 t CUtlLinkedList<CFuncNavBlocker*, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CFuncNavBlocker*, unsigned short>, unsigned short> >::InsertBefore(unsigned short, CFuncNavBlocker* const&)
@@ -35671,6 +35754,39 @@ t CNPC_AlienGrunt::StartTask(Task_t const*)
 t CNPC_AlienGrunt::~CNPC_AlienGrunt()
 t CNPC_AlienGrunt::~CNPC_AlienGrunt()
 t CNPC_AlienGrunt::~CNPC_AlienGrunt()
+t CNPC_BaseTurret::GetBaseMap()
+t CNPC_BaseTurret::Initialize()
+t CNPC_BaseTurret::MoveTurret()
+t CNPC_BaseTurret::SpinUpCall()
+t CNPC_BaseTurret::ActiveThink()
+t CNPC_BaseTurret::SearchThink()
+t CNPC_BaseTurret::TraceAttack(CTakeDamageInfo const&, Vector const&, CGameTrace*, CDmgAccumulator*)
+t CNPC_BaseTurret::TurretDeath()
+t CNPC_BaseTurret::Event_Killed(CTakeDamageInfo const&)
+t CNPC_BaseTurret::OnTakeDamage(CTakeDamageInfo const&)
+t CNPC_BaseTurret::SpinDownCall()
+t CNPC_BaseTurret::InputActivate(inputdata_t&)
+t CNPC_BaseTurret::SetTurretAnim(TURRET_ANIM)
+t CNPC_BaseTurret::GetDataDescMap()
+t CNPC_BaseTurret::AutoSearchThink()
+t CNPC_BaseTurret::InputDeactivate(inputdata_t&)
+t CNPC_BaseTurret::ShouldFadeOnDeath()
+t CNPC_BaseTurret::OnTakeDamage_Alive(CTakeDamageInfo const&)
+t CNPC_BaseTurret::Ping()
+t CNPC_BaseTurret::EyeOn()
+t CNPC_BaseTurret::Shoot(Vector&, Vector&)
+t CNPC_BaseTurret::Spawn()
+t CNPC_BaseTurret::Deploy()
+t CNPC_BaseTurret::EyeOff()
+t CNPC_BaseTurret::Retire()
+t CNPC_BaseTurret::Classify()
+t CNPC_BaseTurret::Precache()
+d CNPC_BaseTurret::m_DataMap
+t CNPC_BaseTurret::ShouldGib(CTakeDamageInfo const&)
+t CNPC_BaseTurret::TurretUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)
+t CNPC_BaseTurret::~CNPC_BaseTurret()
+t CNPC_BaseTurret::~CNPC_BaseTurret()
+t CNPC_BaseTurret::~CNPC_BaseTurret()
 t CNPC_BaseZombie::BodyTarget(Vector const&, bool)
 t CNPC_BaseZombie::ClawAttack(float, int, QAngle&, Vector&, int)
 t CNPC_BaseZombie::DieChopped(CTakeDamageInfo const&)
@@ -35834,6 +35950,12 @@ d CNPC_DeadHGrunt::m_szPoses
 t CNPC_DeadHGrunt::~CNPC_DeadHGrunt()
 t CNPC_DeadHGrunt::~CNPC_DeadHGrunt()
 t CNPC_DeadHGrunt::~CNPC_DeadHGrunt()
+t CNPC_MiniTurret::Shoot(Vector&, Vector&)
+t CNPC_MiniTurret::Spawn()
+t CNPC_MiniTurret::Precache()
+t CNPC_MiniTurret::~CNPC_MiniTurret()
+t CNPC_MiniTurret::~CNPC_MiniTurret()
+t CNPC_MiniTurret::~CNPC_MiniTurret()
 t CNPC_RollerMine::CloseTouch(CBaseEntity*)
 t CNPC_RollerMine::EmbedTouch(CBaseEntity*)
 t CNPC_RollerMine::GetBaseMap()
@@ -40815,6 +40937,7 @@ t CNPC_FlockingFlyer::FPathBlocked()
 t CNPC_FlockingFlyer::SpreadFlock2()
 t CNPC_FlockingFlyer::SquadDisband()
 t CNPC_FlockingFlyer::GetDataDescMap()
+t CNPC_FlockingFlyer::UpdateOnRemove()
 t CNPC_FlockingFlyer::SpawnCommonCode()
 t CNPC_FlockingFlyer::BoidAdvanceFrame()
 t CNPC_FlockingFlyer::FlockLeaderThink()
@@ -41085,7 +41208,7 @@ t CUtlCachedFileData<CModelSoundsCache>::FileNameHandleLessFunc(CUtlCachedFileDa
 t CUtlCachedFileData<CModelSoundsCache>::Get(char const*)
 t CUtlCachedFileData<CModelSoundsCache>::Init()
 t CUtlCachedFileData<CModelSoundsCache>::Save()
-t CUtlCachedFileData<CModelSoundsCache>::Shutdown() [clone .part.271]
+t CUtlCachedFileData<CModelSoundsCache>::Shutdown() [clone .part.273]
 t CUtlCachedFileData<CModelSoundsCache>::~CUtlCachedFileData()
 t CUtlCachedFileData<CModelSoundsCache>::~CUtlCachedFileData()
 t CUtlCachedFileData<CModelSoundsCache>::~CUtlCachedFileData()
@@ -42615,10 +42738,10 @@ t CBasePlayerAnimState::~CBasePlayerAnimState()
 t CBaseVPhysicsTrigger::GetBaseMap()
 t CBaseVPhysicsTrigger::StartTouch(CBaseEntity*)
 t CBaseVPhysicsTrigger::InputEnable(inputdata_t&)
-t CBaseVPhysicsTrigger::InputEnable(inputdata_t&) [clone .part.29]
+t CBaseVPhysicsTrigger::InputEnable(inputdata_t&) [clone .part.30]
 t CBaseVPhysicsTrigger::InputToggle(inputdata_t&)
 t CBaseVPhysicsTrigger::InputDisable(inputdata_t&)
-t CBaseVPhysicsTrigger::InputDisable(inputdata_t&) [clone .part.30]
+t CBaseVPhysicsTrigger::InputDisable(inputdata_t&) [clone .part.31]
 t CBaseVPhysicsTrigger::CreateVPhysics()
 t CBaseVPhysicsTrigger::GetDataDescMap()
 t CBaseVPhysicsTrigger::UpdateOnRemove()
@@ -45583,6 +45706,8 @@ b CNPC_HGrunt_DataDescInit::g_DataMapHolder
 b CNPC_Hornet_DataDescInit::g_DataMapHolder
 b CNPC_Hunter_DataDescInit::g_DataMapHolder
 b CNPC_Puppet_DataDescInit::g_DataMapHolder
+b CNPC_Sentry_DataDescInit::g_DataMapHolder
+b CNPC_Turret_DataDescInit::g_DataMapHolder
 b CPathCorner_DataDescInit::g_DataMapHolder
 b CPhysImpact_DataDescInit::g_DataMapHolder
 b CPhysLength_DataDescInit::g_DataMapHolder
@@ -46344,6 +46469,7 @@ b CItem_AmmoCrate_DataDescInit::g_DataMapHolder
 b CItem_ItemCrate_DataDescInit::g_DataMapHolder
 b CMathColorBlend_DataDescInit::g_DataMapHolder
 b CNPC_AlienGrunt_DataDescInit::g_DataMapHolder
+b CNPC_BaseTurret_DataDescInit::g_DataMapHolder
 b CNPC_BaseZombie_DataDescInit::g_DataMapHolder
 b CNPC_Controller_DataDescInit::g_DataMapHolder
 b CNPC_DeadBarney_DataDescInit::g_DataMapHolder
@@ -48937,6 +49063,7 @@ t CNavMesh::ClearSelectedSet()
 t CNavMesh::CommandNavDelete()
 t CNavMesh::CommandNavSplice()
 t CNavMesh::CommandNavUnmark()
+t CNavMesh::GMOD_ClearPlaces()
 t CNavMesh::OnServerActivate()
 t CNavMesh::UpdateGeneration(float)
 t CNavMesh::CommandNavConnect()
@@ -50774,7 +50901,7 @@ W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, ra
 W void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator>::ParseNumber<4u, rapidjson::GenericStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator> >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator>&)
 W unsigned int rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator>::ParseHex4<rapidjson::GenericStringStream<rapidjson::UTF8<char> > >(rapidjson::GenericStringStream<rapidjson::UTF8<char> >&, unsigned int)
 W rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator>::EndArray(unsigned int)
-t rapidjson::GenericStringStream<rapidjson::UTF8<char> >::Take() [clone .isra.52]
+t rapidjson::GenericStringStream<rapidjson::UTF8<char> >::Take() [clone .isra.47]
 W rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>::Malloc(unsigned int)
 W void rapidjson::UTF8<char>::Encode<rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator>::StackStream<char> >(rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::CrtAllocator>::StackStream<char>&, unsigned int)
 W rapidjson::internal::WriteExponent(int, char*)
@@ -51291,6 +51418,7 @@ t CNPC_Strider::IsCannonTarget(CBaseEntity*) const
 t CNPC_Strider::HasCannonTarget() const
 t CPhysicsProp::GetMass() const
 t CPropAirboat::IsVehicle() const
+t CPropVehicle::IsVehicle() const
 t CSceneEntity::ValidScene() const
 t CSceneEntity::ShouldNetwork() const
 t CSpriteTrail::IsInSkybox() const
@@ -51369,7 +51497,7 @@ t CHL2MP_Player::WantsLagCompensationOnEntity(CBaseEntity const*, CUserCmd const
 t CLuaBehaviour::GetName() const
 t CNPC_BabyCrab::PhysicsSolidMaskForEntity() const
 t unsigned int CUtlHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.54] [clone .constprop.56]
-t unsigned int CUtlHashtable<CBaseEntityModelLoadProxy, empty_t, PointerHashFunctor, PointerEqualFunctor, CBaseEntity*>::DoLookup<CBaseEntity*>(CBaseEntity*, unsigned int, unsigned int*) const [clone .part.236]
+t unsigned int CUtlHashtable<CBaseEntityModelLoadProxy, empty_t, PointerHashFunctor, PointerEqualFunctor, CBaseEntity*>::DoLookup<CBaseEntity*>(CBaseEntity*, unsigned int, unsigned int*) const [clone .part.238]
 t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.48] [clone .constprop.51]
 t CWeaponPistol::GetHoldType() const
 t IntervalTimer::Now() const
@@ -51706,6 +51834,7 @@ t CNPC_PlayerCompanion::IsSilentSquadMember() const
 t CTacticalMissionZone::SelectArea(CBasePlayer*) const
 t CTacticalMissionZone::ForEachArea(IForEachNavArea&) const
 t CPropVehicleDriveable::GetVectors(Vector*, Vector*, Vector*) const
+t CPropVehicleDriveable::IsVehicle() const
 t CTraceFilterWorldOnly::GetTraceType() const
 t CBaseHL1MPCombatWeapon::IsPredicted() const
 t CBaseHL1MPCombatWeapon::GetPlayerOwner() const
@@ -52130,6 +52259,7 @@ U std::string::find(char, unsigned int) const@@GLIBCXX_3.4
 U std::string::find(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
 U std::string::rfind(char, unsigned int) const@@GLIBCXX_3.4
 U std::string::rfind(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
+U std::string::compare(unsigned int, unsigned int, char const*) const@@GLIBCXX_3.4
 U std::string::compare(char const*) const@@GLIBCXX_3.4
 U std::__basic_file<char>::is_open() const@@GLIBCXX_3.4
 U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_leak_hard()@@GLIBCXX_3.4
@@ -52161,6 +52291,7 @@ U std::string::replace(unsigned int, unsigned int, char const*, unsigned int)@@G
 U std::string::reserve(unsigned int)@@GLIBCXX_3.4
 U std::string::_M_mutate(unsigned int, unsigned int, unsigned int)@@GLIBCXX_3.4
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(unsigned int, char, std::allocator<char> const&)@@GLIBCXX_3.4
+U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned int, std::allocator<char> const&)@@GLIBCXX_3.4
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@@GLIBCXX_3.4
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int)@@GLIBCXX_3.4
@@ -53408,6 +53539,8 @@ t non-virtual thunk to CWeaponStriderBuster::PhysGunLaunchVelocity(Vector const&
 t non-virtual thunk to CWeaponStriderBuster::ShouldPuntUseLaunchForces(PhysGunForce_t)
 t non-virtual thunk to CWeaponStriderBuster::HasPreferredCarryAnglesForPlayer(CBasePlayer*)
 t non-virtual thunk to CSENT_anim::Simulate(IPhysicsMotionController*, IPhysicsObject*, float, Vector&, Vector&)
+t non-virtual thunk to CSENT_anim::OnPhysGunDrop(CBasePlayer*, PhysGunDrop_t)
+t non-virtual thunk to CSENT_anim::OnPhysGunPickup(CBasePlayer*, PhysGunPickup_t)
 t non-virtual thunk to CDynamicProp::NotifyPositionChanged(CBaseEntity*)
 t non-virtual thunk to CDynamicProp::~CDynamicProp()
 t non-virtual thunk to CDynamicProp::~CDynamicProp()
@@ -53807,6 +53940,8 @@ r typeinfo for CNPC_Hornet
 r typeinfo for CNPC_Hunter
 r typeinfo for CNPC_Pigeon
 r typeinfo for CNPC_Puppet
+r typeinfo for CNPC_Sentry
+r typeinfo for CNPC_Turret
 r typeinfo for CNullEntity
 r typeinfo for CPathCorner
 r typeinfo for CPhysImpact
@@ -54143,6 +54278,8 @@ r typeinfo for CEntityFactory<CNPC_Hornet>
 r typeinfo for CEntityFactory<CNPC_Hunter>
 r typeinfo for CEntityFactory<CNPC_Pigeon>
 r typeinfo for CEntityFactory<CNPC_Puppet>
+r typeinfo for CEntityFactory<CNPC_Sentry>
+r typeinfo for CEntityFactory<CNPC_Turret>
 r typeinfo for CEntityFactory<CNullEntity>
 r typeinfo for CEntityFactory<CPathCorner>
 r typeinfo for CEntityFactory<CPhysImpact>
@@ -54387,6 +54524,7 @@ r typeinfo for CEntityFactory<CNPC_AlienGrunt>
 r typeinfo for CEntityFactory<CNPC_Controller>
 r typeinfo for CEntityFactory<CNPC_DeadBarney>
 r typeinfo for CEntityFactory<CNPC_DeadHGrunt>
+r typeinfo for CEntityFactory<CNPC_MiniTurret>
 r typeinfo for CEntityFactory<CNPC_RollerMine>
 r typeinfo for CEntityFactory<CNPC_Vortigaunt>
 r typeinfo for CEntityFactory<CParticleSystem>
@@ -54865,10 +55003,12 @@ r typeinfo for CMemberFunctor2<CAI_Navigator*, bool (CAI_Navigator::*)(AI_NavGoa
 r typeinfo for CMemberFunctor3<CBreakableProp*, void (CBreakableProp::*)(Vector const&, Vector const&, QAngle const&), Vector, Vector, QAngle, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
 r typeinfo for CMultiplayRules
 r typeinfo for CNPC_AlienGrunt
+r typeinfo for CNPC_BaseTurret
 r typeinfo for CNPC_BaseZombie
 r typeinfo for CNPC_Controller
 r typeinfo for CNPC_DeadBarney
 r typeinfo for CNPC_DeadHGrunt
+r typeinfo for CNPC_MiniTurret
 r typeinfo for CNPC_RollerMine
 r typeinfo for CNPC_Vortigaunt
 r typeinfo for CParticleSystem
@@ -55861,6 +56001,8 @@ r typeinfo name for CNPC_Hornet
 r typeinfo name for CNPC_Hunter
 r typeinfo name for CNPC_Pigeon
 r typeinfo name for CNPC_Puppet
+r typeinfo name for CNPC_Sentry
+r typeinfo name for CNPC_Turret
 r typeinfo name for CNullEntity
 r typeinfo name for CPathCorner
 r typeinfo name for CPhysImpact
@@ -56197,6 +56339,8 @@ r typeinfo name for CEntityFactory<CNPC_Hornet>
 r typeinfo name for CEntityFactory<CNPC_Hunter>
 r typeinfo name for CEntityFactory<CNPC_Pigeon>
 r typeinfo name for CEntityFactory<CNPC_Puppet>
+r typeinfo name for CEntityFactory<CNPC_Sentry>
+r typeinfo name for CEntityFactory<CNPC_Turret>
 r typeinfo name for CEntityFactory<CNullEntity>
 r typeinfo name for CEntityFactory<CPathCorner>
 r typeinfo name for CEntityFactory<CPhysImpact>
@@ -56441,6 +56585,7 @@ r typeinfo name for CEntityFactory<CNPC_AlienGrunt>
 r typeinfo name for CEntityFactory<CNPC_Controller>
 r typeinfo name for CEntityFactory<CNPC_DeadBarney>
 r typeinfo name for CEntityFactory<CNPC_DeadHGrunt>
+r typeinfo name for CEntityFactory<CNPC_MiniTurret>
 r typeinfo name for CEntityFactory<CNPC_RollerMine>
 r typeinfo name for CEntityFactory<CNPC_Vortigaunt>
 r typeinfo name for CEntityFactory<CParticleSystem>
@@ -56919,10 +57064,12 @@ r typeinfo name for CMemberFunctor2<CAI_Navigator*, bool (CAI_Navigator::*)(AI_N
 r typeinfo name for CMemberFunctor3<CBreakableProp*, void (CBreakableProp::*)(Vector const&, Vector const&, QAngle const&), Vector, Vector, QAngle, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
 r typeinfo name for CMultiplayRules
 r typeinfo name for CNPC_AlienGrunt
+r typeinfo name for CNPC_BaseTurret
 r typeinfo name for CNPC_BaseZombie
 r typeinfo name for CNPC_Controller
 r typeinfo name for CNPC_DeadBarney
 r typeinfo name for CNPC_DeadHGrunt
+r typeinfo name for CNPC_MiniTurret
 r typeinfo name for CNPC_RollerMine
 r typeinfo name for CNPC_Vortigaunt
 r typeinfo name for CParticleSystem
@@ -57921,6 +58068,8 @@ r vtable for CNPC_Hornet
 r vtable for CNPC_Hunter
 r vtable for CNPC_Pigeon
 r vtable for CNPC_Puppet
+r vtable for CNPC_Sentry
+r vtable for CNPC_Turret
 r vtable for CNullEntity
 r vtable for CPathCorner
 r vtable for CPhysImpact
@@ -58252,6 +58401,8 @@ r vtable for CEntityFactory<CNPC_Hornet>
 r vtable for CEntityFactory<CNPC_Hunter>
 r vtable for CEntityFactory<CNPC_Pigeon>
 r vtable for CEntityFactory<CNPC_Puppet>
+r vtable for CEntityFactory<CNPC_Sentry>
+r vtable for CEntityFactory<CNPC_Turret>
 r vtable for CEntityFactory<CNullEntity>
 r vtable for CEntityFactory<CPathCorner>
 r vtable for CEntityFactory<CPhysImpact>
@@ -58496,6 +58647,7 @@ r vtable for CEntityFactory<CNPC_AlienGrunt>
 r vtable for CEntityFactory<CNPC_Controller>
 r vtable for CEntityFactory<CNPC_DeadBarney>
 r vtable for CEntityFactory<CNPC_DeadHGrunt>
+r vtable for CEntityFactory<CNPC_MiniTurret>
 r vtable for CEntityFactory<CNPC_RollerMine>
 r vtable for CEntityFactory<CNPC_Vortigaunt>
 r vtable for CEntityFactory<CParticleSystem>
@@ -58973,10 +59125,12 @@ r vtable for CMemberFunctor2<CAI_Navigator*, bool (CAI_Navigator::*)(AI_NavGoal_
 r vtable for CMemberFunctor3<CBreakableProp*, void (CBreakableProp::*)(Vector const&, Vector const&, QAngle const&), Vector, Vector, QAngle, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >, CFuncMemPolicyNone>
 r vtable for CMultiplayRules
 r vtable for CNPC_AlienGrunt
+r vtable for CNPC_BaseTurret
 r vtable for CNPC_BaseZombie
 r vtable for CNPC_Controller
 r vtable for CNPC_DeadBarney
 r vtable for CNPC_DeadHGrunt
+r vtable for CNPC_MiniTurret
 r vtable for CNPC_RollerMine
 r vtable for CNPC_Vortigaunt
 r vtable for CParticleSystem
@@ -59969,6 +60123,10 @@ b datamap_t* DataMapInit<CNPC_Hunter>(CNPC_Hunter*)::nameHolder
 d datamap_t* DataMapInit<CNPC_Hunter>(CNPC_Hunter*)::dataDesc
 b datamap_t* DataMapInit<CNPC_Puppet>(CNPC_Puppet*)::nameHolder
 d datamap_t* DataMapInit<CNPC_Puppet>(CNPC_Puppet*)::dataDesc
+b datamap_t* DataMapInit<CNPC_Sentry>(CNPC_Sentry*)::nameHolder
+d datamap_t* DataMapInit<CNPC_Sentry>(CNPC_Sentry*)::dataDesc
+b datamap_t* DataMapInit<CNPC_Turret>(CNPC_Turret*)::nameHolder
+d datamap_t* DataMapInit<CNPC_Turret>(CNPC_Turret*)::dataDesc
 b datamap_t* DataMapInit<CPathCorner>(CPathCorner*)::nameHolder
 d datamap_t* DataMapInit<CPathCorner>(CPathCorner*)::dataDesc
 b datamap_t* DataMapInit<CPhysImpact>(CPhysImpact*)::nameHolder
@@ -60487,6 +60645,8 @@ b datamap_t* DataMapInit<CMathColorBlend>(CMathColorBlend*)::nameHolder
 d datamap_t* DataMapInit<CMathColorBlend>(CMathColorBlend*)::dataDesc
 b datamap_t* DataMapInit<CNPC_AlienGrunt>(CNPC_AlienGrunt*)::nameHolder
 d datamap_t* DataMapInit<CNPC_AlienGrunt>(CNPC_AlienGrunt*)::dataDesc
+b datamap_t* DataMapInit<CNPC_BaseTurret>(CNPC_BaseTurret*)::nameHolder
+d datamap_t* DataMapInit<CNPC_BaseTurret>(CNPC_BaseTurret*)::dataDesc
 b datamap_t* DataMapInit<CNPC_BaseZombie>(CNPC_BaseZombie*)::nameHolder
 d datamap_t* DataMapInit<CNPC_BaseZombie>(CNPC_BaseZombie*)::dataDesc
 b datamap_t* DataMapInit<CNPC_Controller>(CNPC_Controller*)::nameHolder
@@ -61691,6 +61851,8 @@ b CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigne
 b CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
 b CUtlLinkedList<CCommandBuffer::Command_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CCommandBuffer::Command_t, int> > >::AllocInternal(bool)::__executeCount
 b CUtlLinkedList<CCommandBuffer::Command_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CCommandBuffer::Command_t, int> > >::AllocInternal(bool)::__executeCount
+b CUtlLinkedList<CEnvWindShared*, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CEnvWindShared*, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
+b CUtlLinkedList<CEnvWindShared*, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CEnvWindShared*, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
 b CUtlLinkedList<CDamageModifier*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CDamageModifier*, int>, int> >::AllocInternal(bool)::__executeCount
 b CUtlLinkedList<CDamageModifier*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CDamageModifier*, int>, int> >::AllocInternal(bool)::__executeCount
 b CUtlLinkedList<CFuncNavBlocker*, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CFuncNavBlocker*, unsigned short>, unsigned short> >::AllocInternal(bool)::__executeCount
