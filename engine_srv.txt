@@ -4355,7 +4355,7 @@ t vprof_cachemiss_on(CCommand const&)
 t vprof_record_start(CCommand const&)
 b bench_start_command
 t budget_toggle_group(CCommand const&)
-t BuildSpriteLoadName(char const*, char*, int, bool&) [clone .constprop.159]
+t BuildSpriteLoadName(char const*, char*, int, bool&) [clone .constprop.160]
 b cache_print_command
 t cache_print_summary(CCommand const&)
 t CEventInfo_LessFunc(CEventInfo* const&, CEventInfo* const&)
@@ -5044,7 +5044,6 @@ t CUtlMemory<ipfilter_t, int>::Purge()
 t CUtlMemory<moverlay_t, int>::Purge()
 t CUtlMemory<sentence_t, int>::Purge()
 t CUtlMemory<CStaticProp, int>::Purge()
-t CUtlMemory<dgamelump_t, int>::Purge()
 t CUtlMemory<modelsize_t, int>::Purge()
 t CUtlMemory<netpacket_s, int>::Purge()
 t CUtlMemory<netsocket_t, int>::Purge()
@@ -5147,6 +5146,7 @@ t CUtlMemory<UtlLinkedListElem_t<unsigned short, unsigned short>, unsigned short
 t CUtlMemory<UtlLinkedListElem_t<unsigned short, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<CGameEventDescriptor, int>::Purge()
 t CUtlMemory<CSendProxyRecipients, int>::Purge()
+t CUtlMemory<dgamelump_internal_t, int>::Purge()
 t CUtlMemory<DispCollPlaneIndex_t, int>::Purge()
 t CUtlMemory<StaticPropLeafLump_t, int>::Purge()
 t CUtlMemory<EdgeVisualizationInfo_t, int>::Purge()
@@ -5397,9 +5397,6 @@ t CUtlVector<sentence_t, CUtlMemory<sentence_t, int> >::InsertBefore(int)
 t CUtlVector<sentence_t, CUtlMemory<sentence_t, int> >::~CUtlVector()
 t CUtlVector<sentence_t, CUtlMemory<sentence_t, int> >::~CUtlVector()
 t CUtlVector<CStaticProp, CUtlMemory<CStaticProp, int> >::GrowVector(int)
-t CUtlVector<dgamelump_t, CUtlMemory<dgamelump_t, int> >::InsertBefore(int, dgamelump_t const&)
-t CUtlVector<dgamelump_t, CUtlMemory<dgamelump_t, int> >::~CUtlVector()
-t CUtlVector<dgamelump_t, CUtlMemory<dgamelump_t, int> >::~CUtlVector()
 t CUtlVector<netpacket_s, CUtlMemory<netpacket_s, int> >::EnsureCount(int)
 t CUtlVector<netpacket_s, CUtlMemory<netpacket_s, int> >::~CUtlVector()
 t CUtlVector<netpacket_s, CUtlMemory<netpacket_s, int> >::~CUtlVector()
@@ -5452,6 +5449,9 @@ t CUtlVector<UnpackedDataCache_t, CUtlMemory<UnpackedDataCache_t, int> >::GrowVe
 t CUtlVector<CGameEventDescriptor, CUtlMemory<CGameEventDescriptor, int> >::InsertBefore(int)
 t CUtlVector<CGameEventDescriptor, CUtlMemory<CGameEventDescriptor, int> >::RemoveAll()
 t CUtlVector<CSendProxyRecipients, CUtlMemory<CSendProxyRecipients, int> >::GrowVector(int)
+t CUtlVector<dgamelump_internal_t, CUtlMemory<dgamelump_internal_t, int> >::InsertBefore(int, dgamelump_internal_t const&)
+t CUtlVector<dgamelump_internal_t, CUtlMemory<dgamelump_internal_t, int> >::~CUtlVector()
+t CUtlVector<dgamelump_internal_t, CUtlMemory<dgamelump_internal_t, int> >::~CUtlVector()
 t CUtlVector<DispCollPlaneIndex_t, CUtlMemory<DispCollPlaneIndex_t, int> >::GrowVector(int)
 t CUtlVector<DispCollPlaneIndex_t, CUtlMemory<DispCollPlaneIndex_t, int> >::ShiftElementsRight(int, int)
 t CUtlVector<EdgeVisualizationInfo_t, CUtlMemory<EdgeVisualizationInfo_t, int> >::~CUtlVector()
@@ -9892,10 +9892,10 @@ t CLC_VoiceData::GetName() const
 t CLC_VoiceData::GetType() const
 t CLC_VoiceData::GetGroup() const
 t CLC_VoiceData::ToString() const
-t unsigned int CUtlHashtable<unsigned int, int, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.147]
+t unsigned int CUtlHashtable<unsigned int, int, DefaultHashFunctor<unsigned int>, DefaultEqualFunctor<unsigned int>, undefined_t>::DoLookup<unsigned int>(unsigned int, unsigned int, unsigned int*) const [clone .part.148]
 t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, CNetworkStringTableItem, CaselessStringHashFunctor, UTLConstStringCaselessStringEqualFunctor<char>, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.88] [clone .constprop.93]
 t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.48] [clone .constprop.51]
-t unsigned int CUtlHashtable<model_t*, CModelLoader::CDynamicModelInfo, DefaultHashFunctor<model_t*>, DefaultEqualFunctor<model_t*>, undefined_t>::DoLookup<model_t*>(model_t*, unsigned int, unsigned int*) const [clone .part.103]
+t unsigned int CUtlHashtable<model_t*, CModelLoader::CDynamicModelInfo, DefaultHashFunctor<model_t*>, DefaultEqualFunctor<model_t*>, undefined_t>::DoLookup<model_t*>(model_t*, unsigned int, unsigned int*) const [clone .part.104]
 t MM_Checkpoint::GetName() const
 t MM_Checkpoint::GetType() const
 t MM_Checkpoint::ToString() const

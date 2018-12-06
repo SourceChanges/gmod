@@ -28242,10 +28242,12 @@ t GModDataPack::BuildSearchPaths()
 t GModDataPack::GetFromDatatable(std::string const&)
 t GModDataPack::OnFilesRequested(int, bf_read*, int)
 t GModDataPack::SendFileToClient(int, int)
+t GModDataPack::GetHashFromString(char const*, unsigned int)
 t GModDataPack::OnClientConnected(int)
 t GModDataPack::FindFileInDatatable(std::string const&, bool, bool)
-t GModDataPack::GetCRCFromDatatable(std::string const&)
 t GModDataPack::GetClientSearchPaths()
+t GModDataPack::GetHashFromDatatable(int)
+t GModDataPack::GetHashFromDatatable(std::string const&)
 t GModDataPack::SendFileRequestRequest(int)
 t GModDataPack::Reset()
 t GModDataPack::v000000000000000000000000000oo0000000000000000fff000000000000000000000000000000000o0o()
@@ -35768,6 +35770,7 @@ t CNPC_BaseTurret::SpinDownCall()
 t CNPC_BaseTurret::InputActivate(inputdata_t&)
 t CNPC_BaseTurret::SetTurretAnim(TURRET_ANIM)
 t CNPC_BaseTurret::GetDataDescMap()
+t CNPC_BaseTurret::UpdateOnRemove()
 t CNPC_BaseTurret::AutoSearchThink()
 t CNPC_BaseTurret::InputDeactivate(inputdata_t&)
 t CNPC_BaseTurret::ShouldFadeOnDeath()
@@ -49631,6 +49634,11 @@ t NAI_Hull::Length(int)
 t NAI_Hull::LookupId(char const*)
 t NAI_Hull::SmallMaxs(int)
 t NAI_Hull::SmallMins(int)
+t std::string picosha2::bytes_to_hex_string<std::vector<unsigned char, std::allocator<unsigned char> > >(std::vector<unsigned char, std::allocator<unsigned char> > const&)
+t void picosha2::detail::hash256_block<unsigned long*, __gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > > >(unsigned long*, __gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >)
+t void picosha2::detail::hash256_block<unsigned long*, unsigned char*>(unsigned long*, unsigned char*, unsigned char*)
+r picosha2::detail::add_constant
+r picosha2::detail::initial_message_digest
 t Response::GetBaseMap()
 d Response::m_DataMap
 t SendProp::SendProp()
@@ -50790,9 +50798,10 @@ t GarrysMod::StringTable::Reset()
 t GarrysMod::StringTable::Create()
 r GarrysMod::NetworkMessage::LuaFileDownload
 r GarrysMod::NetworkMessage::RequestLuaFiles
-t GarrysMod::Lua::Cache::GetCompressed(unsigned int, std::string const&, Bootil::Buffer&)
-t GarrysMod::Lua::Cache::StoreCompressed(unsigned int, void*, int)
-t GarrysMod::Lua::Cache::Clear(unsigned int)
+t GarrysMod::Lua::Cache::DeleteFile(std::vector<unsigned char, std::allocator<unsigned char> >)
+t GarrysMod::Lua::Cache::GetFile(std::vector<unsigned char, std::allocator<unsigned char> >, Bootil::Buffer&)
+t GarrysMod::Lua::Cache::SetFile(std::vector<unsigned char, std::allocator<unsigned char> >, void*, int)
+t GarrysMod::Lua::Cache::GetHashBit(std::vector<unsigned char, std::allocator<unsigned char> >)
 t GarrysMod::Lua::Libraries::Timer::DoSimpleTimers()
 t GarrysMod::Lua::Libraries::Timer::DoAdvancedTimers()
 t GarrysMod::Lua::Libraries::Timer::CallTimerFunction(int, std::string const&, std::string const&)
@@ -52262,6 +52271,7 @@ U std::string::rfind(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
 U std::string::compare(unsigned int, unsigned int, char const*) const@@GLIBCXX_3.4
 U std::string::compare(char const*) const@@GLIBCXX_3.4
 U std::__basic_file<char>::is_open() const@@GLIBCXX_3.4
+U std::ctype<char>::_M_widen_init() const@@GLIBCXX_3.4.11
 U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_leak_hard()@@GLIBCXX_3.4
 U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_M_destroy(std::allocator<wchar_t> const&)@@GLIBCXX_3.4
 U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_M_dispose(std::allocator<wchar_t> const&)@@GLIBCXX_3.4
@@ -52272,8 +52282,10 @@ U std::istream::read(char*, int)@@GLIBCXX_3.4
 U std::istream::seekg(long long, std::_Ios_Seekdir)@@GLIBCXX_3.4
 U std::istream::tellg()@@GLIBCXX_3.4
 U std::ostream::write(char const*, int)@@GLIBCXX_3.4
+U std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)@@GLIBCXX_3.4.9
 U std::ostream::operator<<(std::basic_streambuf<char, std::char_traits<char> >*)@@GLIBCXX_3.4
 U std::string::_M_leak_hard()@@GLIBCXX_3.4
+t char* std::string::_S_construct<char*>(char*, char*, std::allocator<char> const&, std::forward_iterator_tag)
 t char* std::string::_S_construct<std::istreambuf_iterator<char, std::char_traits<char> > >(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::allocator<char> const&, std::input_iterator_tag)
 U std::string::_M_replace_aux(unsigned int, unsigned int, unsigned int, char)@@GLIBCXX_3.4
 U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4
@@ -52315,6 +52327,10 @@ U std::basic_filebuf<char, std::char_traits<char> >::basic_filebuf()@@GLIBCXX_3.
 U std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf()@@GLIBCXX_3.4
 U std::basic_ifstream<char, std::char_traits<char> >::~basic_ifstream()@@GLIBCXX_3.4
 U std::basic_ofstream<char, std::char_traits<char> >::~basic_ofstream()@@GLIBCXX_3.4
+t std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()
+t std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()
+t std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()
+U std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_ostringstream()@@GLIBCXX_3.4
 t std::map<unsigned long, unsigned long, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, unsigned long> > >::~map()
 t std::map<unsigned long, unsigned long, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, unsigned long> > >::~map()
 t std::map<std::string, AdvancedTimer_t, std::less<std::string>, std::allocator<std::pair<std::string const, AdvancedTimer_t> > >::~map()
@@ -52342,6 +52358,7 @@ t std::stack<Bootil::Console::ConsoleColor, std::deque<Bootil::Console::ConsoleC
 t std::stack<Bootil::Console::ConsoleColor, std::deque<Bootil::Console::ConsoleColor, std::allocator<Bootil::Console::ConsoleColor> > >::~stack()
 t std::stack<Bootil::Console::PosInfo, std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> > >::~stack()
 t std::stack<Bootil::Console::PosInfo, std::deque<Bootil::Console::PosInfo, std::allocator<Bootil::Console::PosInfo> > >::~stack()
+U std::locale::locale()@@GLIBCXX_3.4
 U std::locale::~locale()@@GLIBCXX_3.4
 t void std::vector<fileinfo_t, std::allocator<fileinfo_t> >::_M_emplace_back_aux<fileinfo_t const&>(fileinfo_t const&)
 t void std::vector<fileinfo_t, std::allocator<fileinfo_t> >::_M_emplace_back_aux<fileinfo_t const&>(fileinfo_t const&)
@@ -52353,6 +52370,10 @@ t void std::vector<LuaFindResult, std::allocator<LuaFindResult> >::_M_emplace_ba
 t void std::vector<LuaFindResult, std::allocator<LuaFindResult> >::_M_emplace_back_aux<LuaFindResult>(LuaFindResult&&)
 t std::vector<LuaFindResult, std::allocator<LuaFindResult> >::~vector()
 t std::vector<LuaFindResult, std::allocator<LuaFindResult> >::~vector()
+t void std::vector<unsigned char, std::allocator<unsigned char> >::emplace_back<unsigned char>(unsigned char&&)
+t void std::vector<unsigned char, std::allocator<unsigned char> >::emplace_back<unsigned char>(unsigned char&&)
+t std::vector<unsigned char, std::allocator<unsigned char> >::_M_default_append(unsigned int)
+t std::vector<unsigned char, std::allocator<unsigned char> >::erase(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >)
 t void std::vector<(anonymous namespace)::WatcherData, std::allocator<(anonymous namespace)::WatcherData> >::_M_emplace_back_aux<(anonymous namespace)::WatcherData const&>((anonymous namespace)::WatcherData const&)
 t void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&)
 t void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string>(std::string&&)
@@ -52407,9 +52428,12 @@ t void std::__introsort_loop<__gnu_cxx::__normal_iterator<fileinfo_t*, std::vect
 t void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, int>(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >, int)
 t void std::__introsort_loop<std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, int>(std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, std::reverse_iterator<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >, int)
 U std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)@@GLIBCXX_3.4.9
+U std::__throw_bad_cast()@@GLIBCXX_3.4
 U std::__throw_bad_alloc()@@GLIBCXX_3.4
 U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
 U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::__throw_logic_error(char const*)@@GLIBCXX_3.4
+U std::__throw_length_error(char const*)@@GLIBCXX_3.4
 U std::__throw_out_of_range(char const*)@@GLIBCXX_3.4
 t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<fileinfo_t*, std::vector<fileinfo_t, std::allocator<fileinfo_t> > >, bool (*)(fileinfo_t const&, fileinfo_t const&)>(__gnu_cxx::__normal_iterator<fileinfo_t*, std::vector<fileinfo_t, std::allocator<fileinfo_t> > >, bool (*)(fileinfo_t const&, fileinfo_t const&))
 t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > > >(__gnu_cxx::__normal_iterator<std::string*, std::vector<std::string, std::allocator<std::string> > >)
@@ -57961,6 +57985,7 @@ r typeinfo name for CDecal::StaticDecal()::CTraceFilterValidForDecal
 r VTT for CBasePlayerAnimState
 U VTT for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U VTT for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
+U VTT for std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
 t virtual thunk to CBasePlayerAnimState::Release()
 t virtual thunk to CBasePlayerAnimState::Update(float, float)
 t virtual thunk to CBasePlayerAnimState::ClearAnimationState()
@@ -59984,6 +60009,8 @@ U vtable for std::basic_filebuf<char, std::char_traits<char> >@@GLIBCXX_3.4
 U vtable for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U vtable for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U vtable for std::basic_streambuf<char, std::char_traits<char> >@@GLIBCXX_3.4
+U vtable for std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
+U vtable for std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
 U vtable for std::basic_ios<char, std::char_traits<char> >@@GLIBCXX_3.4
 r vtable for CGMODRules::CleanUpMap(CLuaObject&)::CGMODMapEntityFilter
 r vtable for CHL2MPRules::CleanUpMap()::CHL2MPMapEntityFilter

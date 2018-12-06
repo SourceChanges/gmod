@@ -1025,6 +1025,7 @@ U std::string::rfind(char const*, unsigned int, unsigned int) const@@GLIBCXX_3.4
 U std::string::compare(unsigned int, unsigned int, char const*) const@@GLIBCXX_3.4
 U std::string::compare(char const*) const@@GLIBCXX_3.4
 U std::__basic_file<char>::is_open() const@@GLIBCXX_3.4
+U std::ctype<char>::_M_widen_init() const@@GLIBCXX_3.4.11
 U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_leak_hard()@@GLIBCXX_3.4
 U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_M_destroy(std::allocator<wchar_t> const&)@@GLIBCXX_3.4
 U std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Rep::_M_dispose(std::allocator<wchar_t> const&)@@GLIBCXX_3.4
@@ -1035,6 +1036,7 @@ U std::istream::read(char*, int)@@GLIBCXX_3.4
 U std::istream::seekg(long long, std::_Ios_Seekdir)@@GLIBCXX_3.4
 U std::istream::tellg()@@GLIBCXX_3.4
 U std::ostream::write(char const*, int)@@GLIBCXX_3.4
+U std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)@@GLIBCXX_3.4.9
 U std::ostream::operator<<(std::basic_streambuf<char, std::char_traits<char> >*)@@GLIBCXX_3.4
 U std::string::_M_leak_hard()@@GLIBCXX_3.4
 U std::string::_M_replace_aux(unsigned int, unsigned int, unsigned int, char)@@GLIBCXX_3.4
@@ -1065,6 +1067,8 @@ U std::basic_filebuf<char, std::char_traits<char> >::basic_filebuf()@@GLIBCXX_3.
 U std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf()@@GLIBCXX_3.4
 U std::basic_ifstream<char, std::char_traits<char> >::~basic_ifstream()@@GLIBCXX_3.4
 U std::basic_ofstream<char, std::char_traits<char> >::~basic_ofstream()@@GLIBCXX_3.4
+U std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_ostringstream()@@GLIBCXX_3.4
+U std::locale::locale()@@GLIBCXX_3.4
 U std::locale::~locale()@@GLIBCXX_3.4
 U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
 U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
@@ -1077,9 +1081,12 @@ U std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)@@GLIBC
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 U operator new(unsigned int)@@GLIBCXX_3.4
 U std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)@@GLIBCXX_3.4.9
+U std::__throw_bad_cast()@@GLIBCXX_3.4
 U std::__throw_bad_alloc()@@GLIBCXX_3.4
 U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
 U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::__throw_logic_error(char const*)@@GLIBCXX_3.4
+U std::__throw_length_error(char const*)@@GLIBCXX_3.4
 U std::__throw_out_of_range(char const*)@@GLIBCXX_3.4
 U std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
 U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
@@ -1111,6 +1118,7 @@ V typeinfo name for Bootil::Buffer
 V typeinfo name for Bootil::Threads::Thread
 U VTT for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U VTT for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
+U VTT for std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
@@ -1125,4 +1133,6 @@ U vtable for std::basic_filebuf<char, std::char_traits<char> >@@GLIBCXX_3.4
 U vtable for std::basic_ifstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U vtable for std::basic_ofstream<char, std::char_traits<char> >@@GLIBCXX_3.4
 U vtable for std::basic_streambuf<char, std::char_traits<char> >@@GLIBCXX_3.4
+U vtable for std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
+U vtable for std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >@@GLIBCXX_3.4
 U vtable for std::basic_ios<char, std::char_traits<char> >@@GLIBCXX_3.4
