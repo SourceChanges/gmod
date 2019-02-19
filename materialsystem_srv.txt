@@ -22,7 +22,7 @@ U cosf@@GLIBC_2.0
 U cos@@GLIBC_2.0
 T CreateInterface
 r CSWTCH.17
-r CSWTCH.1704
+r CSWTCH.1706
 r CSWTCH.93
 r CSWTCH.95
 U __ctype_b_loc@@GLIBC_2.3
@@ -2356,10 +2356,10 @@ t CMaterialSystem::DebugPrintUsedMaterials(char const*, bool)
 t CMaterialSystem::DebugPrintUsedMaterials(CCommand const&)
 t CMaterialSystem::GetMaterialProxyFactory()
 t CMaterialSystem::ReleaseStandardTextures()
-t CMaterialSystem::ReleaseStandardTextures() [clone .part.64]
+t CMaterialSystem::ReleaseStandardTextures() [clone .part.65]
 t CMaterialSystem::SetMaterialProxyFactory(IMaterialProxyFactory*)
 t CMaterialSystem::AllocateStandardTextures()
-t CMaterialSystem::AllocateStandardTextures() [clone .part.63]
+t CMaterialSystem::AllocateStandardTextures() [clone .part.64]
 t CMaterialSystem::CreateMatQueueThreadPool()
 t CMaterialSystem::OnRenderingAsyncComplete()
 t CMaterialSystem::RemoveModeChangeCallBack(void (*)())

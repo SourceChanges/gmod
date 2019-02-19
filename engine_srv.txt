@@ -3225,6 +3225,7 @@ b guard variable for CGMODDataTable::CopyFrom(void*, void const*, CGMODDataTable
 b guard variable for COcclusionSystem::IsOccluded(Vector const&, Vector const&)::mutex
 b guard variable for CGet::VersionStr()::strVersion
 b guard variable for CGet::VersionTimeStr()::strTime
+b guard variable for CGet::BuildName()::strBuild
 b guard variable for Bootil::Debug::Listeners()::Listeners
 b guard variable for CEngine::Frame()::pSyncReportConVar
 b guard variable for CNetChan::HandleUpload(CNetChan::dataFragments_s*, INetChannelHandler*)::s_pAllowUpload
@@ -5520,6 +5521,7 @@ t CUtlVector<NET_SetConVar::cvar_s, CUtlMemory<NET_SetConVar::cvar_s, int> >::~C
 t CUtlVector<SVC_ClassInfo::class_s, CUtlMemory<SVC_ClassInfo::class_s, int> >::InsertBefore(int, SVC_ClassInfo::class_s const&)
 t CUtlVector<CSocketCreator::AcceptedSocket_t, CUtlMemory<CSocketCreator::AcceptedSocket_t, int> >::InsertBefore(int)
 t CUtlVector<CStaticPropMgr::StaticPropDict_t, CUtlMemory<CStaticPropMgr::StaticPropDict_t, int> >::GrowVector(int)
+t CUtlVector<CStaticPropMgr::StaticPropFade_t, CUtlMemory<CStaticPropMgr::StaticPropFade_t, int> >::GrowVector(int)
 t CUtlVector<CVProfRecorder::CNodeAverage, CUtlMemory<CVProfRecorder::CNodeAverage, int> >::InsertBefore(int)
 t CUtlVector<CWingedEdgeList::WingedEdge_t, CUtlMemory<CWingedEdgeList::WingedEdge_t, int> >::GrowVector(int)
 t CUtlVector<CWingedEdgeList::WingedEdge_t, CUtlMemory<CWingedEdgeList::WingedEdge_t, int> >::ShiftElementsRight(int, int)
@@ -8679,14 +8681,18 @@ t CGet::SteamGameServer()
 t CGet::SteamNetworking()
 t CGet::SteamScreenshots()
 t CGet::IsDedicatedServer()
+t CGet::ResetRichPresense()
 t CGet::RunSteamCallbacks()
 t CGet::SteamRemoteStorage()
+t CGet::UpdateRichPresense(char const*)
 t CGet::HTML()
 t CGet::Audio()
 t CGet::GameDir()
 t CGet::Version()
 t CGet::ShutDown()
 t CGet::SteamUGC()
+t CGet::Analytics()
+t CGet::BuildName()
 t CGet::LuaShared()
 t CGet::Materials()
 t CGet::Resources()
@@ -11705,6 +11711,7 @@ b CServerRemoteAccess::LookupStringValue(char const*)::s_ReturnBuf
 b CGet::VersionStr()::strVersion
 b CGet::VersionTimeStr()::strTime
 b CGet::Version()::m_iVersion
+b CGet::BuildName()::strBuild
 b CLog::Print(char const*)::string
 b CLog::Printf(char const*, ...)::string
 r Bootil::File::GetTempDir()::__FUNCTION__

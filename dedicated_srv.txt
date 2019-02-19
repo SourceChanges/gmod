@@ -2144,8 +2144,6 @@ t CUtlSymbol::CurrTable()
 t CUtlSymbol::CUtlSymbol(char const*)
 t CUtlSymbol::CUtlSymbol(char const*)
 t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
-t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::~CUtlVector()
-t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::~CUtlVector()
 t CUtlVector<SteamUGCDetails_t, CUtlMemory<SteamUGCDetails_t, int> >::InsertBefore(int, SteamUGCDetails_t const&)
 t CUtlVector<ChunkHashFraction_t, CUtlMemory<ChunkHashFraction_t, int> >::GrowVector(int)
 t CUtlVector<ChunkHashFraction_t, CUtlMemory<ChunkHashFraction_t, int> >::ShiftElementsRight(int, int)
@@ -2165,8 +2163,6 @@ t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<CBaseFileSystem::COpenedFile, CUtlMemory<CBaseFileSystem::COpenedFile, int> >::InsertBefore(int, CBaseFileSystem::COpenedFile const&)
 t CUtlVector<CBaseFileSystem::COpenedFile, CUtlMemory<CBaseFileSystem::COpenedFile, int> >::RemoveAll()
-t CUtlVector<CBaseFileSystem::COpenedFile, CUtlMemory<CBaseFileSystem::COpenedFile, int> >::~CUtlVector()
-t CUtlVector<CBaseFileSystem::COpenedFile, CUtlMemory<CBaseFileSystem::COpenedFile, int> >::~CUtlVector()
 t CUtlVector<CBaseFileSystem::CSearchPath, CUtlMemory<CBaseFileSystem::CSearchPath, int> >::~CUtlVector()
 t CUtlVector<CBaseFileSystem::CSearchPath, CUtlMemory<CBaseFileSystem::CSearchPath, int> >::~CUtlVector()
 t CUtlVector<GarrysMod::DedicatedServer::SteamUGCDetails_t_edit, CUtlMemory<GarrysMod::DedicatedServer::SteamUGCDetails_t_edit, int> >::InsertBefore(int, GarrysMod::DedicatedServer::SteamUGCDetails_t_edit const&)
@@ -3574,8 +3570,6 @@ t Gamemode::System::Refresh()
 t Gamemode::System::SetActive(std::string const&)
 t Gamemode::System::System()
 t Gamemode::System::System()
-t Gamemode::System::~System()
-t Gamemode::System::~System()
 t CByteswap::SwapFieldToTargetEndian(void*, void*, typedescription_t*)
 t CByteswap::SwapFieldsToTargetEndian(void*, void*, datamap_t*)
 t CCallback<ISteamUGC_ItemDownloader, DownloadItemResult_t, true>::Run(void*)
@@ -3814,7 +3808,6 @@ t CUtlSymbolTable::CLess::operator()(CUtlSymbolTable::CStringPoolIndex const&, C
 t CUtlSymbolTable::String(CUtlSymbol) const
 U CThreadLocalBase::Get() const
 t CFileSystem_Stdio::IsSteam() const
-t CUtlSymbolTableMT::String(CUtlSymbol) const
 t CFileAsyncWriteJob::IsWrite() const
 t CUtlCharConversion::GetDelimiter() const
 t CUtlCharConversion::GetEscapeChar() const
